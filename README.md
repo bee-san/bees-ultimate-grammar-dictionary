@@ -1,6 +1,8 @@
 # Bee's Ultimate Grammar Dictionary
 
-A unified Japanese grammar dictionary for [Yomitan](https://github.com/yomidevs/yomitan). Combines **12 sources** into a single installable dictionary with unified lookup and per-source attribution.
+12 Grammar Dictionaries in one
+<img width="849" height="361" alt="image" src="https://github.com/user-attachments/assets/06c86e75-4dd3-4a0d-8862-b3007b0c61ae" />
+
 
 ## Install
 

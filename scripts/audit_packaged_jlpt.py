@@ -1,28 +1,13 @@
 """Verify the PACKAGED bytes now carry every source's own JLPT level.
 
 Reads the archive, not the renderer, so this proves what a user installs. For
-each of the 253 conflicting entries it walks the term-bank card and checks that
+each of the 319 conflicting entries it walks the term-bank card and checks that
 every (source, level) pair the DATASET attributes is visible inside that source's
 own disclosure -- and that the compact badge is still exactly one line.
 
-The count was 158 while only five community sources reached the bytes. UGD-16
-convergence landed the remaining five extractors, and the pin was repinned to 253
-only after attributing the whole delta mechanically (never on the total alone):
+The thirteen-source corpus has 319 conflicting entries. Their per-source values
+are preserved by the unified merge and must all be visible in the packaged card.
 
-    recomputed over the ORIGINAL five sources only  156
-    entries that only conflict once a new source joins   + 97
-                                                   ------
-                                                       253
-
-and, critically, entries that conflicted under the original five and NO LONGER do:
-0. The residual 158 -> 156 on the original-five basis is UGD-11c-A's polarity
-repair renaming three headwords out of the conflict set (`なくもある` ->
-`なくもない`, `ないものでもある` -> `ないものでもない`, `てはいく` ->
-`てはいけない`, which then re-enters as a repaired form), so no disagreement was
-destroyed -- it moved with its headword. The behaviour assertions in this file
-(each source's own level inside its own disclosure, exactly one compact badge)
-passed on all 253 before the cardinality was touched, which is what makes this a
-stale count rather than a regression.
 """
 import json
 import sys
@@ -85,7 +70,7 @@ def find_role(node, role, out):
 
 
 conflicts = [u for u in unified if len(u.get("jlptLevels") or []) > 1]
-check("conflicting-level entries in the dataset", len(conflicts), 253)
+check("conflicting-level entries in the dataset", len(conflicts), 319)
 
 incomplete = []
 compact_badge_counts = Counter()
@@ -115,7 +100,7 @@ for u in conflicts:
     compact_badge_counts[len(role_values(compact, "jlpt", []))] += 1
 
 check("every conflict shows each source's own level in that source's disclosure", incomplete[:5], [])
-check("compact badge cardinality across the 253 conflicts", dict(compact_badge_counts), {1: 253})
+check("compact badge cardinality across the 319 conflicts", dict(compact_badge_counts), {1: 319})
 
 visible = Counter()
 for u in conflicts:

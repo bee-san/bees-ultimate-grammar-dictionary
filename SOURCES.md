@@ -1,13 +1,13 @@
 # Bee's Ultimate Grammar Dictionary — Source Inventory
 
-Goal: ONE unified Yomitan dictionary ("Bee's Ultimate Grammar Dictionary") combining
-every grammar source into a single installable ZIP with unified lookup + per-source
-attribution. Not separate dictionaries. Progressive disclosure: compact card + closed
+Each edition of "Bee's Ultimate Grammar Dictionary" combines every grammar source
+into one installable ZIP with unified lookup and per-source attribution. The
+original and English editions are separately installable. Progressive disclosure: compact card + closed
 `details` sections for the tail (readings, extra examples, provenance).
 
-Model policy (Bedrock-only, per user): every Kanban worker pinned to
-`global.anthropic.claude-opus-5` (provider bedrock), reasoning max.
-(Latest Bedrock Opus, launched 2026-07-24; global inference ID confirmed on AWS model card.)
+The English edition uses **GPT-6 Luna**, as requested by the user. Historical
+Kanban audit workers used `global.anthropic.claude-opus-5` through Bedrock; those
+audit settings do not apply to the English translation build.
 
 ## Local Anki decks (authoritative primary inputs — already on disk)
 
@@ -36,6 +36,25 @@ Model policy (Bedrock-only, per user): every Kanban worker pinned to
 - New-Anki schema: notetypes in `notetypes` table, fields in `fields` table (ord/ntid),
   note field values in `notes.flds` split on `\x1f` (US, 0x1f).
 - Media files are numbered members (`0`,`1`,...) mapped by the `media` JSON manifest member.
+
+### 3. AIUEO JLPT Grammar.apkg
+- Local input: `/home/bee/Downloads/AIUEO JLPT Grammar.apkg`, locked in `data/sources/aiueo/SOURCE.lock.json`.
+- Notetype: `Aiueo-Grammar`.
+- 3,806 notes: 3,805 sentence notes and one literal column-header note.
+- Fields: GrammarPoint, JLPTLevel, Usage, Description, SentenceJP, SentenceEN, Audio.
+- 761 grammar records, each with five Japanese examples and source-authored English translations.
+- Identical headword, JLPT level, formation and bilingual description are grouped;
+  different senses remain separate. HTML entity differences do not create duplicates.
+- Description has Japanese prose and a `【Translation】` English counterpart. Both
+  survive extraction and merge. Deck audio is not repackaged.
+
+### English edition
+- Monolingual source prose and examples without an authored English translation
+  are translated by GPT-6 Luna in a separate corpus.
+- Translations are labelled per source and linked to the original wording on the
+  English website. Existing source-authored English takes precedence.
+- Translations are keyed by input text, record kind and prompt version; incomplete
+  coverage prevents publication. Normal extraction/merge builds do not call models.
 
 ## Community Yomitan dictionaries (acquired or scraped)
 

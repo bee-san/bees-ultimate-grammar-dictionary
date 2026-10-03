@@ -75,6 +75,8 @@ SUBSTANCE_FIELDS = (
     "structure",
     "nuance",
     "explanation",
+    "nuance_ja",
+    "explanation_ja",
     "notes",
     "jlpt",
 )
@@ -98,6 +100,7 @@ SOURCE_PRECEDENCE = (
     "nihongo_net",
     "nihongo_no_sensei",
     "hjgp_en",
+    "aiueo",
 )
 
 
@@ -208,6 +211,12 @@ def primary_key(record: dict[str, object]) -> str | None:
     if not isinstance(expression, str):
         raise MalformedPayload("record 'expression' must be a string")
     keys = lookup_keys(expression)
+    if any(is_polarity_flip(left, right) for left in keys for right in keys):
+        # A source can explicitly explain an affirmative and its negative in
+        # one combined heading. It is a comparative record, not evidence that
+        # the two independent forms are interchangeable. Keep its whole heading
+        # as its own key, with every source field intact.
+        return lookup_key(expression) or None
     return keys[0] if keys else None
 
 
@@ -922,6 +931,17 @@ def _render_points(
             form = row.expression.strip()
             if form and form not in forms:
                 forms.append(form)
+            # Alternatives explicitly printed together in the source heading
+            # are lookup forms of that record, rather than inferred Tier B
+            # equivalences. Keep both raw and normalized spellings findable.
+            # Comparative affirmative/negative headings stay separate above.
+            alternatives = lookup_keys(form)
+            if len(alternatives) > 1 and not any(
+                is_polarity_flip(left, right) for left in alternatives for right in alternatives
+            ):
+                for alternative in alternatives:
+                    if alternative not in forms:
+                        forms.append(alternative)
         for form in extra_forms.get(key, ()):
             if form not in forms:
                 forms.append(form)

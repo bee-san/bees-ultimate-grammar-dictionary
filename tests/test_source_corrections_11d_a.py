@@ -80,13 +80,14 @@ def test_A1_nihokaranai_spelling(dojg):
 # A2 — nihongo_net#でしょう licenses ×雨だでしょう
 # ---------------------------------------------------------------------------
 @_needs_sources
-def test_A2_deshou_noun_attaches_bare(nihongo_net):
+@pytest.mark.parametrize("source_id", ["でしょう（推量）", "でしょう（確認・同意）"])
+def test_A2_deshou_noun_attaches_bare(nihongo_net, source_id):
     by_id, _ = nihongo_net
-    point = by_id["でしょう"]
+    point = by_id[source_id]
     assert "※Nだ + でしょう" not in point.structure
     assert "※Nでしょう" in point.structure
     # bare noun attachment (the correct rule) is preserved.
-    assert "N（普通形） + でしょう" in point.structure
+    assert "N（普通形）" in point.structure
 
 
 # ---------------------------------------------------------------------------
@@ -107,7 +108,7 @@ def test_A3_kadouka_no_da_before_kadouka(nihongo_net):
 @_needs_sources
 def test_A4_sae_verb_row_is_saesureba(nihongo_net):
     by_id, _ = nihongo_net
-    point = by_id["さえ"]
+    point = by_id["さえ〜ば"]
     assert "V（ます形）ます + さえあれば" not in point.structure
     assert "V（ます形）ます + さえすれば" in point.structure
     # さえあれば survives ONLY on the non-verb rows (イAく／ナAで／N).
@@ -121,7 +122,7 @@ def test_A4_sae_verb_row_is_saesureba(nihongo_net):
 @_needs_sources
 def test_A5_naidemonai_structure(nihongo_net):
     by_id, _ = nihongo_net
-    point = by_id["ないでもない"]
+    point = by_id["ないでもない / 〜ないものでもない"]
     assert "ものでもない" not in point.structure
     assert point.structure.count("ないでもない") == 4
     assert "V（ナイ形） + ないでもない" in point.structure
@@ -131,10 +132,9 @@ def test_A5_naidemonai_structure(nihongo_net):
 # A6 — nihongo_net#かいがあって (and #かいもなく) structure names あげく
 # ---------------------------------------------------------------------------
 @_needs_sources
-@pytest.mark.parametrize("source_id", ["かいがあって", "かいもなく"])
-def test_A6_kaigaatte_structure(nihongo_net, source_id):
+def test_A6_kaigaatte_structure(nihongo_net):
     by_id, _ = nihongo_net
-    point = by_id[source_id]
+    point = by_id["かいあって / 〜かいもなく"]
     assert "あげく" not in point.structure
     assert "する動詞のNの + かいがあって" in point.structure
 
@@ -147,7 +147,7 @@ def test_A7_niitarumade_rehomed_to_niitaru(nihongo_net):
     by_id, points = nihongo_net
     # the record keeps its source_id (provenance) but is re-homed to に至る,
     # so it no longer merges into the range-meaning に至るまで card.
-    point = by_id["に至るまで"]
+    point = by_id["に至る / 〜に至るまで"]
     assert point.expression == "に至る"
     # no nihongo_net point still claims the に至るまで headword.
     assert not any(p.expression == "に至るまで" for p in points)

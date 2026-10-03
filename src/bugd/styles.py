@@ -1080,5 +1080,23 @@ STYLES_CSS = """\
 }
 """
 
+STYLES_CSS += """
+[data-sc-website] {
+  margin-top: 0.65em;
+  font-size: 0.8em;
+  color: var(--text-color-light2, inherit);
+}
+[data-sc-website] a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+[data-sc-translation] {
+  margin-bottom: 0.5em;
+  font-size: 0.8em;
+  color: var(--text-color-light2, inherit);
+}
+"""
+
 
 __all__ = ["STYLES_CSS"]

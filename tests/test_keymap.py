@@ -79,6 +79,20 @@ def rows_of(**sources: list[dict[str, object]]) -> tuple[list[Row], list, dict[s
     return partition_rows({name: points for name, points in sources.items()})
 
 
+def test_source_authored_compound_heading_keeps_each_lookup_form(tmp_path) -> None:
+    directory = tmp_path / 'extracted'
+    directory.mkdir()
+    payload = {'source': 'aiueo', 'points': [
+        record('a', '〜に 即して・〜に 則して', reading='', meaning='According to.'),
+        record('b', '〜に 値する・〜に 値しない', reading='', meaning='Worth doing or not worth doing.'),
+    ]}
+    (directory / 'aiueo.json').write_text(dump_json(payload))
+    keymap = build_keymap(directory)
+    forms = _keys_by_form(keymap)
+    assert forms['に即して'] & forms['に則して']
+    assert all(not {'pos', 'neg'} <= {polarity(form) for form in p['lookupForms']} for p in keymap['points'])
+
+
 # --------------------------------------------------------------------------
 # identity
 # --------------------------------------------------------------------------
@@ -654,11 +668,9 @@ def test_malformed_keymap_payloads_fail_closed(payload: object) -> None:
 #: only a partial corpus. Require the full set, and skip with a message naming
 #: exactly which sources are missing.
 CORPUS_SOURCES = (
-    "dojg",
-    "donna_toki",
-    "edewakaru",
-    "nihongo_net",
-    "nihongo_no_sensei",
+    "aiueo", "bunpou", "bunpro", "dojg", "donna_toki", "edewakaru",
+    "hjgp", "hjgp_en", "imabi", "nihongo_net", "nihongo_no_sensei",
+    "ninjal_bunkei", "yokubi",
 )
 
 
@@ -691,56 +703,16 @@ def corpus() -> dict[str, object]:
 @pytestmark_corpus
 def test_corpus_counts_are_pinned(corpus: dict[str, object]) -> None:
     report = corpus["report"]
-    # 7896 = the 5936 six-source basis plus the four extractors UGD-16 convergence
-    # landed: bunpou 534 + imabi 494 + ninjal_bunkei 800 + yokubi 132 = 1960.
-    #
-    # Attributed by rebuilding the keymap through the real production builder over
-    # the same artifacts with those four `data/extracted/*.json` REMOVED: that
-    # basis reports rows=5936 / substantiveRows=4696 exactly, reproducing this
-    # pin's previous values, and the row-identity SETS
-    # `{(source, sourceId, substanceHash)}` differ by exactly +1960 with **0 lost**
-    # (gained per source: bunpou 534, imabi 494, ninjal_bunkei 800, yokubi 132).
-    # So the growth is additive and nothing that was assigned stopped being
-    # assigned.
-    assert report["corpus"]["rows"] == 7896
-    assert report["corpus"]["declaredAliasRows"] == 1167
-    # Unmoved by convergence: the four new sources contribute no declared alias
-    # and no duplicate of an existing row.
-    #
-    # 73, from 71 and originally 63: UGD-14 stopped shipping the edewakaru
-    # blog-ring footer (`にほんブログ村` / `――以上――` / `語学(日本語)ランキング`) as
-    # content. Those lines were the ONLY difference between otherwise
-    # byte-identical records, so removing site chrome let the existing duplicate
-    # collapse do its job.
-    #
-    # The 71 -> 73 step is the round-8 fix to `_strip_post_chrome`, which
-    # previously dropped a marker only when it was the WHOLE line and therefore
-    # missed 29 occurrences the producer had concatenated onto the end of real
-    # text (`…イラストリスト】語学(日本語)ランキングにほんブログ村にほんブログ村――以上――`).
-    assert report["corpus"]["duplicateRowsCollapsed"] == 73
-    # 6656 = 4696 + the same 1960. Every one of the four new sources' rows arrives
-    # substantive, matching the per-source set diff above.
-    assert report["corpus"]["substantiveRows"] == 6656
-    # Tier A grows with the corpus: 676 -> 821 bijective, 201 -> 217 refused.
-    assert report["tierA"]["bijectiveBuckets"] == 821
-    assert report["tierA"]["refusedCollisionBuckets"] == 217
-    # Tier B DECREASED, 57 -> 49, which a totals-only repin would have hidden. Set
-    # diff of `acceptedLinks`: +1 gained (`に応じて`↔`に応じた`) and 8 LOST --
-    # `こととなると`↔`ことになると`, `ずに済む`↔`ないで済む`, `せいで`↔`せいか`,
-    # `ともなく`↔`ともなしに`, `につれて`↔`につれ`, `によって`↔`により`,
-    # `によると`↔`によれば`, `ようがない`↔`ようもない`.
-    #
-    # This is the known Tier-B fold-guard behaviour, not lost content: a newly
-    # landed source adds a row to one side's bucket, so the pairwise guards
-    # (`generic-hub`, `one-way-different-reading`) that keep an ambiguous fold from
-    # merging two distinct points now fire. Verified that nothing became
-    # unreachable: all 16 forms are still separate `point` entries in the emitted
-    # keymap, and 0 contributor identities disappeared. The pair is split across
-    # two cards rather than folded onto one -- a findability regression worth its
-    # own card, NOT a conservation failure, and it cannot touch the public
-    # artifact, whose corpus (ninjal_bunkei + yokubi) has 0 Tier-B links at all.
-    assert report["tierB"]["accepted"] == 49
-    assert len(corpus["points"]) == 4481
+    # Full thirteen-source import. Per-source conservation is pinned again by
+    # the unified corpus tests; counts here guard the canonical grouping.
+    assert report["corpus"]["rows"] == 10828
+    assert report["corpus"]["declaredAliasRows"] == 1453
+    assert report["corpus"]["duplicateRowsCollapsed"] == 224
+    assert report["corpus"]["substantiveRows"] == 9151
+    assert report["tierA"]["bijectiveBuckets"] == 1314
+    assert report["tierA"]["refusedCollisionBuckets"] == 221
+    assert report["tierB"]["accepted"] == 39
+    assert len(corpus["points"]) == 5516
 
 
 @pytestmark_corpus

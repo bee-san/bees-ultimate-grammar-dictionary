@@ -767,8 +767,11 @@ def test_ninjal_member_name_recovers_cp932_names_the_utf8_flag_missed():
         ]
     unflagged = [info for info in infos if not info.flag_bits & 0x800]
     assert unflagged, "the distribution is known to ship unflagged CP932 names"
-    for info in unflagged:
-        assert member_name(info) != info.filename
+    # Newer Python zipfile versions can already decode these names correctly.
+    # Also exercise the original cp437 input directly, independent of Python's
+    # archive decoding heuristics.
+    legacy = zipfile.ZipInfo("召し上がります.xml".encode("cp932").decode("cp437"))
+    assert member_name(legacy) == "召し上がります.xml"
 
     names = [member_name(info) for info in infos]
     assert len(set(names)) == len(names)

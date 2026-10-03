@@ -96,7 +96,7 @@ SUPPORTED_KEYMAP_SCHEMA = 1
 KIND_POINT = "point"
 KIND_REDIRECT = "redirect"
 
-_SUBSTANCE_FIELDS = ("meaning", "structure", "nuance", "explanation", "notes")
+_SUBSTANCE_FIELDS = ("meaning", "structure", "nuance", "explanation", "notes", "nuance_ja", "explanation_ja")
 
 _DIGITS = re.compile(r"(\d+)")
 
@@ -172,6 +172,8 @@ class Contribution:
     ai_generated: dict[str, object] = dataclasses.field(default_factory=dict)
     provenance: dict[str, object] = dataclasses.field(default_factory=dict)
     duplicate_examples_removed: int = 0
+    nuance_ja: str | None = None
+    explanation_ja: str | None = None
 
     @property
     def has_substance(self) -> bool:
@@ -387,6 +389,7 @@ def _examples_of(record: dict[str, object]) -> tuple[Example, ...]:
                 # The AI flag is preserved exactly, never inferred. A source that
                 # does not declare it is not AI-flagged.
                 ai_generated=bool(item.get("ai_generated")),
+                japanese_html=item.get("japanese_html") or None,
             )
         )
     return tuple(built)
@@ -445,6 +448,8 @@ def build_contribution(
         structure=_text_or_none(record.get("structure")),
         nuance=_text_or_none(record.get("nuance")),
         explanation=_text_or_none(record.get("explanation")),
+        nuance_ja=_text_or_none(record.get("nuance_ja")),
+        explanation_ja=_text_or_none(record.get("explanation_ja")),
         notes=_text_or_none(record.get("notes")),
         jlpt=_text_or_none(record.get("jlpt")),
         examples=_examples_of(record) if examples is None else examples,
@@ -649,10 +654,25 @@ def unify(
             contribution.reading or "",
         )
         correction = correction_by_key.get(key)
-        if correction is None:
-            return contribution
-        correction_hits.add(key)
-        return dataclasses.replace(contribution, reading=correction.to_reading)
+        if correction is not None:
+            correction_hits.add(key)
+            contribution = dataclasses.replace(contribution, reading=correction.to_reading)
+        # The 日本語NET scraper's _reading_for concatenates only the kana in a
+        # heading, leaving out every kanji sound (に即して -> にして). Keep the
+        # locked source column intact in extraction, apply any attested overlay
+        # above, then omit impossible remaining readings from learner output.
+        # Do not guess replacements or weaken the audit for other sources.
+        from .readings import is_plausible_reading
+        if contribution.source == "nihongo_net" and not is_plausible_reading(
+            contribution.expression, contribution.reading
+        ):
+            provenance = dict(contribution.provenance)
+            provenance["omittedReading"] = {
+                "value": contribution.reading,
+                "reason": "Scraper-derived kana fragment cannot render the complete written form.",
+            }
+            contribution = dataclasses.replace(contribution, reading=None, provenance=provenance)
+        return contribution
 
     # 1. Bucket every assigned row by (axes, bucketKey), keeping producer order.
     grouped: dict[tuple[str, str, str], dict[str, list[tuple[str, dict[str, object]]]]] = (
@@ -968,6 +988,8 @@ def example_to_json(example: Example) -> dict[str, object]:
     payload: dict[str, object] = {"japanese": example.japanese}
     if example.english:
         payload["english"] = example.english
+    if example.japanese_html:
+        payload["japaneseHtml"] = example.japanese_html
     if example.highlight:
         payload["highlight"] = list(example.highlight)
     # Written only when true, so an AI-flagged sentence is visible in a diff
@@ -994,6 +1016,8 @@ def contribution_to_json(contribution: Contribution) -> dict[str, object]:
         ("structure", "structure"),
         ("nuance", "nuance"),
         ("explanation", "explanation"),
+        ("nuance_ja", "nuanceJa"),
+        ("explanation_ja", "explanationJa"),
         ("notes", "notes"),
         ("jlpt", "jlpt"),
     ):
@@ -1064,6 +1088,7 @@ def example_from_json(payload: dict[str, object]) -> Example:
         english=english if isinstance(english, str) and english else None,
         highlight=tuple(str(item) for item in highlight),
         ai_generated=bool(payload.get("aiGenerated")),
+        japanese_html=payload.get("japaneseHtml") or None,
     )
 
 
@@ -1091,6 +1116,8 @@ def contribution_from_json(payload: dict[str, object]) -> Contribution:
         structure=_text_or_none(payload.get("structure")),
         nuance=_text_or_none(payload.get("nuance")),
         explanation=_text_or_none(payload.get("explanation")),
+        nuance_ja=_text_or_none(payload.get("nuanceJa")),
+        explanation_ja=_text_or_none(payload.get("explanationJa")),
         notes=_text_or_none(payload.get("notes")),
         jlpt=_text_or_none(payload.get("jlpt")),
         examples=tuple(
@@ -1359,6 +1386,8 @@ def to_grammar_point(
         structure=contribution.structure,
         nuance=contribution.nuance,
         explanation=contribution.explanation,
+        nuance_ja=contribution.nuance_ja,
+        explanation_ja=contribution.explanation_ja,
         notes=contribution.notes,
         jlpt=contribution.jlpt if contribution.jlpt in JLPT_LEVELS else None,
         examples=contribution.examples,

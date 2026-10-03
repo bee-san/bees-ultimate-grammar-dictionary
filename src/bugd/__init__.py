@@ -27,14 +27,15 @@ DICTIONARY_URL = "https://github.com/bee-san/bees-ultimate-grammar-dictionary"
 # recommended-dictionary catalogue re-reads the imported `index.json` and refuses
 # an import whose `indexUrl` does not equal the URL it fetched the dictionary
 # under. So `DICTIONARY_INDEX_URL` must name the committed `dist/index.json` on
-# the default branch, and `DICTIONARY_DOWNLOAD_URL` the release asset beside it.
+# the default branch. Downloads are rebuilt and hosted alongside the grammar
+# website; the existing index address remains compatible with managed imports.
 DICTIONARY_INDEX_URL = (
     "https://raw.githubusercontent.com/bee-san/"
     "bees-ultimate-grammar-dictionary/main/dist/index.json"
 )
 DICTIONARY_DOWNLOAD_URL = (
-    "https://github.com/bee-san/bees-ultimate-grammar-dictionary/"
-    "releases/latest/download/bees-ultimate-grammar-dictionary.zip"
+    "https://bee-san.github.io/bees-ultimate-grammar-dictionary/"
+    "downloads/bees-ultimate-grammar-dictionary.zip"
 )
 
 # Yomitan revision whose official schemas are pinned under schemas/.

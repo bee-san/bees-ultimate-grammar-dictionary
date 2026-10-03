@@ -75,7 +75,8 @@ plain text.
 
 1. Exactly one root `div role=grammarCard`, `lang=ja`, per row (2419).
 2. Compact ordering: `meaning` MUST precede `metarow` (0 violations allowed).
-3. The LAST root child is a `sourceBlock`, `crossref`, or `listedOnly` — never a
+3. The LAST root child is a `website` footer linking to all explanations. Before
+   that footer, the last child is a `sourceBlock`, `crossref`, or `listedOnly` — never a
    data-less attribution `details`; there is no trailing "Sources" block. All
    `details` are shipped closed (never `open`).
 4. A row MUST NOT have BOTH a `sourceBlock` and a compact fallback.
@@ -85,8 +86,8 @@ plain text.
    0 empty/attribution-only cards allowed.
 7. `metarow` contains only `jlpt` and/or `structure` roles.
 8. `sourceBlock` has exactly 2 children (summary + body).
-9. External anchors are allowed only in `grammarCard > listedOnly` context
-   (origins: edewakaru.com, nihongokyoshi-net.com).
+9. External anchors are allowed in `grammarCard > listedOnly` context
+   (source origins) and in `grammarCard > website` (the GitHub Pages explanation).
 
 ### Empty-compact fallback rule
 

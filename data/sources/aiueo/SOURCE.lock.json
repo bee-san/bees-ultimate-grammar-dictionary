@@ -1,0 +1,11 @@
+{
+  "source": "aiueo",
+  "acquiredAt": "2026-10-03T16:06:57Z",
+  "note": "Local AIUEO JLPT Grammar Anki export. 3,805 sentence notes (761 grammar records) and one header note.",
+  "files": {
+    "AIUEO JLPT Grammar.apkg": {
+      "sha256": "7daa567e3d9ade90569d11babce2ca7b10cbf6ac419b6ac8610512c84f84a7ae",
+      "byteCount": 63638478
+    }
+  }
+}

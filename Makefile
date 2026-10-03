@@ -36,7 +36,7 @@ ZIP := build/bees-ultimate-grammar-dictionary.zip
 # is the whole dictionary, not a subset of it.
 .DEFAULT_GOAL := all
 
-.PHONY: all personal extract keymap merge build validate validate-node audit-packaged \
+.PHONY: all personal extract keymap merge build site translate-english publish-data validate validate-node audit-packaged \
         audit-attribution test scan-polarity clean help
 
 help:
@@ -63,6 +63,16 @@ merge:
 
 build:
 	$(PY) -m bugd.cli build
+
+# Translation is explicit and resumable; normal dictionary builds stay offline.
+translate-english:
+	$(PY) scripts/translate_english.py --corpus data/merged/corpus.json
+
+publish-data:
+	$(PY) scripts/publish_snapshot.py
+
+site:
+	$(PY) scripts/build_site.py --snapshot website/data
 
 validate:
 	$(PY) -m bugd.cli validate

@@ -370,21 +370,12 @@
     },
     {
       "source": "nihongo_net",
-      "source_id": "にあたって",
+      "source_id": "にあたって / 〜にあたり",
       "field": "structure",
       "op": "replace_all",
       "anchor": "（辞書形）+あたり",
       "replacement": "（辞書形）+にあたり",
       "rationale": "〜にあたって/にあたり requires に; example 受けるにあたって confirms it; +あたり drops に"
-    },
-    {
-      "source": "nihongo_net",
-      "source_id": "にあたり",
-      "field": "structure",
-      "op": "replace_all",
-      "anchor": "（辞書形）+あたり",
-      "replacement": "（辞書形）+にあたり",
-      "rationale": "〜にあたって/にあたり requires に; example 受けるにあたって confirms it; +あたり drops に (sibling headword variant sharing the same structure; reviewer flagged にあたって)"
     },
     {
       "source": "nihongo_net",
@@ -394,15 +385,6 @@
       "anchor": "合格にできた",
       "replacement": "合格できた",
       "rationale": "spurious に: the verb is 合格できた (can pass); 合格にできた is ungrammatical. The に does not belong to the 〜のは…にほかならない pattern being taught."
-    },
-    {
-      "source": "nihongo_net",
-      "source_id": "にほかなる",
-      "field": "examples",
-      "op": "replace_all",
-      "anchor": "合格にできた",
-      "replacement": "合格できた",
-      "rationale": "spurious に: the verb is 合格できた (can pass); 合格にできた is ungrammatical. The に does not belong to the 〜のは…にほかならない pattern being taught. (sibling headword variant sharing the same defect on the same physical card)"
     },
     {
       "source": "nihongo_no_sensei",
@@ -1181,6 +1163,26 @@
       "rationale": "headword にほかならない and every example use にほかならない; にはかならない (は for ほ) is a source typo",
       "superseded_by": "UGD-11d-A correction A1 in src/bugd/source_corrections.py",
       "reason": "UGD-11d-A fixes the identical dojg misspelling at the extraction choke point (ReplaceIn structure にはかならない->にほかならない x6, examples ことにほならない->ことにほかならない x1), so this pipeline-stage anchor is already gone and the fail-closed check aborted `make extract`. Verified equivalent: the extracted field already carries this correction's exact replacement."
+    },
+    {
+      "source": "nihongo_net",
+      "source_id": "にあたり",
+      "field": "structure",
+      "op": "replace_all",
+      "anchor": "（辞書形）+あたり",
+      "replacement": "（辞書形）+にあたり",
+      "rationale": "〜にあたって/にあたり requires に; example 受けるにあたって confirms it; +あたり drops に (sibling headword variant sharing the same structure; reviewer flagged にあたって)",
+      "reason": "Current locked scraper corpus has no separate row for this spelling. The compound or surviving primary row carries the correction."
+    },
+    {
+      "source": "nihongo_net",
+      "source_id": "にほかなる",
+      "field": "examples",
+      "op": "replace_all",
+      "anchor": "合格にできた",
+      "replacement": "合格できた",
+      "rationale": "spurious に: the verb is 合格できた (can pass); 合格にできた is ungrammatical. The に does not belong to the 〜のは…にほかならない pattern being taught. (sibling headword variant sharing the same defect on the same physical card)",
+      "reason": "Current locked scraper corpus has no separate row for this spelling. The compound or surviving primary row carries the correction."
     }
   ]
 }

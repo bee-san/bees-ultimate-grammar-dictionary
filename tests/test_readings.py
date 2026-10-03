@@ -47,6 +47,7 @@ from bugd.readings import has_kanji, is_plausible_reading
         ("挙句", "あげく"),
         ("甲斐", "かい"),
         ("甲斐", "がい"),
+        ("下手", "へた"),
         # supplementary readings (colloquial 言=ゆう, classical 如=しく)
         ("ように言う", "ようにゆう"),
         ("に如くはない", "にしくはない"),

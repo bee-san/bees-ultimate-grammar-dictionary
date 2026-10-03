@@ -1,0 +1,62 @@
+# Grammar library and English edition
+
+The website and Yomitan dictionaries share stable, SHA-256-derived addresses for
+each written lookup form. Pages contain the full corpus, including all senses and
+examples; the popup's four-sense and six-example display budgets do not apply.
+English pages use the same addresses under `/en/`. Each English dictionary card
+links to its English page. The original edition links to the original page.
+
+The site is static HTML/CSS/JavaScript. Entry explanations work without JavaScript;
+the library search loads a compact index and supports meaning, reading, JLPT and
+source filters. All paths work beneath the repository's GitHub Pages prefix.
+
+## Build a published snapshot
+
+```sh
+python3 -m pip install .
+make site
+python3 -m http.server 8000 --directory build/site
+```
+
+`website/data/manifest.json` pins the compressed corpus and translation cache by
+SHA-256 and byte count. `scripts/build_site.py` checks those digests, refuses an
+empty corpus or incomplete translation cache, generates both sites, and builds
+and schema-validates both downloadable Yomitan ZIPs. Source content is attributed
+on every page and retains its original licensing.
+
+The Pages workflow builds from this snapshot rather than scraping or invoking a
+model in CI. Enable GitHub Pages with **GitHub Actions** as its source. Pushes to
+`main` deploy automatically; pull requests build without deploying.
+
+## Refresh content
+
+1. Acquire the exact source bytes pinned by `data/sources/*/SOURCE.lock.json`.
+   Local Anki packages may be symlinked into their source directories. For AIUEO,
+   use `data/sources/aiueo/AIUEO JLPT Grammar.apkg`.
+2. Run `make all` to extract, align, merge and validate the complete corpus.
+3. Run `make translate-english`. This calls the authenticated `codex exec` CLI
+   with `--model gpt-6-luna`. No API key is stored in the repository. Jobs receive
+   only translation input, use a JSON output schema, and validate every returned
+   record id before caching the result. Re-running resumes by content hash.
+4. Run `make publish-data` to update the compressed publication snapshot. It
+   requires every registered source and every requested English translation.
+5. Run `make site`, inspect both editions in a browser, then commit the changed
+   snapshot, manifests and code. The next Pages deployment rebuilds them.
+
+The generated output lives under `build/site/`. Dictionary downloads and their
+SHA-256 checksums are in `build/site/downloads/`. The English archive has its own
+dictionary title and update index, so the two editions can be installed together.
+
+## Translation policy
+
+Source-authored English is used whenever supplied. Mono Japanese/Chinese prose
+and missing example translations are translated faithfully with GPT-6 Luna.
+Grammar forms, construction formulas, omissions, negation and register are
+preserved. AI-generated example channels from the original sources remain
+separate. Translation provenance is stored beside each transformed contribution;
+the source corpus is not overwritten. English pages include expandable original
+definitions, and Japanese example sentences remain visible with their readings.
+
+Coverage and schema checks establish completeness and structure, not a human
+review of every translated sentence. Readers can compare the original wording
+through each page's disclosure or switch to the original edition.

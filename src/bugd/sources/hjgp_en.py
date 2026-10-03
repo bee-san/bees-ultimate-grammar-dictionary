@@ -36,7 +36,7 @@ from .yomitan_bank import TermRow
 _TITLE = re.compile(r"^【[^】]+】$")
 _NUMBERED_EXAMPLE = re.compile(r"^（\s*\d+\s*）$")
 _SENSE_NUM = re.compile(r"^\d+[.．]\s")
-_XREF = re.compile(r"[⇾→]\s*【?\s*([^】\n]+?)\s*】?")
+_XREF = re.compile(r"[⇾→]\s*【?\s*([^】\n]+)\s*】?")
 _FRONT_MATTER = frozenset({"0Index of meaning and function groups", "0Preface", "0User's Guide"})
 _KANA = re.compile(r"[぀-ヿ]")
 _HAN = re.compile(r"[㐀-䶿一-鿿豈-﫿]")
@@ -61,7 +61,7 @@ class HjgpEnExtractor(CommunityBankExtractor):
 
         xref = _XREF.search(stripped)
         if xref and len(stripped) < 120:
-            target = xref.group(1).strip().strip("【】")
+            target = re.sub(r"[0-9０-９]+[a-zａ-ｚ]?$", "", xref.group(1).strip().strip("【】")).strip()
             provenance = self.base_provenance(row)
             provenance["aliasOf"] = target
             return GrammarPoint(

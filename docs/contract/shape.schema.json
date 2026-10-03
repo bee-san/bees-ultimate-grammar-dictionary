@@ -45,7 +45,7 @@
             "enum": ["grammarCard", "compact", "meaning", "metarow", "jlpt", "structure",
                      "sourceBlock", "sourceName", "sense", "senseLabel", "prose",
                      "patterns", "pattern", "examples", "example", "ja", "en", "hl",
-                     "crossref", "listedOnly"]
+                     "crossref", "listedOnly", "website", "translation"]
           }
         },
         "lang": { "enum": ["ja", "en"] },

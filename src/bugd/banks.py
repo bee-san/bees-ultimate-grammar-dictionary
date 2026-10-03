@@ -84,6 +84,7 @@ SENSES_PER_SOURCE = 4
 #: the build stays byte-reproducible. Verified against the extracted corpus:
 #: bunpro/dojg/donna_toki/imabi/yokubi explain in English; the rest are Japanese.
 _SOURCE_EXPLANATION_LANG: dict[str, str] = {
+    "aiueo": "en",
     "bunpro": "en",
     "dojg": "en",
     "donna_toki": "en",
@@ -1451,6 +1452,8 @@ def _source_blocks(entry: MergedEntry, headline: str = "") -> list[dict]:
     # group, so the ordering is deterministic and the build stays reproducible.
     def _lang_rank(label: str) -> int:
         lang = _SOURCE_EXPLANATION_LANG.get(source_key.get(label, ""), "")
+        if any(point.provenance.get("englishTranslation") for point in grouped[label]):
+            lang = "en"
         return _SOURCE_LANG_RANK.get(lang, 2)
 
     ordered_labels = sorted(grouped, key=_lang_rank)
@@ -1469,6 +1472,9 @@ def _source_blocks(entry: MergedEntry, headline: str = "") -> list[dict]:
 
         shown = rendered[:SENSES_PER_SOURCE]
         body: list[object] = []
+        if any(point.provenance.get("englishTranslation") for point in points):
+            body.append({"tag": "div", "data": {"translation": ""}, "lang": "en",
+                         "content": "English translation · GPT-6 Luna. Original text on the linked page."})
         # The level heads the disclosure: it qualifies everything this source goes
         # on to say, and it must be reachable even when the source ships nothing
         # else (the 7 conflicts above).
@@ -1702,6 +1708,12 @@ def build_term_entry(entry: MergedEntry, sequence: int) -> list:
         if fallback is not None:
             content.append(fallback)
     content.extend(source_blocks)
+    from .site_links import grammar_url
+
+    content.append({"tag": "div", "data": {"website": ""}, "content": {
+        "tag": "a", "href": grammar_url(entry.expression), "lang": "en",
+        "content": "Read all explanations ↗",
+    }})
     # No separate "Sources" attribution disclosure: each per-source block is
     # already titled with its source, so the source IS the section title.
 

@@ -1,0 +1,31 @@
+{
+  "revision": "2026.10.03",
+  "model": "gpt-6-luna",
+  "sources": [
+    "aiueo",
+    "bunpou",
+    "bunpro",
+    "dojg",
+    "donna_toki",
+    "edewakaru",
+    "hjgp",
+    "hjgp_en",
+    "imabi",
+    "nihongo_net",
+    "nihongo_no_sensei",
+    "ninjal_bunkei",
+    "yokubi"
+  ],
+  "entries": 6371,
+  "translations": 45895,
+  "files": {
+    "corpus.json.gz": {
+      "sha256": "98f8ed231632e0d5e583fd4bba7a3f8fade1466c65f859464df4e0c327caa40f",
+      "byteCount": 11213864
+    },
+    "translations.en.json.gz": {
+      "sha256": "acbeeebd03bca6de00a731f2752bd8c131bad7f8769fd4456de07c6f78016148",
+      "byteCount": 4248006
+    }
+  }
+}

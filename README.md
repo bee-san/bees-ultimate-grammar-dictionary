@@ -1,14 +1,24 @@
 # Bee's Ultimate Grammar Dictionary
 
-12 Grammar Dictionaries in one
+13 Grammar Dictionaries in one
 <img width="849" height="361" alt="image" src="https://github.com/user-attachments/assets/06c86e75-4dd3-4a0d-8862-b3007b0c61ae" />
 
 
 ## Install
 
-1. Download the latest `.zip` from [Releases](https://github.com/bee-san/bees-ultimate-grammar-dictionary/releases)
+1. Download the [dictionary ZIP](https://bee-san.github.io/bees-ultimate-grammar-dictionary/downloads/bees-ultimate-grammar-dictionary.zip)
 2. In Yomitan settings, go to Dictionaries → Import
 3. Select the downloaded ZIP
+
+You can also [browse the grammar library](https://bee-san.github.io/bees-ultimate-grammar-dictionary/)
+or use the [English website](https://bee-san.github.io/bees-ultimate-grammar-dictionary/en/).
+Every dictionary entry links to its page, with all contributing explanations and
+examples. Search by grammar, reading or meaning, and filter by JLPT level or source.
+
+The [English Yomitan edition](https://bee-san.github.io/bees-ultimate-grammar-dictionary/downloads/bees-ultimate-grammar-dictionary-en.zip)
+is separately installable. Monolingual explanations and untranslated examples are
+translated with **GPT-6 Luna** and labelled as translations. Source-authored English
+is retained. The English website includes the original source text for reference.
 
 ## What's included
 
@@ -30,10 +40,11 @@ Every grammar point shows a compact card with progressive disclosure — click t
 | 文法 | 文法 | JA | Personal grammar Anki deck |
 | IMABI | IMABI | EN | Comprehensive Japanese grammar lessons (modern + classical) |
 | Yokubi | Yokubi | EN | The Common Grammar Guide (yoku.bi) |
+| AIUEO | AIUEO JLPT Grammar | EN/JA | 761 grammar records with 3,805 bilingual examples from the AIUEO Anki deck |
 
 ### What makes this different from installing them separately?
 
-- **Single lookup**: one dictionary, one card per grammar point — not 12 separate popups
+- **Single lookup**: one dictionary, one card per grammar point — not 13 separate popups
 - **Merged entries**: when multiple sources describe the same grammar point, their contributions are merged into one card with per-source attribution
 - **Deduplication**: the keymap stage aligns entries across sources so you don't see the same point repeated
 - **Progressive disclosure**: compact by default, expand any source's details on demand
@@ -43,7 +54,7 @@ Every grammar point shows a compact card with progressive disclosure — click t
 ```
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+pip install . pytest
 make all
 ```
 
@@ -54,6 +65,32 @@ The pipeline stages:
 3. **merge** — combine aligned entries into a unified dataset
 4. **build** — render the Yomitan dictionary ZIP
 5. **validate** — verify against Yomitan's JSON schemas
+
+### Website and English edition
+
+The committed publication snapshot makes both websites and dictionary downloads
+reproducible without local source decks, network scraping, or model credentials:
+
+```sh
+make site
+python3 -m http.server 8000 --directory build/site
+```
+
+Open `http://localhost:8000/` or `http://localhost:8000/en/`.
+GitHub Actions builds this snapshot and deploys it to GitHub Pages on `main`.
+See [the publishing workflow](docs/website.md) for updating the corpus and translations.
+
+After acquiring all locked sources and running `make all`, update the publication:
+
+```sh
+make translate-english  # authenticated Codex CLI; explicitly uses gpt-6-luna
+make publish-data      # refuses missing sources or translations
+make site
+```
+
+Translation results are cached by source-text hash under `data/translations/`.
+The original corpus stays unchanged. A changed source text requires a fresh
+translation; an incomplete English edition fails the build.
 
 ## Adding a new source
 

@@ -27,7 +27,7 @@ from .base import Extractor, ExtractResult, load_source_lock, write_points_jsonl
 from .community import clean
 from .registry import register_extractor
 
-_XREF = re.compile(r"[⇾→]\s*【?\s*([^】\n]+?)\s*】?")
+_XREF = re.compile(r"[⇾→]\s*【?\s*([^】\n]+)\s*】?")
 _SENTENCE_NUM = re.compile(r"^[①-⑳㉑-㊿]\s*")
 _FRONT_MATTER = frozenset(
     {"0Index of meaning and function groups", "0Preface", "0User's Guide"}
@@ -312,7 +312,7 @@ class HjgpExtractor(Extractor):
 
             xref = _XREF.search(text)
             if xref and len(text) < 120:
-                target = xref.group(1).strip().strip("【】")
+                target = re.sub(r"[0-9０-９]+[a-zａ-ｚ]?$", "", xref.group(1).strip().strip("【】")).strip()
                 points.append(
                     GrammarPoint(
                         source=self.name,

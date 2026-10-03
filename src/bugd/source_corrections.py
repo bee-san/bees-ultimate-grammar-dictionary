@@ -216,8 +216,26 @@ CORRECTIONS: dict[tuple[str, str], tuple[Correction, ...]] = {
             "A3",
         ),
     ),
-    # A4–A7 removed: entries no longer present in the re-scraped nihongo_net data
-    # (2026-09 scrape from nihongokyoshi-net.com replaced aiko-tanaka community banks).
+    # The re-scraped bank uses compound headings for the same audited defects.
+    # Match the current complete producer ids and retain the original anchors.
+    ("nihongo_net", "でしょう（推量）"): (
+        ReplaceIn("structure", "※Nだ + でしょう", "※Nでしょう", 1, "A2"),
+    ),
+    ("nihongo_net", "でしょう（確認・同意）"): (
+        ReplaceIn("structure", "※Nだ + でしょう", "※Nでしょう", 1, "A2"),
+    ),
+    ("nihongo_net", "さえ〜ば"): (
+        ReplaceIn("structure", "V（ます形）ます + さえあれば", "V（ます形）ます + さえすれば", 1, "A4"),
+    ),
+    ("nihongo_net", "ないでもない / 〜ないものでもない"): (
+        ReplaceIn("structure", "ものでもない", "ないでもない", 4, "A5"),
+    ),
+    ("nihongo_net", "かいあって / 〜かいもなく"): (
+        ReplaceIn("structure", "Nの + あげく ※Nはする動詞のN", "する動詞のNの + かいがあって", 1, "A6"),
+    ),
+    ("nihongo_net", "に至る / 〜に至るまで"): (
+        SetExpression("に至る", "に至る / 〜に至るまで", "A7"),
+    ),
     # UGD-16. bunpou/247 glues an editorial comparison note onto its headword with
     # a newline: '〜向けに\n類似文型「〜向き」との違い'. A multi-line string is not a
     # lookup form -- the packaged ?query= cross-reference already truncated at the

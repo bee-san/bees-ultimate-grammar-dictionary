@@ -17,7 +17,7 @@ import hashlib
 import pathlib
 import shutil
 
-from . import DICTIONARY_SLUG, YOMITAN_SCHEMA_REVISION
+from . import DICTIONARY_SLUG, DICTIONARY_INDEX_URL, DICTIONARY_DOWNLOAD_URL, YOMITAN_SCHEMA_REVISION
 from . import unify
 from .banks import build_banks, build_index, build_tag_bank
 from .reading_corrections import (
@@ -295,6 +295,8 @@ def run_build(
     dist_dir: pathlib.Path | None = None,
     revision: str | None = None,
     require_entries: bool = False,
+    index_url: str | None = DICTIONARY_INDEX_URL,
+    download_url: str | None = DICTIONARY_DOWNLOAD_URL,
 ) -> dict[str, object]:
     """Emit the ONE installable dictionary ZIP from the merged corpus.
 
@@ -323,7 +325,7 @@ def run_build(
         source_labels = {}
 
     revision = revision or datetime.datetime.now(datetime.UTC).strftime("%Y.%m.%d")
-    index = build_index(revision, source_labels=source_labels)
+    index = build_index(revision, source_labels=source_labels, index_url=index_url, download_url=download_url)
     members = package_members(
         index=index,
         banks=build_banks(entries),

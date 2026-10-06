@@ -1,6 +1,6 @@
 {
   "source": "imabi",
-  "acquiredAt": "2026-10-03T16:02:41Z",
+  "acquiredAt": "2026-10-06T11:35:46Z",
   "endpoint": "https://imabi.org/wp-json/wp/v2/pages",
   "expectedTotal": 501,
   "files": {
@@ -81,8 +81,8 @@
       "byteCount": 11245
     },
     "pages/1035.json": {
-      "sha256": "15d3b40e746cd2993b2fd8d8aa3066ab1faa789bc47a469463a121a901b215ae",
-      "byteCount": 8601
+      "sha256": "e9a1e6b1ee4ca86bc39e31d7e49ed0cb0d7e2ea68fc0be6d9342af4674a0cde2",
+      "byteCount": 8190
     },
     "pages/1037.json": {
       "sha256": "9899cbdaf65bfe8f400e826f54cfdc6fda49f999aa4aa96d01ce6057d63e9bab",
@@ -189,8 +189,8 @@
       "byteCount": 14100
     },
     "pages/11.json": {
-      "sha256": "9da5a85d21b1c8a235c4532f8e8e9c4c1e6328e142933a7a8703043845a0a5f9",
-      "byteCount": 9256
+      "sha256": "e632e34ea1a23c9a156cf69933eca423999479069a9e66cf1f10d4ea47d4b5e0",
+      "byteCount": 8845
     },
     "pages/1100.json": {
       "sha256": "0696764cbf198d40888959305a969294731f9280b1c1166bdcb0566d9d8d5c75",
@@ -325,8 +325,8 @@
       "byteCount": 18464
     },
     "pages/12344.json": {
-      "sha256": "65b39865442272780539e2fc3aad2275a05d7bff935b810ba54ffe66861ecc6c",
-      "byteCount": 47219
+      "sha256": "36329c35724e25073f1afa3e094fc8e9744dce9e289befa4ccc9467caa2a3d8f",
+      "byteCount": 46808
     },
     "pages/124.json": {
       "sha256": "e2509227c97ff3bf170f7e0dcd9f3f3a6765038fce9fbb6b435af0a4b8abe2f9",
@@ -349,8 +349,8 @@
       "byteCount": 64103
     },
     "pages/12635.json": {
-      "sha256": "8cad0868e6374cb03cd652c418859ddc47c62df77d9a23c41d6597b72a5a7ea0",
-      "byteCount": 30705
+      "sha256": "e634f4c8ed6c0373388f767d45632655a5f0c1070210929cb0b58ddb61bfee9c",
+      "byteCount": 30294
     },
     "pages/1266.json": {
       "sha256": "bd211f12475d69825a8cb839aacb6e6607ff2363aa3b2cc545c8b44d3992de0a",
@@ -713,8 +713,8 @@
       "byteCount": 57631
     },
     "pages/2207.json": {
-      "sha256": "878bb83b00dee7ca0320c7f6857a3e80dca459514349525d321e51f4c30aedd5",
-      "byteCount": 7587
+      "sha256": "c7ee11221719c2874d628c9b6a068c91c51ae92ccfe508e3308743f1ad016f85",
+      "byteCount": 6765
     },
     "pages/221.json": {
       "sha256": "8c25a6f91d79ca5062b9b039d712b6bf336237c9b352d31c666f560266909679",
@@ -1513,8 +1513,8 @@
       "byteCount": 31621
     },
     "pages/65.json": {
-      "sha256": "dd0c6b38eaafe1c2db6072c08821348b97b393b3ed7b5d750fb8bb03aeda5d5b",
-      "byteCount": 20728
+      "sha256": "7345f7a1c7bc2b37d8144abcd76dbaffd232f68e4efddb632df8705fe4725715",
+      "byteCount": 19906
     },
     "pages/654.json": {
       "sha256": "7b6ea823d0830bfc729d5f2736321dc737ca63c63555b9d8fee0559606c5a468",
@@ -1997,8 +1997,8 @@
       "byteCount": 21160
     },
     "pages/9904.json": {
-      "sha256": "eb70118c12fc05e31ffd328004ac4862759b5d54e73217556bdd818b4095ac53",
-      "byteCount": 114605
+      "sha256": "06bc63e43adca1ff267dc8ece64c9e2137939d958e8ecd2339edf0cc543be06e",
+      "byteCount": 112961
     },
     "pages/992.json": {
       "sha256": "9f9172ab08e74c9f8d074c7cbf6fa3a41e620a18ab67e4ad89e5467520d55840",
@@ -2016,6 +2016,5 @@
       "sha256": "92344ca9e16b905ba9661e856a38041b6995ca0615741706da8de81abcf0b541",
       "byteCount": 6294
     }
-  },
-  "note": "Full 501-page IMABI corpus re-acquired via its WordPress API; source payloads were absent from this checkout."
+  }
 }

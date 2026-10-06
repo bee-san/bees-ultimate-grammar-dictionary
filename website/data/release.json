@@ -1,0 +1,42 @@
+{
+  "revision": "2026.10.06",
+  "sources": [
+    "aiueo",
+    "bunpou",
+    "bunpro",
+    "dojg",
+    "donna_toki",
+    "edewakaru",
+    "hjgp",
+    "hjgp_en",
+    "imabi",
+    "nihongo_net",
+    "nihongo_no_sensei",
+    "ninjal_bunkei",
+    "yokubi"
+  ],
+  "entries": 6371,
+  "imabiLessons": 494,
+  "assets": {
+    "bees-ultimate-grammar-dictionary.zip": {
+      "sha256": "062c5188d20215da60f04bf46fae49896885be8d7dde175c4d126371f4ca1d4a",
+      "byteCount": 7227109
+    },
+    "bees-ultimate-grammar-dictionary-en.zip": {
+      "sha256": "e152d431c7d4c5a16f92d7343b1074d9adcc52e54bf592dab9d0b45decbeb558",
+      "byteCount": 8045650
+    },
+    "index.json": {
+      "sha256": "541ba3d2734020d5e6727f052acebc06d376a32d13f6b4a9039eb1c092256ef0",
+      "byteCount": 1054
+    },
+    "index.en.json": {
+      "sha256": "c128c819ae7551a7fde5f4bad6f150bff1d04ce4b70fd6ff84cca9c40303e26d",
+      "byteCount": 1133
+    },
+    "SHA256SUMS": {
+      "sha256": "885342115b91a6b83d3cddf4f66ecf39f212666d57c6bd6d8c14d2cf147cc7f3",
+      "byteCount": 209
+    }
+  }
+}

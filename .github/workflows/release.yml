@@ -1,0 +1,42 @@
+name: Publish reproducible full dictionaries
+
+on:
+  push:
+    branches: [main]
+    paths: ["website/data/manifest.json", ".github/workflows/release.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: grammar-release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Install pinned build dependencies
+        run: python -m pip install .
+      - name: Build and verify both complete editions
+        run: make release
+      - name: Publish checked release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          revision=$(python -c 'import json; print(json.load(open("website/data/manifest.json"))["revision"])')
+          tag="v${revision}"
+          notes="docs/releases/${tag}.md"
+          test -f "$notes"
+          if gh release view "$tag" > /dev/null 2>&1; then
+            gh release upload "$tag" build/site/downloads/*.zip build/site/downloads/index*.json build/site/downloads/SHA256SUMS --clobber
+          else
+            gh release create "$tag" build/site/downloads/*.zip build/site/downloads/index*.json build/site/downloads/SHA256SUMS \
+              --target "$GITHUB_SHA" --title "Bee's Ultimate Grammar Dictionary — ${tag}" --notes-file "$notes" --draft
+          fi
+          gh release edit "$tag" --notes-file "$notes" --draft=false --latest

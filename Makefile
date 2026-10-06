@@ -31,16 +31,15 @@ export SOURCE_DATE_EPOCH := 0
 
 ZIP := build/bees-ultimate-grammar-dictionary.zip
 
-# There is ONE dictionary. `all` builds it from every source present in
-# `data/sources/`, and it is the default goal: the thing you get by typing `make`
-# is the whole dictionary, not a subset of it.
-.DEFAULT_GOAL := all
+# The default builds both complete editions from committed publication inputs.
+# `all` remains the original-source extraction and merge pipeline.
+.DEFAULT_GOAL := release
 
-.PHONY: all personal extract keymap merge build site translate-english publish-data validate validate-node audit-packaged \
+.PHONY: all personal release verify-release extract keymap merge build site translate-english publish-data validate validate-node audit-packaged \
         audit-attribution test scan-polarity clean help
 
 help:
-	@printf 'targets: extract keymap merge build validate validate-node audit-packaged test scan-polarity all clean\n'
+	@printf 'targets: release (default, offline snapshot) verify-release extract keymap merge build validate validate-node audit-packaged test scan-polarity all clean\n'
 
 extract:
 	$(PY) -m bugd.cli extract
@@ -73,6 +72,14 @@ publish-data:
 
 site:
 	$(PY) scripts/build_site.py --snapshot website/data
+
+release: site
+	mkdir -p dist
+	cp build/site/downloads/index.json dist/index.json
+	$(PY) scripts/verify_release.py
+
+verify-release:
+	$(PY) scripts/verify_release.py
 
 validate:
 	$(PY) -m bugd.cli validate

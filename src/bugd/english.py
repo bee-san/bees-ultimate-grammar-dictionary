@@ -91,7 +91,6 @@ def english_corpus(corpus: dict, cache: dict) -> dict:
 
 def build_english_dictionary(corpus: dict, cache: dict, output, *, revision: str) -> dict:
     """Build and validate a separately installable English Yomitan edition."""
-    import json
     import pathlib
     from .banks import build_banks, build_index, build_tag_bank
     from .package import build_zip, package_members
@@ -119,10 +118,11 @@ def build_english_dictionary(corpus: dict, cache: dict, output, *, revision: str
     output = pathlib.Path(output)
     output.mkdir(parents=True, exist_ok=True)
     path = output / filename
-    path.write_bytes(build_zip(package_members(index=index, banks=banks,
-                                               tag_bank=build_tag_bank(labels), styles_css=STYLES_CSS)))
+    members = package_members(index=index, banks=banks,
+                              tag_bank=build_tag_bank(labels), styles_css=STYLES_CSS)
+    path.write_bytes(build_zip(members))
     failures = validate_zip(path, require_entries=True)
     if failures:
         raise SchemaValidationError(path, failures)
-    (output / "index.en.json").write_text(json.dumps(index, ensure_ascii=False) + "\n", encoding="utf-8")
+    (output / "index.en.json").write_text(members["index.json"], encoding="utf-8")
     return {"zipPath": str(path), "entries": len(entries), "translations": len(cache["translations"])}

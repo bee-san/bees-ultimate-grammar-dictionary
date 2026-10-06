@@ -1,0 +1,2510 @@
+{
+ "count": 501,
+ "pages": [
+  {
+   "file": "pages/7.json",
+   "id": 7,
+   "slug": "contact"
+  },
+  {
+   "file": "pages/8.json",
+   "id": 8,
+   "slug": "about"
+  },
+  {
+   "file": "pages/11.json",
+   "id": 11,
+   "slug": "%e3%82%88%e3%81%86%e3%81%93%e3%81%9d%e3%80%81%e3%80%8c%e3%81%84%e3%81%be%e3%81%b3%e3%80%8d%e3%81%b8"
+  },
+  {
+   "file": "pages/20.json",
+   "id": 20,
+   "slug": "table-of-contents-%e7%9b%ae%e6%ac%a1"
+  },
+  {
+   "file": "pages/29.json",
+   "id": 29,
+   "slug": "what-is-japanese"
+  },
+  {
+   "file": "pages/33.json",
+   "id": 33,
+   "slug": "style-guide"
+  },
+  {
+   "file": "pages/53.json",
+   "id": 53,
+   "slug": "pronunciation-i"
+  },
+  {
+   "file": "pages/59.json",
+   "id": 59,
+   "slug": "pronunciation-ii%e3%80%80%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%81%ae%e7%99%ba%e9%9f%b3%e2%91%a1"
+  },
+  {
+   "file": "pages/63.json",
+   "id": 63,
+   "slug": "pronunciation-iii-%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%81%ae%e7%99%ba%e9%9f%b3%e2%91%a2"
+  },
+  {
+   "file": "pages/65.json",
+   "id": 65,
+   "slug": "hiragana%e3%80%80%e3%81%b2%e3%82%89%e3%81%8c%e3%81%aa"
+  },
+  {
+   "file": "pages/67.json",
+   "id": 67,
+   "slug": "katakana%e3%80%80%e3%82%ab%e3%82%bf%e3%82%ab%e3%83%8a"
+  },
+  {
+   "file": "pages/69.json",
+   "id": 69,
+   "slug": "kana-iii-orthography%e3%80%80%e4%bb%ae%e5%90%8d%e9%81%a3%e3%81%84"
+  },
+  {
+   "file": "pages/71.json",
+   "id": 71,
+   "slug": "kanji-intro-i%e3%80%80%e6%bc%a2%e5%ad%97%e5%85%a5%e9%96%80%e2%91%a0"
+  },
+  {
+   "file": "pages/73.json",
+   "id": 73,
+   "slug": "kanji-intro-ii%e3%80%80%e6%bc%a2%e5%ad%97%e5%85%a5%e9%96%80%e2%91%a1"
+  },
+  {
+   "file": "pages/76.json",
+   "id": 76,
+   "slug": "nouns-and-pronouns%e3%80%80%e5%90%8d%e8%a9%9e%e3%81%a8%e4%bb%a3%e5%90%8d%e8%a9%9e"
+  },
+  {
+   "file": "pages/79.json",
+   "id": 79,
+   "slug": "copular-sentences-i%e3%80%80%e3%82%b3%e3%83%94%e3%83%a5%e3%83%a9%e6%96%87%ef%bc%88%e6%99%ae%e9%80%9a%e4%bd%93%ef%bc%89"
+  },
+  {
+   "file": "pages/81.json",
+   "id": 81,
+   "slug": "copular-sentences-ii%e3%80%80%e3%82%b3%e3%83%94%e3%83%a5%e3%83%a9%e6%96%87%ef%bc%88%e4%b8%81%e5%af%a7%e4%bd%93%ef%bc%89"
+  },
+  {
+   "file": "pages/83.json",
+   "id": 83,
+   "slug": "the-particle-ga-i%e3%80%80%e6%a0%bc%e5%8a%a9%e8%a9%9e%e3%80%8c%e3%81%8c%e3%80%8d%e2%91%a0"
+  },
+  {
+   "file": "pages/85.json",
+   "id": 85,
+   "slug": "the-particle-wa-%e3%81%af-i-the-topic-contrast-marker"
+  },
+  {
+   "file": "pages/87.json",
+   "id": 87,
+   "slug": "adjectives%e3%80%80%e5%bd%a2%e5%ae%b9%e8%a9%9e"
+  },
+  {
+   "file": "pages/89.json",
+   "id": 89,
+   "slug": "adjectival-nouns-i%e3%80%80%e5%bd%a2%e5%ae%b9%e5%8b%95%e8%a9%9e%e2%91%a0"
+  },
+  {
+   "file": "pages/91.json",
+   "id": 91,
+   "slug": "the-particle-wo-%e3%82%92-i"
+  },
+  {
+   "file": "pages/93.json",
+   "id": 93,
+   "slug": "ichidan-verbs%e3%80%80%e4%b8%80%e6%ae%b5%e6%b4%bb%e7%94%a8%e5%8b%95%e8%a9%9e"
+  },
+  {
+   "file": "pages/95.json",
+   "id": 95,
+   "slug": "godan-verbs%e3%80%80%e4%ba%94%e6%ae%b5%e6%b4%bb%e7%94%a8%e5%8b%95%e8%a9%9e"
+  },
+  {
+   "file": "pages/97.json",
+   "id": 97,
+   "slug": "the-verbs-suru-%e3%81%99%e3%82%8b-kuru-%e6%9d%a5%e3%82%8b"
+  },
+  {
+   "file": "pages/99.json",
+   "id": 99,
+   "slug": "the-particle-ka-%e3%81%8b-i-basic-questions"
+  },
+  {
+   "file": "pages/101.json",
+   "id": 101,
+   "slug": "the-particle-ka-%e3%81%8b-ii-%ef%bd%9e%e3%81%aa%e3%81%84%e3%81%8b"
+  },
+  {
+   "file": "pages/103.json",
+   "id": 103,
+   "slug": "the-particle-ga-%e3%81%8c-ii-object-marker"
+  },
+  {
+   "file": "pages/105.json",
+   "id": 105,
+   "slug": "the-particle-mo-%e3%82%82-i-also-too"
+  },
+  {
+   "file": "pages/107.json",
+   "id": 107,
+   "slug": "kosoado-i-this-that"
+  },
+  {
+   "file": "pages/109.json",
+   "id": 109,
+   "slug": "kosoado-ii-these-those"
+  },
+  {
+   "file": "pages/111.json",
+   "id": 111,
+   "slug": "kosoado-%e3%81%93%e3%81%9d%e3%81%82%e3%81%a9-iii-here-there"
+  },
+  {
+   "file": "pages/113.json",
+   "id": 113,
+   "slug": "greeting-phrases-%e6%8c%a8%e6%8b%b6%e3%81%ae%e8%a1%a8%e7%8f%be"
+  },
+  {
+   "file": "pages/115.json",
+   "id": 115,
+   "slug": "yes-phrases"
+  },
+  {
+   "file": "pages/118.json",
+   "id": 118,
+   "slug": "no-phrases"
+  },
+  {
+   "file": "pages/120.json",
+   "id": 120,
+   "slug": "expressions-of-gratitude%e3%80%80%e6%84%9f%e8%ac%9d%e3%81%ae%e8%a1%a8%e7%8f%be"
+  },
+  {
+   "file": "pages/122.json",
+   "id": 122,
+   "slug": "expressions-of-apology%e3%80%80%e3%81%8a%e8%a9%ab%e3%81%b3%e3%81%ae%e8%a8%80%e8%91%89"
+  },
+  {
+   "file": "pages/124.json",
+   "id": 124,
+   "slug": "the-conjunctive-particle-%e3%81%a6-i-the-affirmative"
+  },
+  {
+   "file": "pages/133.json",
+   "id": 133,
+   "slug": "counters-with-sino-japanese-numbers-i"
+  },
+  {
+   "file": "pages/135.json",
+   "id": 135,
+   "slug": "native-numbers-the-counter-%ef%bd%9e%e3%81%a4"
+  },
+  {
+   "file": "pages/137.json",
+   "id": 137,
+   "slug": "the-case-particle-%e3%81%ae-i"
+  },
+  {
+   "file": "pages/139.json",
+   "id": 139,
+   "slug": "the-particle-ni-%e3%81%ab-i"
+  },
+  {
+   "file": "pages/141.json",
+   "id": 141,
+   "slug": "the-particle-e-%e3%81%b8"
+  },
+  {
+   "file": "pages/143.json",
+   "id": 143,
+   "slug": "the-particle-de-%e3%81%a7-i"
+  },
+  {
+   "file": "pages/145.json",
+   "id": 145,
+   "slug": "the-particle-te-%e3%81%a6-ii-final-particle"
+  },
+  {
+   "file": "pages/147.json",
+   "id": 147,
+   "slug": "the-existential-verbs-%e3%81%82%e3%82%8b-%e3%81%84%e3%82%8b"
+  },
+  {
+   "file": "pages/149.json",
+   "id": 149,
+   "slug": "the-progressive-continued-state-te-iru-%ef%bd%9e%e3%81%a6%e3%81%84%e3%82%8b"
+  },
+  {
+   "file": "pages/151.json",
+   "id": 151,
+   "slug": "stative-verbs-te-aru-%ef%bd%9e%e3%81%a6%e3%81%82%e3%82%8b"
+  },
+  {
+   "file": "pages/154.json",
+   "id": 154,
+   "slug": "occupation"
+  },
+  {
+   "file": "pages/157.json",
+   "id": 157,
+   "slug": "countries-languages"
+  },
+  {
+   "file": "pages/159.json",
+   "id": 159,
+   "slug": "the-particle-%e3%81%a8-i"
+  },
+  {
+   "file": "pages/161.json",
+   "id": 161,
+   "slug": "the-particle-ni-%e3%81%ab-ii"
+  },
+  {
+   "file": "pages/163.json",
+   "id": 163,
+   "slug": "kosoado-iv"
+  },
+  {
+   "file": "pages/165.json",
+   "id": 165,
+   "slug": "interrogatives-i"
+  },
+  {
+   "file": "pages/167.json",
+   "id": 167,
+   "slug": "the-particle-ka-%e3%81%8b-iii-indirect-question"
+  },
+  {
+   "file": "pages/178.json",
+   "id": 178,
+   "slug": "copula-verb-variants"
+  },
+  {
+   "file": "pages/181.json",
+   "id": 181,
+   "slug": "the-particle-%e3%81%8b%e3%82%89"
+  },
+  {
+   "file": "pages/183.json",
+   "id": 183,
+   "slug": "the-particle-%e3%81%be%e3%81%a7"
+  },
+  {
+   "file": "pages/185.json",
+   "id": 185,
+   "slug": "adverbs-i"
+  },
+  {
+   "file": "pages/187.json",
+   "id": 187,
+   "slug": "adverbs-ii"
+  },
+  {
+   "file": "pages/189.json",
+   "id": 189,
+   "slug": "adjectives-ii-yoi-ii-%e8%89%af%e3%81%84"
+  },
+  {
+   "file": "pages/191.json",
+   "id": 191,
+   "slug": "adjectival-nouns-ii-no-adjectival-nouns"
+  },
+  {
+   "file": "pages/193.json",
+   "id": 193,
+   "slug": "adjectives-iii-%e5%a4%9a%e3%81%84-%e5%b0%91%e3%81%aa%e3%81%84"
+  },
+  {
+   "file": "pages/195.json",
+   "id": 195,
+   "slug": "adjectives-iv-%e5%90%8c%e3%81%98"
+  },
+  {
+   "file": "pages/197.json",
+   "id": 197,
+   "slug": "counters-iii-time-part-i-%e6%97%a5-%e9%80%b1%e9%96%93-%e6%9c%88-%e5%b9%b4-etc"
+  },
+  {
+   "file": "pages/199.json",
+   "id": 199,
+   "slug": "counters-iv-time-part-ii-%e6%99%82-%e6%99%82%e9%96%93-%e5%88%86-%e7%a7%92-%e6%99%a9-%e5%a4%9c"
+  },
+  {
+   "file": "pages/201.json",
+   "id": 201,
+   "slug": "time-iii-absolute-time"
+  },
+  {
+   "file": "pages/203.json",
+   "id": 203,
+   "slug": "because-%e3%81%8b%e3%82%89-%e3%81%ae%e3%81%a7-%e3%81%ae%e3%81%a0"
+  },
+  {
+   "file": "pages/205.json",
+   "id": 205,
+   "slug": "the-particle-%e3%81%ae%e3%81%ab"
+  },
+  {
+   "file": "pages/207.json",
+   "id": 207,
+   "slug": "criticizing-%e3%81%8f%e3%81%9b%e3%81%ab%e3%83%bb%e3%81%8f%e3%81%9b%e3%81%97%e3%81%a6"
+  },
+  {
+   "file": "pages/209.json",
+   "id": 209,
+   "slug": "adnominal-adjectives-i-vs-na"
+  },
+  {
+   "file": "pages/211.json",
+   "id": 211,
+   "slug": "before-%e5%89%8d"
+  },
+  {
+   "file": "pages/213.json",
+   "id": 213,
+   "slug": "after-i-%e3%81%82%e3%81%a8-%e3%81%ae%e3%81%a1-%ef%bd%9e%e3%81%a6%e3%81%8b%e3%82%89"
+  },
+  {
+   "file": "pages/215.json",
+   "id": 215,
+   "slug": "when-%e6%99%82"
+  },
+  {
+   "file": "pages/217.json",
+   "id": 217,
+   "slug": "time-iv-relative-time"
+  },
+  {
+   "file": "pages/219.json",
+   "id": 219,
+   "slug": "transitivity-i-transitive-intransitive-forms"
+  },
+  {
+   "file": "pages/221.json",
+   "id": 221,
+   "slug": "the-particle-%e3%81%a8-ii-citation"
+  },
+  {
+   "file": "pages/223.json",
+   "id": 223,
+   "slug": "the-particle-%e3%81%a7%e3%82%82"
+  },
+  {
+   "file": "pages/225.json",
+   "id": 225,
+   "slug": "the-particle-%e3%82%84"
+  },
+  {
+   "file": "pages/227.json",
+   "id": 227,
+   "slug": "the-particle-%e3%81%97"
+  },
+  {
+   "file": "pages/230.json",
+   "id": 230,
+   "slug": "%e3%81%93%e3%81%9d%e3%81%82%e3%81%a9-v-%e3%82%93%e3%81%aa-%ef%bd%9e%e3%81%84%e3%81%86%e9%a2%a8%e3%81%aa-etc"
+  },
+  {
+   "file": "pages/232.json",
+   "id": 232,
+   "slug": "while-i-%e9%96%93"
+  },
+  {
+   "file": "pages/235.json",
+   "id": 235,
+   "slug": "while-ii-%e3%81%86%e3%81%a1"
+  },
+  {
+   "file": "pages/237.json",
+   "id": 237,
+   "slug": "time-phrases-%e3%81%ab"
+  },
+  {
+   "file": "pages/239.json",
+   "id": 239,
+   "slug": "giving-verbs"
+  },
+  {
+   "file": "pages/241.json",
+   "id": 241,
+   "slug": "permission"
+  },
+  {
+   "file": "pages/243.json",
+   "id": 243,
+   "slug": "the-conjunctive-particles-%e3%81%8c-%e3%81%91%e3%82%8c%e3%81%a9"
+  },
+  {
+   "file": "pages/245.json",
+   "id": 245,
+   "slug": "%e8%aa%9e%e5%b0%be-i-%e3%82%88-%e3%81%ad"
+  },
+  {
+   "file": "pages/247.json",
+   "id": 247,
+   "slug": "%e8%aa%9e%e5%b0%be-ii-%e3%82%8f-%e3%81%aa-%e3%81%a8-%e3%81%ae-%e3%81%95-%e3%81%9e-%e3%81%9c-%e3%81%88"
+  },
+  {
+   "file": "pages/249.json",
+   "id": 249,
+   "slug": "start-to-%ef%bd%9e%e5%a7%8b%e3%82%81%e3%82%8b-%ef%bd%9e%e5%87%ba%e3%81%99-%ef%bd%9e%e3%81%8b%e3%81%91%e3%82%8b"
+  },
+  {
+   "file": "pages/251.json",
+   "id": 251,
+   "slug": "end-%ef%bd%9e%e7%b5%82%e3%82%8f%e3%82%8b%e3%83%bb%e7%b5%82%e3%81%88%e3%82%8b-%ef%bd%9e%e3%82%84%e3%82%80-%ef%bd%9e%e4%b8%8a%e3%81%8c%e3%82%8b%e3%83%bb%e4%b8%8a%e3%81%92%e3%82%8b"
+  },
+  {
+   "file": "pages/253.json",
+   "id": 253,
+   "slug": "whenever-%e6%af%8e%ef%bd%9e-%ef%bd%9e%e6%af%8e%e3%81%ab-%ef%bd%9e%e3%81%8a%e3%81%8d%e3%81%ab"
+  },
+  {
+   "file": "pages/255.json",
+   "id": 255,
+   "slug": "potential-i-the-potential-form"
+  },
+  {
+   "file": "pages/257.json",
+   "id": 257,
+   "slug": "potential-ii-%e3%81%a7%e3%81%8d%e3%82%8b"
+  },
+  {
+   "file": "pages/259.json",
+   "id": 259,
+   "slug": "pronouns-ii"
+  },
+  {
+   "file": "pages/261.json",
+   "id": 261,
+   "slug": "the-particle-%e3%81%a0%e3%81%91"
+  },
+  {
+   "file": "pages/263.json",
+   "id": 263,
+   "slug": "the-particle-%e3%82%82-ii"
+  },
+  {
+   "file": "pages/265.json",
+   "id": 265,
+   "slug": "the-non-question-how-%ef%bd%9e%e6%96%b9%e3%81%8b%e3%81%9f"
+  },
+  {
+   "file": "pages/267.json",
+   "id": 267,
+   "slug": "interrogatives-ii-the-question-how"
+  },
+  {
+   "file": "pages/269.json",
+   "id": 269,
+   "slug": "interrogatives-iii-with-particles"
+  },
+  {
+   "file": "pages/271.json",
+   "id": 271,
+   "slug": "the-particle-%e3%81%ae-ii"
+  },
+  {
+   "file": "pages/273.json",
+   "id": 273,
+   "slug": "the-particle-%e3%81%a7-ii"
+  },
+  {
+   "file": "pages/275.json",
+   "id": 275,
+   "slug": "might-%e3%81%8b%e3%82%82%e3%81%97%e3%82%8c%e3%81%aa%e3%81%84"
+  },
+  {
+   "file": "pages/277.json",
+   "id": 277,
+   "slug": "pluralization"
+  },
+  {
+   "file": "pages/279.json",
+   "id": 279,
+   "slug": "pluralization-ii-%ef%bd%9e%e3%81%9f%e3%81%a1"
+  },
+  {
+   "file": "pages/294.json",
+   "id": 294,
+   "slug": "%ef%bd%9e%e3%81%a6%e3%81%82%e3%81%92%e3%82%8b-%ef%bd%9e%e3%81%a6%e3%81%8f%e3%82%8c%e3%82%8b-%ef%bd%9e%e3%81%a6%e3%82%82%e3%82%89%e3%81%86"
+  },
+  {
+   "file": "pages/300.json",
+   "id": 300,
+   "slug": "%ef%bd%9e%e3%81%a6%e3%81%82%e3%81%92%e3%82%8b-%ef%bd%9e%e3%81%a6%e3%81%8f%e3%82%8c%e3%82%8b-%ef%bd%9e%e3%81%a6%e3%82%82%e3%82%89%e3%81%86-2"
+  },
+  {
+   "file": "pages/302.json",
+   "id": 302,
+   "slug": "%e7%9f%a5%e3%82%8b-vs-%e5%88%86%e3%81%8b%e3%82%8b"
+  },
+  {
+   "file": "pages/304.json",
+   "id": 304,
+   "slug": "counters-v"
+  },
+  {
+   "file": "pages/306.json",
+   "id": 306,
+   "slug": "counters-vi"
+  },
+  {
+   "file": "pages/308.json",
+   "id": 308,
+   "slug": "want-feeling-i-%ef%bd%9e%e3%81%9f%e3%81%84-%e3%81%bb%e3%81%97%e3%81%84"
+  },
+  {
+   "file": "pages/310.json",
+   "id": 310,
+   "slug": "the-auxiliary-verb-%ef%bd%9e%e3%81%8c%e3%82%8b"
+  },
+  {
+   "file": "pages/312.json",
+   "id": 312,
+   "slug": "the-particle-%e3%81%9f%e3%82%8a"
+  },
+  {
+   "file": "pages/314.json",
+   "id": 314,
+   "slug": "nominalization"
+  },
+  {
+   "file": "pages/316.json",
+   "id": 316,
+   "slug": "expressions-with-%e3%81%93%e3%81%a8"
+  },
+  {
+   "file": "pages/318.json",
+   "id": 318,
+   "slug": "the-particle-%e3%81%aa%e3%81%8c%e3%82%89-i-simultaneous-action"
+  },
+  {
+   "file": "pages/320.json",
+   "id": 320,
+   "slug": "greetings-ii%e3%80%80%e6%8c%a8%e6%8b%b6%e8%a1%a8%e7%8f%be%e3%80%81%e3%81%9d%e3%81%ae%e4%ba%8c"
+  },
+  {
+   "file": "pages/322.json",
+   "id": 322,
+   "slug": "the-verbs-for-to-wear-to-take-off"
+  },
+  {
+   "file": "pages/324.json",
+   "id": 324,
+   "slug": "the-verbs-for-to-play"
+  },
+  {
+   "file": "pages/326.json",
+   "id": 326,
+   "slug": "to-cost-money-terminology"
+  },
+  {
+   "file": "pages/328.json",
+   "id": 328,
+   "slug": "difficult-i-%ef%bd%9e%e3%81%ab%e3%81%8f%e3%81%84"
+  },
+  {
+   "file": "pages/330.json",
+   "id": 330,
+   "slug": "too-%ef%bd%9e%e3%81%99%e3%81%8e%e3%82%8b"
+  },
+  {
+   "file": "pages/332.json",
+   "id": 332,
+   "slug": "the-verbs-%e7%b6%9a%e3%81%8f-%ef%bc%86-%e7%b6%9a%e3%81%91%e3%82%8b"
+  },
+  {
+   "file": "pages/334.json",
+   "id": 334,
+   "slug": "shika-hoka"
+  },
+  {
+   "file": "pages/336.json",
+   "id": 336,
+   "slug": "the-conditionals"
+  },
+  {
+   "file": "pages/338.json",
+   "id": 338,
+   "slug": "conditional-phrases"
+  },
+  {
+   "file": "pages/340.json",
+   "id": 340,
+   "slug": "the-particle-%e3%82%82-iii"
+  },
+  {
+   "file": "pages/342.json",
+   "id": 342,
+   "slug": "must-not"
+  },
+  {
+   "file": "pages/344.json",
+   "id": 344,
+   "slug": "must"
+  },
+  {
+   "file": "pages/346.json",
+   "id": 346,
+   "slug": "ikanai-ikenai"
+  },
+  {
+   "file": "pages/348.json",
+   "id": 348,
+   "slug": "directions"
+  },
+  {
+   "file": "pages/350.json",
+   "id": 350,
+   "slug": "the-verb-%e6%80%a5%e3%81%90"
+  },
+  {
+   "file": "pages/352.json",
+   "id": 352,
+   "slug": "agent-marker-ni"
+  },
+  {
+   "file": "pages/354.json",
+   "id": 354,
+   "slug": "the-passive"
+  },
+  {
+   "file": "pages/356.json",
+   "id": 356,
+   "slug": "%e3%83%8b%e6%a0%bc-vs-%e3%82%ab%e3%83%a9%e6%a0%bc"
+  },
+  {
+   "file": "pages/358.json",
+   "id": 358,
+   "slug": "the-causative-i-%ef%bd%9e%e3%81%95%e3%81%9b%e3%82%8b-%ef%bd%9e%e3%81%9b%e3%82%8b"
+  },
+  {
+   "file": "pages/360.json",
+   "id": 360,
+   "slug": "causative-passive"
+  },
+  {
+   "file": "pages/362.json",
+   "id": 362,
+   "slug": "the-volitional-i"
+  },
+  {
+   "file": "pages/364.json",
+   "id": 364,
+   "slug": "family"
+  },
+  {
+   "file": "pages/366.json",
+   "id": 366,
+   "slug": "honorifics-i-%e6%95%ac%e7%a7%b0-i-%ef%bd%9e%e3%81%95%e3%82%93-%ef%bd%9e%e6%a7%98-etc"
+  },
+  {
+   "file": "pages/368.json",
+   "id": 368,
+   "slug": "honorifics-iii-nouns"
+  },
+  {
+   "file": "pages/370.json",
+   "id": 370,
+   "slug": "honorifics-iv-adjectives-the-copula"
+  },
+  {
+   "file": "pages/372.json",
+   "id": 372,
+   "slug": "honorifics-v-light-keigo"
+  },
+  {
+   "file": "pages/374.json",
+   "id": 374,
+   "slug": "honorifics-vi-regular-verbs"
+  },
+  {
+   "file": "pages/376.json",
+   "id": 376,
+   "slug": "honorifics-vii-irregular-verbs-i"
+  },
+  {
+   "file": "pages/378.json",
+   "id": 378,
+   "slug": "what-when"
+  },
+  {
+   "file": "pages/380.json",
+   "id": 380,
+   "slug": "who-where"
+  },
+  {
+   "file": "pages/382.json",
+   "id": 382,
+   "slug": "why"
+  },
+  {
+   "file": "pages/384.json",
+   "id": 384,
+   "slug": "which"
+  },
+  {
+   "file": "pages/386.json",
+   "id": 386,
+   "slug": "%ef%bd%9e%e3%81%a6%e3%81%84%e3%81%8f-%ef%bd%9e%e3%81%a6%e3%81%8f%e3%82%8b"
+  },
+  {
+   "file": "pages/388.json",
+   "id": 388,
+   "slug": "best-that"
+  },
+  {
+   "file": "pages/390.json",
+   "id": 390,
+   "slug": "%ef%bd%9e%e3%81%a6%e3%81%97%e3%81%be%e3%81%86"
+  },
+  {
+   "file": "pages/392.json",
+   "id": 392,
+   "slug": "advanced-preparation-%ef%bd%9e%e3%81%a6%e3%81%8a%e3%81%8f"
+  },
+  {
+   "file": "pages/410.json",
+   "id": 410,
+   "slug": "easy-i-%ef%bd%9e%e3%82%84%e3%81%99%e3%81%84"
+  },
+  {
+   "file": "pages/412.json",
+   "id": 412,
+   "slug": "honorifics-i-%e6%95%ac%e7%a7%b0-i-%ef%bd%9e%e3%81%95%e3%82%93-%ef%bd%9e%e6%a7%98-etc-2"
+  },
+  {
+   "file": "pages/415.json",
+   "id": 415,
+   "slug": "the-passive-ii-%e4%b8%8d%e5%8f%af%e6%8a%97%e5%8a%9b%e3%81%ae%e5%8f%97%e8%ba%ab"
+  },
+  {
+   "file": "pages/417.json",
+   "id": 417,
+   "slug": "honorifics-ii-standalone-%e6%95%ac%e7%a7%b0"
+  },
+  {
+   "file": "pages/426.json",
+   "id": 426,
+   "slug": "%ef%bd%9e%e3%81%9f%e3%82%81%e3%81%ab-i-in-order-to"
+  },
+  {
+   "file": "pages/428.json",
+   "id": 428,
+   "slug": "due-to"
+  },
+  {
+   "file": "pages/430.json",
+   "id": 430,
+   "slug": "so-that"
+  },
+  {
+   "file": "pages/432.json",
+   "id": 432,
+   "slug": "%ef%bd%9e%e3%81%a8%e3%81%8a%e3%82%8a%e3%81%ab"
+  },
+  {
+   "file": "pages/434.json",
+   "id": 434,
+   "slug": "trying"
+  },
+  {
+   "file": "pages/436.json",
+   "id": 436,
+   "slug": "try-ii"
+  },
+  {
+   "file": "pages/438.json",
+   "id": 438,
+   "slug": "the-particles-%e3%81%a8%e3%81%8b-%e3%81%aa%e3%81%a9-%e3%81%aa%e3%82%93%e3%81%8b"
+  },
+  {
+   "file": "pages/440.json",
+   "id": 440,
+   "slug": "the-particle-%e3%81%aa%e3%82%93%e3%81%a6"
+  },
+  {
+   "file": "pages/442.json",
+   "id": 442,
+   "slug": "the-particles-%e3%81%bb%e3%81%a9-%e3%81%8f%e3%82%89%e3%81%84"
+  },
+  {
+   "file": "pages/444.json",
+   "id": 444,
+   "slug": "the-particle-%e3%82%88%e3%82%8a"
+  },
+  {
+   "file": "pages/446.json",
+   "id": 446,
+   "slug": "similarity"
+  },
+  {
+   "file": "pages/448.json",
+   "id": 448,
+   "slug": "seem-%ef%bd%9e%e3%81%9d%e3%81%86%e3%81%a0"
+  },
+  {
+   "file": "pages/450.json",
+   "id": 450,
+   "slug": "hearsay"
+  },
+  {
+   "file": "pages/452.json",
+   "id": 452,
+   "slug": "citation-ii-%ef%bd%9e%e3%81%a8%e3%81%84%e3%81%86-%ef%bd%9e%e3%81%a8%e3%81%84%e3%81%86%e3%81%93%e3%81%a8-%ef%bd%9e%e3%81%a8%e3%81%84%e3%81%86%e3%82%82%e3%81%ae"
+  },
+  {
+   "file": "pages/454.json",
+   "id": 454,
+   "slug": "the-superlative"
+  },
+  {
+   "file": "pages/456.json",
+   "id": 456,
+   "slug": "the-imperative"
+  },
+  {
+   "file": "pages/458.json",
+   "id": 458,
+   "slug": "direction-intransitives-%e3%82%92-%e5%90%91%e3%81%8f"
+  },
+  {
+   "file": "pages/460.json",
+   "id": 460,
+   "slug": "fix-error-%ef%bd%9e%e5%bf%98%e3%82%8c%e3%82%8b-%ef%bd%9e%e7%9b%b4%e3%81%99-%e9%96%93%e9%81%95%e3%81%88%e3%82%8b-%ef%bd%9e%e8%aa%a4%e3%82%8b"
+  },
+  {
+   "file": "pages/463.json",
+   "id": 463,
+   "slug": "used-to-together"
+  },
+  {
+   "file": "pages/465.json",
+   "id": 465,
+   "slug": "adverbs-iii"
+  },
+  {
+   "file": "pages/468.json",
+   "id": 468,
+   "slug": "onomatopoeia-%e6%93%ac%e5%a3%b0%e8%aa%9e-i-%e6%93%ac%e9%9f%b3%e8%aa%9e-i"
+  },
+  {
+   "file": "pages/470.json",
+   "id": 470,
+   "slug": "plants-animals"
+  },
+  {
+   "file": "pages/474.json",
+   "id": 474,
+   "slug": "onomatopoeia-ii"
+  },
+  {
+   "file": "pages/476.json",
+   "id": 476,
+   "slug": "onomatopoeia-iii"
+  },
+  {
+   "file": "pages/478.json",
+   "id": 478,
+   "slug": "during-throughout"
+  },
+  {
+   "file": "pages/480.json",
+   "id": 480,
+   "slug": "the-body"
+  },
+  {
+   "file": "pages/483.json",
+   "id": 483,
+   "slug": "colors-i%e3%80%80%e8%89%b2%e3%81%ae%e8%a1%a8%e7%8f%be%e3%80%81%e3%81%9d%e3%81%ae%e4%b8%80"
+  },
+  {
+   "file": "pages/485.json",
+   "id": 485,
+   "slug": "color-ii%e3%80%80%e3%80%80%e8%89%b2%e3%81%ae%e8%a1%a8%e7%8f%be%e3%80%81%e3%81%9d%e3%81%ae%e4%ba%8c"
+  },
+  {
+   "file": "pages/487.json",
+   "id": 487,
+   "slug": "food"
+  },
+  {
+   "file": "pages/490.json",
+   "id": 490,
+   "slug": "astronomy-the-planets-more"
+  },
+  {
+   "file": "pages/492.json",
+   "id": 492,
+   "slug": "or"
+  },
+  {
+   "file": "pages/494.json",
+   "id": 494,
+   "slug": "adjective-nominalization"
+  },
+  {
+   "file": "pages/496.json",
+   "id": 496,
+   "slug": "adjective-nominalization-ii"
+  },
+  {
+   "file": "pages/500.json",
+   "id": 500,
+   "slug": "ga-vs-wo"
+  },
+  {
+   "file": "pages/502.json",
+   "id": 502,
+   "slug": "idioms-i-%e6%b0%97"
+  },
+  {
+   "file": "pages/504.json",
+   "id": 504,
+   "slug": "how-to-use-%e5%85%83%e6%b0%97"
+  },
+  {
+   "file": "pages/506.json",
+   "id": 506,
+   "slug": "conjunctions"
+  },
+  {
+   "file": "pages/508.json",
+   "id": 508,
+   "slug": "negative-prefixes"
+  },
+  {
+   "file": "pages/510.json",
+   "id": 510,
+   "slug": "prefixes-suffixes-counters"
+  },
+  {
+   "file": "pages/512.json",
+   "id": 512,
+   "slug": "good-bad-at"
+  },
+  {
+   "file": "pages/514.json",
+   "id": 514,
+   "slug": "like-love"
+  },
+  {
+   "file": "pages/516.json",
+   "id": 516,
+   "slug": "hate"
+  },
+  {
+   "file": "pages/518.json",
+   "id": 518,
+   "slug": "old"
+  },
+  {
+   "file": "pages/520.json",
+   "id": 520,
+   "slug": "%e4%ba%88%e6%83%b3%e9%80%9a%e3%82%8a%e3%81%ae%e3%80%80%e3%80%8c%e3%82%84%e3%81%af%e3%82%8a%e3%83%bb%e3%81%95%e3%81%99%e3%81%8c%e3%80%8d"
+  },
+  {
+   "file": "pages/522.json",
+   "id": 522,
+   "slug": "the-adverbs-%e3%81%9b%e3%81%a3%e3%81%8b%e3%81%8f-%e3%82%8f%e3%81%96%e3%82%8f%e3%81%96"
+  },
+  {
+   "file": "pages/524.json",
+   "id": 524,
+   "slug": "semete"
+  },
+  {
+   "file": "pages/527.json",
+   "id": 527,
+   "slug": "idioms-ii-phrases"
+  },
+  {
+   "file": "pages/529.json",
+   "id": 529,
+   "slug": "suru-verbs"
+  },
+  {
+   "file": "pages/531.json",
+   "id": 531,
+   "slug": "the-suffix-ka%e3%80%80%e6%8e%a5%e5%b0%be%e8%be%9e%e3%81%ae%e3%80%8c%ef%bd%9e%e5%8c%96%e3%80%8d"
+  },
+  {
+   "file": "pages/535.json",
+   "id": 535,
+   "slug": "about-2"
+  },
+  {
+   "file": "pages/537.json",
+   "id": 537,
+   "slug": "the-particle-%e3%81%97%e3%82%82"
+  },
+  {
+   "file": "pages/539.json",
+   "id": 539,
+   "slug": "%ef%bd%9e%e3%81%a6%e3%81%82%e3%82%8b-ii-with-%e3%82%92"
+  },
+  {
+   "file": "pages/541.json",
+   "id": 541,
+   "slug": "%e8%aa%9e%e5%b0%be-iii"
+  },
+  {
+   "file": "pages/543.json",
+   "id": 543,
+   "slug": "the-particle-%e3%81%a6-iii"
+  },
+  {
+   "file": "pages/545.json",
+   "id": 545,
+   "slug": "the-particle-%e3%82%82-iv"
+  },
+  {
+   "file": "pages/547.json",
+   "id": 547,
+   "slug": "the-particle-%e3%82%82-v-adverb-intensifier%e3%80%8c%e3%82%82%e3%80%8d%e3%81%ab%e3%82%88%e3%82%8b%e5%89%af%e8%a9%9e%e3%81%ae%e5%8f%96%e3%82%8a%e7%ab%8b%e3%81%a6%e5%bd%a2"
+  },
+  {
+   "file": "pages/549.json",
+   "id": 549,
+   "slug": "planning-obligation"
+  },
+  {
+   "file": "pages/552.json",
+   "id": 552,
+   "slug": "%e3%81%9a%e3%81%a4-%e3%82%8f%e3%82%8a%e3%81%a7"
+  },
+  {
+   "file": "pages/554.json",
+   "id": 554,
+   "slug": "the-auxiliary-verb-%ef%bd%9e%e3%81%9a-i"
+  },
+  {
+   "file": "pages/556.json",
+   "id": 556,
+   "slug": "reflexive-pronouns"
+  },
+  {
+   "file": "pages/558.json",
+   "id": 558,
+   "slug": "numbers-vi-ordinal-numbers"
+  },
+  {
+   "file": "pages/560.json",
+   "id": 560,
+   "slug": "counters-viii"
+  },
+  {
+   "file": "pages/562.json",
+   "id": 562,
+   "slug": "adjectives-vi-compounds%e3%80%80%e5%bd%a2%e5%ae%b9%e8%a9%9e%e8%aa%9e%e5%b9%b9%ef%bc%8b%e5%90%8d%e8%a9%9e"
+  },
+  {
+   "file": "pages/564.json",
+   "id": 564,
+   "slug": "counters-ix-counters-with-%e3%83%b6%e3%83%bb%e3%83%b5"
+  },
+  {
+   "file": "pages/566.json",
+   "id": 566,
+   "slug": "the-body-ii-idioms-and-proverbs"
+  },
+  {
+   "file": "pages/569.json",
+   "id": 569,
+   "slug": "adjectives-vii-the-grammaticality-of-adjective-%e3%81%a7%e3%81%99"
+  },
+  {
+   "file": "pages/571.json",
+   "id": 571,
+   "slug": "adjectives-viii-sound-changes"
+  },
+  {
+   "file": "pages/573.json",
+   "id": 573,
+   "slug": "adjectives-ix-old-bases"
+  },
+  {
+   "file": "pages/575.json",
+   "id": 575,
+   "slug": "interjections"
+  },
+  {
+   "file": "pages/577.json",
+   "id": 577,
+   "slug": "the-bases"
+  },
+  {
+   "file": "pages/580.json",
+   "id": 580,
+   "slug": "%e9%80%a3%e7%94%a8%e5%bd%a2%e3%80%80%e2%86%92%e3%80%80noun"
+  },
+  {
+   "file": "pages/582.json",
+   "id": 582,
+   "slug": "%e9%80%a3%e7%94%a8%e4%b8%ad%e6%ad%a2%e5%bd%a2"
+  },
+  {
+   "file": "pages/584.json",
+   "id": 584,
+   "slug": "tense-i-the-auxiliary-verb-ta"
+  },
+  {
+   "file": "pages/586.json",
+   "id": 586,
+   "slug": "tense-ii-the-morpheme-ru-u"
+  },
+  {
+   "file": "pages/588.json",
+   "id": 588,
+   "slug": "%ef%bd%9e%e3%81%a6%e3%81%af"
+  },
+  {
+   "file": "pages/590.json",
+   "id": 590,
+   "slug": "the-particle-%e3%81%ae%e3%81%bf"
+  },
+  {
+   "file": "pages/592.json",
+   "id": 592,
+   "slug": "the-particle-%e3%81%93%e3%81%9d"
+  },
+  {
+   "file": "pages/594.json",
+   "id": 594,
+   "slug": "%e3%82%8f%e3%81%91%e3%81%a0"
+  },
+  {
+   "file": "pages/596.json",
+   "id": 596,
+   "slug": "%e3%82%8f%e3%81%91%e3%81%a7%e3%81%af%e3%81%aa%e3%81%84-%e3%82%8f%e3%81%91%e3%81%8c%e3%81%aa%e3%81%84-%e3%82%8f%e3%81%91%e3%81%ab%e3%81%af%e3%81%84%e3%81%8b%e3%81%aa%e3%81%84"
+  },
+  {
+   "file": "pages/598.json",
+   "id": 598,
+   "slug": "the-particle-%e3%81%aa%e3%81%8c%e3%82%89-ii-%e3%81%aa%e3%81%8c%e3%82%89%ef%bc%88%e3%82%82%ef%bc%89-%e3%81%aa%e3%81%8c%e3%82%89%e3%81%ab%ef%bc%88%e3%81%97%e3%81%a6%ef%bc%89"
+  },
+  {
+   "file": "pages/600.json",
+   "id": 600,
+   "slug": "no-doubt-that"
+  },
+  {
+   "file": "pages/602.json",
+   "id": 602,
+   "slug": "based-on"
+  },
+  {
+   "file": "pages/605.json",
+   "id": 605,
+   "slug": "after-ii"
+  },
+  {
+   "file": "pages/607.json",
+   "id": 607,
+   "slug": "circumstance-%e5%a0%b4%e5%90%88-%ef%bd%9e%e3%81%ab%e5%82%99%e3%81%88%e3%81%a6"
+  },
+  {
+   "file": "pages/609.json",
+   "id": 609,
+   "slug": "whenever-ii-%ef%bd%9e%e5%ba%a6%e3%81%ab-%ef%bd%9e%e9%83%bd%e5%ba%a6%e3%80%80-%ef%bd%9e%e3%81%ab%e3%81%a4%e3%81%91"
+  },
+  {
+   "file": "pages/611.json",
+   "id": 611,
+   "slug": "the-supplementary-verb-%e3%81%99%e3%82%8b"
+  },
+  {
+   "file": "pages/613.json",
+   "id": 613,
+   "slug": "%ef%bd%9e%e3%81%ab%e5%af%be%e3%81%97%e3%81%a6"
+  },
+  {
+   "file": "pages/615.json",
+   "id": 615,
+   "slug": "intransitive-transitive-part-1"
+  },
+  {
+   "file": "pages/617.json",
+   "id": 617,
+   "slug": "intransitive-transitive-part-ii"
+  },
+  {
+   "file": "pages/619.json",
+   "id": 619,
+   "slug": "standpoint-%e3%81%a8%e3%81%97%e3%81%a6%ef%bc%88%e3%81%af%ef%bc%89-vs-%e3%81%ab%e3%81%a8%e3%81%a3%e3%81%a6%ef%bc%88%e3%81%af%ef%bc%89"
+  },
+  {
+   "file": "pages/621.json",
+   "id": 621,
+   "slug": "through-%e3%82%92%e9%80%9a%e3%81%98%e3%81%a6-%e3%82%92%e9%80%9a%e3%81%97%e3%81%a6"
+  },
+  {
+   "file": "pages/623.json",
+   "id": 623,
+   "slug": "span-%ef%bd%9e%e3%81%ab%e3%81%8b%e3%81%91%e3%81%a6-%e3%81%ab%e3%82%8f%e3%81%9f%e3%81%a3%e3%81%a6"
+  },
+  {
+   "file": "pages/625.json",
+   "id": 625,
+   "slug": "%ef%bd%9e%e3%81%ab%e3%82%88%e3%81%a3%e3%81%a6"
+  },
+  {
+   "file": "pages/627.json",
+   "id": 627,
+   "slug": "%ef%bd%9e%e3%81%96%e3%82%8b%e3%82%92%e5%be%97%e3%81%aa%e3%81%84-%e3%82%84%e3%82%80%e3%82%92%e5%be%97%e3%81%aa%e3%81%84"
+  },
+  {
+   "file": "pages/629.json",
+   "id": 629,
+   "slug": "causative-form-issues"
+  },
+  {
+   "file": "pages/632.json",
+   "id": 632,
+   "slug": "intransitive-vs-passive"
+  },
+  {
+   "file": "pages/634.json",
+   "id": 634,
+   "slug": "intransitive-passive-verbs"
+  },
+  {
+   "file": "pages/636.json",
+   "id": 636,
+   "slug": "transitive-passive"
+  },
+  {
+   "file": "pages/638.json",
+   "id": 638,
+   "slug": "the-particles-%e3%81%95%e3%81%88-%e3%81%99%e3%82%89-%e3%81%a0%e3%81%ab"
+  },
+  {
+   "file": "pages/640.json",
+   "id": 640,
+   "slug": "okinawan-script"
+  },
+  {
+   "file": "pages/654.json",
+   "id": 654,
+   "slug": "%ef%bd%9e%e3%81%ab%e3%81%8a%e3%81%84%e3%81%a6%e3%83%bb%e3%81%ab%e3%81%8a%e3%81%91%e3%82%8b"
+  },
+  {
+   "file": "pages/656.json",
+   "id": 656,
+   "slug": "negative-patterns"
+  },
+  {
+   "file": "pages/660.json",
+   "id": 660,
+   "slug": "potential-iv"
+  },
+  {
+   "file": "pages/662.json",
+   "id": 662,
+   "slug": "exception"
+  },
+  {
+   "file": "pages/664.json",
+   "id": 664,
+   "slug": "cant-help-i"
+  },
+  {
+   "file": "pages/666.json",
+   "id": 666,
+   "slug": "cant-help-ii"
+  },
+  {
+   "file": "pages/668.json",
+   "id": 668,
+   "slug": "cant-help-iii"
+  },
+  {
+   "file": "pages/670.json",
+   "id": 670,
+   "slug": "easy-ii-%ef%bd%9e%e3%82%88%e3%81%84"
+  },
+  {
+   "file": "pages/672.json",
+   "id": 672,
+   "slug": "the-verb-%e7%b5%a6%e3%81%b5"
+  },
+  {
+   "file": "pages/674.json",
+   "id": 674,
+   "slug": "intro-to-classical"
+  },
+  {
+   "file": "pages/677.json",
+   "id": 677,
+   "slug": "rain%e3%80%80%e9%9b%a8"
+  },
+  {
+   "file": "pages/679.json",
+   "id": 679,
+   "slug": "holidays%e3%80%80%e6%97%a5%e6%9c%ac%e3%81%ae%e7%a5%9d%e6%97%a5"
+  },
+  {
+   "file": "pages/681.json",
+   "id": 681,
+   "slug": "considering-%e3%82%8f%e3%82%8a%e3%81%ab%ef%bc%88%e3%81%af%ef%bc%89-%e3%81%ab%e3%81%97%e3%81%a6%e3%81%af"
+  },
+  {
+   "file": "pages/683.json",
+   "id": 683,
+   "slug": "disregard-i"
+  },
+  {
+   "file": "pages/685.json",
+   "id": 685,
+   "slug": "disregard-ii"
+  },
+  {
+   "file": "pages/687.json",
+   "id": 687,
+   "slug": "disregard-iii"
+  },
+  {
+   "file": "pages/711.json",
+   "id": 711,
+   "slug": "disregard-iv"
+  },
+  {
+   "file": "pages/713.json",
+   "id": 713,
+   "slug": "difficult-ii-%ef%bd%9e%e3%81%8c%e3%81%9f%e3%81%84-%ef%bd%9e%e3%81%a5%e3%82%89%e3%81%84"
+  },
+  {
+   "file": "pages/715.json",
+   "id": 715,
+   "slug": "intransitive-transitive-part-3"
+  },
+  {
+   "file": "pages/717.json",
+   "id": 717,
+   "slug": "intransitive-transitive-part-4"
+  },
+  {
+   "file": "pages/719.json",
+   "id": 719,
+   "slug": "intransitive-transitive-part-v-sino-japanese-verbs"
+  },
+  {
+   "file": "pages/721.json",
+   "id": 721,
+   "slug": "limit"
+  },
+  {
+   "file": "pages/724.json",
+   "id": 724,
+   "slug": "addition"
+  },
+  {
+   "file": "pages/726.json",
+   "id": 726,
+   "slug": "the-particle-%e3%81%a8-iii-%e3%81%a8-%ef%bd%9e%e3%81%aa%e3%81%84"
+  },
+  {
+   "file": "pages/728.json",
+   "id": 728,
+   "slug": "negative-volition-%ef%bd%9e%e3%81%be%e3%81%84"
+  },
+  {
+   "file": "pages/730.json",
+   "id": 730,
+   "slug": "as-soon-as"
+  },
+  {
+   "file": "pages/732.json",
+   "id": 732,
+   "slug": "combination-particles-with-%e3%81%a8%e3%81%93%e3%82%8d"
+  },
+  {
+   "file": "pages/734.json",
+   "id": 734,
+   "slug": "%e4%bb%a5-adverbial-nouns"
+  },
+  {
+   "file": "pages/736.json",
+   "id": 736,
+   "slug": "circumstance"
+  },
+  {
+   "file": "pages/738.json",
+   "id": 738,
+   "slug": "result"
+  },
+  {
+   "file": "pages/740.json",
+   "id": 740,
+   "slug": "compare-contrast"
+  },
+  {
+   "file": "pages/742.json",
+   "id": 742,
+   "slug": "as-change"
+  },
+  {
+   "file": "pages/744.json",
+   "id": 744,
+   "slug": "the-particle-%e3%81%be%e3%81%a7-ii"
+  },
+  {
+   "file": "pages/747.json",
+   "id": 747,
+   "slug": "%ef%bd%9e%e3%81%a6%e3%81%ae"
+  },
+  {
+   "file": "pages/749.json",
+   "id": 749,
+   "slug": "combination-particles-with-%e3%82%82%e3%81%ae"
+  },
+  {
+   "file": "pages/751.json",
+   "id": 751,
+   "slug": "combination-particles-with-%e3%81%b0%e3%81%8b%e3%82%8a"
+  },
+  {
+   "file": "pages/753.json",
+   "id": 753,
+   "slug": "the-particles-%e3%81%a3%e3%81%a6-%e3%81%9f%e3%81%a3%e3%81%a6-%e3%81%a0%e3%81%a3%e3%81%a6"
+  },
+  {
+   "file": "pages/755.json",
+   "id": 755,
+   "slug": "the-particle-%e3%81%8b%e3%82%89-ii-%ef%bd%9e%e3%81%8b%e3%82%89%e3%81%82%e3%82%8b-%ef%bd%9e%e3%81%8b%e3%82%89%e3%81%ae-%ef%bd%9e%e3%81%8b%e3%82%89%e3%81%99%e3%82%8b"
+  },
+  {
+   "file": "pages/757.json",
+   "id": 757,
+   "slug": "transitivity-vii"
+  },
+  {
+   "file": "pages/760.json",
+   "id": 760,
+   "slug": "transitivity-viii"
+  },
+  {
+   "file": "pages/762.json",
+   "id": 762,
+   "slug": "transitivity-ix"
+  },
+  {
+   "file": "pages/765.json",
+   "id": 765,
+   "slug": "reduplication-nouns"
+  },
+  {
+   "file": "pages/767.json",
+   "id": 767,
+   "slug": "reduplication-adjectives"
+  },
+  {
+   "file": "pages/769.json",
+   "id": 769,
+   "slug": "reduplication-adjectival-nouns"
+  },
+  {
+   "file": "pages/771.json",
+   "id": 771,
+   "slug": "reduplication-adverbs"
+  },
+  {
+   "file": "pages/773.json",
+   "id": 773,
+   "slug": "%e8%be%bc%e3%82%80"
+  },
+  {
+   "file": "pages/775.json",
+   "id": 775,
+   "slug": "honorifics-%ef%bd%9b%e3%81%a8%e3%83%bb%e3%81%ab%ef%bd%9d%e3%80%90%e3%81%aa%e3%82%8a%e3%81%be%e3%81%99%e3%83%bb%e3%81%aa%e3%81%a3%e3%81%a6%e3%81%8a%e3%82%8a%e3%81%be%e3%81%99%e3%80%91"
+  },
+  {
+   "file": "pages/777.json",
+   "id": 777,
+   "slug": "honorifics-%ef%bd%9e%e3%81%ae%e3%81%bb%e3%81%86"
+  },
+  {
+   "file": "pages/779.json",
+   "id": 779,
+   "slug": "spontaneity"
+  },
+  {
+   "file": "pages/781.json",
+   "id": 781,
+   "slug": "potential-iii"
+  },
+  {
+   "file": "pages/784.json",
+   "id": 784,
+   "slug": "the-particle-%e3%81%a9%e3%81%93%e3%82%8d"
+  },
+  {
+   "file": "pages/786.json",
+   "id": 786,
+   "slug": "%e3%81%a8-combination-particles-i-%e3%81%a8%e3%81%aa%e3%81%8f-%e3%81%a8%e3%81%af"
+  },
+  {
+   "file": "pages/788.json",
+   "id": 788,
+   "slug": "%e3%81%a8-combination-particles-ii"
+  },
+  {
+   "file": "pages/790.json",
+   "id": 790,
+   "slug": "when-it-comes-to-i%e3%81%a8%e3%81%84%e3%81%86%e3%81%a8-%e3%81%a8%e3%81%84%e3%81%88%e3%81%b0-%e3%81%a8%e3%81%84%e3%81%a3%e3%81%9f%e3%82%89"
+  },
+  {
+   "file": "pages/792.json",
+   "id": 792,
+   "slug": "when-it-comes-to-ii-when-it-comes-to-ii%e3%81%a8%e3%81%aa%e3%82%8b%e3%81%a8-%e3%81%a8%e3%81%aa%e3%81%a3%e3%81%9f%e3%82%89-%e3%81%a8%e3%81%aa%e3%82%8c%e3%81%b0"
+  },
+  {
+   "file": "pages/794.json",
+   "id": 794,
+   "slug": "%ef%bd%9e%e3%81%a3%e3%81%9f%e3%82%89-%ef%bd%9e%e3%81%a3%e3%81%a6%e3%81%b0"
+  },
+  {
+   "file": "pages/796.json",
+   "id": 796,
+   "slug": "whether-it-be-or-%ef%bd%9e%e3%81%a8%e3%81%84%e3%81%84-%ef%bd%9e%e3%81%a8%e3%81%84%e3%82%8f%e3%81%9a"
+  },
+  {
+   "file": "pages/798.json",
+   "id": 798,
+   "slug": "when-it-comes-to-iii%e3%81%a8%ef%bd%9b%e3%81%8d%e3%81%9f%e3%82%89%e3%83%bb%e3%81%8d%e3%81%a6%e3%81%af%e3%83%bb%e3%81%8f%e3%82%8b%e3%81%a8%e3%83%bb%e3%81%8d%e3%81%9f%e6%97%a5%e3%81%ab"
+  },
+  {
+   "file": "pages/801.json",
+   "id": 801,
+   "slug": "%e3%81%a8-combination-particles-iv"
+  },
+  {
+   "file": "pages/804.json",
+   "id": 804,
+   "slug": "occasion"
+  },
+  {
+   "file": "pages/806.json",
+   "id": 806,
+   "slug": "worth-and-extent"
+  },
+  {
+   "file": "pages/808.json",
+   "id": 808,
+   "slug": "nominal-phrases-i"
+  },
+  {
+   "file": "pages/810.json",
+   "id": 810,
+   "slug": "centering-%ef%bd%9e%e3%82%92%e4%b8%ad%e5%bf%83%e3%81%ab%ef%bc%88%e3%81%97%e3%81%a6%ef%bc%89"
+  },
+  {
+   "file": "pages/812.json",
+   "id": 812,
+   "slug": "nominal-phrases-ii"
+  },
+  {
+   "file": "pages/814.json",
+   "id": 814,
+   "slug": "nominal-phrases-iii"
+  },
+  {
+   "file": "pages/816.json",
+   "id": 816,
+   "slug": "simultaneous-action-ii-the-particle-%e3%81%a4%e3%81%a4-vs-%e3%81%aa%e3%81%8c%e3%82%89"
+  },
+  {
+   "file": "pages/819.json",
+   "id": 819,
+   "slug": "the-verb-%e6%8a%9c%e3%81%8f"
+  },
+  {
+   "file": "pages/821.json",
+   "id": 821,
+   "slug": "fault-%ef%bd%9e%e3%81%9b%e3%81%84%e3%81%a7-%ef%bd%9e%e3%81%ab%e3%81%8b%e3%81%93%e3%81%a4%e3%81%91%e3%81%a6"
+  },
+  {
+   "file": "pages/823.json",
+   "id": 823,
+   "slug": "defining-parameter"
+  },
+  {
+   "file": "pages/825.json",
+   "id": 825,
+   "slug": "4-morae-adverbs"
+  },
+  {
+   "file": "pages/828.json",
+   "id": 828,
+   "slug": "aizuchi"
+  },
+  {
+   "file": "pages/830.json",
+   "id": 830,
+   "slug": "more-endings-i"
+  },
+  {
+   "file": "pages/832.json",
+   "id": 832,
+   "slug": "japanese-ceremony-customs-%e5%86%a0%e5%a9%9a%e8%91%ac%e7%a5%ad"
+  },
+  {
+   "file": "pages/836.json",
+   "id": 836,
+   "slug": "the-%e5%90%9b%e3%81%8c%e4%bb%a3-%e3%81%84%e3%82%8d%e3%81%af"
+  },
+  {
+   "file": "pages/838.json",
+   "id": 838,
+   "slug": "similarity-ii"
+  },
+  {
+   "file": "pages/841.json",
+   "id": 841,
+   "slug": "rounding-numbers"
+  },
+  {
+   "file": "pages/843.json",
+   "id": 843,
+   "slug": "decimals-fractions"
+  },
+  {
+   "file": "pages/845.json",
+   "id": 845,
+   "slug": "numbers-x-measurements"
+  },
+  {
+   "file": "pages/847.json",
+   "id": 847,
+   "slug": "large-numbers-%e5%a4%a7%e5%ad%97"
+  },
+  {
+   "file": "pages/849.json",
+   "id": 849,
+   "slug": "miss-out"
+  },
+  {
+   "file": "pages/852.json",
+   "id": 852,
+   "slug": "kana-orthography"
+  },
+  {
+   "file": "pages/855.json",
+   "id": 855,
+   "slug": "advanced-%ef%bd%9e%e3%81%b9%e3%81%8d-phrases%ef%bd%9e%e3%81%b9%e3%81%8f%e3%82%82%e3%81%aa%e3%81%84-%ef%bd%9e%e3%81%b9%e3%81%8b%e3%82%89%e3%81%9a%e3%83%bb%e3%81%96%e3%82%8b-%ef%bd%9e%e3%81%b9"
+  },
+  {
+   "file": "pages/862.json",
+   "id": 862,
+   "slug": "the-verbs-%e3%81%8b%e3%81%8b%e3%82%8b-%e3%81%8b%e3%81%91%e3%82%8b"
+  },
+  {
+   "file": "pages/865.json",
+   "id": 865,
+   "slug": "rather"
+  },
+  {
+   "file": "pages/867.json",
+   "id": 867,
+   "slug": "opposite-%e9%80%86%e3%81%ab-%e5%8f%8d%e5%af%be%e3%81%ab-%e5%8f%8d%e9%9d%a2-%e4%b8%80%e6%96%b9%ef%bc%88%e3%81%a7%ef%bc%89"
+  },
+  {
+   "file": "pages/870.json",
+   "id": 870,
+   "slug": "beforehand-%e3%81%8b%e3%81%ad%e3%81%a6-%e3%81%8b%e3%81%ad%e3%81%8c%e3%81%ad-%e5%89%8d%e3%82%82%e3%81%a3%e3%81%a6-%e5%85%88%e7%ab%8b%e3%81%a3%e3%81%a6-etc"
+  },
+  {
+   "file": "pages/872.json",
+   "id": 872,
+   "slug": "to-say-nothing-of-%e3%81%be%e3%81%97%e3%81%a6%e3%82%84-%e3%81%84%e3%82%8f%e3%82%93%e3%82%84-%e3%82%82%e3%81%a3%e3%81%a6%e3%81%ae%e3%81%bb%e3%81%8b-%e5%b0%9a%e6%9b%b4-%e8%a8%80%e3%81%86%e3%81%be"
+  },
+  {
+   "file": "pages/875.json",
+   "id": 875,
+   "slug": "no-matter-if-%e3%81%9f%e3%81%a8%e3%81%88"
+  },
+  {
+   "file": "pages/979.json",
+   "id": 979,
+   "slug": "adverbs-for-especially"
+  },
+  {
+   "file": "pages/982.json",
+   "id": 982,
+   "slug": "dare-to-%e5%bc%b7%e3%81%84%e3%81%a6-%e6%95%a2%e3%81%88%e3%81%a6-%e6%8a%bc%e3%81%97%e3%81%a6-%e9%81%94%e3%81%a6"
+  },
+  {
+   "file": "pages/984.json",
+   "id": 984,
+   "slug": "the-adverbial-noun-%e4%b8%80%e6%97%a6"
+  },
+  {
+   "file": "pages/986.json",
+   "id": 986,
+   "slug": "%e3%81%93%e3%81%9d%e3%81%82%e3%81%a9-vi-older-expressions"
+  },
+  {
+   "file": "pages/988.json",
+   "id": 988,
+   "slug": "tendency"
+  },
+  {
+   "file": "pages/990.json",
+   "id": 990,
+   "slug": "incidental"
+  },
+  {
+   "file": "pages/992.json",
+   "id": 992,
+   "slug": "the-particle-%e3%81%ab-iii-the-conjunctive-%e3%81%ab"
+  },
+  {
+   "file": "pages/994.json",
+   "id": 994,
+   "slug": "%e6%80%9d%e3%81%97%e3%81%84-%e6%80%9d%e3%82%8f%e3%81%97%e3%81%84"
+  },
+  {
+   "file": "pages/996.json",
+   "id": 996,
+   "slug": "the-particles-%e3%82%84%e3%82%89-%e3%81%aa%e3%82%8a-%e3%81%8d%e3%82%8a"
+  },
+  {
+   "file": "pages/999.json",
+   "id": 999,
+   "slug": "%e9%80%a3%e4%bd%93%e8%a9%9e"
+  },
+  {
+   "file": "pages/1001.json",
+   "id": 1001,
+   "slug": "the-particles-%e3%81%a9%e3%82%82-%e3%81%a0%e3%81%ae"
+  },
+  {
+   "file": "pages/1003.json",
+   "id": 1003,
+   "slug": "%ef%bd%9e%e3%81%a6%e3%81%9f%e3%81%be%e3%82%8b"
+  },
+  {
+   "file": "pages/1005.json",
+   "id": 1005,
+   "slug": "opportunity"
+  },
+  {
+   "file": "pages/1007.json",
+   "id": 1007,
+   "slug": "calendar-systems-of-japan"
+  },
+  {
+   "file": "pages/1010.json",
+   "id": 1010,
+   "slug": "the-seasons%e3%80%80%e6%98%a5%e5%a4%8f%e7%a7%8b%e5%86%ac"
+  },
+  {
+   "file": "pages/1012.json",
+   "id": 1012,
+   "slug": "more-endings-ii"
+  },
+  {
+   "file": "pages/1015.json",
+   "id": 1015,
+   "slug": "locational"
+  },
+  {
+   "file": "pages/1019.json",
+   "id": 1019,
+   "slug": "final-endings"
+  },
+  {
+   "file": "pages/1021.json",
+   "id": 1021,
+   "slug": "the-volitional-iii"
+  },
+  {
+   "file": "pages/1023.json",
+   "id": 1023,
+   "slug": "%e3%82%89%e6%8a%9c%e3%81%8d%e8%a8%80%e8%91%89"
+  },
+  {
+   "file": "pages/1025.json",
+   "id": 1025,
+   "slug": "the-causative-iii-%ef%bd%9e%e3%81%8b%e3%81%99"
+  },
+  {
+   "file": "pages/1027.json",
+   "id": 1027,
+   "slug": "sa-insertion%e3%80%80%e3%81%95%e5%85%a5%e3%82%8c%e8%a8%80%e8%91%89"
+  },
+  {
+   "file": "pages/1029.json",
+   "id": 1029,
+   "slug": "prefixes"
+  },
+  {
+   "file": "pages/1031.json",
+   "id": 1031,
+   "slug": "%e6%95%b5%e6%80%a7%e8%aa%9e%e7%a6%81%e6%ad%a2"
+  },
+  {
+   "file": "pages/1033.json",
+   "id": 1033,
+   "slug": "%e5%b9%bc%e5%85%90%e8%aa%9e"
+  },
+  {
+   "file": "pages/1035.json",
+   "id": 1035,
+   "slug": "japanese-phonology"
+  },
+  {
+   "file": "pages/1037.json",
+   "id": 1037,
+   "slug": "consonants"
+  },
+  {
+   "file": "pages/1039.json",
+   "id": 1039,
+   "slug": "pitch"
+  },
+  {
+   "file": "pages/1041.json",
+   "id": 1041,
+   "slug": "rendaku"
+  },
+  {
+   "file": "pages/1043.json",
+   "id": 1043,
+   "slug": "bare-covered-forms"
+  },
+  {
+   "file": "pages/1045.json",
+   "id": 1045,
+   "slug": "hatsuon"
+  },
+  {
+   "file": "pages/1047.json",
+   "id": 1047,
+   "slug": "sokuonka"
+  },
+  {
+   "file": "pages/1049.json",
+   "id": 1049,
+   "slug": "s-or-h"
+  },
+  {
+   "file": "pages/1051.json",
+   "id": 1051,
+   "slug": "phonology-vi-%e3%82%a6%e9%9f%b3%e4%be%bf"
+  },
+  {
+   "file": "pages/1053.json",
+   "id": 1053,
+   "slug": "verlan"
+  },
+  {
+   "file": "pages/1069.json",
+   "id": 1069,
+   "slug": "native-suffixes-i"
+  },
+  {
+   "file": "pages/1071.json",
+   "id": 1071,
+   "slug": "native-suffixes-ii"
+  },
+  {
+   "file": "pages/1074.json",
+   "id": 1074,
+   "slug": "native-suffixes-iii"
+  },
+  {
+   "file": "pages/1076.json",
+   "id": 1076,
+   "slug": "native-suffixes-iv"
+  },
+  {
+   "file": "pages/1078.json",
+   "id": 1078,
+   "slug": "the-adjectival-affix-%ef%bd%9e%e3%81%8b"
+  },
+  {
+   "file": "pages/1081.json",
+   "id": 1081,
+   "slug": "the-verbal-affix-%ef%bd%9e%e3%81%90-%ef%bd%9e%e3%82%89%e3%81%90%e3%83%bb%e3%82%84%e3%81%90"
+  },
+  {
+   "file": "pages/1083.json",
+   "id": 1083,
+   "slug": "sino-japanese-suf"
+  },
+  {
+   "file": "pages/1085.json",
+   "id": 1085,
+   "slug": "sino-japanesesuffixesii"
+  },
+  {
+   "file": "pages/1087.json",
+   "id": 1087,
+   "slug": "suf-viappearance"
+  },
+  {
+   "file": "pages/1089.json",
+   "id": 1089,
+   "slug": "slang-%e3%82%8b-verbs"
+  },
+  {
+   "file": "pages/1091.json",
+   "id": 1091,
+   "slug": "hon-vi-irreg-ii"
+  },
+  {
+   "file": "pages/1093.json",
+   "id": 1093,
+   "slug": "%ef%bd%9e%e3%81%9f%e3%82%81%e3%81%ab-iii-%ef%bd%9e%e3%82%93%e3%81%8c%e3%81%9f%e3%82%81%e3%81%ab-%ef%bd%9e%e3%81%8c%e3%81%9f%e3%82%81%e3%81%ab"
+  },
+  {
+   "file": "pages/1095.json",
+   "id": 1095,
+   "slug": "%e6%95%85-%e6%89%80%e4%bb%a5%e3%83%bb%e7%94%b1%e7%b8%81-%e8%ac%82%e3%82%8c-%e7%94%b1"
+  },
+  {
+   "file": "pages/1097.json",
+   "id": 1097,
+   "slug": "%e3%82%af%e8%aa%9e%e6%b3%95"
+  },
+  {
+   "file": "pages/1100.json",
+   "id": 1100,
+   "slug": "the-causative-iv-%ef%bd%9e%e3%81%97%e3%82%81%e3%82%8b"
+  },
+  {
+   "file": "pages/1125.json",
+   "id": 1125,
+   "slug": "interrogatives-iv-rare-words"
+  },
+  {
+   "file": "pages/1128.json",
+   "id": 1128,
+   "slug": "onomatopoeia-iv"
+  },
+  {
+   "file": "pages/1131.json",
+   "id": 1131,
+   "slug": "the-particle-%e3%82%82-vi"
+  },
+  {
+   "file": "pages/1134.json",
+   "id": 1134,
+   "slug": "the-auxiliary-%ef%bd%9e%e3%81%9f%e3%82%8b-%e3%81%9f%e3%82%8b%e3%82%84%e3%80%81%e3%81%9f%e3%82%8b%e3%82%82%e3%81%ae%e3%80%81%e3%81%9f%e3%82%8a%e3%81%a8%e3%82%82"
+  },
+  {
+   "file": "pages/1143.json",
+   "id": 1143,
+   "slug": "%e7%be%8e%e5%8c%96%e8%aa%9e"
+  },
+  {
+   "file": "pages/1145.json",
+   "id": 1145,
+   "slug": "the-particles-%e3%81%a8%e3%81%a6-%e3%81%a8%e3%82%82"
+  },
+  {
+   "file": "pages/1147.json",
+   "id": 1147,
+   "slug": "the-particle-%e3%81%97%e3%81%a6"
+  },
+  {
+   "file": "pages/1149.json",
+   "id": 1149,
+   "slug": "the-particle-%e3%81%a4"
+  },
+  {
+   "file": "pages/1151.json",
+   "id": 1151,
+   "slug": "the-particle-%e3%81%97%e3%81%8d"
+  },
+  {
+   "file": "pages/1153.json",
+   "id": 1153,
+   "slug": "the-particle-%e3%81%84%e3%81%a7"
+  },
+  {
+   "file": "pages/1155.json",
+   "id": 1155,
+   "slug": "punctuation"
+  },
+  {
+   "file": "pages/1158.json",
+   "id": 1158,
+   "slug": "romanization"
+  },
+  {
+   "file": "pages/1160.json",
+   "id": 1160,
+   "slug": "abbreviations"
+  },
+  {
+   "file": "pages/1162.json",
+   "id": 1162,
+   "slug": "etymology"
+  },
+  {
+   "file": "pages/1164.json",
+   "id": 1164,
+   "slug": "%e5%92%8c%e8%a3%bd%e8%8b%b1%e8%aa%9e"
+  },
+  {
+   "file": "pages/1166.json",
+   "id": 1166,
+   "slug": "idioms-iv-yojijukugo"
+  },
+  {
+   "file": "pages/1168.json",
+   "id": 1168,
+   "slug": "idioms-v-kotowaza"
+  },
+  {
+   "file": "pages/1171.json",
+   "id": 1171,
+   "slug": "dialectical-%e8%87%aa%e4%bb%96%e5%8b%95%e8%a9%9e"
+  },
+  {
+   "file": "pages/1173.json",
+   "id": 1173,
+   "slug": "%e9%9f%b3%e8%a8%93-on-kun-readings"
+  },
+  {
+   "file": "pages/1178.json",
+   "id": 1178,
+   "slug": "okurigana"
+  },
+  {
+   "file": "pages/1219.json",
+   "id": 1219,
+   "slug": "the-negative-%e3%81%a6%e5%bd%a2-%ef%bd%9e%e3%81%aa%e3%81%8f%e3%81%a6-%ef%bd%9e%e3%81%aa%e3%81%84%e3%81%a7"
+  },
+  {
+   "file": "pages/1222.json",
+   "id": 1222,
+   "slug": "yotsugana"
+  },
+  {
+   "file": "pages/1256.json",
+   "id": 1256,
+   "slug": "hentaigana"
+  },
+  {
+   "file": "pages/1261.json",
+   "id": 1261,
+   "slug": "%e5%90%8d%e4%b9%97%e3%82%8a%e8%a8%93"
+  },
+  {
+   "file": "pages/1263.json",
+   "id": 1263,
+   "slug": "the-214-radicals"
+  },
+  {
+   "file": "pages/1266.json",
+   "id": 1266,
+   "slug": "japanese-made-kanji-%e5%9b%bd%e5%ad%97"
+  },
+  {
+   "file": "pages/1268.json",
+   "id": 1268,
+   "slug": "%e5%bd%93%e3%81%a6%e5%ad%97"
+  },
+  {
+   "file": "pages/1272.json",
+   "id": 1272,
+   "slug": "kanji-simplification%e3%80%80%e6%bc%a2%e5%ad%97%e3%81%ae%e7%b0%a1%e7%95%a5%e5%8c%96"
+  },
+  {
+   "file": "pages/1274.json",
+   "id": 1274,
+   "slug": "%e5%90%8c%e9%9f%b3%e3%81%ae%e6%bc%a2%e5%ad%97%e3%81%ab%e3%82%88%e3%82%8b%e6%9b%b8%e3%81%8d%e6%8f%9b%e3%81%88"
+  },
+  {
+   "file": "pages/1276.json",
+   "id": 1276,
+   "slug": "%e4%ba%a4%e3%81%9c%e6%9b%b8%e3%81%8d"
+  },
+  {
+   "file": "pages/1279.json",
+   "id": 1279,
+   "slug": "%e7%95%a5%e5%ad%97%e3%83%bb%e5%b9%bd%e9%9c%8a%e5%ad%97"
+  },
+  {
+   "file": "pages/1281.json",
+   "id": 1281,
+   "slug": "the-particles-ga-wo"
+  },
+  {
+   "file": "pages/1284.json",
+   "id": 1284,
+   "slug": "basic-syntax"
+  },
+  {
+   "file": "pages/1290.json",
+   "id": 1290,
+   "slug": "copula-verbs"
+  },
+  {
+   "file": "pages/1293.json",
+   "id": 1293,
+   "slug": "classical-adjectives-i"
+  },
+  {
+   "file": "pages/1295.json",
+   "id": 1295,
+   "slug": "classical-adjectives-ii"
+  },
+  {
+   "file": "pages/1299.json",
+   "id": 1299,
+   "slug": "class-regular-verbs-i"
+  },
+  {
+   "file": "pages/1302.json",
+   "id": 1302,
+   "slug": "classical-verbs-ii%e3%80%80%e5%8f%a4%e5%85%b8%e6%96%87%e6%b3%95%e3%81%ab%e6%96%bc%e3%81%91%e3%82%8b%e4%b8%8a%e4%b8%80%e6%ae%b5%e3%83%bb%e4%b8%8b%e4%b8%80%e6%ae%b5%e6%b4%bb%e7%94%a8%e5%8b%95%e8%a9%9e"
+  },
+  {
+   "file": "pages/1304.json",
+   "id": 1304,
+   "slug": "classical-verbs-iii%e5%8f%a4%e5%85%b8%e6%96%87%e6%b3%95%e3%81%ab%e6%96%bc%e3%81%91%e3%82%8b%e4%b8%8a%e4%ba%8c%e6%ae%b5%e3%83%bb%e4%b8%8b%e4%ba%8c%e6%ae%b5%e6%b4%bb%e7%94%a8%e5%8b%95%e8%a9%9e"
+  },
+  {
+   "file": "pages/1307.json",
+   "id": 1307,
+   "slug": "class-irregular-verbs-i"
+  },
+  {
+   "file": "pages/1310.json",
+   "id": 1310,
+   "slug": "classical-irregular-verbs-ii"
+  },
+  {
+   "file": "pages/1313.json",
+   "id": 1313,
+   "slug": "the-auxiliary-verb-%ef%bd%9e%e3%81%9a-ii"
+  },
+  {
+   "file": "pages/1316.json",
+   "id": 1316,
+   "slug": "the-auxiliary-verbs-%ef%bd%9e%e3%81%8d-%ef%bd%9e%e3%81%91%e3%82%8a"
+  },
+  {
+   "file": "pages/1319.json",
+   "id": 1319,
+   "slug": "%e3%80%8c%e5%ae%8c%e4%ba%86%e3%80%8d%e3%82%92%e7%a4%ba%e3%81%99%e3%80%8c%e3%81%ac%e3%80%8d%e3%83%bb%e3%80%8c%e3%81%a4%e3%80%8d"
+  },
+  {
+   "file": "pages/1322.json",
+   "id": 1322,
+   "slug": "the-auxiliary-verbs-%ef%bd%9e%e3%81%9f%e3%82%8a-%ef%bd%9e%e3%82%8a"
+  },
+  {
+   "file": "pages/1326.json",
+   "id": 1326,
+   "slug": "nouns-pronouns"
+  },
+  {
+   "file": "pages/1328.json",
+   "id": 1328,
+   "slug": "numbers"
+  },
+  {
+   "file": "pages/1330.json",
+   "id": 1330,
+   "slug": "classical-adverbs"
+  },
+  {
+   "file": "pages/1332.json",
+   "id": 1332,
+   "slug": "classical-conjunctions"
+  },
+  {
+   "file": "pages/1334.json",
+   "id": 1334,
+   "slug": "classical-interjections"
+  },
+  {
+   "file": "pages/1337.json",
+   "id": 1337,
+   "slug": "demonstratives"
+  },
+  {
+   "file": "pages/1339.json",
+   "id": 1339,
+   "slug": "ni-nite-e"
+  },
+  {
+   "file": "pages/1341.json",
+   "id": 1341,
+   "slug": "yori-kara"
+  },
+  {
+   "file": "pages/1343.json",
+   "id": 1343,
+   "slug": "the-particles-%e3%81%ae-%e3%81%a8"
+  },
+  {
+   "file": "pages/1345.json",
+   "id": 1345,
+   "slug": "the-particles-%e3%81%a6-%e3%81%97%e3%81%a6-%e3%81%a7"
+  },
+  {
+   "file": "pages/1348.json",
+   "id": 1348,
+   "slug": "the-particles-%e3%81%a4%e3%81%a4-%e3%81%aa%e3%81%8c%e3%82%89"
+  },
+  {
+   "file": "pages/1351.json",
+   "id": 1351,
+   "slug": "the-particle-%e3%81%b0"
+  },
+  {
+   "file": "pages/1353.json",
+   "id": 1353,
+   "slug": "the-particles-%e3%81%a8-%e3%81%a8%e3%82%82-%e3%81%a9-%e3%81%a9%e3%82%82"
+  },
+  {
+   "file": "pages/1355.json",
+   "id": 1355,
+   "slug": "combination-particles-with-%e3%82%82%e3%81%ae-2"
+  },
+  {
+   "file": "pages/1357.json",
+   "id": 1357,
+   "slug": "bound-particles"
+  },
+  {
+   "file": "pages/1360.json",
+   "id": 1360,
+   "slug": "adverbial-particles"
+  },
+  {
+   "file": "pages/1363.json",
+   "id": 1363,
+   "slug": "the-auxiliary-verb-%ef%bd%9e%e3%82%89%e3%81%97"
+  },
+  {
+   "file": "pages/1365.json",
+   "id": 1365,
+   "slug": "the-history-of-%ef%bd%9e%e3%81%be%e3%81%99"
+  },
+  {
+   "file": "pages/1367.json",
+   "id": 1367,
+   "slug": "manyogana"
+  },
+  {
+   "file": "pages/1415.json",
+   "id": 1415,
+   "slug": "the-nominalizing-affix-aku"
+  },
+  {
+   "file": "pages/1642.json",
+   "id": 1642,
+   "slug": "sino-japanese-numbers-2"
+  },
+  {
+   "file": "pages/1688.json",
+   "id": 1688,
+   "slug": "counters-for-frequency-%ef%bd%9e%e5%ba%a6%e3%83%bb%e5%9b%9e%e3%83%bb%e9%81%8d"
+  },
+  {
+   "file": "pages/1983.json",
+   "id": 1983,
+   "slug": "used-to-%ef%bd%9e%e3%81%9f%e3%82%82%e3%81%ae%e3%81%a0-%e5%98%97%e3%81%a6"
+  },
+  {
+   "file": "pages/2074.json",
+   "id": 2074,
+   "slug": "non-deictic-time-ii-determiners"
+  },
+  {
+   "file": "pages/2207.json",
+   "id": 2207,
+   "slug": "about-us"
+  },
+  {
+   "file": "pages/2224.json",
+   "id": 2224,
+   "slug": "%e7%ac%ac%e8%aa%b2-non-deictic-time-iii"
+  },
+  {
+   "file": "pages/2403.json",
+   "id": 2403,
+   "slug": "the-auxiliary-%ef%bd%9e%e3%82%89%e3%81%97%e3%81%84"
+  },
+  {
+   "file": "pages/2984.json",
+   "id": 2984,
+   "slug": "personal-desire-%ef%bd%9e%e3%81%9f%e3%81%84"
+  },
+  {
+   "file": "pages/3033.json",
+   "id": 3033,
+   "slug": "%ef%bd%9e%e3%81%9f%e3%81%84-w-other-grammar"
+  },
+  {
+   "file": "pages/3307.json",
+   "id": 3307,
+   "slug": "glossary"
+  },
+  {
+   "file": "pages/3478.json",
+   "id": 3478,
+   "slug": "%e3%81%a6%e3%82%88%e3%83%bb%e3%81%a0%e3%82%8f%e8%a8%80%e8%91%89"
+  },
+  {
+   "file": "pages/3526.json",
+   "id": 3526,
+   "slug": "the-result-markers-%e3%81%ab-%e3%81%a8"
+  },
+  {
+   "file": "pages/3561.json",
+   "id": 3561,
+   "slug": "the-purpose-marker-%e3%81%ab"
+  },
+  {
+   "file": "pages/4399.json",
+   "id": 4399,
+   "slug": "the-parallel-particle-%e3%81%ab"
+  },
+  {
+   "file": "pages/4429.json",
+   "id": 4429,
+   "slug": "the-intensifier-%e3%81%ab"
+  },
+  {
+   "file": "pages/4488.json",
+   "id": 4488,
+   "slug": "counters-w-approximations"
+  },
+  {
+   "file": "pages/5406.json",
+   "id": 5406,
+   "slug": "start-to-ii-%ef%bd%9e%e3%81%8b%e3%81%91%e3%82%8b-%ef%bd%9e%e3%81%8b%e3%81%8b%e3%82%8b"
+  },
+  {
+   "file": "pages/6329.json",
+   "id": 6329,
+   "slug": "while-iii-%ef%bd%9e%e9%9a%99%e3%81%ab-%ef%bd%9e%e9%96%93%ef%bc%88%e3%81%be%ef%bc%89%e3%81%ab"
+  },
+  {
+   "file": "pages/6727.json",
+   "id": 6727,
+   "slug": "the-final-particles-%e3%81%9e-%e3%81%9c"
+  },
+  {
+   "file": "pages/6763.json",
+   "id": 6763,
+   "slug": "the-suffix-%ef%bd%9e%e3%81%a3%e3%81%bd%e3%81%84"
+  },
+  {
+   "file": "pages/6906.json",
+   "id": 6906,
+   "slug": "the-intensifier-%ef%bd%9e%e3%81%aa%e3%81%84"
+  },
+  {
+   "file": "pages/7011.json",
+   "id": 7011,
+   "slug": "the-final-particle-%e3%81%95"
+  },
+  {
+   "file": "pages/7485.json",
+   "id": 7485,
+   "slug": "the-scope-marker-%ef%bd%9e%e3%81%ae%e3%81%a0"
+  },
+  {
+   "file": "pages/9427.json",
+   "id": 9427,
+   "slug": "the-affix-%ef%bd%9e%e3%82%81"
+  },
+  {
+   "file": "pages/9543.json",
+   "id": 9543,
+   "slug": "the-citation-particle-%e3%81%a8-ii"
+  },
+  {
+   "file": "pages/9840.json",
+   "id": 9840,
+   "slug": "the-transition-marker-%e3%82%92"
+  },
+  {
+   "file": "pages/9904.json",
+   "id": 9904,
+   "slug": "the-mood-marker-%ef%bd%9e%e3%81%ae%e3%81%a0"
+  },
+  {
+   "file": "pages/11821.json",
+   "id": 11821,
+   "slug": "%e3%81%a0%e3%81%91%e3%81%ab%e3%83%bb%e3%81%a0%e3%81%91%ef%bc%88%e3%81%ae%e3%81%93%e3%81%a8%e3%81%af%ef%bc%89%e3%81%82%e3%81%a3%e3%81%a6"
+  },
+  {
+   "file": "pages/11842.json",
+   "id": 11842,
+   "slug": "%ef%bd%9e%e3%82%88%e3%81%86%e3%81%ab%e3%81%aa%e3%82%8b-%ef%bd%9e%e3%82%88%e3%81%86%e3%81%ab%e3%81%99%e3%82%8b"
+  },
+  {
+   "file": "pages/11972.json",
+   "id": 11972,
+   "slug": "the-final-particle-%e3%81%93%e3%81%a8"
+  },
+  {
+   "file": "pages/12050.json",
+   "id": 12050,
+   "slug": "copula-ellipsis-%e3%80%8c%e3%81%a0%e3%80%8d%e3%81%ae%e7%9c%81%e7%95%a5"
+  },
+  {
+   "file": "pages/12344.json",
+   "id": 12344,
+   "slug": "%e3%81%a0%e3%81%8b-%e3%81%a0%e3%81%ae"
+  },
+  {
+   "file": "pages/12522.json",
+   "id": 12522,
+   "slug": "phrasal-%e3%81%93%e3%81%a8"
+  },
+  {
+   "file": "pages/12635.json",
+   "id": 12635,
+   "slug": "the-auxiliaries-%e3%81%a0%e3%82%8d%e3%81%86%e3%83%bb%e3%81%a7%e3%81%97%e3%82%87%e3%81%86"
+  },
+  {
+   "file": "pages/12800.json",
+   "id": 12800,
+   "slug": "whether-no-matter-or-v1-%ef%bd%9e%ef%bc%88%e3%82%88%ef%bc%89%e3%81%86%ef%bd%9b%e3%81%8c%e3%83%bb%e3%81%a8%ef%bd%9dv1%ef%bc%8b%ef%bd%9e%e3%81%be%e3%81%84%ef%bd%9b%e3%81%8c%e3%83%bb%e3%81%a8"
+  },
+  {
+   "file": "pages/12931.json",
+   "id": 12931,
+   "slug": "%ef%bd%9e%ef%bc%88%e3%82%88%ef%bc%89%e3%81%86%e3%81%ab%e3%82%82-%ef%bd%9e%ef%bc%88%e3%82%88%ef%bc%89%e3%81%86%e3%82%82%e3%81%ae%e3%81%aa%e3%82%89"
+  },
+  {
+   "file": "pages/13085.json",
+   "id": 13085,
+   "slug": "the-particle-%e3%81%a8%e3%81%8b"
+  },
+  {
+   "file": "pages/13112.json",
+   "id": 13112,
+   "slug": "%ef%bd%9e%e4%b8%8a%e3%81%8c%e3%82%8b-%ef%bd%9e%e4%b8%8a%e3%81%92%e3%82%8b"
+  },
+  {
+   "file": "pages/16596.json",
+   "id": 16596,
+   "slug": "obligation-%ef%bd%9e%e3%81%b9%e3%81%8d%e3%81%a0"
+  },
+  {
+   "file": "pages/16635.json",
+   "id": 16635,
+   "slug": "planning-%ef%bd%9e%e3%81%a4%e3%82%82%e3%82%8a%e3%81%a0"
+  },
+  {
+   "file": "pages/17017.json",
+   "id": 17017,
+   "slug": "the-interjectory-final-adverbial-particle-%e3%82%84"
+  }
+ ]
+}

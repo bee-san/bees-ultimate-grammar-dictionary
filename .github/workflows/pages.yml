@@ -28,7 +28,7 @@ jobs:
       - name: Build full original and English editions
         env:
           PYTHONPATH: src
-        run: python scripts/build_site.py --snapshot website/data
+        run: make release
       - uses: actions/upload-pages-artifact@v4
         with:
           path: build/site

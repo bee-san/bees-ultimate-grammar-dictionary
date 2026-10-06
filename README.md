@@ -54,11 +54,24 @@ Every grammar point shows a compact card with progressive disclosure — click t
 ```
 python3 -m venv .venv
 source .venv/bin/activate
-pip install . pytest
-make all
+pip install .
+make
 ```
 
-The pipeline stages:
+The default build recreates **both full 13-source editions** from the committed
+corpus and English translation cache, checks their pinned asset digests, and
+verifies every dictionary-to-article link. It needs no source downloads, Anki
+exports, scraper access or model credentials. The ZIPs, update indexes and
+`SHA256SUMS` are written to `build/site/downloads/`.
+
+The raw 501-page IMABI acquisition is also committed under
+`data/sources/imabi/`, together with its digest lock, index and coverage report.
+It contains 494 lessons; seven site pages are excluded. The publication snapshot
+preserves the complete merged corpus from every source, including the source
+decks that are unavailable in a fresh checkout.
+
+To refresh the corpus from original inputs, acquire any missing sources and run
+`make all`. Those pipeline stages are:
 
 1. **extract** — read each source's locked data into normalized `GrammarPoint` records
 2. **keymap** — align entries across sources (which rows are the same grammar point?)
@@ -87,6 +100,11 @@ make translate-english  # authenticated Codex CLI; explicitly uses gpt-6-luna
 make publish-data      # refuses missing sources or translations
 make site
 ```
+
+After refreshing the snapshot, bump its revision, run `make site`, regenerate
+the release asset lock with `python scripts/verify_release.py --write-lock`,
+and run `make verify-release`. Commit the snapshot, lock and release notes.
+The release workflow builds and checks those exact inputs before publishing.
 
 Translation results are cached by source-text hash under `data/translations/`.
 The original corpus stays unchanged. A changed source text requires a fresh

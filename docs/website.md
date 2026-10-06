@@ -60,3 +60,24 @@ definitions, and Japanese example sentences remain visible with their readings.
 Coverage and schema checks establish completeness and structure, not a human
 review of every translated sentence. Readers can compare the original wording
 through each page's disclosure or switch to the original edition.
+
+## Reproducible releases
+
+`make` (or `make release`) builds both full editions from the committed snapshot
+and verifies the release. `website/data/release.json` pins the exact archive and
+index bytes. Verification also reads every committed IMABI file through its
+digest lock, accounts for every lesson, checks all 13 sources, validates both
+archives against the pinned Yomitan schemas, and checks every article link and
+heading in both editions.
+
+The IMABI raw pages are an independently locked acquisition. The merged
+publication snapshot also retains earlier normalization, deduplication and
+corrections across all sources; rebuilding a release uses that snapshot rather
+than rerunning acquisition against changing upstream websites.
+
+When updating the publication, choose a new revision in `manifest.json`, run
+`make site`, then `python scripts/verify_release.py --write-lock`. Review the
+output, run `make verify-release`, and commit all changed inputs with notes at
+`docs/releases/v<revision>.md`. A push of the revised snapshot to `main` triggers
+the release workflow, which builds and verifies before uploading both ZIPs,
+both indexes and `SHA256SUMS`. A workflow dispatch can retry a failed release.

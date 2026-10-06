@@ -1,8 +1,12 @@
 # `data/` layout
 
-Everything under `data/` except this file and the `.gitkeep` markers is
-gitignored: it is acquired or generated, and often large. The layout is the
-contract between pipeline stages.
+Acquired inputs are generally ignored except their `SOURCE.lock.json` manifests.
+The complete IMABI acquisition is committed, including `pages/*.json`,
+`index.json`, `PERMISSION.json` and `COVERAGE.md`, so it can be extracted offline.
+Generated per-source JSONL and merge artifacts remain ignored. The full release
+corpus and cached English translations are committed under `website/data/`;
+`make` builds both complete editions from that snapshot. The layout below is the
+contract between the original-source pipeline stages.
 
 ```
 data/

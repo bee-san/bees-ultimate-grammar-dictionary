@@ -21,6 +21,12 @@ SHA256SUMS
 # clone cannot verify that a re-acquisition produced the same bytes the dictionary
 # was built from.
 !/data/sources/*/SOURCE.lock.json
+# The acquired IMABI corpus ships with the repository for offline extraction.
+!/data/sources/imabi/pages/
+!/data/sources/imabi/pages/*.json
+!/data/sources/imabi/index.json
+!/data/sources/imabi/PERMISSION.json
+!/data/sources/imabi/COVERAGE.md
 /data/extracted/
 /data/merged/
 /data/translations/

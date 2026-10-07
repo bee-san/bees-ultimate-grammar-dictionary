@@ -9,9 +9,12 @@ const {rows, cases, absent = []} = JSON.parse(fs.readFileSync(0, 'utf8'));
 const transformer = new LanguageTransformer();
 transformer.addDescriptor(japaneseTransforms);
 const byTerm = new Map();
+// Like Yomitan's database, a row is found by its term and by its reading.
 for (const row of rows) {
-    if (!byTerm.has(row.term)) byTerm.set(row.term, []);
-    byTerm.get(row.term).push(row);
+    for (const key of new Set([row.term, row.reading].filter(Boolean))) {
+        if (!byTerm.has(key)) byTerm.set(key, []);
+        byTerm.get(key).push(row);
+    }
 }
 // Yomitan tries progressively shorter prefixes from the hovered position,
 // then tests transformed candidates against each dictionary row's rules.

@@ -15,6 +15,11 @@ or use the [English website](https://bee-san.github.io/bees-ultimate-grammar-dic
 Every dictionary entry links to its page, with all contributing explanations and
 examples. Search by grammar, reading or meaning, and filter by JLPT level or source.
 
+Japanese popup lookup covers **all 9,152 source records** across the 13 sources.
+Grammar notation such as `Nらしい` is indexed under its Japanese text (`らしい`),
+with kana aliases and conjugation support for known endings. Reference articles
+use Japanese topic names. See [lookup coverage and examples](docs/lookup-coverage.md).
+
 The [English Yomitan edition](https://bee-san.github.io/bees-ultimate-grammar-dictionary/downloads/bees-ultimate-grammar-dictionary-en.zip)
 is separately installable. Monolingual explanations and untranslated examples are
 translated with **GPT-6 Luna** and labelled as translations. Source-authored English
@@ -66,16 +71,18 @@ exports, scraper access or model credentials. The ZIPs, update indexes and
 
 The raw 501-page IMABI acquisition is also committed under
 `data/sources/imabi/`, together with its digest lock, index and coverage report.
-It contains 494 lessons; seven site pages are excluded. The publication snapshot
+It contains 495 lessons; six site pages are excluded. The publication snapshot
 preserves the complete merged corpus from every source, including the source
 decks that are unavailable in a fresh checkout.
 
 IMABI lessons are also indexed by Japanese grammar forms, so looking up `は`,
 `に`, `を`, `けど` or `のだ` shows the relevant IMABI articles. The committed
-`website/data/imabi-lookups.json` maps **267 lessons to 501 Japanese lookup
-terms**, using their titles, headings and explicit variant descriptions.
+`website/data/imabi-lookups.json` maps **495 lessons to 1,400 Japanese lookup
+terms**, using their titles, headings, constructions, readings and topic labels.
 Multiple lessons keep their own titles and explanations. Original article
 addresses remain available; the linked website includes every matching lesson.
+This includes the restored “About” lesson under `について`, `に関して` and
+`をめぐって`, plus compound constructions such as `ことにする` and `ことがある`.
 
 To refresh the corpus from original inputs, acquire any missing sources and run
 `make all`. Those pipeline stages are:

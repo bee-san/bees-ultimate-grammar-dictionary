@@ -258,6 +258,41 @@ def _covers(expression: str, reading: str) -> bool:
     return True
 
 
+def is_exact_reading(expression: str, reading: str) -> bool:
+    """Check a literal spelling before promoting a source reading to a headword.
+
+    Unlike the pattern-reading gate, every kana character and the entire reading
+    must match. This rejects missing okurigana, concatenated alternatives and
+    readings for a different inflection. It still cannot choose between two
+    valid readings of a word; the candidate must come from the source itself.
+    """
+    base, read = normalize_kana(expression), normalize_kana(reading)
+    if not base or not re.fullmatch(r"[ぁ-ゖー]+", read):
+        return False
+
+    @functools.lru_cache(maxsize=None)
+    def walk(bi: int, ri: int) -> bool:
+        if bi == len(base):
+            return ri == len(read)
+        ch = base[bi]
+        if not _KANJI.fullmatch(ch) and ch != "々":
+            return read.startswith(ch, ri) and walk(bi + 1, ri + 1)
+        for whole, candidates in JUKUJIKUN_RUNS.items():
+            if base.startswith(whole, bi):
+                for candidate in candidates:
+                    if read.startswith(candidate, ri) and walk(bi + len(whole), ri + len(candidate)):
+                        return True
+        if ch == "々" and bi:
+            ch = base[bi - 1]
+        for raw in _readings_for(ch):
+            for candidate in _variants(raw):
+                if read.startswith(candidate, ri) and walk(bi + 1, ri + len(candidate)):
+                    return True
+        return False
+
+    return walk(0, 0)
+
+
 def has_kanji(text: str) -> bool:
     return bool(_KANJI.search(text or ""))
 
@@ -267,5 +302,6 @@ __all__ = [
     "JUKUJIKUN_RUNS",
     "normalize_kana",
     "is_plausible_reading",
+    "is_exact_reading",
     "has_kanji",
 ]

@@ -1,5 +1,5 @@
 {
-  "revision": "2026.10.07",
+  "revision": "2026.10.07.1",
   "model": "gpt-6-luna",
   "sources": [
     "aiueo",
@@ -16,7 +16,7 @@
     "ninjal_bunkei",
     "yokubi"
   ],
-  "entries": 6511,
+  "entries": 7633,
   "translations": 45895,
   "files": {
     "corpus.json.gz": {
@@ -28,8 +28,19 @@
       "byteCount": 4248006
     },
     "imabi-lookups.json": {
-      "sha256": "edfc40caf9766301d7d6191d22ac9c77b9d2c86578880dff4e60160bc4fca354",
-      "byteCount": 121055
+      "sha256": "160068f47ecebc3e384e5affee6cc8e97ffab300464f65a2d740e6a1c22b034a",
+      "byteCount": 284941
+    },
+    "popup-overrides.json": {
+      "sha256": "d1c252a65caade686a66ca6f41110c798e55bbd307ee8f428d98b9ec84e7d04f",
+      "byteCount": 56844
+    },
+    "published-headwords.json": {
+      "sha256": "7825978e1c766d7224c24796ffa04bcaa256226af4da902186dbcfc029f5913e",
+      "byteCount": 165950
     }
-  }
+  },
+  "restoredImabiLessons": [
+    "535"
+  ]
 }

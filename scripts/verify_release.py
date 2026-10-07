@@ -12,12 +12,15 @@ import re
 import zipfile
 
 from build_site import read_json, snapshot_inputs
+from verify_popup import source_names as rendered_sources
 from bugd.imabi_lookup import load_catalog
+from bugd.popup_lookup import load_overrides, lookup_plan
 from bugd.site_links import grammar_path, grammar_url
 from bugd.sources import source_names
 from bugd.sources.base import load_source_lock
 from bugd.sources.imabi import ImabiExtractor
 from bugd.validate import validate_zip
+from bugd.website import source_label
 
 
 def verify(snapshot: pathlib.Path, output: pathlib.Path, *, write_lock: bool = False) -> dict:
@@ -25,6 +28,11 @@ def verify(snapshot: pathlib.Path, output: pathlib.Path, *, write_lock: bool = F
     lookups = load_catalog(snapshot / "imabi-lookups.json")
     lookup_terms = {form for lesson in lookups.values() for form in lesson["expressions"]}
     old_expressions = {entry["expression"] for entry in read_json(snapshot / "corpus.json.gz")["entries"]}
+    old_expressions.update(json.loads((snapshot / "published-headwords.json").read_text())["expressions"])
+    plan = lookup_plan(corpus, load_overrides(snapshot / "popup-overrides.json"))
+    if any(not item["forms"] for item in plan.values()):
+        raise ValueError("Every published source record needs a Japanese lookup")
+    source_coverage = {source: sum(key[0] == source for key in plan) for source in corpus["sourceLabels"]}
     required = set(source_names())
     if set(corpus["sourceLabels"]) != required:
         raise ValueError("Release snapshot must contain every registered source")
@@ -63,6 +71,8 @@ def verify(snapshot: pathlib.Path, output: pathlib.Path, *, write_lock: bool = F
         count = 0
         expressions = set()
         imabi_terms = set()
+        popup_sources = {}
+        article_rows = {}
         with zipfile.ZipFile(path) as archive:
             index_bytes = archive.read("index.json")
             index = json.loads(index_bytes)
@@ -79,6 +89,7 @@ def verify(snapshot: pathlib.Path, output: pathlib.Path, *, write_lock: bool = F
                     continue
                 for row in json.loads(archive.read(name)):
                     expressions.add(row[0])
+                    popup_sources.setdefault(row[0], set()).update(rendered_sources(row[5]))
                     if row[0] in lookup_terms and has_imabi_source(row[5]):
                         imabi_terms.add(row[0])
                     footer = row[5][0]["content"]["content"][-1]["content"]
@@ -86,8 +97,10 @@ def verify(snapshot: pathlib.Path, output: pathlib.Path, *, write_lock: bool = F
                         raise ValueError(f"Wrong article link: {filename} {row[0]}")
                     article = output / grammar_path(row[0], english=english) / "index.html"
                     heading = f'<h1 lang="ja">{html.escape(row[0])}</h1>'
-                    if not article.is_file() or heading not in article.read_text():
+                    page = article.read_text() if article.is_file() else ""
+                    if heading not in page:
                         raise ValueError(f"Missing article or wrong heading: {filename} {row[0]}")
+                    article_rows[row[0]] = {html.unescape(uid) for uid in re.findall(r'data-source-row="([^"]+)"', page)}
                     count += 1
         if count != len(corpus["entries"]):
             raise ValueError(f"Entry count differs from full snapshot: {filename}")
@@ -95,6 +108,13 @@ def verify(snapshot: pathlib.Path, output: pathlib.Path, *, write_lock: bool = F
             raise ValueError(f"Previously published headwords were removed: {filename}")
         if lookup_terms != imabi_terms:
             raise ValueError(f"Missing IMABI lookups in {filename}: {sorted(lookup_terms - imabi_terms)}")
+        for (_, row_uid), item in plan.items():
+            label = source_label(item["point"], corpus["sourceLabels"])
+            for form in item["forms"]:
+                if label not in popup_sources.get(form, set()):
+                    raise ValueError(f"Missing popup source {row_uid}: {filename} {form}")
+                if row_uid not in article_rows.get(form, set()):
+                    raise ValueError(f"Missing full source explanation {row_uid}: {filename} {form}")
         # The popup has a four-sense budget. Every indexed lesson must still be
         # reachable on the article, with its own title, in both editions.
         for form in sorted(lookup_terms):
@@ -121,6 +141,7 @@ def verify(snapshot: pathlib.Path, output: pathlib.Path, *, write_lock: bool = F
         raw = (downloads / name).read_bytes()
         assets[name] = {"sha256": hashlib.sha256(raw).hexdigest(), "byteCount": len(raw)}
     result = {"revision": revision, "sources": sorted(required), "entries": len(corpus["entries"]),
+              "japaneseLookupRecords": source_coverage,
               "imabiLessons": len(imabi_ids), "imabiLookupLessons": len(lookups),
               "imabiLookupTerms": len(lookup_terms), "assets": assets}
     lock_path = snapshot / "release.json"
@@ -131,6 +152,7 @@ def verify(snapshot: pathlib.Path, output: pathlib.Path, *, write_lock: bool = F
     return {"revision": revision, "sources": len(required), "imabiPages": listing["count"],
             "imabiLessons": len(imabi_ids), "imabiLookupLessons": len(lookups),
             "imabiLookupTerms": len(lookup_terms), "preservedHeadwords": len(old_expressions),
+            "japaneseLookupRecords": source_coverage,
             "verifiedArticleLinks": checked_rows, "assets": assets}
 
 

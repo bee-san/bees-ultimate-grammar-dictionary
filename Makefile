@@ -35,7 +35,7 @@ ZIP := build/bees-ultimate-grammar-dictionary.zip
 # `all` remains the original-source extraction and merge pipeline.
 .DEFAULT_GOAL := release
 
-.PHONY: all personal release verify-release extract keymap merge build site translate-english publish-data validate validate-node audit-packaged \
+.PHONY: all personal release verify-release verify-popup extract keymap merge build site translate-english publish-data validate validate-node audit-packaged \
         audit-attribution test scan-polarity clean help
 
 help:
@@ -80,6 +80,10 @@ release: site
 
 verify-release:
 	$(PY) scripts/verify_release.py
+
+# Uses the committed upstream Yomitan engine, with no npm or network access.
+verify-popup:
+	$(PY) scripts/verify_popup.py
 
 validate:
 	$(PY) -m bugd.cli validate

@@ -3,6 +3,262 @@
   "description": "Reviewed lookup forms from locked IMABI lesson titles, headings and explicit variant descriptions. A link indexes the whole lesson; it does not equate the named forms or their senses.",
   "lessons": [
     {
+      "pageId": "29",
+      "title": "Introduction to Japanese",
+      "expressions": [
+        "日本語",
+        "日本語学習"
+      ],
+      "headings": [
+        "Introduction to Japanese　日本語学習入門にほんごがくしゅうにゅうもん",
+        "Japanese: A Japonic Language　日琉語族にちりゅうごぞくの言語げんご・日本語にほんご",
+        "The Diversity of Dialects　方言ほうげんの多様性たようせい",
+        "Japanese Pronunciation　日本語にほんごの発音はつおん",
+        "Japanese Grammar　日本語にほんごの文法ぶんぽう",
+        "Word Order　語順ごじゅん",
+        "Order of Recognition　認知にんちの順序じゅんじょ",
+        "A Topic-Prominent Language　主題優勢言語しゅだいゆうせいげんご",
+        "Left-Branching　主要部終端型しゅようぶしゅうたんがた（左枝分ひだりえだわかれ構造こうぞう）",
+        "Macro-To-Micro マクロ視点してんからミクロ視点してんへ",
+        "Agglutination　膠着性こうちゃくせい",
+        "Name Ordering　人ひとの呼よび方かた",
+        "Inversion　倒置法とうちほう",
+        "Omission　省略しょうりゃく",
+        "Speech Registers　文体ぶんたいの種類しゅるい",
+        "Parts of Speech　品詞ひんし",
+        "Particles　助詞じょし",
+        "Japanese Writing　日本語にほんごの表記体系ひょうきたいけい",
+        "Kana: Hiragana and Katakana　仮名かな（平仮名ひらがな・片仮名かたかな）",
+        "Kanji　漢字かんじ",
+        "Character Simplification　漢字かんじの簡略化かんりゃくか",
+        "Japanese-Made Kanji　国字こくじ",
+        "English Letters　ラテン文字もじの使つかい方かた",
+        "Punctuation句読法くとうほう",
+        "Word Etymology　単語たんごの由来ゆらい",
+        "Spoken vs Written 「口語こうご」と「文語ぶんご」との違ちがい",
+        "In Conclusion　最後さいごに…"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "53",
+      "title": "Pronunciation I: Vowels",
+      "expressions": [
+        "母音",
+        "発音"
+      ],
+      "headings": [
+        "Pronunciation I: Vowels 日本語にほんごの音韻体系おんいんたいけい①・母音ぼいん",
+        "The Five Vowels of Japanese 日本語にほんごの母音ぼいん・5いつつの音おと",
+        "The Japanese /a/　日本語にほんごの「ア」",
+        "The Japanese /i/　日本語にほんごの「イ」",
+        "The Japanese /u/　日本語にほんごの「ウ」",
+        "The Japanese /e/　日本語にほんごの「エ」",
+        "The Japanese /o/　日本語にほんごの「オ」",
+        "Short Vowels vs Long Vowels　長短母音ちょうたんぼいんの区別くべつ",
+        "[ē] vs. [e.i]　「エー」と「エイ」の区別くべつ",
+        "[ō] vs [o.u]「オー」と「オウ」の区別くべつ",
+        "[o.u] Across a Morpheme Boundary",
+        "“IU” = “Yū”　「イウ」＝「ユー」"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "59",
+      "title": "Pronunciation II: Consonants",
+      "expressions": [
+        "子音",
+        "発音"
+      ],
+      "headings": [
+        "Pronunciation II: Consonants　日本語にほんごの音韻体系おんいんたいけい②・子音しいん",
+        "Unvoiced Consonants　無声子音むせいしいん",
+        "Voiced Consonants　有声子音ゆうせいしいん",
+        "Nasal Consonants　鼻音びおん",
+        "Liquid Consonant　流音りゅうおん",
+        "Semi-Vowels　半母音はんぼいん",
+        "Palatalized Consonants　拗音ようおん",
+        "Long Consonants　長子音ちょうしいん",
+        "The Moraic Nasal　撥音はつおん"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "63",
+      "title": "Pronunciation III: Pitch Accent & Devoicing",
+      "expressions": [
+        "アクセント",
+        "無声化"
+      ],
+      "headings": [
+        "Pronunciation III: Pitch Accent & Devoicing日本語にほんごの音韻体系おんいんたいけい③　アクセント・母音ぼいんの無声化むせいか",
+        "Standard Japanese Pitch Accent　標準語ひょうじゅんごのアクセント",
+        "The Accent Types アクセントの型かた",
+        "Distinguishing Homophones w/ Pitchアクセントの違ちがう同音異義語どうおんいぎご",
+        "Different Words, Same Pitch　アクセント区別くべつの付つかない同音語どうおんご",
+        "Vowel Devoicing　母音ぼいんの無声化むせいか"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "65",
+      "title": "Hiragana　ひらがな",
+      "expressions": [
+        "ひらがな",
+        "平仮名"
+      ],
+      "headings": [
+        "Hiragana　ひらがな",
+        "General Handwriting Rules　書き順の基本ルール",
+        "Examples of Hiragana　「ひらがな」の使用例",
+        "The Diacritics ゛& ゜　　濁点・半濁点",
+        "Examples of Words with Diacritics　　濁点・半濁点を使った単語の使用例",
+        "Palatal Sounds in Hiragana　ひらがなにおける拗音",
+        "Example Words w/ Palatal Sounds　　拗音を使った単語の例",
+        "Mispronouncing Palatal Sounds 　拗音の誤発音にご注意を",
+        "Long Consonants with Small “tsu”　長子音を示す促音「っ」"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "67",
+      "title": "Katakana　カタカナ",
+      "expressions": [
+        "カタカナ",
+        "片仮名"
+      ],
+      "headings": [
+        "Katakana　カタカナ",
+        "General Handwriting Rules　　書き順の基本的なルール",
+        "Examples of Katakana 　「カタカナ」の使用例",
+        "The Diacritics ゛ & ゜　濁点・半濁点",
+        "Examples of Words w/ Diacritics　濁点・半濁点を使った単語の使用例",
+        "Palatal Sounds in Katakana　カタカナにおける拗音",
+        "Example Words w/ Palatal Sounds 　拗音を使った単語の例",
+        "Extended Katakana　カタカナにおける特殊音",
+        "Words with Extended Katakana　　　カタカナで書かれた特殊音の入った単語",
+        "Long Consonants w/ a Small “tsu”　長子音を示す促音「ッ」"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "69",
+      "title": "Kana III: Orthography　仮名遣い",
+      "expressions": [
+        "仮名遣い"
+      ],
+      "headings": [
+        "Kana III: Orthography",
+        "Long Vowels in Hiragana　　平仮名での長母音の表記",
+        "Words w/ Long Vowels in Hiragana　　「ひらがな」で書かれた長母音の入った単語の例",
+        "Long Vowels in Katakana　　　カタカナで書かれた長母音",
+        "Loanwords written in Katakanaカタカナで書かれた外来語",
+        "Native/Sino-Japanese Words Written in Katakanaカタカナで書かれた大和言葉・漢語",
+        "Long Consonants in Kana　　長子音の仮名表記",
+        "Long Unvoiced Consonants無声子音の長音化",
+        "Long Voiced Consonants有声子音の長音化",
+        "Glottal Stops声門閉鎖音",
+        "Yotsugana　四つ仮名",
+        "The Particles Wa は, E へ, & (W)O を"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "71",
+      "title": "Kanji Intro I　漢字入門①",
+      "expressions": [
+        "漢字",
+        "部首"
+      ],
+      "headings": [
+        "Introduction to Kanji I: The Radicals　　漢字入門かんじにゅうもん①・部首ぶしゅ",
+        "What are Radicals　部首ぶしゅとは？",
+        "Radicals as Standalone Kanji",
+        "Radicals as Semantic Elements",
+        "The Types of Radicals　部首ぶしゅの種類しゅるい（偏旁冠脚へんぼうかんきゃく）",
+        "Left-Side Radicals　偏へん",
+        "Right-Side Radicals　旁つくり",
+        "Upper-Side Radicals　冠かんむり",
+        "Bottom-Side Radicals　脚あし",
+        "Hanging Radicals　垂たれ",
+        "Bottom-Wrapping Radicals　繞にょう",
+        "Enclosure Radicals　構かまえ"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "73",
+      "title": "Kanji Intro II　漢字入門②",
+      "expressions": [
+        "漢字",
+        "音読み",
+        "訓読み"
+      ],
+      "headings": [
+        "Intro to Kanji II: Reading Kanji　漢字カンジの読よみ方かた",
+        "The 4 Kinds of Kanji　　四種類よんシュルイの漢字カンジの成なり立たち",
+        "Pictograms　象形文字ショウケイモジ",
+        "Ideograms　指事文字シジモジ",
+        "Compound Ideograms　会意文字カイイモジ",
+        "Semasio-Phonetic　形声文字ケイセイモジ",
+        "Phonetic Elements in Action",
+        "ON Readings　音読オンよみ",
+        "The Kinds of ON Readings音オン読よみの種類シュルイ",
+        "KUN Readings　訓クン読よみ",
+        "Characteristics of KUN Readings訓クン読よみの特徴トクチョウ",
+        "Why Both ON & KUN Readings Are Important音訓オンクンの重要性ジュウヨウセイ",
+        "Case Study with 男 (Man)",
+        "Choosing Between ON & KUN Readings　音訓オンクンの使つかい分わけ",
+        "Single-Kanji Words一字イチジからなる単語タンゴの読よみ方かた",
+        "Sino-Japanese Compound Words　熟語ジュクゴの構成コウセイ",
+        "Two-Kanji Compounds 二字熟語ニジジュクゴ",
+        "Three-Kanji Compounds 三字熟語サンジジュクゴ",
+        "Four-Kanji Compounds 四字熟語よジジュクゴ",
+        "Five-Kanji Compounds 五字熟語ゴジジュクゴ",
+        "More Examples of Compounds",
+        "Native Compound Words　　和語ワゴの複合語フクゴウゴ",
+        "Mixed Origin Words　和漢混淆語ワカンコンコウゴ",
+        "ON-KUN Readings　重箱読ジュウばこよみ",
+        "KUN-ON Readings　 湯桶読ゆトウよみ",
+        "Special KUN Readings　熟字訓ジュクジクン",
+        "Okurigana　送おくり仮名がな",
+        "Furigana 振ふり仮名がな",
+        "Ateji　当あて字ジ",
+        "Kokuji　国字コクジ"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "76",
+      "title": "Nouns and Pronouns　名詞と代名詞",
+      "expressions": [
+        "名詞",
+        "代名詞"
+      ],
+      "headings": [
+        "Nouns & Pronouns　名詞と代名詞",
+        "The Japanese Definition of “Noun”　日本語における「名詞」の定義",
+        "Common Nouns　普通名詞",
+        "Proper Nouns　固有名詞",
+        "Personal Names　人名",
+        "Place Names 地名",
+        "A Map of Japan　日本地図",
+        "Organization Names　組織名",
+        "Addresses　住所の書き方",
+        "Pronouns　代名詞",
+        "Personal Pronouns　人称代名詞",
+        "1st Person Pronouns (I)　第一人称",
+        "2nd Person Pronouns　第二人称",
+        "3rd Person Pronouns　第三人称",
+        "Demonstrative Pronouns 指示代名詞",
+        "Proximity-Based Distinctions",
+        "Possessive Pronouns　所有代名詞",
+        "How Possession is marked in Japanese",
+        "Question Pronouns 疑問詞"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "79",
       "title": "The Copula Verb だ",
       "expressions": [
@@ -26,6 +282,39 @@
         "ではない vs でない vs じゃない vs じゃあない",
         "The Negative-Past Form　過去の否定形"
       ]
+    },
+    {
+      "pageId": "81",
+      "title": "Copular Sentences II",
+      "expressions": [
+        "です",
+        "でした",
+        "ではありません"
+      ],
+      "headings": [
+        "Copular Sentences II: Polite Speech　コピュラ文（丁寧体）",
+        "Terminology Recap",
+        "Rule of Thumb",
+        "The Copula Verb です",
+        "Basic Sentence Structure w/ です",
+        "The Non-Past Form (Polite)　非過去形（丁寧体）",
+        "Non-Past = Present Tense",
+        "Non-Past = Future Tense",
+        "Omitting Xは",
+        "Omitting です",
+        "The Polite Past Tense Form過去形（丁寧体）",
+        "The Meaningless “There”",
+        "Nuancing of the Past Tense Form",
+        "The Polite Negative Forms否定形（丁寧体）",
+        "Method 1: 【では・じゃ】ない＋～です",
+        "Method 2: 【では・じゃ】ありません",
+        "The Informal Nature of Contractions",
+        "The Polite Negative-Past Forms 過去の否定形（丁寧体）",
+        "Method 1: 【では・じゃ】なかった＋～です",
+        "Method 2: 【では・じゃ】ありませんでした",
+        "Recap"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "83",
@@ -83,6 +372,54 @@
       ]
     },
     {
+      "pageId": "87",
+      "title": "Adjectives　形容詞",
+      "expressions": [
+        "形容詞",
+        "かった",
+        "くない",
+        "くなかった",
+        "くないです",
+        "くありません"
+      ],
+      "headings": [
+        "Adjectives　形容詞",
+        "The Basic/Non-Past Form　形容詞の基本形・非過去形",
+        "Polite Non-Past　非過去の丁寧形",
+        "Past Tense　過去形（常体・丁寧体）",
+        "Plain Negative Form w/ ～くない常体語における否定形",
+        "Polite Negative Forms w/ ～くないです・～くありません丁寧語における否定形（くないです・くありません）",
+        "Plain Negative-Past Form w/ ～くなかった常体語における過去の否定形（くなかった）",
+        "Polite Negative-Past Forms丁寧語における過去の否定形（～くなかったです・～くありませんでした）"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson. Additional compound forms follow the recorded section headings or their explicit construction descriptions.",
+      "sectionLookupExpressions": [
+        "くないです",
+        "くありません"
+      ]
+    },
+    {
+      "pageId": "89",
+      "title": "Adjectival Nouns I　形容動詞①",
+      "expressions": [
+        "形容動詞",
+        "な",
+        "である"
+      ],
+      "headings": [
+        "Adjectival Nouns I　形容動詞①",
+        "The Non-Past Forms (Plain/Polite)　非過去形（常体・丁寧体）",
+        "Dropping the Copula",
+        "Two Attributive Forms: ～な  vs ～である",
+        "The Past Tense Forms (Plain/Polite)　過去形（常体・丁寧体）",
+        "The Negative Forms (Plain/Polite)　否定形（常体・丁寧体）",
+        "The Negative-Past Forms (Plain/Polite) 過去の否定形（常体・丁寧体）",
+        "Native Adjectival Nouns 　和語系の形容動詞",
+        "Foreign Adjectival Nouns　外来系の形容動詞"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "91",
       "title": "The Particle を I",
       "expressions": [
@@ -98,11 +435,73 @@
       ]
     },
     {
+      "pageId": "93",
+      "title": "Ichidan Verbs　一段活用動詞",
+      "expressions": [
+        "一段動詞",
+        "一段活用",
+        "ます",
+        "ない",
+        "た",
+        "ました",
+        "なかった"
+      ],
+      "headings": [
+        "Ichidan Verbs　一段活用動詞",
+        "The Basic/Non-Past Form 一段活用動詞の基本形・非過去形",
+        "The Polite Non-Past Form w/ ～ます　非過去の丁寧形 （～ます）",
+        "Basic Form: Predicative vs. Attributive w/ ～ます非過去形「～ます」の終止形・連体形との使い分け",
+        "The Plain Past Form w/ ～た　　 常体語における過去形（～た）",
+        "The Polite Past Form w/ ～ました丁寧語における過去形（～ました）",
+        "The Plain Negative Form w/ ～ない常体語における否定形（～ない）",
+        "The Polite Negative Forms (～ません or ～ないです)　丁寧語における否定形（～ません・ないです）",
+        "The Plain Negative Past Form w/ ～なかった常体語における過去の否定形（～なかった）",
+        "The Polite Negative Past Forms (～ませんでした or ～なかったです)丁寧語における過去の否定形（～ませんでした・なかったです）"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson. Additional compound forms follow the recorded section headings or their explicit construction descriptions.",
+      "sectionLookupExpressions": [
+        "た",
+        "ました",
+        "なかった"
+      ]
+    },
+    {
+      "pageId": "95",
+      "title": "Godan Verbs　五段活用動詞",
+      "expressions": [
+        "五段動詞",
+        "五段活用",
+        "ます",
+        "ない",
+        "た",
+        "ました",
+        "なかった"
+      ],
+      "headings": [
+        "Godan Verbs 五段活用動詞",
+        "The Basic/Non-Past Form  五段活用動詞の基本形・非過去形",
+        "The Polite Non-Past Form w/ ～ます　非過去の丁寧形 （～ます）",
+        "The Plain Past Form w/ ～た　　常体語における過去形（～た）",
+        "The Polite Past Form w/ ～ました丁寧語における過去形（～ました）",
+        "The Plain Negative Form w/～ない常体語における否定形（～ない）",
+        "The Polite Negative Forms (～ません or ～ないです)　丁寧語における否定形（～ません・ないです）",
+        "The Plain Negative Past Form (～なかった)常体語における過去の否定形（～なかった）",
+        "The Polite Negative Past Forms (～ませんでした or ～なかったです)丁寧語における過去の否定形（～ませんでした・なかったです）"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson. Additional compound forms follow the recorded section headings or their explicit construction descriptions.",
+      "sectionLookupExpressions": [
+        "た",
+        "ました",
+        "なかった"
+      ]
+    },
+    {
       "pageId": "97",
       "title": "The Verbs する & 来る",
       "expressions": [
         "する",
-        "来る"
+        "来る",
+        "くる"
       ],
       "headings": [
         "The Irregular Verbs する & 来る",
@@ -120,7 +519,10 @@
         "The Bases of 来る (To Come)",
         "The Conjugations of Kuru 来る",
         "The Meaning of 来る"
-      ]
+      ],
+      "readingAliases": {
+        "来る": "くる"
+      }
     },
     {
       "pageId": "99",
@@ -141,7 +543,14 @@
       "pageId": "101",
       "title": "The Particle か W/ The Negative",
       "expressions": [
-        "か"
+        "か",
+        "ないですか",
+        "ないのですか",
+        "ませんか",
+        "ないのか",
+        "ないの",
+        "じゃないですか",
+        "んじゃありませんか"
       ],
       "headings": [
         "The Particle か W/ The Negative",
@@ -152,7 +561,17 @@
         "～ないのか",
         "～ないの？",
         "～（ん）じゃないですか・～んじゃありませんか?"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "ないですか",
+        "ないのですか",
+        "ませんか",
+        "ないのか",
+        "ないの",
+        "じゃないですか",
+        "んじゃありませんか"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "103",
@@ -190,10 +609,178 @@
       ]
     },
     {
+      "pageId": "107",
+      "title": "こそあど I: This & That",
+      "expressions": [
+        "これ",
+        "それ",
+        "あれ",
+        "この",
+        "その",
+        "あの"
+      ],
+      "headings": [
+        "こそあど I: “This” & “That”:これ・この, それ・その, & あれ・あの",
+        "Nominal Forms of “This” & “That”: これ, それ, & あれ",
+        "Adjectival Forms of “This” & “That”: この, その, & あの",
+        "こそあど with Non-Physical Objects or Objects NOT Present",
+        "Prenominal (Adjectival) Forms:これの, それの, あれの",
+        "Contractions of “This” & “That” こそあど + The Particle は"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "109",
+      "title": "Kosoado II: These & Those",
+      "expressions": [
+        "これら",
+        "それら",
+        "あれら",
+        "こいつ",
+        "そいつ",
+        "あいつ",
+        "ら"
+      ],
+      "headings": [
+        "こそあど II: “These” & “Those”これら, それら, あれら & こいつ（ら）, そいつ（ら）, あいつ（ら）",
+        "The Suffix ～ら",
+        "Plural こそあど for Things",
+        "これら & それら: Individuality",
+        "The Use of あれら",
+        "Crude Forms of これ, それ, あれ & Their Plural Forms:こいつ,（ら）, そいつ（ら）, & あいつ（ら）"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "111",
+      "title": "Kosoado こそあど III: Here & There",
+      "expressions": [
+        "ここ",
+        "そこ",
+        "あそこ"
+      ],
+      "headings": [
+        "こそあど III: “Here” & “There”: ここ, そこ, & あそこ",
+        "Here: ここ",
+        "There: そこ",
+        "(Over) There: あそこ"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "113",
+      "title": "Greeting Phrases 挨拶の表現",
+      "expressions": [
+        "挨拶",
+        "おはよう",
+        "こんにちは",
+        "こんばんは"
+      ],
+      "headings": [
+        "Greeting Phrases 挨拶の表現",
+        "Greetings of the Day 日々の挨拶",
+        "Good Morning",
+        "Notable Variants",
+        "Hello/Good Afternoon",
+        "Good Evening",
+        "Good Night",
+        "Farewell 別れの言葉",
+        "The Infamous さようなら",
+        "A Simple “See You Later”",
+        "Leaving the Office",
+        "さらば",
+        "Leaving",
+        "Going Out to Do…",
+        "Returning",
+        "Welcome Phrases 歓迎の言葉"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "115",
+      "title": "Yes Phrases",
+      "expressions": [
+        "はい",
+        "はあ",
+        "ええ",
+        "うん"
+      ],
+      "headings": [
+        "Yes Phrases: はい, はあ, ええ, & うん",
+        "The Usages of はい & はあ",
+        "The Usages of ええ",
+        "The Usages of うん"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "118",
+      "title": "No Phrases",
+      "expressions": [
+        "いいえ",
+        "いえ",
+        "いや",
+        "否",
+        "ううん"
+      ],
+      "headings": [
+        "No Phrases: いいえ, いえ, いや, 否, & ううん",
+        "いいえ",
+        "いえ & いや",
+        "否",
+        "ううん"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "120",
+      "title": "Expressions of Gratitude　感謝の表現",
+      "expressions": [
+        "ありがとう",
+        "感謝"
+      ],
+      "headings": [
+        "Expressions of Gratitude　感謝の表現",
+        "ありがとう",
+        "Thanking for Food",
+        "感謝します",
+        "謝意",
+        "サンキュー",
+        "Famous Dialect Phrases",
+        "You’re Welcome"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "122",
+      "title": "Expressions of Apology　お詫びの言葉",
+      "expressions": [
+        "すみません",
+        "失礼します",
+        "お詫び"
+      ],
+      "headings": [
+        "Expressions of Apology   お詫びの言葉",
+        "すみません",
+        "失礼します",
+        "申し訳ありません",
+        "お詫び（を）します",
+        "ごめんなさい",
+        "Other Verbs for “To Apologize”",
+        "“My Bad”",
+        "“Sorry to Impose”",
+        "Entering a Room",
+        "Condolences"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "124",
       "title": "The Conjunctive Particle て I: The Affirmative",
       "expressions": [
-        "て"
+        "て",
+        "で",
+        "くて"
       ],
       "headings": [
         "The Conjunctive Particle て I: The Affirmative",
@@ -204,7 +791,53 @@
         "Meanings of ～て When Connecting Clauses",
         "The Polite ～まして & ～でして",
         "Verb Deletion"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "で",
+        "くて"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
+    },
+    {
+      "pageId": "133",
+      "title": "Counters with Sino-Japanese Numbers I",
+      "expressions": [
+        "円",
+        "冊",
+        "課",
+        "歩",
+        "枚",
+        "匹",
+        "頭",
+        "足",
+        "台",
+        "階",
+        "歳",
+        "杯",
+        "本",
+        "個",
+        "人"
+      ],
+      "headings": [
+        "Counters with Sino-Japanese Numbers I: ～円・冊・課・歩・枚・匹・頭・足・台・階・歳・杯・本・個・人",
+        "The Counter ～円",
+        "The Counter ～冊",
+        "The Counter ～課",
+        "The Counter ～歩",
+        "The Counter ～枚",
+        "The Counter ～匹",
+        "The Counter ～頭",
+        "The Counter ～足",
+        "The Counter ～台",
+        "The Counter ～階",
+        "The Counter ～歳・才",
+        "The Counter ～杯",
+        "The Counter ～本",
+        "The Counter ～個",
+        "The Counter ～人",
+        "Rules of Thumb For Contractions"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "135",
@@ -289,7 +922,8 @@
       "title": "The Existential Verbs ある & いる",
       "expressions": [
         "ある",
-        "いる"
+        "いる",
+        "とある"
       ],
       "headings": [
         "The Existential Verbs ある & いる",
@@ -307,7 +941,11 @@
         "Usage 3 : Possessing Animate, Live X",
         "When ある & いる Overlap",
         "Common Mistakes"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "とある"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "149",
@@ -340,6 +978,42 @@
         "Type I: -AGENT w/ ～てある",
         "Type II: +Agent w/ ～てある"
       ]
+    },
+    {
+      "pageId": "154",
+      "title": "Occupation",
+      "expressions": [
+        "職業",
+        "仕事"
+      ],
+      "headings": [
+        "Occupation",
+        "Job-Related Terminology",
+        "Occupations and the Expertise",
+        "Suffixes Indicating Occupation: ～者 vs ～家",
+        "Suffixes Indicating Occupation",
+        "Fields of Study"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "157",
+      "title": "World Geography",
+      "expressions": [
+        "地理"
+      ],
+      "headings": [
+        "World Geography世界の地理",
+        "What is a Continent?",
+        "Countries of the World",
+        "Countries of Eurasiaユーラシア大陸の国々",
+        "Countries of the Americas",
+        "Countries of Africa",
+        "Countries of the Pacific",
+        "Languages of the World",
+        "Languages & Dialects of Japan"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "159",
@@ -389,10 +1063,31 @@
       ]
     },
     {
+      "pageId": "165",
+      "title": "Interrogatives I",
+      "expressions": [
+        "誰",
+        "何",
+        "いつ",
+        "どこ",
+        "なぜ"
+      ],
+      "headings": [
+        "Interrogatives: Who, What, When, Where, & Why?",
+        "Interrogatives in Polite Speech",
+        "Why?"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "167",
       "title": "The Particle か III: Indirect Question",
       "expressions": [
-        "か"
+        "か",
+        "かどうか",
+        "のか",
+        "だか",
+        "んだか"
       ],
       "headings": [
         "The Particle か III: Indirect Question",
@@ -405,7 +1100,29 @@
         "～だか",
         "～んだか",
         "～んだか ＝ Or"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "かどうか",
+        "のか",
+        "だか",
+        "んだか"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
+    },
+    {
+      "pageId": "178",
+      "title": "Copula Verb Variants",
+      "expressions": [
+        "だ",
+        "です",
+        "である"
+      ],
+      "headings": [
+        "Copula Verb Variants",
+        "A Closer Look at である, だ, & です",
+        "Variants of the Copula"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "181",
@@ -451,6 +1168,40 @@
       ]
     },
     {
+      "pageId": "185",
+      "title": "Adverbs",
+      "expressions": [
+        "副詞"
+      ],
+      "headings": [
+        "Adverbs",
+        "Modifying State of Being",
+        "Modifying Tense/Aspect",
+        "Modifying Modality",
+        "Modifying Emphasis",
+        "Counter Phrases",
+        "もう vs もっと"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "187",
+      "title": "Adverbs from Adjectives",
+      "expressions": [
+        "連用形",
+        "副詞"
+      ],
+      "headings": [
+        "Adverbs from Adjectives形容詞・形容動詞の連用形の副詞的用法",
+        "Constructing the 連用形",
+        "連用形＋なる・する",
+        "Alternative に-Less 連用形",
+        "Adverbs Made w/ に",
+        "少し vs 少しく"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "189",
       "title": "よい・いい",
       "expressions": [
@@ -469,22 +1220,49 @@
       ]
     },
     {
+      "pageId": "191",
+      "title": "Adjectival Nouns II: No-Adjectival Nouns",
+      "expressions": [
+        "ノ形容詞",
+        "形容動詞"
+      ],
+      "headings": [
+        "Adjectival Nouns II: No-Adjectival Nouns　ノ形容詞",
+        "/no/ vs /na/",
+        "When /no/ is Ungrammatical",
+        "When /na/ is Ungrammatical",
+        "Noun or Adjectival Noun?",
+        "/no/ & /na/ Interchangeability",
+        "Set Phrases",
+        "/no/ vs /Na/ in Subordinate Clauses",
+        "Irregular No-Adjectival Nouns?"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "193",
       "title": "多い & 少ない",
       "expressions": [
         "多い",
-        "少ない"
+        "少ない",
+        "おおい",
+        "すくない"
       ],
       "headings": [
         "多い & 少ない",
         "Quantity/Frequency"
-      ]
+      ],
+      "readingAliases": {
+        "多い": "おおい",
+        "少ない": "すくない"
+      }
     },
     {
       "pageId": "195",
       "title": "同じ",
       "expressions": [
-        "同じ"
+        "同じ",
+        "おなじ"
       ],
       "headings": [
         "同じ",
@@ -498,7 +1276,72 @@
         "The Adverbial Form 同じく",
         "The Adverbial? Form 同じ",
         "The Sino-Japanese Prefix 同～"
-      ]
+      ],
+      "readingAliases": {
+        "同じ": "おなじ"
+      }
+    },
+    {
+      "pageId": "197",
+      "title": "Time Counters I: ～日・週間・ヶ月・ 年",
+      "expressions": [
+        "日",
+        "週間",
+        "ヶ月",
+        "年"
+      ],
+      "headings": [
+        "Time Counters I: ～日・週間・ヶ月・年",
+        "Number of Days　日数",
+        "Weeks　～週間",
+        "Months　～ヶ月（間）",
+        "The Counter ～月（つき）",
+        "Years　～年（間）",
+        "The Counter ～ヶ年",
+        "The Counter ～年生",
+        "The Counter ～学年"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "199",
+      "title": "TIME COUNTERS II: ～時間・分・秒・晩・夜",
+      "expressions": [
+        "時間",
+        "分",
+        "秒",
+        "晩",
+        "夜"
+      ],
+      "headings": [
+        "Time Counters II: ～時間・分・秒・晩・夜",
+        "Hours　～時間",
+        "Minutes　～分（間）",
+        "Seconds　～秒（間）",
+        "Evenings　～晩・泊・夜",
+        "The Counter ～夜（や・よ）"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "201",
+      "title": "Deictic Time",
+      "expressions": [
+        "時間直示"
+      ],
+      "headings": [
+        "Deictic Time 時間直示",
+        "Basic Deictic Expressions",
+        "Discerning Synonyms",
+        "今～・本～: This～",
+        "来～・明～・明日の : “1… from now”",
+        "2…FROM NOW",
+        "3-4+ DAYS FROM NOW",
+        "先～・昨～・きのうの: “1… Before Now”",
+        "2…Before Now",
+        "Broader Deictic Time Expressions"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "203",
@@ -538,17 +1381,40 @@
       ]
     },
     {
+      "pageId": "209",
+      "title": "Adnominal Adjectives: /i/ vs /na/",
+      "expressions": [
+        "連体修飾",
+        "形容詞"
+      ],
+      "headings": [
+        "Adnominal Adjectives: /i/ vs /na/",
+        "/i/ & /na/ Pairs",
+        "Nuance Differences"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "211",
       "title": "Before: ～前",
       "expressions": [
-        "前"
+        "前",
+        "まえ",
+        "直前"
       ],
       "headings": [
         "Before: ～前",
         "The Suffix ～前（ぜん）",
         "The Prefix 前（ぜん）～",
         "～直前"
-      ]
+      ],
+      "readingAliases": {
+        "前": "まえ"
+      },
+      "sectionLookupExpressions": [
+        "直前"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "213",
@@ -575,13 +1441,63 @@
       "pageId": "215",
       "title": "When: 時",
       "expressions": [
-        "時"
+        "時",
+        "とき"
       ],
       "headings": [
         "When: 時",
         "～とき｛に・は・には・∅・も・にも｝",
         "Tense Marking"
-      ]
+      ],
+      "readingAliases": {
+        "時": "とき"
+      }
+    },
+    {
+      "pageId": "217",
+      "title": "Non-Deictic Time I",
+      "expressions": [
+        "日付",
+        "時刻",
+        "年"
+      ],
+      "headings": [
+        "Non-Deictic Time I: The Date & Telling Time",
+        "Calendar-Based Phrases",
+        "The Year　年の呼び方",
+        "The Seasons　四季",
+        "The Months　月の呼び方",
+        "The Suffix ～旬",
+        "Days of the Month　日にち",
+        "The Days of the Week　曜日",
+        "Hours of the Day　一日の時間",
+        "AM & PM",
+        "Late-Night Operations = 30-Hour System",
+        "Minutes ～分",
+        "Quarter & Half",
+        "Seconds　～秒"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "219",
+      "title": "Transitive & Intransitive Verb Pairs",
+      "expressions": [
+        "自動詞",
+        "他動詞",
+        "自他動詞"
+      ],
+      "headings": [
+        "Transitive & Intransitive Verb Pairs",
+        "Identifying 自他動詞",
+        "自他動詞 Verb Pairs",
+        "Type I: ある/おる Fused to Root = Intransitive",
+        "Type 2: /-s/ = Transitive",
+        "Type 3: /-s/ to Transitive Verbs?",
+        "Type 4: Change in Verb Class",
+        "Essential Pairs"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "221",
@@ -658,10 +1574,37 @@
       ]
     },
     {
+      "pageId": "230",
+      "title": "こそあど V: んな, ～いう風な, Etc.",
+      "expressions": [
+        "こんな",
+        "そんな",
+        "あんな",
+        "どんな",
+        "こういう",
+        "そういう",
+        "ああいう",
+        "どういう"
+      ],
+      "headings": [
+        "こそあど V: んな, ～いう風な, Etc.",
+        "こそあど for “Like/Kind of”",
+        "こそあど ＋～風｛な・の｝",
+        "[Adverbial Form] + した",
+        "[Adverbial Form] + いう・いった",
+        "Adverbial Forms",
+        "いかにも",
+        "～かそこ（い）ら",
+        "そんじょそこら"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "232",
       "title": "While I: ～間",
       "expressions": [
-        "間"
+        "間",
+        "あいだ"
       ],
       "headings": [
         "While I: ～間",
@@ -670,13 +1613,19 @@
         "Tense Marking w/ ～間",
         "Particle Use w/ ～間",
         "～間 w/ Non-Verbal Predicates"
-      ]
+      ],
+      "readingAliases": {
+        "間": "あいだ"
+      }
     },
     {
       "pageId": "235",
       "title": "While II: ～うち",
       "expressions": [
-        "うち"
+        "うち",
+        "うちに",
+        "ないうちに",
+        "うちが"
       ],
       "headings": [
         "While II: うち",
@@ -689,13 +1638,20 @@
         "～ないうちに vs ～前に",
         "～間は vs ～うちは",
         "～うちが"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "うちに",
+        "ないうちに",
+        "うちが"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "237",
       "title": "When II: ～頃",
       "expressions": [
-        "頃"
+        "頃",
+        "ころ"
       ],
       "headings": [
         "When II: ～頃",
@@ -709,6 +1665,52 @@
         "Scenario VI: ～ごろ vs ～どき",
         "The Suffix ～ごろ",
         "The Suffix ～どき"
+      ],
+      "readingAliases": {
+        "頃": "ころ"
+      }
+    },
+    {
+      "pageId": "239",
+      "title": "Giving Verbs",
+      "expressions": [
+        "あげる",
+        "くれる",
+        "もらう"
+      ],
+      "headings": [
+        "The Giving Verbs",
+        "The 3 Personal Giving Verbs",
+        "Impersonal Giving Verbs"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "241",
+      "title": "Permission",
+      "expressions": [
+        "てもいい",
+        "ていい",
+        "てもいいですか",
+        "て結構だ",
+        "て大丈夫だ",
+        "ても大丈夫だ"
+      ],
+      "headings": [
+        "Permission: ～て（も）いい",
+        "～てもいいですか？",
+        "～ていい",
+        "Permission ≠ Request許可≠依頼",
+        "～て結構だ",
+        "～て（も）大丈夫だ",
+        "～て（も）いい w/ Nouns & Adjectives",
+        "～なくてもいい vs ～ないでもいい"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson. Additional compound forms follow the recorded section headings or their explicit construction descriptions.",
+      "sectionLookupExpressions": [
+        "て結構だ",
+        "て大丈夫だ",
+        "ても大丈夫だ"
       ]
     },
     {
@@ -772,7 +1774,10 @@
       "title": "Start to I: ～始める & ～出す",
       "expressions": [
         "始める",
-        "出す"
+        "出す",
+        "はじめる",
+        "だす",
+        "出る"
       ],
       "headings": [
         "Start to I: ～始める & ～出す",
@@ -783,7 +1788,15 @@
         "Irregularities",
         "②The Aspect Marker ～出す",
         "～始める vs ～出す"
-      ]
+      ],
+      "readingAliases": {
+        "始める": "はじめる",
+        "出す": "だす"
+      },
+      "sectionLookupExpressions": [
+        "出る"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "251",
@@ -791,7 +1804,9 @@
       "expressions": [
         "終わる",
         "終える",
-        "やむ"
+        "やむ",
+        "おわる",
+        "おえる"
       ],
       "headings": [
         "End: ～終わる・終える, & ～やむ",
@@ -799,7 +1814,11 @@
         "～終わる・終える as V2 in Compound Verbs",
         "～やむ",
         "To Quit Doing"
-      ]
+      ],
+      "readingAliases": {
+        "終わる": "おわる",
+        "終える": "おえる"
+      }
     },
     {
       "pageId": "253",
@@ -807,7 +1826,8 @@
       "expressions": [
         "毎",
         "ごとに",
-        "おきに"
+        "おきに",
+        "まい"
       ],
       "headings": [
         "毎～, ～毎に, & ～おきに",
@@ -820,7 +1840,24 @@
         "～ごとに ＝ Objective",
         "Expressing “Every Time”",
         "～おきに"
-      ]
+      ],
+      "readingAliases": {
+        "毎": "まい"
+      }
+    },
+    {
+      "pageId": "255",
+      "title": "Potential I: The Potential Form",
+      "expressions": [
+        "可能形",
+        "られる",
+        "れる"
+      ],
+      "headings": [
+        "Potential I: The Potential Form",
+        "Normal Potential Form of Verbs"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "257",
@@ -832,6 +1869,22 @@
         "Potential II: できる",
         "できる"
       ]
+    },
+    {
+      "pageId": "259",
+      "title": "Pronouns II",
+      "expressions": [
+        "代名詞",
+        "人称代名詞"
+      ],
+      "headings": [
+        "Pronouns II",
+        "1st Person Pronouns",
+        "2nd Person",
+        "3rd Person",
+        "Keys"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "261",
@@ -872,6 +1925,38 @@
       ]
     },
     {
+      "pageId": "267",
+      "title": "Interrogatives II: The Question “How”",
+      "expressions": [
+        "どう",
+        "いかが",
+        "いくら"
+      ],
+      "headings": [
+        "Interrogatives II: The Question “How”",
+        "どう &　Related Words",
+        "How Much"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "269",
+      "title": "Interrogatives III: With Particles",
+      "expressions": [
+        "疑問詞",
+        "か",
+        "も",
+        "でも"
+      ],
+      "headings": [
+        "Interrogatives III: With Particles",
+        "Interrogative + か/も",
+        "Interrogative + でも",
+        "Interrogative + V1 ～ても"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "271",
       "title": "The Particle の II",
       "expressions": [
@@ -899,7 +1984,11 @@
       "pageId": "275",
       "title": "Might: かもしれない",
       "expressions": [
-        "かもしれない"
+        "かもしれない",
+        "かもしれないだろう",
+        "のかもしれない",
+        "かも",
+        "かもしれん"
       ],
       "headings": [
         "Might: かもしれない",
@@ -909,6 +1998,46 @@
         "～のかもしれない",
         "～かも",
         "～かもしれん"
+      ],
+      "sectionLookupExpressions": [
+        "かもしれないだろう",
+        "のかもしれない",
+        "かも",
+        "かもしれん"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
+    },
+    {
+      "pageId": "277",
+      "title": "Pluralization",
+      "expressions": [
+        "たち",
+        "達",
+        "複数",
+        "ら",
+        "等",
+        "ども",
+        "共",
+        "がた",
+        "方"
+      ],
+      "headings": [
+        "Pluralization",
+        "Lack of Grammatical Number",
+        "～たち･達",
+        "～ら・等",
+        "～ども・共",
+        "～がた・方",
+        "Pronouns and Pluralization"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson. Additional compound forms follow the recorded section headings or their explicit construction descriptions.",
+      "sectionLookupExpressions": [
+        "ら",
+        "等",
+        "ども",
+        "共",
+        "がた",
+        "方"
       ]
     },
     {
@@ -955,7 +2084,9 @@
       "title": "知る VS 分かる",
       "expressions": [
         "知る",
-        "分かる"
+        "分かる",
+        "しる",
+        "わかる"
       ],
       "headings": [
         "知る VS 分かる",
@@ -970,13 +2101,103 @@
         "Tense Differences",
         "知らない VS 知っていない",
         "Other Dialects & Real Examples"
-      ]
+      ],
+      "readingAliases": {
+        "知る": "しる",
+        "分かる": "わかる"
+      }
+    },
+    {
+      "pageId": "304",
+      "title": "Counters W/ Native Numbers I",
+      "expressions": [
+        "文字",
+        "クラス",
+        "品",
+        "桁",
+        "切れ",
+        "玉",
+        "房",
+        "株",
+        "袋",
+        "箱",
+        "棟",
+        "組み",
+        "皿",
+        "束",
+        "通り",
+        "駅"
+      ],
+      "headings": [
+        "Counters W/ Native Numbers I: ～文字・クラス・品・桁・切れ・玉・房・株・袋・箱・棟・組み・皿・束・通り・駅",
+        "The Counters ～文字・字",
+        "The Counter ～クラス",
+        "The Counter ～品（ヒン・しな）",
+        "The Counter ～桁",
+        "The Counter ～切れ",
+        "The Counter ～玉",
+        "The Counter ～房",
+        "The Counter ～株",
+        "The Counter ～袋（ふくろ・タイ）",
+        "The Counter ～箱",
+        "The Counter ～棟（むね・トウ）",
+        "The Counter ～組み",
+        "The Counter ～皿",
+        "The Counter ～束（たば・ソク）",
+        "The Counter ～通り",
+        "The Counter ～駅（えき）"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "306",
+      "title": "Counters With Sino-Japanese Numbers II",
+      "expressions": [
+        "名",
+        "羽",
+        "部",
+        "戸",
+        "発",
+        "軒",
+        "人前",
+        "丁",
+        "点",
+        "泊",
+        "通",
+        "尾",
+        "巻",
+        "隻",
+        "錠"
+      ],
+      "headings": [
+        "Counters With Sino-Japanese Numbers II: ～名・羽・部・戸・発・軒・人前・丁・点・泊・通・ 尾・巻・隻・錠",
+        "The Counter ～名",
+        "The Counter ～羽",
+        "The Counter ～部",
+        "The Counter ～戸",
+        "The Counter ～発",
+        "The Counter ～軒",
+        "The Counter ～人前",
+        "The Counter ～丁",
+        "The Counter ～点",
+        "The Counter ～泊",
+        "The Counter ～通",
+        "The Counter ～尾",
+        "Other Counters for Fish",
+        "The Counter ～巻",
+        "The Counter ～隻",
+        "The Counter ～錠"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "308",
       "title": "Wanting Something: ほしい",
       "expressions": [
-        "ほしい"
+        "ほしい",
+        "てほしい",
+        "てほしいと思う",
+        "てほしかった"
       ],
       "headings": [
         "Wanting Something: ほしい",
@@ -985,7 +2206,13 @@
         "～てほしいと思う",
         "～てほしかった",
         "～ないでほしい vs ～てほしくない"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "てほしい",
+        "てほしいと思う",
+        "てほしかった"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "310",
@@ -1032,14 +2259,35 @@
       "pageId": "316",
       "title": "Expressions with こと",
       "expressions": [
-        "こと"
+        "こと",
+        "ことがある",
+        "ことがない",
+        "こともある",
+        "ことにする",
+        "こととする",
+        "ことにしている",
+        "ことになる",
+        "こととなる",
+        "ことはない"
       ],
       "headings": [
         "Expressions with こと",
         "～ことがある: Experience(S) One Has",
         "～ことがある w/ Adjectival Predicates",
         "NON-REMODELED CONTENT BELOW"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "ことがある",
+        "ことがない",
+        "こともある",
+        "ことにする",
+        "こととする",
+        "ことにしている",
+        "ことになる",
+        "こととなる",
+        "ことはない"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "318",
@@ -1051,6 +2299,97 @@
         "The Particle ながら I: Simultaneous Action",
         "Simultaneous Action"
       ]
+    },
+    {
+      "pageId": "320",
+      "title": "Greetings II　挨拶表現②",
+      "expressions": [
+        "挨拶",
+        "初対面",
+        "再会"
+      ],
+      "headings": [
+        "Greetings ②: First-Time/Reunion/Well-Being/Congratulatory 挨拶表現②: 初対面・再会・安否・お祝いのご挨拶",
+        "Aisatsu for First Encounters 初対面の挨拶（自己紹介）",
+        "Aisatsu for Reunions 再会の挨拶",
+        "久しぶり",
+        "“How are you?”",
+        "Aisatsu for Well-Being/Safety 安否の挨拶",
+        "Congratulatory Aisatsu　お祝いの挨拶",
+        "Aisatsu for “Please”　　丁寧にお願いする際の挨拶",
+        "In Conclusion…　最後に…"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "322",
+      "title": "The Verbs for “To Wear” & “To Take Off”",
+      "expressions": [
+        "着る",
+        "かぶる",
+        "履く",
+        "穿く",
+        "脱ぐ",
+        "着脱"
+      ],
+      "headings": [
+        "The Verbs for “To Wear” & “To Take Off”　　着脱の動詞",
+        "Clothing",
+        "The (Upper) Body: 着る",
+        "The Head: かぶる",
+        "The Waist and Below: 履く・穿く・佩く",
+        "To Cover Over: かける",
+        "Accessories: する & つける",
+        "The Hands/Fingers: はめる",
+        "Ties & Belts: 締める, する, つける, 結ぶ",
+        "Hoist around the Waist: 帯びる",
+        "Around the Head/Neck: 巻く",
+        "Words of Embellishment: 装う, 纏う, & 羽織る",
+        "Formal Language: 着用する",
+        "The Honorific Verb 召す",
+        "To Take Off"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "324",
+      "title": "The Verbs for “To Play”",
+      "expressions": [
+        "遊ぶ",
+        "ふざける",
+        "遊戯する",
+        "プレイする",
+        "演じる"
+      ],
+      "headings": [
+        "The Verbs for “To Play”",
+        "遊ぶ",
+        "戯（たわむ・じゃ・ざ）れる",
+        "ふざける",
+        "遊戯する",
+        "する・やる",
+        "試合をする",
+        "To Play an Instrument",
+        "かける・再生する",
+        "演じる",
+        "プレイする"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "326",
+      "title": "To Cost: Money Terminology",
+      "expressions": [
+        "値段",
+        "お金"
+      ],
+      "headings": [
+        "To Cost: Money Terminology",
+        "How Much is This?　　お値段を聞くとき",
+        "Making Money & World Currencies",
+        "Stock Markets　　株価市場関連の表現"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "328",
@@ -1069,7 +2408,10 @@
       "pageId": "330",
       "title": "Too: ～すぎる",
       "expressions": [
-        "すぎる"
+        "すぎる",
+        "すぎ",
+        "に過ぎる",
+        "でありすぎる"
       ],
       "headings": [
         "Too: ～すぎる",
@@ -1081,14 +2423,22 @@
         "～すぎ",
         "～に過ぎる",
         "～でありすぎる"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "すぎ",
+        "に過ぎる",
+        "でありすぎる"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "332",
       "title": "The Verbs 続く ＆ 続ける",
       "expressions": [
         "続く",
-        "続ける"
+        "続ける",
+        "つづく",
+        "つづける"
       ],
       "headings": [
         "Verbs of Continuation　継続を示す動詞",
@@ -1098,7 +2448,11 @@
         "～続ける VS ～続く",
         "“Verb ＋ ～続ける” VS “Verb ＋ ～のを続ける”",
         "立て続けに・続けざまに"
-      ]
+      ],
+      "readingAliases": {
+        "続く": "つづく",
+        "続ける": "つづける"
+      }
     },
     {
       "pageId": "334",
@@ -1158,6 +2512,72 @@
       ]
     },
     {
+      "pageId": "342",
+      "title": "Must Not",
+      "expressions": [
+        "てはならない",
+        "てはいけない",
+        "てはだめだ"
+      ],
+      "headings": [
+        "Must Not",
+        "禁止：～てはならない・～てはいけない・～てはだめだ"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "344",
+      "title": "Must",
+      "expressions": [
+        "なければならない",
+        "なくてはならない",
+        "ないといけない"
+      ],
+      "headings": [
+        "Must"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "346",
+      "title": "Ikanai/ikenai",
+      "expressions": [
+        "いかない",
+        "いけない",
+        "わけにはいかない"
+      ],
+      "headings": [
+        "いかない vs いけない",
+        "わけにはいかない",
+        "いけない",
+        "いかん・いかぬ",
+        "あかん"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "348",
+      "title": "Directions",
+      "expressions": [
+        "方位",
+        "方向"
+      ],
+      "headings": [
+        "Directions",
+        "Cardinal Directions方位",
+        "Generic Location Words",
+        "向かい vs 向こう",
+        "横 vs 隣",
+        "近く vs そば vs 脇",
+        "Other Location Modifiers",
+        "Places to Go",
+        "Shops",
+        "Asking for Directions",
+        "Then"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "350",
       "title": "The Verb 急ぐ",
       "expressions": [
@@ -1188,6 +2608,35 @@
       ]
     },
     {
+      "pageId": "354",
+      "title": "The Passive",
+      "expressions": [
+        "られる",
+        "れる",
+        "受身"
+      ],
+      "headings": [
+        "The Passive I: ～られる & ～れる",
+        "～られる and ～れる",
+        "The Passive (受身形)",
+        "The Potential"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "356",
+      "title": "ニ格 VS カラ格",
+      "expressions": [
+        "に",
+        "から"
+      ],
+      "headings": [
+        "ニ格 VS カラ格",
+        "に VS から"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "358",
       "title": "The Causative I: ～させる & ～せる",
       "expressions": [
@@ -1205,11 +2654,28 @@
       ]
     },
     {
+      "pageId": "360",
+      "title": "Causative-Passive",
+      "expressions": [
+        "させられる",
+        "せられる",
+        "使役受身"
+      ],
+      "headings": [
+        "Causative-Passive"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "362",
       "title": "The Volition Form: ～（よ）う",
       "expressions": [
         "よう",
-        "う"
+        "う",
+        "うと思う",
+        "ようと思う",
+        "ましょう",
+        "ましょうか"
       ],
       "headings": [
         "The Volition Form: ～（よ）う",
@@ -1221,14 +2687,46 @@
         "Polite Speech: ～ましょう",
         "～ましょうか",
         "Variations"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "うと思う",
+        "ようと思う",
+        "ましょう",
+        "ましょうか"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
+    },
+    {
+      "pageId": "364",
+      "title": "Family",
+      "expressions": [
+        "家族",
+        "ご家族"
+      ],
+      "headings": [
+        "Family",
+        "家族",
+        "ご家族",
+        "Neutral Family Terms",
+        "How to Write いとこ",
+        "Using Terms for Someone Else’s Family for Your Own",
+        "Stepfamily",
+        "Half Family"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "366",
       "title": "Honorifics I: 敬称 I:  ～さん, ～様, Etc.",
       "expressions": [
         "さん",
-        "様"
+        "様",
+        "さま",
+        "ちゃん",
+        "っち",
+        "たん",
+        "ちん",
+        "ぽん"
       ],
       "headings": [
         "第137課: Honorifics I: 敬称 I: ～さん, ～様, Etc.",
@@ -1244,6 +2742,191 @@
         "The Ending ～坊",
         "Diminutive 呼称: ～ちゃん・っち・たん・ちん・ぽん",
         "Honorable Mentions"
+      ],
+      "readingAliases": {
+        "様": "さま"
+      },
+      "sectionLookupExpressions": [
+        "ちゃん",
+        "っち",
+        "たん",
+        "ちん",
+        "ぽん"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
+    },
+    {
+      "pageId": "368",
+      "title": "Honorifics III: Nouns",
+      "expressions": [
+        "敬語",
+        "名詞"
+      ],
+      "headings": [
+        "Honorifics III: Nouns",
+        "Honorific Nouns",
+        "Exercises"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "370",
+      "title": "Honorifics IV: Adjectives & The Copula",
+      "expressions": [
+        "敬語",
+        "でございます"
+      ],
+      "headings": [
+        "Honorifics IV: Adjectives & the Copula",
+        "Adjectives: お・ご～です",
+        "The Copula"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "372",
+      "title": "Honorifics V: Light Keigo",
+      "expressions": [
+        "れる",
+        "られる",
+        "敬語"
+      ],
+      "headings": [
+        "Honorifics V: Light Honorifics: レル・ラレル敬語",
+        "軽い敬語"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "374",
+      "title": "Honorifics VI: Regular Verbs",
+      "expressions": [
+        "敬語",
+        "なさる",
+        "くださる",
+        "させていただきます"
+      ],
+      "headings": [
+        "Honorifics IV: Regular Verbs",
+        "Verbs Regular in Honorifics",
+        "ある",
+        "～させていただきます",
+        "Many More Examples of Honorifics"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson. Additional compound forms follow the recorded section headings or their explicit construction descriptions.",
+      "sectionLookupExpressions": [
+        "させていただきます"
+      ]
+    },
+    {
+      "pageId": "376",
+      "title": "Honorifics VII: Irregular Verbs I",
+      "expressions": [
+        "いらっしゃる",
+        "おいでになる",
+        "敬語"
+      ],
+      "headings": [
+        "Honorifics VII: Irregular Verbs I",
+        "The Exceptions",
+        "おいでになる VS　いらっしゃる",
+        "Honorific Progressive",
+        "The Problems with Making a Command with 敬語",
+        "Other Conjugations",
+        "Many More Examples",
+        "Keys"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "378",
+      "title": "What & When",
+      "expressions": [
+        "何",
+        "なに",
+        "なん",
+        "いつ"
+      ],
+      "headings": [
+        "What & When",
+        "What?",
+        "なにで vs なんで",
+        "When"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "380",
+      "title": "Who & Where",
+      "expressions": [
+        "誰",
+        "だれ",
+        "どなた",
+        "どちら",
+        "どいつ",
+        "どこ"
+      ],
+      "headings": [
+        "Who & Where: 誰, どなた, どちら, どいつ, & どこ",
+        "Who?: 誰",
+        "誰 in Classical Japanese",
+        "どなた",
+        "どちら様",
+        "どなた様",
+        "[どちらの・どの]者",
+        "どいつ・何者",
+        "Where?: どこ",
+        "どちら"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "382",
+      "title": "Why",
+      "expressions": [
+        "なぜ",
+        "どうして",
+        "なんで",
+        "なにゆえ"
+      ],
+      "headings": [
+        "Why: なぜ, どうして, & なんで",
+        "なぜ",
+        "なにゆえ",
+        "どうして",
+        "なんで",
+        "理由"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "384",
+      "title": "Which",
+      "expressions": [
+        "どれ",
+        "どちら",
+        "どっち",
+        "いずれ",
+        "の方"
+      ],
+      "headings": [
+        "Which: どれ, どちら, どっち, & いずれ",
+        "Which “Which”?",
+        "Adjectival “連体詞” Forms",
+        "どれの",
+        "XとY（と）では",
+        "XとY（と）の中では",
+        "～の方（ほう）",
+        "XかYか、｛どちら・どっち｝",
+        "X｛と・か｝Y｛と・か｝の｛どちら・どっち｝",
+        "XとYだと、｛どちら・どっち｝",
+        "Deceiving Translations",
+        "いずれ",
+        "どれどれ"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson. Additional compound forms follow the recorded section headings or their explicit construction descriptions.",
+      "sectionLookupExpressions": [
+        "の方"
       ]
     },
     {
@@ -1257,6 +2940,25 @@
         "～ていく & ～てくる",
         "～ていく　&　～てくる"
       ]
+    },
+    {
+      "pageId": "388",
+      "title": "Best That",
+      "expressions": [
+        "ほうがいい",
+        "方がいい",
+        "に越したことはない",
+        "にこしたことはない"
+      ],
+      "headings": [
+        "Best That: ～方 Patterns & ～に越したことはない",
+        "Best/Better That",
+        "～に越したことはないが"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson.",
+      "readingAliases": {
+        "に越したことはない": "にこしたことはない"
+      }
     },
     {
       "pageId": "390",
@@ -1289,7 +2991,8 @@
       "pageId": "410",
       "title": "Easy I: ～やすい",
       "expressions": [
-        "やすい"
+        "やすい",
+        "られやすい"
       ],
       "headings": [
         "Easy I: ～やすい",
@@ -1297,14 +3000,24 @@
         "Adverb Forms　「Easy」を意味する単語の副詞形",
         "～やすい",
         "～られやすい"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "られやすい"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "412",
       "title": "Honorifics I: 敬称 I:  ～さん, ～様, Etc.",
       "expressions": [
         "さん",
-        "様"
+        "様",
+        "さま",
+        "ちゃん",
+        "っち",
+        "たん",
+        "ちん",
+        "ぽん"
       ],
       "headings": [
         "Honorifics I: 敬称 I: ～さん, ～様, Etc.",
@@ -1320,7 +3033,51 @@
         "The Ending ～坊",
         "Diminutive 呼称: ～ちゃん・っち・たん・ちん・ぽん",
         "Honorable Mentions"
-      ]
+      ],
+      "readingAliases": {
+        "様": "さま"
+      },
+      "sectionLookupExpressions": [
+        "ちゃん",
+        "っち",
+        "たん",
+        "ちん",
+        "ぽん"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
+    },
+    {
+      "pageId": "415",
+      "title": "The Passive II: 不可抗力の受身",
+      "expressions": [
+        "受身",
+        "不可抗力"
+      ],
+      "headings": [
+        "The Passive II: 不可抗力の受身",
+        "不可抗力性"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "417",
+      "title": "Honorifics II: Standalone 敬称",
+      "expressions": [
+        "敬称",
+        "先生"
+      ],
+      "headings": [
+        "第138課: Honorifics II: Standalone 敬称",
+        "Occupational Titles　職業で用いる呼称",
+        "Who Are 先生?",
+        "先輩 & 後輩",
+        "各位 & 御中",
+        "敬称 with 貴～・令～",
+        "敬称 with ～下",
+        "主上・聖上・女将",
+        "師匠"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "426",
@@ -1334,16 +3091,81 @@
       ]
     },
     {
+      "pageId": "428",
+      "title": "Due to",
+      "expressions": [
+        "ために"
+      ],
+      "headings": [
+        "～ために II: Due to…",
+        "Marking a Cause"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "430",
+      "title": "So that",
+      "expressions": [
+        "ように"
+      ],
+      "headings": [
+        "～ように: So That…",
+        "Conjugation Recap",
+        "The Usages of ～ように"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "432",
       "title": "～とおりに",
       "expressions": [
-        "とおりに"
+        "とおりに",
+        "どおりに"
       ],
       "headings": [
         "～とおりに",
         "The Literal Definitions of 通り",
         "～とおりに & ～どおりに"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "どおりに"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
+    },
+    {
+      "pageId": "434",
+      "title": "Trying",
+      "expressions": [
+        "てみる",
+        "てみたい",
+        "てみせる"
+      ],
+      "headings": [
+        "Try I: ～てみる・みたい・みせる",
+        "～てみる/～てみたい",
+        "～てみせる"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "436",
+      "title": "Try II",
+      "expressions": [
+        "ようにする",
+        "ようとする",
+        "うとする"
+      ],
+      "headings": [
+        "Try II: ～ようにする & ～ようとする",
+        "～ようにする",
+        "～ようとする",
+        "Understanding What “Try…” Means",
+        "Interrupted Attempts: “Just about to…”",
+        "Restrictions on ～（よ）うとする",
+        "Non-First Person Volition",
+        "No Overt Agent ⇒ Foreboding Event"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "438",
@@ -1363,7 +3185,9 @@
       "pageId": "440",
       "title": "The Particle なんて",
       "expressions": [
-        "なんて"
+        "なんて",
+        "などというのは",
+        "のなんて"
       ],
       "headings": [
         "The Particle なんて",
@@ -1382,7 +3206,12 @@
         "何て",
         "何て言う ＝ 何と言う",
         "何て ＝ 何と ＝ “Oh How…”"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "などというのは",
+        "のなんて"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "442",
@@ -1413,10 +3242,27 @@
       ]
     },
     {
+      "pageId": "446",
+      "title": "Similarity",
+      "expressions": [
+        "ようだ",
+        "みたいだ"
+      ],
+      "headings": [
+        "Similarity: ～ようだ & ～みたいだ",
+        "～ようだ",
+        "～みたいだ"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "448",
       "title": "Seem: ～そうだ",
       "expressions": [
-        "そうだ"
+        "そうだ",
+        "てそうだ",
+        "そな",
+        "そー"
       ],
       "headings": [
         "Seem: ～そうだ",
@@ -1431,7 +3277,13 @@
         "～て（い）そうだ",
         "～そな",
         "～そー"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "てそうだ",
+        "そな",
+        "そー"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "450",
@@ -1463,11 +3315,45 @@
       ]
     },
     {
+      "pageId": "454",
+      "title": "The Superlative",
+      "expressions": [
+        "一番",
+        "いちばん",
+        "最も",
+        "もっとも"
+      ],
+      "headings": [
+        "The Superlative",
+        "-est",
+        "The Superlative Question"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "456",
+      "title": "The Imperative",
+      "expressions": [
+        "命令形",
+        "な"
+      ],
+      "headings": [
+        "The Imperative",
+        "命令形",
+        "The Negative Imperative"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "458",
       "title": "Direction Intransitives + を: 向く",
       "expressions": [
         "を",
-        "向く"
+        "向く",
+        "むく",
+        "を向く",
+        "に向く",
+        "へ向く"
       ],
       "headings": [
         "Direction Intransitives + を: 向く",
@@ -1482,7 +3368,16 @@
         "～｛を・に｝振り向く",
         "～｛を・に｝振り返る",
         "～｛に・を｝注目する"
-      ]
+      ],
+      "readingAliases": {
+        "向く": "むく"
+      },
+      "sectionLookupExpressions": [
+        "を向く",
+        "に向く",
+        "へ向く"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "460",
@@ -1491,7 +3386,14 @@
         "忘れる",
         "直す",
         "間違える",
-        "誤る"
+        "誤る",
+        "わすれる",
+        "なおす",
+        "まちがえる",
+        "あやまる",
+        "直る",
+        "違える",
+        "違う"
       ],
       "headings": [
         "Fix/Error: ～忘れる, ～直す, 間違える, & ～誤る",
@@ -1505,14 +3407,352 @@
         "～違える",
         "～違う",
         "～誤る"
+      ],
+      "readingAliases": {
+        "忘れる": "わすれる",
+        "直す": "なおす",
+        "間違える": "まちがえる",
+        "誤る": "あやまる"
+      },
+      "sectionLookupExpressions": [
+        "直る",
+        "違える",
+        "違う"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
+    },
+    {
+      "pageId": "463",
+      "title": "Used to/together…",
+      "expressions": [
+        "慣れる",
+        "合う",
+        "合わせる",
+        "切る",
+        "なれる",
+        "あう",
+        "あわせる",
+        "きる"
+      ],
+      "headings": [
+        "～慣れる, ～合う・合わせる, & ～切る",
+        "～慣れる",
+        "～合う・合わせる",
+        "～切る"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson.",
+      "readingAliases": {
+        "慣れる": "なれる",
+        "合う": "あう",
+        "合わせる": "あわせる",
+        "切る": "きる"
+      }
+    },
+    {
+      "pageId": "465",
+      "title": "Adverbs III",
+      "expressions": [
+        "あまり",
+        "あんまり",
+        "あまりにも",
+        "呼応の副詞"
+      ],
+      "headings": [
+        "Adverbs III: Syntax Agreement I呼応の副詞　※改訂中",
+        "Negative Predicate Agreement",
+        "あまり vs あんまり vs あまりに（も）",
+        "まだ VS 全然/全く",
+        "全然 w/ Affirmative Predicates",
+        "伊達に・・・～ない"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "468",
+      "title": "Onomatopoeia (擬声語) I: 擬音語 I",
+      "expressions": [
+        "擬声語",
+        "擬音語"
+      ],
+      "headings": [
+        "Onomatopoeia (擬声語) I: 擬音語 I",
+        "擬音語",
+        "Examples",
+        "With 来る"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "470",
+      "title": "Plants & Animals",
+      "expressions": [
+        "植物",
+        "動物",
+        "生物"
+      ],
+      "headings": [
+        "Plants & Animals　動植物などの呼び方",
+        "Living Things 生物",
+        "Everyday vs Technical Words一般用語と専門用語との違い",
+        "Common “Macro” Terms マクロ視点に基づいた一般的な用語",
+        "Spelling 動植物の表記",
+        "The Animal Kingdom (動物界）",
+        "Plant Kingdom (植物界)",
+        "Fungi Kingdom （菌界）"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "474",
+      "title": "Onomatopoeia II",
+      "expressions": [
+        "擬声語",
+        "鳴き声"
+      ],
+      "headings": [
+        "擬声語 II: 鳴き声",
+        "Animal Sounds"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "476",
+      "title": "Onomatopoeia III",
+      "expressions": [
+        "擬態語",
+        "擬情語"
+      ],
+      "headings": [
+        "擬声語 III: 擬態語・擬情語",
+        "擬態語・擬情語",
+        "Examples"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "478",
+      "title": "During/Throughout",
+      "expressions": [
+        "中",
+        "じゅう",
+        "間中",
+        "あいだじゅう"
+      ],
+      "headings": [
+        "～中: During/Throughout",
+        "～中じゅう: Throughout",
+        "～間中あいだじゅう",
+        "～中ちゅう: Within",
+        "～中ちゅう: “-Ing”",
+        "Grammaticality of 発売中",
+        "～中ちゅう: Out Of",
+        "History Behind the Sound Change ちゅう → じゅう",
+        "Temporal Noun + [～じゅうに・ちゅうに]",
+        "Non-Deictic Time + ～中じゅう",
+        "Deictic Time + ～中じゅう",
+        "Formality Favors ～ちゅう?",
+        "Sino-Japanese Words Favor ～ちゅう",
+        "午前中 vs 午後中",
+        "期間中"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "480",
+      "title": "The Body",
+      "expressions": [
+        "体",
+        "身体"
+      ],
+      "headings": [
+        "The Body",
+        "“The Body”   「体」の様々な呼び方",
+        "“Physique”",
+        "Hair    毛",
+        "Parts of the Head 頭部の部位",
+        "Parts of the Arm 腕の部位",
+        "Parts of the Torso 胴体の部位",
+        "The Privates　陰部の部位",
+        "Parts of the Legs/Feet　脚・足の部位",
+        "Internal Organs　臓器・器官",
+        "The Digestive System 消化器系",
+        "The Circulatory System　循環器系",
+        "The Respiratory System 呼吸器系",
+        "The Urinary System　泌尿器系",
+        "The Reproductive System　生殖器系",
+        "The Endocrine System　内分泌器系",
+        "The Sensory System　感覚器系",
+        "The Nervous System　神経系",
+        "Pain　痛み",
+        "Kinds of Conditions: 炎, 症, 病",
+        "The Motor System 運動器系",
+        "Organelles　細胞小器官",
+        "Cancer　癌"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "483",
+      "title": "Colors I　色の表現、その一",
+      "expressions": [
+        "色",
+        "色彩"
+      ],
+      "headings": [
+        "Colors I　色の表現に関する基礎知識",
+        "The Basic Color Words in English　英語圏での基本色名",
+        "The Basic Color Words in Japanese　日本語圏での基本色名",
+        "The 4 Primary ‘Colors’　古代からのいわゆる四原色",
+        "The Five ‘Colors’　五色（ごしき）",
+        "The Seven ‘Colors’ of the Rainbow　虹の七色",
+        "Color Words by Category　色系統別の色名一覧",
+        "“Red” Color Kanji　赤系統の漢字",
+        "“Blue” Color Kanji　青系統の漢字",
+        "“Green” Color Kanji　緑系統の漢字",
+        "Non-Primary Color Kanji",
+        "Use of English Color Words　　英語の色名の使用",
+        "The Word ‘Color’　「色」の語源",
+        "Eye Color　目の色",
+        "Hair Color　髪の色",
+        "Skin Color　肌の色"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "485",
+      "title": "Colors II　　色の表現、その二",
+      "expressions": [
+        "色",
+        "真"
+      ],
+      "headings": [
+        "Colors II: Qualifying Color　　色の修飾表現",
+        "Adjectives for Depth/Brightness 　色の濃淡・明度",
+        "The Prefix 真₋　 　接頭辞の「真（ま）」",
+        "The Prefix どす-　　　接頭辞の「どす」",
+        "Duplicating Adjectives to Make Adverbs　形容詞由来の副詞の反復表現",
+        "Combining Colors　　色の混合（混色）",
+        "The Suffixes ～さ & ～み　　　　　接尾辞の「さ」及び「み」",
+        "The Suffix ～がかる　　　　接尾辞の「がかる」",
+        "The Suffix ～っぽい　　　接尾辞の「っぽい」",
+        "～みがち",
+        "The Suffix ～め　　　　　接尾辞の「め」",
+        "The Suffix ～ずむ・ばむ　　　　接尾辞の「ずむ・ばむ」",
+        "Miscellaneous　　　色の表現、その他"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "487",
+      "title": "Food",
+      "expressions": [
+        "食べ物",
+        "食事"
+      ],
+      "headings": [
+        "Food",
+        "At a Restaurant",
+        "Rice and Noodles",
+        "Dishes",
+        "Drinks",
+        "Western Food  洋食",
+        "Snacks",
+        "Seasoning 調味料",
+        "Other Ingredients",
+        "Cookware & Utensils 台所用品"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "490",
+      "title": "Astronomy: The Planets & More",
+      "expressions": [
+        "天文",
+        "惑星",
+        "太陽系"
+      ],
+      "headings": [
+        "Astronomy: The Planets & More基礎的な天文学の専門用語：惑星の名称など",
+        "The Solar System　太陽系",
+        "Basic Terminology　基礎的な用語",
+        "Example Sentences　例文"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "492",
+      "title": "Or",
+      "expressions": [
+        "または",
+        "あるいは",
+        "それとも"
+      ],
+      "headings": [
+        "Or",
+        "Literary “Or” Phrases"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "494",
+      "title": "Adjective Nominalization",
+      "expressions": [
+        "さ",
+        "み",
+        "名詞化",
+        "味"
+      ],
+      "headings": [
+        "Adjective Nominalization I: ～さ & ～み",
+        "～さ",
+        "～み",
+        "～みがかった",
+        "～さ vs ～み with Adjectives of “Emotion”",
+        "悲しさ vs 悲しみ",
+        "痛さ vs 痛み",
+        "苦しさ vs 苦しみ",
+        "楽しさ vs 楽しみ",
+        "面白さ vs 面白み",
+        "/-mi/ or /…m-i/?",
+        "New ～み Expressions",
+        "Attached to Adjectives",
+        "Attached to Nouns",
+        "Attached to Pronouns/Numbers/Interjections",
+        "Attached to Onomatopoeia",
+        "Attached to the 連用形 of Verbs",
+        "Attached to Adjectival Nouns",
+        "～味",
+        "Early Modern Japanese Instances of ～み",
+        "Social Media Slang?"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson. Additional compound forms follow the recorded section headings or their explicit construction descriptions.",
+      "sectionLookupExpressions": [
+        "味"
       ]
+    },
+    {
+      "pageId": "496",
+      "title": "Adjective Nominalization II",
+      "expressions": [
+        "く",
+        "名詞化"
+      ],
+      "headings": [
+        "Adjective Nominalization II: ～く",
+        "～く　→　Noun Phrase",
+        "Having an Anchor",
+        "The One True Nominalized Adjective 連用形: 多く"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "500",
       "title": "Object Marking: が VS を",
       "expressions": [
         "が",
-        "を"
+        "を",
+        "ようになる",
+        "ようにする"
       ],
       "headings": [
         "Object Marking: が VS を",
@@ -1527,7 +3767,12 @@
         "Control ≈ Will",
         "The Ungrammaticality of ～をできる",
         "W/ 分かる"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "ようになる",
+        "ようにする"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "502",
@@ -1554,6 +3799,139 @@
         "More Set Phrases　「元気」を使った慣用句（続き）",
         "In Conclusion…　最後に…"
       ]
+    },
+    {
+      "pageId": "506",
+      "title": "Conjunctions",
+      "expressions": [
+        "接続詞"
+      ],
+      "headings": [
+        "Conjunctions",
+        "Single Word Conjunctions",
+        "Multiple Word Conjunctions"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "508",
+      "title": "Negative Prefixes",
+      "expressions": [
+        "未",
+        "無",
+        "非",
+        "否",
+        "不"
+      ],
+      "headings": [
+        "Negative Prefixes: 未, 無, 非, 否, & 不",
+        "未～: Incompletion",
+        "無～: Absence",
+        "非～: Unjustifiability",
+        "否～: Noncompliance",
+        "不～: Simple Negation"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "510",
+      "title": "Prefixes/Suffixes w/ Counters",
+      "expressions": [
+        "何",
+        "幾",
+        "数",
+        "半",
+        "余",
+        "余り"
+      ],
+      "headings": [
+        "Prefixes/Suffixes w/ Counters: 何～, 幾～, 数～, ～数, 半～, ～半,～余, & ～余り",
+        "How many…",
+        "Several: 数～ & ～数",
+        "半～ & ～半",
+        "～余 & ～余り"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "512",
+      "title": "Good/Bad At",
+      "expressions": [
+        "上手",
+        "得意",
+        "下手",
+        "苦手"
+      ],
+      "headings": [
+        "Good At & Bad At",
+        "Good At",
+        "Bad At"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "514",
+      "title": "Like & Love",
+      "expressions": [
+        "好き",
+        "大好き",
+        "愛する"
+      ],
+      "headings": [
+        "Like & Love",
+        "Like/Love"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "516",
+      "title": "Hate",
+      "expressions": [
+        "嫌い",
+        "嫌う",
+        "憎い"
+      ],
+      "headings": [
+        "Hate",
+        "（大）嫌い（な）",
+        "嫌う",
+        "いやだ",
+        "嫌がる・嫌がらせ",
+        "だめ（な）",
+        "憎む",
+        "憎らしい",
+        "憎い",
+        "憎々しい・憎（っ）たらしい",
+        "憎しみ",
+        "気に食わない",
+        "嫌悪",
+        "毛嫌いする",
+        "不愉快（な）",
+        "憎悪",
+        "忌む",
+        "厭う",
+        "厭わしい",
+        "厭悪"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "518",
+      "title": "Old",
+      "expressions": [
+        "歳",
+        "年齢"
+      ],
+      "headings": [
+        "Old",
+        "Years Old",
+        "Months Old",
+        "Weeks Old",
+        "Days Old",
+        "Weeks/Minutes/Seconds Old",
+        "Paraphrasing for “Age”"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "520",
@@ -1594,6 +3972,35 @@
       ]
     },
     {
+      "pageId": "527",
+      "title": "Idioms II: Phrases",
+      "expressions": [
+        "慣用句"
+      ],
+      "headings": [
+        "Idioms II: Basic Expressions",
+        "Idioms",
+        "Example Sentences"
+      ],
+      "basis": "Named forms or Japanese topic labels."
+    },
+    {
+      "pageId": "529",
+      "title": "Suru Verbs",
+      "expressions": [
+        "する",
+        "サ変動詞"
+      ],
+      "headings": [
+        "Nouns → Verbs with する",
+        "Initial Problems",
+        "する or not to する",
+        "Examples",
+        "Different Kinds of する Verbs"
+      ],
+      "basis": "Named forms or Japanese topic labels."
+    },
+    {
       "pageId": "531",
       "title": "The Suffix -Ka　接尾辞の「～化」",
       "expressions": [
@@ -1613,10 +4020,33 @@
       ]
     },
     {
+      "pageId": "535",
+      "title": "About",
+      "expressions": [
+        "について",
+        "に関して",
+        "をめぐって",
+        "をめぐり",
+        "にかんして"
+      ],
+      "headings": [
+        "About: ～について, ～に関して, & ～をめぐって",
+        "～について & ～に関して",
+        "～をめぐって・めぐり"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson.",
+      "readingAliases": {
+        "に関して": "にかんして"
+      }
+    },
+    {
       "pageId": "537",
       "title": "The Particle しも",
       "expressions": [
-        "しも"
+        "しも",
+        "ならまだしも",
+        "なきにしもあらず",
+        "をしも"
       ],
       "headings": [
         "The Particle しも",
@@ -1625,7 +4055,13 @@
         "～ならまだしも",
         "～なきにしもあらず",
         "～をしも"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "ならまだしも",
+        "なきにしもあらず",
+        "をしも"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "539",
@@ -1677,7 +4113,10 @@
       "pageId": "545",
       "title": "The Particle も IV",
       "expressions": [
-        "も"
+        "も",
+        "なくもない",
+        "たりもする",
+        "ようともする"
       ],
       "headings": [
         "The Particle も IV",
@@ -1690,7 +4129,13 @@
         "～ようともする/しない",
         "XもYも: When X/Y are 連体形",
         "XもX（、Xi）"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "なくもない",
+        "たりもする",
+        "ようともする"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "547",
@@ -1743,6 +4188,186 @@
       ]
     },
     {
+      "pageId": "556",
+      "title": "Reflexive Pronouns",
+      "expressions": [
+        "自分",
+        "自己",
+        "自体",
+        "自ら",
+        "自ずから",
+        "己",
+        "各々"
+      ],
+      "headings": [
+        "Pronouns III: 再帰代名詞",
+        "自分(じぶん)",
+        "自己",
+        "自体",
+        "自ら & 自ずから",
+        "己 & 各々"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "558",
+      "title": "Ordinal Numbers",
+      "expressions": [
+        "目",
+        "番目",
+        "回目",
+        "第",
+        "序数"
+      ],
+      "headings": [
+        "Ordinal Numbers",
+        "Generic Ordering w/ ～目",
+        "～番目 & ～回目",
+        "～番 or ～番目",
+        "Emphatic Numbering w/ 第～",
+        "第一",
+        "第～ ＋ ＃ w/o Counter",
+        "第～ ＋ ＃ w Counter",
+        "The (Un)grammaticality of 第～目"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "560",
+      "title": "Counters VIII",
+      "expressions": [
+        "基",
+        "滴",
+        "票",
+        "件",
+        "行",
+        "画",
+        "種",
+        "種類",
+        "脚",
+        "着",
+        "膳",
+        "貫",
+        "対",
+        "男",
+        "女"
+      ],
+      "headings": [
+        "Counters VIII: 基, 滴, 票, 件,行, 画, 種（類）, 脚, 着, 膳, 貫, 対, 男, & 女",
+        "Intermediate Counters"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "562",
+      "title": "Adjectives VI: Compounds",
+      "expressions": [
+        "形容詞語幹",
+        "複合語"
+      ],
+      "headings": [
+        "Adjectives VI: “Adjectival Stem + Noun” Compounds形容詞語幹＋名詞",
+        "Discerning the Differences　違いの見分け方",
+        "Example Sentences　例文"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "564",
+      "title": "Counters with ヶ・ヵ",
+      "expressions": [
+        "ヶ",
+        "ヵ",
+        "ヶ月",
+        "カ月",
+        "か月",
+        "ヵ月",
+        "ヶ所",
+        "ヶ年",
+        "カ年",
+        "か年",
+        "ヵ年",
+        "ヶ条",
+        "カ条",
+        "か条",
+        "ヵ条",
+        "カ所",
+        "か所",
+        "ヵ所",
+        "ヶ国",
+        "カ国",
+        "か国",
+        "ヵ国"
+      ],
+      "headings": [
+        "Counters with ヶ・ヵ",
+        "～ヶ月（間）/カ月（間）/か月（間）/ヵ月(間)",
+        "～ヶ年/カ年/か年/ヵ年",
+        "～ヶ条/カ条/か条/ヵ条",
+        "～ヶ所/カ所/か所/ヵ所",
+        "～ヶ国/カ国/か国/ヵ国",
+        "ヶ国語/カ国語/か国語/ヵ国語",
+        "Place Names: ヶ・ケ"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson. Additional compound forms follow the recorded section headings or their explicit construction descriptions.",
+      "sectionLookupExpressions": [
+        "ヶ年",
+        "カ年",
+        "か年",
+        "ヵ年",
+        "ヶ条",
+        "カ条",
+        "か条",
+        "ヵ条",
+        "カ所",
+        "か所",
+        "ヵ所",
+        "ヶ国",
+        "カ国",
+        "か国",
+        "ヵ国"
+      ]
+    },
+    {
+      "pageId": "566",
+      "title": "The Body II: Idioms and Proverbs",
+      "expressions": [
+        "慣用句",
+        "諺",
+        "体"
+      ],
+      "headings": [
+        "The Body II: Idioms and Proverbs",
+        "「頭」を使った表現",
+        "「髪・毛・髭・髻」を使った表現",
+        "「額」を使った表現",
+        "「顔・面」を使った表現",
+        "「顎」を使った表現",
+        "「鼻」を使った表現",
+        "「耳」を使った表現",
+        "「口」を使った表現",
+        "「唇」を使った表現",
+        "「首・頸・馘」を使った表現",
+        "「歯」を使った表現",
+        "「目・眼・瞳・眉・睫」を使った表現",
+        "「頬」を使った表現",
+        "「舌」を使った表現",
+        "「肩」を使った表現",
+        "「背」を使った表現",
+        "「手・指・腕」を使った表現",
+        "「足・脚・肢・踵」を使った表現",
+        "「脛」を使った表現",
+        "「爪」を使った表現",
+        "「胸」を使った表現",
+        "「腹・臍」を使った表現",
+        "「胃」を使った表現",
+        "「肝・胆」を使った表現",
+        "「尻・肛」を使った表現",
+        "「心」を使った表現"
+      ],
+      "basis": "Named forms or Japanese topic labels."
+    },
+    {
       "pageId": "569",
       "title": "The Grammaticality of ～です",
       "expressions": [
@@ -1764,6 +4389,107 @@
       ]
     },
     {
+      "pageId": "571",
+      "title": "Adjectives VIII: Sound Changes",
+      "expressions": [
+        "形容詞",
+        "音変化"
+      ],
+      "headings": [
+        "Adjectives: Sound Changes",
+        "How Sound Changes Affect Adjectives",
+        "Elongation of Vowel in Stem"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "573",
+      "title": "Adjectives IX: Old Bases",
+      "expressions": [
+        "連体形",
+        "ナル形容動詞",
+        "タル形容動詞"
+      ],
+      "headings": [
+        "Adjectives: Other Forms",
+        "形容詞: The Original 連体形",
+        "Adjectival Elements in Sino-Japanese Compounds",
+        "ナル形容動詞",
+        "タル形容動詞"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "575",
+      "title": "Interjections",
+      "expressions": [
+        "感動詞",
+        "間投詞"
+      ],
+      "headings": [
+        "Interjections",
+        "Emotional Interjections",
+        "Interjections of Yelling",
+        "Interjections of Response",
+        "Interjections of Appeal",
+        "Interjections of Salutation",
+        "Slangish Interjections",
+        "Onomatopoeic Interjections"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "577",
+      "title": "The Bases",
+      "expressions": [
+        "未然形",
+        "連用形",
+        "終止形",
+        "連体形",
+        "已然形",
+        "命令形"
+      ],
+      "headings": [
+        "The Bases",
+        "Parts of Speech",
+        "未然形",
+        "連用形",
+        "終止形",
+        "連体形",
+        "已然形",
+        "命令形"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "580",
+      "title": "連用形　→　Noun",
+      "expressions": [
+        "連用形"
+      ],
+      "headings": [
+        "連用形　→　Noun",
+        "Type 1",
+        "Type 2",
+        "Type 3",
+        "Type 4",
+        "Type 5: 連用形＋に＋Motion Verb"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "582",
+      "title": "連用中止形",
+      "expressions": [
+        "連用中止形"
+      ],
+      "headings": [
+        "連用中止形",
+        "The 連用中止形"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "584",
       "title": "Tense I: The Auxiliary Verb -TA",
       "expressions": [
@@ -1774,6 +4500,20 @@
         "Etymology of -TA",
         "Usages of -TA"
       ]
+    },
+    {
+      "pageId": "586",
+      "title": "Tense II: The Morpheme -RU/U",
+      "expressions": [
+        "非過去形",
+        "時制"
+      ],
+      "headings": [
+        "Tense II: The Morpheme -RU/U",
+        "-RU/U Morphology",
+        "-RU/U: Present, Future, & Past"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "588",
@@ -1790,7 +4530,10 @@
       "pageId": "590",
       "title": "The Particle のみ",
       "expressions": [
-        "のみ"
+        "のみ",
+        "のみならず",
+        "のみか",
+        "をのみ"
       ],
       "headings": [
         "The Particle のみ",
@@ -1803,20 +4546,35 @@
         "～をのみ",
         "のみ vs ばかり",
         "さのみ"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "のみならず",
+        "のみか",
+        "をのみ"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "592",
       "title": "The Particle こそ",
       "expressions": [
-        "こそ"
+        "こそ",
+        "からこそ",
+        "ばこそ",
+        "てこそ"
       ],
       "headings": [
         "The Particle こそ",
         "The Fundamentals of こそ",
         "～からこそ & ～ばこそ",
         "～てこそ"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "からこそ",
+        "ばこそ",
+        "てこそ"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "594",
@@ -1871,13 +4629,54 @@
       "expressions": [
         "に違いない",
         "に相違ない",
-        "に決まっている"
+        "に決まっている",
+        "にちがいない",
+        "にそういない",
+        "にきまっている"
       ],
       "headings": [
         "No Doubt that: ～に違いない, ～に相違ない, & ～に決まっている",
         "～に違いない VS　～に相違ない",
         "～に決まっている"
-      ]
+      ],
+      "readingAliases": {
+        "に違いない": "にちがいない",
+        "に相違ない": "にそういない",
+        "に決まっている": "にきまっている"
+      }
+    },
+    {
+      "pageId": "602",
+      "title": "Based on",
+      "expressions": [
+        "に基づいて",
+        "を踏まえて",
+        "をもとにして",
+        "に沿って",
+        "に即して",
+        "に則って",
+        "にもとづいて",
+        "をふまえて",
+        "にそって",
+        "にそくして",
+        "にのっとって"
+      ],
+      "headings": [
+        "Based on: に基づいて、を踏まえて, をもとにして, に沿って, に即して, & に則って",
+        "～に基づいて",
+        "を踏まえて",
+        "～をもとにして",
+        "～に沿って & More",
+        "Points of Confusion"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson.",
+      "readingAliases": {
+        "に基づいて": "にもとづいて",
+        "を踏まえて": "をふまえて",
+        "に沿って": "にそって",
+        "に即して": "にそくして",
+        "に則って": "にのっとって"
+      }
     },
     {
       "pageId": "605",
@@ -1885,7 +4684,9 @@
       "expressions": [
         "てからというもの",
         "て以来",
-        "てこのかた"
+        "てこのかた",
+        "ていらい",
+        "てからというものは"
       ],
       "headings": [
         "(Ever) Since: ～てからというもの, ～て以来, & ～てこのかた",
@@ -1893,20 +4694,33 @@
         "～て以来",
         "Interchangeability",
         "～てこのかた"
-      ]
+      ],
+      "readingAliases": {
+        "て以来": "ていらい"
+      },
+      "sectionLookupExpressions": [
+        "てからというものは"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "607",
       "title": "Circumstance: 場合 & ～に備えて",
       "expressions": [
         "場合",
-        "に備えて"
+        "に備えて",
+        "ばあい",
+        "にそなえて"
       ],
       "headings": [
         "Circumstance: 場合 & ～に備えて",
         "場合",
         "～に備えて"
-      ]
+      ],
+      "readingAliases": {
+        "場合": "ばあい",
+        "に備えて": "にそなえて"
+      }
     },
     {
       "pageId": "609",
@@ -1914,20 +4728,32 @@
       "expressions": [
         "度に",
         "都度",
-        "につけ"
+        "につけ",
+        "たびに",
+        "つど"
       ],
       "headings": [
         "Whenever II: ～度に, ～都度,　& ～につけ",
         "～度に",
         "～都度",
         "～につけ"
-      ]
+      ],
+      "readingAliases": {
+        "度に": "たびに",
+        "都度": "つど"
+      }
     },
     {
       "pageId": "611",
       "title": "The Supplementary Verb する",
       "expressions": [
-        "する"
+        "する",
+        "ようにする",
+        "ことにする",
+        "としたことが",
+        "とすると",
+        "としたら",
+        "とすれば"
       ],
       "headings": [
         "The Supplementary Verb する",
@@ -1939,17 +4765,64 @@
         "～ことにする",
         "～としたことが",
         "～と[すると・したら・すれば]"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "ようにする",
+        "ことにする",
+        "としたことが",
+        "とすると",
+        "としたら",
+        "とすれば"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "613",
       "title": "～に対して",
       "expressions": [
-        "に対して"
+        "に対して",
+        "にたいして"
       ],
       "headings": [
         "～に対して"
-      ]
+      ],
+      "readingAliases": {
+        "に対して": "にたいして"
+      }
+    },
+    {
+      "pageId": "615",
+      "title": "Intransitive & Transitive: Part 1",
+      "expressions": [
+        "閉じる",
+        "伴う",
+        "張る",
+        "開く",
+        "限る",
+        "言う"
+      ],
+      "headings": [
+        "Intransitive & Transitive: Part 1",
+        "閉じる, 伴う, 張る, 開く, 限る, & 言う"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "617",
+      "title": "Intransitive & Transitive: Part II",
+      "expressions": [
+        "巻く",
+        "運ぶ",
+        "吹く",
+        "催す",
+        "結ぶ",
+        "頼る"
+      ],
+      "headings": [
+        "Intransitive & Transitive: Part II",
+        "巻く, 運ぶ, 吹く, 催す, 結ぶ, & 頼る"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "619",
@@ -1972,12 +4845,18 @@
       "title": "Through: を通じて & を通して",
       "expressions": [
         "を通じて",
-        "を通して"
+        "を通して",
+        "をつうじて",
+        "をとおして"
       ],
       "headings": [
         "Through: を通じて & を通して",
         "～を通して VS ～を通じて"
-      ]
+      ],
+      "readingAliases": {
+        "を通じて": "をつうじて",
+        "を通して": "をとおして"
+      }
     },
     {
       "pageId": "623",
@@ -1998,27 +4877,115 @@
       "pageId": "625",
       "title": "～によって",
       "expressions": [
-        "によって"
+        "によって",
+        "により",
+        "によらず",
+        "によると",
+        "によったら",
+        "によれば"
       ],
       "headings": [
         "～によって",
         "～によって・により",
         "～によらず",
         "～によると・によったら・によれば"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "により",
+        "によらず",
+        "によると",
+        "によったら",
+        "によれば"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "627",
       "title": "～ざるを得ない & やむを得ない",
       "expressions": [
         "ざるを得ない",
-        "やむを得ない"
+        "やむを得ない",
+        "ざるをえない",
+        "やむをえない"
       ],
       "headings": [
         "～ざるを得ない & やむを得ない",
         "～ざるを得ない",
         "やむを得ない"
-      ]
+      ],
+      "readingAliases": {
+        "ざるを得ない": "ざるをえない",
+        "やむを得ない": "やむをえない"
+      }
+    },
+    {
+      "pageId": "629",
+      "title": "Causative Form Issues",
+      "expressions": [
+        "使役",
+        "自他動詞"
+      ],
+      "headings": [
+        "The Causative II: The Corruption of Transitive Verbs",
+        "Corrupted Transitive Verb Forms"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "632",
+      "title": "Intransitive vs Passive",
+      "expressions": [
+        "決まる",
+        "定まる",
+        "自動詞",
+        "受身"
+      ],
+      "headings": [
+        "Intransitive Verbs Translated in the Passive Voice",
+        "決まる vs 決められる",
+        "定まる vs 定められる",
+        "焦げる vs 焦がされる",
+        "かかる vs かけられる",
+        "伝わる vs 伝えられる",
+        "集まる vs 集められる",
+        "収まる vs 収められる",
+        "混ざる・混じる vs 混ぜられる",
+        "育つ vs 育てられる"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "634",
+      "title": "Intransitive-Passive Verbs",
+      "expressions": [
+        "自受動詞",
+        "見つかる",
+        "捕まる"
+      ],
+      "headings": [
+        "自受動詞",
+        "見つかる vs 見つけられる",
+        "捕まる vs 捕まえられる",
+        "負ける vs 負かされる",
+        "敗れる vs 破られる",
+        "知れる vs 知られる"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "636",
+      "title": "Transitive-Passive",
+      "expressions": [
+        "他受動詞"
+      ],
+      "headings": [
+        "他受動詞",
+        "Movement of Information",
+        "Movement of Something",
+        "Carrying out Orders",
+        "Being Caught Doing Something"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "638",
@@ -2036,6 +5003,21 @@
       ]
     },
     {
+      "pageId": "640",
+      "title": "Okinawan Script",
+      "expressions": [
+        "ウチナーグチ",
+        "沖縄語"
+      ],
+      "headings": [
+        "第001課: Okinawan Script",
+        "Okinawan Orthography ウチナーグチの表記",
+        "Competing Orthographies",
+        "Use of 漢字"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "654",
       "title": "～において・における",
       "expressions": [
@@ -2046,6 +5028,52 @@
         "～において・における",
         "～において・おける"
       ]
+    },
+    {
+      "pageId": "656",
+      "title": "Negative Patterns",
+      "expressions": [
+        "ないことには",
+        "なし",
+        "なき",
+        "なしでは",
+        "なしには",
+        "なくしては",
+        "ことなく",
+        "甲斐もなく",
+        "かいもなく"
+      ],
+      "headings": [
+        "More Negative Patterns: ～ないことには, ～なし・なき, ～なしで（は）, ～なしに（は）, ～なくして（は）, ～ことなく, & 甲斐もなく",
+        "～ないことには(～ない)",
+        "～なし",
+        "甲斐（かい）もなく"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson.",
+      "readingAliases": {
+        "甲斐もなく": "かいもなく"
+      }
+    },
+    {
+      "pageId": "660",
+      "title": "Potential IV",
+      "expressions": [
+        "かねる",
+        "かねない",
+        "きれる",
+        "きれない",
+        "える",
+        "うる",
+        "えない"
+      ],
+      "headings": [
+        "Potential IV: ～かねる・かねない VS ～きれる・きれない VS ～える/うる・～えない",
+        "～かねる・かねない",
+        "～きれる・きれない",
+        "～える・うる/～えない",
+        "Compare and Contrast"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "662",
@@ -2102,7 +5130,10 @@
         "ずにはおかない",
         "を余儀なくされる",
         "を余儀なくさせる",
-        "を禁じ得ない"
+        "を禁じ得ない",
+        "をよぎなくされる",
+        "をよぎなくさせる",
+        "をきんじえない"
       ],
       "headings": [
         "Can’t Help III: ～ないではすまない, ～ないではおかない, ～を余儀なく[される・させる], & ～を禁じ得ない",
@@ -2110,7 +5141,12 @@
         "～｛ないで・ずに｝はおかない",
         "～を余儀なく[される・させる]",
         "～を禁じ得ない"
-      ]
+      ],
+      "readingAliases": {
+        "を余儀なくされる": "をよぎなくされる",
+        "を余儀なくさせる": "をよぎなくさせる",
+        "を禁じ得ない": "をきんじえない"
+      }
     },
     {
       "pageId": "670",
@@ -2144,6 +5180,61 @@
       ]
     },
     {
+      "pageId": "674",
+      "title": "Intro to Classical",
+      "expressions": [
+        "古典文法",
+        "古文"
+      ],
+      "headings": [
+        "第01課: Introduction to Classical Japanese"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "677",
+      "title": "Rain　雨",
+      "expressions": [
+        "雨",
+        "あめ"
+      ],
+      "headings": [
+        "Rain　「雨」の語源や雨に関する用語",
+        "The Kanji for Rain 「雨」という漢字の起源",
+        "Forms of Precipitation　降水の種類",
+        "The Water Cycle on Earth　地球上の水循環",
+        "Types of Clouds　雲の種類",
+        "How Rain Falls　雨の降り方",
+        "Other Expressions for Rain Intensity　雨の強さによる表現",
+        "季節による雨の表現",
+        "Literary “Rain” Words　「雨」にまつわる描写的な文章語",
+        "The Rainy Season in Japan　日本の梅雨期",
+        "Set Phrases 　「雨」を使った慣用句",
+        "Other Kinds of “Rain”　水以外の「雨」",
+        "Counters for Rain　「雨」及び「滴」の助数詞",
+        "Rain Onomatopoeia　「雨」の擬音語・擬態語",
+        "The Etymology of 雨　「雨」という単語の起源",
+        "In Conclusion…　最後に…"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "679",
+      "title": "Holidays　日本の祝日",
+      "expressions": [
+        "祝日"
+      ],
+      "headings": [
+        "Holidays of Japan　国民の祝日",
+        "Current Japanese Holidays　現在の祝日",
+        "Golden Week　ゴールデンウィーク",
+        "Happy Monday System　ハッピーマンデー制度",
+        "International Holidays　国際の祝祭日",
+        "In Conclusion… 最後に…"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "681",
       "title": "Considering…: わりに（は） & にしては",
       "expressions": [
@@ -2163,14 +5254,18 @@
       "expressions": [
         "にもかかわらず",
         "にかかわらず",
-        "を問わず"
+        "を問わず",
+        "をとわず"
       ],
       "headings": [
         "Disregard I: にもかかわらず, にかかわらず, & を問わず",
         "にもかかわらず",
         "にかかわらず",
         "を問わず"
-      ]
+      ],
+      "readingAliases": {
+        "を問わず": "をとわず"
+      }
     },
     {
       "pageId": "685",
@@ -2180,7 +5275,12 @@
         "によらない",
         "いかんにかかわらず",
         "いかんを問わず",
-        "いかんによらず"
+        "いかんによらず",
+        "いかんをとわず",
+        "を問わず",
+        "のいかんにかかわらず",
+        "のいかんを問わず",
+        "のいかんによらず"
       ],
       "headings": [
         "Disregard II: によらず & （の）いかん｛にかかわらず・を問わず・によらず｝",
@@ -2190,7 +5290,17 @@
         "～（の）いかんにかかわらず",
         "～（の）いかんを問わず",
         "～（の）いかんによらず"
-      ]
+      ],
+      "readingAliases": {
+        "いかんを問わず": "いかんをとわず"
+      },
+      "sectionLookupExpressions": [
+        "を問わず",
+        "のいかんにかかわらず",
+        "のいかんを問わず",
+        "のいかんによらず"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "687",
@@ -2201,14 +5311,24 @@
         "を顧みず",
         "も顧みず",
         "を押して",
-        "押し切って"
+        "押し切って",
+        "をかえりみず",
+        "もかえりみず",
+        "をおして",
+        "おしきって"
       ],
       "headings": [
         "Disregard III: をものともせず（に）, ｛を・も｝顧みず（に）, & を押して・押し切って",
         "～をものともせず（に）",
         "～｛を・も｝顧みず（に）",
         "～を押して・押し切って"
-      ]
+      ],
+      "readingAliases": {
+        "を顧みず": "をかえりみず",
+        "も顧みず": "もかえりみず",
+        "を押して": "をおして",
+        "押し切って": "おしきって"
+      }
     },
     {
       "pageId": "711",
@@ -2241,6 +5361,48 @@
       ]
     },
     {
+      "pageId": "715",
+      "title": "Intransitive & Transitive: Part 3",
+      "expressions": [
+        "する",
+        "増す",
+        "働く",
+        "引く"
+      ],
+      "headings": [
+        "Intransitive & Transitive: Part 3",
+        "する, 増す, 働く, 引く"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "717",
+      "title": "Intransitive & Transitive: Part 4",
+      "expressions": [
+        "自動詞",
+        "他動詞",
+        "自他動詞"
+      ],
+      "headings": [
+        "Intransitive & Transitive: Part 4"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "719",
+      "title": "Intransitive & Transitive: Part V (Sino-Japanese Verbs)",
+      "expressions": [
+        "自動詞",
+        "他動詞",
+        "漢語動詞"
+      ],
+      "headings": [
+        "Intransitive & Transitive: Part V (Sino-Japanese Verbs)",
+        "Common Dual Purpose Sino-Japanese Verbs"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "721",
       "title": "Limit",
       "expressions": [
@@ -2249,12 +5411,26 @@
         "限りでは",
         "に限って",
         "に限らない",
-        "とは限らない"
+        "とは限らない",
+        "かぎり",
+        "をかぎりに",
+        "かぎりでは",
+        "にかぎって",
+        "にかぎらない",
+        "とはかぎらない"
       ],
       "headings": [
         "Limit: ～限り, ～を限りに, ～限りでは, ～に限って, ～に限らない, & ～とは限らない",
         "限り"
-      ]
+      ],
+      "readingAliases": {
+        "限り": "かぎり",
+        "を限りに": "をかぎりに",
+        "限りでは": "かぎりでは",
+        "に限って": "にかぎって",
+        "に限らない": "にかぎらない",
+        "とは限らない": "とはかぎらない"
+      }
     },
     {
       "pageId": "724",
@@ -2266,7 +5442,8 @@
         "はおろか",
         "はもちろん",
         "はもとより",
-        "ともあれ"
+        "ともあれ",
+        "にくわえて"
       ],
       "headings": [
         "Addition: ～に加えて, ～にとどまらず, ～もさることながら, ～はおろか, ～はもちろん, ～はもとより, ～ともあれ",
@@ -2275,7 +5452,10 @@
         "～もさることながら",
         "～はもちろん・もとより・おろか",
         "～ともあれ"
-      ]
+      ],
+      "readingAliases": {
+        "に加えて": "にくわえて"
+      }
     },
     {
       "pageId": "726",
@@ -2292,7 +5472,14 @@
       "pageId": "728",
       "title": "Negative Volition: ～まい",
       "expressions": [
-        "まい"
+        "まい",
+        "まいとする",
+        "でもあるまい",
+        "こともあるまい",
+        "まいか",
+        "のではあるまい",
+        "あろうことかあるまいことか",
+        "まじき"
       ],
       "headings": [
         "Negative Volition: ～まい",
@@ -2307,7 +5494,17 @@
         "～のではあるまい（か）",
         "～あろうことかあるまいことか",
         "～まじき"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "まいとする",
+        "でもあるまい",
+        "こともあるまい",
+        "まいか",
+        "のではあるまい",
+        "あろうことかあるまいことか",
+        "まじき"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "730",
@@ -2320,7 +5517,11 @@
         "途端",
         "途端に",
         "かと思うと",
-        "次第"
+        "次第",
+        "とたん",
+        "とたんに",
+        "かとおもうと",
+        "しだい"
       ],
       "headings": [
         "As soon as: ～や(いなや), ～なり, ～途端（に）, ～かと思うと, & ～次第",
@@ -2329,7 +5530,13 @@
         "～途端（に）",
         "～かと思うと",
         "～次第"
-      ]
+      ],
+      "readingAliases": {
+        "途端": "とたん",
+        "途端に": "とたんに",
+        "かと思うと": "かとおもうと",
+        "次第": "しだい"
+      }
     },
     {
       "pageId": "732",
@@ -2343,19 +5550,53 @@
       ]
     },
     {
+      "pageId": "734",
+      "title": "以 Adverbial Nouns",
+      "expressions": [
+        "以外",
+        "以内",
+        "以降",
+        "以後",
+        "以前",
+        "以来",
+        "以上",
+        "以下",
+        "以遠",
+        "以往"
+      ],
+      "headings": [
+        "以 Adverbial Nouns",
+        "以外",
+        "以内",
+        "以降",
+        "以後",
+        "以前",
+        "以来",
+        "以上",
+        "以下",
+        "以遠 & 以往",
+        "以東、以北、以南、以西"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "736",
       "title": "Circumstance",
       "expressions": [
         "まま",
         "思いきや",
-        "もと"
+        "もと",
+        "おもいきや"
       ],
       "headings": [
         "Circumstance: まま, 思いきや, & もと",
         "まま",
         "思いきや",
         "もと"
-      ]
+      ],
+      "readingAliases": {
+        "思いきや": "おもいきや"
+      }
     },
     {
       "pageId": "738",
@@ -2365,7 +5606,10 @@
         "うえで",
         "挙句",
         "すえに",
-        "始末だ"
+        "始末だ",
+        "けっか",
+        "あげく",
+        "しまつだ"
       ],
       "headings": [
         "Result: ～結果, ～うえで, ～挙句, ～すえに, & ～始末だ",
@@ -2374,7 +5618,12 @@
         "～挙句",
         "～すえに",
         "～始末だ"
-      ]
+      ],
+      "readingAliases": {
+        "結果": "けっか",
+        "挙句": "あげく",
+        "始末だ": "しまつだ"
+      }
     },
     {
       "pageId": "740",
@@ -2386,7 +5635,12 @@
         "と引き換えに",
         "に反して",
         "にもまして",
-        "ないまでも"
+        "ないまでも",
+        "にくらべて",
+        "とくらべて",
+        "にひきかえ",
+        "とひきかえに",
+        "にはんして"
       ],
       "headings": [
         "Compare & Contrast: ～に比べて, ～に引き換え, ～に反して,～にもまして, & ～ないまでも",
@@ -2395,7 +5649,14 @@
         "～に反して",
         "～にもまして",
         "～ないまでも"
-      ]
+      ],
+      "readingAliases": {
+        "に比べて": "にくらべて",
+        "と比べて": "とくらべて",
+        "に引き換え": "にひきかえ",
+        "と引き換えに": "とひきかえに",
+        "に反して": "にはんして"
+      }
     },
     {
       "pageId": "742",
@@ -2406,7 +5667,11 @@
         "に伴って",
         "とともに",
         "に応じて",
-        "に応えて"
+        "に応えて",
+        "にしたがって",
+        "にともなって",
+        "におうじて",
+        "にこたえて"
       ],
       "headings": [
         "As (change): ～につれて, ～に従って, ～に伴って, ～とともに, ～に応じて, & ～に応えて",
@@ -2416,13 +5681,30 @@
         "～とともに",
         "～に応じて",
         "～に応えて"
-      ]
+      ],
+      "readingAliases": {
+        "に従って": "にしたがって",
+        "に伴って": "にともなって",
+        "に応じて": "におうじて",
+        "に応えて": "にこたえて"
+      }
     },
     {
       "pageId": "744",
       "title": "The Particle まで II",
       "expressions": [
-        "まで"
+        "まで",
+        "てまで",
+        "までして",
+        "までもない",
+        "ないまでも",
+        "までに",
+        "までが",
+        "までを",
+        "をまで",
+        "までへ",
+        "へまで",
+        "にまで"
       ],
       "headings": [
         "The Particle まで II",
@@ -2440,7 +5722,21 @@
         "～へまで",
         "～にまで",
         "Usage III~IV: ～までも + ｛が・を｝"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "てまで",
+        "までして",
+        "までもない",
+        "ないまでも",
+        "までに",
+        "までが",
+        "までを",
+        "をまで",
+        "までへ",
+        "へまで",
+        "にまで"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "747",
@@ -2505,14 +5801,156 @@
       ]
     },
     {
+      "pageId": "757",
+      "title": "Transitivity VII",
+      "expressions": [
+        "間違う",
+        "間違える",
+        "終わる",
+        "終える",
+        "変わる",
+        "変える",
+        "まちがえる",
+        "おわる",
+        "おえる"
+      ],
+      "headings": [
+        "Transitivity VII: New Meanings",
+        "間違う vs 間違える",
+        "終わる vs 終える",
+        "変わる vs 変える"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson.",
+      "readingAliases": {
+        "間違える": "まちがえる",
+        "終わる": "おわる",
+        "終える": "おえる"
+      }
+    },
+    {
+      "pageId": "760",
+      "title": "Transitivity VIII",
+      "expressions": [
+        "負ける",
+        "当たる",
+        "喜ぶ",
+        "怒る"
+      ],
+      "headings": [
+        "Intransitive & Transitive: Part 7",
+        "負ける",
+        "当たる",
+        "喜ぶ",
+        "怒る"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "762",
+      "title": "Transitivity IX",
+      "expressions": [
+        "垂れる",
+        "垂らす",
+        "気づく",
+        "生きる",
+        "触る",
+        "触れる"
+      ],
+      "headings": [
+        "Intransitive & Transitive: Part 8",
+        "垂れる vs 垂らす",
+        "気づく",
+        "生きる",
+        "触る & 触れる"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "765",
+      "title": "Reduplication: Nouns",
+      "expressions": [
+        "畳語",
+        "重複",
+        "名詞"
+      ],
+      "headings": [
+        "Reduplication: Nouns",
+        "The Plurality Behind Reduplicated Forms",
+        "The Use of 々",
+        "Part of Speech Transformation via Reduplication",
+        "Examples"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "767",
+      "title": "Reduplication: Adjectives",
+      "expressions": [
+        "畳語",
+        "重複",
+        "形容詞"
+      ],
+      "headings": [
+        "Reduplication: Adjectives",
+        "Adjectives Exhibiting Reduplication"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "769",
+      "title": "Reduplication: Adjectival Nouns",
+      "expressions": [
+        "畳語",
+        "重複",
+        "形容動詞"
+      ],
+      "headings": [
+        "Reduplication: Adjectival Nouns",
+        "Examples"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "771",
+      "title": "Reduplication: Adverbs",
+      "expressions": [
+        "畳語",
+        "重複",
+        "副詞"
+      ],
+      "headings": [
+        "Reduplication: Adverbs",
+        "Examples"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "773",
       "title": "込む",
       "expressions": [
-        "込む"
+        "込む",
+        "こむ"
       ],
       "headings": [
         "込む"
-      ]
+      ],
+      "readingAliases": {
+        "込む": "こむ"
+      }
+    },
+    {
+      "pageId": "775",
+      "title": "Honorifics: ｛と・に｝【なります・なっております】",
+      "expressions": [
+        "となります",
+        "になります",
+        "となっております",
+        "になっております"
+      ],
+      "headings": [
+        "Honorifics: ｛と・に｝【なります・なっております】"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "777",
@@ -2548,6 +5986,21 @@
         "泣ける & 笑える",
         "～（さ）せられる ⇒ Spontaneity Interpretation"
       ]
+    },
+    {
+      "pageId": "781",
+      "title": "Potential III",
+      "expressions": [
+        "可能",
+        "あたう"
+      ],
+      "headings": [
+        "Potential III",
+        "可能",
+        "あたう 　(古風な言い方)",
+        "The Potential of ある  (書き言葉的)"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "784",
@@ -2657,12 +6110,16 @@
         "ときた日には",
         "ときている",
         "ときているものだ",
-        "とくれば"
+        "とくれば",
+        "ときたひには"
       ],
       "headings": [
         "”When it Comes to…” III: と｛きたら・きては・くると・きた日には・きている（ものだ）・くれば｝",
         "くる ≒ いう"
-      ]
+      ],
+      "readingAliases": {
+        "ときた日には": "ときたひには"
+      }
     },
     {
       "pageId": "801",
@@ -2696,7 +6153,19 @@
         "を前にして",
         "を控えて",
         "に臨んで",
-        "に面して"
+        "に面して",
+        "さいに",
+        "おりに",
+        "にさいして",
+        "にあたって",
+        "にさきだって",
+        "をまえに",
+        "をまえにして",
+        "をひかえて",
+        "にのぞんで",
+        "にめんして",
+        "のうえで",
+        "の際に"
       ],
       "headings": [
         "Occasion: ～うえで, ～際に, ～折に, ～際して, ～に当たって, ～に先立って, ～を前に（して）, ～を控えて, ～に臨んで, & ～に面して",
@@ -2707,7 +6176,24 @@
         "～に先立って",
         "～を前に（して） & ～を控えて",
         "～に臨んで & ～に面して"
-      ]
+      ],
+      "readingAliases": {
+        "際に": "さいに",
+        "折に": "おりに",
+        "に際して": "にさいして",
+        "に当たって": "にあたって",
+        "に先立って": "にさきだって",
+        "を前に": "をまえに",
+        "を前にして": "をまえにして",
+        "を控えて": "をひかえて",
+        "に臨んで": "にのぞんで",
+        "に面して": "にめんして"
+      },
+      "sectionLookupExpressions": [
+        "のうえで",
+        "の際に"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "806",
@@ -2717,7 +6203,12 @@
         "に足りる",
         "に依存",
         "に値する",
-        "に及ぶ"
+        "に及ぶ",
+        "にたる",
+        "にたりる",
+        "にあたいする",
+        "におよぶ",
+        "足りる"
       ],
       "headings": [
         "Worth & Extent: ～に足る, ～に依存,　～に値する, & ～に及ぶ",
@@ -2725,7 +6216,17 @@
         "～に依存",
         "～に値する",
         "～に及ぶ"
-      ]
+      ],
+      "readingAliases": {
+        "に足る": "にたる",
+        "に足りる": "にたりる",
+        "に値する": "にあたいする",
+        "に及ぶ": "におよぶ"
+      },
+      "sectionLookupExpressions": [
+        "足りる"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "808",
@@ -2745,7 +6246,9 @@
       "title": "Centering: ～を中心に（して）",
       "expressions": [
         "を中心に",
-        "を中心にして"
+        "を中心にして",
+        "をちゅうしんに",
+        "をちゅうしんにして"
       ],
       "headings": [
         "Centering: ～を中心に（して）",
@@ -2753,7 +6256,11 @@
         "～を中心に（して）",
         "The Noun 焦点",
         "集中的に"
-      ]
+      ],
+      "readingAliases": {
+        "を中心に": "をちゅうしんに",
+        "を中心にして": "をちゅうしんにして"
+      }
     },
     {
       "pageId": "812",
@@ -2806,27 +6313,43 @@
       "pageId": "819",
       "title": "The Verb 抜く",
       "expressions": [
-        "抜く"
+        "抜く",
+        "ぬく",
+        "ぬきの",
+        "を抜きにして"
       ],
       "headings": [
         "抜く: ～ぬきで（は）, ～ぬきに(は), ～ぬきで, ～ぬきにして（は), & ～ぬきの",
         "抜く",
         "～ぬきで（は）, ～ぬきに（は）, ～ぬきで, ～ぬきにして（は）, ～ぬきの",
         "～を抜きにして"
-      ]
+      ],
+      "readingAliases": {
+        "抜く": "ぬく"
+      },
+      "sectionLookupExpressions": [
+        "ぬきの",
+        "を抜きにして"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "821",
       "title": "Fault: ～せいで & ～にかこつけて",
       "expressions": [
         "せいで",
-        "にかこつけて"
+        "にかこつけて",
+        "に託けて"
       ],
       "headings": [
         "Fault: ～せいで & ～にかこつけて",
         "～せいで",
         "～に託けて"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "に託けて"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "823",
@@ -2838,7 +6361,12 @@
         "を皮切りにして",
         "に至るまで",
         "をもって",
-        "といったところだ"
+        "といったところだ",
+        "をはじめ",
+        "をはじめとして",
+        "をかわきりに",
+        "をかわきりにして",
+        "にいたるまで"
       ],
       "headings": [
         "Defining Parameter: ～を始め（として）, ～を皮切りに（して）, ～に至るまで, ～をもって, & ～といったところだ",
@@ -2847,7 +6375,40 @@
         "～に至るまで",
         "～をもって",
         "～といったところだ"
-      ]
+      ],
+      "readingAliases": {
+        "を始め": "をはじめ",
+        "を始めとして": "をはじめとして",
+        "を皮切りに": "をかわきりに",
+        "を皮切りにして": "をかわきりにして",
+        "に至るまで": "にいたるまで"
+      }
+    },
+    {
+      "pageId": "825",
+      "title": "4 Morae Adverbs",
+      "expressions": [
+        "副詞"
+      ],
+      "headings": [
+        "4 Morae Adverbs",
+        "Examples"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "828",
+      "title": "Aizuchi",
+      "expressions": [
+        "相槌",
+        "あいづち"
+      ],
+      "headings": [
+        "相槌（あいづち）",
+        "相槌",
+        "Examples　(相槌 in Bold)"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "830",
@@ -2874,6 +6435,114 @@
       ]
     },
     {
+      "pageId": "832",
+      "title": "Japanese Ceremony Customs 冠婚葬祭",
+      "expressions": [
+        "冠婚葬祭"
+      ],
+      "headings": [
+        "Ceremony Customs of Japan 　冠婚葬祭",
+        "冠: Turning Point Celebrations　人生の節目のお祝い",
+        "婚: Marriage　婚姻の成立を祝う儀式",
+        "葬: Funeral　葬儀の慣習",
+        "Buddhist Memorial Services 　法要",
+        "祭: Rituals　祭祀の行事"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "836",
+      "title": "The 君が代 & いろは",
+      "expressions": [
+        "君が代",
+        "いろは"
+      ],
+      "headings": [
+        "The 君が代 & いろは",
+        "君が代",
+        "Lyrics to the 君が代",
+        "いろは　(伊呂波)",
+        "以呂波6・・・",
+        "Modern Use of いろは Ordering",
+        "天地の詞",
+        "大為爾の歌",
+        "鳥啼歌"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "838",
+      "title": "Similarity II",
+      "expressions": [
+        "ごとく",
+        "さながら",
+        "しかず"
+      ],
+      "headings": [
+        "Similarity II: ～ごとく, ～さながら, & ～しかず",
+        "～ごとく",
+        "～さながら",
+        "～しかず"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "841",
+      "title": "Reading the 九九",
+      "expressions": [
+        "九九"
+      ],
+      "headings": [
+        "Reading the 九九",
+        "九九の表"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "843",
+      "title": "Decimals & Fractions",
+      "expressions": [
+        "小数",
+        "分数"
+      ],
+      "headings": [
+        "Decimals & Fractions",
+        "Decimals　小数",
+        "Fractions",
+        "Traditional Decimal Fractions",
+        "Percentages with 割"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "845",
+      "title": "Numbers X: Measurements",
+      "expressions": [
+        "単位",
+        "度量衡"
+      ],
+      "headings": [
+        "Numbers X: Measurements",
+        "SI Units",
+        "Japanese Units"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "847",
+      "title": "Large Numbers & 大字",
+      "expressions": [
+        "大字",
+        "数字"
+      ],
+      "headings": [
+        "Large Numbers & 大字",
+        "Large Numbers (10^16+)",
+        "大字"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "849",
       "title": "Miss out",
       "expressions": [
@@ -2890,6 +6559,21 @@
         "～漏らす",
         "～損なう・～そびれる・～損じる・～逃す"
       ]
+    },
+    {
+      "pageId": "852",
+      "title": "Kana Orthography",
+      "expressions": [
+        "歴史的仮名遣い"
+      ],
+      "headings": [
+        "第02課: Historical かな Orthography",
+        "Historical Kana Orthography",
+        "Vowel Pronunciation:上古日本語～現代日本語",
+        "Consonant Pronunciation: 上代日本語～現代日本語",
+        "Exercises"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "855",
@@ -2940,7 +6624,10 @@
       "expressions": [
         "むしろ",
         "かえって",
-        "ましだ"
+        "ましだ",
+        "よりむしろ",
+        "というより",
+        "ぐらいなら"
       ],
       "headings": [
         "Rather: むしろ, かえって, ～ましだ",
@@ -2950,7 +6637,13 @@
         "かえって",
         "～ましだ",
         "In Conclusion 　　　最後に聞こう・・・"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "よりむしろ",
+        "というより",
+        "ぐらいなら"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "867",
@@ -2960,13 +6653,25 @@
         "反対に",
         "反面",
         "一方",
-        "一方で"
+        "一方で",
+        "ぎゃくに",
+        "はんたいに",
+        "はんめん",
+        "いっぽう",
+        "いっぽうで"
       ],
       "headings": [
         "Opposite: 逆に, 反対に, 反面, & 一方（で）",
         "逆に & 反対に",
         "～反面 VS ～一方（で）"
-      ]
+      ],
+      "readingAliases": {
+        "逆に": "ぎゃくに",
+        "反対に": "はんたいに",
+        "反面": "はんめん",
+        "一方": "いっぽう",
+        "一方で": "いっぽうで"
+      }
     },
     {
       "pageId": "870",
@@ -2975,7 +6680,10 @@
         "かねて",
         "かねがね",
         "前もって",
-        "先立って"
+        "先立って",
+        "まえもって",
+        "さきだって",
+        "を兼ねて"
       ],
       "headings": [
         "Beforehand: かねて, かねがね, 前もって, 先立って, Etc.",
@@ -2985,7 +6693,15 @@
         "前もって & 先立って",
         "事前に",
         "前に, 先に, & 以前に"
-      ]
+      ],
+      "readingAliases": {
+        "前もって": "まえもって",
+        "先立って": "さきだって"
+      },
+      "sectionLookupExpressions": [
+        "を兼ねて"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "872",
@@ -2996,7 +6712,10 @@
         "もってのほか",
         "尚更",
         "言うまでもない",
-        "当然"
+        "当然",
+        "なおさら",
+        "いうまでもない",
+        "とうぜん"
       ],
       "headings": [
         "To Say Nothing Of: ましてや, いわんや, もってのほか, 尚更, 言うまでもない, 当然",
@@ -3006,7 +6725,12 @@
         "尚更",
         "言うまでもない",
         "当然だ・当たり前だ"
-      ]
+      ],
+      "readingAliases": {
+        "尚更": "なおさら",
+        "言うまでもない": "いうまでもない",
+        "当然": "とうぜん"
+      }
     },
     {
       "pageId": "875",
@@ -3031,13 +6755,49 @@
       ]
     },
     {
+      "pageId": "979",
+      "title": "Adverbs for “Especially”",
+      "expressions": [
+        "殊に",
+        "特に",
+        "就中",
+        "とりわけ",
+        "殊更",
+        "ことに",
+        "とくに",
+        "なかんずく",
+        "ことさら"
+      ],
+      "headings": [
+        "Adverbs for “Especially”: 殊に, 特に, 就中, とりわけ, 殊更, etc.",
+        "殊に",
+        "特に & 特別（に）",
+        "格別（に）& 格段に",
+        "とりわけ（て）",
+        "就中",
+        "別に & 別段",
+        "殊更 VS わざと VS 故意に"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson.",
+      "readingAliases": {
+        "殊に": "ことに",
+        "特に": "とくに",
+        "就中": "なかんずく",
+        "殊更": "ことさら"
+      }
+    },
+    {
       "pageId": "982",
       "title": "Dare To: 強いて, 敢えて, 押して, & 達て",
       "expressions": [
         "強いて",
         "敢えて",
         "押して",
-        "達て"
+        "達て",
+        "しいて",
+        "あえて",
+        "おして",
+        "たって"
       ],
       "headings": [
         "Dare To: 強いて, 敢えて, 押して, & 達て",
@@ -3045,19 +6805,47 @@
         "敢えて",
         "押して",
         "達て"
-      ]
+      ],
+      "readingAliases": {
+        "強いて": "しいて",
+        "敢えて": "あえて",
+        "押して": "おして",
+        "達て": "たって"
+      }
     },
     {
       "pageId": "984",
       "title": "The Adverbial Noun 一旦",
       "expressions": [
-        "一旦"
+        "一旦",
+        "いったん"
       ],
       "headings": [
         "The Adverbial Noun 一旦",
         "The Noun 一旦",
         "The Adverb 一旦"
-      ]
+      ],
+      "readingAliases": {
+        "一旦": "いったん"
+      }
+    },
+    {
+      "pageId": "986",
+      "title": "こそあど VI: Older Expressions",
+      "expressions": [
+        "かく",
+        "しか",
+        "こそあど"
+      ],
+      "headings": [
+        "こそあど VI: Older Expressions",
+        "The /ka/ Group of Demonstratives",
+        "斯（か）く",
+        "然（さ）",
+        "然（しか）",
+        "と"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "988",
@@ -3066,7 +6854,10 @@
         "嫌いがある",
         "が早いか",
         "が最後",
-        "そばから"
+        "そばから",
+        "きらいがある",
+        "がはやいか",
+        "がさいご"
       ],
       "headings": [
         "Tendency: 嫌いがある, が早いか, が最後, & そばから",
@@ -3074,7 +6865,12 @@
         "が早いか",
         "～が最後",
         "そばから"
-      ]
+      ],
+      "readingAliases": {
+        "嫌いがある": "きらいがある",
+        "が早いか": "がはやいか",
+        "が最後": "がさいご"
+      }
     },
     {
       "pageId": "990",
@@ -3109,14 +6905,25 @@
       "title": "思しい & 思わしい",
       "expressions": [
         "思しい",
-        "思わしい"
+        "思わしい",
+        "おぼしい",
+        "おもわしい",
+        "とおぼしき"
       ],
       "headings": [
         "思しい & 思わしい",
         "【思・覚】しい",
         "～とおぼしき",
         "思わしい"
-      ]
+      ],
+      "readingAliases": {
+        "思しい": "おぼしい",
+        "思わしい": "おもわしい"
+      },
+      "sectionLookupExpressions": [
+        "とおぼしき"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "996",
@@ -3134,12 +6941,32 @@
       ]
     },
     {
+      "pageId": "999",
+      "title": "連体詞",
+      "expressions": [
+        "連体詞"
+      ],
+      "headings": [
+        "連体詞"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "1001",
       "title": "The Particles ども, とも, & たりとも",
       "expressions": [
         "ども",
         "とも",
-        "たりとも"
+        "たりとも",
+        "といえども",
+        "といえど",
+        "と雖も",
+        "ずとも",
+        "くとも",
+        "うと",
+        "うとも",
+        "ようと",
+        "ようとも"
       ],
       "headings": [
         "The Particle ども, とも, & たりとも",
@@ -3158,7 +6985,19 @@
         "～とも～とも",
         "終助詞「とも」",
         "The Particle たりとも"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "といえども",
+        "といえど",
+        "と雖も",
+        "ずとも",
+        "くとも",
+        "うと",
+        "うとも",
+        "ようと",
+        "ようとも"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "1003",
@@ -3188,6 +7027,45 @@
       ]
     },
     {
+      "pageId": "1007",
+      "title": "Calendar Systems of Japan",
+      "expressions": [
+        "暦",
+        "西暦",
+        "元号"
+      ],
+      "headings": [
+        "Calendar Systems of Japan 日本における紀年法",
+        "The Western Calendar　西暦",
+        "The Era Name System 　日本の元号",
+        "The Imperial Era & Divine Descent Calendars 神武紀元・天孫紀元",
+        "Stems-and-Branches (Sexagenary Cycle)　干支",
+        "The Japanese Lunisolar Calendar　天保暦",
+        "In Conclusion…　最後に…"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1010",
+      "title": "The Seasons　春夏秋冬",
+      "expressions": [
+        "春夏秋冬",
+        "四季"
+      ],
+      "headings": [
+        "The Seasons　春夏秋冬（四季）",
+        "The Seasons　四季の基本呼称",
+        "Defining Each Season　各季節の定義",
+        "The 24 Divisions of the Solar Year　二十四節気",
+        "The 72 ‘Climates’ 七十二候",
+        "The Months　「月」の定義",
+        "The Five Festivals　五節句",
+        "The “Zassetsu”　雑節",
+        "In Conclusion…　最後に…"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "1012",
       "title": "More Endings II",
       "expressions": [
@@ -3205,6 +7083,45 @@
         "～捲（まく）る",
         "～通す"
       ]
+    },
+    {
+      "pageId": "1015",
+      "title": "Locational",
+      "expressions": [
+        "渡る",
+        "渡す",
+        "出る",
+        "上がる",
+        "上げる",
+        "入る",
+        "入れる",
+        "下がる",
+        "下げる",
+        "おりる",
+        "おろす",
+        "落ちる",
+        "落とす",
+        "回る",
+        "回す",
+        "あがる",
+        "あげる"
+      ],
+      "headings": [
+        "Locational: ～渡る/渡す, ～出る, ～上がる/上げる, ～入る/入れる, ～下がる/下げる, ～おりる/おろす, ～落ちる/落とす, & ～回る/回す",
+        "～渡る",
+        "～出る",
+        "～上がる & -上げる",
+        "～入る & ～入れる",
+        "～下がる & ～下げる",
+        "～おりる & ～おろす",
+        "～落ちる & ～落とす",
+        "～回る & ～回す"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson.",
+      "readingAliases": {
+        "上がる": "あがる",
+        "上げる": "あげる"
+      }
     },
     {
       "pageId": "1019",
@@ -3233,7 +7150,11 @@
       "title": "Suppositional ～（よ）う w/ Adjectives & Verbs",
       "expressions": [
         "よう",
-        "う"
+        "う",
+        "なかろう",
+        "たろう",
+        "ましたろう",
+        "ましょう"
       ],
       "headings": [
         "Suppositional ～（よ）う w/ Adjectives & Verbs",
@@ -3242,7 +7163,26 @@
         "～たろう・～ましたろう",
         "Verbs ＋ Suppositional ～（よ）う",
         "～ましょう"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "なかろう",
+        "たろう",
+        "ましたろう",
+        "ましょう"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
+    },
+    {
+      "pageId": "1023",
+      "title": "ら抜き言葉",
+      "expressions": [
+        "ら抜き言葉"
+      ],
+      "headings": [
+        "ら抜き言葉",
+        "ら抜き言葉って？"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "1025",
@@ -3256,10 +7196,351 @@
       ]
     },
     {
+      "pageId": "1027",
+      "title": "/sa/ Insertion　さ入れ言葉",
+      "expressions": [
+        "さ入れ言葉"
+      ],
+      "headings": [
+        "/sa/ Insertion　さ入れ言葉",
+        "① /sa/-Insertion in ～せていただく",
+        "②/sa/-Insertion in 2-Syllable Adjectives",
+        "③/sa/-Insertion with ～ない"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1029",
+      "title": "Prefixes",
+      "expressions": [
+        "接頭辞"
+      ],
+      "headings": [
+        "Prefixes",
+        "What is a Prefix?",
+        "Prefixes Attached to Nouns & Adjectives",
+        "Prefixes with Verbs",
+        "Prefixes for Loanwords"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1031",
+      "title": "敵性語禁止",
+      "expressions": [
+        "敵性語禁止"
+      ],
+      "headings": [
+        "敵性語禁止",
+        "軽佻浮薄＝敵国語は使用禁止！",
+        "野球用語",
+        "Other Sports",
+        "Other Kinds of 敵性語の言い替え"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1033",
+      "title": "幼児語",
+      "expressions": [
+        "幼児語"
+      ],
+      "headings": [
+        "幼児語",
+        "Onomatopoeic 幼児語",
+        "Sound Repetition",
+        "Use of Simpler Sounds",
+        "Speech Directed At Infants",
+        "In Conclusion"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1035",
+      "title": "Phonology I: Vowels",
+      "expressions": [
+        "母音"
+      ],
+      "headings": [
+        "Phonology I: Vowels",
+        "The Vowels　母音体系",
+        "Time & Quality",
+        "Elongation",
+        "Nasalization",
+        "Devoicing"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1037",
+      "title": "Consonants",
+      "expressions": [
+        "子音"
+      ],
+      "headings": [
+        "Phonology 1.5: Consonants",
+        "Consonants 子音",
+        "stops/Plosives　閉鎖音・破裂音",
+        "Fricatives 摩擦音",
+        "Affricates 破擦音",
+        "Approximants　接近音",
+        "Nasals　鼻音",
+        "Consonant Gemination　促音化"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1039",
+      "title": "Pitch",
+      "expressions": [
+        "高低アクセント",
+        "アクセント"
+      ],
+      "headings": [
+        "Phonology II: Pitch　(高低アクセント)",
+        "Japanese Pitch Accent",
+        "How Pitch Helps Distinguish Words But Doesn’t",
+        "The Four Pitch Contour Patterns in Detail",
+        "Distribution of Pitch Patterns in Nouns by Mora Count",
+        "Systemic Pitch Accent Rules (To Be Continued…)"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1041",
+      "title": "連濁",
+      "expressions": [
+        "連濁"
+      ],
+      "headings": [
+        "Phonology III: 連濁",
+        "Voicing in Compounding",
+        "Initial Element w/ Voiced Sound = NO 連濁",
+        "上清めば下濁る",
+        "Lyman’s Law",
+        "Loanwords: NO 連濁",
+        "～ん Triggering 連濁",
+        "Branching of a Compound",
+        "Dvandva",
+        "Onomatopoeia",
+        "連濁 in Names"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1043",
+      "title": "Bare & Covered Forms",
+      "expressions": [
+        "露出形",
+        "被覆形"
+      ],
+      "headings": [
+        "Phonology IV: 露出形 & 被覆形",
+        "露出形 & 被覆形",
+        "I―O/U",
+        "E―A",
+        "Consonant Deletion Before /-i/",
+        "O―A",
+        "露出形 in Compounds",
+        "Loss of 被覆形"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1045",
+      "title": "撥音添加 & 撥音化",
+      "expressions": [
+        "撥音添加",
+        "撥音化",
+        "撥音便"
+      ],
+      "headings": [
+        "Phonology V: 撥音添加 & 撥音化",
+        "撥音添加",
+        "Nasal Consonant Gemination",
+        "Pre-Nasalization in Dialects",
+        "撥音化",
+        "撥音便",
+        "The Contraction of の → ん",
+        "The Contraction of む → ん",
+        "The Contraction of ラ行音 → ん",
+        "The Contraction of う → ん",
+        "Overview of how to pronounce ん"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1047",
+      "title": "促音化",
+      "expressions": [
+        "促音化",
+        "促音便"
+      ],
+      "headings": [
+        "Phonology VI: 促音化",
+        "促音便",
+        "促音化 from Syllable-Final Applosives",
+        "Emphatic 促音化",
+        "Emphatic 促音化 in Compound Verbs",
+        "促音添加 in Non-Verbal Compounds",
+        "「っ・ッ」in Onomatopoeiaオノマトペに現れる促音",
+        "っ・ッ = Suddenness?",
+        "っ・ッ + と",
+        "「ッ」in Loanwords カタカナ語の促音",
+        "っ ＝ Glottal Stop"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1049",
+      "title": "Phonology VIII: サ行とハ行の揺れ",
+      "expressions": [
+        "サ行",
+        "ハ行"
+      ],
+      "headings": [
+        "Phonology VIII: サ行とハ行の揺れ",
+        "The History of サ行音",
+        "/s/ → /h/",
+        "Examples By Dialect",
+        "敷く vs 引く",
+        "/s/ → /h/ in 近畿方言"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1051",
+      "title": "Phonology VI: ウ音便",
+      "expressions": [
+        "ウ音便"
+      ],
+      "headings": [
+        "Phonology VI: ウ音便",
+        "The Phonological Rules Behind ウ音便",
+        "ウ音便 in Action",
+        "Examples in Verbal Conjugations",
+        "Examples in Adjectival Conjugations"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1053",
+      "title": "Verlan",
+      "expressions": [
+        "倒語"
+      ],
+      "headings": [
+        "Inverted Words (倒語)",
+        "Historic Examples",
+        "倒語 in Brand Names",
+        "ズージャ語",
+        "Reading Sentences Backwards for Comedic Effect"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1069",
+      "title": "Native Suffixes I",
+      "expressions": [
+        "接尾辞"
+      ],
+      "headings": [
+        "Native Suffixes I: Nominal",
+        "Native Nominal Suffixes 1-25"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1071",
+      "title": "Native Suffixes II",
+      "expressions": [
+        "接尾辞"
+      ],
+      "headings": [
+        "Native Suffixes II: Nominal II",
+        "Native Nominal Suffixes 26-53"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1074",
+      "title": "Native Suffixes III",
+      "expressions": [
+        "接尾辞"
+      ],
+      "headings": [
+        "Native Suffixes III: Adjectival & Adverbial",
+        "Adjectival and Adverbial"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1076",
+      "title": "Native Suffixes IV",
+      "expressions": [
+        "がかる",
+        "ぐむ",
+        "接尾辞",
+        "さびる",
+        "染みる",
+        "立つ",
+        "つく",
+        "づく",
+        "づける",
+        "ばむ",
+        "張る",
+        "びる",
+        "ぶる",
+        "めく",
+        "めかす",
+        "やく",
+        "やぐ"
+      ],
+      "headings": [
+        "Native Verbal Affixes　大和言葉における動詞化接尾辞",
+        "～がかる",
+        "～ぐむ",
+        "～さびる",
+        "～染みる",
+        "～立つ",
+        "～つく",
+        "～づく",
+        "～づける",
+        "～ばむ",
+        "～張る",
+        "～びる",
+        "～ぶる",
+        "～めく",
+        "～めかす",
+        "～やく",
+        "～やぐ"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson. Additional compound forms follow the recorded section headings or their explicit construction descriptions.",
+      "sectionLookupExpressions": [
+        "さびる",
+        "染みる",
+        "立つ",
+        "つく",
+        "づく",
+        "づける",
+        "ばむ",
+        "張る",
+        "びる",
+        "ぶる",
+        "めく",
+        "めかす",
+        "やく",
+        "やぐ"
+      ]
+    },
+    {
       "pageId": "1078",
       "title": "The Adjectival Affix ～か",
       "expressions": [
-        "か"
+        "か",
+        "ら",
+        "らか",
+        "やか"
       ],
       "headings": [
         "The Adjectival Affix「か」: か～・～か・～らか・～やか",
@@ -3272,7 +7553,13 @@
         "Verb/Onomatopoeia + ～か・らか",
         "The ～か Ending in Kyushu Dialects　九州方言におけるカ語尾",
         "In Conclusion…　最後に…"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "ら",
+        "らか",
+        "やか"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "1081",
@@ -3297,6 +7584,66 @@
       ]
     },
     {
+      "pageId": "1083",
+      "title": "Sino-Japanese Suf.",
+      "expressions": [
+        "接尾辞",
+        "漢語"
+      ],
+      "headings": [
+        "Sino-Japanese Suffixes I",
+        "The Suffixes"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1085",
+      "title": "Sino-JapaneseSuffixesII",
+      "expressions": [
+        "接尾辞",
+        "漢語"
+      ],
+      "headings": [
+        "Sino-Japanese Suffixes II",
+        "More Suffixes"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1087",
+      "title": "Appearance",
+      "expressions": [
+        "だらけ",
+        "まみれ",
+        "ずくめ",
+        "めく",
+        "げ",
+        "みどろ",
+        "気味",
+        "ぎみ",
+        "塗れ",
+        "尽くめ"
+      ],
+      "headings": [
+        "Appearance: ～だらけ, ～まみれ, ～ずくめ, ～めく, ～げ, ～みどろ, & ～気味",
+        "～だらけ",
+        "～塗れ",
+        "～尽くめ",
+        "～めく",
+        "～みどろ",
+        "～気",
+        "～気味"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson. Additional compound forms follow the recorded section headings or their explicit construction descriptions.",
+      "readingAliases": {
+        "気味": "ぎみ"
+      },
+      "sectionLookupExpressions": [
+        "塗れ",
+        "尽くめ"
+      ]
+    },
+    {
       "pageId": "1089",
       "title": "Slang る Verbs",
       "expressions": [
@@ -3306,6 +7653,28 @@
         "Slang る Verbs",
         "The Words"
       ]
+    },
+    {
+      "pageId": "1091",
+      "title": "Hon. VI: Irreg. II",
+      "expressions": [
+        "参る",
+        "伺う",
+        "敬語"
+      ],
+      "headings": [
+        "Honorific Speech VI: Irregular Verbs II",
+        "参る",
+        "伺う",
+        "仰る",
+        "申す",
+        "いただく",
+        "致す",
+        "差し上げる",
+        "給う",
+        "召す"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "1093",
@@ -3329,7 +7698,15 @@
         "故",
         "所以",
         "謂れ",
-        "由"
+        "由",
+        "ゆえ",
+        "ゆえん",
+        "いわれ",
+        "よし",
+        "ゆえに",
+        "がゆえに",
+        "ことゆえ",
+        "がために"
       ],
       "headings": [
         "～故, 所以, 謂れ, & 由",
@@ -3341,13 +7718,41 @@
         "所以",
         "謂れ",
         "由"
-      ]
+      ],
+      "readingAliases": {
+        "故": "ゆえ",
+        "所以": "ゆえん",
+        "謂れ": "いわれ",
+        "由": "よし"
+      },
+      "sectionLookupExpressions": [
+        "ゆえに",
+        "がゆえに",
+        "ことゆえ",
+        "がために"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
+    },
+    {
+      "pageId": "1097",
+      "title": "ク語法",
+      "expressions": [
+        "ク語法"
+      ],
+      "headings": [
+        "Modern Usage",
+        "第372課: The Nominalizing Affix /-aku/: ク語法",
+        "Conjugating with /-aku/"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "1100",
       "title": "The Causative IV: ～しめる",
       "expressions": [
-        "しめる"
+        "しめる",
+        "ならしめる",
+        "たらしめる"
       ],
       "headings": [
         "The Causative IV: ～しめる",
@@ -3357,7 +7762,39 @@
         "～ならしめる & ～たらしめる",
         "Honorific Speech (尊敬語): ～しめ給う ＝ お〇〇なさる",
         "Miscellaneous しめる"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "ならしめる",
+        "たらしめる"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
+    },
+    {
+      "pageId": "1125",
+      "title": "Rare Interrogatives",
+      "expressions": [
+        "なんらか",
+        "何某か"
+      ],
+      "headings": [
+        "Rare Interrogatives",
+        "なんらか",
+        "何某か"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1128",
+      "title": "Onomatopoeia IV",
+      "expressions": [
+        "擬声語",
+        "擬音語"
+      ],
+      "headings": [
+        "擬声語 IV: From Chinese",
+        "Onomatopoeia from Chinese"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "1131",
@@ -3377,7 +7814,8 @@
         "たる",
         "たるや",
         "たるもの",
-        "たりとも"
+        "たりとも",
+        "たるものは"
       ],
       "headings": [
         "The Auxiliary ～たる: たるや、たるもの、たりとも",
@@ -3387,7 +7825,28 @@
         "～たるや",
         "～たるもの（は）",
         "～たりとも"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "たるものは"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
+    },
+    {
+      "pageId": "1143",
+      "title": "美化語",
+      "expressions": [
+        "美化語",
+        "お",
+        "ご"
+      ],
+      "headings": [
+        "美化語",
+        "お- VS ご-",
+        "The Relationship between 美化語 and 丁寧語",
+        "The Necessity of 美化語",
+        "美化語 and Change of Meaning"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "1145",
@@ -3452,14 +7911,221 @@
       "pageId": "1153",
       "title": "The Particle いで",
       "expressions": [
-        "いで"
+        "いで",
+        "いでか"
       ],
       "headings": [
         "The Particle いで",
         "The Origin of ～で & ～いで",
         "Use in Modern Japanese",
         "～いでか"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "いでか"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
+    },
+    {
+      "pageId": "1155",
+      "title": "Punctuation",
+      "expressions": [
+        "句読点",
+        "句点",
+        "読点",
+        "括弧"
+      ],
+      "headings": [
+        "Punctuation",
+        "The Period: 句点・まる",
+        "The ピリオド",
+        "読点（とうてん） & コンマ",
+        "感嘆符",
+        "The 疑問符",
+        "リーダー",
+        "中線",
+        "中黒",
+        "傍線",
+        "The 脇点（わきてん）",
+        "スペース",
+        "The 鉤括弧 & 二重括弧",
+        "The 丸括弧14",
+        "Other Brackets",
+        "二重ハイフン",
+        "波ダッシュ",
+        "コロン & セミコロン",
+        "Ditto Marks",
+        "Miscellaneous Symbols"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1158",
+      "title": "Romanization",
+      "expressions": [
+        "ローマ字",
+        "ローマ字表記"
+      ],
+      "headings": [
+        "Romanization Systems",
+        "The Kunrei-skiki Method",
+        "Orthographic Rules",
+        "The Nihon-shiki Method",
+        "The Hepburn Method",
+        "JSL Romanization"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1160",
+      "title": "Abbreviations",
+      "expressions": [
+        "略語"
+      ],
+      "headings": [
+        "Abbreviations",
+        "略語"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1162",
+      "title": "Etymology",
+      "expressions": [
+        "語源",
+        "語源学"
+      ],
+      "headings": [
+        "Etymology　語源学",
+        "Native Words 和語",
+        "Sino-Japanese Words 漢語",
+        "Japanese-made Sino-Japanese Words和製漢語",
+        "Japanese Syntax → Chinese Syntax",
+        "重箱読み & 湯桶読み",
+        "Foreign-Origin Words 外来語",
+        "Modern Chinese Loanwords現代中国語由来の外来語"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1164",
+      "title": "和製英語",
+      "expressions": [
+        "和製英語"
+      ],
+      "headings": [
+        "Japanese-Made English 和製英語",
+        "Defining 和製英語",
+        "Shortenings　既存の語形の省略",
+        "New “Slang る-Verbs”",
+        "和製英語 in Action",
+        "Words which Require explanation",
+        "More Example Sentences",
+        "和製フランス語? 和製ドイツ語?"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1166",
+      "title": "Four-Character Idioms",
+      "expressions": [
+        "四字熟語"
+      ],
+      "headings": [
+        "Four-Character Idioms　四字熟語",
+        "What is an Idiom?慣用句とは？",
+        "Sources for 四字熟語",
+        "Basic 四字熟語",
+        "Additional 四字熟語"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1168",
+      "title": "Proverbs 諺",
+      "expressions": [
+        "諺",
+        "ことわざ"
+      ],
+      "headings": [
+        "Proverbs 諺"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1171",
+      "title": "Dialectical 自他動詞",
+      "expressions": [
+        "自他動詞",
+        "くっつかる",
+        "求まる"
+      ],
+      "headings": [
+        "Dialectical 自他動詞",
+        "くっつかる",
+        "求まる",
+        "覚わる",
+        "鍛わる",
+        "結ばる",
+        "The Auxiliary Verb ～（ら）さる"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1173",
+      "title": "音訓 (ON & KUN Readings)",
+      "expressions": [
+        "音訓",
+        "音読み",
+        "訓読み"
+      ],
+      "headings": [
+        "音訓 (ON & KUN Readings)",
+        "Kanji & Meaning",
+        "音読み",
+        "The Sounds of Wu　呉音",
+        "The Sounds of Han　漢音",
+        "The Sounds of Tang　唐音",
+        "“Traditional” ON Readings　慣用音",
+        "百姓読み",
+        "Conflation of KUN As ON字訓の字音化",
+        "Final 「フ」Realizations in Modernity",
+        "Conflating ON Readings",
+        "Unclassified Readings → 慣用音",
+        "訓読み",
+        "KUN Readings of Sino-Japanese Origin",
+        "Multiple KUN Readings",
+        "KUN Readings from Loanwords外来語による訓読み",
+        "熟字訓",
+        "義訓",
+        "連濁 & 露出形 vs 被覆形",
+        "名乗り",
+        "音読み & 訓読み Combined",
+        "重箱読み",
+        "湯桶読み"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1178",
+      "title": "Okurigana",
+      "expressions": [
+        "送り仮名"
+      ],
+      "headings": [
+        "送り仮名",
+        "What is 送り仮名?",
+        "Rule 1",
+        "False Irregularities",
+        "Rule 2",
+        "Recognized Irregularities",
+        "True Irregularities",
+        "Rule 3",
+        "Rule 4",
+        "Rule 5",
+        "Rule 6",
+        "Rule 7"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "1219",
@@ -3476,6 +8142,168 @@
       ]
     },
     {
+      "pageId": "1222",
+      "title": "Yotsugana",
+      "expressions": [
+        "四つ仮名"
+      ],
+      "headings": [
+        "四つ仮名",
+        "The History of ジ, ヂ, ズ, & ヅ",
+        "Yotsugana Interchangeability",
+        "Modern Use of Yotsugana",
+        "四つ仮名 in Dialects",
+        "一つ仮名弁",
+        "二つ仮名弁",
+        "三つ仮名弁",
+        "四つ仮名弁"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1256",
+      "title": "Hentaigana",
+      "expressions": [
+        "変体仮名"
+      ],
+      "headings": [
+        "変体仮名"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1261",
+      "title": "名乗り訓",
+      "expressions": [
+        "名乗り訓"
+      ],
+      "headings": [
+        "名乗り訓",
+        "人名用漢字",
+        "キラキラネーム",
+        "Names of Famous Individuals　有名人の名前（一覧）"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1263",
+      "title": "Kanji Radicals 部首",
+      "expressions": [
+        "部首"
+      ],
+      "headings": [
+        "Kanji Radicals　部首",
+        "The 六書",
+        "Pictograms　象形文字",
+        "Indicatives/Simple Ideographs　指事1文字",
+        "Compound Ideographs　会意文字",
+        "Semasio-Phonetic　形声文字",
+        "Derivative cognates 転注文字",
+        "Loan-graphs",
+        "Kinds of 部首 by Shape: 偏旁冠脚",
+        "Left-Side Radicals　偏（へん）",
+        "Right-Side Radicals　旁",
+        "Upper-Side Radicals　冠",
+        "Bottom-Side Radicals　脚",
+        "Hanging Radicals　垂",
+        "Bottom-Wrapping Radicals　繞",
+        "Enclosure Radicals　構",
+        "The 214 部首 of the 康熙字典"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1266",
+      "title": "Japanese-Made Kanji: 国字",
+      "expressions": [
+        "国字"
+      ],
+      "headings": [
+        "国字 (Japanese-Made Kanji)",
+        "Important 国字",
+        "Making 国字",
+        "Important 国字 to Study"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1268",
+      "title": "当て字",
+      "expressions": [
+        "当て字"
+      ],
+      "headings": [
+        "当て字",
+        "‘Phonetic’ Ateji　字義を無視した当て字",
+        "Loanword 当て字",
+        "Toponym Ateji　地名の当て字",
+        "Ignoring Sound　読み方を無視した当て字・熟字訓"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1272",
+      "title": "Kanji Simplification　漢字の簡略化",
+      "expressions": [
+        "旧字体",
+        "新字体",
+        "漢字"
+      ],
+      "headings": [
+        "Kanji Simplification　漢字の簡略化：「旧字体」対「新字体」",
+        "The Simplification Process　簡略化の仕方",
+        "I: Turning Cursive Form into Manuscript Form　行草書の楷書化",
+        "II: Font Unification　字体の統一",
+        "III: Phonetic Replacement　音符の交換",
+        "IV: Change in Radical　部首の変更",
+        "V: Addition of Stroke　筆画の増加",
+        "VI: Removal of Complicated Section　繁雑部分の削除",
+        "Simplifications vs Existing Kanji 　新字体と別字が重なってしまうケース",
+        "More Examples"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1274",
+      "title": "同音の漢字による書き換え",
+      "expressions": [
+        "代用字"
+      ],
+      "headings": [
+        "Phonetic Respellings of Uncommon Kanji",
+        "Substitute Kanji　代用字",
+        "Examples　使用例",
+        "Separate Words Written the Same   書き換えによって混同される熟語"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1276",
+      "title": "交ぜ書き",
+      "expressions": [
+        "交ぜ書き"
+      ],
+      "headings": [
+        "交ぜ書き",
+        "Use in Current Age Documents　現代の文章における適用"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1279",
+      "title": "略字 & 幽霊字",
+      "expressions": [
+        "略字",
+        "幽霊字"
+      ],
+      "headings": [
+        "略字 & 幽霊字",
+        "略字",
+        "幽霊字"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "1281",
       "title": "The Particles Ga & Wo",
       "expressions": [
@@ -3487,6 +8315,144 @@
         "が",
         "を"
       ]
+    },
+    {
+      "pageId": "1284",
+      "title": "Basic Syntax",
+      "expressions": [
+        "古典文法",
+        "品詞",
+        "構文"
+      ],
+      "headings": [
+        "第03: Parts of Speech & Basic Syntax",
+        "The 10 Major Aspects in Classical Japanese",
+        "Exercises"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1290",
+      "title": "Copula Verbs",
+      "expressions": [
+        "にあり",
+        "なり",
+        "とあり",
+        "たり"
+      ],
+      "headings": [
+        "第04課: The Copula Verbs にあり(なり) & とあり(たり)",
+        "にあり（なり）",
+        "Using なり",
+        "The Copula Verb たり",
+        "Exercises"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1293",
+      "title": "Classical Adjectives I",
+      "expressions": [
+        "ク活用",
+        "シク活用"
+      ],
+      "headings": [
+        "第05課: Adjectives I: ク & シク",
+        "ク活用形容詞",
+        "シク活用形容詞",
+        "Exercises"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1295",
+      "title": "Classical Adjectives II",
+      "expressions": [
+        "ナリ活用",
+        "タリ活用"
+      ],
+      "headings": [
+        "第06課: Adjectives II: ナリ & タリ",
+        "ナリ型形容動詞",
+        "タリ型形容動詞",
+        "Exercises"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1299",
+      "title": "Class. Regular Verbs I",
+      "expressions": [
+        "四段活用"
+      ],
+      "headings": [
+        "第07課: Regular Verbs I: 四段",
+        "四段活用動詞",
+        "Exercises"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1302",
+      "title": "Classical Verbs II　古典文法に於ける上一段・下一段活用動詞",
+      "expressions": [
+        "上一段活用",
+        "下一段活用"
+      ],
+      "headings": [
+        "第08課: Regular Verbs II: Upper/Lower One-Grade Conjugations正格活用動詞②：上一段活用および下一段活用",
+        "Upper One-Grade Conjugating Verbs 上一段活用動詞",
+        "Lower-One Grade Conjugating Verb 下一段活用動詞"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1304",
+      "title": "Classical Verbs III古典文法に於ける上二段・下二段活用動詞",
+      "expressions": [
+        "上二段活用",
+        "下二段活用"
+      ],
+      "headings": [
+        "第09課: Regular Verbs III: Upper/Lower Two-Grade Conjugations正格活用動詞③：上二段活用および下二段活用",
+        "Upper Two-Grade Conjugating Verbs　上二段活用動詞",
+        "Lower Two-Grade Conjugating Verbs　下二段活用動詞"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1307",
+      "title": "Class. Irregular Verbs I",
+      "expressions": [
+        "サ行変格活用",
+        "カ行変格活用",
+        "サ変",
+        "カ変"
+      ],
+      "headings": [
+        "第010課: Irregular Verbs I: サ変 & カ変",
+        "サ行変格動詞",
+        "カ行変格動詞",
+        "Exercises"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1310",
+      "title": "Classical Irregular Verbs II",
+      "expressions": [
+        "ラ行変格活用",
+        "ナ行変格活用",
+        "ラ変",
+        "ナ変"
+      ],
+      "headings": [
+        "第011課: Irregular Verbs II: ラ変 & ナ変",
+        "ラ行変格動詞",
+        "ナ行変格動詞",
+        "Exercises"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "1313",
@@ -3554,6 +8520,102 @@
         "The Auxiliary Verb ～り",
         "Exercises"
       ]
+    },
+    {
+      "pageId": "1326",
+      "title": "Nouns & Pronouns",
+      "expressions": [
+        "名詞",
+        "代名詞",
+        "古語"
+      ],
+      "headings": [
+        "第016課: Nouns & Pronouns 古語における名詞・代名詞",
+        "Nouns　上代日本語における名詞",
+        "Pronouns　古式代名詞"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1328",
+      "title": "Numbers",
+      "expressions": [
+        "数詞",
+        "数字"
+      ],
+      "headings": [
+        "第017課: Numbers",
+        "Basic Numbers in Native & Sino-Japanese Number Systems",
+        "Native Numbers Past 10",
+        "The Generic Counter with Native Numbers: ～つ (1-9), ち・ぢ (20+)",
+        "The Numbers in Between in the Native Number System",
+        "Simplified Native Number/Counter System",
+        "Native Numbers in Compounds",
+        "Native Numbers w. ～月（つき）, ～年（とせ）, & ～日（か）",
+        "The Counter ～たり・り with Native Numbers",
+        "Example Sentences"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1330",
+      "title": "Classical Adverbs",
+      "expressions": [
+        "副詞",
+        "古典文法"
+      ],
+      "headings": [
+        "第018課: Adverbs",
+        "副詞",
+        "Correlated Adverbs",
+        "More Adverbs",
+        "Exercises"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1332",
+      "title": "Classical Conjunctions",
+      "expressions": [
+        "接続詞",
+        "古典文法"
+      ],
+      "headings": [
+        "第019課: Conjunctions",
+        "接続詞",
+        "Conjunctions in Context",
+        "Examples"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1334",
+      "title": "Classical Interjections",
+      "expressions": [
+        "感動詞",
+        "古典文法"
+      ],
+      "headings": [
+        "第020課: Interjections",
+        "Classical Japanese Interjections",
+        "Exercises"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1337",
+      "title": "Demonstratives",
+      "expressions": [
+        "指示代名詞",
+        "こそあど"
+      ],
+      "headings": [
+        "第021課: Demonstratives",
+        "The Four Dimensions",
+        "指示代名詞",
+        "Demonstrative Adverbs"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "1339",
@@ -3742,6 +8804,53 @@
       ]
     },
     {
+      "pageId": "1367",
+      "title": "Man’yogana",
+      "expressions": [
+        "万葉仮名"
+      ],
+      "headings": [
+        "第035課: 万葉仮名 Introduction",
+        "万葉仮名"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1415",
+      "title": "The Nominalizing Affix /-aku/",
+      "expressions": [
+        "ク語法"
+      ],
+      "headings": [
+        "The Nominalizing Affix /-aku/: ク語法",
+        "Conjugating with /-aku/",
+        "Misuses in Middle Japanese",
+        "Modern Usage"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "1642",
+      "title": "Sino-Japanese Numbers",
+      "expressions": [
+        "数詞",
+        "数字"
+      ],
+      "headings": [
+        "Sino-Japanese Numbers",
+        "Zero",
+        "One to Ten",
+        "Countdowns",
+        "Eleven to 100",
+        "Reading 4, 7, 9 in Larger Numbers",
+        "101-9999",
+        "10000 & Beyond",
+        "Spelling Numbers　数字の表記",
+        "Phone Number　電話番号の読み方"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "1688",
       "title": "Counters for Frequency: ～度・回・遍",
       "expressions": [
@@ -3788,10 +8897,53 @@
       ]
     },
     {
+      "pageId": "2074",
+      "title": "Non-Deictic Time II: Determiners",
+      "expressions": [
+        "時間表現"
+      ],
+      "headings": [
+        "Non-Deictic Time II: Determiners",
+        "Grammatical Dilemmas",
+        "Dilemma 1: Shifting Semantic Weight in “Deictic + Non-Deictic” Expressions",
+        "Dilemma 2: Topicalization VS Case Marking with Non-Deictic Expressions",
+        "Dilemma 3: The Need to Designate Time Frame Necessitates に",
+        "｛この・その・あの｝前の～",
+        "｛この・その・あの｝次の～",
+        "次～ in Sino-Japanese Compounds",
+        "前・先～",
+        "翌～",
+        "明くる",
+        "翌々～",
+        "当～"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
+      "pageId": "2224",
+      "title": "Non-Deictic Time III: Context-Dependent Words",
+      "expressions": [
+        "時間表現"
+      ],
+      "headings": [
+        "Non-Deictic Time III: Context-Dependent Words",
+        "Core Vocabulary",
+        "Common Affixes",
+        "Time Intervals: 時間・時刻・時間帯・時点",
+        "The Word for “Time” ITSELF: 時"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "2403",
       "title": "The Auxiliary ～らしい",
       "expressions": [
-        "らしい"
+        "らしい",
+        "らしからぬ",
+        "らしき",
+        "らしけれ",
+        "らしさ",
+        "らしげ"
       ],
       "headings": [
         "The Auxiliary ～らしい",
@@ -3806,7 +8958,15 @@
         "～らしい in Isolation",
         "～らしさ",
         "～らしげ"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "らしからぬ",
+        "らしき",
+        "らしけれ",
+        "らしさ",
+        "らしげ"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "2984",
@@ -3838,7 +8998,15 @@
       "pageId": "3033",
       "title": "～たい w/Other Grammar",
       "expressions": [
-        "たい"
+        "たい",
+        "てもらいたい",
+        "ていただきたい",
+        "られたい",
+        "たいと思う",
+        "たいものだ",
+        "たいところだ",
+        "たさ",
+        "たげ"
       ],
       "headings": [
         "～たい w/Other Grammar",
@@ -3850,7 +9018,34 @@
         "～たさ・たげ",
         "～たい ＋Supposition Auxiliaries",
         "Returning to the Basics"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "てもらいたい",
+        "ていただきたい",
+        "られたい",
+        "たいと思う",
+        "たいものだ",
+        "たいところだ",
+        "たさ",
+        "たげ"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
+    },
+    {
+      "pageId": "3307",
+      "title": "Glossary ※作成中",
+      "expressions": [
+        "文法用語",
+        "活用形",
+        "助詞"
+      ],
+      "headings": [
+        "The Six Bases 六つの活用形",
+        "Speech Registers　文体の種類",
+        "Kinds of Particles 助詞の種類",
+        "Grammaticality Notation"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "3478",
@@ -3879,7 +9074,8 @@
       "title": "The Result Markers に & と",
       "expressions": [
         "に",
-        "と"
+        "と",
+        "ようにする"
       ],
       "headings": [
         "The Result Markers に & と",
@@ -3898,7 +9094,11 @@
         "Decision Making",
         "Noun X ＋ Noun X’ ＋とする",
         "Noun X + Adjective （連用形・～く）＋するNoun X ＋ Adjective Noun （連用形・～に）＋する"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "ようにする"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "3561",
@@ -3940,6 +9140,20 @@
       ]
     },
     {
+      "pageId": "4488",
+      "title": "Counters w/ Approximations",
+      "expressions": [
+        "概数",
+        "助数詞"
+      ],
+      "headings": [
+        "Counters w/ Approximations",
+        "概数 w/o Counters",
+        "概数 w/ Counters"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
+    },
+    {
       "pageId": "5406",
       "title": "Start to II: ～かける & ～かかる",
       "expressions": [
@@ -3961,14 +9175,20 @@
       "title": "While III: ～隙に & ～間（ま）に",
       "expressions": [
         "隙に",
-        "間に"
+        "間に",
+        "すきに",
+        "まに"
       ],
       "headings": [
         "While III: ～隙に & ～間（ま）に",
         "～隙に",
         "隙（ひま）",
         "～間（ま）に"
-      ]
+      ],
+      "readingAliases": {
+        "隙に": "すきに",
+        "間に": "まに"
+      }
     },
     {
       "pageId": "6727",
@@ -4196,7 +9416,9 @@
       "pageId": "11972",
       "title": "The Final Particle こと",
       "expressions": [
-        "こと"
+        "こと",
+        "ことだ",
+        "ことか"
       ],
       "headings": [
         "The Final Particle こと",
@@ -4206,7 +9428,12 @@
         "～ことか",
         "～こと in (Dated) Female Speech",
         "（って）ことよ"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "ことだ",
+        "ことか"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "12050",
@@ -4240,7 +9467,10 @@
       "title": "だか & だの",
       "expressions": [
         "だか",
-        "だの"
+        "だの",
+        "かどうだか",
+        "だかどうだか",
+        "だとか"
       ],
       "headings": [
         "だか & だの",
@@ -4256,13 +9486,25 @@
         "Dialectal Sentence-Final ～だか",
         "～だの～だの",
         "～だとか～だとか"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "かどうだか",
+        "だかどうだか",
+        "だとか"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "12522",
       "title": "Phrasal こと",
       "expressions": [
-        "こと"
+        "こと",
+        "ことに",
+        "ことには",
+        "ことは",
+        "ことこの上ない",
+        "ということだ",
+        "ないことには"
       ],
       "headings": [
         "Phrasal こと: ～ことに・～ことには・～AことはA～・Aことこの上ない・～ということだ",
@@ -4274,14 +9516,27 @@
         "ｗ/ Nominal Predicates",
         "Aことこの上ない",
         "～ということだ（伝聞）"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "ことに",
+        "ことには",
+        "ことは",
+        "ことこの上ない",
+        "ということだ",
+        "ないことには"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "12635",
       "title": "The Auxiliaries だろう・でしょう",
       "expressions": [
         "だろう",
-        "でしょう"
+        "でしょう",
+        "ますでしょうか",
+        "だろ",
+        "でしょ",
+        "でいらっしゃいましょう"
       ],
       "headings": [
         "The Auxiliaries だろう・でしょう",
@@ -4297,14 +9552,48 @@
         "～だろ・でしょ",
         "～でありましょう～でございましょう～でいらっしゃいましょう",
         "であろう"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "ますでしょうか",
+        "だろ",
+        "でしょ",
+        "でいらっしゃいましょう"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
+    },
+    {
+      "pageId": "12800",
+      "title": "Whether/No Matter… Or…:   V1 ～（よ）う｛が・と｝V1＋～まい｛が・と｝",
+      "expressions": [
+        "ようが",
+        "ようと",
+        "うが",
+        "うと",
+        "まいが",
+        "まいと"
+      ],
+      "headings": [
+        "Whether/No Matter… Or…:   V1 ～（よ）う｛が・と｝V1＋～まい｛が・と｝",
+        "V1 ～（よ）う｛が・と｝(V1＋～まい｛が・と｝)Vi～（よ）う｛が・と｝(V2＋～（よ）う｛が・と｝)",
+        "Partial Ellipsis w/ する Verbs",
+        "～ていよう｛が・と｝～（て）いまい｛が・と｝",
+        "Volition VS Supposition",
+        "The Dialectal ～しようがしよ(う)まいが",
+        "Adj1 ～かろう｛が・と｝ Adj1 ～なかろう｛が・と｝",
+        "N/Adj. N1であろう・だろう｝｛が・と｝+ N/Adj. N1であるまい｛が・と｝",
+        "The Ungrammaticality of Pred.1 ～（よ）う｛が・と｝+ Pred.1～なかろう｛が・と｝"
+      ],
+      "basis": "Named grammar/vocabulary forms or Japanese topic labels for this lesson."
     },
     {
       "pageId": "12931",
       "title": "～（よ）うにも & ～（よ）うものなら",
       "expressions": [
         "ようにも",
-        "ようものなら"
+        "ようものなら",
+        "うにも",
+        "うものなら",
+        "ものなら"
       ],
       "headings": [
         "～（よ）うにも & ～（よ）うものなら",
@@ -4312,7 +9601,13 @@
         "～にも～ない",
         "～（よ）うものなら",
         "～ものなら"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "うにも",
+        "うものなら",
+        "ものなら"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "13085",
@@ -4338,7 +9633,9 @@
       "title": "～上がる & ～上げる",
       "expressions": [
         "上がる",
-        "上げる"
+        "上げる",
+        "あがる",
+        "あげる"
       ],
       "headings": [
         "～上がる & ～上げる",
@@ -4353,13 +9650,20 @@
         "Completion w/ ～上がる and ～上げる",
         "Societal Actions: Directionality w/ ～上がる and ～上げる",
         "Being Condescending w/  ～上がる"
-      ]
+      ],
+      "readingAliases": {
+        "上がる": "あがる",
+        "上げる": "あげる"
+      }
     },
     {
       "pageId": "16596",
       "title": "Obligation: ～べきだ",
       "expressions": [
-        "べきだ"
+        "べきだ",
+        "べきではない",
+        "べきだった",
+        "べきではなかった"
       ],
       "headings": [
         "Obligation: ～べきだ",
@@ -4369,13 +9673,24 @@
         "Regret: ～べきだった・べきではなかった",
         "W/ Adjectives?",
         "～べき Used Adjectivally"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "べきではない",
+        "べきだった",
+        "べきではなかった"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "16635",
       "title": "Planning: ～つもりだ",
       "expressions": [
-        "つもりだ"
+        "つもりだ",
+        "つもりか",
+        "つもりだった",
+        "たつもりだ",
+        "たつもりで",
+        "つもりがある"
       ],
       "headings": [
         "Planning: ～つもりだ",
@@ -4392,7 +9707,15 @@
         "～つもりだった｛が・のに｝",
         "～たつもりで",
         "～つもりがある"
-      ]
+      ],
+      "sectionLookupExpressions": [
+        "つもりか",
+        "つもりだった",
+        "たつもりだ",
+        "たつもりで",
+        "つもりがある"
+      ],
+      "basis": " Additional compound forms follow the recorded section headings or their explicit construction descriptions."
     },
     {
       "pageId": "17017",

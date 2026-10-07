@@ -15,7 +15,8 @@ import pathlib
 import shutil
 
 from bugd.english import build_english_dictionary
-from bugd.imabi_lookup import apply_lookups, load_catalog
+from bugd.imabi_lookup import apply_lookups, load_catalog, restore_lessons
+from bugd.popup_lookup import apply_popup_lookups, load_overrides
 from bugd.pipeline import run_build
 from bugd.website import build_site
 from bugd.site_links import SITE_URL
@@ -35,8 +36,12 @@ def snapshot_inputs(directory: pathlib.Path) -> tuple[dict, dict, str]:
         if hashlib.sha256(raw).hexdigest() != metadata["sha256"] or len(raw) != metadata["byteCount"]:
             raise ValueError(f"Publication snapshot digest mismatch: {name}")
     corpus = read_json(directory / "corpus.json.gz")
+    corpus = restore_lessons(corpus, directory.parents[1] / "data/sources/imabi",
+                             manifest.get("restoredImabiLessons", []))
     if "imabi-lookups.json" in manifest["files"]:
         corpus = apply_lookups(corpus, load_catalog(directory / "imabi-lookups.json"))
+    if "popup-overrides.json" in manifest["files"]:
+        corpus = apply_popup_lookups(corpus, load_overrides(directory / "popup-overrides.json"))
     if set(corpus["sourceLabels"]) != set(manifest["sources"]):
         raise ValueError("Publication snapshot is missing a source")
     if len(corpus["entries"]) != manifest["entries"]:

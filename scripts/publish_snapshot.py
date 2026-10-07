@@ -11,6 +11,7 @@ import pathlib
 
 from bugd.english import MODEL, collect_requests, english_corpus
 from bugd.imabi_lookup import DEFAULT_CATALOG, apply_lookups, load_catalog
+from bugd.popup_lookup import DEFAULT_OVERRIDES, apply_popup_lookups, load_overrides
 from bugd.sources import source_names
 
 
@@ -26,7 +27,7 @@ def main() -> int:
     missing = set(source_names()) - set(corpus["sourceLabels"])
     if missing:
         raise ValueError(f"Refusing to publish a partial dictionary; missing sources: {sorted(missing)}")
-    indexed = apply_lookups(corpus, load_catalog())
+    indexed = apply_popup_lookups(apply_lookups(corpus, load_catalog()), load_overrides())
     english_corpus(indexed, cache)  # Completeness gate, before writing any files.
     requests = collect_requests([p for e in corpus["entries"] for p in e["contributions"]])
     cache = dict(cache, translations={key: cache["translations"][key] for key in requests})
@@ -37,9 +38,10 @@ def main() -> int:
         raw = gzip.compress((json.dumps(data, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n").encode(), mtime=0)
         (args.output / name).write_bytes(raw)
         manifest["files"][name] = {"sha256": hashlib.sha256(raw).hexdigest(), "byteCount": len(raw)}
-    raw = DEFAULT_CATALOG.read_bytes()
-    (args.output / "imabi-lookups.json").write_bytes(raw)
-    manifest["files"]["imabi-lookups.json"] = {"sha256": hashlib.sha256(raw).hexdigest(), "byteCount": len(raw)}
+    for path in (DEFAULT_CATALOG, DEFAULT_OVERRIDES, DEFAULT_CATALOG.with_name("published-headwords.json")):
+        raw = path.read_bytes()
+        (args.output / path.name).write_bytes(raw)
+        manifest["files"][path.name] = {"sha256": hashlib.sha256(raw).hexdigest(), "byteCount": len(raw)}
     (args.output / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
     print(json.dumps(manifest, indent=2))
     return 0

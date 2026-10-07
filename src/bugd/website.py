@@ -256,7 +256,13 @@ def point_page(entry: dict, labels: dict, original: dict, *, english: bool) -> s
             lesson_url = safe_url(point.get("provenance", {}).get("lessonUrl")) if lesson_title else ''
             if lesson_url:
                 heading += f'<a class="upstream-link" href="{escape(lesson_url)}" rel="noreferrer">Read this IMABI lesson ↗</a>'
-            senses.append(f'<div class="sense">{heading}<div class="sense-meta">{level}{translation_badge}</div>{explanation}{examples_html(point.get("examples", []))}{original_disclosure}</div>')
+            else:
+                page_url = next((safe_url(url) for url in point.get("provenance", {}).get("producerLinks", [])
+                                 if safe_url(url)), '')
+                if page_url:
+                    heading += f'<a class="upstream-link" href="{escape(page_url)}" rel="noreferrer">Read this source entry ↗</a>'
+            row_id = escape(point.get("row_uid") or point["source_id"])
+            senses.append(f'<div class="sense" data-source-row="{row_id}">{heading}<div class="sense-meta">{level}{translation_badge}</div>{explanation}{examples_html(point.get("examples", []))}{original_disclosure}</div>')
         provenance = points[0].get("provenance", {})
         links = [provenance.get("url"), provenance.get("lessonUrl"), provenance.get("pageUrl"), *provenance.get("producerLinks", [])]
         upstream = next((safe_url(link) for link in links if safe_url(link)), '')

@@ -1322,6 +1322,30 @@ def test_a_source_with_no_level_and_no_substance_earns_no_disclosure():
     assert labels == [SOURCE_LABELS["dojg"]]
 
 
+def test_an_article_stored_in_meaning_is_not_hidden_by_another_sources_headline():
+    rich = _point(source="dojg", source_id="a", meaning="Another headline", explanation="Other source.")
+    article = "基本情報ＮあってのＮ。説明ＸがあるからＹも成り立つ。例文学生あっての大学だ。"
+    meaning_only = _point(source="hjgp", source_id="b", meaning=article,
+                          structure=None, explanation=None, examples=(), jlpt=None,
+                          provenance={"sourceLabel": "日本語文型辞典"})
+    row = build_term_entry(MergedEntry(expression="あっての", contributions=[rich, meaning_only]), 1)
+    disclosures = _source_disclosures(row)
+    assert "日本語文型辞典" in [_summary_of(d)["content"][0]["content"] for d in disclosures]
+    assert article in json.dumps(disclosures, ensure_ascii=False)
+
+
+def test_a_source_page_listing_remains_visible_beside_a_richer_entry():
+    linked = _point(source="edewakaru", source_id="b", jlpt=None, meaning=None,
+                    structure=None, explanation=None, examples=(),
+                    provenance={"sourceLabel": SOURCE_LABELS["edewakaru"],
+                                "producerLinks": ["https://www.edewakaru.com/archives/24433004.html"]})
+    rich = _point(source="dojg", source_id="a", explanation="Rich.")
+    row = build_term_entry(MergedEntry(expression="あいにく", contributions=[rich, linked]), 1)
+    disclosures = _source_disclosures(row)
+    assert SOURCE_LABELS["edewakaru"] in [_summary_of(d)["content"][0]["content"] for d in disclosures]
+    assert "Listed without a local explanation" in json.dumps(disclosures)
+
+
 def test_the_level_row_is_the_only_thing_this_change_adds_to_a_card():
     """Containment: the level row must not perturb the rest of the card.
 

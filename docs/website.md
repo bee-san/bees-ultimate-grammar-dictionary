@@ -71,15 +71,16 @@ digest lock, accounts for every lesson, checks all 13 sources, validates both
 archives against the pinned Yomitan schemas, and checks every article link and
 heading in both editions.
 
-Verification also checks all 501 catalogued Japanese lookup terms for a rendered
-IMABI disclosure in each actual ZIP, all 609 lesson-to-term links on the full
-articles, and preservation of the original snapshot's 6,288 written headwords.
+Verification checks every source record's Japanese lookup terms for a rendered
+source disclosure in each actual ZIP and its complete record on the full
+article. It also preserves all 6,408 previously published written headwords,
+including the Japanese aliases introduced by the previous IMABI release.
 
 ### IMABI lookup indexing
 
 The older corpus used English lesson titles as IMABI headwords. The committed
-`imabi-lookups.json` indexes 267 lessons under Japanese forms named in their
-titles, section headings or explicit variant descriptions. Forms in examples
+`imabi-lookups.json` indexes all 495 lessons under 1,400 Japanese forms and topic
+labels, using titles, section headings, constructions and readings. Forms in examples
 are not harvested indiscriminately. Optional forms and combined headings are
 expanded explicitly in the catalog, with evidence retained for review.
 
@@ -89,12 +90,33 @@ that all forms in the article are equivalent. It keeps each lesson's full text,
 identity and attribution, and retains every original entry and article URL.
 The same projection runs for acquired-source and snapshot builds. Applying it
 twice has no effect. The base compressed corpus and translation cache remain
-unchanged for this indexing release.
+unchanged. The manifest explicitly restores lesson 535 ("About") from the locked
+raw source before indexing, preserving every existing source-record identity.
+Its 38 examples already have source-authored English translations.
 
 Multiple IMABI articles are labelled by lesson title. The popup shows up to four
 lessons and notes when more are available; the linked article includes them all.
-Broad lessons about pronunciation, writing or vocabulary may still use their
-descriptive titles unless the catalog names an appropriate Japanese lookup.
+Broad lessons about pronunciation, writing or vocabulary use Japanese topic
+labels, so they can be found without knowing an English lesson title.
+
+### All-source popup indexing
+
+`bugd.popup_lookup` adds literal lookup aliases after source alignment. It removes
+placeholder and sense notation, expands alternatives and optional particles,
+and uses the longest literal component of discontinuous patterns. It never
+joins words across a wildcard. Strict whole-spelling checks prevent malformed
+source readings from becoming aliases.
+
+`popup-overrides.json` holds reviewed row-specific constructions for ambiguous
+titles. Source IDs, meanings and structures guard the evidence against drift.
+Publication fails if a source record has no Japanese form. Partial acquisition
+builds retain new, unreviewed source records for subsequent catalog review.
+Known literal endings receive conservative Yomitan conjugation classes.
+
+See [coverage and hover examples](lookup-coverage.md). Run
+`PYTHONPATH=src python scripts/audit_popup_coverage.py` for current per-source
+counts, and `make verify-popup` with Node.js 24 for sentence/cursor tests against
+both ZIPs using the committed, digest-pinned upstream Yomitan engine.
 
 To edit the catalog, review the corresponding locked `pages/<id>.json`, keep its
 exact title and heading evidence, then update the catalog digest and effective
@@ -110,7 +132,7 @@ than rerunning acquisition against changing upstream websites.
 When updating the publication, choose a new revision in `manifest.json`, run
 `make site`, copy `build/site/downloads/index.json` to `dist/index.json`, then run
 `PYTHONPATH=src python scripts/verify_release.py --write-lock`. Review the
-output, run `make verify-release`, and commit all changed inputs with notes at
+output, run `make verify-release` and `make verify-popup`, and commit all changed inputs with notes at
 `docs/releases/v<revision>.md`. A push of the revised snapshot to `main` triggers
 the release workflow, which builds and verifies before uploading both ZIPs,
 both indexes and `SHA256SUMS`. A workflow dispatch can retry a failed release.

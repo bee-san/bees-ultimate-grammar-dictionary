@@ -8,7 +8,7 @@ import pathlib
 import pytest
 
 from bugd.banks import build_term_entry
-from bugd.imabi_lookup import apply_lookups, load_catalog
+from bugd.imabi_lookup import apply_lookups, load_catalog, restore_lessons
 from bugd.pipeline import entry_from_json, point_to_json
 from bugd.sources.imabi import ImabiExtractor
 from bugd.unify import build_contribution, to_grammar_point
@@ -20,7 +20,8 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 @pytest.fixture(scope="module")
 def publication():
     baseline = json.loads(gzip.decompress((ROOT / "website/data/corpus.json.gz").read_bytes()))
-    return baseline, apply_lookups(baseline, load_catalog())
+    restored = restore_lessons(baseline, ROOT / "data/sources/imabi", ["535"])
+    return baseline, apply_lookups(restored, load_catalog())
 
 
 @pytest.mark.parametrize("expression,page_ids", [
@@ -36,6 +37,9 @@ def publication():
     ("のだ", {"7485", "9904"}), ("んだ", {"7485", "9904"}),
     ("にくい", {"328"}), ("ざるを得ない", {"627"}), ("やむを得ない", {"627"}),
     ("てある", {"151", "539"}), ("込む", {"773"}),
+    ("ことにする", {"316", "611"}), ("ことがある", {"316"}),
+    ("ことには", {"12522"}), ("にちがいない", {"600"}),
+    ("について", {"535"}),
 ])
 def test_exact_japanese_lookup_finds_relevant_lessons(publication, expression, page_ids):
     _, corpus = publication

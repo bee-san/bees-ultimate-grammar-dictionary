@@ -104,7 +104,6 @@ NON_LESSON_PAGES = (
     (11, "Welcome to IMABI!"),
     (20, "Table of Contents"),
     (33, "STYLE GUIDE"),
-    (535, "About"),
     (2207, "Little crew"),
 )
 
@@ -158,6 +157,9 @@ def test_substantive_lessons_still_import(result):
     assert any("古典文法" in head for head in headwords)
     # And a plain modern grammar lesson.
     assert any("The Particle" in head for head in headwords)
+    about = next(p for p in result.points if p.source_id == "535")
+    assert "に関して" in about.explanation
+    assert about.provenance["lookupExpressions"] == ["について", "に関して", "をめぐって", "をめぐり", "にかんして"]
 
 
 # ---------------------------------------------------------------------------

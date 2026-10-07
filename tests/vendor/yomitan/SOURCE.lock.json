@@ -1,0 +1,34 @@
+{
+  "repository": "https://github.com/yomidevs/yomitan",
+  "commit": "06393468bf00dfc315a3eba78b9f2c95fa1ffd10",
+  "files": {
+    "LICENSE": {
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "byteCount": 35147
+    },
+    "ext/js/core/event-dispatcher.js": {
+      "sha256": "fb486d2026dbf9da7a05073b86892f485de72e60dbe4a5b0912dc48a6bf44afb",
+      "byteCount": 4017
+    },
+    "ext/js/core/extension-error.js": {
+      "sha256": "89360fb6b5a9dcc12102ee4b080ee79dc15861fce8eea843c1b16b10b89cf8f5",
+      "byteCount": 3240
+    },
+    "ext/js/core/log.js": {
+      "sha256": "81fd33bdf3441c4cfde702a36338ea2c639ee96724b2487d6883b5aa99e4d930",
+      "byteCount": 4703
+    },
+    "ext/js/language/ja/japanese-transforms.js": {
+      "sha256": "9e928202a2f8f8ed1a17961b3cd93b56cddaf9cdda98b8625dc689f8acdaf2a1",
+      "byteCount": 95408
+    },
+    "ext/js/language/language-transformer.js": {
+      "sha256": "f45db85ae6c5628b65ef0c45d48a47f6091f43109d723f81826dc4a1ce3ae198",
+      "byteCount": 10855
+    },
+    "ext/js/language/language-transforms.js": {
+      "sha256": "e454f0a7333170aa1e96e42e546a316aee9c31b8b1d8056d45c034e1470c8a14",
+      "byteCount": 2569
+    }
+  }
+}

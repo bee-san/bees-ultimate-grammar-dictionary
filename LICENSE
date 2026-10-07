@@ -27,5 +27,8 @@ NOTE ON SCOPE
 This licence covers the BUILD PIPELINE in this repository only — the code under
 `src/`, `scripts/`, `tests/`, `docs/`, and the build configuration.
 
+The unmodified Yomitan test dependency under `tests/vendor/yomitan/` is an
+exception: it is GPL-3.0-or-later, with its own licence and copyright notices.
+
 It does not cover dictionary CONTENT. Each grammar source's content belongs to
 whoever wrote it, and every card names that source.

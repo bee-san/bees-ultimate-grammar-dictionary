@@ -10,12 +10,37 @@ same projection.
 from __future__ import annotations
 
 import copy
+import dataclasses
 import json
 import pathlib
 import re
 
 DEFAULT_CATALOG = pathlib.Path(__file__).resolve().parents[2] / "website/data/imabi-lookups.json"
 _FORM = re.compile(r"[\u3041-\u3096\u30a1-\u30fa\u30fc\u3400-\u9fff々〆]+\Z")
+
+
+def restore_lessons(corpus: dict, source_dir: pathlib.Path, page_ids: list[str]) -> dict:
+    """Restore explicitly named lessons from digest-locked raw pages.
+
+    The old snapshot excluded page 535 as site metadata because it was called
+    'About'. It actually teaches について/に関して/をめぐって. Append its
+    identity to preserve every existing publication row UID.
+    """
+    from .pipeline import point_to_json
+    from .sources.imabi import ImabiExtractor
+    existing = {p["source_id"] for e in corpus["entries"] for p in e["contributions"] if p["source"] == "imabi"}
+    needed = set(page_ids) - existing
+    if not needed:
+        return corpus
+    points = {p.source_id: p for p in ImabiExtractor(source_dir).extract().points}
+    ordinal = max(int(p["row_uid"].split(":")[1]) for e in corpus["entries"]
+                  for p in e["contributions"] if p["source"] == "imabi")
+    entries = list(corpus["entries"])
+    for page_id in sorted(needed, key=int):
+        ordinal += 1
+        point = dataclasses.replace(points[page_id], row_uid=f"imabi:{ordinal}")
+        entries.append({"expression": point.expression, "variants": [], "contributions": [point_to_json(point)]})
+    return dict(corpus, entries=entries)
 
 
 def load_catalog(path: pathlib.Path = DEFAULT_CATALOG) -> dict[str, dict]:
@@ -31,6 +56,9 @@ def load_catalog(path: pathlib.Path = DEFAULT_CATALOG) -> dict[str, dict]:
                 or not forms or len(forms) != len(set(forms))
                 or any(not _FORM.fullmatch(form) for form in forms)):
             raise ValueError(f"Invalid IMABI lookup catalog record: {page_id}")
+        for written, kana in lesson.get("readingAliases", {}).items():
+            if written not in forms or kana not in forms or not re.fullmatch(r"[ぁ-ゖー]+", kana):
+                raise ValueError(f"Invalid IMABI kana alias: {page_id} {written}")
         result[page_id] = lesson
     return result
 

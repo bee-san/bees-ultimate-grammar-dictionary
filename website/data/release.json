@@ -1,5 +1,5 @@
 {
-  "revision": "2026.10.07",
+  "revision": "2026.10.07.1",
   "sources": [
     "aiueo",
     "bunpou",
@@ -15,29 +15,44 @@
     "ninjal_bunkei",
     "yokubi"
   ],
-  "entries": 6511,
-  "imabiLessons": 494,
-  "imabiLookupLessons": 267,
-  "imabiLookupTerms": 501,
+  "entries": 7633,
+  "japaneseLookupRecords": {
+    "aiueo": 761,
+    "bunpou": 534,
+    "bunpro": 964,
+    "dojg": 534,
+    "donna_toki": 660,
+    "edewakaru": 1178,
+    "hjgp": 924,
+    "hjgp_en": 932,
+    "imabi": 495,
+    "nihongo_net": 505,
+    "nihongo_no_sensei": 733,
+    "ninjal_bunkei": 800,
+    "yokubi": 132
+  },
+  "imabiLessons": 495,
+  "imabiLookupLessons": 495,
+  "imabiLookupTerms": 1400,
   "assets": {
     "bees-ultimate-grammar-dictionary.zip": {
-      "sha256": "bc0779a49098710bd31bab45970a8babf1c3b31175844f570b79ff09589b4c6e",
-      "byteCount": 10310913
+      "sha256": "90b3049cd35a1d631c8f942e70f272ff916db2601b70ccf43e50b08729e81f39",
+      "byteCount": 17263374
     },
     "bees-ultimate-grammar-dictionary-en.zip": {
-      "sha256": "a2f35033b4d2141b3cc2c2a6d3135f32dfe775e7edc310ea82dca24cc07f9c6b",
-      "byteCount": 11059866
+      "sha256": "04039b3d628f6751b689bdcb7ae55e21b1962eacb750c7209005d6ff509abe49",
+      "byteCount": 18247803
     },
     "index.json": {
-      "sha256": "e257e8373b91e6ad747c54a04c43cb99806756cc7600095ffac808199aa52db1",
-      "byteCount": 1054
+      "sha256": "1254f879003c52d1d59f6eba58415b7b5b9f4f0526f056ca23566b4e74eb258c",
+      "byteCount": 1056
     },
     "index.en.json": {
-      "sha256": "231c8211b19a93d45dfad65f62b8c576742fd77b4e6cfb0b601afc2c602d2848",
-      "byteCount": 1133
+      "sha256": "f7a09116b16d9865bca38d9dabd426f41ccdcf9d99d7f7b9e26802f59adeba12",
+      "byteCount": 1135
     },
     "SHA256SUMS": {
-      "sha256": "82439b6f686d205d06ba69935799dc824e6a62c2e34a27e91bb9aff55925a85b",
+      "sha256": "fdd488aa75e43300874225a23ba8c7a4e89bb1698e3d528334d1da9a157d665e",
       "byteCount": 209
     }
   }

@@ -32,19 +32,18 @@ from .registry import register_extractor
 
 #: Site-meta pages excluded from the lesson spine (matched by slug).
 #:
-#: Measured against the locked 501-page spine, exactly seven pages carry no
-#: lesson content. The first four were already excluded; `style-guide` (a
+#: Measured against the locked 501-page spine, exactly six pages carry no
+#: lesson content. These include `style-guide` (a
 #: WordPress theme test page whose whole body is "Heading 1 ... This is a
-#: quote"), `about-us` (the author's biography) and the site landing page were
-#: not, and reached the emitted records as headwords "STYLE GUIDE",
-#: "Imabi's Little crew" and "Welcome to IMABI!".
+#: quote"), `about-us` (the author's biography) and the site landing page.
 #:
 #: The landing page is matched by page id rather than slug: its slug is the
 #: percent-encoded Japanese title `%e3%82%88...` (ようこそ、「いまび」へ), which no
 #: readable slug rule can match without also risking real Japanese-titled
 #: lessons. Its body is a level chooser plus a site-remodel completion
 #: percentage, and it is `link` == the site root.
-META_SLUGS = {"contact", "about", "about-2", "style-guide", "about-us"}
+#: The separate slug `about-2` is the grammar lesson about について, not site metadata.
+META_SLUGS = {"contact", "about", "style-guide", "about-us"}
 META_SLUG_PREFIX = ("table-of-contents", "privacy-policy", "sitemap")
 
 #: Site landing page (WP page id), excluded by id — see META_SLUGS.

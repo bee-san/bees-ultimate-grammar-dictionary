@@ -34,6 +34,7 @@ from . import (
 from .jsonio import MalformedPayload
 from .merge import MergedEntry
 from .model import GrammarPoint
+from .inflection import inflection_rules
 from .dialects import prose_to_html
 from .richtext import html_to_content, html_to_text
 
@@ -1361,14 +1362,19 @@ def _source_block(point: GrammarPoint) -> list[object]:
     empty list when this record has nothing to show.
     """
     body: list[object] = []
-    for field_name in ("explanation", "nuance", "notes"):
+    # HJGP stores many complete articles in `meaning`. A compact headline from
+    # another source must not make those articles disappear from this disclosure.
+    fields = ("explanation", "nuance", "notes")
+    if not point.explanation:
+        fields = ("meaning", *fields)
+    for field_name in fields:
         raw = getattr(point, field_name, None)
         content = _prose(raw, point)
         if content is not None:
             # Prose is Japanese for most sources but English for DoJG (373 of its
             # explanations); the card root declares `ja`, so an English block must
             # say so explicitly or it inherits the wrong language.
-            field_lang = _lang_of(raw) if isinstance(raw, str) else "ja"
+            field_lang = ("zh" if _is_chinese_gloss(raw) else _lang_of(raw)) if isinstance(raw, str) else "ja"
             node: dict = {
                 "tag": "div",
                 "data": {"prose": ""},
@@ -1434,10 +1440,9 @@ def _source_blocks(entry: MergedEntry, headline: str = "") -> list[dict]:
     `たらどうですか`, `を余儀なくされる`) hid behind a source whose whole record is a
     level plus a meaning/structure the compact block already absorbed, so it
     produced no disclosure at all and its level was unreachable in the packaged
-    bytes. Admission is gated on the LEVEL, not on the bare record: letting every
-    substance-less record in would give 24 cards a first `sourceBlock` alongside
-    the compact fallback they already render, which the frozen contract forbids
-    (invariant 4).
+    bytes. A source-page listing also stays visible beside richer contributions.
+    Wholly bare cards retain their existing compact fallback; no card combines
+    that fallback with source disclosures (contract invariant 4).
     """
     grouped: dict[str, list[GrammarPoint]] = {}
     source_key: dict[str, str] = {}
@@ -1460,17 +1465,26 @@ def _source_blocks(entry: MergedEntry, headline: str = "") -> list[dict]:
 
     ordered_labels = sorted(grouped, key=_lang_rank)
 
+    rendered_by_label = {
+        label: [(point, body) for point in grouped[label] if (body := _source_block(point))]
+        for label in ordered_labels
+    }
+    has_substance = any(rendered_by_label.values()) or any(p.jlpt for p in entry.contributions)
+
     blocks: list[dict] = []
     for label in ordered_labels:
         points = grouped[label]
-        rendered: list[tuple[GrammarPoint, list[object]]] = []
-        for point in points:
-            body = _source_block(point)
-            if body:
-                rendered.append((point, body))
+        rendered = rendered_by_label[label]
         levels = _source_levels(points)
         if not rendered and not levels:
-            continue
+            # A link-only source must remain discoverable beside richer sources.
+            # A wholly bare card still uses its existing listed-only fallback.
+            linked = [point for point in points if _producer_page(point)]
+            if not has_substance or not linked:
+                continue
+            rendered = [(point, [{"tag": "div", "lang": "en", "content":
+                         "Listed without a local explanation. Open Read all explanations below for this source's page."}])
+                        for point in linked]
 
         shown = rendered[:SENSES_PER_SOURCE]
         body: list[object] = []
@@ -1498,9 +1512,9 @@ def _source_blocks(entry: MergedEntry, headline: str = "") -> list[dict]:
                 )
             body.append({"tag": "div", "data": {"sense": ""}, "content": sense_body})
 
-        if source_key[label] == "imabi" and len(rendered) > len(shown):
+        if len(rendered) > len(shown):
             body.append({"tag": "div", "lang": "en", "content":
-                         f"{len(rendered) - len(shown)} more IMABI lessons under Read all explanations below."})
+                         f"{len(rendered) - len(shown)} more {label} explanations under Read all explanations below."})
 
         blocks.append(
             {
@@ -1579,7 +1593,7 @@ def _headword_only_block(entry: MergedEntry) -> dict | None:
             "data": {"listedOnly": ""},
             "lang": "en",
             "content": [
-                f"Listed by {_source_label(point)} without an explanation — ",
+                "Listed by ", _span("sourceName", _source_label(point)), " without an explanation — ",
                 {"tag": "a", "href": page, "content": "see the source page"},
                 ".",
             ],
@@ -1595,11 +1609,16 @@ def _headword_only_block(entry: MergedEntry) -> dict | None:
             names.append(label)
     if not names:
         return None
+    names_content: list[object] = []
+    for name in names:
+        if names_content:
+            names_content.append(", ")
+        names_content.append(_span("sourceName", name))
     return {
         "tag": "div",
         "data": {"listedOnly": ""},
         "lang": "en",
-        "content": f"Listed by {', '.join(names)} without an explanation.",
+        "content": ["Listed by ", *names_content, " without an explanation."],
     }
 
 
@@ -1735,7 +1754,7 @@ def build_term_entry(entry: MergedEntry, sequence: int) -> list:
         entry.expression,
         reading,
         "",
-        "",
+        inflection_rules(entry.expression),
         0,
         [
             {

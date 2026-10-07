@@ -1,0 +1,964 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:122",
+      "sourceId": "771",
+      "forms": [
+        "くて",
+        "で"
+      ],
+      "sourceExpression": "Adjective + て + B",
+      "meaning": "And..., Both and (Conjunctive)",
+      "structure": "［い］Adjective［い̶］ + く + て\n［な］Adjective + で + Phrase\nNoun + で + Phrase",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:121",
+      "sourceId": "769",
+      "forms": [
+        "くて",
+        "で"
+      ],
+      "sourceExpression": "Adjective + て・Noun + で",
+      "meaning": "And... (Conjunctive)",
+      "structure": "［い］Adjective［い̶］ + く + て\nおもしろい̶ + く + て\n新しい̶ + く + て\n\n［な］Adjective + で\nしずか + で\n好き + で\n\nNoun + で\n先生 + で\n仕事+ で\n\nExceptions:\nいい→よくて",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:125",
+      "sourceId": "719",
+      "forms": [
+        "の",
+        "のは",
+        "なの"
+      ],
+      "sourceExpression": "Adjective + の(は)",
+      "meaning": "The 'one' that... (Indefinite pronoun, Adjective nominalization)",
+      "structure": "［な］Adjective + な + の + は(1)\n［い］Adjective + の + は(1)\n\n(1) が、も",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:861",
+      "sourceId": "858",
+      "forms": [
+        "限りだ",
+        "限りです"
+      ],
+      "sourceExpression": "Adj限りだ",
+      "meaning": "Extremely, Really, Very, As ... as one can be",
+      "structure": "［い］Adjective + 限り + だ\n［な］Adjective + な + 限り + だ\n\n［い］Adjective + 限り + です\n［な］Adjective + な + 限り + です",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:232",
+      "sourceId": "164",
+      "forms": [
+        "させられる",
+        "せられる",
+        "される",
+        "使役受身"
+      ],
+      "sourceExpression": "Causative-Passive",
+      "meaning": "Verbs (Causative-passive voice), To be made to do something, To be forced to do",
+      "structure": "Examples:\n［る1］Verb ￫ 見る̶ + させられる\n［す］Verb ￫ 話す̶ + させられる\n\n［る5］Verb ￫ 座る̶ + らせられる\n座る̶ + らされる\n\n［う］Verb ￫ 歌う̶ + わせられる\n歌う̶ + 歌わされる\n\n［く］Verb ￫ 歩く̶ + かせられる\n歩く̶ + 歩かされる\n\n［つ］Verb ￫ 打つ̶ + たせられる\n打つ̶ + 打たされる\n\n［ぬ］Verb ￫ 死ぬ̶ + なせられる\n死ぬ̶ + 死なされる\n\n［ぶ］Verb ￫ 飛ぶ̶ + ばせられる\n飛ぶ̶ + 飛ばされる\n\n［む］Verb ￫ 休む̶ + ませられる\n休む̶ + 休まされる\n\n［ぐ］Verb ￫ 泳ぐ̶ + がせられる\n泳ぐ̶ + 泳がされる\n\nExceptions:\nする ￫ させられる\nくる ￫ こさせられる\n\nExamples:\n［る1］Verb ￫ 見る̶ + させられます\n［す］Verb ￫ 話す̶ + させられます\n\n［る5］Verb ￫ 座る̶ + らせられます\n座る̶ + らされます\n\n［う］Verb ￫ 歌う̶ + わせられます\n歌う̶ + 歌わされます\n\n［く］Verb ￫ 歩く̶ + かせられます\n歩く̶ + 歩かされます\n\n［つ］Verb ￫ 打つ̶ + たせられます\n打つ̶ + 打たされます\n\n［ぬ］Verb ￫ 死ぬ̶ + なせられます\n死ぬ̶ + 死なされます\n\n［ぶ］Verb ￫ 飛ぶ̶ + ばせられます\n飛ぶ̶ + 飛ばされます\n\n［む］Verb ￫ 休む̶ + ませられます\n休む̶ + 休まされます\n\n［ぐ］Verb ￫ 泳ぐ̶ + がせられます\n泳ぐ̶ + 泳がされます\n\nExceptions:\nする ￫ させられます\nくる ￫ こさせられます",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:330",
+      "sourceId": "625",
+      "forms": [
+        "型",
+        "がた",
+        "かた",
+        "けい"
+      ],
+      "sourceExpression": "Noun＋型",
+      "meaning": "Model, Type, Pattern, Kind, Shape, Size(d)",
+      "structure": "Noun + がた(1)\nNoun + の + かた\nNoun + がた(1) +（の）+ Noun\n［い］Adjective + かた\n\n(1) けい",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:332",
+      "sourceId": "620",
+      "forms": [
+        "の",
+        "からの",
+        "との",
+        "への",
+        "での",
+        "までの"
+      ],
+      "sourceExpression": "Particle + の",
+      "meaning": "Combined particles",
+      "structure": "Noun + Particle(1) + の + Noun\n\n(1) から、と、へ、で、まで",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:303",
+      "sourceId": "727",
+      "forms": [
+        "か"
+      ],
+      "sourceExpression": "Question-phrase + か",
+      "meaning": "Including questions within sentences",
+      "structure": "Question Word + か + わかる(1)\n\n(1) 覚える、決める、知っている and so on",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:60",
+      "sourceId": "416",
+      "forms": [
+        "て",
+        "で"
+      ],
+      "sourceExpression": "Verb + て",
+      "meaning": "And, Then (Linking events)",
+      "structure": "Examples:\n［る1］Verb ￫ 見る̶ + て\n\n［る5］Verb ￫ 座る̶ + って\n［う］Verb ￫ 歌う̶ + って\n［つ］Verb ￫ 打つ̶ + って\n\n［く］Verb ￫ 歩く̶ + いて\n［ぐ］Verb ￫ 泳ぐ̶ + いで\n\n［ぬ］Verb ￫ 死ぬ̶ + んで\n［ぶ］Verb ￫ 飛ぶ̶ + んで\n［む］Verb ￫ 休む̶ + んで\n\n［す］Verb ￫ 話す̶ + して\n\nExceptions:\n行く ￫ 行って\nする ￫ して\nくる ￫ きて\n問う ￫ 問うて\n請う ￫ 請うて",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:86",
+      "sourceId": "770",
+      "forms": [
+        "て"
+      ],
+      "sourceExpression": "Verb + て+ B",
+      "meaning": "And, And then, After that (sequence)",
+      "structure": "Verb［て］+ (Action) Phrase",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:109",
+      "sourceId": "35",
+      "forms": [
+        "てもいい"
+      ],
+      "sourceExpression": "Verb + てもいい",
+      "meaning": "It's okay to, It's alright to, Can/may",
+      "structure": "Verb［て］+ も + いい\n\nVerb［て］+ も + いい + です",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:63",
+      "sourceId": "48",
+      "forms": [
+        "にいく",
+        "に行く"
+      ],
+      "sourceExpression": "Verb + にいく",
+      "meaning": "To go ~, To go in order to ~",
+      "structure": "Verb［stem］+ に + 行く\n\nVerb［stem］+ に + 行きます",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:959",
+      "sourceId": "979",
+      "forms": [
+        "よ",
+        "しよ",
+        "こよ",
+        "意向形"
+      ],
+      "sourceExpression": "Verb よう・う ⇒ Verb よ・お",
+      "meaning": "Will, Let's, Shall?",
+      "structure": "Verb[よう̶]\n\nExamples:\n\n［る1］Verb ￫ 見る̶ + よ\n\n［る5］Verb ￫ 座る̶ + ろ\n\n［う］Verb ￫ 歌う̶ + お\n\n［く］Verb ￫ 歩く̶ + こ\n\n［す］Verb ￫ 話す̶ + そ\n\n［つ］Verb ￫ 打つ̶ + と\n\n［ぬ］Verb ￫ 死ぬ̶ + の\n\n［ぶ］Verb ￫ 飛ぶ̶ + ぼ\n\n［む］Verb ￫ 休む̶ + も\n\n［ぐ］Verb ￫ 泳ぐ̶ + ご\n\nExceptions:\n\nする ￫ しよ\n\nくる ￫ こよ",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:460",
+      "sourceId": "482",
+      "forms": [
+        "としたが",
+        "としたら",
+        "としたけど"
+      ],
+      "sourceExpression": "Verb[volitional] + としたが",
+      "meaning": "Tried to ~ but ~, Was about to ~ but ~, Was going to ~ but ~",
+      "structure": "Verb［おう］ + としたが(1) + Result\nVerb［おう］ + としたら + Result\n\n(1) けれども、けれど、けど",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:459",
+      "sourceId": "267",
+      "forms": [
+        "とする",
+        "とします"
+      ],
+      "sourceExpression": "Verb[volitional]とする",
+      "meaning": "Try to, Attempt to, To be about to",
+      "structure": "Verb［おう］ + とする\n\nVerb［おう］ + とします",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:225",
+      "sourceId": "777",
+      "forms": [
+        "て"
+      ],
+      "sourceExpression": "Verb[て]",
+      "meaning": "Please do for me (Casual request)",
+      "structure": "Verb［て］。",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:233",
+      "sourceId": "773",
+      "forms": [
+        "て",
+        "で"
+      ],
+      "sourceExpression": "Verb[て]",
+      "meaning": "By, With, On, By means of, ~ing with",
+      "structure": "Verb［て］+ Phrase\nNoun + で + Phrase",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:245",
+      "sourceId": "778",
+      "forms": [
+        "ないで"
+      ],
+      "sourceExpression": "Verb[て]",
+      "meaning": "(Please) do not (for me), Casual request",
+      "structure": "Verb［ない］+ で。",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:175",
+      "sourceId": "121",
+      "forms": [
+        "よう",
+        "う",
+        "ましょう"
+      ],
+      "sourceExpression": "Verb[て]",
+      "meaning": "Let's, I shall (Casual volitional)",
+      "structure": "Examples:\n［る1］Verb ￫ 見る̶ + よう\n［る5］Verb ￫ 座る̶ + ろう\n［う］Verb ￫ 歌う̶ + おう\n［く］Verb ￫ 歩く̶ + こう\n［す］Verb ￫ 話す̶ + そう\n［つ］Verb ￫ 打つ̶ + とう\n［ぬ］Verb ￫ 死ぬ̶ + のう\n［ぶ］Verb ￫ 飛ぶ̶ + ぼう\n［む］Verb ￫ 休む̶ + もう\n［ぐ］Verb ￫ 泳ぐ̶ + ごう\n\nExceptions:\nする ￫ しよう\nくる ￫ こよう\n\nExamples:\n［る1］Verb ￫ 見る̶ + ましょう\n［る5］Verb ￫ 座る̶ + りましょう\n［う］Verb ￫ 歌う̶ + いましょう\n［く］Verb ￫ 歩く̶ + きましょう\n［す］Verb ￫ 話す̶ + しましょう\n［つ］Verb ￫ 打つ̶ + ちましょう\n［ぬ］Verb ￫ 死ぬ̶ + にましょう\n［ぶ］Verb ￫ 飛ぶ̶ + びましょう\n［む］Verb ￫ 休む̶ + みましょう\n［ぐ］Verb ￫ 泳ぐ̶ + ぎましょう\n\nExceptions:\nする ￫ しましょう\nくる ￫ きましょう",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:227",
+      "sourceId": "153",
+      "forms": [
+        "させる",
+        "せる"
+      ],
+      "sourceExpression": "Verb[て]",
+      "meaning": "To make/let/have (somebody do something)",
+      "structure": "Examples:\n［る1］Verb ￫ 見る̶ + させる\n［る5］Verb ￫ 座る̶ + らせる\n［う］Verb ￫ 歌う̶ + わせる\n［く］Verb ￫ 歩く̶ + かせる\n［す］Verb ￫ 話す̶ + させる\n［つ］Verb ￫ 打つ̶ + たせる\n［ぬ］Verb ￫ 死ぬ̶ + なせる\n［ぶ］Verb ￫ 飛ぶ̶ + ばせる\n［む］Verb ￫ 休む̶ + ませる\n［ぐ］Verb ￫ 泳ぐ̶ + がせる\n\nExceptions:\nする→させる\nくる→ こさせる\n\nExamples:\n［る1］Verb ￫ 見る̶ + させます\n［る5］Verb ￫ 座る̶ + らせます\n［う］Verb ￫ 歌う̶ + わせます\n［く］Verb ￫ 歩く̶ + かせます\n［す］Verb ￫ 話す̶ + させます\n［つ］Verb ￫ 打つ̶ + たせます\n［ぬ］Verb ￫ 死ぬ̶ + なせます\n［ぶ］Verb ￫ 飛ぶ̶ + ばせます\n［む］Verb ￫ 休む̶ + ませます\n［ぐ］Verb ￫ 泳ぐ̶ + がせます\n\nExceptions:\nする→させます\nくる→ こさせます",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:146",
+      "sourceId": "145",
+      "forms": [
+        "られる",
+        "れる"
+      ],
+      "sourceExpression": "Verb[て]",
+      "meaning": "Was done to ~ by ~, Done without consent, Done to one's dismay",
+      "structure": "Examples:\n［る1］Verb ￫ 見る̶ + られる\n［る⁵］Verb ￫ 座る̶ + られる\n［う］Verb ￫ 歌う̶ + われる\n［く］Verb ￫ 歩く̶ + かれる\n［す］Verb ￫ 話す̶ + される\n［つ］Verb ￫ 打つ̶ + たれる\n［ぬ］Verb ￫ 死ぬ̶ + なれる\n［ぶ］Verb ￫ 飛ぶ̶ + ばれる\n［む］Verb ￫ 休む̶ + まれる\n［ぐ］Verb ￫ 泳ぐ̶ + がれる\n\nExceptions:\nする→される\nくる→こられる\n\nExamples:\n［る1］Verb ￫ 見る̶ + られます\n［る5］Verb ￫ 座る̶ + られます\n［う］Verb ￫ 歌う̶ + われます\n［く］Verb ￫ 歩く̶ + かれます\n［す］Verb ￫ 話す̶ + されます\n［つ］Verb ￫ 打つ̶ + たれます\n［ぬ］Verb ￫ 死ぬ̶ + なれます\n［ぶ］Verb ￫ 飛ぶ̶ + ばれます\n［む］Verb ￫ 休む̶ + まれます\n［ぐ］Verb ￫ 泳ぐ̶ + がれます\n\nExceptions:\nする→されます\nくる→こられます",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:231",
+      "sourceId": "772",
+      "forms": [
+        "て",
+        "くて",
+        "で"
+      ],
+      "sourceExpression": "Verb[て] + B",
+      "meaning": "And・and so, Due to, Because of, Since, Conjunctive",
+      "structure": "Verb［て］+ Phrase\n［い］Adjective［て］+ Phrase\n［な］Adjective + で + Phrase\nNoun + で + Phrase\n\nExceptions:\nいい ￫ よくて + B",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:244",
+      "sourceId": "776",
+      "forms": [
+        "て"
+      ],
+      "sourceExpression": "Verb[て] + B",
+      "meaning": "Non-sequence, And, But (Contrast), Parallel action/state",
+      "structure": "Verb［て］+ Phrase",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:855",
+      "sourceId": "852",
+      "forms": [
+        "てみせる",
+        "てみせます"
+      ],
+      "sourceExpression": "Verb[て] + みせる",
+      "meaning": "I will definitely, I will certainly, Just watch, Whatever it takes, I swear, for sure",
+      "structure": "Verb［て］+ みせる\n\nVerb［て］+ みせます",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:854",
+      "sourceId": "851",
+      "forms": [
+        "ないものか",
+        "ないものだろうか",
+        "ないものでしょうか"
+      ],
+      "sourceExpression": "Verb[ない]もの(だろう)か",
+      "meaning": "(Why) can’t, Isn’t there, Wish that, If only",
+      "structure": "Verb［できる］［ない］+ もの + （だろう）+ か\n\nVerb［できる］［ない］+ もの + （でしょう）+ か",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:76",
+      "sourceId": "950",
+      "forms": [
+        "非過去形",
+        "辞書形",
+        "ます"
+      ],
+      "sourceExpression": "Verbs (Non-past)",
+      "meaning": "(Non-past)",
+      "structure": "Examples:\n食べる\n洗う\n\nExamples:\n食べます\n洗います",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:77",
+      "sourceId": "357",
+      "forms": [
+        "連体修飾",
+        "た",
+        "ている"
+      ],
+      "sourceExpression": "Verb［た・ている］+ Noun",
+      "meaning": "Verb modified noun, Relative clause",
+      "structure": "Verb［た］(*) + Noun\nVerb［ている］(*) + Noun\n\n(*) Only verbs in short (plain) form can modify nouns. Do not use polite-ます.",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:962",
+      "sourceId": "982",
+      "forms": [
+        "ウ音便",
+        "よう",
+        "そう",
+        "こう",
+        "きゅう"
+      ],
+      "sourceExpression": "[い] Adjective - [く] change",
+      "meaning": "And (adverb)",
+      "structure": "Examples:\n\n早く → はや̶く̶ + よ(う)\n\n小さく → ちいさ̶く̶ + そ(う)\n\n高く → たか̶く̶ + こ(う)\n\nExceptions:\n\n大きく → おおき̶く̶ + きゅ(う)",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:840",
+      "sourceId": "840",
+      "forms": [
+        "くもなんともない"
+      ],
+      "sourceExpression": "い-Adj[く] + もなんともない",
+      "meaning": "Not... or anything, Not at all, Not, By no means, Definitely not, Nothing like that",
+      "structure": "［い］Adjective［く］+ もなんともない",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:38",
+      "sourceId": "874",
+      "forms": [
+        "かった",
+        "かったです"
+      ],
+      "sourceExpression": "い-Adjective (Past)",
+      "meaning": "Was, Were (Past tense)",
+      "structure": "［い］Adjective［い̶］+ かった\n\nExamples:\nおもしろい̶ + かった\n新しい̶ + かった\n\n［い］Adjective［い̶］+ かった + です\n\nExamples:\nおもしろい̶ + かった + です\n新しい̶ + かった + です",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:68",
+      "sourceId": "951",
+      "forms": [
+        "形容詞",
+        "い形容詞"
+      ],
+      "sourceExpression": "い-Adjective (Past)",
+      "meaning": "い-Adjective (Predicate)",
+      "structure": "Examples:\nかわいい\n新しい\n寒い\n\nExamples:\nかわいい + です\n新しい + です\n寒い + です",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:40",
+      "sourceId": "953",
+      "forms": [
+        "形容詞",
+        "い形容詞"
+      ],
+      "sourceExpression": "い-Adjective + Noun",
+      "meaning": "Describing a noun",
+      "structure": "［い］Adjective + Noun\n\nExamples:\nかわいい + 猫\n新しい + 車\n寒い + 冬",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:73",
+      "sourceId": "876",
+      "forms": [
+        "くなかった",
+        "くありませんでした"
+      ],
+      "sourceExpression": "い-Adjective くなかった",
+      "meaning": "Was not, Wasn't (Adjective)",
+      "structure": "［い］Adjective［く］+ なかった\n\nExamples:\nおもしろく + なかった\n新しく + なかった\n\n［い］Adjective［く］+ なかった + です\n［い］Adjective［く］+ ありませんでした\n\nExamples:\nおもしろく + なかった + です\nおもしろく + ありませんでした\n\n新しく + なかった + です\n新しく + ありませんでした",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:10",
+      "sourceId": "24",
+      "forms": [
+        "形容詞",
+        "い形容詞"
+      ],
+      "sourceExpression": "い-Adjectives",
+      "meaning": "Adjectives ending in い",
+      "structure": "おおきい, おいしい, はやい",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:51",
+      "sourceId": "873",
+      "forms": [
+        "くない",
+        "くありません"
+      ],
+      "sourceExpression": "い-Adjectives くない",
+      "meaning": "Not (Adjective)",
+      "structure": "［い］Adjective［く］+ ない\n\nExamples:\nおもしろく + ない\n新しく + ない\n\n［い］Adjective［く］+ ない + です\n［い］Adjective［く］+ ありません\n\nExamples:\nおもしろく + ない + です\nおもしろく + ありません\n\n新しく + ない + です\n新しく + ありません",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:17",
+      "sourceId": "26",
+      "forms": [
+        "五段動詞",
+        "ます"
+      ],
+      "sourceExpression": "う-Verb (Dictionary)",
+      "meaning": "う + ます (Godan Verbs)",
+      "structure": "Examples:\n座る\n歌う\n歩く\n話す\n打つ\n死ぬ\n飛ぶ\n休む\n泳ぐ\n\nExamples:\n座る̶ + ります\n歌う̶ + います\n歩く̶ + きます\n話す̶ + します\n打つ̶ + ちます\n死ぬ̶ + にます\n飛ぶ̶ + びます\n休む̶ + みます\n泳ぐ̶ + ぎます",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:21",
+      "sourceId": "888",
+      "forms": [
+        "ない",
+        "ません"
+      ],
+      "sourceExpression": "う-Verb (Dictionary)",
+      "meaning": "Will/Does/Do (not)",
+      "structure": "Examples:\n座る̶ + らない\n歌う̶ + わない\n歩く̶ + かない\n話す̶ + さない\n打つ̶ + たない\n死ぬ̶ + なない\n飛ぶ̶ + ばない\n休む̶ + まない\n泳ぐ̶ + がない\n\nExceptions:\nある ￫ ない\n\nExamples:\n座る̶ + りません\n座る̶ + らないです\n\n歌う̶ + いません\n歌う̶ + わないです\n\n歩く̶ + きません\n歩く̶ + かないです\n\n話す̶ + しません\n話す̶ + さないです\n\n打つ̶ + ちません\n打つ̶ + たないです\n\n死ぬ̶ + にません\n死ぬ̶ + なないです\n\n飛ぶ̶ + びません\n飛ぶ̶ + ばないです\n\n休む̶ + みません\n休む̶ + まないです\n\n泳ぐ̶ + ぎません\n泳ぐ̶ + がないです\n\nExceptions:\nある ￫ ありません\nないです",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:59",
+      "sourceId": "897",
+      "forms": [
+        "なかった",
+        "ませんでした"
+      ],
+      "sourceExpression": "う-Verb (Dictionary)",
+      "meaning": "う - Verbs (Negative-past tense)",
+      "structure": "座る̶ + らなかった\n歌う̶ + わなかった\n歩く̶ + かなかった\n話す̶ + さなかった\n打つ̶ + たなかった\n死ぬ̶ + ななかった\n飛ぶ̶ + ばなかった\n休む̶ + まなかった\n泳ぐ̶ + がなかった\n\nExceptions:\nある ￫ なかった\n\nExamples:\n座る̶ + りませんでした\n座る̶ + らなかったです\n\n歌う̶ + いませんでした\n歌う̶ + わなかったです\n\n歩く̶ + きませんでした\n歩く̶ + かなかったです\n\n話す̶ + しませんでした\n話す̶ + さなかったです\n\n打つ̶ + ちませんでした\n打つ̶ + たなかったです\n\n死ぬ̶ + にませんでした\n死ぬ̶ + ななかったです\n\n飛ぶ̶ + びませんでした\n飛ぶ̶ + ばなかったです\n\n休む̶ + みませんでした\n休む̶ + まなかったです\n\n泳ぐ̶ + ぎませんでした\n泳ぐ̶ + がなかったです\n\nExceptions:\nある ￫ ありませんでした\nなかったです",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:46",
+      "sourceId": "41",
+      "forms": [
+        "た",
+        "だ",
+        "ました"
+      ],
+      "sourceExpression": "う-Verb (Dictionary)",
+      "meaning": "う - Verbs (Past tense)",
+      "structure": "Examples:\n［る5］Verb ￫ 座る̶ + った\n［う］Verb ￫ 歌う̶ + った\n［つ］Verb ￫ 打つ̶ + った\n\n［く］Verb ￫ 歩く̶ + いた\n［ぐ］Verb ￫ 泳ぐ̶ + いだ\n\n［ぬ］Verb ￫ 死ぬ̶ + んだ\n［ぶ］Verb ￫ 飛ぶ̶ + んだ\n［む］Verb ￫ 休む̶ + んだ\n\n［す］Verb ￫ 話す̶ + した\n\nExceptions:\n行く ￫ 行った\nする ￫ した\nくる ￫ きた\n問う ￫ 問うた\n請う ￫ 請うた\n\nExamples:\n［る5］Verb ￫ 座る̶ + りました\n［う］Verb ￫ 歌う̶ + いました\n［つ］Verb ￫ 打つ̶ + ちました\n\n［く］Verb ￫ 歩く̶ + きました\n［ぐ］Verb ￫ 泳ぐ̶ + ぎました\n\n［ぬ］Verb ￫ 死ぬ̶ + にました\n［ぶ］Verb ￫ 飛ぶ̶ + びました\n［む］Verb ￫ 休む̶ + みました\n\n［す］Verb ￫ 話す̶ + しました\n\nExceptions:\n行く ￫ 行きました\nする ￫ しました\nくる ￫ きました\n問う ￫ 問いました\n請う ￫ 請いました",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:16",
+      "sourceId": "12",
+      "forms": [
+        "一段動詞",
+        "ます"
+      ],
+      "sourceExpression": "る-Verb (Dictionary)",
+      "meaning": "る + ます (Ichidan Verbs)",
+      "structure": "Examples:\n食べる\n見る\n寝る\n\nExamples:\n食べる̶ + ます\n見る̶ + ます\n寝る̶ + ます",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:20",
+      "sourceId": "51",
+      "forms": [
+        "ない",
+        "ません"
+      ],
+      "sourceExpression": "る-Verb (Dictionary)",
+      "meaning": "Will/Does/Do (not)",
+      "structure": "Examples:\n​​食べる̶ + ない\n​​見る̶ + ない\n寝る̶ + ない\n\nExamples:\n食べる̶ + ません\n食べる̶ + ないです\n\n見る̶ + ません\n見る̶ + ないです\n\n寝る̶ + ません\n寝る̶ + ないです",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:58",
+      "sourceId": "896",
+      "forms": [
+        "なかった",
+        "ませんでした"
+      ],
+      "sourceExpression": "る-Verb (Dictionary)",
+      "meaning": "る - Verbs (Negative-past tense)",
+      "structure": "Examples:\n​​食べる̶ + なかった\n​​見る̶ + なかった\n​​寝る̶ + なかった\n\nExamples:\n食べる̶ + ませんでした\n食べる̶ + なかったです\n\n見る̶ + ませんでした\n見る̶ + なかったです\n\n寝る̶ + ませんでした\n寝る̶ + なかったです",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:45",
+      "sourceId": "895",
+      "forms": [
+        "た",
+        "ました"
+      ],
+      "sourceExpression": "る-Verb (Dictionary)",
+      "meaning": "る - Verbs (Past tense)",
+      "structure": "Examples:\n​​食べる̶ + た\n​​見る̶ + た\n​​寝る̶ + た\n\nExamples:\n食べる̶ + ました\n見る̶ + ました\n寝る̶ + ました",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:393",
+      "sourceId": "761",
+      "forms": [
+        "さ",
+        "さあ",
+        "さぁ",
+        "さー"
+      ],
+      "sourceExpression": "さ - Interjection",
+      "meaning": "All right, There we go, Now, You see, Well (I don't know, let me see)",
+      "structure": "さあ + Phrase\n\n(1) さ、さぁ、さあ、さー",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:394",
+      "sourceId": "665",
+      "forms": [
+        "さ",
+        "さあ",
+        "さぁ",
+        "さー"
+      ],
+      "sourceExpression": "さ - Filler",
+      "meaning": "Like, You know, You see, Listen, Uhh",
+      "structure": "Phrase (A) + さぁ(1) + Phrase (B)\n\n(1) さあ、さー、さ",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:395",
+      "sourceId": "760",
+      "forms": [
+        "さ",
+        "さあ",
+        "さぁ",
+        "さー"
+      ],
+      "sourceExpression": "さ - Casual よ",
+      "meaning": "Casual よ",
+      "structure": "Phrase + さ(1)\n\n(1) さぁ、さあ、さー",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:41",
+      "sourceId": "954",
+      "forms": [
+        "な",
+        "形容動詞"
+      ],
+      "sourceExpression": "な-Adjective + Noun",
+      "meaning": "Describing a noun",
+      "structure": "［な］Adjective + な + Noun\n\nExamples:\n静か + な + 夜\n元気 + な + 子供",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:69",
+      "sourceId": "952",
+      "forms": [
+        "だ",
+        "です",
+        "形容動詞"
+      ],
+      "sourceExpression": "な-Adjective だ",
+      "meaning": "な-Adjective (Predicate)",
+      "structure": "［な］Adjective + (だ)\n\nExamples:\n静か + だ\n元気 + だ\n\n［な］Adjective + です\n\nExamples:\n静か + です\n元気 + です",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:11",
+      "sourceId": "28",
+      "forms": [
+        "な",
+        "形容動詞",
+        "な形容詞"
+      ],
+      "sourceExpression": "な-Adjectives",
+      "meaning": "Adjectives that are also nouns",
+      "structure": "［な］Adjective + だ\n［な］Adjective + な + Noun\n\n［な］Adjective + です\n［な］Adjective + な + Noun",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:217",
+      "sourceId": "621",
+      "forms": [
+        "いくつか",
+        "何",
+        "なん"
+      ],
+      "sourceExpression": "なん + counter + か",
+      "meaning": "Some, Several, A few",
+      "structure": "何 + Counter + か\nいく + Counter + か\nいくつか",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:329",
+      "sourceId": "633",
+      "forms": [
+        "のは",
+        "の方だ",
+        "の方です"
+      ],
+      "sourceExpression": "のはXの方だ",
+      "meaning": "It is...that..., It is...who..., ...is the one that..., ...is the one who...",
+      "structure": "Phrase + のは + Noun + の方だ\nな-Adjective+ な + のは + Noun + の方だ\nNoun + な + のは + Noun + の方だ\n\nPhrase + のは + Noun + の方です\nな-Adjective+ な + のは + Noun + の方です\nNoun + な + のは + Noun + の方です",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:563",
+      "sourceId": "679",
+      "forms": [
+        "後",
+        "あと"
+      ],
+      "sourceExpression": "後 Noun",
+      "meaning": "…left, Rest, Remaining, In, …to, …else",
+      "structure": "あと + の + Noun\nあと + Phrase\nあと + Number +（Counter)",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:955",
+      "sourceId": "975",
+      "forms": [
+        "命令形",
+        "なさい"
+      ],
+      "sourceExpression": "命令形 ⇒ ます形 + 長音",
+      "meaning": "Do (something)! (imperative)",
+      "structure": "Verb［stem］+ (長音)\n\nExamples:\n\n食べる̶ + (ぇ)\n\n見る̶ + (ぃ)\n\n座る̶ + り(ぃ)\n\n歌う̶ + い(ぃ)\n\n歩く̶ + き(ぃ)\n\n話す̶ + し(ぃ)\n\n打つ̶ + ち(ぃ)\n\n死ぬ̶ + に(ぃ)\n\n飛ぶ̶ + び(ぃ)\n\n休む̶ + み(ぃ)\n\n泳ぐ̶ + ぎ(ぃ)\n\nException:\n\nする→せえ",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:957",
+      "sourceId": "977",
+      "forms": [
+        "な"
+      ],
+      "sourceExpression": "辞書形 + な ⇒ ます形 + な",
+      "meaning": "Do not, Don't (prohibitive)",
+      "structure": "Verb［stem］+ な",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:833",
+      "sourceId": "1091",
+      "forms": [
+        "訳あり",
+        "訳あって",
+        "わけあり",
+        "わけあって"
+      ],
+      "sourceExpression": "訳あり(訳あって)",
+      "meaning": "～ with reasons, Due to reasons, Defective, Problematic, Unique",
+      "structure": "訳あり + Noun\n訳あり + な + Noun\n訳あり + の + Noun\n訳あって + Phrase\n訳あり + で + Phrase",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:194",
+      "sourceId": "626",
+      "forms": [
+        "のように",
+        "毎"
+      ],
+      "sourceExpression": "まい～のように",
+      "meaning": "Almost every ~, Nearly every ~, On a ~ basis",
+      "structure": "毎 + Time Expression + のように",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:873",
+      "sourceId": "867",
+      "forms": [
+        "たりとも"
+      ],
+      "sourceExpression": "１～たりとも～ない",
+      "meaning": "Not even one, Not a single, No (at all)",
+      "structure": "1 + Counter + たりとも + Phrase［ない］(1)\n\n(1) Verb［な］",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "hjgp_en",
+      "rowUid": "hjgp_en:1",
+      "sourceId": "2",
+      "forms": [
+        "使い方",
+        "凡例"
+      ],
+      "sourceExpression": "0User’s Guide",
+      "meaning": "User’s Guide\nGuide to the Handbook's structure and use\n1.The key contents of this handbook are\nstructured in three tiers. The first tier is a headword and/or head\nphrase, the second tier is a category heading that shows meaning or\nfunction, and the third tier is a sub-heading for further\ncategorization. As shown in the example below, the second tier is\nnumbered using Arabic numerals (1, 2, 3), and the third tier is\nordered using letters of the alphabet (a, b, c).\n2.Grammatical information is given in the\nsecond and third tiers, using grammar symbols and notations. When\nthere are too many notations to be included in the tier heading, they\nare given inside square brackets [ ].\nHeadword/Head phrase\nCategory heading\nSub-heading\na. Nのうち\nExamples\n三曲\nのうちでどれが\n一番\n気\nに\n入\nりましたか。\nOf these three songs, which one did you like best?\nつのうちから\n好\nきなものを\n選\nびなさい。\nChoose the one you like out of these three.\n一番\n人気\nがあるのはやはりモーツァルトだそうだ。\nI heard that, as might be expected, among Bach,\nMozart, and Beethoven, the most popular composer is Mozart.\n買\nったCDのうち、2\n枚\nはインドネシアのポップスで、3\n枚\nはカリブの\n音楽\nだ。\nOf the CDs I bought yesterday, two are Indonesian pop music and\nthree are Caribbean music.\nExplanation\nNのうち is used to delimit a range. It can\nbe replaced by Nのなか, as in\n(1)\n-\n(3)\n, when someone is choosing\nsomething within that range. In some cases, N1とN2と...のうち is used to\nlist a series of nouns, as in\n(3)\n.\nGrammatical structures and patterns\n［Nのうちにはいらない］\n［A-いうちにはいらない］\n［Vうちにはいらない］\n3.Headwords are listed in the order of the\nJapanese 50-on syllabary. Headings in the second and third\ntiers are not necessarily in this order.\n4.Stable compound expressions such as ていけない\nand とする are treated as headwords. While conventional dictionaries\nwould list these entries under the headwords いけない and する, this\nhandbook describes their usage under headings that include the\nparticles. At the same time, this handbook also allows users to find\nthese expressions using the conventional route. In other words,\nmultiple look-up methods are possible.\n5.A Japanese phonetic syllabary index (50-on\nindex), a reverse order index, and a list of meaning and function\ngroups are given at the end of this handbook. When the word you are\nlooking for is not easy to find, or when you want to find an\nexpression using the last word or particle that it contains, this\nhandbook will lead you there quickly.\nList of grammar terminology\n〈Parts of speech and other terms〉\nnoun\ne.g.：花、希望\nadjective\ni-adjective, na-adjective\ni-adjective\ne.g.：暑い、おもしろい\nna-adjective\ne.g.：きれいだ、元気だ\nverb\ne.g.：書く、話す、寝る\nparticle\ne.g.：が、を、は、も\nadverb\ne.g.：たくさん、のんびり、きっと\nquantifier\ne.g.：ひとつ、一人、100グラム\nnumeral classifier\ne.g.：...人、 ...冊\nnumeral\ne.g.：1 2 3\ninterrogative\ne.g.：なに、どこ、いくつ\nstem of an i-adjective\ne.g.：暑、おもしろ\nstem of a na-adjective\ne.g.：きれい、元気\nGroup 1 verb\ne.g.：書く、話す、休む\nGroup 2 verb\ne.g.：見る、食べる、寝る\nintransitive verb\ne.g.：走る、生まれる、降る\ntransitive verb\ne.g.：飲む、使う、見る\npotential form\ne.g.：読める、食べられる\npassive form\ne.g.：読まれる、食べられる\ncausative form\ne.g.：読ませる、食べさせる\naction noun\ne.g.：運動、完成、修理\nagent\ne.g.：お父さん in the sentences お父さんが叱った and お父さんに叱られた\n〈Speech style and conjugations〉\nna-adjective\ni-adjective\ndictionary form\n休みだ\nきれいだ\nおもしろい\nta-form\n休みだった\nきれいだった\nおもしろかった\nte-form\n休みで\nきれいで\nおもしろくて\nba-form\n休みならば\nきれいならば\nおもしろければ\nnegative form\n休みじゃない\nきれいじゃない\nおもしろくない\n休みではない\nきれいではない\nGroup 1 verb\nGroup 2 verb\n来る\nする\ndictionary form\n書く\n見る\nくる\nする\nverb stem\n書き\n見\nき\nし\nta-form\n書いた\n見た\nきた\nした\nte-form\n書いて\n見て\nきて\nして\nba-form\n書けば\n見れば\nくれば\nすれば\nnegative form\n書かない\n見ない\nこない\nしない\nimperative form\n書け\n見ろ\nこい\nしろ\nintentional form\n書こう\n見よう\nこよう\nしよう\nna-adjective\ni-adjective\ndesu-form\n休みです\nきれいです\nおもしろいです\nta-form\n休みでした\nきれいでした\nおもしろかったです\nnegative form\n休みじゃないです\nきれいじゃないです\nおもしろくないです\n休みじゃありません\nきれいじゃありません\nおもしろくありません\n休みではないです\nきれいではないです\n休みではありません\nきれいではありません\nGroup 1 verb\nGroup 2 verb\n来る\nする\nmasu-form\n書きます\n見ます\nきます\nします\nta-form\n書きました\n見ました\nきました\nしました\nte-form\n書きまして\n見まして\nきまして\nしまして\nnegative form\n書きません\n見ません\nきません\nしません\nimperative form\n書きなさい\n見なさい\nきなさい\nしなさい\nintentional form\n書きましょう\n見ましょう\nきましょう\nしましょう\nimperative form\n書け\n見ろ\nこい\nしろ\nintentional form\n書こう\n見よう\nこよう\nしよう\nList of symbols and notations\n〈Grammar notations〉\nnoun phrase\ne.g.：花、人、希望、きのう会った人、人に会ったこと\nstem of a na-adjective\ne.g.：きれい、静か、元気\nplain form of an i-adjective\ne.g.：暑い、暑くない、暑かった\ne.g.：Aそうだ indicates forms like 暑いそうだ (they say\nit's hot), 暑くないそうだ (they say it isn't hot), 暑かったそうだ (they say it\nwas hot).\nA-\nstem of an i-adjective\ne.g.：暑、おもしろ、楽し\ne.g.：A-そうだ indicates forms like 暑そうだ (it looks\nhot), おもしろそうだ (it looks interesting), 楽しそうだ (it looks fun).\nA-い\ndictionary form of an i-adjective\ne.g.：暑い、おもしろい、楽しい\nA-く\nku-form of an i-adjective\ne.g.：暑く、おもしろく、楽しく\nA-くない\nnegative form of an i-adjective\ne.g.：暑くない、おもしろくない、楽しくない\nA-くて\nte-form of an i-adjective\ne.g.：暑くて、おもしろくて、楽しくて\nA-かった\nta-form of an i-adjective\ne.g.：暑かった、おもしろかった、楽しかった\nA-かろう\nconjectural form of an i-adjective\ne.g.：暑かろう、おもしろかろう、楽しかろう\nA-かったろう\nconjectural form of an i-adjective in past tense\ne.g.：暑かったろう、おもしろかったろう、たのしかったろう\nA-ければ\nba-form of an i-adjective\ne.g.：暑ければ、おもしろければ、楽しければ\nplain form of a verb\ne.g.：書く、書かない、書きます\ne.g.：Vそうだ indicates forms like 書くそうだ (I hear\ns/he'll write), 書かないそうだ (I hear s/he doesn't write), 書いたそうだ (I hear\ns/he wrote).\nR-\nconjunctive form of a verb（what is left of the\nmasu-form of a verb after -masu has been removed）\ne.g.：書き、読み、見、来、し\ne.g.：R-そうだ indicates forms like 書きそうだ (s/he is\nlikely to write), 来そうだ (s/he is likely to come), しそうだ (s/he is\nlikely to do).\nV-る\ndictionary form of a verb\ne.g.：書く、読む、見る、来る、する\nV-た\nta-form of a verb\ne.g.：書いた、読んだ、見た、来た、した\nV-たろう\nconjectural form of a verb in past tense\ne.g.：書いたろう、読んだろう、見たろう、来たろう、したろう\nV-ない\nnegative form of a verb\ne.g.：書かない、読まない、見ない、来ない、しない\nV-て\nte-form of a verb\ne.g.：書いて、読んで、見て、来て、して\nV-ば\nba-form of a verb\ne.g.：書けば、読めば、見れば、来れば、すれば\nV-よう\nintentional form of a verb\ne.g.：書こう、読もう、見よう、来よう、しよう\nV-れる\npotential form of a verb\ne.g.：書ける、読める、見られる、来られる、できる\nV-られる\npassive form of a verb\ne.g.：書かれる、読まれる、見られる、来られる、される\nV-させる\ncausative form of a verb\ne.g.：書かせる、読ませる、見させる、来させる、させる\n〈Other symbols〉\n／\nMeans “or.”\ne.g.：［N／Naになる］ means ［Nになる］ or ［Naになる］, and ［V-たあとに／で］\nmeans ［V-たあとに］ or ［V-たあとで］.\n（ ）\nMeans “possible either with or without.”\ne.g.：それゆえ（に）means that both それゆえand それゆえにare possible.\n《 》\nIndicates in what situation(s) the example may apply.\ne.g.：《手紙》まずはご報告まで。\n［ ］\nIndicates information about the grammar pattern.\ne.g.：［あまりV-ない］\n＜ ＞\nIndicates the meaning and/or function of the grammar\npattern.\ne.g.：...みたいだ 〈supposition〉, V-てくれない（か） 〈request〉\n（例）\nIndicates an example given in the explanation of a grammar\npattern.\n（×）\nIndicates an incorrect usage example.\n（○）\nIndicates a correct usage example.\n→\nMeans “refer to a different entry.”\nsubscript numbers\nUsed when there are two or more headwords with the same\nform.\ne.g.：",
+      "structure": "1. うち〈limit〉",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpou",
+      "rowUid": "bunpou:115",
+      "sourceId": "114",
+      "forms": [
+        "ようだ"
+      ],
+      "sourceExpression": "比喩の「ようだ」と例示の「ようだ」の判別方法",
+      "meaning": "「ようだ」よりも前に「まるで」と「たとえば」を置いてみる。「まるで」が当てはまれば比喩、「たとえば」が当てはまれば例示。\n\n例比喩：  彼は（まるで）日本人のように、流暢な日本語を話す。例示：（例えば）トムさんのように日本語が上手に話せるようになりたい。",
+      "structure": null,
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "bunpou",
+      "rowUid": "bunpou:38",
+      "sourceId": "37",
+      "forms": [
+        "より"
+      ],
+      "sourceExpression": "AはBより・・・です。",
+      "meaning": "２つの物を比較する表現。",
+      "structure": "N1は N2より Adjectiveです",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "nihongo_net",
+      "rowUid": "nihongo_net:464",
+      "sourceId": "文型・例文：〜ほうがいい",
+      "forms": [
+        "ほうがいい"
+      ],
+      "sourceExpression": "文型・例文：〜ほうがいい",
+      "meaning": "〜すること（しないこと）を、相手に助言する表現。\nそうしなかったら悪いことが起こると助言や忠告をするときに使う。",
+      "structure": "V（た形） + ほうがいい\nV（ナイ形） + ほうがいい",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "nihongo_net",
+      "rowUid": "nihongo_net:465",
+      "sourceId": "文型・例文：（自動詞）ている",
+      "forms": [
+        "ている"
+      ],
+      "sourceExpression": "文型・例文：〜ほうがいい",
+      "meaning": "発話時点より以前に起こったことの結果の状態が継続していることを表す表現。",
+      "structure": "V（自動詞のテ形）+ いる",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "ninjal_bunkei",
+      "rowUid": "ninjal_bunkei:679",
+      "sourceId": "〜れる・〜られる（可能）",
+      "forms": [
+        "れる",
+        "られる",
+        "可能形"
+      ],
+      "sourceExpression": "可能の形 （～れる・～られる）",
+      "meaning": "[1] 人などが〜の実現が可能な能力を持っていることを表します。\n\n[2] 〜の実現が可能な状況であることを表します。\n\n[3] ある物が、人が〜することが可能な性質のものであることを表します。\n\n[4] ある作業が完了する・ある仕事が完成することを表します。",
+      "structure": "V（可能の形）",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "ninjal_bunkei",
+      "rowUid": "ninjal_bunkei:799",
+      "sourceId": "（〜の中）で（〜が）いちばん",
+      "forms": [
+        "いちばん",
+        "一番"
+      ],
+      "sourceExpression": "（～の中）で（～が）いちばん",
+      "meaning": "他の全てのものと比べて、程度が高いと言いたいときに使います。",
+      "structure": "Ｎ1（の中）で（Ｎ2が）いちばん",
+      "basis": "Reviewed source construction or Japanese topic label; overrides misleading/ambiguous display headwords."
+    },
+    {
+      "source": "donna_toki",
+      "rowUid": "donna_toki:465",
+      "sourceId": "ては敵う",
+      "sourceExpression": "ては敵う",
+      "meaning": "doesn't like; be vexed; be more than one can bear",
+      "structure": "Ｖては／イＡいくては／ナAでは／Nでは＋かなわない",
+      "forms": [
+        "てはかなわない",
+        "ては敵わない"
+      ],
+      "basis": "Source structure/explanation preserves the intended construction; the original display headword has a spelling or polarity defect."
+    },
+    {
+      "source": "donna_toki",
+      "rowUid": "donna_toki:537",
+      "sourceId": "と言ったらある",
+      "sourceExpression": "と言ったらある",
+      "meaning": "inexpressibly; extremely",
+      "structure": "イＡい／Ｎ＋といったらない",
+      "forms": [
+        "といったらない",
+        "と言ったらない"
+      ],
+      "basis": "Source structure/explanation preserves the intended construction; the original display headword has a spelling or polarity defect."
+    },
+    {
+      "source": "donna_toki",
+      "rowUid": "donna_toki:558",
+      "sourceId": "所ではある",
+      "sourceExpression": "所ではある",
+      "meaning": "no way",
+      "structure": "Vる／Ｎ・する",
+      "forms": [
+        "どころではない",
+        "所ではない"
+      ],
+      "basis": "Source structure/explanation preserves the intended construction; the original display headword has a spelling or polarity defect."
+    },
+    {
+      "source": "aiueo",
+      "rowUid": "aiueo:571",
+      "sourceId": "1746413461725",
+      "sourceExpression": "に 負う ところが 多い・〜に 負う ことろが 大きい",
+      "meaning": "This sentence pattern expresses that success or achievement relies significantly on someone or something’s help or influence. It conveys gratitude and emphasizes contribution, often highlighting reliance on others.",
+      "structure": "名詞に+負う+ところが多い名詞に+負う+ことろが大きい",
+      "forms": [
+        "に負うところが多い",
+        "に負うところが大きい"
+      ],
+      "basis": "Source structure/explanation preserves the intended construction; the original display headword has a spelling or polarity defect."
+    },
+    {
+      "source": "edewakaru",
+      "rowUid": "edewakaru:93",
+      "sourceId": "のも無理もない",
+      "sourceExpression": "のも無理もない",
+      "meaning": "〜なのは当然だ\n〜が起こるのは当然だ",
+      "structure": "動詞［辞書形］＋のも無理はない\n動詞［ない形］＋のも無理はない",
+      "forms": [
+        "のも無理はない",
+        "のもむりはない"
+      ],
+      "basis": "Source structure/explanation preserves the intended construction; the original display headword has a spelling or polarity defect."
+    },
+    {
+      "source": "bunpro",
+      "rowUid": "bunpro:815",
+      "sourceId": "1084",
+      "sourceExpression": "がん～",
+      "meaning": "Totally, Seriously, Completely, Furiously, Majorly",
+      "structure": "ガン見\nガン + Verb［stem］",
+      "forms": [
+        "ガン",
+        "がん"
+      ],
+      "basis": "Source structure/explanation preserves the intended construction; the original display headword has a spelling or polarity defect."
+    },
+    {
+      "source": "donna_toki",
+      "rowUid": "donna_toki:461",
+      "sourceId": "てはいける",
+      "sourceExpression": "てはいける",
+      "meaning": "(you) must not",
+      "structure": "Ｖては／イＡくては／ナＡでは／Ｎでは＋いけない",
+      "forms": [
+        "てはいけない",
+        "ではいけない",
+        "ちゃいけない",
+        "じゃいけない"
+      ],
+      "basis": "The source structure explicitly teaches the negative construction; preserve its polarity in lookup aliases."
+    },
+    {
+      "source": "edewakaru",
+      "rowUid": "edewakaru:365",
+      "sourceId": "ても始まる",
+      "sourceExpression": "ても始まる",
+      "meaning": "〜ても意味がない\n〜ても無駄だ\n〜ても、もう遅い\n〜していても、状況は変わらない",
+      "structure": "動詞［て形］＋ても始まらない",
+      "forms": [
+        "ても始まらない",
+        "てもはじまらない"
+      ],
+      "basis": "The source structure explicitly teaches the negative construction; preserve its polarity in lookup aliases."
+    }
+  ]
+}

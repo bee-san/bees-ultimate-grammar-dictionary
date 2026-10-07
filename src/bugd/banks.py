@@ -35,7 +35,8 @@ from .jsonio import MalformedPayload
 from .merge import MergedEntry
 from .model import GrammarPoint
 from .inflection import inflection_rules
-from .readings import has_kanji as _has_kanji, is_exact_reading
+from .headword_readings import source_reading
+from .readings import has_kanji as _has_kanji
 from .dialects import prose_to_html
 from .richtext import html_to_content, html_to_text
 
@@ -1767,11 +1768,9 @@ def build_term_entry(entry: MergedEntry, sequence: int) -> list:
         # lookup key, so only a kana spelling of exactly this headword qualifies:
         # never a pattern's reading (`と～ない`), a concatenation of alternatives
         # (`かなかなあ`) or another construction's form (`にむけて` for `に向け`).
-        for point in entry.contributions:
-            candidate = (point.reading or "").strip("〜～~")
-            if candidate and is_exact_reading(entry.expression, candidate):
-                reading = candidate
-                break
+        # A source's reading comes first; the reviewed catalog fills the rest.
+        reading = source_reading(entry.expression, [p.reading for p in entry.contributions])
+        reading = reading or source_reading(entry.expression, [entry.reading])
 
     return [
         entry.expression,
@@ -1839,6 +1838,8 @@ def build_index(
     if labels:
         index["attribution"] = (
             "Grammar content contributed by: " + "; ".join(labels) + "."
+            # Readings for headwords no source spells come from these.
+            " Headword readings: JMdict (EDRDG, CC BY-SA 4.0), SudachiDict and Jiten."
         )
     if (index_url is None) != (download_url is None):
         raise MalformedPayload("a self-updating index requires both indexUrl and downloadUrl")

@@ -1,5 +1,5 @@
 {
-  "revision": "2026.10.07.2",
+  "revision": "2026.10.07.3",
   "sources": [
     "aiueo",
     "bunpou",
@@ -36,23 +36,23 @@
   "imabiLookupTerms": 1400,
   "assets": {
     "bees-ultimate-grammar-dictionary.zip": {
-      "sha256": "054231ffdc908a9814690a13ca3710af9377e2a01ca2da170680181720fe386b",
-      "byteCount": 17268385
+      "sha256": "2a86ec7a4218dde8979f712dc97b33d8354ff37a933ebc117d141c9ce78583bf",
+      "byteCount": 17272672
     },
     "bees-ultimate-grammar-dictionary-en.zip": {
-      "sha256": "7b99af4839c73ebcb9a64f5fde1e3dbc8d0167bbb81461daa5dff8281bfc6409",
-      "byteCount": 18265224
+      "sha256": "aa8c9f42569bb3fa058eb5c1c4664710d7419fcf8264ca4613bad1dfdeefcbef",
+      "byteCount": 18269583
     },
     "index.json": {
-      "sha256": "e91b181913a1b7915f113018a2fc6f988e2c2617515d3401f8e730a358a1dc04",
-      "byteCount": 1056
+      "sha256": "3b2411b5943c61d41709a63dd53d04fc8aa2a704f2222c22f3751bc75f688e2f",
+      "byteCount": 1128
     },
     "index.en.json": {
-      "sha256": "e8394c136a7ed6f12128921b691dc9ac3d4afd03a0dfae865ba20bd855ab8e2f",
-      "byteCount": 1135
+      "sha256": "2d6678a1a3e61a2ad6d4b41ba58f95abb11028f0ae6e3eabec369cddefa1f4b3",
+      "byteCount": 1207
     },
     "SHA256SUMS": {
-      "sha256": "2105a387aec6536e4dc65e39b36cb7cef4550f7f3aeb9a65f0d1a489a2d33bc7",
+      "sha256": "7541643450bd98aaaf043b6987e1cd39c686a0a2b646abc69c9b0eedbbc92e5c",
       "byteCount": 209
     }
   }

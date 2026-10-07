@@ -33,6 +33,9 @@ CASES = [
     ("学生とはいえ、", "とはいえ", "とはいえ", "どんなときどう使う 日本語表現文型辞典"),
     ("天才と言っても過言ではない。", "と言っても", "と言っても過言ではない", "NINJAL 日本語文型データベース"),
     ("笑わずにはいられなかった。", "ずには", "ずにはいられない", "どんなときどう使う 日本語表現文型辞典"),
+    # Kanji headwords are also found by a kana spelling of their reading.
+    ("雨だ。そのうえ風も強い。", "そのうえ", "その上", "DoJG 日本語文法辞典(全集)"),
+    ("いつのまにか寝ていた。", "いつのまにか", "いつの間にか", "Bunpro Grammar Reference"),
 ]
 # Synthetic lemmas a producer filed negative constructions under must not be
 # offered as the headword of a real negative (`ずにはいられなかった` is not `ずにはいる`).
@@ -41,6 +44,9 @@ ABSENT = [
     ("笑わずにはいられなかった。", "ずには", "ずにはいられる"),
     ("読みもしない。", "もしない", "もする"),
     ("急がねばならない。", "ねば", "ねばなる"),
+    # A counter whose reading spells a particle is not offered for the particle.
+    ("これは何ですか。", "か。", "化"),
+    ("行くわ。", "わ", "羽"),
 ]
 
 
@@ -70,7 +76,8 @@ def verify(path: pathlib.Path) -> dict:
             if re.fullmatch(r"term_bank_\d+\.json", name):
                 for row in json.loads(archive.read(name)):
                     if row[0] in wanted:
-                        rows.append({"term": row[0], "rules": row[3], "sources": sorted(source_names(row[5]))})
+                        rows.append({"term": row[0], "reading": row[1], "rules": row[3],
+                                     "sources": sorted(source_names(row[5]))})
     cases = [dict(zip(("text", "hover", "term", "source"), case)) for case in CASES]
     absent = [dict(zip(("text", "hover", "term"), case)) for case in ABSENT]
     result = subprocess.run([node, str(ROOT / "scripts/verify_popup.mjs")],

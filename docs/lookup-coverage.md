@@ -94,3 +94,8 @@ This tests lookup mechanics against packaged data; it is not a browser UI test.
 The raw IMABI corpus, complete frozen source corpus, English translation cache,
 lookup catalogs, overrides and compatibility headwords are all committed. A
 normal release build requires no scraping or translation calls.
+
+## Follow-up work
+
+See [the popup lookup handoff and next steps](popup-lookup-next-steps.md) for
+real-app validation, reported-miss triage and acceptance criteria for later work.

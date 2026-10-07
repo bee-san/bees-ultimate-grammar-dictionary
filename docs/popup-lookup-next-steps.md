@@ -1,106 +1,54 @@
-# Popup lookup handoff and next steps
+# Popup lookup validation and next steps
 
-Implementation and release work is paused at the user's request. This document
-records the current state and proposed follow-up work for when it resumes.
+This records how `v2026.10.07.2` was checked in real popup engines and what is
+still open. See [lookup coverage](lookup-coverage.md) for what the dictionary
+indexes and [the release notes](releases/v2026.10.07.2.md) for the change.
 
-## Published baseline
+## What was wrong in v2026.10.07.1
 
-- [Release v2026.10.07.1](https://github.com/bee-san/bees-ultimate-grammar-dictionary/releases/tag/v2026.10.07.1)
-  is already published from commit
-  `b0cb057c76cf143b213cb672a92214b197f4e7fd`.
-- Both editions contain 7,633 term-bank rows covering 9,152 source records across
-  13 sources. All records have a Japanese lookup form or topic label.
-- IMABI contributes 495 lessons indexed under 1,400 Japanese terms, including
-  `について`, `ことにする` and conjugated lookup support.
-- The raw IMABI pages, frozen source corpus, English translation cache, lookup
-  catalogs, overrides and compatibility headwords are committed. Normal release
-  builds use the committed snapshot without scraping or translation calls.
+Both released ZIPs were imported into the real engines and hovered at the
+example highlights the sources provide. The problems were in the dictionary,
+not in the popup apps:
 
-See [lookup coverage](lookup-coverage.md),
-[release notes](releases/v2026.10.07.1.md) and
-[build documentation](website.md) for the implementation and reproduction details.
+- 616 rows had a reading that was not an exact kana spelling of their headword. Popups showed
+  it as furigana (`かな【かなかなあ】`, `と【と～ない】`, `何のこと【なんのこ】`) and
+  matched hovered text by it. Notation rows (`AながらB`) then surfaced for plain
+  `ながら`, and typo rows (`と言いえ`) were the only path to their records.
+- Producer synthetic lemmas (`ずにはいる`, `もする`, `ねばなる`) were headwords.
+  Their conjugation class matched real negatives, so `ずにはいられなかった`
+  produced `ずにはいる` with a passive trace, and the same article appeared twice.
 
-The existing checks cover packaged records, source disclosures, article links,
-schemas, checksums and 16 sentence/cursor cases per ZIP using the pinned upstream
-Yomitan engine. They do **not** constitute an import or hover test in the actual
-browser extension. Japanese topic coverage also does not mean that every lesson
-can be found by hovering every example sentence.
+## Engine checks
 
-## 1. Verify the published release in real popup apps
+The 12,177 cases are up to three example highlights for each record in the six
+sources that mark them: 文法, Bunpro, 絵でわかる日本語, 毎日のんびり日本語教師,
+NINJAL and Yokubi. The cursor starts at the record's form inside the highlight,
+or at the highlight itself, and up to 40 characters are scanned.
 
-- [ ] Import or update to v2026.10.07.1 in Yomitan and in the popup app used by the
-  person reporting the problem. Record app/browser versions, dictionary revision,
-  scan length, cursor position and enabled dictionaries.
-- [ ] Run the sentence/hover examples in [lookup coverage](lookup-coverage.md)
-  against each edition. Check basic particles, compound constructions, conjugated
-  endings, kana/kanji spellings and the non-IMABI examples.
-- [ ] Open the source disclosures and follow "Read all explanations." Verify the
-  expected source lesson appears, extra senses are accessible, and each edition
-  opens the correct language route. Confirm older installed dictionary links
-  still reach their articles.
-- [ ] Check topic queries such as `母音` and `古典文法` separately from sentence
-  hovering, and confirm source-page-only listings are clearly labelled.
+| Engine | Edition | Garbage-reading hits | Synthetic-headword hits | Source found |
+| --- | --- | ---: | ---: | --- |
+| Yomitan `77e20042` importer + `Translator` (fake IndexedDB) | v2026.10.07.1 original | 7,576 | 160 | baseline |
+| same | v2026.10.07.2 original | 0 | 0 | unchanged (one 文法 example lost an inexact-reading match) |
+| same | v2026.10.07.2 English | 0 | 0 | same as original |
+| Hachidori hoshidicts WASM (`hdw_import`/`hdw_lookup`) | v2026.10.07.1 original | 7,588 | 173 | baseline |
+| same | v2026.10.07.2 original and English | 0 | 0 | unchanged |
 
-Acceptance: attach an app/version test matrix with observed results for both
-editions. Record failures as reproducible cases rather than assuming the engine
-tests prove the browser workflow.
+`make verify-popup` keeps the discriminating cases as regressions with the
+pinned Yomitan transformer.
 
-## 2. Turn reported misses into focused regressions
+## Still open
 
-- [ ] For each miss, capture the exact Japanese sentence, cursor start, expected
-  source and lesson URL, installed revision, and actual popup result.
-- [ ] Determine whether the cause is an old installation or scan setting, a
-  missing literal alias, a reading or inflection rule, or a hidden disclosure.
-  Check the actual released ZIP before changing extraction.
-- [ ] Add a regression at the failing layer: packaged sentence matching in
-  `scripts/verify_popup.mjs`, alias/catalog tests in
-  `tests/test_popup_lookup.py` or `tests/test_imabi_lookup.py`, or rendering tests
-  in `tests/test_banks_card.py` and `tests/test_english_website.py`.
-- [ ] Implement only source-supported aliases or rendering corrections, with a
-  negative case where the change could introduce unrelated matches.
-
-Acceptance: each confirmed failure has a before/after reproduction and a focused
-regression for both editions where applicable. A lesson's incidental use of a
-particle is not sufficient evidence to index that lesson under the particle.
-
-## 3. Review lookup quality across all sources
-
-- [ ] Review ambiguous generic titles and the per-record evidence in
-  `website/data/popup-overrides.json`; review IMABI evidence in
-  `website/data/imabi-lookups.json`.
-- [ ] Check kana aliases and inflection hints for false positives as well as
-  missed forms, especially ambiguous readings and verb classes.
-- [ ] Review discontinuous constructions and reference-topic labels for useful
-  search forms. Keep written components separate across gaps; do not create
-  artificial joined words or claim arbitrary sentence parsing.
-- [ ] Keep source attribution and distinct meanings intact. Aliases should make
-  a source record accessible without declaring different constructions
-  equivalent or implying a link-only record contains a full local explanation.
-
-Acceptance: coverage remains complete by source-record identity, additions have
-source evidence, and reviewed negative cases avoid unrelated source matches.
-
-## 4. Preserve reproducibility and compatibility in any later release
-
-These are follow-up gates, not an instruction to publish during this handoff.
-
-- [ ] Build both editions from the committed snapshot using the documented
-  dependencies; commit any changed inputs and update their digest locks.
-- [ ] Run the relevant regression tests, then the existing artifact checks:
-
-  ```sh
-  make release
-  PYTHONPATH=src python scripts/audit_popup_coverage.py
-  make verify-popup
-  ```
-
-- [ ] Follow [repository publication guidance](../AGENTS.md): verify every ZIP
-  footer and article heading, all previously published routes, source records,
-  pinned schemas and SHA-256 checksums.
-- [ ] Summarize real-app results and remaining limitations in the next proposed
-  release notes. Resume implementation or publication only when requested.
-
-Acceptance: a clean checkout with dependencies installed reproduces the pinned
-assets without source acquisition or translation calls, all compatibility checks
-pass, and real-app results are recorded. Any intentional source refresh is a
-separate, explicit update with its input bytes, provenance and locks committed.
+- [ ] Hover the examples in [lookup coverage](lookup-coverage.md) in the Yomitan
+  and Hachidori browser extensions. The engine checks above do not exercise the
+  extensions' text scanners, scan-length settings or rendering.
+- [ ] 669 kanji headwords have no source reading that spells them exactly. They
+  show no furigana, and kana-written text does not find them. Adding readings
+  needs source evidence; KANJIDIC can test a reading but cannot choose one.
+- [ ] Some example highlights use a spelling that the record's headword lacks
+  (`恐れがある` for `おそれがある`, `甲斐` for `かい`). Such spellings could become
+  reviewed aliases.
+- [ ] Polite headwords (`いたします`, `いらっしゃいます`) are not lemmas, so their
+  conjugated forms (`いたしましょう`) do not reach them.
+- [ ] Rows that only redirect (`ようなら` → see `ようだったら`) sit beside a
+  separate content row with the same headword. Yomitan groups the two, but
+  merging them would simplify the popup.

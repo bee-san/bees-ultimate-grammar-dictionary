@@ -517,6 +517,7 @@ def entry_from_json(payload: dict) -> MergedEntry:
         expression=payload["expression"],
         variants=tuple(payload.get("variants") or ()),
         contributions=[point_from_json(item) for item in payload.get("contributions") or []],
+        lookup=payload.get("lookup", True) is not False,
     )
 
 

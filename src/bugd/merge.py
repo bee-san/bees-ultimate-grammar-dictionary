@@ -33,6 +33,9 @@ class MergedEntry:
     expression: str
     variants: tuple[str, ...] = ()
     contributions: list[GrammarPoint] = field(default_factory=list)
+    #: False for a headword kept only so its published URL still resolves: no
+    #: record is looked up by it, so the popup must not reach it by conjugation.
+    lookup: bool = True
 
     def __post_init__(self) -> None:
         if not isinstance(self.expression, str) or not self.expression.strip():

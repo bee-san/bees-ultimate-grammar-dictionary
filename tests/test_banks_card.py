@@ -269,6 +269,38 @@ def test_term_entries_are_one_canonical_structured_surface():
     assert glossary[0]["type"] == "structured-content"
 
 
+@pytest.mark.parametrize("expression,readings,expected", [
+    ("に向けて", ["にむけて"], "にむけて"),
+    ("に基づき", ["～にもとづき"], "にもとづき"),   # a producer's placeholder tilde
+    ("に向け", ["にむけて"], ""),                  # another construction's reading
+    ("に決まっている", ["にまっている"], ""),        # a scraper's kana-only remnant
+    ("直す", ["す", "なおす"], "なおす"),             # the first exact reading wins
+    ("かな", ["かなかなあ"], ""),                    # kana needs no furigana
+    ("と", ["と～ない"], ""),
+])
+def test_a_reading_is_only_an_exact_kana_spelling_of_the_headword(expression, readings, expected):
+    """Yomitan prints the reading as furigana and also matches hovered text by it."""
+    entry = MergedEntry(expression=expression, contributions=[
+        _point(source_id=f"p{n}", expression=expression, reading=reading) for n, reading in enumerate(readings)])
+    assert build_term_entry(entry, 1)[1] == expected
+
+
+def test_a_compatibility_headword_cannot_be_reached_by_conjugation():
+    entry = MergedEntry(expression="ずにはいる", lookup=False,
+                        contributions=[_point(expression="ずにはいる", reading="ずにはいられない")])
+    assert build_term_entry(entry, 1)[1:4] == ["", "", ""]
+    assert build_term_entry(MergedEntry(expression="すぎる", contributions=[_point(expression="すぎる")]), 1)[3] == "v1"
+
+
+def test_a_sense_filed_twice_by_one_source_is_shown_once():
+    first = _point(source="edewakaru", source_id="ずにはいられない", expression="ずにはいられない")
+    twin = _point(source="edewakaru", source_id="ずにはいる", expression="ずにはいる")
+    other = _point(source="edewakaru", source_id="別", meaning="a different sense")
+    text = json.dumps(build_term_entry(MergedEntry(expression="ずにはいられない",
+                                                   contributions=[first, twin, other]), 1)[5], ensure_ascii=False)
+    assert text.count("Denies a conclusion someone might draw.") == 2  # first and other, not twin
+
+
 # -------------------------------------------------------------- gate integrity
 
 

@@ -959,6 +959,67 @@
         "てもはじまらない"
       ],
       "basis": "The source structure explicitly teaches the negative construction; preserve its polarity in lookup aliases."
+    },
+    {
+      "source": "donna_toki",
+      "rowUid": "donna_toki:594",
+      "sourceId": "と言いえ",
+      "forms": [
+        "とは言え",
+        "とはいえ"
+      ],
+      "sourceExpression": "と言いえ",
+      "meaning": "nevertheless; be that as it may",
+      "structure": "N／〔普通形〕＋とはいえW",
+      "basis": "Source typo: the record's own reading, structure and examples are とはいえ; と言いえ is not a written form."
+    },
+    {
+      "source": "ninjal_bunkei",
+      "rowUid": "ninjal_bunkei:369",
+      "sourceId": "〜と言っても過言ではない",
+      "forms": [
+        "と言っても過言ではない"
+      ],
+      "sourceExpression": "と言ではない",
+      "meaning": "〜と述べることは決して大げさではない、言い過ぎではないと言う意味です。話し手の主張を強く表したいときに使います。",
+      "structure": "V普通形＋と言っても過言ではない\nN普通形＋と言っても過言ではない（「Nだ」→「N＋と言っても過言ではない・Nである＋と言っても過言ではない」の形になることもある）",
+      "basis": "The source XML's ruby markup is malformed, so the extracted headword lost っても過言; sourceId, reading and structure spell と言っても過言ではない."
+    },
+    {
+      "source": "donna_toki",
+      "rowUid": "donna_toki:271",
+      "sourceId": "ずにはいられる",
+      "forms": [
+        "ずにはいられない"
+      ],
+      "sourceExpression": "ずにはいられる",
+      "meaning": "just had to",
+      "structure": "Vない＋ずにはいられない 例外 しない→せずにはいられない",
+      "basis": "Synthetic affirmative lemma the producer bank used for deinflection; the record's own structure and meaning are the negative construction."
+    },
+    {
+      "source": "donna_toki",
+      "rowUid": "donna_toki:626",
+      "sourceId": "ないではいられる",
+      "forms": [
+        "ないではいられない"
+      ],
+      "sourceExpression": "ないではいられる",
+      "meaning": "can't help but; feel must",
+      "structure": "Vないでは＋いられない",
+      "basis": "Synthetic affirmative lemma the producer bank used for deinflection; the record's own structure and meaning are the negative construction."
+    },
+    {
+      "source": "donna_toki",
+      "rowUid": "donna_toki:642",
+      "sourceId": "ないわけにはいく",
+      "forms": [
+        "ないわけにはいかない"
+      ],
+      "sourceExpression": "ないわけにはいく",
+      "meaning": "can't avoid; can't help; must",
+      "structure": "Vない＋わけにはいかない",
+      "basis": "Synthetic affirmative lemma the producer bank used for deinflection; the record's own structure and meaning are the negative construction."
     }
   ]
 }

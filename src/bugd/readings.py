@@ -65,10 +65,13 @@ _DEVOICE = {v: k for k, v in _VOICE.items()}
 #:  * 言 = ゆう — the colloquial pronunciation of 言う (と言うと=とゆうと).
 #:  * 如 = しく/しか — the classical kun of 如く（しく）"to be equal to"
 #:    (百聞は一見に如かず＝ひゃくぶんはいっけんにしかず), which KANJIDIC2 lists
-#:    only as ごと/ごとし.
+#:    only as ごと/ごとし. し is its stem before written okurigana (に如くはない).
+#:  * 蔑 = ないがし — the stem of 蔑ろ（ないがしろ）; KANJIDIC2 has only the
+#:    undotted whole word, so the written okurigana ろ could not be matched.
 SUPPLEMENTARY_READINGS: dict[str, set[str]] = {
     "言": {"ゆう"},
-    "如": {"しく", "しか"},
+    "如": {"しく", "しか", "し"},
+    "蔑": {"ないがし"},
 }
 
 #: Whole kanji-RUN readings that are jukujikun / gikun / ateji and cannot be

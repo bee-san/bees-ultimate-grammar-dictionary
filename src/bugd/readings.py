@@ -68,10 +68,14 @@ _DEVOICE = {v: k for k, v in _VOICE.items()}
 #:    only as ごと/ごとし. し is its stem before written okurigana (に如くはない).
 #:  * 蔑 = ないがし — the stem of 蔑ろ（ないがしろ）; KANJIDIC2 has only the
 #:    undotted whole word, so the written okurigana ろ could not be matched.
+#:  * 当 = あた, 謂 = いわ — stems before shortened okurigana, attested by
+#:    JMdict's 当る（あたる）and 謂れ（いわれ）.
 SUPPLEMENTARY_READINGS: dict[str, set[str]] = {
     "言": {"ゆう"},
     "如": {"しく", "しか", "し"},
     "蔑": {"ないがし"},
+    "当": {"あた"},
+    "謂": {"いわ"},
 }
 
 #: Whole kanji-RUN readings that are jukujikun / gikun / ateji and cannot be
@@ -84,6 +88,11 @@ JUKUJIKUN_RUNS: dict[str, set[str]] = {
     "挙句": {"あげく"},                    # 挙句(挙げ句) = あげく
     "甲斐": {"かい", "がい"},              # 甲斐 = かい, rendaku がい (〜がい)
     "下手": {"へた"},                     # 下手 = へた, whole-word reading
+    # JMdict whole-word readings that no per-kanji reading composes.
+    "各々": {"おのおの"},                  # 々 does not repeat the reading here
+    "就中": {"なかんずく", "なかんづく"},
+    "所以": {"ゆえん"},
+    "何某": {"なにがし"},
 }
 
 
@@ -261,6 +270,9 @@ def _covers(expression: str, reading: str) -> bool:
     return True
 
 
+_SMALL_KA = "ゕゖ"
+
+
 def is_exact_reading(expression: str, reading: str) -> bool:
     """Check a literal spelling before promoting a source reading to a headword.
 
@@ -278,6 +290,9 @@ def is_exact_reading(expression: str, reading: str) -> bool:
         if bi == len(base):
             return ri == len(read)
         ch = base[bi]
+        if ch in _SMALL_KA:
+            # ヶ/ヵ (normalized ゖ/ゕ) are counter abbreviations of 箇, read か/が/こ.
+            return any(read.startswith(kana, ri) and walk(bi + 1, ri + 1) for kana in "かがこ")
         if not _KANJI.fullmatch(ch) and ch != "々":
             return read.startswith(ch, ri) and walk(bi + 1, ri + 1)
         for whole, candidates in JUKUJIKUN_RUNS.items():

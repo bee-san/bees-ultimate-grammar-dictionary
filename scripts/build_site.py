@@ -15,6 +15,7 @@ import pathlib
 import shutil
 
 from bugd.english import build_english_dictionary
+from bugd.headword_readings import apply_catalog, load_catalog as load_reading_catalog
 from bugd.imabi_lookup import apply_lookups, load_catalog, restore_lessons
 from bugd.popup_lookup import apply_popup_lookups, load_overrides
 from bugd.pipeline import run_build
@@ -42,6 +43,8 @@ def snapshot_inputs(directory: pathlib.Path) -> tuple[dict, dict, str]:
         corpus = apply_lookups(corpus, load_catalog(directory / "imabi-lookups.json"))
     if "popup-overrides.json" in manifest["files"]:
         corpus = apply_popup_lookups(corpus, load_overrides(directory / "popup-overrides.json"))
+    if "headword-readings.json" in manifest["files"]:
+        corpus = apply_catalog(corpus, load_reading_catalog(directory / "headword-readings.json"))
     if set(corpus["sourceLabels"]) != set(manifest["sources"]):
         raise ValueError("Publication snapshot is missing a source")
     if len(corpus["entries"]) != manifest["entries"]:

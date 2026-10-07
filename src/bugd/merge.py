@@ -36,6 +36,8 @@ class MergedEntry:
     #: False for a headword kept only so its published URL still resolves: no
     #: record is looked up by it, so the popup must not reach it by conjugation.
     lookup: bool = True
+    #: Reviewed reading for a kanji headword no source spells exactly.
+    reading: str | None = None
 
     def __post_init__(self) -> None:
         if not isinstance(self.expression, str) or not self.expression.strip():

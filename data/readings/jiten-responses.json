@@ -1,0 +1,7296 @@
+{
+ "parse": {
+  "いかんを問わず": [
+   {
+    "conjugations": [],
+    "originalText": "いかんを問わず",
+    "readingIndex": 1,
+    "wordId": 2863472
+   }
+  ],
+  "いつの間にか": [
+   {
+    "conjugations": [],
+    "originalText": "いつの間にか",
+    "readingIndex": 0,
+    "wordId": 1188850
+   }
+  ],
+  "い形容詞": [
+   {
+    "conjugations": [],
+    "originalText": "い形容詞",
+    "readingIndex": 1,
+    "wordId": 2421300
+   }
+  ],
+  "うと思う": [
+   {
+    "conjugations": [],
+    "originalText": "う",
+    "readingIndex": 2,
+    "wordId": 2603520
+   },
+   {
+    "conjugations": [],
+    "originalText": "と",
+    "readingIndex": 0,
+    "wordId": 1008490
+   },
+   {
+    "conjugations": [],
+    "originalText": "思う",
+    "readingIndex": 0,
+    "wordId": 1589350
+   }
+  ],
+  "うと思っている": [
+   {
+    "conjugations": [],
+    "originalText": "う",
+    "readingIndex": 2,
+    "wordId": 2603520
+   },
+   {
+    "conjugations": [],
+    "originalText": "と",
+    "readingIndex": 0,
+    "wordId": 1008490
+   },
+   {
+    "conjugations": [
+     "teiru",
+     "",
+     "(te form)",
+     "(unstressed infinitive)"
+    ],
+    "originalText": "思っている",
+    "readingIndex": 0,
+    "wordId": 1589350
+   }
+  ],
+  "お詫び": [
+   {
+    "conjugations": [],
+    "originalText": "お詫び",
+    "readingIndex": 0,
+    "wordId": 2087420
+   }
+  ],
+  "お金": [
+   {
+    "conjugations": [],
+    "originalText": "お金",
+    "readingIndex": 0,
+    "wordId": 1001820
+   }
+  ],
+  "かと思ったら": [
+   {
+    "conjugations": [],
+    "originalText": "か",
+    "readingIndex": 0,
+    "wordId": 2028970
+   },
+   {
+    "conjugations": [],
+    "originalText": "と",
+    "readingIndex": 0,
+    "wordId": 1008490
+   },
+   {
+    "conjugations": [
+     "conditional",
+     "(unstressed infinitive)"
+    ],
+    "originalText": "思ったら",
+    "readingIndex": 0,
+    "wordId": 1589350
+   }
+  ],
+  "から言って": [
+   {
+    "conjugations": [],
+    "originalText": "から",
+    "readingIndex": 0,
+    "wordId": 1002980
+   },
+   {
+    "conjugations": [
+     "(te form)",
+     "(unstressed infinitive)"
+    ],
+    "originalText": "言って",
+    "readingIndex": 0,
+    "wordId": 1587040
+   }
+  ],
+  "か国": [
+   {
+    "conjugations": [],
+    "originalText": "か国",
+    "readingIndex": 2,
+    "wordId": 2086750
+   }
+  ],
+  "か年": [
+   {
+    "conjugations": [],
+    "originalText": "か",
+    "readingIndex": 0,
+    "wordId": 2028970
+   },
+   {
+    "conjugations": [],
+    "originalText": "年",
+    "readingIndex": 0,
+    "wordId": 2084840
+   }
+  ],
+  "か所": [
+   {
+    "conjugations": [],
+    "originalText": "か所",
+    "readingIndex": 4,
+    "wordId": 1590250
+   }
+  ],
+  "か月": [
+   {
+    "conjugations": [],
+    "originalText": "か月",
+    "readingIndex": 3,
+    "wordId": 1194480
+   }
+  ],
+  "か条": [
+   {
+    "conjugations": [],
+    "originalText": "か条",
+    "readingIndex": 2,
+    "wordId": 1194490
+   }
+  ],
+  "が一番": [
+   {
+    "conjugations": [],
+    "originalText": "が",
+    "readingIndex": 0,
+    "wordId": 2028930
+   },
+   {
+    "conjugations": [],
+    "originalText": "一番",
+    "readingIndex": 0,
+    "wordId": 1165970
+   }
+  ],
+  "が気になる": [
+   {
+    "conjugations": [],
+    "originalText": "が",
+    "readingIndex": 0,
+    "wordId": 2028930
+   },
+   {
+    "conjugations": [],
+    "originalText": "気になる",
+    "readingIndex": 0,
+    "wordId": 1221690
+   }
+  ],
+  "ご家族": [
+   {
+    "conjugations": [],
+    "originalText": "ご",
+    "readingIndex": 1,
+    "wordId": 1270190
+   },
+   {
+    "conjugations": [],
+    "originalText": "家族",
+    "readingIndex": 0,
+    "wordId": 1192150
+   }
+  ],
+  "さるこ事がら": [
+   {
+    "conjugations": [],
+    "originalText": "さる",
+    "readingIndex": 1,
+    "wordId": 1394730
+   },
+   {
+    "conjugations": [],
+    "originalText": "こ",
+    "readingIndex": 0,
+    "wordId": 0
+   },
+   {
+    "conjugations": [],
+    "originalText": "事がら",
+    "readingIndex": 1,
+    "wordId": 1314240
+   }
+  ],
+  "さ入れ言葉": [
+   {
+    "conjugations": [],
+    "originalText": "さ入れ言葉",
+    "readingIndex": 0,
+    "wordId": 2846464
+   }
+  ],
+  "その上": [
+   {
+    "conjugations": [],
+    "originalText": "その",
+    "readingIndex": 1,
+    "wordId": 1006830
+   },
+   {
+    "conjugations": [],
+    "originalText": "上",
+    "readingIndex": 0,
+    "wordId": 1352130
+   }
+  ],
+  "その結果": [
+   {
+    "conjugations": [],
+    "originalText": "その結果",
+    "readingIndex": 0,
+    "wordId": 2851217
+   }
+  ],
+  "たいと思う": [
+   {
+    "conjugations": [],
+    "originalText": "たい",
+    "readingIndex": 0,
+    "wordId": 0
+   },
+   {
+    "conjugations": [],
+    "originalText": "と",
+    "readingIndex": 0,
+    "wordId": 1008490
+   },
+   {
+    "conjugations": [],
+    "originalText": "思う",
+    "readingIndex": 0,
+    "wordId": 1589350
+   }
+  ],
+  "た末": [
+   {
+    "conjugations": [],
+    "originalText": "た",
+    "readingIndex": 0,
+    "wordId": 0
+   },
+   {
+    "conjugations": [],
+    "originalText": "末",
+    "readingIndex": 0,
+    "wordId": 1525250
+   }
+  ],
+  "た途端": [
+   {
+    "conjugations": [],
+    "originalText": "た",
+    "readingIndex": 0,
+    "wordId": 0
+   },
+   {
+    "conjugations": [],
+    "originalText": "途端",
+    "readingIndex": 0,
+    "wordId": 1610870
+   }
+  ],
+  "ている場合じゃない": [
+   {
+    "conjugations": [],
+    "originalText": "て",
+    "readingIndex": 1,
+    "wordId": 2086960
+   },
+   {
+    "conjugations": [],
+    "originalText": "いる",
+    "readingIndex": 1,
+    "wordId": 1577980
+   },
+   {
+    "conjugations": [],
+    "originalText": "場合",
+    "readingIndex": 0,
+    "wordId": 1355810
+   },
+   {
+    "conjugations": [],
+    "originalText": "じゃない",
+    "readingIndex": 2,
+    "wordId": 2755350
+   }
+  ],
+  "ている場合はない": [
+   {
+    "conjugations": [],
+    "originalText": "て",
+    "readingIndex": 1,
+    "wordId": 2086960
+   },
+   {
+    "conjugations": [],
+    "originalText": "いる",
+    "readingIndex": 1,
+    "wordId": 1577980
+   },
+   {
+    "conjugations": [],
+    "originalText": "場合",
+    "readingIndex": 0,
+    "wordId": 1355810
+   },
+   {
+    "conjugations": [],
+    "originalText": "は",
+    "readingIndex": 0,
+    "wordId": 2028920
+   },
+   {
+    "conjugations": [],
+    "originalText": "ない",
+    "readingIndex": 1,
+    "wordId": 1529520
+   }
+  ],
+  "てほしいと思う": [
+   {
+    "conjugations": [],
+    "originalText": "て",
+    "readingIndex": 1,
+    "wordId": 2086960
+   },
+   {
+    "conjugations": [],
+    "originalText": "ほしい",
+    "readingIndex": 1,
+    "wordId": 1547330
+   },
+   {
+    "conjugations": [],
+    "originalText": "と",
+    "readingIndex": 0,
+    "wordId": 1008490
+   },
+   {
+    "conjugations": [],
+    "originalText": "思う",
+    "readingIndex": 0,
+    "wordId": 1589350
+   }
+  ],
+  "ても大丈夫だ": [
+   {
+    "conjugations": [],
+    "originalText": "て",
+    "readingIndex": 1,
+    "wordId": 2086960
+   },
+   {
+    "conjugations": [],
+    "originalText": "も",
+    "readingIndex": 0,
+    "wordId": 2028940
+   },
+   {
+    "conjugations": [],
+    "originalText": "大丈夫",
+    "readingIndex": 0,
+    "wordId": 1414150
+   },
+   {
+    "conjugations": [],
+    "originalText": "だ",
+    "readingIndex": 0,
+    "wordId": 2089020
+   }
+  ],
+  "て元々だ": [
+   {
+    "conjugations": [],
+    "originalText": "て",
+    "readingIndex": 0,
+    "wordId": 0
+   },
+   {
+    "conjugations": [],
+    "originalText": "元々",
+    "readingIndex": 0,
+    "wordId": 1605280
+   },
+   {
+    "conjugations": [],
+    "originalText": "だ",
+    "readingIndex": 0,
+    "wordId": 2089020
+   }
+  ],
+  "て大丈夫だ": [
+   {
+    "conjugations": [],
+    "originalText": "て",
+    "readingIndex": 0,
+    "wordId": 0
+   },
+   {
+    "conjugations": [],
+    "originalText": "大丈夫",
+    "readingIndex": 0,
+    "wordId": 1414150
+   },
+   {
+    "conjugations": [],
+    "originalText": "だ",
+    "readingIndex": 0,
+    "wordId": 2089020
+   }
+  ],
+  "て当然だ": [
+   {
+    "conjugations": [],
+    "originalText": "て",
+    "readingIndex": 0,
+    "wordId": 0
+   },
+   {
+    "conjugations": [],
+    "originalText": "当然",
+    "readingIndex": 0,
+    "wordId": 1449190
+   },
+   {
+    "conjugations": [],
+    "originalText": "だ",
+    "readingIndex": 0,
+    "wordId": 2089020
+   }
+  ],
+  "て憚らない": [
+   {
+    "conjugations": [],
+    "originalText": "て",
+    "readingIndex": 0,
+    "wordId": 0
+   },
+   {
+    "conjugations": [
+     "negative",
+     "(mizenkei)",
+     "('a' stem)"
+    ],
+    "originalText": "憚らない",
+    "readingIndex": 0,
+    "wordId": 1631520
+   }
+  ],
+  "て欲しい": [
+   {
+    "conjugations": [],
+    "originalText": "て",
+    "readingIndex": 0,
+    "wordId": 0
+   },
+   {
+    "conjugations": [],
+    "originalText": "欲しい",
+    "readingIndex": 0,
+    "wordId": 1547330
+   }
+  ],
+  "て結構だ": [
+   {
+    "conjugations": [],
+    "originalText": "て",
+    "readingIndex": 0,
+    "wordId": 0
+   },
+   {
+    "conjugations": [],
+    "originalText": "結構",
+    "readingIndex": 0,
+    "wordId": 1254760
+   },
+   {
+    "conjugations": [],
+    "originalText": "だ",
+    "readingIndex": 0,
+    "wordId": 2089020
+   }
+  ],
+  "て頂戴": [
+   {
+    "conjugations": [],
+    "originalText": "て",
+    "readingIndex": 0,
+    "wordId": 0
+   },
+   {
+    "conjugations": [],
+    "originalText": "頂戴",
+    "readingIndex": 0,
+    "wordId": 1430230
+   }
+  ],
+  "できる限り": [
+   {
+    "conjugations": [],
+    "originalText": "できる限り",
+    "readingIndex": 0,
+    "wordId": 1340470
+   }
+  ],
+  "では済まされない": [
+   {
+    "conjugations": [],
+    "originalText": "では",
+    "readingIndex": 0,
+    "wordId": 1008450
+   },
+   {
+    "conjugations": [
+     "negative",
+     "(mizenkei)",
+     "passive",
+     "('a' stem)"
+    ],
+    "originalText": "済まされない",
+    "readingIndex": 0,
+    "wordId": 1295030
+   }
+  ],
+  "で有名": [
+   {
+    "conjugations": [],
+    "originalText": "で",
+    "readingIndex": 0,
+    "wordId": 2028980
+   },
+   {
+    "conjugations": [],
+    "originalText": "有名",
+    "readingIndex": 0,
+    "wordId": 1541620
+   }
+  ],
+  "で有名だ": [
+   {
+    "conjugations": [],
+    "originalText": "で",
+    "readingIndex": 0,
+    "wordId": 2028980
+   },
+   {
+    "conjugations": [],
+    "originalText": "有名",
+    "readingIndex": 0,
+    "wordId": 1541620
+   },
+   {
+    "conjugations": [],
+    "originalText": "だ",
+    "readingIndex": 0,
+    "wordId": 2089020
+   }
+  ],
+  "で言うと": [
+   {
+    "conjugations": [],
+    "originalText": "で",
+    "readingIndex": 0,
+    "wordId": 2028980
+   },
+   {
+    "conjugations": [],
+    "originalText": "言う",
+    "readingIndex": 0,
+    "wordId": 1587040
+   },
+   {
+    "conjugations": [],
+    "originalText": "と",
+    "readingIndex": 0,
+    "wordId": 1008490
+   }
+  ],
+  "というのは事実だ": [
+   {
+    "conjugations": [],
+    "originalText": "というのは",
+    "readingIndex": 1,
+    "wordId": 1008500
+   },
+   {
+    "conjugations": [],
+    "originalText": "事実",
+    "readingIndex": 0,
+    "wordId": 1313960
+   },
+   {
+    "conjugations": [],
+    "originalText": "だ",
+    "readingIndex": 0,
+    "wordId": 2089020
+   }
+  ],
+  "という点から考えると": [
+   {
+    "conjugations": [],
+    "originalText": "という",
+    "readingIndex": 1,
+    "wordId": 1922760
+   },
+   {
+    "conjugations": [],
+    "originalText": "点",
+    "readingIndex": 0,
+    "wordId": 1441390
+   },
+   {
+    "conjugations": [],
+    "originalText": "から",
+    "readingIndex": 0,
+    "wordId": 1002980
+   },
+   {
+    "conjugations": [],
+    "originalText": "考える",
+    "readingIndex": 0,
+    "wordId": 1281020
+   },
+   {
+    "conjugations": [],
+    "originalText": "と",
+    "readingIndex": 0,
+    "wordId": 1008490
+   }
+  ],
+  "という理由で": [
+   {
+    "conjugations": [],
+    "originalText": "という",
+    "readingIndex": 1,
+    "wordId": 1922760
+   },
+   {
+    "conjugations": [],
+    "originalText": "理由",
+    "readingIndex": 0,
+    "wordId": 1550140
+   },
+   {
+    "conjugations": [],
+    "originalText": "で",
+    "readingIndex": 0,
+    "wordId": 2028980
+   }
+  ],
+  "といっても過言ではない": [
+   {
+    "conjugations": [],
+    "originalText": "といっても過言ではない",
+    "readingIndex": 1,
+    "wordId": 2136640
+   }
+  ],
+  "ときた日には": [
+   {
+    "conjugations": [],
+    "originalText": "と",
+    "readingIndex": 0,
+    "wordId": 1008490
+   },
+   {
+    "conjugations": [
+     "past",
+     "(unstressed infinitive)"
+    ],
+    "originalText": "きた",
+    "readingIndex": 2,
+    "wordId": 1547720
+   },
+   {
+    "conjugations": [],
+    "originalText": "日",
+    "readingIndex": 0,
+    "wordId": 1463770
+   },
+   {
+    "conjugations": [],
+    "originalText": "には",
+    "readingIndex": 0,
+    "wordId": 2215430
+   }
+  ],
+  "とは比べものにならない": [
+   {
+    "conjugations": [],
+    "originalText": "とは",
+    "readingIndex": 0,
+    "wordId": 2028950
+   },
+   {
+    "conjugations": [],
+    "originalText": "比べものにならない",
+    "readingIndex": 1,
+    "wordId": 1640500
+   }
+  ],
+  "と並んで": [
+   {
+    "conjugations": [],
+    "originalText": "と",
+    "readingIndex": 0,
+    "wordId": 1008490
+   },
+   {
+    "conjugations": [
+     "(te form)",
+     "(unstressed infinitive)"
+    ],
+    "originalText": "並んで",
+    "readingIndex": 0,
+    "wordId": 1508380
+   }
+  ],
+  "と反対に": [
+   {
+    "conjugations": [],
+    "originalText": "と",
+    "readingIndex": 0,
+    "wordId": 0
+   },
+   {
+    "conjugations": [],
+    "originalText": "反対",
+    "readingIndex": 0,
+    "wordId": 1480670
+   },
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   }
+  ],
+  "と同じくらい": [
+   {
+    "conjugations": [],
+    "originalText": "と",
+    "readingIndex": 0,
+    "wordId": 1008490
+   },
+   {
+    "conjugations": [],
+    "originalText": "同じくらい",
+    "readingIndex": 0,
+    "wordId": 2068060
+   }
+  ],
+  "と同じで": [
+   {
+    "conjugations": [],
+    "originalText": "と",
+    "readingIndex": 0,
+    "wordId": 1008490
+   },
+   {
+    "conjugations": [],
+    "originalText": "同じ",
+    "readingIndex": 0,
+    "wordId": 1451750
+   },
+   {
+    "conjugations": [],
+    "originalText": "で",
+    "readingIndex": 0,
+    "wordId": 2028980
+   }
+  ],
+  "と引き換えに": [
+   {
+    "conjugations": [],
+    "originalText": "と",
+    "readingIndex": 0,
+    "wordId": 1008490
+   },
+   {
+    "conjugations": [],
+    "originalText": "引き換え",
+    "readingIndex": 0,
+    "wordId": 1601550
+   },
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   }
+  ],
+  "と打って変わって": [
+   {
+    "conjugations": [],
+    "originalText": "と",
+    "readingIndex": 0,
+    "wordId": 0
+   },
+   {
+    "conjugations": [
+     "(te form)",
+     "(unstressed infinitive)"
+    ],
+    "originalText": "打って変わって",
+    "readingIndex": 0,
+    "wordId": 1849410
+   }
+  ],
+  "と来たら": [
+   {
+    "conjugations": [],
+    "originalText": "と来たら",
+    "readingIndex": 0,
+    "wordId": 1632150
+   }
+  ],
+  "と比べて": [
+   {
+    "conjugations": [],
+    "originalText": "と比べて",
+    "readingIndex": 0,
+    "wordId": 1008900
+   }
+  ],
+  "と考えられる": [
+   {
+    "conjugations": [],
+    "originalText": "と考えられる",
+    "readingIndex": 0,
+    "wordId": 1008880
+   }
+  ],
+  "と考える": [
+   {
+    "conjugations": [],
+    "originalText": "と",
+    "readingIndex": 0,
+    "wordId": 1008490
+   },
+   {
+    "conjugations": [],
+    "originalText": "考える",
+    "readingIndex": 0,
+    "wordId": 1281020
+   }
+  ],
+  "と言える": [
+   {
+    "conjugations": [],
+    "originalText": "と",
+    "readingIndex": 0,
+    "wordId": 1008490
+   },
+   {
+    "conjugations": [],
+    "originalText": "言える",
+    "readingIndex": 0,
+    "wordId": 1008860
+   }
+  ],
+  "と違って": [
+   {
+    "conjugations": [],
+    "originalText": "と",
+    "readingIndex": 0,
+    "wordId": 1008490
+   },
+   {
+    "conjugations": [
+     "(te form)",
+     "(unstressed infinitive)"
+    ],
+    "originalText": "違って",
+    "readingIndex": 0,
+    "wordId": 1158880
+   }
+  ],
+  "と雖も": [
+   {
+    "conjugations": [],
+    "originalText": "と雖も",
+    "readingIndex": 0,
+    "wordId": 2862364
+   }
+  ],
+  "どちらかと言うと": [
+   {
+    "conjugations": [],
+    "originalText": "どちらかと言うと",
+    "readingIndex": 0,
+    "wordId": 2136160
+   }
+  ],
+  "ないとも限らない": [
+   {
+    "conjugations": [],
+    "originalText": "ないと",
+    "readingIndex": 1,
+    "wordId": 2394710
+   },
+   {
+    "conjugations": [],
+    "originalText": "も",
+    "readingIndex": 0,
+    "wordId": 2028940
+   },
+   {
+    "conjugations": [
+     "negative",
+     "(mizenkei)",
+     "('a' stem)"
+    ],
+    "originalText": "限らない",
+    "readingIndex": 0,
+    "wordId": 1264640
+   }
+  ],
+  "ならいざ知らず": [
+   {
+    "conjugations": [],
+    "originalText": "なら",
+    "readingIndex": 0,
+    "wordId": 1009470
+   },
+   {
+    "conjugations": [],
+    "originalText": "いざ知らず",
+    "readingIndex": 0,
+    "wordId": 2063890
+   }
+  ],
+  "な形容詞": [
+   {
+    "conjugations": [],
+    "originalText": "な形容詞",
+    "readingIndex": 1,
+    "wordId": 2421310
+   }
+  ],
+  "にも関わらず": [
+   {
+    "conjugations": [],
+    "originalText": "にも関わらず",
+    "readingIndex": 0,
+    "wordId": 1612900
+   }
+  ],
+  "によって違う": [
+   {
+    "conjugations": [],
+    "originalText": "によって",
+    "readingIndex": 2,
+    "wordId": 1009640
+   },
+   {
+    "conjugations": [],
+    "originalText": "違う",
+    "readingIndex": 0,
+    "wordId": 1158880
+   }
+  ],
+  "によるところが大きい": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [],
+    "originalText": "よるところが大きい",
+    "readingIndex": 0,
+    "wordId": 2835704
+   }
+  ],
+  "に任せる": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [],
+    "originalText": "任せる",
+    "readingIndex": 0,
+    "wordId": 1467150
+   }
+  ],
+  "に依存": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [],
+    "originalText": "依存",
+    "readingIndex": 0,
+    "wordId": 1575870
+   }
+  ],
+  "に値しない": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [
+     "negative",
+     "(mizenkei)"
+    ],
+    "originalText": "値しない",
+    "readingIndex": 0,
+    "wordId": 1609040
+   }
+  ],
+  "に備えて": [
+   {
+    "conjugations": [],
+    "originalText": "に備えて",
+    "readingIndex": 0,
+    "wordId": 2763540
+   }
+  ],
+  "に先駆けて": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [
+     "(te form)",
+     "(unstressed infinitive)"
+    ],
+    "originalText": "先駆けて",
+    "readingIndex": 0,
+    "wordId": 1387450
+   }
+  ],
+  "に則し": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [
+     "(infinitive)"
+    ],
+    "originalText": "則し",
+    "readingIndex": 1,
+    "wordId": 1404090
+   }
+  ],
+  "に則した": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [
+     "past",
+     "(unstressed infinitive)"
+    ],
+    "originalText": "則した",
+    "readingIndex": 1,
+    "wordId": 1404090
+   }
+  ],
+  "に加えて": [
+   {
+    "conjugations": [],
+    "originalText": "に加えて",
+    "readingIndex": 0,
+    "wordId": 1009720
+   }
+  ],
+  "に即し": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [
+     "(infinitive)"
+    ],
+    "originalText": "即し",
+    "readingIndex": 0,
+    "wordId": 1404090
+   }
+  ],
+  "に即した": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [
+     "past",
+     "(unstressed infinitive)"
+    ],
+    "originalText": "即した",
+    "readingIndex": 0,
+    "wordId": 1404090
+   }
+  ],
+  "に及ばない": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [],
+    "originalText": "及ばない",
+    "readingIndex": 0,
+    "wordId": 1228130
+   }
+  ],
+  "に及ぶ": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [],
+    "originalText": "及ぶ",
+    "readingIndex": 0,
+    "wordId": 1228170
+   }
+  ],
+  "に取って": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [
+     "(te form)",
+     "(unstressed infinitive)"
+    ],
+    "originalText": "取って",
+    "readingIndex": 0,
+    "wordId": 1326980
+   }
+  ],
+  "に合った": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [
+     "past",
+     "(unstressed infinitive)"
+    ],
+    "originalText": "合った",
+    "readingIndex": 0,
+    "wordId": 1284430
+   }
+  ],
+  "に合わせて": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [
+     "(te form)",
+     "(unstressed infinitive)"
+    ],
+    "originalText": "合わせて",
+    "readingIndex": 0,
+    "wordId": 1284480
+   }
+  ],
+  "に向く": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [],
+    "originalText": "向く",
+    "readingIndex": 0,
+    "wordId": 1277080
+   }
+  ],
+  "に帰る": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [],
+    "originalText": "帰る",
+    "readingIndex": 0,
+    "wordId": 1221270
+   }
+  ],
+  "に当たる": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [],
+    "originalText": "当たる",
+    "readingIndex": 0,
+    "wordId": 1448810
+   }
+  ],
+  "に応じて": [
+   {
+    "conjugations": [],
+    "originalText": "に応じて",
+    "readingIndex": 0,
+    "wordId": 1009700
+   }
+  ],
+  "に恥じない": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [
+     "negative",
+     "(mizenkei)"
+    ],
+    "originalText": "恥じない",
+    "readingIndex": 0,
+    "wordId": 1421610
+   }
+  ],
+  "に来る": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [],
+    "originalText": "来る",
+    "readingIndex": 0,
+    "wordId": 1547720
+   }
+  ],
+  "に止まらず": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [
+     "adverbial negative",
+     "(mizenkei)",
+     "('a' stem)"
+    ],
+    "originalText": "止まらず",
+    "readingIndex": 0,
+    "wordId": 1310620
+   }
+  ],
+  "に気をつける": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [],
+    "originalText": "気をつける",
+    "readingIndex": 0,
+    "wordId": 1591990
+   }
+  ],
+  "に準じ": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [
+     "(infinitive)"
+    ],
+    "originalText": "準じ",
+    "readingIndex": 0,
+    "wordId": 1341510
+   }
+  ],
+  "に準じる": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [],
+    "originalText": "準じる",
+    "readingIndex": 0,
+    "wordId": 1341510
+   }
+  ],
+  "に臨んで": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [
+     "(te form)",
+     "(unstressed infinitive)"
+    ],
+    "originalText": "臨んで",
+    "readingIndex": 0,
+    "wordId": 1555560
+   }
+  ],
+  "に行きます": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [
+     "polite",
+     "(infinitive)"
+    ],
+    "originalText": "行きます",
+    "readingIndex": 0,
+    "wordId": 1578850
+   }
+  ],
+  "に託けて": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [
+     "(te form)",
+     "(unstressed infinitive)"
+    ],
+    "originalText": "託けて",
+    "readingIndex": 0,
+    "wordId": 1415890
+   }
+  ],
+  "に負うところが多い": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [],
+    "originalText": "負う",
+    "readingIndex": 0,
+    "wordId": 1497930
+   },
+   {
+    "conjugations": [],
+    "originalText": "ところ",
+    "readingIndex": 3,
+    "wordId": 1343100
+   },
+   {
+    "conjugations": [],
+    "originalText": "が",
+    "readingIndex": 0,
+    "wordId": 2028930
+   },
+   {
+    "conjugations": [],
+    "originalText": "多い",
+    "readingIndex": 0,
+    "wordId": 1407460
+   }
+  ],
+  "に足りない": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [
+     "negative",
+     "(mizenkei)"
+    ],
+    "originalText": "足りない",
+    "readingIndex": 0,
+    "wordId": 1404740
+   }
+  ],
+  "に足りる": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [],
+    "originalText": "足りる",
+    "readingIndex": 0,
+    "wordId": 1404740
+   }
+  ],
+  "に過ぎる": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [],
+    "originalText": "過ぎる",
+    "readingIndex": 0,
+    "wordId": 1195970
+   }
+  ],
+  "に関わりなく": [
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   },
+   {
+    "conjugations": [],
+    "originalText": "関わりなく",
+    "readingIndex": 0,
+    "wordId": 1589880
+   }
+  ],
+  "のいかんを問わず": [
+   {
+    "conjugations": [],
+    "originalText": "の",
+    "readingIndex": 2,
+    "wordId": 1469800
+   },
+   {
+    "conjugations": [],
+    "originalText": "いかんを問わず",
+    "readingIndex": 1,
+    "wordId": 2863472
+   }
+  ],
+  "のも当然だ": [
+   {
+    "conjugations": [],
+    "originalText": "の",
+    "readingIndex": 2,
+    "wordId": 1469800
+   },
+   {
+    "conjugations": [],
+    "originalText": "も",
+    "readingIndex": 0,
+    "wordId": 2028940
+   },
+   {
+    "conjugations": [],
+    "originalText": "当然",
+    "readingIndex": 0,
+    "wordId": 1449190
+   },
+   {
+    "conjugations": [],
+    "originalText": "だ",
+    "readingIndex": 0,
+    "wordId": 2089020
+   }
+  ],
+  "の一つだ": [
+   {
+    "conjugations": [],
+    "originalText": "の",
+    "readingIndex": 2,
+    "wordId": 1469800
+   },
+   {
+    "conjugations": [],
+    "originalText": "一つ",
+    "readingIndex": 0,
+    "wordId": 1160820
+   },
+   {
+    "conjugations": [],
+    "originalText": "だ",
+    "readingIndex": 0,
+    "wordId": 2089020
+   }
+  ],
+  "の名のもとに": [
+   {
+    "conjugations": [],
+    "originalText": "の",
+    "readingIndex": 2,
+    "wordId": 1469800
+   },
+   {
+    "conjugations": [],
+    "originalText": "名",
+    "readingIndex": 0,
+    "wordId": 1531330
+   },
+   {
+    "conjugations": [],
+    "originalText": "の",
+    "readingIndex": 2,
+    "wordId": 1469800
+   },
+   {
+    "conjugations": [],
+    "originalText": "もと",
+    "readingIndex": 2,
+    "wordId": 2004390
+   },
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   }
+  ],
+  "の姿": [
+   {
+    "conjugations": [],
+    "originalText": "の",
+    "readingIndex": 2,
+    "wordId": 1469800
+   },
+   {
+    "conjugations": [],
+    "originalText": "姿",
+    "readingIndex": 0,
+    "wordId": 1307710
+   }
+  ],
+  "の方": [
+   {
+    "conjugations": [],
+    "originalText": "の",
+    "readingIndex": 2,
+    "wordId": 1469800
+   },
+   {
+    "conjugations": [],
+    "originalText": "方",
+    "readingIndex": 0,
+    "wordId": 1516930
+   }
+  ],
+  "の方が": [
+   {
+    "conjugations": [],
+    "originalText": "の",
+    "readingIndex": 2,
+    "wordId": 1469800
+   },
+   {
+    "conjugations": [],
+    "originalText": "方",
+    "readingIndex": 0,
+    "wordId": 1516930
+   },
+   {
+    "conjugations": [],
+    "originalText": "が",
+    "readingIndex": 0,
+    "wordId": 2028930
+   }
+  ],
+  "の方だ": [
+   {
+    "conjugations": [],
+    "originalText": "の",
+    "readingIndex": 2,
+    "wordId": 1469800
+   },
+   {
+    "conjugations": [],
+    "originalText": "方",
+    "readingIndex": 0,
+    "wordId": 1516930
+   },
+   {
+    "conjugations": [],
+    "originalText": "だ",
+    "readingIndex": 0,
+    "wordId": 2089020
+   }
+  ],
+  "の方です": [
+   {
+    "conjugations": [],
+    "originalText": "の",
+    "readingIndex": 2,
+    "wordId": 1469800
+   },
+   {
+    "conjugations": [],
+    "originalText": "方",
+    "readingIndex": 0,
+    "wordId": 1516930
+   },
+   {
+    "conjugations": [],
+    "originalText": "です",
+    "readingIndex": 0,
+    "wordId": 1628500
+   }
+  ],
+  "の末": [
+   {
+    "conjugations": [],
+    "originalText": "の",
+    "readingIndex": 2,
+    "wordId": 1469800
+   },
+   {
+    "conjugations": [],
+    "originalText": "末",
+    "readingIndex": 0,
+    "wordId": 1525250
+   }
+  ],
+  "の極み": [
+   {
+    "conjugations": [],
+    "originalText": "の",
+    "readingIndex": 2,
+    "wordId": 1469800
+   },
+   {
+    "conjugations": [],
+    "originalText": "極み",
+    "readingIndex": 0,
+    "wordId": 1240190
+   }
+  ],
+  "の至りだ": [
+   {
+    "conjugations": [],
+    "originalText": "の",
+    "readingIndex": 2,
+    "wordId": 1469800
+   },
+   {
+    "conjugations": [],
+    "originalText": "至り",
+    "readingIndex": 0,
+    "wordId": 1858420
+   },
+   {
+    "conjugations": [],
+    "originalText": "だ",
+    "readingIndex": 0,
+    "wordId": 2089020
+   }
+  ],
+  "の話では": [
+   {
+    "conjugations": [],
+    "originalText": "の",
+    "readingIndex": 2,
+    "wordId": 1469800
+   },
+   {
+    "conjugations": [],
+    "originalText": "話",
+    "readingIndex": 0,
+    "wordId": 1600900
+   },
+   {
+    "conjugations": [],
+    "originalText": "では",
+    "readingIndex": 0,
+    "wordId": 1008450
+   }
+  ],
+  "の間に": [
+   {
+    "conjugations": [],
+    "originalText": "の",
+    "readingIndex": 2,
+    "wordId": 1469800
+   },
+   {
+    "conjugations": [],
+    "originalText": "間",
+    "readingIndex": 0,
+    "wordId": 1215230
+   },
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   }
+  ],
+  "の際に": [
+   {
+    "conjugations": [],
+    "originalText": "の",
+    "readingIndex": 2,
+    "wordId": 1469800
+   },
+   {
+    "conjugations": [],
+    "originalText": "際",
+    "readingIndex": 0,
+    "wordId": 1296300
+   },
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   }
+  ],
+  "は言うまでもない": [
+   {
+    "conjugations": [],
+    "originalText": "は",
+    "readingIndex": 0,
+    "wordId": 2028920
+   },
+   {
+    "conjugations": [],
+    "originalText": "言うまでもない",
+    "readingIndex": 0,
+    "wordId": 1264350
+   }
+  ],
+  "ばと思います": [
+   {
+    "conjugations": [],
+    "originalText": "ば",
+    "readingIndex": 0,
+    "wordId": 2029040
+   },
+   {
+    "conjugations": [],
+    "originalText": "と",
+    "readingIndex": 0,
+    "wordId": 1008490
+   },
+   {
+    "conjugations": [
+     "polite",
+     "(infinitive)"
+    ],
+    "originalText": "思います",
+    "readingIndex": 0,
+    "wordId": 1589350
+   }
+  ],
+  "へ向く": [
+   {
+    "conjugations": [],
+    "originalText": "へ",
+    "readingIndex": 0,
+    "wordId": 2029000
+   },
+   {
+    "conjugations": [],
+    "originalText": "向く",
+    "readingIndex": 0,
+    "wordId": 1277080
+   }
+  ],
+  "も又": [
+   {
+    "conjugations": [],
+    "originalText": "も",
+    "readingIndex": 0,
+    "wordId": 2028940
+   },
+   {
+    "conjugations": [],
+    "originalText": "又",
+    "readingIndex": 0,
+    "wordId": 1524930
+   }
+  ],
+  "やむを得ない": [
+   {
+    "conjugations": [],
+    "originalText": "やむを得ない",
+    "readingIndex": 0,
+    "wordId": 1612100
+   }
+  ],
+  "や否や": [
+   {
+    "conjugations": [],
+    "originalText": "や否や",
+    "readingIndex": 0,
+    "wordId": 2018190
+   }
+  ],
+  "ように見える": [
+   {
+    "conjugations": [],
+    "originalText": "ように",
+    "readingIndex": 1,
+    "wordId": 1013110
+   },
+   {
+    "conjugations": [],
+    "originalText": "見える",
+    "readingIndex": 0,
+    "wordId": 1259140
+   }
+  ],
+  "ら抜き言葉": [
+   {
+    "conjugations": [],
+    "originalText": "ら抜き言葉",
+    "readingIndex": 0,
+    "wordId": 2087905
+   }
+  ],
+  "を以て": [
+   {
+    "conjugations": [],
+    "originalText": "を以て",
+    "readingIndex": 0,
+    "wordId": 2215420
+   }
+  ],
+  "を前に": [
+   {
+    "conjugations": [],
+    "originalText": "を",
+    "readingIndex": 0,
+    "wordId": 2029010
+   },
+   {
+    "conjugations": [],
+    "originalText": "前",
+    "readingIndex": 0,
+    "wordId": 1392580
+   },
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   }
+  ],
+  "を前提に": [
+   {
+    "conjugations": [],
+    "originalText": "を",
+    "readingIndex": 0,
+    "wordId": 2029010
+   },
+   {
+    "conjugations": [],
+    "originalText": "前提",
+    "readingIndex": 0,
+    "wordId": 1393680
+   },
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   }
+  ],
+  "を加えて": [
+   {
+    "conjugations": [],
+    "originalText": "を",
+    "readingIndex": 0,
+    "wordId": 2029010
+   },
+   {
+    "conjugations": [
+     "(te form)",
+     "(unstressed infinitive)"
+    ],
+    "originalText": "加えて",
+    "readingIndex": 0,
+    "wordId": 1189960
+   }
+  ],
+  "を向く": [
+   {
+    "conjugations": [],
+    "originalText": "を",
+    "readingIndex": 0,
+    "wordId": 2029010
+   },
+   {
+    "conjugations": [],
+    "originalText": "向く",
+    "readingIndex": 0,
+    "wordId": 1277080
+   }
+  ],
+  "を始めとして": [
+   {
+    "conjugations": [],
+    "originalText": "を",
+    "readingIndex": 0,
+    "wordId": 2029010
+   },
+   {
+    "conjugations": [],
+    "originalText": "始め",
+    "readingIndex": 0,
+    "wordId": 1342540
+   },
+   {
+    "conjugations": [],
+    "originalText": "として",
+    "readingIndex": 0,
+    "wordId": 1008590
+   }
+  ],
+  "を振り出しに": [
+   {
+    "conjugations": [],
+    "originalText": "を",
+    "readingIndex": 0,
+    "wordId": 2029010
+   },
+   {
+    "conjugations": [],
+    "originalText": "振り出し",
+    "readingIndex": 0,
+    "wordId": 1602990
+   },
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   }
+  ],
+  "を控え": [
+   {
+    "conjugations": [],
+    "originalText": "を",
+    "readingIndex": 0,
+    "wordId": 2029010
+   },
+   {
+    "conjugations": [
+     "(infinitive)"
+    ],
+    "originalText": "控え",
+    "readingIndex": 0,
+    "wordId": 1279060
+   }
+  ],
+  "を控えた": [
+   {
+    "conjugations": [],
+    "originalText": "を",
+    "readingIndex": 0,
+    "wordId": 2029010
+   },
+   {
+    "conjugations": [
+     "past",
+     "(unstressed infinitive)"
+    ],
+    "originalText": "控えた",
+    "readingIndex": 0,
+    "wordId": 1279060
+   }
+  ],
+  "を頼りに": [
+   {
+    "conjugations": [],
+    "originalText": "を",
+    "readingIndex": 0,
+    "wordId": 2029010
+   },
+   {
+    "conjugations": [],
+    "originalText": "頼り",
+    "readingIndex": 0,
+    "wordId": 1548390
+   },
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   }
+  ],
+  "ウ音便": [
+   {
+    "conjugations": [],
+    "originalText": "ウ",
+    "readingIndex": 1,
+    "wordId": 1172190
+   },
+   {
+    "conjugations": [],
+    "originalText": "音便",
+    "readingIndex": 0,
+    "wordId": 1184070
+   }
+  ],
+  "カ国": [
+   {
+    "conjugations": [],
+    "originalText": "カ国",
+    "readingIndex": 0,
+    "wordId": 2086750
+   }
+  ],
+  "カ変": [
+   {
+    "conjugations": [],
+    "originalText": "カ変",
+    "readingIndex": 0,
+    "wordId": 2146190
+   }
+  ],
+  "カ年": [
+   {
+    "conjugations": [],
+    "originalText": "カ年",
+    "readingIndex": 0,
+    "wordId": 2855520
+   }
+  ],
+  "カ所": [
+   {
+    "conjugations": [],
+    "originalText": "カ所",
+    "readingIndex": 2,
+    "wordId": 1590250
+   }
+  ],
+  "カ月": [
+   {
+    "conjugations": [],
+    "originalText": "カ月",
+    "readingIndex": 2,
+    "wordId": 1194480
+   }
+  ],
+  "カ条": [
+   {
+    "conjugations": [],
+    "originalText": "カ条",
+    "readingIndex": 2,
+    "wordId": 1194490
+   }
+  ],
+  "カ行変格活用": [
+   {
+    "conjugations": [],
+    "originalText": "カ行変格活用",
+    "readingIndex": 0,
+    "wordId": 2146030
+   }
+  ],
+  "ク活用": [
+   {
+    "conjugations": [],
+    "originalText": "ク活用",
+    "readingIndex": 0,
+    "wordId": 2149200
+   }
+  ],
+  "ク語法": [
+   {
+    "conjugations": [],
+    "originalText": "ク語法",
+    "readingIndex": 0,
+    "wordId": 2200850
+   }
+  ],
+  "サ変": [
+   {
+    "conjugations": [],
+    "originalText": "サ変",
+    "readingIndex": 0,
+    "wordId": 2146160
+   }
+  ],
+  "サ変動詞": [
+   {
+    "conjugations": [],
+    "originalText": "サ変動詞",
+    "readingIndex": 0,
+    "wordId": 2690730
+   }
+  ],
+  "サ行": [
+   {
+    "conjugations": [],
+    "originalText": "サ行",
+    "readingIndex": 1,
+    "wordId": 1058890
+   }
+  ],
+  "サ行変格活用": [
+   {
+    "conjugations": [],
+    "originalText": "サ行変格活用",
+    "readingIndex": 0,
+    "wordId": 2146040
+   }
+  ],
+  "シク活用": [
+   {
+    "conjugations": [],
+    "originalText": "シク活用",
+    "readingIndex": 0,
+    "wordId": 2149340
+   }
+  ],
+  "タリ活用": [
+   {
+    "conjugations": [],
+    "originalText": "タリ活用",
+    "readingIndex": 0,
+    "wordId": 2149350
+   }
+  ],
+  "タル形容動詞": [
+   {
+    "conjugations": [],
+    "originalText": "タル",
+    "readingIndex": 0,
+    "wordId": 5048468
+   },
+   {
+    "conjugations": [],
+    "originalText": "形容動詞",
+    "readingIndex": 0,
+    "wordId": 1250450
+   }
+  ],
+  "ナリ活用": [
+   {
+    "conjugations": [],
+    "originalText": "ナリ活用",
+    "readingIndex": 0,
+    "wordId": 2149360
+   }
+  ],
+  "ナル形容動詞": [
+   {
+    "conjugations": [],
+    "originalText": "ナル",
+    "readingIndex": 1,
+    "wordId": 1092330
+   },
+   {
+    "conjugations": [],
+    "originalText": "形容動詞",
+    "readingIndex": 0,
+    "wordId": 1250450
+   }
+  ],
+  "ナ変": [
+   {
+    "conjugations": [],
+    "originalText": "ナ変",
+    "readingIndex": 0,
+    "wordId": 2146180
+   }
+  ],
+  "ナ行変格活用": [
+   {
+    "conjugations": [],
+    "originalText": "ナ行変格活用",
+    "readingIndex": 0,
+    "wordId": 2146050
+   }
+  ],
+  "ノ形容詞": [
+   {
+    "conjugations": [],
+    "originalText": "ノ",
+    "readingIndex": 2,
+    "wordId": 1469800
+   },
+   {
+    "conjugations": [],
+    "originalText": "形容詞",
+    "readingIndex": 0,
+    "wordId": 1250430
+   }
+  ],
+  "ハ行": [
+   {
+    "conjugations": [],
+    "originalText": "ハ行",
+    "readingIndex": 1,
+    "wordId": 1096940
+   }
+  ],
+  "ラ変": [
+   {
+    "conjugations": [],
+    "originalText": "ラ変",
+    "readingIndex": 0,
+    "wordId": 2146170
+   }
+  ],
+  "ラ行変格活用": [
+   {
+    "conjugations": [],
+    "originalText": "ラ行変格活用",
+    "readingIndex": 0,
+    "wordId": 2146070
+   }
+  ],
+  "ローマ字": [
+   {
+    "conjugations": [],
+    "originalText": "ローマ字",
+    "readingIndex": 0,
+    "wordId": 1146810
+   }
+  ],
+  "ローマ字表記": [
+   {
+    "conjugations": [],
+    "originalText": "ローマ字",
+    "readingIndex": 0,
+    "wordId": 1146810
+   },
+   {
+    "conjugations": [],
+    "originalText": "表記",
+    "readingIndex": 0,
+    "wordId": 1489420
+   }
+  ],
+  "ヵ国": [
+   {
+    "conjugations": [],
+    "originalText": "ヵ国",
+    "readingIndex": 3,
+    "wordId": 2086750
+   }
+  ],
+  "ヵ年": [
+   {
+    "conjugations": [],
+    "originalText": "ヵ年",
+    "readingIndex": 1,
+    "wordId": 2855520
+   }
+  ],
+  "ヵ所": [
+   {
+    "conjugations": [],
+    "originalText": "ヵ所",
+    "readingIndex": 5,
+    "wordId": 1590250
+   }
+  ],
+  "ヵ月": [
+   {
+    "conjugations": [],
+    "originalText": "ヵ月",
+    "readingIndex": 1,
+    "wordId": 1194480
+   }
+  ],
+  "ヵ条": [
+   {
+    "conjugations": [],
+    "originalText": "ヵ条",
+    "readingIndex": 2,
+    "wordId": 1194490
+   }
+  ],
+  "ヶ国": [
+   {
+    "conjugations": [],
+    "originalText": "ヶ国",
+    "readingIndex": 1,
+    "wordId": 2086750
+   }
+  ],
+  "ヶ年": [
+   {
+    "conjugations": [],
+    "originalText": "ヶ年",
+    "readingIndex": 3,
+    "wordId": 2855520
+   }
+  ],
+  "ヶ所": [
+   {
+    "conjugations": [],
+    "originalText": "ヶ所",
+    "readingIndex": 3,
+    "wordId": 1590250
+   }
+  ],
+  "ヶ月": [
+   {
+    "conjugations": [],
+    "originalText": "ヶ月",
+    "readingIndex": 0,
+    "wordId": 1194480
+   }
+  ],
+  "ヶ条": [
+   {
+    "conjugations": [],
+    "originalText": "ヶ条",
+    "readingIndex": 3,
+    "wordId": 1194490
+   }
+  ],
+  "一体": [
+   {
+    "conjugations": [],
+    "originalText": "一体",
+    "readingIndex": 0,
+    "wordId": 1164510
+   }
+  ],
+  "一旦": [
+   {
+    "conjugations": [],
+    "originalText": "一旦",
+    "readingIndex": 0,
+    "wordId": 1164650
+   }
+  ],
+  "一段動詞": [
+   {
+    "conjugations": [],
+    "originalText": "一段動詞",
+    "readingIndex": 0,
+    "wordId": 1164700
+   }
+  ],
+  "一段活用": [
+   {
+    "conjugations": [],
+    "originalText": "一段活用",
+    "readingIndex": 0,
+    "wordId": 2146080
+   }
+  ],
+  "一途をたどる": [
+   {
+    "conjugations": [],
+    "originalText": "一途をたどる",
+    "readingIndex": 0,
+    "wordId": 2832694
+   }
+  ],
+  "丁": [
+   {
+    "conjugations": [],
+    "originalText": "丁",
+    "readingIndex": 0,
+    "wordId": 5523362
+   }
+  ],
+  "万が一": [
+   {
+    "conjugations": [],
+    "originalText": "万が一",
+    "readingIndex": 0,
+    "wordId": 1525770
+   }
+  ],
+  "万一": [
+   {
+    "conjugations": [],
+    "originalText": "万一",
+    "readingIndex": 0,
+    "wordId": 1525780
+   }
+  ],
+  "万葉仮名": [
+   {
+    "conjugations": [],
+    "originalText": "万葉仮名",
+    "readingIndex": 0,
+    "wordId": 1526540
+   }
+  ],
+  "上一段活用": [
+   {
+    "conjugations": [],
+    "originalText": "上一段活用",
+    "readingIndex": 0,
+    "wordId": 2146090
+   }
+  ],
+  "上二段活用": [
+   {
+    "conjugations": [],
+    "originalText": "上二段活用",
+    "readingIndex": 0,
+    "wordId": 2146140
+   }
+  ],
+  "上手": [
+   {
+    "conjugations": [],
+    "originalText": "上手",
+    "readingIndex": 0,
+    "wordId": 1353320
+   }
+  ],
+  "下がる": [
+   {
+    "conjugations": [],
+    "originalText": "下がる",
+    "readingIndex": 0,
+    "wordId": 1184160
+   }
+  ],
+  "下げる": [
+   {
+    "conjugations": [],
+    "originalText": "下げる",
+    "readingIndex": 0,
+    "wordId": 1184170
+   }
+  ],
+  "下一段活用": [
+   {
+    "conjugations": [],
+    "originalText": "下一段活用",
+    "readingIndex": 0,
+    "wordId": 2146100
+   }
+  ],
+  "下二段活用": [
+   {
+    "conjugations": [],
+    "originalText": "下二段活用",
+    "readingIndex": 0,
+    "wordId": 2146150
+   }
+  ],
+  "不": [
+   {
+    "conjugations": [],
+    "originalText": "不",
+    "readingIndex": 0,
+    "wordId": 1922780
+   }
+  ],
+  "不可抗力": [
+   {
+    "conjugations": [],
+    "originalText": "不可抗力",
+    "readingIndex": 0,
+    "wordId": 1491420
+   }
+  ],
+  "中を": [
+   {
+    "conjugations": [],
+    "originalText": "中",
+    "readingIndex": 0,
+    "wordId": 1423310
+   },
+   {
+    "conjugations": [],
+    "originalText": "を",
+    "readingIndex": 0,
+    "wordId": 2029010
+   }
+  ],
+  "主に": [
+   {
+    "conjugations": [],
+    "originalText": "主に",
+    "readingIndex": 0,
+    "wordId": 1324990
+   }
+  ],
+  "九九": [
+   {
+    "conjugations": [],
+    "originalText": "九九",
+    "readingIndex": 0,
+    "wordId": 1243650
+   }
+  ],
+  "予定": [
+   {
+    "conjugations": [],
+    "originalText": "予定",
+    "readingIndex": 0,
+    "wordId": 1543240
+   }
+  ],
+  "予定だ": [
+   {
+    "conjugations": [],
+    "originalText": "予定",
+    "readingIndex": 0,
+    "wordId": 1543240
+   },
+   {
+    "conjugations": [],
+    "originalText": "だ",
+    "readingIndex": 0,
+    "wordId": 2089020
+   }
+  ],
+  "事": [
+   {
+    "conjugations": [],
+    "originalText": "事",
+    "readingIndex": 0,
+    "wordId": 1313580
+   }
+  ],
+  "五段動詞": [
+   {
+    "conjugations": [],
+    "originalText": "五段動詞",
+    "readingIndex": 0,
+    "wordId": 1268540
+   }
+  ],
+  "五段活用": [
+   {
+    "conjugations": [],
+    "originalText": "五段活用",
+    "readingIndex": 0,
+    "wordId": 2146110
+   }
+  ],
+  "交ぜ書き": [
+   {
+    "conjugations": [],
+    "originalText": "交ぜ書き",
+    "readingIndex": 0,
+    "wordId": 2446800
+   }
+  ],
+  "人": [
+   {
+    "conjugations": [],
+    "originalText": "人",
+    "readingIndex": 0,
+    "wordId": 1580640
+   }
+  ],
+  "人前": [
+   {
+    "conjugations": [],
+    "originalText": "人前",
+    "readingIndex": 0,
+    "wordId": 1368490
+   }
+  ],
+  "人称代名詞": [
+   {
+    "conjugations": [],
+    "originalText": "人称代名詞",
+    "readingIndex": 0,
+    "wordId": 1730860
+   }
+  ],
+  "今ひとつ": [
+   {
+    "conjugations": [],
+    "originalText": "今ひとつ",
+    "readingIndex": 0,
+    "wordId": 2773910
+   }
+  ],
+  "仕事": [
+   {
+    "conjugations": [],
+    "originalText": "仕事",
+    "readingIndex": 0,
+    "wordId": 1304970
+   }
+  ],
+  "他動詞": [
+   {
+    "conjugations": [],
+    "originalText": "他動詞",
+    "readingIndex": 0,
+    "wordId": 1407290
+   }
+  ],
+  "他受動詞": [
+   {
+    "conjugations": [],
+    "originalText": "他",
+    "readingIndex": 0,
+    "wordId": 1203260
+   },
+   {
+    "conjugations": [],
+    "originalText": "受動",
+    "readingIndex": 0,
+    "wordId": 1329990
+   },
+   {
+    "conjugations": [],
+    "originalText": "詞",
+    "readingIndex": 0,
+    "wordId": 2266770
+   }
+  ],
+  "付く": [
+   {
+    "conjugations": [],
+    "originalText": "付く",
+    "readingIndex": 0,
+    "wordId": 1495740
+   }
+  ],
+  "付ける": [
+   {
+    "conjugations": [],
+    "originalText": "付ける",
+    "readingIndex": 0,
+    "wordId": 1495770
+   }
+  ],
+  "代": [
+   {
+    "conjugations": [],
+    "originalText": "代",
+    "readingIndex": 0,
+    "wordId": 1982860
+   }
+  ],
+  "代り": [
+   {
+    "conjugations": [],
+    "originalText": "代り",
+    "readingIndex": 2,
+    "wordId": 1590770
+   }
+  ],
+  "代名詞": [
+   {
+    "conjugations": [],
+    "originalText": "代名詞",
+    "readingIndex": 0,
+    "wordId": 1412340
+   }
+  ],
+  "代用字": [
+   {
+    "conjugations": [],
+    "originalText": "代用字",
+    "readingIndex": 0,
+    "wordId": 2844110
+   }
+  ],
+  "以上に": [
+   {
+    "conjugations": [],
+    "originalText": "以上",
+    "readingIndex": 0,
+    "wordId": 1155120
+   },
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   }
+  ],
+  "以往": [
+   {
+    "conjugations": [],
+    "originalText": "以往",
+    "readingIndex": 0,
+    "wordId": 1155050
+   }
+  ],
+  "以遠": [
+   {
+    "conjugations": [],
+    "originalText": "以遠",
+    "readingIndex": 0,
+    "wordId": 1155040
+   }
+  ],
+  "以降": [
+   {
+    "conjugations": [],
+    "originalText": "以降",
+    "readingIndex": 0,
+    "wordId": 1155110
+   }
+  ],
+  "仮名遣い": [
+   {
+    "conjugations": [],
+    "originalText": "仮名遣い",
+    "readingIndex": 0,
+    "wordId": 1188100
+   }
+  ],
+  "件": [
+   {
+    "conjugations": [],
+    "originalText": "件",
+    "readingIndex": 0,
+    "wordId": 1255940
+   }
+  ],
+  "伴う": [
+   {
+    "conjugations": [],
+    "originalText": "伴う",
+    "readingIndex": 0,
+    "wordId": 1478370
+   }
+  ],
+  "伺う": [
+   {
+    "conjugations": [],
+    "originalText": "伺う",
+    "readingIndex": 0,
+    "wordId": 1305700
+   }
+  ],
+  "体": [
+   {
+    "conjugations": [],
+    "originalText": "体",
+    "readingIndex": 0,
+    "wordId": 1409140
+   }
+  ],
+  "何から何まで": [
+   {
+    "conjugations": [],
+    "originalText": "何から何まで",
+    "readingIndex": 0,
+    "wordId": 2039000
+   }
+  ],
+  "何といっても": [
+   {
+    "conjugations": [],
+    "originalText": "何といっても",
+    "readingIndex": 1,
+    "wordId": 2026590
+   }
+  ],
+  "何のこと": [
+   {
+    "conjugations": [],
+    "originalText": "何のこと",
+    "readingIndex": 0,
+    "wordId": 2861218
+   }
+  ],
+  "何より": [
+   {
+    "conjugations": [],
+    "originalText": "何より",
+    "readingIndex": 0,
+    "wordId": 1188530
+   }
+  ],
+  "何ら": [
+   {
+    "conjugations": [],
+    "originalText": "何ら",
+    "readingIndex": 0,
+    "wordId": 1189220
+   }
+  ],
+  "何某か": [
+   {
+    "conjugations": [],
+    "originalText": "何某",
+    "readingIndex": 1,
+    "wordId": 1577180
+   },
+   {
+    "conjugations": [],
+    "originalText": "か",
+    "readingIndex": 0,
+    "wordId": 2028970
+   }
+  ],
+  "余": [
+   {
+    "conjugations": [],
+    "originalText": "余",
+    "readingIndex": 0,
+    "wordId": 1543840
+   }
+  ],
+  "余り": [
+   {
+    "conjugations": [],
+    "originalText": "余り",
+    "readingIndex": 0,
+    "wordId": 1584930
+   }
+  ],
+  "使い方": [
+   {
+    "conjugations": [],
+    "originalText": "使い方",
+    "readingIndex": 0,
+    "wordId": 1305950
+   }
+  ],
+  "使役": [
+   {
+    "conjugations": [],
+    "originalText": "使役",
+    "readingIndex": 0,
+    "wordId": 1306180
+   }
+  ],
+  "使役受身": [
+   {
+    "conjugations": [],
+    "originalText": "使役",
+    "readingIndex": 0,
+    "wordId": 1306180
+   },
+   {
+    "conjugations": [],
+    "originalText": "受身",
+    "readingIndex": 0,
+    "wordId": 1329860
+   }
+  ],
+  "促音便": [
+   {
+    "conjugations": [],
+    "originalText": "促音便",
+    "readingIndex": 0,
+    "wordId": 2061525
+   }
+  ],
+  "促音化": [
+   {
+    "conjugations": [],
+    "originalText": "促音",
+    "readingIndex": 0,
+    "wordId": 1403770
+   },
+   {
+    "conjugations": [],
+    "originalText": "化",
+    "readingIndex": 0,
+    "wordId": 2056760
+   }
+  ],
+  "個": [
+   {
+    "conjugations": [],
+    "originalText": "個",
+    "readingIndex": 0,
+    "wordId": 1264740
+   }
+  ],
+  "倒語": [
+   {
+    "conjugations": [],
+    "originalText": "倒語",
+    "readingIndex": 0,
+    "wordId": 1445870
+   }
+  ],
+  "値段": [
+   {
+    "conjugations": [],
+    "originalText": "値段",
+    "readingIndex": 0,
+    "wordId": 1600160
+   }
+  ],
+  "倦ねる": [
+   {
+    "conjugations": [],
+    "originalText": "倦ねる",
+    "readingIndex": 0,
+    "wordId": 2024820
+   }
+  ],
+  "倦む": [
+   {
+    "conjugations": [],
+    "originalText": "倦む",
+    "readingIndex": 0,
+    "wordId": 1578290
+   }
+  ],
+  "催す": [
+   {
+    "conjugations": [],
+    "originalText": "催す",
+    "readingIndex": 0,
+    "wordId": 1292160
+   }
+  ],
+  "傾向がある": [
+   {
+    "conjugations": [],
+    "originalText": "傾向",
+    "readingIndex": 0,
+    "wordId": 1249470
+   },
+   {
+    "conjugations": [],
+    "originalText": "が",
+    "readingIndex": 0,
+    "wordId": 2028930
+   },
+   {
+    "conjugations": [],
+    "originalText": "ある",
+    "readingIndex": 2,
+    "wordId": 1296400
+   }
+  ],
+  "僅かに": [
+   {
+    "conjugations": [],
+    "originalText": "僅か",
+    "readingIndex": 0,
+    "wordId": 1240750
+   },
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   }
+  ],
+  "働く": [
+   {
+    "conjugations": [],
+    "originalText": "働く",
+    "readingIndex": 0,
+    "wordId": 1451150
+   }
+  ],
+  "元号": [
+   {
+    "conjugations": [],
+    "originalText": "元号",
+    "readingIndex": 0,
+    "wordId": 1260800
+   }
+  ],
+  "元気": [
+   {
+    "conjugations": [],
+    "originalText": "元気",
+    "readingIndex": 0,
+    "wordId": 1260720
+   }
+  ],
+  "先": [
+   {
+    "conjugations": [],
+    "originalText": "先",
+    "readingIndex": 0,
+    "wordId": 1387210
+   }
+  ],
+  "先生": [
+   {
+    "conjugations": [],
+    "originalText": "先生",
+    "readingIndex": 0,
+    "wordId": 1387990
+   }
+  ],
+  "先立って": [
+   {
+    "conjugations": [],
+    "originalText": "先立って",
+    "readingIndex": 0,
+    "wordId": 2845662
+   }
+  ],
+  "入る": [
+   {
+    "conjugations": [],
+    "originalText": "入る",
+    "readingIndex": 0,
+    "wordId": 1465590
+   }
+  ],
+  "入れる": [
+   {
+    "conjugations": [],
+    "originalText": "入れる",
+    "readingIndex": 0,
+    "wordId": 1465610
+   }
+  ],
+  "全然": [
+   {
+    "conjugations": [],
+    "originalText": "全然",
+    "readingIndex": 0,
+    "wordId": 1395620
+   }
+  ],
+  "共": [
+   {
+    "conjugations": [],
+    "originalText": "共",
+    "readingIndex": 0,
+    "wordId": 1578040
+   }
+  ],
+  "円": [
+   {
+    "conjugations": [],
+    "originalText": "円",
+    "readingIndex": 0,
+    "wordId": 1175570
+   }
+  ],
+  "冊": [
+   {
+    "conjugations": [],
+    "originalText": "冊",
+    "readingIndex": 0,
+    "wordId": 1298520
+   }
+  ],
+  "再び": [
+   {
+    "conjugations": [],
+    "originalText": "再び",
+    "readingIndex": 0,
+    "wordId": 1292300
+   }
+  ],
+  "再会": [
+   {
+    "conjugations": [],
+    "originalText": "再会",
+    "readingIndex": 0,
+    "wordId": 1292390
+   }
+  ],
+  "冠婚葬祭": [
+   {
+    "conjugations": [],
+    "originalText": "冠婚葬祭",
+    "readingIndex": 0,
+    "wordId": 1210260
+   }
+  ],
+  "凡例": [
+   {
+    "conjugations": [],
+    "originalText": "凡例",
+    "readingIndex": 0,
+    "wordId": 1523690
+   }
+  ],
+  "出る": [
+   {
+    "conjugations": [],
+    "originalText": "出る",
+    "readingIndex": 0,
+    "wordId": 1338240
+   }
+  ],
+  "分かる": [
+   {
+    "conjugations": [],
+    "originalText": "分かる",
+    "readingIndex": 0,
+    "wordId": 1606560
+   }
+  ],
+  "分数": [
+   {
+    "conjugations": [],
+    "originalText": "分数",
+    "readingIndex": 0,
+    "wordId": 1503860
+   }
+  ],
+  "切れ": [
+   {
+    "conjugations": [
+     "(infinitive)"
+    ],
+    "originalText": "切れ",
+    "readingIndex": 0,
+    "wordId": 1384860
+   }
+  ],
+  "切れない": [
+   {
+    "conjugations": [
+     "negative",
+     "(mizenkei)"
+    ],
+    "originalText": "切れない",
+    "readingIndex": 0,
+    "wordId": 1384860
+   }
+  ],
+  "初対面": [
+   {
+    "conjugations": [],
+    "originalText": "初対面",
+    "readingIndex": 0,
+    "wordId": 1342890
+   }
+  ],
+  "前もって": [
+   {
+    "conjugations": [],
+    "originalText": "前もって",
+    "readingIndex": 0,
+    "wordId": 1603820
+   }
+  ],
+  "前者は": [
+   {
+    "conjugations": [],
+    "originalText": "前者",
+    "readingIndex": 0,
+    "wordId": 1393090
+   },
+   {
+    "conjugations": [],
+    "originalText": "は",
+    "readingIndex": 0,
+    "wordId": 2028920
+   }
+  ],
+  "副詞": [
+   {
+    "conjugations": [],
+    "originalText": "副詞",
+    "readingIndex": 0,
+    "wordId": 1500440
+   }
+  ],
+  "助数詞": [
+   {
+    "conjugations": [],
+    "originalText": "助数詞",
+    "readingIndex": 0,
+    "wordId": 1344670
+   }
+  ],
+  "助詞": [
+   {
+    "conjugations": [],
+    "originalText": "助詞",
+    "readingIndex": 0,
+    "wordId": 1344630
+   }
+  ],
+  "動物": [
+   {
+    "conjugations": [],
+    "originalText": "動物",
+    "readingIndex": 0,
+    "wordId": 1451470
+   }
+  ],
+  "化": [
+   {
+    "conjugations": [
+     "(infinitive)"
+    ],
+    "originalText": "化",
+    "readingIndex": 0,
+    "wordId": 1186710
+   }
+  ],
+  "化する": [
+   {
+    "conjugations": [],
+    "originalText": "化する",
+    "readingIndex": 0,
+    "wordId": 1186740
+   }
+  ],
+  "匹": [
+   {
+    "conjugations": [],
+    "originalText": "匹",
+    "readingIndex": 0,
+    "wordId": 1583370
+   }
+  ],
+  "半": [
+   {
+    "conjugations": [],
+    "originalText": "半",
+    "readingIndex": 0,
+    "wordId": 1478750
+   }
+  ],
+  "単位": [
+   {
+    "conjugations": [],
+    "originalText": "単位",
+    "readingIndex": 0,
+    "wordId": 1417040
+   }
+  ],
+  "即ち": [
+   {
+    "conjugations": [],
+    "originalText": "即ち",
+    "readingIndex": 0,
+    "wordId": 1404100
+   }
+  ],
+  "却って": [
+   {
+    "conjugations": [],
+    "originalText": "却って",
+    "readingIndex": 0,
+    "wordId": 1226610
+   }
+  ],
+  "参る": [
+   {
+    "conjugations": [],
+    "originalText": "参る",
+    "readingIndex": 0,
+    "wordId": 1302070
+   }
+  ],
+  "又": [
+   {
+    "conjugations": [],
+    "originalText": "又",
+    "readingIndex": 0,
+    "wordId": 1524930
+   }
+  ],
+  "受身": [
+   {
+    "conjugations": [],
+    "originalText": "受身",
+    "readingIndex": 0,
+    "wordId": 1329860
+   }
+  ],
+  "古す": [
+   {
+    "conjugations": [],
+    "originalText": "古す",
+    "readingIndex": 0,
+    "wordId": 1265090
+   }
+  ],
+  "古典文法": [
+   {
+    "conjugations": [],
+    "originalText": "古典",
+    "readingIndex": 0,
+    "wordId": 1265860
+   },
+   {
+    "conjugations": [],
+    "originalText": "文法",
+    "readingIndex": 0,
+    "wordId": 1505600
+   }
+  ],
+  "古文": [
+   {
+    "conjugations": [],
+    "originalText": "古文",
+    "readingIndex": 0,
+    "wordId": 1578490
+   }
+  ],
+  "古語": [
+   {
+    "conjugations": [],
+    "originalText": "古語",
+    "readingIndex": 0,
+    "wordId": 1265360
+   }
+  ],
+  "句点": [
+   {
+    "conjugations": [],
+    "originalText": "句点",
+    "readingIndex": 0,
+    "wordId": 1244030
+   }
+  ],
+  "句読点": [
+   {
+    "conjugations": [],
+    "originalText": "句読点",
+    "readingIndex": 0,
+    "wordId": 1244050
+   }
+  ],
+  "可能": [
+   {
+    "conjugations": [],
+    "originalText": "可能",
+    "readingIndex": 0,
+    "wordId": 1191060
+   }
+  ],
+  "可能形": [
+   {
+    "conjugations": [],
+    "originalText": "可能形",
+    "readingIndex": 0,
+    "wordId": 2394170
+   }
+  ],
+  "台": [
+   {
+    "conjugations": [],
+    "originalText": "台",
+    "readingIndex": 0,
+    "wordId": 1412560
+   }
+  ],
+  "各": [
+   {
+    "conjugations": [],
+    "originalText": "各",
+    "readingIndex": 0,
+    "wordId": 1204860
+   }
+  ],
+  "各々": [
+   {
+    "conjugations": [],
+    "originalText": "各々",
+    "readingIndex": 0,
+    "wordId": 2826190
+   }
+  ],
+  "合わせる": [
+   {
+    "conjugations": [],
+    "originalText": "合わせる",
+    "readingIndex": 0,
+    "wordId": 1284480
+   }
+  ],
+  "同じ": [
+   {
+    "conjugations": [],
+    "originalText": "同じ",
+    "readingIndex": 0,
+    "wordId": 1451750
+   }
+  ],
+  "名": [
+   {
+    "conjugations": [],
+    "originalText": "名",
+    "readingIndex": 0,
+    "wordId": 1531330
+   }
+  ],
+  "名乗り訓": [
+   {
+    "conjugations": [],
+    "originalText": "名乗り",
+    "readingIndex": 0,
+    "wordId": 1531630
+   },
+   {
+    "conjugations": [],
+    "originalText": "訓",
+    "readingIndex": 0,
+    "wordId": 1956150
+   }
+  ],
+  "名詞": [
+   {
+    "conjugations": [],
+    "originalText": "名詞",
+    "readingIndex": 0,
+    "wordId": 1531570
+   }
+  ],
+  "名詞化": [
+   {
+    "conjugations": [],
+    "originalText": "名詞化",
+    "readingIndex": 0,
+    "wordId": 2846553
+   }
+  ],
+  "向けに": [
+   {
+    "conjugations": [
+     "(infinitive)"
+    ],
+    "originalText": "向け",
+    "readingIndex": 0,
+    "wordId": 1277100
+   },
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   }
+  ],
+  "君が代": [
+   {
+    "conjugations": [],
+    "originalText": "君が代",
+    "readingIndex": 0,
+    "wordId": 1630470
+   }
+  ],
+  "否": [
+   {
+    "conjugations": [],
+    "originalText": "否",
+    "readingIndex": 0,
+    "wordId": 2857381
+   }
+  ],
+  "吹く": [
+   {
+    "conjugations": [],
+    "originalText": "吹く",
+    "readingIndex": 0,
+    "wordId": 1370760
+   }
+  ],
+  "味": [
+   {
+    "conjugations": [],
+    "originalText": "味",
+    "readingIndex": 0,
+    "wordId": 1526960
+   }
+  ],
+  "呼応の副詞": [
+   {
+    "conjugations": [],
+    "originalText": "呼応",
+    "readingIndex": 0,
+    "wordId": 1266450
+   },
+   {
+    "conjugations": [],
+    "originalText": "の",
+    "readingIndex": 2,
+    "wordId": 1469800
+   },
+   {
+    "conjugations": [],
+    "originalText": "副詞",
+    "readingIndex": 0,
+    "wordId": 1500440
+   }
+  ],
+  "命令形": [
+   {
+    "conjugations": [],
+    "originalText": "命令形",
+    "readingIndex": 0,
+    "wordId": 1532180
+   }
+  ],
+  "和製英語": [
+   {
+    "conjugations": [],
+    "originalText": "和製英語",
+    "readingIndex": 0,
+    "wordId": 1639060
+   }
+  ],
+  "品": [
+   {
+    "conjugations": [],
+    "originalText": "品",
+    "readingIndex": 0,
+    "wordId": 1583470
+   }
+  ],
+  "品詞": [
+   {
+    "conjugations": [],
+    "originalText": "品詞",
+    "readingIndex": 0,
+    "wordId": 1490570
+   }
+  ],
+  "喜ぶ": [
+   {
+    "conjugations": [],
+    "originalText": "喜ぶ",
+    "readingIndex": 0,
+    "wordId": 1218760
+   }
+  ],
+  "四つ仮名": [
+   {
+    "conjugations": [],
+    "originalText": "四つ仮名",
+    "readingIndex": 0,
+    "wordId": 2828879
+   }
+  ],
+  "四字熟語": [
+   {
+    "conjugations": [],
+    "originalText": "四字熟語",
+    "readingIndex": 0,
+    "wordId": 1307220
+   }
+  ],
+  "四季": [
+   {
+    "conjugations": [],
+    "originalText": "四季",
+    "readingIndex": 0,
+    "wordId": 1307130
+   }
+  ],
+  "四段活用": [
+   {
+    "conjugations": [],
+    "originalText": "四段活用",
+    "readingIndex": 0,
+    "wordId": 2110990
+   }
+  ],
+  "回": [
+   {
+    "conjugations": [],
+    "originalText": "回",
+    "readingIndex": 0,
+    "wordId": 1199330
+   }
+  ],
+  "回す": [
+   {
+    "conjugations": [],
+    "originalText": "回す",
+    "readingIndex": 0,
+    "wordId": 1199350
+   }
+  ],
+  "回目": [
+   {
+    "conjugations": [],
+    "originalText": "回目",
+    "readingIndex": 0,
+    "wordId": 1199780
+   }
+  ],
+  "国字": [
+   {
+    "conjugations": [],
+    "originalText": "国字",
+    "readingIndex": 0,
+    "wordId": 1286650
+   }
+  ],
+  "地理": [
+   {
+    "conjugations": [],
+    "originalText": "地理",
+    "readingIndex": 0,
+    "wordId": 1421540
+   }
+  ],
+  "垂らす": [
+   {
+    "conjugations": [],
+    "originalText": "垂らす",
+    "readingIndex": 0,
+    "wordId": 1370840
+   }
+  ],
+  "垂れる": [
+   {
+    "conjugations": [],
+    "originalText": "垂れる",
+    "readingIndex": 0,
+    "wordId": 1370870
+   }
+  ],
+  "基": [
+   {
+    "conjugations": [],
+    "originalText": "基",
+    "readingIndex": 3,
+    "wordId": 1260670
+   }
+  ],
+  "場合じゃない": [
+   {
+    "conjugations": [],
+    "originalText": "場合",
+    "readingIndex": 0,
+    "wordId": 1355810
+   },
+   {
+    "conjugations": [],
+    "originalText": "じゃない",
+    "readingIndex": 2,
+    "wordId": 2755350
+   }
+  ],
+  "塗れ": [
+   {
+    "conjugations": [
+     "imperative"
+    ],
+    "originalText": "塗れ",
+    "readingIndex": 0,
+    "wordId": 1444270
+   }
+  ],
+  "増す": [
+   {
+    "conjugations": [],
+    "originalText": "増す",
+    "readingIndex": 0,
+    "wordId": 1403120
+   }
+  ],
+  "変える": [
+   {
+    "conjugations": [],
+    "originalText": "変える",
+    "readingIndex": 0,
+    "wordId": 1510650
+   }
+  ],
+  "変わる": [
+   {
+    "conjugations": [],
+    "originalText": "変わる",
+    "readingIndex": 0,
+    "wordId": 1510790
+   }
+  ],
+  "変体仮名": [
+   {
+    "conjugations": [],
+    "originalText": "変体仮名",
+    "readingIndex": 0,
+    "wordId": 1511340
+   }
+  ],
+  "多い": [
+   {
+    "conjugations": [],
+    "originalText": "多い",
+    "readingIndex": 0,
+    "wordId": 1407460
+   }
+  ],
+  "夜": [
+   {
+    "conjugations": [],
+    "originalText": "夜",
+    "readingIndex": 0,
+    "wordId": 1536350
+   }
+  ],
+  "大好き": [
+   {
+    "conjugations": [],
+    "originalText": "大好き",
+    "readingIndex": 0,
+    "wordId": 1413660
+   }
+  ],
+  "大字": [
+   {
+    "conjugations": [],
+    "originalText": "大字",
+    "readingIndex": 0,
+    "wordId": 1413950
+   }
+  ],
+  "天文": [
+   {
+    "conjugations": [],
+    "originalText": "天文",
+    "readingIndex": 0,
+    "wordId": 1440260
+   }
+  ],
+  "太陽系": [
+   {
+    "conjugations": [],
+    "originalText": "太陽系",
+    "readingIndex": 0,
+    "wordId": 1661170
+   }
+  ],
+  "失礼します": [
+   {
+    "conjugations": [],
+    "originalText": "失礼します",
+    "readingIndex": 0,
+    "wordId": 2276200
+   }
+  ],
+  "契機": [
+   {
+    "conjugations": [],
+    "originalText": "契機",
+    "readingIndex": 0,
+    "wordId": 1250180
+   }
+  ],
+  "女": [
+   {
+    "conjugations": [],
+    "originalText": "女",
+    "readingIndex": 0,
+    "wordId": 1344930
+   }
+  ],
+  "好き": [
+   {
+    "conjugations": [],
+    "originalText": "好き",
+    "readingIndex": 0,
+    "wordId": 1277450
+   }
+  ],
+  "如く": [
+   {
+    "conjugations": [],
+    "originalText": "如く",
+    "readingIndex": 0,
+    "wordId": 1466920
+   }
+  ],
+  "如し": [
+   {
+    "conjugations": [],
+    "originalText": "如し",
+    "readingIndex": 0,
+    "wordId": 1466930
+   }
+  ],
+  "姿": [
+   {
+    "conjugations": [],
+    "originalText": "姿",
+    "readingIndex": 0,
+    "wordId": 1307710
+   }
+  ],
+  "嫌い": [
+   {
+    "conjugations": [],
+    "originalText": "嫌い",
+    "readingIndex": 0,
+    "wordId": 1257240
+   }
+  ],
+  "嫌う": [
+   {
+    "conjugations": [],
+    "originalText": "嫌う",
+    "readingIndex": 0,
+    "wordId": 1257250
+   }
+  ],
+  "子音": [
+   {
+    "conjugations": [],
+    "originalText": "子音",
+    "readingIndex": 0,
+    "wordId": 1307800
+   }
+  ],
+  "定まる": [
+   {
+    "conjugations": [],
+    "originalText": "定まる",
+    "readingIndex": 0,
+    "wordId": 1435370
+   }
+  ],
+  "家族": [
+   {
+    "conjugations": [],
+    "originalText": "家族",
+    "readingIndex": 0,
+    "wordId": 1192150
+   }
+  ],
+  "対": [
+   {
+    "conjugations": [],
+    "originalText": "対",
+    "readingIndex": 0,
+    "wordId": 1409800
+   }
+  ],
+  "小数": [
+   {
+    "conjugations": [],
+    "originalText": "小数",
+    "readingIndex": 0,
+    "wordId": 1348370
+   }
+  ],
+  "少し": [
+   {
+    "conjugations": [],
+    "originalText": "少し",
+    "readingIndex": 0,
+    "wordId": 1348870
+   }
+  ],
+  "少ない": [
+   {
+    "conjugations": [],
+    "originalText": "少ない",
+    "readingIndex": 0,
+    "wordId": 1348910
+   }
+  ],
+  "尚更": [
+   {
+    "conjugations": [],
+    "originalText": "尚更",
+    "readingIndex": 0,
+    "wordId": 1349320
+   }
+  ],
+  "就中": [
+   {
+    "conjugations": [],
+    "originalText": "就中",
+    "readingIndex": 0,
+    "wordId": 1331770
+   }
+  ],
+  "尽くめ": [
+   {
+    "conjugations": [],
+    "originalText": "尽くめ",
+    "readingIndex": 0,
+    "wordId": 2008570
+   }
+  ],
+  "尾": [
+   {
+    "conjugations": [],
+    "originalText": "尾",
+    "readingIndex": 0,
+    "wordId": 1485770
+   }
+  ],
+  "履く": [
+   {
+    "conjugations": [],
+    "originalText": "履く",
+    "readingIndex": 0,
+    "wordId": 1607260
+   }
+  ],
+  "左右する": [
+   {
+    "conjugations": [
+     "(suru verb noun stem)"
+    ],
+    "originalText": "左右する",
+    "readingIndex": 0,
+    "wordId": 1290810
+   }
+  ],
+  "己": [
+   {
+    "conjugations": [],
+    "originalText": "己",
+    "readingIndex": 0,
+    "wordId": 1266890
+   }
+  ],
+  "已然形": [
+   {
+    "conjugations": [],
+    "originalText": "已然形",
+    "readingIndex": 0,
+    "wordId": 1634680
+   }
+  ],
+  "巻": [
+   {
+    "conjugations": [],
+    "originalText": "巻",
+    "readingIndex": 0,
+    "wordId": 1211140
+   }
+  ],
+  "巻く": [
+   {
+    "conjugations": [],
+    "originalText": "巻く",
+    "readingIndex": 0,
+    "wordId": 1211200
+   }
+  ],
+  "帰ります": [
+   {
+    "conjugations": [
+     "polite",
+     "(infinitive)"
+    ],
+    "originalText": "帰ります",
+    "readingIndex": 0,
+    "wordId": 1221270
+   }
+  ],
+  "平仮名": [
+   {
+    "conjugations": [],
+    "originalText": "平仮名",
+    "readingIndex": 0,
+    "wordId": 1507090
+   }
+  ],
+  "年": [
+   {
+    "conjugations": [],
+    "originalText": "年",
+    "readingIndex": 0,
+    "wordId": 2084840
+   }
+  ],
+  "幸い": [
+   {
+    "conjugations": [],
+    "originalText": "幸い",
+    "readingIndex": 0,
+    "wordId": 1278380
+   }
+  ],
+  "幸いなことに": [
+   {
+    "conjugations": [],
+    "originalText": "幸いなことに",
+    "readingIndex": 0,
+    "wordId": 2840784
+   }
+  ],
+  "幼児語": [
+   {
+    "conjugations": [],
+    "originalText": "幼児語",
+    "readingIndex": 0,
+    "wordId": 1545180
+   }
+  ],
+  "幽霊字": [
+   {
+    "conjugations": [],
+    "originalText": "幽霊",
+    "readingIndex": 0,
+    "wordId": 1540590
+   },
+   {
+    "conjugations": [],
+    "originalText": "字",
+    "readingIndex": 0,
+    "wordId": 1315130
+   }
+  ],
+  "幾": [
+   {
+    "conjugations": [],
+    "originalText": "幾",
+    "readingIndex": 0,
+    "wordId": 1219950
+   }
+  ],
+  "序数": [
+   {
+    "conjugations": [],
+    "originalText": "序数",
+    "readingIndex": 0,
+    "wordId": 1711780
+   }
+  ],
+  "度": [
+   {
+    "conjugations": [],
+    "originalText": "度",
+    "readingIndex": 0,
+    "wordId": 1445160
+   }
+  ],
+  "度量衡": [
+   {
+    "conjugations": [],
+    "originalText": "度量衡",
+    "readingIndex": 0,
+    "wordId": 1445260
+   }
+  ],
+  "引く": [
+   {
+    "conjugations": [],
+    "originalText": "引く",
+    "readingIndex": 0,
+    "wordId": 1169250
+   }
+  ],
+  "張る": [
+   {
+    "conjugations": [],
+    "originalText": "張る",
+    "readingIndex": 0,
+    "wordId": 1427900
+   }
+  ],
+  "強いて": [
+   {
+    "conjugations": [],
+    "originalText": "強いて",
+    "readingIndex": 0,
+    "wordId": 1236080
+   }
+  ],
+  "弾み": [
+   {
+    "conjugations": [],
+    "originalText": "弾み",
+    "readingIndex": 0,
+    "wordId": 1419390
+   }
+  ],
+  "当たり": [
+   {
+    "conjugations": [],
+    "originalText": "当たり",
+    "readingIndex": 0,
+    "wordId": 1448780
+   }
+  ],
+  "当たる": [
+   {
+    "conjugations": [],
+    "originalText": "当たる",
+    "readingIndex": 0,
+    "wordId": 1448810
+   }
+  ],
+  "当って": [
+   {
+    "conjugations": [
+     "(te form)",
+     "(unstressed infinitive)"
+    ],
+    "originalText": "当って",
+    "readingIndex": 1,
+    "wordId": 1448810
+   }
+  ],
+  "当て字": [
+   {
+    "conjugations": [],
+    "originalText": "当て字",
+    "readingIndex": 0,
+    "wordId": 1448890
+   }
+  ],
+  "当然": [
+   {
+    "conjugations": [],
+    "originalText": "当然",
+    "readingIndex": 0,
+    "wordId": 1449190
+   }
+  ],
+  "形容動詞": [
+   {
+    "conjugations": [],
+    "originalText": "形容動詞",
+    "readingIndex": 0,
+    "wordId": 1250450
+   }
+  ],
+  "形容詞": [
+   {
+    "conjugations": [],
+    "originalText": "形容詞",
+    "readingIndex": 0,
+    "wordId": 1250430
+   }
+  ],
+  "形容詞語幹": [
+   {
+    "conjugations": [],
+    "originalText": "形容詞",
+    "readingIndex": 0,
+    "wordId": 1250430
+   },
+   {
+    "conjugations": [],
+    "originalText": "語幹",
+    "readingIndex": 0,
+    "wordId": 1271020
+   }
+  ],
+  "後者は": [
+   {
+    "conjugations": [],
+    "originalText": "後者",
+    "readingIndex": 0,
+    "wordId": 1269720
+   },
+   {
+    "conjugations": [],
+    "originalText": "は",
+    "readingIndex": 0,
+    "wordId": 2028920
+   }
+  ],
+  "得意": [
+   {
+    "conjugations": [],
+    "originalText": "得意",
+    "readingIndex": 0,
+    "wordId": 1454510
+   }
+  ],
+  "必ず": [
+   {
+    "conjugations": [],
+    "originalText": "必ず",
+    "readingIndex": 0,
+    "wordId": 1487400
+   }
+  ],
+  "必要がある": [
+   {
+    "conjugations": [],
+    "originalText": "必要",
+    "readingIndex": 0,
+    "wordId": 1487660
+   },
+   {
+    "conjugations": [],
+    "originalText": "が",
+    "readingIndex": 0,
+    "wordId": 2028930
+   },
+   {
+    "conjugations": [],
+    "originalText": "ある",
+    "readingIndex": 2,
+    "wordId": 1296400
+   }
+  ],
+  "忘れる": [
+   {
+    "conjugations": [],
+    "originalText": "忘れる",
+    "readingIndex": 0,
+    "wordId": 1519210
+   }
+  ],
+  "怒る": [
+   {
+    "conjugations": [],
+    "originalText": "怒る",
+    "readingIndex": 0,
+    "wordId": 1445690
+   }
+  ],
+  "思いきや": [
+   {
+    "conjugations": [],
+    "originalText": "思いきや",
+    "readingIndex": 0,
+    "wordId": 2066550
+   }
+  ],
+  "思うに": [
+   {
+    "conjugations": [],
+    "originalText": "思うに",
+    "readingIndex": 0,
+    "wordId": 2394680
+   }
+  ],
+  "思うように": [
+   {
+    "conjugations": [],
+    "originalText": "思うように",
+    "readingIndex": 0,
+    "wordId": 2826766
+   }
+  ],
+  "思しい": [
+   {
+    "conjugations": [],
+    "originalText": "思しい",
+    "readingIndex": 0,
+    "wordId": 1309450
+   }
+  ],
+  "思わしい": [
+   {
+    "conjugations": [],
+    "originalText": "思わしい",
+    "readingIndex": 0,
+    "wordId": 2011000
+   }
+  ],
+  "急ぐ": [
+   {
+    "conjugations": [],
+    "originalText": "急ぐ",
+    "readingIndex": 0,
+    "wordId": 1228650
+   }
+  ],
+  "惑星": [
+   {
+    "conjugations": [],
+    "originalText": "惑星",
+    "readingIndex": 0,
+    "wordId": 1562600
+   }
+  ],
+  "意向形": [
+   {
+    "conjugations": [],
+    "originalText": "意向形",
+    "readingIndex": 0,
+    "wordId": 2826588
+   }
+  ],
+  "愛する": [
+   {
+    "conjugations": [],
+    "originalText": "愛する",
+    "readingIndex": 0,
+    "wordId": 1150450
+   }
+  ],
+  "感動詞": [
+   {
+    "conjugations": [],
+    "originalText": "感動詞",
+    "readingIndex": 0,
+    "wordId": 1212580
+   }
+  ],
+  "感謝": [
+   {
+    "conjugations": [],
+    "originalText": "感謝",
+    "readingIndex": 0,
+    "wordId": 1212380
+   }
+  ],
+  "慣用句": [
+   {
+    "conjugations": [],
+    "originalText": "慣用句",
+    "readingIndex": 0,
+    "wordId": 1212730
+   }
+  ],
+  "憎い": [
+   {
+    "conjugations": [],
+    "originalText": "憎い",
+    "readingIndex": 0,
+    "wordId": 1403390
+   }
+  ],
+  "成す": [
+   {
+    "conjugations": [],
+    "originalText": "成す",
+    "readingIndex": 0,
+    "wordId": 1157130
+   }
+  ],
+  "戸": [
+   {
+    "conjugations": [],
+    "originalText": "戸",
+    "readingIndex": 0,
+    "wordId": 1266970
+   }
+  ],
+  "房": [
+   {
+    "conjugations": [],
+    "originalText": "房",
+    "readingIndex": 0,
+    "wordId": 1519300
+   }
+  ],
+  "所以": [
+   {
+    "conjugations": [],
+    "originalText": "所以",
+    "readingIndex": 0,
+    "wordId": 1343130
+   }
+  ],
+  "折りに": [
+   {
+    "conjugations": [],
+    "originalText": "折り",
+    "readingIndex": 1,
+    "wordId": 1385780
+   },
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   }
+  ],
+  "折角": [
+   {
+    "conjugations": [],
+    "originalText": "折角",
+    "readingIndex": 0,
+    "wordId": 1596090
+   }
+  ],
+  "抜く": [
+   {
+    "conjugations": [],
+    "originalText": "抜く",
+    "readingIndex": 0,
+    "wordId": 1478190
+   }
+  ],
+  "押して": [
+   {
+    "conjugations": [],
+    "originalText": "押して",
+    "readingIndex": 0,
+    "wordId": 1852820
+   }
+  ],
+  "押し切って": [
+   {
+    "conjugations": [
+     "(te form)",
+     "(unstressed infinitive)"
+    ],
+    "originalText": "押し切って",
+    "readingIndex": 0,
+    "wordId": 1180270
+   }
+  ],
+  "拍子に": [
+   {
+    "conjugations": [],
+    "originalText": "拍子",
+    "readingIndex": 0,
+    "wordId": 1583030
+   },
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   }
+  ],
+  "括弧": [
+   {
+    "conjugations": [],
+    "originalText": "括弧",
+    "readingIndex": 0,
+    "wordId": 1208240
+   }
+  ],
+  "指示代名詞": [
+   {
+    "conjugations": [],
+    "originalText": "指示代名詞",
+    "readingIndex": 0,
+    "wordId": 1759600
+   }
+  ],
+  "挨拶": [
+   {
+    "conjugations": [],
+    "originalText": "挨拶",
+    "readingIndex": 0,
+    "wordId": 1151120
+   }
+  ],
+  "捕まる": [
+   {
+    "conjugations": [],
+    "originalText": "捕まる",
+    "readingIndex": 0,
+    "wordId": 1514110
+   }
+  ],
+  "捲る": [
+   {
+    "conjugations": [],
+    "originalText": "捲る",
+    "readingIndex": 0,
+    "wordId": 1257800
+   }
+  ],
+  "接尾辞": [
+   {
+    "conjugations": [],
+    "originalText": "接尾辞",
+    "readingIndex": 0,
+    "wordId": 1385670
+   }
+  ],
+  "接続詞": [
+   {
+    "conjugations": [],
+    "originalText": "接続詞",
+    "readingIndex": 0,
+    "wordId": 1385510
+   }
+  ],
+  "接頭辞": [
+   {
+    "conjugations": [],
+    "originalText": "接頭辞",
+    "readingIndex": 0,
+    "wordId": 1385640
+   }
+  ],
+  "損じる": [
+   {
+    "conjugations": [],
+    "originalText": "損じる",
+    "readingIndex": 0,
+    "wordId": 1406680
+   }
+  ],
+  "撥音便": [
+   {
+    "conjugations": [],
+    "originalText": "撥音便",
+    "readingIndex": 0,
+    "wordId": 2061520
+   }
+  ],
+  "撥音化": [
+   {
+    "conjugations": [],
+    "originalText": "撥音",
+    "readingIndex": 0,
+    "wordId": 1567740
+   },
+   {
+    "conjugations": [],
+    "originalText": "化",
+    "readingIndex": 0,
+    "wordId": 2056760
+   }
+  ],
+  "撥音添加": [
+   {
+    "conjugations": [],
+    "originalText": "撥音",
+    "readingIndex": 0,
+    "wordId": 1567740
+   },
+   {
+    "conjugations": [],
+    "originalText": "添加",
+    "readingIndex": 0,
+    "wordId": 1440820
+   }
+  ],
+  "擬声語": [
+   {
+    "conjugations": [],
+    "originalText": "擬声語",
+    "readingIndex": 0,
+    "wordId": 1225370
+   }
+  ],
+  "擬情語": [
+   {
+    "conjugations": [],
+    "originalText": "擬情語",
+    "readingIndex": 0,
+    "wordId": 2827194
+   }
+  ],
+  "擬態語": [
+   {
+    "conjugations": [],
+    "originalText": "擬態語",
+    "readingIndex": 0,
+    "wordId": 1225390
+   }
+  ],
+  "擬音語": [
+   {
+    "conjugations": [],
+    "originalText": "擬音語",
+    "readingIndex": 0,
+    "wordId": 1984280
+   }
+  ],
+  "故": [
+   {
+    "conjugations": [],
+    "originalText": "故",
+    "readingIndex": 0,
+    "wordId": 1267120
+   }
+  ],
+  "敢えて": [
+   {
+    "conjugations": [],
+    "originalText": "敢えて",
+    "readingIndex": 0,
+    "wordId": 1212850
+   }
+  ],
+  "敬称": [
+   {
+    "conjugations": [],
+    "originalText": "敬称",
+    "readingIndex": 0,
+    "wordId": 1250760
+   }
+  ],
+  "敬語": [
+   {
+    "conjugations": [],
+    "originalText": "敬語",
+    "readingIndex": 0,
+    "wordId": 1250750
+   }
+  ],
+  "数": [
+   {
+    "conjugations": [],
+    "originalText": "数",
+    "readingIndex": 0,
+    "wordId": 1580825
+   }
+  ],
+  "数字": [
+   {
+    "conjugations": [],
+    "originalText": "数字",
+    "readingIndex": 0,
+    "wordId": 1373060
+   }
+  ],
+  "数詞": [
+   {
+    "conjugations": [],
+    "originalText": "数詞",
+    "readingIndex": 0,
+    "wordId": 1373050
+   }
+  ],
+  "敵性語禁止": [
+   {
+    "conjugations": [],
+    "originalText": "敵性語",
+    "readingIndex": 0,
+    "wordId": 2827473
+   },
+   {
+    "conjugations": [],
+    "originalText": "禁止",
+    "readingIndex": 0,
+    "wordId": 1241550
+   }
+  ],
+  "文字": [
+   {
+    "conjugations": [],
+    "originalText": "文字",
+    "readingIndex": 0,
+    "wordId": 1505390
+   }
+  ],
+  "文法用語": [
+   {
+    "conjugations": [],
+    "originalText": "文法",
+    "readingIndex": 0,
+    "wordId": 1505600
+   },
+   {
+    "conjugations": [],
+    "originalText": "用語",
+    "readingIndex": 0,
+    "wordId": 1546270
+   }
+  ],
+  "新字体": [
+   {
+    "conjugations": [],
+    "originalText": "新字体",
+    "readingIndex": 0,
+    "wordId": 1720240
+   }
+  ],
+  "方がいい": [
+   {
+    "conjugations": [],
+    "originalText": "方がいい",
+    "readingIndex": 0,
+    "wordId": 2160680
+   }
+  ],
+  "方位": [
+   {
+    "conjugations": [],
+    "originalText": "方位",
+    "readingIndex": 0,
+    "wordId": 1516940
+   }
+  ],
+  "方向": [
+   {
+    "conjugations": [],
+    "originalText": "方向",
+    "readingIndex": 0,
+    "wordId": 1516990
+   }
+  ],
+  "日": [
+   {
+    "conjugations": [],
+    "originalText": "日",
+    "readingIndex": 0,
+    "wordId": 1463770
+   }
+  ],
+  "日付": [
+   {
+    "conjugations": [],
+    "originalText": "日付",
+    "readingIndex": 0,
+    "wordId": 1464340
+   }
+  ],
+  "日本語": [
+   {
+    "conjugations": [],
+    "originalText": "日本語",
+    "readingIndex": 0,
+    "wordId": 1464530
+   }
+  ],
+  "日本語学習": [
+   {
+    "conjugations": [],
+    "originalText": "日本語",
+    "readingIndex": 0,
+    "wordId": 1464530
+   },
+   {
+    "conjugations": [],
+    "originalText": "学習",
+    "readingIndex": 0,
+    "wordId": 1206820
+   }
+  ],
+  "旧字体": [
+   {
+    "conjugations": [],
+    "originalText": "旧字体",
+    "readingIndex": 0,
+    "wordId": 1230770
+   }
+  ],
+  "春夏秋冬": [
+   {
+    "conjugations": [],
+    "originalText": "春夏秋冬",
+    "readingIndex": 0,
+    "wordId": 1341040
+   }
+  ],
+  "時制": [
+   {
+    "conjugations": [],
+    "originalText": "時制",
+    "readingIndex": 0,
+    "wordId": 1816480
+   }
+  ],
+  "時刻": [
+   {
+    "conjugations": [],
+    "originalText": "時刻",
+    "readingIndex": 0,
+    "wordId": 1316220
+   }
+  ],
+  "時間": [
+   {
+    "conjugations": [],
+    "originalText": "時間",
+    "readingIndex": 0,
+    "wordId": 1315920
+   }
+  ],
+  "時間直示": [
+   {
+    "conjugations": [],
+    "originalText": "時間",
+    "readingIndex": 0,
+    "wordId": 1315920
+   },
+   {
+    "conjugations": [],
+    "originalText": "直示",
+    "readingIndex": 0,
+    "wordId": 2234700
+   }
+  ],
+  "時間表現": [
+   {
+    "conjugations": [],
+    "originalText": "時間",
+    "readingIndex": 0,
+    "wordId": 1315920
+   },
+   {
+    "conjugations": [],
+    "originalText": "表現",
+    "readingIndex": 0,
+    "wordId": 1489510
+   }
+  ],
+  "晩": [
+   {
+    "conjugations": [],
+    "originalText": "晩",
+    "readingIndex": 0,
+    "wordId": 1482110
+   }
+  ],
+  "暦": [
+   {
+    "conjugations": [],
+    "originalText": "暦",
+    "readingIndex": 0,
+    "wordId": 1557950
+   }
+  ],
+  "最も": [
+   {
+    "conjugations": [],
+    "originalText": "最も",
+    "readingIndex": 0,
+    "wordId": 1293700
+   }
+  ],
+  "未": [
+   {
+    "conjugations": [],
+    "originalText": "未",
+    "readingIndex": 0,
+    "wordId": 1527090
+   }
+  ],
+  "未然形": [
+   {
+    "conjugations": [],
+    "originalText": "未然形",
+    "readingIndex": 0,
+    "wordId": 1527750
+   }
+  ],
+  "本": [
+   {
+    "conjugations": [],
+    "originalText": "本",
+    "readingIndex": 0,
+    "wordId": 1522150
+   }
+  ],
+  "束": [
+   {
+    "conjugations": [],
+    "originalText": "束",
+    "readingIndex": 0,
+    "wordId": 1404450
+   }
+  ],
+  "来ます": [
+   {
+    "conjugations": [
+     "polite",
+     "(infinitive)"
+    ],
+    "originalText": "来ます",
+    "readingIndex": 0,
+    "wordId": 1547720
+   }
+  ],
+  "来る": [
+   {
+    "conjugations": [],
+    "originalText": "来る",
+    "readingIndex": 0,
+    "wordId": 1547720
+   }
+  ],
+  "杯": [
+   {
+    "conjugations": [],
+    "originalText": "杯",
+    "readingIndex": 0,
+    "wordId": 1472630
+   }
+  ],
+  "枚": [
+   {
+    "conjugations": [],
+    "originalText": "枚",
+    "readingIndex": 0,
+    "wordId": 1524610
+   }
+  ],
+  "果たす": [
+   {
+    "conjugations": [],
+    "originalText": "果たす",
+    "readingIndex": 0,
+    "wordId": 1192850
+   }
+  ],
+  "果てる": [
+   {
+    "conjugations": [],
+    "originalText": "果てる",
+    "readingIndex": 0,
+    "wordId": 1192910
+   }
+  ],
+  "染みる": [
+   {
+    "conjugations": [],
+    "originalText": "染みる",
+    "readingIndex": 0,
+    "wordId": 1391120
+   }
+  ],
+  "株": [
+   {
+    "conjugations": [],
+    "originalText": "株",
+    "readingIndex": 0,
+    "wordId": 1208920
+   }
+  ],
+  "桁": [
+   {
+    "conjugations": [],
+    "originalText": "桁",
+    "readingIndex": 0,
+    "wordId": 1253800
+   }
+  ],
+  "棟": [
+   {
+    "conjugations": [],
+    "originalText": "棟",
+    "readingIndex": 0,
+    "wordId": 1448350
+   }
+  ],
+  "植物": [
+   {
+    "conjugations": [],
+    "originalText": "植物",
+    "readingIndex": 0,
+    "wordId": 1357300
+   }
+  ],
+  "概数": [
+   {
+    "conjugations": [],
+    "originalText": "概数",
+    "readingIndex": 0,
+    "wordId": 1204460
+   }
+  ],
+  "構文": [
+   {
+    "conjugations": [],
+    "originalText": "構文",
+    "readingIndex": 0,
+    "wordId": 1279830
+   }
+  ],
+  "様": [
+   {
+    "conjugations": [],
+    "originalText": "様",
+    "readingIndex": 0,
+    "wordId": 1605840
+   }
+  ],
+  "次第です": [
+   {
+    "conjugations": [],
+    "originalText": "次第",
+    "readingIndex": 0,
+    "wordId": 1316680
+   },
+   {
+    "conjugations": [],
+    "originalText": "です",
+    "readingIndex": 0,
+    "wordId": 1628500
+   }
+  ],
+  "次第に": [
+   {
+    "conjugations": [],
+    "originalText": "次第に",
+    "readingIndex": 0,
+    "wordId": 1316690
+   }
+  ],
+  "歩": [
+   {
+    "conjugations": [],
+    "originalText": "歩",
+    "readingIndex": 1,
+    "wordId": 1514330
+   }
+  ],
+  "歳": [
+   {
+    "conjugations": [],
+    "originalText": "歳",
+    "readingIndex": 1,
+    "wordId": 1468060
+   }
+  ],
+  "歴史的仮名遣い": [
+   {
+    "conjugations": [],
+    "originalText": "歴史的仮名遣い",
+    "readingIndex": 0,
+    "wordId": 2150190
+   }
+  ],
+  "殊に": [
+   {
+    "conjugations": [],
+    "originalText": "殊に",
+    "readingIndex": 0,
+    "wordId": 1328650
+   }
+  ],
+  "殊更": [
+   {
+    "conjugations": [],
+    "originalText": "殊更",
+    "readingIndex": 0,
+    "wordId": 1328690
+   }
+  ],
+  "残す": [
+   {
+    "conjugations": [],
+    "originalText": "残す",
+    "readingIndex": 0,
+    "wordId": 1600260
+   }
+  ],
+  "殴る": [
+   {
+    "conjugations": [],
+    "originalText": "殴る",
+    "readingIndex": 0,
+    "wordId": 1181390
+   }
+  ],
+  "母音": [
+   {
+    "conjugations": [],
+    "originalText": "母音",
+    "readingIndex": 0,
+    "wordId": 1515020
+   }
+  ],
+  "毎": [
+   {
+    "conjugations": [],
+    "originalText": "毎",
+    "readingIndex": 0,
+    "wordId": 1524650
+   }
+  ],
+  "気": [
+   {
+    "conjugations": [],
+    "originalText": "気",
+    "readingIndex": 0,
+    "wordId": 1221520
+   }
+  ],
+  "気づく": [
+   {
+    "conjugations": [],
+    "originalText": "気づく",
+    "readingIndex": 0,
+    "wordId": 1591330
+   }
+  ],
+  "求まる": [
+   {
+    "conjugations": [],
+    "originalText": "求まる",
+    "readingIndex": 0,
+    "wordId": 2836318
+   }
+  ],
+  "決まる": [
+   {
+    "conjugations": [],
+    "originalText": "決まる",
+    "readingIndex": 0,
+    "wordId": 1591420
+   }
+  ],
+  "沖縄語": [
+   {
+    "conjugations": [],
+    "originalText": "沖縄語",
+    "readingIndex": 0,
+    "wordId": 2844100
+   }
+  ],
+  "泊": [
+   {
+    "conjugations": [],
+    "originalText": "泊",
+    "readingIndex": 0,
+    "wordId": 1919550
+   }
+  ],
+  "活かす": [
+   {
+    "conjugations": [],
+    "originalText": "活かす",
+    "readingIndex": 1,
+    "wordId": 1587070
+   }
+  ],
+  "活用形": [
+   {
+    "conjugations": [],
+    "originalText": "活用形",
+    "readingIndex": 0,
+    "wordId": 1747110
+   }
+  ],
+  "渡す": [
+   {
+    "conjugations": [],
+    "originalText": "渡す",
+    "readingIndex": 0,
+    "wordId": 1444610
+   }
+  ],
+  "渡る": [
+   {
+    "conjugations": [],
+    "originalText": "渡る",
+    "readingIndex": 0,
+    "wordId": 1444680
+   }
+  ],
+  "滴": [
+   {
+    "conjugations": [],
+    "originalText": "滴",
+    "readingIndex": 0,
+    "wordId": 1437210
+   }
+  ],
+  "漏らす": [
+   {
+    "conjugations": [],
+    "originalText": "漏らす",
+    "readingIndex": 0,
+    "wordId": 1605320
+   }
+  ],
+  "演じる": [
+   {
+    "conjugations": [],
+    "originalText": "演じる",
+    "readingIndex": 0,
+    "wordId": 1176780
+   }
+  ],
+  "漢字": [
+   {
+    "conjugations": [],
+    "originalText": "漢字",
+    "readingIndex": 0,
+    "wordId": 1213170
+   }
+  ],
+  "漢語": [
+   {
+    "conjugations": [],
+    "originalText": "漢語",
+    "readingIndex": 0,
+    "wordId": 1213150
+   }
+  ],
+  "漢語動詞": [
+   {
+    "conjugations": [],
+    "originalText": "漢語",
+    "readingIndex": 0,
+    "wordId": 1213150
+   },
+   {
+    "conjugations": [],
+    "originalText": "動詞",
+    "readingIndex": 0,
+    "wordId": 1451380
+   }
+  ],
+  "点": [
+   {
+    "conjugations": [],
+    "originalText": "点",
+    "readingIndex": 0,
+    "wordId": 1441390
+   }
+  ],
+  "無": [
+   {
+    "conjugations": [],
+    "originalText": "無",
+    "readingIndex": 0,
+    "wordId": 1956960
+   }
+  ],
+  "無声化": [
+   {
+    "conjugations": [],
+    "originalText": "無声化",
+    "readingIndex": 0,
+    "wordId": 2843396
+   }
+  ],
+  "片仮名": [
+   {
+    "conjugations": [],
+    "originalText": "片仮名",
+    "readingIndex": 0,
+    "wordId": 1511600
+   }
+  ],
+  "物": [
+   {
+    "conjugations": [],
+    "originalText": "物",
+    "readingIndex": 0,
+    "wordId": 1502390
+   }
+  ],
+  "特に": [
+   {
+    "conjugations": [],
+    "originalText": "特に",
+    "readingIndex": 0,
+    "wordId": 1454670
+   }
+  ],
+  "玉": [
+   {
+    "conjugations": [],
+    "originalText": "玉",
+    "readingIndex": 0,
+    "wordId": 1240530
+   }
+  ],
+  "生きる": [
+   {
+    "conjugations": [],
+    "originalText": "生きる",
+    "readingIndex": 0,
+    "wordId": 1378520
+   }
+  ],
+  "生物": [
+   {
+    "conjugations": [],
+    "originalText": "生物",
+    "readingIndex": 0,
+    "wordId": 1379430
+   }
+  ],
+  "甲斐もなく": [
+   {
+    "conjugations": [],
+    "originalText": "甲斐",
+    "readingIndex": 0,
+    "wordId": 1280250
+   },
+   {
+    "conjugations": [],
+    "originalText": "も",
+    "readingIndex": 0,
+    "wordId": 2028940
+   },
+   {
+    "conjugations": [
+     "(adverbial stem)"
+    ],
+    "originalText": "なく",
+    "readingIndex": 1,
+    "wordId": 1529520
+   }
+  ],
+  "男": [
+   {
+    "conjugations": [],
+    "originalText": "男",
+    "readingIndex": 0,
+    "wordId": 1419990
+   }
+  ],
+  "画": [
+   {
+    "conjugations": [],
+    "originalText": "画",
+    "readingIndex": 1,
+    "wordId": 1202270
+   }
+  ],
+  "略字": [
+   {
+    "conjugations": [],
+    "originalText": "略字",
+    "readingIndex": 0,
+    "wordId": 1552000
+   }
+  ],
+  "略語": [
+   {
+    "conjugations": [],
+    "originalText": "略語",
+    "readingIndex": 0,
+    "wordId": 1551990
+   }
+  ],
+  "番目": [
+   {
+    "conjugations": [],
+    "originalText": "番目",
+    "readingIndex": 0,
+    "wordId": 1482410
+   }
+  ],
+  "畳語": [
+   {
+    "conjugations": [],
+    "originalText": "畳語",
+    "readingIndex": 0,
+    "wordId": 1356800
+   }
+  ],
+  "疑問詞": [
+   {
+    "conjugations": [],
+    "originalText": "疑問詞",
+    "readingIndex": 0,
+    "wordId": 1225640
+   }
+  ],
+  "発": [
+   {
+    "conjugations": [],
+    "originalText": "発",
+    "readingIndex": 0,
+    "wordId": 1477120
+   }
+  ],
+  "発音": [
+   {
+    "conjugations": [],
+    "originalText": "発音",
+    "readingIndex": 0,
+    "wordId": 1477170
+   }
+  ],
+  "的": [
+   {
+    "conjugations": [],
+    "originalText": "的",
+    "readingIndex": 0,
+    "wordId": 1437270
+   }
+  ],
+  "皿": [
+   {
+    "conjugations": [],
+    "originalText": "皿",
+    "readingIndex": 0,
+    "wordId": 1299680
+   }
+  ],
+  "直ちに": [
+   {
+    "conjugations": [],
+    "originalText": "直ちに",
+    "readingIndex": 0,
+    "wordId": 1430670
+   }
+  ],
+  "直る": [
+   {
+    "conjugations": [],
+    "originalText": "直る",
+    "readingIndex": 0,
+    "wordId": 2846390
+   }
+  ],
+  "直前": [
+   {
+    "conjugations": [],
+    "originalText": "直前",
+    "readingIndex": 0,
+    "wordId": 1431330
+   }
+  ],
+  "相まって": [
+   {
+    "conjugations": [],
+    "originalText": "相まって",
+    "readingIndex": 0,
+    "wordId": 1749070
+   }
+  ],
+  "相応": [
+   {
+    "conjugations": [],
+    "originalText": "相応",
+    "readingIndex": 0,
+    "wordId": 1400840
+   }
+  ],
+  "相槌": [
+   {
+    "conjugations": [],
+    "originalText": "相槌",
+    "readingIndex": 0,
+    "wordId": 1401220
+   }
+  ],
+  "真": [
+   {
+    "conjugations": [],
+    "originalText": "真",
+    "readingIndex": 0,
+    "wordId": 1363170
+   }
+  ],
+  "着": [
+   {
+    "conjugations": [
+     "continuative"
+    ],
+    "originalText": "着",
+    "readingIndex": 0,
+    "wordId": 1423000
+   }
+  ],
+  "着る": [
+   {
+    "conjugations": [],
+    "originalText": "着る",
+    "readingIndex": 0,
+    "wordId": 1423000
+   }
+  ],
+  "着脱": [
+   {
+    "conjugations": [],
+    "originalText": "着脱",
+    "readingIndex": 0,
+    "wordId": 1701180
+   }
+  ],
+  "矢先に": [
+   {
+    "conjugations": [],
+    "originalText": "矢先",
+    "readingIndex": 0,
+    "wordId": 1634060
+   },
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   }
+  ],
+  "知る": [
+   {
+    "conjugations": [],
+    "originalText": "知る",
+    "readingIndex": 0,
+    "wordId": 1420470
+   }
+  ],
+  "確かに": [
+   {
+    "conjugations": [],
+    "originalText": "確かに",
+    "readingIndex": 0,
+    "wordId": 1205770
+   }
+  ],
+  "祝日": [
+   {
+    "conjugations": [],
+    "originalText": "祝日",
+    "readingIndex": 0,
+    "wordId": 1337500
+   }
+  ],
+  "票": [
+   {
+    "conjugations": [],
+    "originalText": "票",
+    "readingIndex": 0,
+    "wordId": 1489320
+   }
+  ],
+  "秒": [
+   {
+    "conjugations": [],
+    "originalText": "秒",
+    "readingIndex": 0,
+    "wordId": 1490430
+   }
+  ],
+  "種": [
+   {
+    "conjugations": [],
+    "originalText": "種",
+    "readingIndex": 0,
+    "wordId": 1328810
+   }
+  ],
+  "種類": [
+   {
+    "conjugations": [],
+    "originalText": "種類",
+    "readingIndex": 0,
+    "wordId": 1328890
+   }
+  ],
+  "穿く": [
+   {
+    "conjugations": [],
+    "originalText": "穿く",
+    "readingIndex": 1,
+    "wordId": 1607260
+   }
+  ],
+  "立つ": [
+   {
+    "conjugations": [],
+    "originalText": "立つ",
+    "readingIndex": 0,
+    "wordId": 1597040
+   }
+  ],
+  "立てる": [
+   {
+    "conjugations": [],
+    "originalText": "立てる",
+    "readingIndex": 0,
+    "wordId": 1551530
+   }
+  ],
+  "第": [
+   {
+    "conjugations": [],
+    "originalText": "第",
+    "readingIndex": 0,
+    "wordId": 1415260
+   }
+  ],
+  "第一": [
+   {
+    "conjugations": [],
+    "originalText": "第一",
+    "readingIndex": 0,
+    "wordId": 1415270
+   }
+  ],
+  "等": [
+   {
+    "conjugations": [],
+    "originalText": "等",
+    "readingIndex": 0,
+    "wordId": 1582305
+   }
+  ],
+  "箱": [
+   {
+    "conjugations": [],
+    "originalText": "箱",
+    "readingIndex": 0,
+    "wordId": 1585650
+   }
+  ],
+  "精々": [
+   {
+    "conjugations": [],
+    "originalText": "精々",
+    "readingIndex": 0,
+    "wordId": 1596050
+   }
+  ],
+  "終止形": [
+   {
+    "conjugations": [],
+    "originalText": "終止形",
+    "readingIndex": 0,
+    "wordId": 1332840
+   }
+  ],
+  "組み": [
+   {
+    "conjugations": [],
+    "originalText": "組み",
+    "readingIndex": 1,
+    "wordId": 1397450
+   }
+  ],
+  "経由": [
+   {
+    "conjugations": [],
+    "originalText": "経由",
+    "readingIndex": 0,
+    "wordId": 1251670
+   }
+  ],
+  "結ぶ": [
+   {
+    "conjugations": [],
+    "originalText": "結ぶ",
+    "readingIndex": 0,
+    "wordId": 1254670
+   }
+  ],
+  "給ふ": [
+   {
+    "conjugations": [],
+    "originalText": "給ふ",
+    "readingIndex": 0,
+    "wordId": 2780080
+   }
+  ],
+  "続く": [
+   {
+    "conjugations": [],
+    "originalText": "続く",
+    "readingIndex": 0,
+    "wordId": 1405790
+   }
+  ],
+  "続ける": [
+   {
+    "conjugations": [],
+    "originalText": "続ける",
+    "readingIndex": 0,
+    "wordId": 1405800
+   }
+  ],
+  "美化語": [
+   {
+    "conjugations": [],
+    "originalText": "美化語",
+    "readingIndex": 0,
+    "wordId": 2217190
+   }
+  ],
+  "羽": [
+   {
+    "conjugations": [],
+    "originalText": "羽",
+    "readingIndex": 0,
+    "wordId": 1171680
+   }
+  ],
+  "考えられない": [
+   {
+    "conjugations": [],
+    "originalText": "考えられない",
+    "readingIndex": 0,
+    "wordId": 1867310
+   }
+  ],
+  "聞こえる": [
+   {
+    "conjugations": [],
+    "originalText": "聞こえる",
+    "readingIndex": 0,
+    "wordId": 1591150
+   }
+  ],
+  "職業": [
+   {
+    "conjugations": [],
+    "originalText": "職業",
+    "readingIndex": 0,
+    "wordId": 1357510
+   }
+  ],
+  "脚": [
+   {
+    "conjugations": [],
+    "originalText": "脚",
+    "readingIndex": 1,
+    "wordId": 1404630
+   }
+  ],
+  "脱ぐ": [
+   {
+    "conjugations": [],
+    "originalText": "脱ぐ",
+    "readingIndex": 0,
+    "wordId": 1416400
+   }
+  ],
+  "腐る": [
+   {
+    "conjugations": [],
+    "originalText": "腐る",
+    "readingIndex": 0,
+    "wordId": 1497800
+   }
+  ],
+  "膳": [
+   {
+    "conjugations": [],
+    "originalText": "膳",
+    "readingIndex": 0,
+    "wordId": 1396490
+   }
+  ],
+  "自ずから": [
+   {
+    "conjugations": [],
+    "originalText": "自ずから",
+    "readingIndex": 0,
+    "wordId": 1317330
+   }
+  ],
+  "自ら": [
+   {
+    "conjugations": [],
+    "originalText": "自ら",
+    "readingIndex": 0,
+    "wordId": 1317340
+   }
+  ],
+  "自他動詞": [
+   {
+    "conjugations": [],
+    "originalText": "自他",
+    "readingIndex": 0,
+    "wordId": 1318230
+   },
+   {
+    "conjugations": [],
+    "originalText": "動詞",
+    "readingIndex": 0,
+    "wordId": 1451380
+   }
+  ],
+  "自分": [
+   {
+    "conjugations": [],
+    "originalText": "自分",
+    "readingIndex": 0,
+    "wordId": 1318610
+   }
+  ],
+  "自動詞": [
+   {
+    "conjugations": [],
+    "originalText": "自動詞",
+    "readingIndex": 0,
+    "wordId": 1318390
+   }
+  ],
+  "自受動詞": [
+   {
+    "conjugations": [],
+    "originalText": "自",
+    "readingIndex": 0,
+    "wordId": 2259190
+   },
+   {
+    "conjugations": [],
+    "originalText": "受動",
+    "readingIndex": 0,
+    "wordId": 1329990
+   },
+   {
+    "conjugations": [],
+    "originalText": "詞",
+    "readingIndex": 0,
+    "wordId": 2266770
+   }
+  ],
+  "自己": [
+   {
+    "conjugations": [],
+    "originalText": "自己",
+    "readingIndex": 0,
+    "wordId": 1317580
+   }
+  ],
+  "至極": [
+   {
+    "conjugations": [],
+    "originalText": "至極",
+    "readingIndex": 0,
+    "wordId": 1311920
+   }
+  ],
+  "色": [
+   {
+    "conjugations": [],
+    "originalText": "色",
+    "readingIndex": 0,
+    "wordId": 1357600
+   }
+  ],
+  "色彩": [
+   {
+    "conjugations": [],
+    "originalText": "色彩",
+    "readingIndex": 0,
+    "wordId": 1357720
+   }
+  ],
+  "苦手": [
+   {
+    "conjugations": [],
+    "originalText": "苦手",
+    "readingIndex": 0,
+    "wordId": 1244470
+   }
+  ],
+  "落ちる": [
+   {
+    "conjugations": [],
+    "originalText": "落ちる",
+    "readingIndex": 0,
+    "wordId": 1548550
+   }
+  ],
+  "落とす": [
+   {
+    "conjugations": [],
+    "originalText": "落とす",
+    "readingIndex": 0,
+    "wordId": 1589260
+   }
+  ],
+  "行": [
+   {
+    "conjugations": [],
+    "originalText": "行",
+    "readingIndex": 0,
+    "wordId": 1281690
+   }
+  ],
+  "袋": [
+   {
+    "conjugations": [],
+    "originalText": "袋",
+    "readingIndex": 0,
+    "wordId": 1411070
+   }
+  ],
+  "被覆形": [
+   {
+    "conjugations": [],
+    "originalText": "被覆形",
+    "readingIndex": 0,
+    "wordId": 2864796
+   }
+  ],
+  "複合語": [
+   {
+    "conjugations": [],
+    "originalText": "複合語",
+    "readingIndex": 0,
+    "wordId": 1501330
+   }
+  ],
+  "複数": [
+   {
+    "conjugations": [],
+    "originalText": "複数",
+    "readingIndex": 0,
+    "wordId": 1501400
+   }
+  ],
+  "西暦": [
+   {
+    "conjugations": [],
+    "originalText": "西暦",
+    "readingIndex": 0,
+    "wordId": 1381140
+   }
+  ],
+  "見つかる": [
+   {
+    "conjugations": [],
+    "originalText": "見つかる",
+    "readingIndex": 0,
+    "wordId": 1604550
+   }
+  ],
+  "触る": [
+   {
+    "conjugations": [],
+    "originalText": "触る",
+    "readingIndex": 0,
+    "wordId": 1357980
+   }
+  ],
+  "触れる": [
+   {
+    "conjugations": [],
+    "originalText": "触れる",
+    "readingIndex": 0,
+    "wordId": 1357990
+   }
+  ],
+  "訓読み": [
+   {
+    "conjugations": [],
+    "originalText": "訓読み",
+    "readingIndex": 0,
+    "wordId": 1247450
+   }
+  ],
+  "語源": [
+   {
+    "conjugations": [],
+    "originalText": "語源",
+    "readingIndex": 0,
+    "wordId": 1271090
+   }
+  ],
+  "語源学": [
+   {
+    "conjugations": [],
+    "originalText": "語源学",
+    "readingIndex": 0,
+    "wordId": 1649010
+   }
+  ],
+  "誤る": [
+   {
+    "conjugations": [],
+    "originalText": "誤る",
+    "readingIndex": 0,
+    "wordId": 1271300
+   }
+  ],
+  "読点": [
+   {
+    "conjugations": [],
+    "originalText": "読点",
+    "readingIndex": 0,
+    "wordId": 1456450
+   }
+  ],
+  "誰": [
+   {
+    "conjugations": [],
+    "originalText": "誰",
+    "readingIndex": 0,
+    "wordId": 1416830
+   }
+  ],
+  "誰か": [
+   {
+    "conjugations": [],
+    "originalText": "誰か",
+    "readingIndex": 0,
+    "wordId": 1416840
+   }
+  ],
+  "誰も": [
+   {
+    "conjugations": [],
+    "originalText": "誰も",
+    "readingIndex": 0,
+    "wordId": 1416860
+   }
+  ],
+  "課": [
+   {
+    "conjugations": [],
+    "originalText": "課",
+    "readingIndex": 0,
+    "wordId": 1195710
+   }
+  ],
+  "諺": [
+   {
+    "conjugations": [],
+    "originalText": "諺",
+    "readingIndex": 0,
+    "wordId": 1264600
+   }
+  ],
+  "謂れ": [
+   {
+    "conjugations": [],
+    "originalText": "謂れ",
+    "readingIndex": 0,
+    "wordId": 1158860
+   }
+  ],
+  "負ける": [
+   {
+    "conjugations": [],
+    "originalText": "負ける",
+    "readingIndex": 0,
+    "wordId": 1497980
+   }
+  ],
+  "貫": [
+   {
+    "conjugations": [],
+    "originalText": "貫",
+    "readingIndex": 0,
+    "wordId": 1956010
+   }
+  ],
+  "足": [
+   {
+    "conjugations": [],
+    "originalText": "足",
+    "readingIndex": 0,
+    "wordId": 1404630
+   }
+  ],
+  "足りる": [
+   {
+    "conjugations": [],
+    "originalText": "足りる",
+    "readingIndex": 0,
+    "wordId": 1404740
+   }
+  ],
+  "身体": [
+   {
+    "conjugations": [],
+    "originalText": "身体",
+    "readingIndex": 0,
+    "wordId": 2830705
+   }
+  ],
+  "軒": [
+   {
+    "conjugations": [],
+    "originalText": "軒",
+    "readingIndex": 0,
+    "wordId": 1260330
+   }
+  ],
+  "辞書形": [
+   {
+    "conjugations": [],
+    "originalText": "辞書形",
+    "readingIndex": 0,
+    "wordId": 2251180
+   }
+  ],
+  "返る": [
+   {
+    "conjugations": [],
+    "originalText": "返る",
+    "readingIndex": 0,
+    "wordId": 1512150
+   }
+  ],
+  "送り仮名": [
+   {
+    "conjugations": [],
+    "originalText": "送り仮名",
+    "readingIndex": 0,
+    "wordId": 1402640
+   }
+  ],
+  "逃す": [
+   {
+    "conjugations": [],
+    "originalText": "逃す",
+    "readingIndex": 0,
+    "wordId": 1450430
+   }
+  ],
+  "途中に": [
+   {
+    "conjugations": [],
+    "originalText": "途中",
+    "readingIndex": 0,
+    "wordId": 1582200
+   },
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   }
+  ],
+  "途端に": [
+   {
+    "conjugations": [],
+    "originalText": "途端に",
+    "readingIndex": 0,
+    "wordId": 1444910
+   }
+  ],
+  "通": [
+   {
+    "conjugations": [],
+    "originalText": "通",
+    "readingIndex": 0,
+    "wordId": 1432840
+   }
+  ],
+  "連体修飾": [
+   {
+    "conjugations": [],
+    "originalText": "連体",
+    "readingIndex": 0,
+    "wordId": 2733050
+   },
+   {
+    "conjugations": [],
+    "originalText": "修飾",
+    "readingIndex": 0,
+    "wordId": 1332070
+   }
+  ],
+  "連体形": [
+   {
+    "conjugations": [],
+    "originalText": "連体形",
+    "readingIndex": 0,
+    "wordId": 1559640
+   }
+  ],
+  "連体詞": [
+   {
+    "conjugations": [],
+    "originalText": "連体詞",
+    "readingIndex": 0,
+    "wordId": 1559650
+   }
+  ],
+  "連濁": [
+   {
+    "conjugations": [],
+    "originalText": "連濁",
+    "readingIndex": 0,
+    "wordId": 1559690
+   }
+  ],
+  "連用中止": [
+   {
+    "conjugations": [],
+    "originalText": "連用",
+    "readingIndex": 0,
+    "wordId": 1559880
+   },
+   {
+    "conjugations": [],
+    "originalText": "中止",
+    "readingIndex": 0,
+    "wordId": 1424410
+   }
+  ],
+  "連用中止形": [
+   {
+    "conjugations": [],
+    "originalText": "連用",
+    "readingIndex": 0,
+    "wordId": 1559880
+   },
+   {
+    "conjugations": [],
+    "originalText": "中止形",
+    "readingIndex": 0,
+    "wordId": 2112090
+   }
+  ],
+  "連用形": [
+   {
+    "conjugations": [],
+    "originalText": "連用形",
+    "readingIndex": 0,
+    "wordId": 1559890
+   }
+  ],
+  "週間": [
+   {
+    "conjugations": [],
+    "originalText": "週間",
+    "readingIndex": 0,
+    "wordId": 1333500
+   }
+  ],
+  "逸れる": [
+   {
+    "conjugations": [],
+    "originalText": "逸れる",
+    "readingIndex": 0,
+    "wordId": 1576360
+   }
+  ],
+  "遂に": [
+   {
+    "conjugations": [],
+    "originalText": "遂に",
+    "readingIndex": 0,
+    "wordId": 1372630
+   }
+  ],
+  "遊ぶ": [
+   {
+    "conjugations": [],
+    "originalText": "遊ぶ",
+    "readingIndex": 0,
+    "wordId": 1542160
+   }
+  ],
+  "遊戯する": [
+   {
+    "conjugations": [
+     "(suru verb noun stem)"
+    ],
+    "originalText": "遊戯する",
+    "readingIndex": 0,
+    "wordId": 1542190
+   }
+  ],
+  "運ぶ": [
+   {
+    "conjugations": [],
+    "originalText": "運ぶ",
+    "readingIndex": 0,
+    "wordId": 1172660
+   }
+  ],
+  "遍": [
+   {
+    "conjugations": [],
+    "originalText": "遍",
+    "readingIndex": 0,
+    "wordId": 2208060
+   }
+  ],
+  "過ぎ": [
+   {
+    "conjugations": [
+     "(infinitive)"
+    ],
+    "originalText": "過ぎ",
+    "readingIndex": 0,
+    "wordId": 1195970
+   }
+  ],
+  "達": [
+   {
+    "conjugations": [],
+    "originalText": "達",
+    "readingIndex": 0,
+    "wordId": 5502960
+   }
+  ],
+  "達て": [
+   {
+    "conjugations": [],
+    "originalText": "達て",
+    "readingIndex": 0,
+    "wordId": 2152340
+   }
+  ],
+  "違う": [
+   {
+    "conjugations": [],
+    "originalText": "違う",
+    "readingIndex": 0,
+    "wordId": 1158880
+   }
+  ],
+  "違える": [
+   {
+    "conjugations": [],
+    "originalText": "違える",
+    "readingIndex": 0,
+    "wordId": 1158890
+   }
+  ],
+  "部": [
+   {
+    "conjugations": [],
+    "originalText": "部",
+    "readingIndex": 0,
+    "wordId": 1499290
+   }
+  ],
+  "部首": [
+   {
+    "conjugations": [],
+    "originalText": "部首",
+    "readingIndex": 0,
+    "wordId": 1499400
+   }
+  ],
+  "都度": [
+   {
+    "conjugations": [],
+    "originalText": "都度",
+    "readingIndex": 0,
+    "wordId": 1445020
+   }
+  ],
+  "重複": [
+   {
+    "conjugations": [],
+    "originalText": "重複",
+    "readingIndex": 0,
+    "wordId": 1579980
+   }
+  ],
+  "錠": [
+   {
+    "conjugations": [],
+    "originalText": "錠",
+    "readingIndex": 0,
+    "wordId": 1633480
+   }
+  ],
+  "閉じる": [
+   {
+    "conjugations": [],
+    "originalText": "閉じる",
+    "readingIndex": 0,
+    "wordId": 1508550
+   }
+  ],
+  "開く": [
+   {
+    "conjugations": [],
+    "originalText": "開く",
+    "readingIndex": 0,
+    "wordId": 1202440
+   }
+  ],
+  "間中": [
+   {
+    "conjugations": [],
+    "originalText": "間中",
+    "readingIndex": 0,
+    "wordId": 1215610
+   }
+  ],
+  "間投詞": [
+   {
+    "conjugations": [],
+    "originalText": "間投詞",
+    "readingIndex": 0,
+    "wordId": 1215630
+   }
+  ],
+  "間違う": [
+   {
+    "conjugations": [],
+    "originalText": "間違う",
+    "readingIndex": 0,
+    "wordId": 1611610
+   }
+  ],
+  "間違える": [
+   {
+    "conjugations": [],
+    "originalText": "間違える",
+    "readingIndex": 0,
+    "wordId": 1215330
+   }
+  ],
+  "関係がある": [
+   {
+    "conjugations": [],
+    "originalText": "関係",
+    "readingIndex": 0,
+    "wordId": 1215810
+   },
+   {
+    "conjugations": [],
+    "originalText": "が",
+    "readingIndex": 0,
+    "wordId": 2028930
+   },
+   {
+    "conjugations": [],
+    "originalText": "ある",
+    "readingIndex": 2,
+    "wordId": 1296400
+   }
+  ],
+  "陸に": [
+   {
+    "conjugations": [],
+    "originalText": "陸",
+    "readingIndex": 0,
+    "wordId": 1550980
+   },
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   }
+  ],
+  "階": [
+   {
+    "conjugations": [],
+    "originalText": "階",
+    "readingIndex": 0,
+    "wordId": 1203020
+   }
+  ],
+  "隙に": [
+   {
+    "conjugations": [],
+    "originalText": "隙",
+    "readingIndex": 0,
+    "wordId": 1253780
+   },
+   {
+    "conjugations": [],
+    "originalText": "に",
+    "readingIndex": 0,
+    "wordId": 2028990
+   }
+  ],
+  "隻": [
+   {
+    "conjugations": [],
+    "originalText": "隻",
+    "readingIndex": 0,
+    "wordId": 2038290
+   }
+  ],
+  "雨": [
+   {
+    "conjugations": [],
+    "originalText": "雨",
+    "readingIndex": 0,
+    "wordId": 1171900
+   }
+  ],
+  "露出形": [
+   {
+    "conjugations": [],
+    "originalText": "露出形",
+    "readingIndex": 0,
+    "wordId": 2864797
+   }
+  ],
+  "非": [
+   {
+    "conjugations": [],
+    "originalText": "非",
+    "readingIndex": 0,
+    "wordId": 1484710
+   }
+  ],
+  "非過去形": [
+   {
+    "conjugations": [],
+    "originalText": "非",
+    "readingIndex": 0,
+    "wordId": 1484710
+   },
+   {
+    "conjugations": [],
+    "originalText": "過去形",
+    "readingIndex": 0,
+    "wordId": 1196040
+   }
+  ],
+  "音変化": [
+   {
+    "conjugations": [],
+    "originalText": "音変化",
+    "readingIndex": 0,
+    "wordId": 2179440
+   }
+  ],
+  "音訓": [
+   {
+    "conjugations": [],
+    "originalText": "音訓",
+    "readingIndex": 0,
+    "wordId": 1183810
+   }
+  ],
+  "音読み": [
+   {
+    "conjugations": [],
+    "originalText": "音読み",
+    "readingIndex": 0,
+    "wordId": 1184000
+   }
+  ],
+  "頃": [
+   {
+    "conjugations": [],
+    "originalText": "頃",
+    "readingIndex": 0,
+    "wordId": 1579080
+   }
+  ],
+  "頭": [
+   {
+    "conjugations": [],
+    "originalText": "頭",
+    "readingIndex": 0,
+    "wordId": 1582310
+   }
+  ],
+  "頼る": [
+   {
+    "conjugations": [],
+    "originalText": "頼る",
+    "readingIndex": 0,
+    "wordId": 1597200
+   }
+  ],
+  "願います": [
+   {
+    "conjugations": [
+     "polite",
+     "(infinitive)"
+    ],
+    "originalText": "願います",
+    "readingIndex": 0,
+    "wordId": 1217950
+   }
+  ],
+  "願う": [
+   {
+    "conjugations": [],
+    "originalText": "願う",
+    "readingIndex": 0,
+    "wordId": 1217950
+   }
+  ],
+  "食べ物": [
+   {
+    "conjugations": [],
+    "originalText": "食べ物",
+    "readingIndex": 0,
+    "wordId": 1358340
+   }
+  ],
+  "食事": [
+   {
+    "conjugations": [],
+    "originalText": "食事",
+    "readingIndex": 0,
+    "wordId": 1358490
+   }
+  ],
+  "飽くまで": [
+   {
+    "conjugations": [],
+    "originalText": "飽くまで",
+    "readingIndex": 0,
+    "wordId": 1518320
+   }
+  ],
+  "飽くまでも": [
+   {
+    "conjugations": [],
+    "originalText": "飽くまでも",
+    "readingIndex": 0,
+    "wordId": 1747960
+   }
+  ],
+  "駅": [
+   {
+    "conjugations": [],
+    "originalText": "駅",
+    "readingIndex": 0,
+    "wordId": 1175140
+   }
+  ],
+  "高低アクセント": [
+   {
+    "conjugations": [],
+    "originalText": "高低アクセント",
+    "readingIndex": 0,
+    "wordId": 2257820
+   }
+  ],
+  "鳴き声": [
+   {
+    "conjugations": [],
+    "originalText": "鳴き声",
+    "readingIndex": 0,
+    "wordId": 1532860
+   }
+  ]
+ },
+ "word": {
+  "1001820/0": "お金[かね]",
+  "1008860/0": "言[い]える",
+  "1008880/0": "と考[かんが]えられる",
+  "1008900/0": "と比[くら]べて",
+  "1009700/0": "に応[おう]じて",
+  "1009720/0": "に加[くわ]えて",
+  "1058890/1": "サ行[ぎょう]",
+  "1096940/1": "ハ行[ぎょう]",
+  "1146810/0": "ローマ字[じ]",
+  "1150450/0": "愛[あい]する",
+  "1151120/0": "挨[あい]拶[さつ]",
+  "1155040/0": "以[い]遠[えん]",
+  "1155050/0": "以[い]往[おう]",
+  "1155110/0": "以[い]降[こう]",
+  "1155120/0": "以[い]上[じょう]",
+  "1157130/0": "成[な]す",
+  "1158860/0": "謂[いわ]れ",
+  "1158880/0": "違[ちが]う",
+  "1158890/0": "違[ちが]える",
+  "1160820/0": "一[ひと]つ",
+  "1164510/0": "一[いっ]体[たい]",
+  "1164650/0": "一[いっ]旦[たん]",
+  "1164700/0": "一[いち]段[だん]動[どう]詞[し]",
+  "1165970/0": "一[いち]番[ばん]",
+  "1169250/0": "引[ひ]く",
+  "1171680/0": "羽[はね]",
+  "1171900/0": "雨[あめ]",
+  "1172660/0": "運[はこ]ぶ",
+  "1175140/0": "駅[えき]",
+  "1175570/0": "円[えん]",
+  "1176780/0": "演[えん]じる",
+  "1180270/0": "押[お]し切[き]る",
+  "1181390/0": "殴[なぐ]る",
+  "1183810/0": "音[おん]訓[くん]",
+  "1184000/0": "音[おん]読[よ]み",
+  "1184070/0": "音[おん]便[びん]",
+  "1184160/0": "下[さ]がる",
+  "1184170/0": "下[さ]げる",
+  "1186710/0": "化[ば]ける",
+  "1186740/0": "化[か]する",
+  "1188100/0": "仮[か]名[な]遣[づか]い",
+  "1188530/0": "何[なに]より",
+  "1188850/0": "いつの間[ま]にか",
+  "1189220/0": "何[なん]ら",
+  "1189960/0": "加[くわ]える",
+  "1191060/0": "可[か]能[のう]",
+  "1192150/0": "家[か]族[ぞく]",
+  "1192850/0": "果[は]たす",
+  "1192910/0": "果[は]てる",
+  "1194480/0": "ヶ[か]月[げつ]",
+  "1194480/1": "ヵ月[げつ]",
+  "1194480/2": "カ[か]月[げつ]",
+  "1194480/3": "か月[げつ]",
+  "1194490/2": "か条[じょう]",
+  "1194490/3": "かじょう",
+  "1195710/0": "課[か]",
+  "1195970/0": "過[す]ぎる",
+  "1196040/0": "過[か]去[こ]形[けい]",
+  "1199330/0": "回[かい]",
+  "1199350/0": "回[まわ]す",
+  "1199780/0": "回[かい]目[め]",
+  "1202270/1": "画[え]",
+  "1202440/0": "開[ひら]く",
+  "1203020/0": "階[かい]",
+  "1203260/0": "他[ほか]",
+  "1204460/0": "概[がい]数[すう]",
+  "1204860/0": "各[かく]",
+  "1205770/0": "確[たし]かに",
+  "1206820/0": "学[がく]習[しゅう]",
+  "1208240/0": "括[かっ]弧[こ]",
+  "1208920/0": "株[かぶ]",
+  "1210260/0": "冠[かん]婚[こん]葬[そう]祭[さい]",
+  "1211140/0": "巻[まき]",
+  "1211200/0": "巻[ま]く",
+  "1212380/0": "感[かん]謝[しゃ]",
+  "1212580/0": "感[かん]動[どう]詞[し]",
+  "1212730/0": "慣[かん]用[よう]句[く]",
+  "1212850/0": "敢[あ]えて",
+  "1213150/0": "漢[かん]語[ご]",
+  "1213170/0": "漢[かん]字[じ]",
+  "1215230/0": "間[あいだ]",
+  "1215330/0": "間[ま]違[ちが]える",
+  "1215610/0": "間[あいだ]中[じゅう]",
+  "1215630/0": "間[かん]投[とう]詞[し]",
+  "1215810/0": "関[かん]係[けい]",
+  "1217950/0": "願[ねが]う",
+  "1218760/0": "喜[よろこ]ぶ",
+  "1219950/0": "幾[いく]",
+  "1221270/0": "帰[かえ]る",
+  "1221520/0": "気[き]",
+  "1221690/0": "気[き]になる",
+  "1225370/0": "擬[ぎ]声[せい]語[ご]",
+  "1225390/0": "擬[ぎ]態[たい]語[ご]",
+  "1225640/0": "疑[ぎ]問[もん]詞[し]",
+  "1226610/0": "却[かえ]って",
+  "1228130/0": "及[およ]ばない",
+  "1228170/0": "及[およ]ぶ",
+  "1228650/0": "急[いそ]ぐ",
+  "1230770/0": "旧[きゅう]字[じ]体[たい]",
+  "1236080/0": "強[し]いて",
+  "1240190/0": "極[きわ]み",
+  "1240530/0": "玉[たま]",
+  "1240750/0": "僅[わず]か",
+  "1241550/0": "禁[きん]止[し]",
+  "1243650/0": "九[く]九[く]",
+  "1244030/0": "句[く]点[てん]",
+  "1244050/0": "句[く]読[とう]点[てん]",
+  "1244470/0": "苦[にが]手[て]",
+  "1247450/0": "訓[くん]読[よ]み",
+  "1249470/0": "傾[けい]向[こう]",
+  "1250180/0": "契[けい]機[き]",
+  "1250430/0": "形[けい]容[よう]詞[し]",
+  "1250450/0": "形[けい]容[よう]動[どう]詞[し]",
+  "1250750/0": "敬[けい]語[ご]",
+  "1250760/0": "敬[けい]称[しょう]",
+  "1251670/0": "経[けい]由[ゆ]",
+  "1253780/0": "隙[すき]",
+  "1253800/0": "桁[けた]",
+  "1254670/0": "結[むす]ぶ",
+  "1254760/0": "結[けっ]構[こう]",
+  "1255940/0": "件[けん]",
+  "1257240/0": "嫌[きら]い",
+  "1257250/0": "嫌[きら]う",
+  "1257800/0": "捲[まく]る",
+  "1259140/0": "見[み]える",
+  "1260330/0": "軒[のき]",
+  "1260670/3": "基[もと]",
+  "1260720/0": "元[げん]気[き]",
+  "1260800/0": "元[げん]号[ごう]",
+  "1264350/0": "言[い]うまでもない",
+  "1264600/0": "諺[ことわざ]",
+  "1264640/0": "限[かぎ]る",
+  "1264740/0": "個[こ]",
+  "1265090/0": "古[ふる]す",
+  "1265360/0": "古[こ]語[ご]",
+  "1265860/0": "古[こ]典[てん]",
+  "1266450/0": "呼[こ]応[おう]",
+  "1266890/0": "己[おのれ]",
+  "1266970/0": "戸[と]",
+  "1267120/0": "故[ゆえ]",
+  "1268540/0": "五[ご]段[だん]動[どう]詞[し]",
+  "1269720/0": "後[こう]者[しゃ]",
+  "1271020/0": "語[ご]幹[かん]",
+  "1271090/0": "語[ご]源[げん]",
+  "1271300/0": "誤[あやま]る",
+  "1277080/0": "向[む]く",
+  "1277100/0": "向[む]ける",
+  "1277450/0": "好[す]き",
+  "1278380/0": "幸[さいわ]い",
+  "1279060/0": "控[ひか]える",
+  "1279830/0": "構[こう]文[ぶん]",
+  "1280250/0": "甲斐[かい]",
+  "1281020/0": "考[かんが]える",
+  "1281690/0": "行[ぎょう]",
+  "1284430/0": "合[あ]う",
+  "1284480/0": "合[あ]わせる",
+  "1286650/0": "国[こく]字[じ]",
+  "1290810/0": "左[さ]右[ゆう]",
+  "1292160/0": "催[もよお]す",
+  "1292300/0": "再[ふたた]び",
+  "1292390/0": "再[さい]会[かい]",
+  "1293700/0": "最[もっと]も",
+  "1295030/0": "済[す]ます",
+  "1296300/0": "際[さい]",
+  "1298520/0": "冊[さつ]",
+  "1299680/0": "皿[さら]",
+  "1302070/0": "参[まい]る",
+  "1304970/0": "仕[し]事[ごと]",
+  "1305700/0": "伺[うかが]う",
+  "1305950/0": "使[つか]い方[かた]",
+  "1306180/0": "使[し]役[えき]",
+  "1307130/0": "四[し]季[き]",
+  "1307220/0": "四[よ]字[じ]熟[じゅく]語[ご]",
+  "1307710/0": "姿[すがた]",
+  "1307800/0": "子[し]音[いん]",
+  "1309450/0": "思[おぼ]しい",
+  "1310620/0": "止[と]まる",
+  "1311920/0": "至[し]極[ごく]",
+  "1313580/0": "事[こと]",
+  "1313960/0": "事[じ]実[じつ]",
+  "1314240/1": "事[こと]がら",
+  "1315130/0": "字[じ]",
+  "1315920/0": "時[じ]間[かん]",
+  "1316220/0": "時[じ]刻[こく]",
+  "1316680/0": "次[し]第[だい]",
+  "1316690/0": "次[し]第[だい]に",
+  "1317330/0": "自[おの]ずから",
+  "1317340/0": "自[みずか]ら",
+  "1317580/0": "自[じ]己[こ]",
+  "1318230/0": "自[じ]他[た]",
+  "1318390/0": "自[じ]動[どう]詞[し]",
+  "1318610/0": "自[じ]分[ぶん]",
+  "1324990/0": "主[おも]に",
+  "1326980/0": "取[と]る",
+  "1328650/0": "殊[こと]に",
+  "1328690/0": "殊[こと]更[さら]",
+  "1328810/0": "種[しゅ]",
+  "1328890/0": "種[しゅ]類[るい]",
+  "1329860/0": "受[うけ]身[み]",
+  "1329990/0": "受[じゅ]動[どう]",
+  "1331770/0": "就中[なかんずく]",
+  "1332070/0": "修[しゅう]飾[しょく]",
+  "1332840/0": "終[しゅう]止[し]形[けい]",
+  "1333500/0": "週[しゅう]間[かん]",
+  "1337500/0": "祝[しゅく]日[じつ]",
+  "1338240/0": "出[で]る",
+  "1340470/0": "できる限[かぎ]り",
+  "1341040/0": "春[しゅん]夏[か]秋[しゅう]冬[とう]",
+  "1341510/0": "準[じゅん]じる",
+  "1342540/0": "始[はじ]め",
+  "1342890/0": "初[しょ]対[たい]面[めん]",
+  "1343130/0": "所以[ゆえん]",
+  "1344630/0": "助[じょ]詞[し]",
+  "1344670/0": "助[じょ]数[すう]詞[し]",
+  "1344930/0": "女[おんな]",
+  "1348370/0": "小[しょう]数[すう]",
+  "1348870/0": "少[すこ]し",
+  "1348910/0": "少[すく]ない",
+  "1349320/0": "尚[なお]更[さら]",
+  "1352130/0": "上[うえ]",
+  "1353320/0": "上手[じょうず]",
+  "1355810/0": "場[ば]合[あい]",
+  "1356800/0": "畳[じょう]語[ご]",
+  "1357300/0": "植[しょく]物[ぶつ]",
+  "1357510/0": "職[しょく]業[ぎょう]",
+  "1357600/0": "色[いろ]",
+  "1357720/0": "色[しき]彩[さい]",
+  "1357980/0": "触[さわ]る",
+  "1357990/0": "触[ふ]れる",
+  "1358340/0": "食[た]べ物[もの]",
+  "1358490/0": "食[しょく]事[じ]",
+  "1363170/0": "真[しん]",
+  "1368490/0": "人[ひと]前[まえ]",
+  "1370760/0": "吹[ふ]く",
+  "1370840/0": "垂[た]らす",
+  "1370870/0": "垂[た]れる",
+  "1372630/0": "遂[つい]に",
+  "1373050/0": "数[すう]詞[し]",
+  "1373060/0": "数[すう]字[じ]",
+  "1378520/0": "生[い]きる",
+  "1379430/0": "生[せい]物[ぶつ]",
+  "1381140/0": "西[せい]暦[れき]",
+  "1384860/0": "切[き]れる",
+  "1385510/0": "接[せつ]続[ぞく]詞[し]",
+  "1385640/0": "接[せっ]頭[とう]辞[じ]",
+  "1385670/0": "接[せつ]尾[び]辞[じ]",
+  "1385780/1": "折[お]り",
+  "1387210/0": "先[さき]",
+  "1387450/0": "先[さき]駆[が]ける",
+  "1387990/0": "先[せん]生[せい]",
+  "1391120/0": "染[し]みる",
+  "1392580/0": "前[まえ]",
+  "1393090/0": "前[ぜん]者[しゃ]",
+  "1393680/0": "前[ぜん]提[てい]",
+  "1395620/0": "全[ぜん]然[ぜん]",
+  "1396490/0": "膳[ぜん]",
+  "1397450/1": "組[く]み",
+  "1400840/0": "相[そう]応[おう]",
+  "1401220/0": "相[あい]槌[づち]",
+  "1402640/0": "送[おく]り仮[が]名[な]",
+  "1403120/0": "増[ま]す",
+  "1403390/0": "憎[にく]い",
+  "1403770/0": "促[そく]音[おん]",
+  "1404090/0": "即[そく]する",
+  "1404090/1": "則[そく]する",
+  "1404100/0": "即[すなわ]ち",
+  "1404450/0": "束[たば]",
+  "1404630/0": "足[あし]",
+  "1404630/1": "脚[あし]",
+  "1404740/0": "足[た]りる",
+  "1405790/0": "続[つづ]く",
+  "1405800/0": "続[つづ]ける",
+  "1406680/0": "損[そん]じる",
+  "1407290/0": "他[た]動[どう]詞[し]",
+  "1407460/0": "多[おお]い",
+  "1409140/0": "体[からだ]",
+  "1409800/0": "対[たい]",
+  "1411070/0": "袋[ふくろ]",
+  "1412340/0": "代[だい]名[めい]詞[し]",
+  "1412560/0": "台[だい]",
+  "1413660/0": "大[だい]好[す]き",
+  "1413950/0": "大[おお]字[あざ]",
+  "1414150/0": "大[だい]丈[じょう]夫[ぶ]",
+  "1415260/0": "第[だい]",
+  "1415270/0": "第[だい]一[いち]",
+  "1415890/0": "託[かこつ]ける",
+  "1416400/0": "脱[ぬ]ぐ",
+  "1416830/0": "誰[だれ]",
+  "1416840/0": "誰[だれ]か",
+  "1416860/0": "誰[だれ]も",
+  "1417040/0": "単[たん]位[い]",
+  "1419390/0": "弾[はず]み",
+  "1419990/0": "男[おとこ]",
+  "1420470/0": "知[し]る",
+  "1421540/0": "地[ち]理[り]",
+  "1421610/0": "恥[は]じる",
+  "1423000/0": "着[き]る",
+  "1423310/0": "中[なか]",
+  "1424410/0": "中[ちゅう]止[し]",
+  "1427900/0": "張[は]る",
+  "1430230/0": "頂[ちょう]戴[だい]",
+  "1430670/0": "直[ただ]ちに",
+  "1431330/0": "直[ちょく]前[ぜん]",
+  "1432840/0": "通[つう]",
+  "1435370/0": "定[さだ]まる",
+  "1437210/0": "滴[しずく]",
+  "1437270/0": "的[まと]",
+  "1440260/0": "天[てん]文[もん]",
+  "1440820/0": "添[てん]加[か]",
+  "1441390/0": "点[てん]",
+  "1444270/0": "塗[ぬ]る",
+  "1444610/0": "渡[わた]す",
+  "1444680/0": "渡[わた]る",
+  "1444910/0": "途[と]端[たん]に",
+  "1445020/0": "都[つ]度[ど]",
+  "1445160/0": "度[ど]",
+  "1445260/0": "度[ど]量[りょう]衡[こう]",
+  "1445690/0": "怒[おこ]る",
+  "1445870/0": "倒[とう]語[ご]",
+  "1448350/0": "棟[むね]",
+  "1448780/0": "当[あ]たり",
+  "1448810/0": "当[あ]たる",
+  "1448810/1": "当[あた]る",
+  "1448890/0": "当[あ]て字[じ]",
+  "1449190/0": "当[とう]然[ぜん]",
+  "1450430/0": "逃[のが]す",
+  "1451150/0": "働[はたら]く",
+  "1451380/0": "動[どう]詞[し]",
+  "1451470/0": "動[どう]物[ぶつ]",
+  "1451750/0": "同[おな]じ",
+  "1454510/0": "得[とく]意[い]",
+  "1454670/0": "特[とく]に",
+  "1456450/0": "読[とう]点[てん]",
+  "1463770/0": "日[ひ]",
+  "1464340/0": "日[ひ]付[づけ]",
+  "1464530/0": "日本[にほん]語[ご]",
+  "1465590/0": "入[はい]る",
+  "1465610/0": "入[い]れる",
+  "1466920/0": "如[ごと]く",
+  "1466930/0": "如[ごと]し",
+  "1467150/0": "任[まか]せる",
+  "1468060/1": "歳[とし]",
+  "1472630/0": "杯[さかずき]",
+  "1477120/0": "発[はつ]",
+  "1477170/0": "発[はつ]音[おん]",
+  "1478190/0": "抜[ぬ]く",
+  "1478370/0": "伴[ともな]う",
+  "1478750/0": "半[はん]",
+  "1480670/0": "反[はん]対[たい]",
+  "1482110/0": "晩[ばん]",
+  "1482410/0": "番[ばん]目[め]",
+  "1484710/0": "非[ひ]",
+  "1485770/0": "尾[お]",
+  "1487400/0": "必[かなら]ず",
+  "1487660/0": "必[ひつ]要[よう]",
+  "1489320/0": "票[ひょう]",
+  "1489420/0": "表[ひょう]記[き]",
+  "1489510/0": "表[ひょう]現[げん]",
+  "1490430/0": "秒[びょう]",
+  "1490570/0": "品[ひん]詞[し]",
+  "1491420/0": "不[ふ]可[か]抗[こう]力[りょく]",
+  "1495740/0": "付[つ]く",
+  "1495770/0": "付[つ]ける",
+  "1497800/0": "腐[くさ]る",
+  "1497930/0": "負[お]う",
+  "1497980/0": "負[ま]ける",
+  "1499290/0": "部[ぶ]",
+  "1499400/0": "部[ぶ]首[しゅ]",
+  "1500440/0": "副[ふく]詞[し]",
+  "1501330/0": "複[ふく]合[ごう]語[ご]",
+  "1501400/0": "複[ふく]数[すう]",
+  "1502390/0": "物[もの]",
+  "1503860/0": "分[ぶん]数[すう]",
+  "1505390/0": "文[も]字[じ]",
+  "1505600/0": "文[ぶん]法[ぽう]",
+  "1507090/0": "平[ひら]仮[が]名[な]",
+  "1508380/0": "並[なら]ぶ",
+  "1508550/0": "閉[と]じる",
+  "1510650/0": "変[か]える",
+  "1510790/0": "変[か]わる",
+  "1511340/0": "変[へん]体[たい]仮[が]名[な]",
+  "1511600/0": "片[かた]仮[か]名[な]",
+  "1512150/0": "返[かえ]る",
+  "1514110/0": "捕[つか]まる",
+  "1514330/1": "歩[あゆみ]",
+  "1515020/0": "母[ぼ]音[いん]",
+  "1516930/0": "方[ほう]",
+  "1516940/0": "方[ほう]位[い]",
+  "1516990/0": "方[ほう]向[こう]",
+  "1518320/0": "飽[あ]くまで",
+  "1519210/0": "忘[わす]れる",
+  "1519300/0": "房[ふさ]",
+  "1522150/0": "本[ほん]",
+  "1523690/0": "凡[はん]例[れい]",
+  "1524610/0": "枚[まい]",
+  "1524650/0": "毎[まい]",
+  "1524930/0": "又[また]",
+  "1525250/0": "末[すえ]",
+  "1525770/0": "万[まん]が一[いち]",
+  "1525780/0": "万[まん]一[いち]",
+  "1526540/0": "万[まん]葉[よう]仮[が]名[な]",
+  "1526960/0": "味[あじ]",
+  "1527090/0": "未[ひつじ]",
+  "1527750/0": "未[み]然[ぜん]形[けい]",
+  "1531330/0": "名[な]",
+  "1531570/0": "名[めい]詞[し]",
+  "1531630/0": "名[な]乗[の]り",
+  "1532180/0": "命[めい]令[れい]形[けい]",
+  "1532860/0": "鳴[な]き声[ごえ]",
+  "1536350/0": "夜[よる]",
+  "1540590/0": "幽[ゆう]霊[れい]",
+  "1541620/0": "有[ゆう]名[めい]",
+  "1542160/0": "遊[あそ]ぶ",
+  "1542190/0": "遊[ゆう]戯[ぎ]",
+  "1543240/0": "予[よ]定[てい]",
+  "1543840/0": "余[よ]",
+  "1545180/0": "幼[よう]児[じ]語[ご]",
+  "1546270/0": "用[よう]語[ご]",
+  "1547330/0": "欲[ほ]しい",
+  "1547720/0": "来[く]る",
+  "1548390/0": "頼[たよ]り",
+  "1548550/0": "落[お]ちる",
+  "1550140/0": "理[り]由[ゆう]",
+  "1550980/0": "陸[りく]",
+  "1551530/0": "立[た]てる",
+  "1551990/0": "略[りゃく]語[ご]",
+  "1552000/0": "略[りゃく]字[じ]",
+  "1555560/0": "臨[のぞ]む",
+  "1557950/0": "暦[こよみ]",
+  "1559640/0": "連[れん]体[たい]形[けい]",
+  "1559650/0": "連[れん]体[たい]詞[し]",
+  "1559690/0": "連[れん]濁[だく]",
+  "1559880/0": "連[れん]用[よう]",
+  "1559890/0": "連[れん]用[よう]形[けい]",
+  "1562600/0": "惑[わく]星[せい]",
+  "1567740/0": "撥[はつ]音[おん]",
+  "1575870/0": "依[い]存[ぞん]",
+  "1576360/0": "逸[そ]れる",
+  "1577180/1": "何某[なにがし]",
+  "1578040/0": "共[とも]",
+  "1578290/0": "倦[あぐ]む",
+  "1578490/0": "古[こ]文[ぶん]",
+  "1578850/0": "行[い]く",
+  "1579080/0": "頃[ころ]",
+  "1579980/0": "重[ちょう]複[ふく]",
+  "1580640/0": "人[ひと]",
+  "1580825/0": "数[すう]",
+  "1582200/0": "途[と]中[ちゅう]",
+  "1582305/0": "等[とう]",
+  "1582310/0": "頭[あたま]",
+  "1583030/0": "拍[ひょう]子[し]",
+  "1583370/0": "匹[ひき]",
+  "1583470/0": "品[しな]",
+  "1584930/0": "余[あま]り",
+  "1585650/0": "箱[はこ]",
+  "1587040/0": "言[い]う",
+  "1587070/1": "活[い]かす",
+  "1589260/0": "落[お]とす",
+  "1589350/0": "思[おも]う",
+  "1589880/0": "関[かか]わる",
+  "1590250/2": "カ所[しょ]",
+  "1590250/3": "ヶ所",
+  "1590250/4": "か所[しょ]",
+  "1590250/5": "ヵ所",
+  "1590770/2": "代[かわ]り",
+  "1591150/0": "聞[き]こえる",
+  "1591330/0": "気[き]づく",
+  "1591420/0": "決[き]まる",
+  "1591990/0": "気[き]をつける",
+  "1596050/0": "精[せい]々[ぜい]",
+  "1596090/0": "折[せっ]角[かく]",
+  "1597040/0": "立[た]つ",
+  "1597200/0": "頼[たよ]る",
+  "1600160/0": "値[ね]段[だん]",
+  "1600260/0": "残[のこ]す",
+  "1600900/0": "話[はなし]",
+  "1601550/0": "引[ひ]き換[か]え",
+  "1602990/0": "振[ふ]り出[だ]し",
+  "1603820/0": "前[まえ]もって",
+  "1604550/0": "見[み]つかる",
+  "1605280/0": "元[もと]々[もと]",
+  "1605320/0": "漏[も]らす",
+  "1605840/0": "様[よう]",
+  "1606560/0": "分[わ]かる",
+  "1607260/0": "履[は]く",
+  "1607260/1": "穿[は]く",
+  "1609040/0": "値[あたい]する",
+  "1610870/0": "途[と]端[たん]",
+  "1611610/0": "間[ま]違[ちが]う",
+  "1612100/0": "やむを得[え]ない",
+  "1612900/0": "にも関[かか]わらず",
+  "1630470/0": "君[きみ]が代[よ]",
+  "1631520/0": "憚[はばか]る",
+  "1632150/0": "と来[き]たら",
+  "1633480/0": "錠[じょう]",
+  "1634060/0": "矢[や]先[さき]",
+  "1634680/0": "已[い]然[ぜん]形[けい]",
+  "1639060/0": "和[わ]製[せい]英[えい]語[ご]",
+  "1640500/1": "比[くら]べものにならない",
+  "1649010/0": "語[ご]源[げん]学[がく]",
+  "1661170/0": "太[たい]陽[よう]系[けい]",
+  "1701180/0": "着[ちゃく]脱[だつ]",
+  "1711780/0": "序[じょ]数[すう]",
+  "1720240/0": "新[しん]字[じ]体[たい]",
+  "1730860/0": "人[にん]称[しょう]代[だい]名[めい]詞[し]",
+  "1747110/0": "活[かつ]用[よう]形[けい]",
+  "1747960/0": "飽[あ]くまでも",
+  "1749070/0": "相[あい]まって",
+  "1759600/0": "指[し]示[じ]代[だい]名[めい]詞[し]",
+  "1816480/0": "時[じ]制[せい]",
+  "1849410/0": "打[う]って変[か]わる",
+  "1852820/0": "押[お]して",
+  "1858420/0": "至[いた]り",
+  "1867310/0": "考[かんが]えられない",
+  "1919550/0": "泊[はく]",
+  "1922780/0": "不[ふ]",
+  "1956010/0": "貫[かん]",
+  "1956150/0": "訓[くん]",
+  "1956960/0": "無[む]",
+  "1982860/0": "代[だい]",
+  "1984280/0": "擬[ぎ]音[おん]語[ご]",
+  "2008570/0": "尽[ず]くめ",
+  "2011000/0": "思[おも]わしい",
+  "2018190/0": "や否[いな]や",
+  "2024820/0": "倦[あぐ]ねる",
+  "2026590/1": "何[なん]といっても",
+  "2038290/0": "隻[せき]",
+  "2039000/0": "何[なに]から何[なに]まで",
+  "2056760/0": "化[か]",
+  "2061520/0": "撥[はつ]音[おん]便[びん]",
+  "2061525/0": "促[そく]音[おん]便[びん]",
+  "2063890/0": "いざ知[し]らず",
+  "2066550/0": "思[おも]いきや",
+  "2068060/0": "同[おな]じくらい",
+  "2084840/0": "年[ねん]",
+  "2086750/0": "カ国[こく]",
+  "2086750/1": "ヶ国",
+  "2086750/2": "か国[こく]",
+  "2086750/3": "ヵ国",
+  "2087420/0": "お詫[わ]び",
+  "2087905/0": "ら抜[ぬ]き言[こと]葉[ば]",
+  "2110990/0": "四[よ]段[だん]活[かつ]用[よう]",
+  "2112090/0": "中[ちゅう]止[し]形[けい]",
+  "2136160/0": "どちらかと言[い]うと",
+  "2136640/1": "といっても過[か]言[ごん]ではない",
+  "2146030/0": "カ行[ぎょう]変[へん]格[かく]活[かつ]用[よう]",
+  "2146040/0": "サ行[ぎょう]変[へん]格[かく]活[かつ]用[よう]",
+  "2146050/0": "ナ行[ぎょう]変[へん]格[かく]活[かつ]用[よう]",
+  "2146070/0": "ラ行[ぎょう]変[へん]格[かく]活[かつ]用[よう]",
+  "2146080/0": "一[いち]段[だん]活[かつ]用[よう]",
+  "2146090/0": "上[かみ]一[いち]段[だん]活[かつ]用[よう]",
+  "2146100/0": "下[しも]一[いち]段[だん]活[かつ]用[よう]",
+  "2146110/0": "五[ご]段[だん]活[かつ]用[よう]",
+  "2146140/0": "上[かみ]二[に]段[だん]活[かつ]用[よう]",
+  "2146150/0": "下[しも]二[に]段[だん]活[かつ]用[よう]",
+  "2146160/0": "サ変[へん]",
+  "2146170/0": "ラ変[へん]",
+  "2146180/0": "ナ変[へん]",
+  "2146190/0": "カ変[へん]",
+  "2149200/0": "ク活[かつ]用[よう]",
+  "2149340/0": "シク活[かつ]用[よう]",
+  "2149350/0": "タリ活用[かつよう]",
+  "2149360/0": "ナリ活[かつ]用[よう]",
+  "2150190/0": "歴[れき]史[し]的[てき]仮[か]名[な]遣[づか]い",
+  "2152340/0": "達[たっ]て",
+  "2160680/0": "方[ほう]がいい",
+  "2179440/0": "音[おん]変[へん]化[か]",
+  "2200850/0": "ク語[ご]法[ほう]",
+  "2208060/0": "遍[へん]",
+  "2215420/0": "を以[もっ]て",
+  "2217190/0": "美[び]化[か]語[ご]",
+  "2234700/0": "直[ちょく]示[じ]",
+  "2251180/0": "辞[じ]書[しょ]形[けい]",
+  "2257820/0": "高[こう]低[てい]アクセント",
+  "2259190/0": "自[じ]",
+  "2266770/0": "詞[し]",
+  "2276200/0": "失[しつ]礼[れい]します",
+  "2394170/0": "可[か]能[のう]形[けい]",
+  "2394680/0": "思[おも]うに",
+  "2421300/1": "い形[けい]容[よう]詞[し]",
+  "2421310/1": "な形[けい]容[よう]詞[し]",
+  "2446800/0": "交[ま]ぜ書[が]き",
+  "2690730/0": "サ変[へん]動[どう]詞[し]",
+  "2733050/0": "連[れん]体[たい]",
+  "2763540/0": "に備[そな]えて",
+  "2773910/0": "今[いま]ひとつ",
+  "2780080/0": "給[たも]ふ",
+  "2826190/0": "各[おの]々[おの]",
+  "2826588/0": "意[い]向[こう]形[けい]",
+  "2826766/0": "思[おも]うように",
+  "2827194/0": "擬[ぎ]情[じょう]語[ご]",
+  "2827473/0": "敵[てき]性[せい]語[ご]",
+  "2828879/0": "四[よ]つ仮[が]名[な]",
+  "2830705/0": "身[しん]体[たい]",
+  "2832694/0": "一[いっ]途[と]をたどる",
+  "2835704/0": "よるところが大[おお]きい",
+  "2836318/0": "求[もと]まる",
+  "2840784/0": "幸[さいわ]いなことに",
+  "2843396/0": "無[む]声[せい]化[か]",
+  "2844100/0": "沖[おき]縄[なわ]語[ご]",
+  "2844110/0": "代[だい]用[よう]字[じ]",
+  "2845662/0": "先[さき]立[だ]って",
+  "2846390/0": "直[なお]る",
+  "2846464/0": "さ入[い]れ言[こと]葉[ば]",
+  "2846553/0": "名[めい]詞[し]化[か]",
+  "2851217/0": "その結[けっ]果[か]",
+  "2855520/0": "カ年[ねん]",
+  "2855520/1": "ヵ年",
+  "2855520/3": "ヶ年",
+  "2857381/0": "否[いな]",
+  "2861218/0": "何[なん]のこと",
+  "2862364/0": "と雖[いえど]も",
+  "2863472/1": "いかんを問[と]わず",
+  "2864796/0": "被覆形[ひふくけい]",
+  "2864797/0": "露出形[ろしゅつけい]",
+  "5502960/0": "達[いたる]",
+  "5523362/0": "丁[あたる]"
+ }
+}

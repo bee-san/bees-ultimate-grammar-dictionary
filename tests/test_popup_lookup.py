@@ -94,7 +94,37 @@ def test_alias_does_not_inherit_a_discontinuous_pattern_reading(indexed):
     for row in corpus["entries"]:
         for point in row["contributions"]:
             if point.get("provenance", {}).get("popupLookupRow"):
-                assert point["reading"] is None
+                # Only another planned spelling that reads exactly as this form.
+                assert point["reading"] is None or is_exact_reading(row["expression"], point["reading"])
+
+
+def test_a_synthetic_lemma_is_looked_up_by_the_form_it_stands_for():
+    point = {"source": "edewakaru", "source_id": "もする", "row_uid": "edewakaru:339",
+             "expression": "もする", "reading": "もしない"}
+    corpus = {"sourceLabels": {"edewakaru": "絵でわかる日本語"},
+              "entries": [{"expression": "もする", "variants": [], "contributions": [point]}]}
+    plan = lookup_plan(corpus, {})
+    assert plan[("edewakaru", "edewakaru:339")]["forms"] == ["もしない"]
+    rows = {row["expression"]: row for row in apply_popup_lookups(corpus, {})["entries"]}
+    # The lemma keeps its published row but nothing conjugates into it.
+    assert rows["もする"]["lookup"] is False and "lookup" not in rows["もしない"]
+    # A producer that titles the record with both forms keeps both.
+    titled = dict(point, expression="きれる", source_id="きれる", reading="きれる",
+                  variants=["〜きれる・〜きれない", "きれない"])
+    corpus["entries"][0] = {"expression": "きれる", "variants": [], "contributions": [titled]}
+    assert lookup_plan(corpus, {})[("edewakaru", "edewakaru:339")]["forms"] == ["きれる", "きれない"]
+
+
+@pytest.mark.parametrize("expression,reading,forms", [
+    ("たかがく", "たかが", ["たかがく", "たかが"]),   # the producer's own lookup key
+    ("と", "と～ない", ["と"]),                       # a discontinuous pattern is not a form
+])
+def test_a_producer_reading_for_a_kana_headword_is_its_lookup_key(expression, reading, forms):
+    point = {"source": "nihongo_no_sensei", "source_id": expression, "row_uid": "nns:1",
+             "expression": expression, "reading": reading}
+    corpus = {"sourceLabels": {"nihongo_no_sensei": "毎日のんびり日本語教師"},
+              "entries": [{"expression": expression, "variants": [], "contributions": [point]}]}
+    assert lookup_plan(corpus, {})[("nihongo_no_sensei", "nns:1")]["forms"] == forms
 
 
 def test_missing_forms_and_changed_override_evidence_block_publication():

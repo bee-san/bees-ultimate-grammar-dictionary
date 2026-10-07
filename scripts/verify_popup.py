@@ -29,6 +29,18 @@ CASES = [
     ("行かないで。", "ないで", "ないで", "Bunpro Grammar Reference"),
     ("学生あっての大学だ。", "あっての", "あっての", "日本語文型辞典"),
     ("あいにく雨です。", "あいにく", "あいにく", "絵でわかる日本語"),
+    # Records filed under a typo or a corrupted headword are found by their real form.
+    ("学生とはいえ、", "とはいえ", "とはいえ", "どんなときどう使う 日本語表現文型辞典"),
+    ("天才と言っても過言ではない。", "と言っても", "と言っても過言ではない", "NINJAL 日本語文型データベース"),
+    ("笑わずにはいられなかった。", "ずには", "ずにはいられない", "どんなときどう使う 日本語表現文型辞典"),
+]
+# Synthetic lemmas a producer filed negative constructions under must not be
+# offered as the headword of a real negative (`ずにはいられなかった` is not `ずにはいる`).
+ABSENT = [
+    ("笑わずにはいられなかった。", "ずには", "ずにはいる"),
+    ("笑わずにはいられなかった。", "ずには", "ずにはいられる"),
+    ("読みもしない。", "もしない", "もする"),
+    ("急がねばならない。", "ねば", "ねばなる"),
 ]
 
 
@@ -51,7 +63,7 @@ def verify(path: pathlib.Path) -> dict:
     node = shutil.which("node")
     if node is None:
         raise RuntimeError("Node.js is required for the Yomitan popup integration check")
-    wanted = {case[2] for case in CASES}
+    wanted = {case[2] for case in CASES + ABSENT}
     rows = []
     with zipfile.ZipFile(path) as archive:
         for name in archive.namelist():
@@ -60,8 +72,9 @@ def verify(path: pathlib.Path) -> dict:
                     if row[0] in wanted:
                         rows.append({"term": row[0], "rules": row[3], "sources": sorted(source_names(row[5]))})
     cases = [dict(zip(("text", "hover", "term", "source"), case)) for case in CASES]
+    absent = [dict(zip(("text", "hover", "term"), case)) for case in ABSENT]
     result = subprocess.run([node, str(ROOT / "scripts/verify_popup.mjs")],
-                            input=json.dumps({"rows": rows, "cases": cases}), text=True,
+                            input=json.dumps({"rows": rows, "cases": cases, "absent": absent}), text=True,
                             capture_output=True)
     if result.returncode:
         raise RuntimeError(result.stderr)

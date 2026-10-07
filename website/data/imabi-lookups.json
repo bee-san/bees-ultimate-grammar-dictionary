@@ -1,0 +1,4413 @@
+{
+  "schemaVersion": 1,
+  "description": "Reviewed lookup forms from locked IMABI lesson titles, headings and explicit variant descriptions. A link indexes the whole lesson; it does not equate the named forms or their senses.",
+  "lessons": [
+    {
+      "pageId": "79",
+      "title": "The Copula Verb だ",
+      "expressions": [
+        "だ"
+      ],
+      "headings": [
+        "The Copula Verb だ断定助動詞（コピュラ）「だ」",
+        "Forms of “To Be” in English",
+        "Tense",
+        "Affirmation and Negation",
+        "Introducing Japanese Conjugation w/だ",
+        "The Copula Verb だ",
+        "The Non-Past Tense　非過去形",
+        "Non-Past = Present Tense",
+        "Non-Past = Future Tense",
+        "Omitting Xは",
+        "Omitting だ in Exclamations",
+        "The Past Tense　過去形",
+        "The Negative Form　否定形",
+        "The Casual Form じゃない",
+        "ではない vs でない vs じゃない vs じゃあない",
+        "The Negative-Past Form　過去の否定形"
+      ]
+    },
+    {
+      "pageId": "83",
+      "title": "The Subject Marker が",
+      "expressions": [
+        "が"
+      ],
+      "headings": [
+        "The Subject Marker が主格しゅかくを表あらわす格助詞かくじょし「が」",
+        "What is Case?",
+        "が≠は",
+        "Terminology Recap",
+        "Important Note on Context",
+        "The Case Particle が　格助詞かくじょし「が」の使つかい方かた",
+        "Why Mark the Subject with が?",
+        "New Information",
+        "Existential Sentences",
+        "Animacy of the subject",
+        "Adding Location to an Existential Sentence",
+        "Neutral states w/ adjectival/Adjectival-Noun Predicates",
+        "Neutral Phenomena: Intransitive Verb Predicates",
+        "The Five senses",
+        "Exhaustive Listing",
+        "It is “X” that is Y",
+        "Using ～のほう w/ the Exhaustive-Listing Function of が",
+        "The Exhaustive-Listing が in Questions",
+        "Answers to questions w/ Exhaustive-Listing が",
+        "Spontaneous Remarks",
+        "Lightbulb Moment or Sense of Urgency",
+        "Sense of Discovery",
+        "が as an Object Marker?"
+      ]
+    },
+    {
+      "pageId": "85",
+      "title": "The Particle は I: The Topic/Contrast Marker",
+      "expressions": [
+        "は"
+      ],
+      "headings": [
+        "The Particle は I: Topic/Contrast Marker　主題・対比を表す係助詞「は」①",
+        "The Source of the Confusion",
+        "Usage 1: The Topic Marker は　主題を表す「は」",
+        "What is a “Topic”?",
+        "Examples and Explanations",
+        "は ≒ “As For”",
+        "The Variety of Topicalized Phrases",
+        "ウナギ文",
+        "こんにゃく文",
+        "Generic Statements",
+        "Attributive Phrases: Xは[Y’がZ]",
+        "Generic Questions",
+        "Usage 2: The Contrast Marker は　対比を表す副助詞「は」",
+        "Usage 3: Bare Minimum　最低限を表す副助詞「は」"
+      ]
+    },
+    {
+      "pageId": "91",
+      "title": "The Particle を I",
+      "expressions": [
+        "を"
+      ],
+      "headings": [
+        "The Particle を: The Direct Object 　直接目的語を示す「を」",
+        "What is a Direct Object?　直接目的語とは？",
+        "Intransitive vs Transitive自動詞 vs 他動詞",
+        "Intransitive-Transitive Verb Pairs自動詞と他動詞のペア（自他のペア）",
+        "Usages of the Particle を　「を」の使い方",
+        "The Direct Object Marker を"
+      ]
+    },
+    {
+      "pageId": "97",
+      "title": "The Verbs する & 来る",
+      "expressions": [
+        "する",
+        "来る"
+      ],
+      "headings": [
+        "The Irregular Verbs する & 来る",
+        "The Bases of する (To Do)",
+        "The Conjugations of する",
+        "The Meanings of する",
+        "“To DO” on a Grander Scale",
+        "Nouns + する → “する” Verbs",
+        "To Cost",
+        "To Wear an Accessory",
+        "To Sense",
+        "To Be…. (Occupation/Role)",
+        "To Be/Have",
+        "To Play",
+        "The Bases of 来る (To Come)",
+        "The Conjugations of Kuru 来る",
+        "The Meaning of 来る"
+      ]
+    },
+    {
+      "pageId": "99",
+      "title": "The Particle か I: Basic Questions",
+      "expressions": [
+        "か"
+      ],
+      "headings": [
+        "The Particle か I　　「か」を使った疑問文の作り方",
+        "The Basic Question 　疑問文の基礎的な構造",
+        "Question Words　疑問詞",
+        "「X＋は＋Y（Question Word）＋が＋ Z」",
+        "Basic Questions in Plain Speech　　常体語における疑問文の作り方",
+        "Question Word ＋ だ"
+      ]
+    },
+    {
+      "pageId": "101",
+      "title": "The Particle か W/ The Negative",
+      "expressions": [
+        "か"
+      ],
+      "headings": [
+        "The Particle か W/ The Negative",
+        "～ない（の）ですか？",
+        "The Japanese “Yes” & “No”　　　「はい」か「いいえ」、どっち？",
+        "～ませんか",
+        "～ない（か）？",
+        "～ないのか",
+        "～ないの？",
+        "～（ん）じゃないですか・～んじゃありませんか?"
+      ]
+    },
+    {
+      "pageId": "103",
+      "title": "The Object Marker が",
+      "expressions": [
+        "が"
+      ],
+      "headings": [
+        "The Object Marker が　対象を表す「が」",
+        "Objective Stative Predicates     客観的状態動詞述語の対象を表す「が」",
+        "Possession: ある & いる",
+        "Having Pets",
+        "Necessity: 要る",
+        "要るVS 必要だ",
+        "Non-intentional Perception: 見える & 聞こえる",
+        "Non-Intentional = Inherent Understanding: 分かる",
+        "Ability: できる",
+        "Subjective Stative Predicates感情的・主観的状態述語の対象を表す「が」",
+        "Internal Feeling",
+        "Like/Dislike",
+        "Want/Desire",
+        "Competence"
+      ]
+    },
+    {
+      "pageId": "105",
+      "title": "The Particle も I: Also/Too",
+      "expressions": [
+        "も"
+      ],
+      "headings": [
+        "The Particle も I: Also/Too",
+        "The Adverbial Particle も　　　　　　　副助詞の「も」",
+        "Used with the Negative 　　打ち消しの補強"
+      ]
+    },
+    {
+      "pageId": "124",
+      "title": "The Conjunctive Particle て I: The Affirmative",
+      "expressions": [
+        "て"
+      ],
+      "headings": [
+        "The Conjunctive Particle て I: The Affirmative",
+        "Conjugating with the Particle て in the Affirmative",
+        "With Verbs: ～て・で",
+        "With Adjectives: ～くて",
+        "With Adjectival Nouns/Copula",
+        "Meanings of ～て When Connecting Clauses",
+        "The Polite ～まして & ～でして",
+        "Verb Deletion"
+      ]
+    },
+    {
+      "pageId": "135",
+      "title": "Native Numbers & The Counter ～つ",
+      "expressions": [
+        "つ"
+      ],
+      "headings": [
+        "Native Numbers & The Counter ～つ",
+        "Native Numbers 　和語系の数詞",
+        "Counting Things",
+        "Counting with ～つ"
+      ]
+    },
+    {
+      "pageId": "137",
+      "title": "The Attributive Marker の",
+      "expressions": [
+        "の"
+      ],
+      "headings": [
+        "The Attributive Marker の",
+        "The Case Particle の: The Japanese “Of”",
+        "The Omission of の",
+        "Overlap with Other Grammar",
+        "Orthography: 之 & 乃"
+      ]
+    },
+    {
+      "pageId": "139",
+      "title": "The Locational Marker に",
+      "expressions": [
+        "に"
+      ],
+      "headings": [
+        "The Locational Marker に",
+        "①Locational Marker",
+        "②Directional Marker",
+        "③Indirect Object Marker"
+      ]
+    },
+    {
+      "pageId": "141",
+      "title": "The Particle へ",
+      "expressions": [
+        "へ"
+      ],
+      "headings": [
+        "The Particle へ",
+        "The Case Particle へ",
+        "The Combination Particle へと"
+      ]
+    },
+    {
+      "pageId": "143",
+      "title": "The Particle で I",
+      "expressions": [
+        "で"
+      ],
+      "headings": [
+        "The Particle で I",
+        "The Case Particle で: “At”1",
+        "The Grammaticality of ～に働く",
+        "The Case Particle で: “With” (Method2)"
+      ]
+    },
+    {
+      "pageId": "145",
+      "title": "The Final Particle て",
+      "expressions": [
+        "て"
+      ],
+      "headings": [
+        "The Final Particle て",
+        "The Final Particle て: Light Commands",
+        "Emphasizing a Light Command",
+        "The Copula + Final Particle て"
+      ]
+    },
+    {
+      "pageId": "147",
+      "title": "The Existential Verbs ある & いる",
+      "expressions": [
+        "ある",
+        "いる"
+      ],
+      "headings": [
+        "The Existential Verbs ある & いる",
+        "The Verb ある: Conjugations",
+        "Usage 1: There is X",
+        "Usage 2: Indicating Possession",
+        "Usage 3: To Occur",
+        "Usage 4: Existing ≈ Living",
+        "Usage 5: ～とある",
+        "Usage 6: “Certain”",
+        "The Verb いる: Conjugations",
+        "Usage 1: There is An Animate, Alive X",
+        "Animate but not Alive?",
+        "Usage 2: Existing in a Spot ≈ “to Live”",
+        "Usage 3 : Possessing Animate, Live X",
+        "When ある & いる Overlap",
+        "Common Mistakes"
+      ]
+    },
+    {
+      "pageId": "149",
+      "title": "The Progressive/Continued State: ～ている",
+      "expressions": [
+        "ている"
+      ],
+      "headings": [
+        "The Progressive/CONTINUED STATE: ～ている",
+        "Conjugation Recap",
+        "～ている",
+        "-ing",
+        "Habit",
+        "Resultant State",
+        "Resultant State w/ Motion Verbs",
+        "The Negative Forms: ～ていない vs ～ないでいる vs ～ずにいる",
+        "Contractions",
+        "Ongoing Action → Static Result"
+      ]
+    },
+    {
+      "pageId": "151",
+      "title": "～てある",
+      "expressions": [
+        "てある"
+      ],
+      "headings": [
+        "～てある",
+        "～てある: Creating Stative Verbs",
+        "Type I: -AGENT w/ ～てある",
+        "Type II: +Agent w/ ～てある"
+      ]
+    },
+    {
+      "pageId": "159",
+      "title": "The Parallel/Case Particle と",
+      "expressions": [
+        "と"
+      ],
+      "headings": [
+        "The Parallel/Case Particle と",
+        "The Parallel Particle と:Noun + と + Noun (+ と): “And”",
+        "The Parallel Particle と Is NOT A Conjunction",
+        "Omitting Consecutive と",
+        "と + Predicate ≠ “And”",
+        "The Case Particle と after 1 Noun = “With”",
+        "Comparisons"
+      ]
+    },
+    {
+      "pageId": "161",
+      "title": "The Standard Markers に & と",
+      "expressions": [
+        "に",
+        "と"
+      ],
+      "headings": [
+        "The Standard Markers に & と",
+        "The Standard Marker に",
+        "Comparison with と= “With”",
+        "Comparison “From” から",
+        "The Proportion Marker に"
+      ]
+    },
+    {
+      "pageId": "163",
+      "title": "こそあど IV: こちら, そちら, & あちら",
+      "expressions": [
+        "こちら",
+        "そちら",
+        "あちら"
+      ],
+      "headings": [
+        "こそあど IV: こちら, そちら, & あちら",
+        "こちら",
+        "そちら",
+        "あちら",
+        "こっち, そっち, & あっち"
+      ]
+    },
+    {
+      "pageId": "167",
+      "title": "The Particle か III: Indirect Question",
+      "expressions": [
+        "か"
+      ],
+      "headings": [
+        "The Particle か III: Indirect Question",
+        "Subordinate Clause: When Not a Question",
+        "Embedded/Indirect Questions",
+        "～かどうか",
+        "Subordinate/Embedded Question Clauses = Noun-Like?",
+        "～のか",
+        "Interrogative + か",
+        "～だか",
+        "～んだか",
+        "～んだか ＝ Or"
+      ]
+    },
+    {
+      "pageId": "181",
+      "title": "The Starting Point Marker から",
+      "expressions": [
+        "から"
+      ],
+      "headings": [
+        "The Starting Point Marker から",
+        "The Starting Point Marker から 起点を表す「から」",
+        "Place of DeparturE (Spatial Starting Point)",
+        "Sentence Structure: Eから[V = Intransitive Verb]",
+        "Sentence Structure: E1から（E2に・へ）[V=Intransitive Verb]",
+        "Sentence Structure: Eから・を[V = Intransitive Verb]",
+        "Sentence Structure: E1から(E2まで)V",
+        "sTARTING pOINT OF Any rANGE (E1~E2 = Points in Time/sEQUENCE/oRDER…)",
+        "Starting State",
+        "Starting Materials → Means",
+        "Source of…",
+        "Sentence Structure:  B (agent) から + A (subject) + V [Intransitive Verb]",
+        "Sentence Structure: B (agent) から・に + A (subject) + V [Transitive Verb (Giving Verb)]",
+        "Source = Cause/Judgment Calls",
+        "Departure: を vs から"
+      ]
+    },
+    {
+      "pageId": "183",
+      "title": "The Particle まで",
+      "expressions": [
+        "まで"
+      ],
+      "headings": [
+        "The Particle まで",
+        "Usage I: To the Extent of…",
+        "Usage II: “From X to Y”",
+        "Omitting まで",
+        "Usage I まで vs ～までに",
+        "～までに vs ～前に",
+        "Usage I まで + Non-Temporal に",
+        "Usage 1 まで ＋ で",
+        "Usage III: Extremity",
+        "Usage IV: Adverbial Particle or Dummy Noun?—To be Continued"
+      ]
+    },
+    {
+      "pageId": "189",
+      "title": "よい・いい",
+      "expressions": [
+        "よい",
+        "いい"
+      ],
+      "headings": [
+        "よい・いい",
+        "Conjugation Recap",
+        "Rejecting an Offer",
+        "Insulting/Sarcastic Usages",
+        "Common Set Phrases",
+        "The Adverb よく",
+        "Kanji Spellings",
+        "The Dialectical Variant ええ"
+      ]
+    },
+    {
+      "pageId": "193",
+      "title": "多い & 少ない",
+      "expressions": [
+        "多い",
+        "少ない"
+      ],
+      "headings": [
+        "多い & 少ない",
+        "Quantity/Frequency"
+      ]
+    },
+    {
+      "pageId": "195",
+      "title": "同じ",
+      "expressions": [
+        "同じ"
+      ],
+      "headings": [
+        "同じ",
+        "The History of 同じ",
+        "The 終止形「同じだ」",
+        "The Casual Form おんなじ",
+        "The 連体形「同じ」",
+        "The 形容動詞系の連体形「同じな」",
+        "The Adverbial Form 同じに",
+        "The Adverbial Form 同じように",
+        "The Adverbial Form 同じく",
+        "The Adverbial? Form 同じ",
+        "The Sino-Japanese Prefix 同～"
+      ]
+    },
+    {
+      "pageId": "203",
+      "title": "The Conjunctive Particles から & ので",
+      "expressions": [
+        "から",
+        "ので"
+      ],
+      "headings": [
+        "The Conjunctive Particles から & ので※改訂中",
+        "The Conjunctive Particle から",
+        "The Conjunctive Particle ので"
+      ]
+    },
+    {
+      "pageId": "205",
+      "title": "The Particle のに",
+      "expressions": [
+        "のに"
+      ],
+      "headings": [
+        "The Particle のに",
+        "The Conjunctive Particle のに"
+      ]
+    },
+    {
+      "pageId": "207",
+      "title": "Criticizing: くせに・くせして",
+      "expressions": [
+        "くせに",
+        "くせして"
+      ],
+      "headings": [
+        "Criticizing: くせに・くせして",
+        "～くせに: Dissatisfaction",
+        "～くせして"
+      ]
+    },
+    {
+      "pageId": "211",
+      "title": "Before: ～前",
+      "expressions": [
+        "前"
+      ],
+      "headings": [
+        "Before: ～前",
+        "The Suffix ～前（ぜん）",
+        "The Prefix 前（ぜん）～",
+        "～直前"
+      ]
+    },
+    {
+      "pageId": "213",
+      "title": "After I: あと, のち, & ～てから",
+      "expressions": [
+        "あと",
+        "のち",
+        "てから"
+      ],
+      "headings": [
+        "After I: ～あと, ～のち, & ～てから",
+        "The Noun 後",
+        "～あと",
+        "V1 + ～たあと ∅ (No Particle)",
+        "V1 + ～たあとに",
+        "V1 + ～たあとから",
+        "V1 + ～たあとで",
+        "～後ごに",
+        "～てから",
+        "～のち"
+      ]
+    },
+    {
+      "pageId": "215",
+      "title": "When: 時",
+      "expressions": [
+        "時"
+      ],
+      "headings": [
+        "When: 時",
+        "～とき｛に・は・には・∅・も・にも｝",
+        "Tense Marking"
+      ]
+    },
+    {
+      "pageId": "221",
+      "title": "The Citation Particle と",
+      "expressions": [
+        "と"
+      ],
+      "headings": [
+        "The Citation Particle と",
+        "Direct & Indirect Quotes",
+        "Grammatical Restrictions: Speech Register, Aspect, & Tense",
+        "No Doubling of Politeness markers",
+        "Aspect Restriction: ～ている w/ Third-pErson Thoughts",
+        "No Tense Agreement",
+        "Place of Negation Marker Changes its Scope",
+        "The Full Extent of “Linguistic Output”",
+        "When the Quoted Content ≠ Linguistic Output",
+        "Quoted Content ≠ Direct Object",
+        "XがYをY’（だ）とZ",
+        "XがYをY’とZ　≠ XがYとZ",
+        "Dropping the Citation Verb",
+        "～かと（思う）",
+        "Adding Adverbial Particles to と",
+        "Citation Predicate Complexity",
+        "When the Quoted Content ≠ The Predicate& Quoted Content = Linguistic Output",
+        "Metalanguage representations = w/o と?",
+        "Dropping the Quotative と",
+        "Narration",
+        "Dialect"
+      ]
+    },
+    {
+      "pageId": "223",
+      "title": "The Particle でも",
+      "expressions": [
+        "でも"
+      ],
+      "headings": [
+        "The Particle でも",
+        "The Adverbial Particle でも"
+      ]
+    },
+    {
+      "pageId": "225",
+      "title": "The Parallel Particle や",
+      "expressions": [
+        "や"
+      ],
+      "headings": [
+        "The Parallel Particle や",
+        "Incomplete Lists with や",
+        "Not So Incomplete Lists with や?",
+        "The qualities that N1 and N2 possess—[N1やN2]",
+        "How the List Relates to the Predicate",
+        "The Emotional State of the Speaker",
+        "“New” vs “Old” Information"
+      ]
+    },
+    {
+      "pageId": "227",
+      "title": "The Particle し",
+      "expressions": [
+        "し"
+      ],
+      "headings": [
+        "The Particle し",
+        "終止形 ＋ ～し",
+        "Listing Interrelated predicates",
+        "Indicating Reason by Association",
+        "Understanding 因果 w/ し",
+        "し vs ～ば",
+        "し as a Final Particle",
+        "～｛では・でも・じゃ｝あるまいし2"
+      ]
+    },
+    {
+      "pageId": "232",
+      "title": "While I: ～間",
+      "expressions": [
+        "間"
+      ],
+      "headings": [
+        "While I: ～間",
+        "Physical Intervals: 間 = Between",
+        "Temporal Intervals: ～間 = “While”",
+        "Tense Marking w/ ～間",
+        "Particle Use w/ ～間",
+        "～間 w/ Non-Verbal Predicates"
+      ]
+    },
+    {
+      "pageId": "235",
+      "title": "While II: ～うち",
+      "expressions": [
+        "うち"
+      ],
+      "headings": [
+        "While II: うち",
+        "The Spatial 内（うち）",
+        "The Temporal ～うち",
+        "～うちに w/ Instantaneous Verbs",
+        "Restrictions on Non-Past",
+        "～ている＋｛間に・うちに｝",
+        "～ないうちに",
+        "～ないうちに vs ～前に",
+        "～間は vs ～うちは",
+        "～うちが"
+      ]
+    },
+    {
+      "pageId": "237",
+      "title": "When II: ～頃",
+      "expressions": [
+        "頃"
+      ],
+      "headings": [
+        "When II: ～頃",
+        "Grammatical Scenarios w/頃",
+        "Scenario I: As Standalone Nouns",
+        "Scenario II: In Subordinate Clauses",
+        "Scenario III: In Subordinate Phrases",
+        "Scenario IV: Clauses/Phrases Intertwined",
+        "Scenario V: With Particles",
+        "With に・は・には・∅",
+        "Scenario VI: ～ごろ vs ～どき",
+        "The Suffix ～ごろ",
+        "The Suffix ～どき"
+      ]
+    },
+    {
+      "pageId": "243",
+      "title": "The Conjunctive Particles が & けれど",
+      "expressions": [
+        "が",
+        "けれど",
+        "けれども",
+        "けど",
+        "けども"
+      ],
+      "headings": [
+        "The Conjunctive Particles が & けれど",
+        "The Conjunctive Particle が",
+        "The Conjunctive Particle けれど"
+      ],
+      "evidence": [
+        "けれど, more polite as けれども and casual as けど",
+        "Variant Note: けども is a dialectal variant."
+      ]
+    },
+    {
+      "pageId": "245",
+      "title": "The Final Particles よ & ね",
+      "expressions": [
+        "よ",
+        "ね",
+        "よね"
+      ],
+      "headings": [
+        "The Final Particles よ & ね",
+        "The Final Particle よ",
+        "Intonation",
+        "The Final Particle ね",
+        "Combinations w/ よ・ね",
+        "The Ungrammaticality of よろしいですよ",
+        "ね・よ as Filler Words",
+        "～ね After Commands",
+        "～よ After Nouns: Calling out"
+      ],
+      "evidence": [
+        "■～よね: Viewed as a softer iteration of よ"
+      ]
+    },
+    {
+      "pageId": "247",
+      "title": "語尾 II: な & と",
+      "expressions": [
+        "な",
+        "と"
+      ],
+      "headings": [
+        "語尾 II: な & と",
+        "The Final Particle な",
+        "The Final Particle と"
+      ]
+    },
+    {
+      "pageId": "249",
+      "title": "Start to I: ～始める & ～出す",
+      "expressions": [
+        "始める",
+        "出す"
+      ],
+      "headings": [
+        "Start to I: ～始める & ～出す",
+        "～始める",
+        "～出す",
+        "①The Semantic V2 ～出す",
+        "～出る",
+        "Irregularities",
+        "②The Aspect Marker ～出す",
+        "～始める vs ～出す"
+      ]
+    },
+    {
+      "pageId": "251",
+      "title": "End: ～終わる・終える, ～やむ",
+      "expressions": [
+        "終わる",
+        "終える",
+        "やむ"
+      ],
+      "headings": [
+        "End: ～終わる・終える, & ～やむ",
+        "The Transitivity of 終わる & 終える",
+        "～終わる・終える as V2 in Compound Verbs",
+        "～やむ",
+        "To Quit Doing"
+      ]
+    },
+    {
+      "pageId": "253",
+      "title": "毎～, ～ごとに, & ～おきに",
+      "expressions": [
+        "毎",
+        "ごとに",
+        "おきに"
+      ],
+      "headings": [
+        "毎～, ～毎に, & ～おきに",
+        "The Prefix 毎～",
+        "～ごとに",
+        "Each/Every…",
+        "From X to X…",
+        "Every/Each…",
+        "With Each…",
+        "～ごとに ＝ Objective",
+        "Expressing “Every Time”",
+        "～おきに"
+      ]
+    },
+    {
+      "pageId": "257",
+      "title": "Potential II: できる",
+      "expressions": [
+        "できる"
+      ],
+      "headings": [
+        "Potential II: できる",
+        "できる"
+      ]
+    },
+    {
+      "pageId": "261",
+      "title": "The Particle だけ",
+      "expressions": [
+        "だけ"
+      ],
+      "headings": [
+        "The Particle だけ",
+        "The Adverbial Particle だけ",
+        "ただ"
+      ]
+    },
+    {
+      "pageId": "263",
+      "title": "The Particle も II",
+      "expressions": [
+        "も"
+      ],
+      "headings": [
+        "The Particle も II",
+        "Both X & Y/Neither X Nor Y　「Xも・・・Yも・・・」",
+        "Emphasizing Quantity　　　極大値を示す「も」",
+        "Emphasizing Lack of Quantity　　微小量を示す「も」",
+        "Quantity + もの      「数量＋もの」"
+      ]
+    },
+    {
+      "pageId": "265",
+      "title": "The Non-Question “How”: ～方(かた)",
+      "expressions": [
+        "方",
+        "かた"
+      ],
+      "headings": [
+        "The Non-Question “How”: ～方(かた)",
+        "～方: The Non-Interrogative “How”"
+      ]
+    },
+    {
+      "pageId": "271",
+      "title": "The Particle の II",
+      "expressions": [
+        "の"
+      ],
+      "headings": [
+        "The Particle の II",
+        "In Attribute Clauses",
+        "Keys"
+      ]
+    },
+    {
+      "pageId": "273",
+      "title": "The Particle で II",
+      "expressions": [
+        "で"
+      ],
+      "headings": [
+        "The Particle で II",
+        "The Particle で Continued",
+        "The Conjunction で"
+      ]
+    },
+    {
+      "pageId": "275",
+      "title": "Might: かもしれない",
+      "expressions": [
+        "かもしれない"
+      ],
+      "headings": [
+        "Might: かもしれない",
+        "ConjUGATING WITH かもしれない",
+        "～かもしれない vs ～だろう",
+        "～かもしれないだろう ？？",
+        "～のかもしれない",
+        "～かも",
+        "～かもしれん"
+      ]
+    },
+    {
+      "pageId": "279",
+      "title": "Pluralization II: ～たち",
+      "expressions": [
+        "たち"
+      ],
+      "headings": [
+        "Pluralization II: ～たち",
+        "～タチの使い方"
+      ]
+    },
+    {
+      "pageId": "294",
+      "title": "～てあげる, ～てくれる, & ～てもらう",
+      "expressions": [
+        "てあげる",
+        "てくれる",
+        "てもらう"
+      ],
+      "headings": [
+        "第102課: ～てあげる, ～てくれる, & ～てもらう",
+        "The Basics",
+        "Compare and Contrast: ～てくれる VS ～てもらう"
+      ]
+    },
+    {
+      "pageId": "300",
+      "title": "～てあげる, ～てくれる, & ～てもらう",
+      "expressions": [
+        "てあげる",
+        "てくれる",
+        "てもらう"
+      ],
+      "headings": [
+        "～てあげる, ～てくれる, & ～てもらう",
+        "The Basics",
+        "Compare and Contrast: ～てくれる VS ～てもらう"
+      ]
+    },
+    {
+      "pageId": "302",
+      "title": "知る VS 分かる",
+      "expressions": [
+        "知る",
+        "分かる"
+      ],
+      "headings": [
+        "知る VS 分かる",
+        "Differentiating the Two",
+        "FROM A DICTIONARY STANDPOINT",
+        "【知る】［動ラ五］(Transitive)",
+        "【分かる】［動ラ五］(Ergative1 Intransitive Verb)",
+        "Semantic Differences",
+        "GRAMMATICAL DIFFERENCES",
+        "Marking the Subject of わかる",
+        "Forms of 知る",
+        "Tense Differences",
+        "知らない VS 知っていない",
+        "Other Dialects & Real Examples"
+      ]
+    },
+    {
+      "pageId": "308",
+      "title": "Wanting Something: ほしい",
+      "expressions": [
+        "ほしい"
+      ],
+      "headings": [
+        "Wanting Something: ほしい",
+        "欲しい: Wanting Something",
+        "～てほしい: Wanting Something Done by…",
+        "～てほしいと思う",
+        "～てほしかった",
+        "～ないでほしい vs ～てほしくない"
+      ]
+    },
+    {
+      "pageId": "310",
+      "title": "The Auxiliary Verb ～がる",
+      "expressions": [
+        "がる"
+      ],
+      "headings": [
+        "The Auxiliary Verb ～がる",
+        "In-Depth Coverage of ～がる"
+      ]
+    },
+    {
+      "pageId": "312",
+      "title": "The Particle たり",
+      "expressions": [
+        "たり"
+      ],
+      "headings": [
+        "The Particle たり",
+        "The Conjunctive Particle たり"
+      ]
+    },
+    {
+      "pageId": "314",
+      "title": "Nominalizers: の, こと, & もの",
+      "expressions": [
+        "の",
+        "こと",
+        "もの"
+      ],
+      "headings": [
+        "Nominalizers: の, こと, & もの",
+        "The Nominalizers の and こと",
+        "こと & の As Pronouns",
+        "Noun + のこと",
+        "Adverb + ～のこと",
+        "Adjective + ～こと = Adverb? 長いこと",
+        "The Nominalizer もの",
+        "もの・物・者"
+      ]
+    },
+    {
+      "pageId": "316",
+      "title": "Expressions with こと",
+      "expressions": [
+        "こと"
+      ],
+      "headings": [
+        "Expressions with こと",
+        "～ことがある: Experience(S) One Has",
+        "～ことがある w/ Adjectival Predicates",
+        "NON-REMODELED CONTENT BELOW"
+      ]
+    },
+    {
+      "pageId": "318",
+      "title": "The Particle ながら I: Simultaneous Action",
+      "expressions": [
+        "ながら"
+      ],
+      "headings": [
+        "The Particle ながら I: Simultaneous Action",
+        "Simultaneous Action"
+      ]
+    },
+    {
+      "pageId": "328",
+      "title": "Difficult I: ～にくい",
+      "expressions": [
+        "にくい"
+      ],
+      "headings": [
+        "Difficult I: ～にくい",
+        "The Adjective 難しい & Its Variants",
+        "The Sino-Japanese 難",
+        "～にくい"
+      ]
+    },
+    {
+      "pageId": "330",
+      "title": "Too: ～すぎる",
+      "expressions": [
+        "すぎる"
+      ],
+      "headings": [
+        "Too: ～すぎる",
+        "The Meanings of 過ぎる",
+        "～すぎる",
+        "Semantic Quirks behind ～すぎる",
+        "The Placement of ～ない",
+        "Morphological Oddities",
+        "～すぎ",
+        "～に過ぎる",
+        "～でありすぎる"
+      ]
+    },
+    {
+      "pageId": "332",
+      "title": "The Verbs 続く ＆ 続ける",
+      "expressions": [
+        "続く",
+        "続ける"
+      ],
+      "headings": [
+        "Verbs of Continuation　継続を示す動詞",
+        "The Verbs 続く & 続ける",
+        "継続・持続・連続",
+        "Special Usages of Their て-Forms ～て形を使った特殊な用法",
+        "～続ける VS ～続く",
+        "“Verb ＋ ～続ける” VS “Verb ＋ ～のを続ける”",
+        "立て続けに・続けざまに"
+      ]
+    },
+    {
+      "pageId": "334",
+      "title": "Shika & Hoka",
+      "expressions": [
+        "しか",
+        "ほか"
+      ],
+      "headings": [
+        "The Particles しか & ほか"
+      ]
+    },
+    {
+      "pageId": "336",
+      "title": "The Conditionals",
+      "expressions": [
+        "と",
+        "なら",
+        "ならば",
+        "たら",
+        "ば"
+      ],
+      "headings": [
+        "Conditionals I: The Particles と, なら(ば), たら, & ば",
+        "The Conjunctive Particle と",
+        "The Conjunctive Particle なら（ば）",
+        "The Conjunctive Particle たら",
+        "The Adverb もし",
+        "The Conjunctive Particle ば",
+        "Keys"
+      ]
+    },
+    {
+      "pageId": "338",
+      "title": "Conditional Phrases",
+      "expressions": [
+        "たら",
+        "ば"
+      ],
+      "headings": [
+        "Conditional Phrases",
+        "たら Phrases",
+        "ば Phrases"
+      ]
+    },
+    {
+      "pageId": "340",
+      "title": "The Particle も III",
+      "expressions": [
+        "も"
+      ],
+      "headings": [
+        "The Particle も III",
+        "Xが／もXならYもYだ",
+        "XもAなら/ばYもB",
+        "XもAばB"
+      ]
+    },
+    {
+      "pageId": "350",
+      "title": "The Verb 急ぐ",
+      "expressions": [
+        "急ぐ"
+      ],
+      "headings": [
+        "The Verb 急ぐ",
+        "As a Standalone Verb　単独で使われる動詞としての用法",
+        "The Adverb 急いで",
+        "The Supplementary Verb ～急ぐ",
+        "急ぎの～"
+      ]
+    },
+    {
+      "pageId": "352",
+      "title": "Agent Marker Ni",
+      "expressions": [
+        "に"
+      ],
+      "headings": [
+        "The Agent Marker に",
+        "分かる",
+        "聞こえる",
+        "見える",
+        "ある & いる",
+        "出来る",
+        "要る"
+      ]
+    },
+    {
+      "pageId": "358",
+      "title": "The Causative I: ～させる & ～せる",
+      "expressions": [
+        "させる",
+        "せる"
+      ],
+      "headings": [
+        "The Causative I: ～させる & ～せる",
+        "The Causative Auxiliaries ～させる & ～せる「使役形」の助動詞、～させる・せる",
+        "The Causative w/ Transitive Verbs",
+        "The Causative W/ Intransitive Verbs",
+        "Causative Vs ～て｛もらう・いただく｝",
+        "Unconcern or Let",
+        "～させて｛もらう・いただく｝"
+      ]
+    },
+    {
+      "pageId": "362",
+      "title": "The Volition Form: ～（よ）う",
+      "expressions": [
+        "よう",
+        "う"
+      ],
+      "headings": [
+        "The Volition Form: ～（よ）う",
+        "The Auxiliary Verb ～よ（う）",
+        "～（よ）う｛か・かな・かしら｝",
+        "～（よ）う｛では・じゃ｝ないか",
+        "～（よ）うと思う",
+        "Future Study",
+        "Polite Speech: ～ましょう",
+        "～ましょうか",
+        "Variations"
+      ]
+    },
+    {
+      "pageId": "366",
+      "title": "Honorifics I: 敬称 I:  ～さん, ～様, Etc.",
+      "expressions": [
+        "さん",
+        "様"
+      ],
+      "headings": [
+        "第137課: Honorifics I: 敬称 I: ～さん, ～様, Etc.",
+        "What are 敬称?",
+        "The Ending ～さん: さん付け",
+        "The Ending ～様: 様付け",
+        "The Ending ～君",
+        "The Ending ～殿: ～殿付け",
+        "The Ending ～氏: 氏付け",
+        "The Ending ～夫人",
+        "The Ending ～嬢: 嬢付け",
+        "The Endings ～卿 &　～公",
+        "The Ending ～坊",
+        "Diminutive 呼称: ～ちゃん・っち・たん・ちん・ぽん",
+        "Honorable Mentions"
+      ]
+    },
+    {
+      "pageId": "386",
+      "title": "～ていく & ～てくる",
+      "expressions": [
+        "ていく",
+        "てくる"
+      ],
+      "headings": [
+        "～ていく & ～てくる",
+        "～ていく　&　～てくる"
+      ]
+    },
+    {
+      "pageId": "390",
+      "title": "～てしまう",
+      "expressions": [
+        "てしまう"
+      ],
+      "headings": [
+        "～てしまう",
+        "Key"
+      ]
+    },
+    {
+      "pageId": "392",
+      "title": "Advanced Preparation: ～ておく",
+      "expressions": [
+        "ておく"
+      ],
+      "headings": [
+        "Advanced Preparation: ～ておく",
+        "～ておく",
+        "The Verb 置く",
+        "～ておいた",
+        "Verb Compatibility with ～ておく",
+        "The Two Faces of ～ておく・おいた",
+        "The Effectiveness of ～ておいた"
+      ]
+    },
+    {
+      "pageId": "410",
+      "title": "Easy I: ～やすい",
+      "expressions": [
+        "やすい"
+      ],
+      "headings": [
+        "Easy I: ～やすい",
+        "“Easy” Adjectives　「Easy」を意味する表現",
+        "Adverb Forms　「Easy」を意味する単語の副詞形",
+        "～やすい",
+        "～られやすい"
+      ]
+    },
+    {
+      "pageId": "412",
+      "title": "Honorifics I: 敬称 I:  ～さん, ～様, Etc.",
+      "expressions": [
+        "さん",
+        "様"
+      ],
+      "headings": [
+        "Honorifics I: 敬称 I: ～さん, ～様, Etc.",
+        "What are 敬称?",
+        "The Ending ～さん: さん付け",
+        "The Ending ～様: 様付け",
+        "The Ending ～君",
+        "The Ending ～殿: ～殿付け",
+        "The Ending ～氏: 氏付け",
+        "The Ending ～夫人",
+        "The Ending ～嬢: 嬢付け",
+        "The Endings ～卿 &　～公",
+        "The Ending ～坊",
+        "Diminutive 呼称: ～ちゃん・っち・たん・ちん・ぽん",
+        "Honorable Mentions"
+      ]
+    },
+    {
+      "pageId": "426",
+      "title": "～ために I: In order to…",
+      "expressions": [
+        "ために"
+      ],
+      "headings": [
+        "～ために I: In order to…",
+        "Marking an Objective"
+      ]
+    },
+    {
+      "pageId": "432",
+      "title": "～とおりに",
+      "expressions": [
+        "とおりに"
+      ],
+      "headings": [
+        "～とおりに",
+        "The Literal Definitions of 通り",
+        "～とおりに & ～どおりに"
+      ]
+    },
+    {
+      "pageId": "438",
+      "title": "The Particle など・なんか",
+      "expressions": [
+        "など",
+        "なんか"
+      ],
+      "headings": [
+        "The Particle など・なんか",
+        "The Adverbial Particle など1",
+        "The Adverbial particle なんか",
+        "Dialectical Variants: なんど・なぞ・なんぞ"
+      ]
+    },
+    {
+      "pageId": "440",
+      "title": "The Particle なんて",
+      "expressions": [
+        "なんて"
+      ],
+      "headings": [
+        "The Particle なんて",
+        "Etymology of なんて",
+        "Usage I: As a Quotative Particle",
+        "Usage I’: Vague Defining",
+        "Usage II: Illustrating by Example",
+        "Interchangeability with なんか",
+        "Usage III: As a Topicalizer",
+        "～などというのは",
+        "～のなんて",
+        "Embedded Quote ＋ ～なんて",
+        "Usage III: Embedded Quotes Rendered in Metalinguistic Fashion",
+        "なんて → Shock/Surprise",
+        "Usage III: As a Final particle",
+        "何て",
+        "何て言う ＝ 何と言う",
+        "何て ＝ 何と ＝ “Oh How…”"
+      ]
+    },
+    {
+      "pageId": "442",
+      "title": "The Particles ほど & くらい",
+      "expressions": [
+        "ほど",
+        "くらい",
+        "ぐらい"
+      ],
+      "headings": [
+        "The Particles ほど & くらい",
+        "The Adverbial Particle ほど",
+        "The Adverbial Particle くらい・ぐらい"
+      ],
+      "evidence": [
+        "ほど and くらい―also ぐらい―are not always the same."
+      ]
+    },
+    {
+      "pageId": "444",
+      "title": "The Particle より",
+      "expressions": [
+        "より"
+      ],
+      "headings": [
+        "The Particle より",
+        "The Case Particle より"
+      ]
+    },
+    {
+      "pageId": "448",
+      "title": "Seem: ～そうだ",
+      "expressions": [
+        "そうだ"
+      ],
+      "headings": [
+        "Seem: ～そうだ",
+        "To Look/Seem So: ～そうだ",
+        "Conjugating ～そうだ",
+        "Use of the 未然形: そうだろ",
+        "use of the 連用形: そうだっ・そうで・そうに",
+        "Use of the 終止形",
+        "Use of the 連体形",
+        "Use of the 仮定形",
+        "The Negative Forms of ～そうだ",
+        "～て（い）そうだ",
+        "～そな",
+        "～そー"
+      ]
+    },
+    {
+      "pageId": "450",
+      "title": "Hearsay: ～そうだ",
+      "expressions": [
+        "そうだ"
+      ],
+      "headings": [
+        "Hearsay: ～そうだ",
+        "Conjugating w/ Function 2 ～そうだ",
+        "The Grammaticality of ～そう（だ）",
+        "Comparing ～らしい & ～そうだ",
+        "Example Sentences"
+      ]
+    },
+    {
+      "pageId": "452",
+      "title": "～という, ～ということ, & ～というもの",
+      "expressions": [
+        "という",
+        "ということ",
+        "というもの"
+      ],
+      "headings": [
+        "～という, ～ということ, & ～というもの",
+        "という",
+        "～ということ　& ～というもの",
+        "という:　Emphasis Marker"
+      ]
+    },
+    {
+      "pageId": "458",
+      "title": "Direction Intransitives + を: 向く",
+      "expressions": [
+        "を",
+        "向く"
+      ],
+      "headings": [
+        "Direction Intransitives + を: 向く",
+        "～を向く",
+        "The Transitive Verb 向ける",
+        "～に向く",
+        "～へ向く",
+        "The Intransitive Verb 向かう",
+        "The Suffixes ～向き & ～向け",
+        "The Suffix ～向き",
+        "The Suffix ～向け",
+        "～｛を・に｝振り向く",
+        "～｛を・に｝振り返る",
+        "～｛に・を｝注目する"
+      ]
+    },
+    {
+      "pageId": "460",
+      "title": "Fix/Error: ～忘れる, ～直す, ～間違える, & ～誤る",
+      "expressions": [
+        "忘れる",
+        "直す",
+        "間違える",
+        "誤る"
+      ],
+      "headings": [
+        "Fix/Error: ～忘れる, ～直す, 間違える, & ～誤る",
+        "”To Forget to do…”: ～忘れる",
+        "①Verb1 連用形 ＋ ～忘れる",
+        "②Verb1 連体形 ＋ ～のを忘れる",
+        "③Verb1 連体形 ＋ ～ことを忘れる",
+        "Verb1 連用形 ＋ ～直す",
+        "～直る",
+        "～間違える",
+        "～違える",
+        "～違う",
+        "～誤る"
+      ]
+    },
+    {
+      "pageId": "500",
+      "title": "Object Marking: が VS を",
+      "expressions": [
+        "が",
+        "を"
+      ],
+      "headings": [
+        "Object Marking: が VS を",
+        "Established Interchangeability",
+        "Particle Distribution w/ The Potential",
+        "Stative Predicates 状態的述語",
+        "Ultimate Control 最大限のコントロール",
+        "～ようになる・～ようにする",
+        "Agency　動作主性",
+        "Confusing Intransitive & Potential Forms Together",
+        "Spontaneity 自発性",
+        "Control ≈ Will",
+        "The Ungrammaticality of ～をできる",
+        "W/ 分かる"
+      ]
+    },
+    {
+      "pageId": "502",
+      "title": "Idioms I: 気",
+      "expressions": [
+        "気"
+      ],
+      "headings": [
+        "Idioms I: 気",
+        "The Idioms",
+        ""
+      ]
+    },
+    {
+      "pageId": "504",
+      "title": "How to Use 元気",
+      "expressions": [
+        "元気"
+      ],
+      "headings": [
+        "The Adjectival Noun 元気　　「元気」の使い方",
+        "The History of 元気　「元気」の由来について",
+        "Modern Meanings of 元気　現代日本語における「元気」の意味",
+        "More Set Phrases　「元気」を使った慣用句（続き）",
+        "In Conclusion…　最後に…"
+      ]
+    },
+    {
+      "pageId": "520",
+      "title": "やはり & さすが",
+      "expressions": [
+        "やはり",
+        "さすが"
+      ],
+      "headings": [
+        "The Adverbs やはり & さすが: “As One Thought”",
+        "The Adverb やはり",
+        "The Adverb/Adjectival Noun さすが"
+      ]
+    },
+    {
+      "pageId": "522",
+      "title": "The Adverbs せっかく & わざわざ",
+      "expressions": [
+        "せっかく",
+        "わざわざ"
+      ],
+      "headings": [
+        "The Adverbs せっかく & わざわざ",
+        "The Adverbial Noun せっかく",
+        "The Adverb わざわざ"
+      ]
+    },
+    {
+      "pageId": "524",
+      "title": "The Adverb せめて",
+      "expressions": [
+        "せめて"
+      ],
+      "headings": [
+        "The Adverb せめて",
+        "せめて",
+        "Historical Nuancing of せめて"
+      ]
+    },
+    {
+      "pageId": "531",
+      "title": "The Suffix -Ka　接尾辞の「～化」",
+      "expressions": [
+        "化"
+      ],
+      "headings": [
+        "The Suffix ～化: “-ation”",
+        "The Basic Meaning of ～化: 「～になる・～にする」相当の用法",
+        "～化する Transitivity　　「～化する」の自他体系",
+        "50/50 Intransitive-Transitive Examples　　自他拮抗語群",
+        "Predominantly Intransitive Examples　自動詞優勢語群",
+        "Predominantly Transitive Examples　他動詞優勢語群",
+        "Using ～化 with Any Word Origin　漢語・和語・外来語＋～化",
+        "Example Sentences　例文",
+        "～化 as a Noun　「～化」の名詞用法",
+        "化する"
+      ]
+    },
+    {
+      "pageId": "537",
+      "title": "The Particle しも",
+      "expressions": [
+        "しも"
+      ],
+      "headings": [
+        "The Particle しも",
+        "The Adverbial Particle しも",
+        "必ずしも～とは限らない",
+        "～ならまだしも",
+        "～なきにしもあらず",
+        "～をしも"
+      ]
+    },
+    {
+      "pageId": "539",
+      "title": "～てある w/ を",
+      "expressions": [
+        "てある"
+      ],
+      "headings": [
+        "～てある w/ を",
+        "Type II: ＋Agent w/ ～てある",
+        "Comparing ～てある, ～ている, & ～ておく"
+      ]
+    },
+    {
+      "pageId": "541",
+      "title": "語尾 III",
+      "expressions": [
+        "かな",
+        "かしら",
+        "じゃん",
+        "い",
+        "け",
+        "が",
+        "たら"
+      ],
+      "headings": [
+        "語尾 III: かな, かしら, じゃん, い, け, が, こと, & たら",
+        "The Final Particle　かな & かしら",
+        "The Final Particle じゃん",
+        "The Final Particle い",
+        "The Final Particle け",
+        "The Final Particle が",
+        "The Final Particle たら",
+        "Multiple 語尾"
+      ]
+    },
+    {
+      "pageId": "543",
+      "title": "The Particle て III",
+      "expressions": [
+        "て"
+      ],
+      "headings": [
+        "The Particle て III",
+        "The Particle て"
+      ]
+    },
+    {
+      "pageId": "545",
+      "title": "The Particle も IV",
+      "expressions": [
+        "も"
+      ],
+      "headings": [
+        "The Particle も IV",
+        "Verb 連用形＋も + する/しない",
+        "～なくもない",
+        "も Before Supplementary Verbs",
+        "も  Within Compound Verbs",
+        "After Conjunctive Particles",
+        "～たり～たりもする/しない",
+        "～ようともする/しない",
+        "XもYも: When X/Y are 連体形",
+        "XもX（、Xi）"
+      ]
+    },
+    {
+      "pageId": "547",
+      "title": "The Particle も V: Adverb Intensifier「も」による副詞の取り立て形",
+      "expressions": [
+        "も"
+      ],
+      "headings": [
+        "The Particle も V: Adverb Intensifier",
+        "Intensifying こそあど-Derived Adverbs",
+        "Intensifying Interrogative-Derived Adverbs",
+        "Intensifying Adjective/Adjectival Noun-Derived Adverbs",
+        "Intensifying と-Adverbs",
+        "Intensifying Pure/Miscellaneous Adverbs"
+      ]
+    },
+    {
+      "pageId": "549",
+      "title": "Should: ～はずだ",
+      "expressions": [
+        "はずだ"
+      ],
+      "headings": [
+        "～はずだ"
+      ]
+    },
+    {
+      "pageId": "552",
+      "title": "ずつ & わりで",
+      "expressions": [
+        "ずつ",
+        "わりで"
+      ],
+      "headings": [
+        "ずつ & わりで",
+        "The Adverbial Particle ずつ",
+        "～わりで"
+      ]
+    },
+    {
+      "pageId": "554",
+      "title": "The Auxiliary Verb ～ず I",
+      "expressions": [
+        "ず"
+      ],
+      "headings": [
+        "The Auxiliary Verb ～ず I",
+        "The Auxiliary Verb ～ず",
+        "Speech Modals with -ず"
+      ]
+    },
+    {
+      "pageId": "569",
+      "title": "The Grammaticality of ～です",
+      "expressions": [
+        "です"
+      ],
+      "headings": [
+        "The Grammaticality of ～です",
+        "Early Instances of です & Its Predecessors",
+        "Copula Verbs Follow Nominal(ized) Phrases",
+        "Avoiding ～です w/ Existing Structures",
+        "The Use of ～たです",
+        "①形容詞＋～かったです",
+        "②名詞・形容動詞＋～だったです",
+        "終止形＋でした",
+        "③動詞＋～たです",
+        "動詞の非過去形＋～です",
+        "The Peculiarity of ～ませんでした",
+        "The Non-Zero Conjugational Power of ～です"
+      ]
+    },
+    {
+      "pageId": "584",
+      "title": "Tense I: The Auxiliary Verb -TA",
+      "expressions": [
+        "た"
+      ],
+      "headings": [
+        "Tense I: The Auxiliary Verb -TA",
+        "Etymology of -TA",
+        "Usages of -TA"
+      ]
+    },
+    {
+      "pageId": "588",
+      "title": "～ては",
+      "expressions": [
+        "ては"
+      ],
+      "headings": [
+        "～ては",
+        "The Usages of ～ては"
+      ]
+    },
+    {
+      "pageId": "590",
+      "title": "The Particle のみ",
+      "expressions": [
+        "のみ"
+      ],
+      "headings": [
+        "The Particle のみ",
+        "The Adverbial Particle のみ",
+        "のみ w/ Case Particles",
+        "Historical Sidenote",
+        "～のみならず",
+        "～のみか",
+        "～だけでなく vs ～のみならず vs ～ばかりか （のみか） , etc.",
+        "～をのみ",
+        "のみ vs ばかり",
+        "さのみ"
+      ]
+    },
+    {
+      "pageId": "592",
+      "title": "The Particle こそ",
+      "expressions": [
+        "こそ"
+      ],
+      "headings": [
+        "The Particle こそ",
+        "The Fundamentals of こそ",
+        "～からこそ & ～ばこそ",
+        "～てこそ"
+      ]
+    },
+    {
+      "pageId": "594",
+      "title": "わけだ",
+      "expressions": [
+        "わけだ"
+      ],
+      "headings": [
+        "わけだ",
+        "Affirmation vs. Inference",
+        "Objectiveness or Lack Thereof",
+        "Showing Result/Effect",
+        "Showing Reason/Cause",
+        "Acknowledgment of Truth",
+        "Restating Fact",
+        "Merely Stating What’s What"
+      ]
+    },
+    {
+      "pageId": "596",
+      "title": "わけではない, わけがない, わけにはいかない",
+      "expressions": [
+        "わけではない",
+        "わけがない",
+        "わけにはいかない"
+      ],
+      "headings": [
+        "わけではない, わけがない, わけにはいかない",
+        "わけではない",
+        "わけがない",
+        "わけにはいかない"
+      ]
+    },
+    {
+      "pageId": "598",
+      "title": "The Particle ながら II: ながら（も）& ながらに（して）",
+      "expressions": [
+        "ながら",
+        "ながらも",
+        "ながらに",
+        "ながらにして"
+      ],
+      "headings": [
+        "The Particle ながら II: ながら（も）& ながらに（して）",
+        "Contradiction",
+        "ながらに（して）"
+      ]
+    },
+    {
+      "pageId": "600",
+      "title": "No doubt that",
+      "expressions": [
+        "に違いない",
+        "に相違ない",
+        "に決まっている"
+      ],
+      "headings": [
+        "No Doubt that: ～に違いない, ～に相違ない, & ～に決まっている",
+        "～に違いない VS　～に相違ない",
+        "～に決まっている"
+      ]
+    },
+    {
+      "pageId": "605",
+      "title": "～てからというもの, ～て以来, & ～てこのかた",
+      "expressions": [
+        "てからというもの",
+        "て以来",
+        "てこのかた"
+      ],
+      "headings": [
+        "(Ever) Since: ～てからというもの, ～て以来, & ～てこのかた",
+        "～てからというもの（は）",
+        "～て以来",
+        "Interchangeability",
+        "～てこのかた"
+      ]
+    },
+    {
+      "pageId": "607",
+      "title": "Circumstance: 場合 & ～に備えて",
+      "expressions": [
+        "場合",
+        "に備えて"
+      ],
+      "headings": [
+        "Circumstance: 場合 & ～に備えて",
+        "場合",
+        "～に備えて"
+      ]
+    },
+    {
+      "pageId": "609",
+      "title": "Whenever II: ～度に, ～都度,　& ～につけ",
+      "expressions": [
+        "度に",
+        "都度",
+        "につけ"
+      ],
+      "headings": [
+        "Whenever II: ～度に, ～都度,　& ～につけ",
+        "～度に",
+        "～都度",
+        "～につけ"
+      ]
+    },
+    {
+      "pageId": "611",
+      "title": "The Supplementary Verb する",
+      "expressions": [
+        "する"
+      ],
+      "headings": [
+        "The Supplementary Verb する",
+        "With Bound Particles",
+        "In Honorifics",
+        "With the Particles たり and など",
+        "With the Volitional Form",
+        "～ようにする",
+        "～ことにする",
+        "～としたことが",
+        "～と[すると・したら・すれば]"
+      ]
+    },
+    {
+      "pageId": "613",
+      "title": "～に対して",
+      "expressions": [
+        "に対して"
+      ],
+      "headings": [
+        "～に対して"
+      ]
+    },
+    {
+      "pageId": "619",
+      "title": "Standpoint: として（は） VS にとって（は）",
+      "expressions": [
+        "として",
+        "としては",
+        "にとって",
+        "にとっては"
+      ],
+      "headings": [
+        "Standpoint: として（は） VS にとって（は）",
+        "～として（は）",
+        "～にとって",
+        "～として VS ～にとって"
+      ]
+    },
+    {
+      "pageId": "621",
+      "title": "Through: を通じて & を通して",
+      "expressions": [
+        "を通じて",
+        "を通して"
+      ],
+      "headings": [
+        "Through: を通じて & を通して",
+        "～を通して VS ～を通じて"
+      ]
+    },
+    {
+      "pageId": "623",
+      "title": "Span: ～にかけて & にわたって",
+      "expressions": [
+        "にかけて",
+        "にわたって"
+      ],
+      "headings": [
+        "Span: ～にかけて & にわたって",
+        "～から～まで VS ～から～にかけて",
+        "The Meanings of わたる",
+        "～にわたって",
+        "Sentence and Word Differences: ～にかけて VS ～にわたって"
+      ]
+    },
+    {
+      "pageId": "625",
+      "title": "～によって",
+      "expressions": [
+        "によって"
+      ],
+      "headings": [
+        "～によって",
+        "～によって・により",
+        "～によらず",
+        "～によると・によったら・によれば"
+      ]
+    },
+    {
+      "pageId": "627",
+      "title": "～ざるを得ない & やむを得ない",
+      "expressions": [
+        "ざるを得ない",
+        "やむを得ない"
+      ],
+      "headings": [
+        "～ざるを得ない & やむを得ない",
+        "～ざるを得ない",
+        "やむを得ない"
+      ]
+    },
+    {
+      "pageId": "638",
+      "title": "The Particles さえ, すら, & だに",
+      "expressions": [
+        "さえ",
+        "すら",
+        "だに"
+      ],
+      "headings": [
+        "The Particles さえ, すら, & だに",
+        "The Adverbial Particle すら",
+        "The Adverbial Particle さえ",
+        "The Adverbial Particle だに"
+      ]
+    },
+    {
+      "pageId": "654",
+      "title": "～において・における",
+      "expressions": [
+        "において",
+        "における"
+      ],
+      "headings": [
+        "～において・における",
+        "～において・おける"
+      ]
+    },
+    {
+      "pageId": "662",
+      "title": "Exception",
+      "expressions": [
+        "をのぞいて",
+        "をおいて",
+        "ならでは"
+      ],
+      "headings": [
+        "Exception: ～をのぞいて, ～をおいて, & ～ならでは",
+        "～のぞいて",
+        "～をおいて",
+        "～ならでは"
+      ]
+    },
+    {
+      "pageId": "664",
+      "title": "Can’t Help I",
+      "expressions": [
+        "ないではいられない"
+      ],
+      "headings": [
+        "Can’t Help I: ～ないではいられない",
+        "～ないではいられない"
+      ]
+    },
+    {
+      "pageId": "666",
+      "title": "Can’t Help II",
+      "expressions": [
+        "てならない",
+        "てやまない",
+        "てしかたがない",
+        "にたえない",
+        "てたまらない"
+      ],
+      "headings": [
+        "Can’t Help II: ～てならない, ～てやまない, ～てしかたがない, ～にたえない, & ～てたまらない",
+        "～てならない",
+        "～てやまない",
+        "～てしかたがない",
+        "～にたえる・～にたえない",
+        "～てたまらない"
+      ]
+    },
+    {
+      "pageId": "668",
+      "title": "Can’t Help III",
+      "expressions": [
+        "ないではすまない",
+        "ずにはすまない",
+        "ないではおかない",
+        "ずにはおかない",
+        "を余儀なくされる",
+        "を余儀なくさせる",
+        "を禁じ得ない"
+      ],
+      "headings": [
+        "Can’t Help III: ～ないではすまない, ～ないではおかない, ～を余儀なく[される・させる], & ～を禁じ得ない",
+        "～｛ないで・ずに｝はすまない",
+        "～｛ないで・ずに｝はおかない",
+        "～を余儀なく[される・させる]",
+        "～を禁じ得ない"
+      ]
+    },
+    {
+      "pageId": "670",
+      "title": "Easy II: ～よい",
+      "expressions": [
+        "よい"
+      ],
+      "headings": [
+        "Easy II: ～よい",
+        "Synonyms of “Easy”　　「簡単」の類義語",
+        "The Ending ～よい　　補助形容詞の「～よい」",
+        "The Other Meanings of Easy　「Easy」の多種多様な用法"
+      ]
+    },
+    {
+      "pageId": "672",
+      "title": "The Verb 給ふ",
+      "expressions": [
+        "給ふ"
+      ],
+      "headings": [
+        "第036課: The Verb 給ふ",
+        "Conjugating 給ふ",
+        "The Transitive 四段「給ふ・賜ふ」",
+        "The Transitive 四段「賜（は）る」",
+        "The 四段「承る」（＝受け賜はる)",
+        "The Transitive 二段「賜（は）す」",
+        "The Transitive 二段「給ふ・賜ふ」",
+        "The Transitive 四段「給ぶ」",
+        "Tne Transitive 二段「食ぶ」"
+      ]
+    },
+    {
+      "pageId": "681",
+      "title": "Considering…: わりに（は） & にしては",
+      "expressions": [
+        "わりに",
+        "わりには",
+        "にしては"
+      ],
+      "headings": [
+        "Considering…: わりに（は） & にしては",
+        "わりに（は）",
+        "にしては"
+      ]
+    },
+    {
+      "pageId": "683",
+      "title": "Disregard I",
+      "expressions": [
+        "にもかかわらず",
+        "にかかわらず",
+        "を問わず"
+      ],
+      "headings": [
+        "Disregard I: にもかかわらず, にかかわらず, & を問わず",
+        "にもかかわらず",
+        "にかかわらず",
+        "を問わず"
+      ]
+    },
+    {
+      "pageId": "685",
+      "title": "Disregard II",
+      "expressions": [
+        "によらず",
+        "によらない",
+        "いかんにかかわらず",
+        "いかんを問わず",
+        "いかんによらず"
+      ],
+      "headings": [
+        "Disregard II: によらず & （の）いかん｛にかかわらず・を問わず・によらず｝",
+        "～によらず",
+        "～によらない",
+        "～（の）いかん｛にかかわらず・を問わず・によらず｝",
+        "～（の）いかんにかかわらず",
+        "～（の）いかんを問わず",
+        "～（の）いかんによらず"
+      ]
+    },
+    {
+      "pageId": "687",
+      "title": "Disregard III",
+      "expressions": [
+        "をものともせず",
+        "をものともせずに",
+        "を顧みず",
+        "も顧みず",
+        "を押して",
+        "押し切って"
+      ],
+      "headings": [
+        "Disregard III: をものともせず（に）, ｛を・も｝顧みず（に）, & を押して・押し切って",
+        "～をものともせず（に）",
+        "～｛を・も｝顧みず（に）",
+        "～を押して・押し切って"
+      ]
+    },
+    {
+      "pageId": "711",
+      "title": "Disregard IV",
+      "expressions": [
+        "にかまわず",
+        "もかまわず",
+        "をよそに",
+        "にもめげず",
+        "にもめげずに"
+      ],
+      "headings": [
+        "Disregard IV: ｛に・も｝構わず, をよそに, & にもめげず（に）",
+        "｛に・も｝かまわず",
+        "～をよそに",
+        "にもめげず（に）"
+      ]
+    },
+    {
+      "pageId": "713",
+      "title": "Difficult II: ～がたい & ～づらい",
+      "expressions": [
+        "がたい",
+        "づらい"
+      ],
+      "headings": [
+        "Difficult II: ～がたい & ～づらい",
+        "～がたい",
+        "～づらい"
+      ]
+    },
+    {
+      "pageId": "721",
+      "title": "Limit",
+      "expressions": [
+        "限り",
+        "を限りに",
+        "限りでは",
+        "に限って",
+        "に限らない",
+        "とは限らない"
+      ],
+      "headings": [
+        "Limit: ～限り, ～を限りに, ～限りでは, ～に限って, ～に限らない, & ～とは限らない",
+        "限り"
+      ]
+    },
+    {
+      "pageId": "724",
+      "title": "Addition",
+      "expressions": [
+        "に加えて",
+        "にとどまらず",
+        "もさることながら",
+        "はおろか",
+        "はもちろん",
+        "はもとより",
+        "ともあれ"
+      ],
+      "headings": [
+        "Addition: ～に加えて, ～にとどまらず, ～もさることながら, ～はおろか, ～はもちろん, ～はもとより, ～ともあれ",
+        "～に加えて",
+        "～にとどまらず",
+        "～もさることながら",
+        "～はもちろん・もとより・おろか",
+        "～ともあれ"
+      ]
+    },
+    {
+      "pageId": "726",
+      "title": "The Particle と III: と + …～ない",
+      "expressions": [
+        "と"
+      ],
+      "headings": [
+        "The Particle と III: と + …～ない",
+        "と + …～ない"
+      ]
+    },
+    {
+      "pageId": "728",
+      "title": "Negative Volition: ～まい",
+      "expressions": [
+        "まい"
+      ],
+      "headings": [
+        "Negative Volition: ～まい",
+        "Conjugating with ～まい　　　「～まい」の接続",
+        "Conjugating ～まい　　「～まい」の活用",
+        "Negative Volition　打ち消しの意志",
+        "Negative Supposition　打ち消しの推量",
+        "Prohibition　禁止",
+        "～まいとする",
+        "～でもあるまい & ～こともあるまい",
+        "～まいか",
+        "～のではあるまい（か）",
+        "～あろうことかあるまいことか",
+        "～まじき"
+      ]
+    },
+    {
+      "pageId": "730",
+      "title": "As soon as",
+      "expressions": [
+        "や",
+        "やいなや",
+        "や否や",
+        "なり",
+        "途端",
+        "途端に",
+        "かと思うと",
+        "次第"
+      ],
+      "headings": [
+        "As soon as: ～や(いなや), ～なり, ～途端（に）, ～かと思うと, & ～次第",
+        "～や否や & ～や",
+        "The Conjunctive Particle なり",
+        "～途端（に）",
+        "～かと思うと",
+        "～次第"
+      ]
+    },
+    {
+      "pageId": "732",
+      "title": "Combination Particles with ところ",
+      "expressions": [
+        "ところ"
+      ],
+      "headings": [
+        "Combination Particles with ところ",
+        "ところ"
+      ]
+    },
+    {
+      "pageId": "736",
+      "title": "Circumstance",
+      "expressions": [
+        "まま",
+        "思いきや",
+        "もと"
+      ],
+      "headings": [
+        "Circumstance: まま, 思いきや, & もと",
+        "まま",
+        "思いきや",
+        "もと"
+      ]
+    },
+    {
+      "pageId": "738",
+      "title": "Result",
+      "expressions": [
+        "結果",
+        "うえで",
+        "挙句",
+        "すえに",
+        "始末だ"
+      ],
+      "headings": [
+        "Result: ～結果, ～うえで, ～挙句, ～すえに, & ～始末だ",
+        "～結果",
+        "～うえで",
+        "～挙句",
+        "～すえに",
+        "～始末だ"
+      ]
+    },
+    {
+      "pageId": "740",
+      "title": "Compare/Contrast",
+      "expressions": [
+        "に比べて",
+        "と比べて",
+        "に引き換え",
+        "と引き換えに",
+        "に反して",
+        "にもまして",
+        "ないまでも"
+      ],
+      "headings": [
+        "Compare & Contrast: ～に比べて, ～に引き換え, ～に反して,～にもまして, & ～ないまでも",
+        "～｛に・と｝比べて",
+        "～に引き換え vs ～と引き換えに",
+        "～に反して",
+        "～にもまして",
+        "～ないまでも"
+      ]
+    },
+    {
+      "pageId": "742",
+      "title": "As (change)",
+      "expressions": [
+        "につれて",
+        "に従って",
+        "に伴って",
+        "とともに",
+        "に応じて",
+        "に応えて"
+      ],
+      "headings": [
+        "As (change): ～につれて, ～に従って, ～に伴って, ～とともに, ～に応じて, & ～に応えて",
+        "～につれて",
+        "～に従って",
+        "～に伴って",
+        "～とともに",
+        "～に応じて",
+        "～に応えて"
+      ]
+    },
+    {
+      "pageId": "744",
+      "title": "The Particle まで II",
+      "expressions": [
+        "まで"
+      ],
+      "headings": [
+        "The Particle まで II",
+        "Usage III: ～てまで",
+        "Usage III: ～までして",
+        "Usage IV: ～まで(のこと)だ = The Extent of the Matter at hand",
+        "Usage IV: ～までもない",
+        "Usage IV: ～ないまでも",
+        "Usage III: ～（ほど）までに",
+        "Usage I or III: まで ＋ Case Particles",
+        "～までが",
+        "～までを",
+        "～をまで",
+        "～までへ",
+        "～へまで",
+        "～にまで",
+        "Usage III~IV: ～までも + ｛が・を｝"
+      ]
+    },
+    {
+      "pageId": "747",
+      "title": "～ての",
+      "expressions": [
+        "ての"
+      ],
+      "headings": [
+        "～ての"
+      ]
+    },
+    {
+      "pageId": "749",
+      "title": "Combination Particles with もの",
+      "expressions": [
+        "もの"
+      ],
+      "headings": [
+        "Combination Particles with もの",
+        "The Particle もの: Because",
+        "Combination Particles"
+      ]
+    },
+    {
+      "pageId": "751",
+      "title": "Combination Particles with ばかり",
+      "expressions": [
+        "ばかり"
+      ],
+      "headings": [
+        "Combination Particles with ばかり",
+        "The Adverbial Particle ばかり",
+        "Combination Particles of ばかり"
+      ]
+    },
+    {
+      "pageId": "753",
+      "title": "The Particles って, たって, & だって",
+      "expressions": [
+        "って",
+        "たって",
+        "だって"
+      ],
+      "headings": [
+        "The Particles って, たって, & だって",
+        "The Particle って",
+        "The Particle たって",
+        "The Particle だって"
+      ]
+    },
+    {
+      "pageId": "755",
+      "title": "The Particle から II: ～からある, ～からの, & ～からする",
+      "expressions": [
+        "からある",
+        "からの",
+        "からする"
+      ],
+      "headings": [
+        "The Particle から II: ～からある, ～からの, & ～からする",
+        "Emphasizing Degree"
+      ]
+    },
+    {
+      "pageId": "773",
+      "title": "込む",
+      "expressions": [
+        "込む"
+      ],
+      "headings": [
+        "込む"
+      ]
+    },
+    {
+      "pageId": "777",
+      "title": "Honorifics: ～のほう",
+      "expressions": [
+        "のほう"
+      ],
+      "headings": [
+        "Honorifics: ～のほう",
+        "かた"
+      ]
+    },
+    {
+      "pageId": "779",
+      "title": "Spontaneity: ～（ら）れる & ～える",
+      "expressions": [
+        "られる",
+        "れる",
+        "える"
+      ],
+      "headings": [
+        "Spontaneity: ～（ら）れる & ～える",
+        "Spontaneity w/ ～（ら）れる",
+        "Grammatical Limitations of Spontaneity w/ ～（ら）れる",
+        "Spontaneity vs Potential",
+        "Spontaneity vs Passive Voice",
+        "聞こえる & 見える",
+        "Exclamatory Use of Spontaneity Verbs",
+        "目が見える vs 目に見える",
+        "耳が聞こえる vs 耳に聞こえる",
+        "～て見える vs ～て見られる",
+        "思える",
+        "泣ける & 笑える",
+        "～（さ）せられる ⇒ Spontaneity Interpretation"
+      ]
+    },
+    {
+      "pageId": "784",
+      "title": "The Particle どころ",
+      "expressions": [
+        "どころ"
+      ],
+      "headings": [
+        "The Particle どころ",
+        "The Adverbial Particle どころ"
+      ]
+    },
+    {
+      "pageId": "786",
+      "title": "と Combination Particles I: となく & とは",
+      "expressions": [
+        "となく",
+        "とは"
+      ],
+      "headings": [
+        "と Combination Particles I: となく & とは",
+        "となく",
+        "とは"
+      ]
+    },
+    {
+      "pageId": "788",
+      "title": "と Combination Particles II",
+      "expressions": [
+        "とも",
+        "とあって",
+        "といって",
+        "といった",
+        "とあれば"
+      ],
+      "headings": [
+        "と Combination Particles II",
+        "とも",
+        "とあって",
+        "といって・といった",
+        "とあれば"
+      ]
+    },
+    {
+      "pageId": "790",
+      "title": "“When it Comes to…” I:というと, といえば, & といったら",
+      "expressions": [
+        "というと",
+        "といえば",
+        "といったら"
+      ],
+      "headings": [
+        "“When it Comes to…” I: というと, といえば, & といったら",
+        "～というと: When/in speaking of…",
+        "～といえば: Speaking of which…",
+        "～といったら: When it comes to…/speaking of…"
+      ]
+    },
+    {
+      "pageId": "792",
+      "title": "When it Comes to II “When it Comes to…” II:となると, となったら, & となれば",
+      "expressions": [
+        "となると",
+        "となったら",
+        "となれば"
+      ],
+      "headings": [
+        "“When it Comes to…” II: となると, となったら, & となれば",
+        "～となると: When it comes to…/if it were to come to…",
+        "～となったら: If it were…/when it comes to…",
+        "～となれば: When/if it comes to…"
+      ]
+    },
+    {
+      "pageId": "794",
+      "title": "～ったら & ～ってば",
+      "expressions": [
+        "ったら",
+        "ってば"
+      ],
+      "headings": [
+        "～ったら & ～ってば",
+        "～ったら",
+        "～ってば"
+      ]
+    },
+    {
+      "pageId": "796",
+      "title": "Whether it be…or…: ～といい & ～といわず",
+      "expressions": [
+        "といい",
+        "といわず"
+      ],
+      "headings": [
+        "Whether it be…or…: ～といい & ～といわず",
+        "～といい",
+        "～といわず"
+      ]
+    },
+    {
+      "pageId": "798",
+      "title": "”When it Comes to…” III:と｛きたら・きては・くると・きた日には・きている（ものだ）・くれば｝",
+      "expressions": [
+        "ときたら",
+        "ときては",
+        "とくると",
+        "ときた日には",
+        "ときている",
+        "ときているものだ",
+        "とくれば"
+      ],
+      "headings": [
+        "”When it Comes to…” III: と｛きたら・きては・くると・きた日には・きている（ものだ）・くれば｝",
+        "くる ≒ いう"
+      ]
+    },
+    {
+      "pageId": "801",
+      "title": "と Combination Particles IV",
+      "expressions": [
+        "というのに",
+        "というのは",
+        "ということは",
+        "とはいえ",
+        "というものの",
+        "といいながら"
+      ],
+      "headings": [
+        "と Combination Particles IV",
+        "というのに",
+        "という｛の・こと｝は",
+        "と｛はいえ・いうものの・いいながら｝"
+      ]
+    },
+    {
+      "pageId": "804",
+      "title": "Occasion",
+      "expressions": [
+        "うえで",
+        "際に",
+        "折に",
+        "に際して",
+        "に当たって",
+        "に先立って",
+        "を前に",
+        "を前にして",
+        "を控えて",
+        "に臨んで",
+        "に面して"
+      ],
+      "headings": [
+        "Occasion: ～うえで, ～際に, ～折に, ～際して, ～に当たって, ～に先立って, ～を前に（して）, ～を控えて, ～に臨んで, & ～に面して",
+        "～（の）うえで",
+        "～（の）際に",
+        "～に際して",
+        "～に当たって",
+        "～に先立って",
+        "～を前に（して） & ～を控えて",
+        "～に臨んで & ～に面して"
+      ]
+    },
+    {
+      "pageId": "806",
+      "title": "Worth and Extent",
+      "expressions": [
+        "に足る",
+        "に足りる",
+        "に依存",
+        "に値する",
+        "に及ぶ"
+      ],
+      "headings": [
+        "Worth & Extent: ～に足る, ～に依存,　～に値する, & ～に及ぶ",
+        "～に足る・足りる",
+        "～に依存",
+        "～に値する",
+        "～に及ぶ"
+      ]
+    },
+    {
+      "pageId": "808",
+      "title": "Nominal Phrases I",
+      "expressions": [
+        "上",
+        "分"
+      ],
+      "headings": [
+        "Nominal Phrases I: 上 & 分",
+        "上",
+        "分"
+      ]
+    },
+    {
+      "pageId": "810",
+      "title": "Centering: ～を中心に（して）",
+      "expressions": [
+        "を中心に",
+        "を中心にして"
+      ],
+      "headings": [
+        "Centering: ～を中心に（して）",
+        "The Noun 中心",
+        "～を中心に（して）",
+        "The Noun 焦点",
+        "集中的に"
+      ]
+    },
+    {
+      "pageId": "812",
+      "title": "Nominal Phrases II",
+      "expressions": [
+        "相応",
+        "代り",
+        "経由"
+      ],
+      "headings": [
+        "Nominal Phrases II: 相応, 代り, & 経由",
+        "～相応",
+        "代り",
+        "経由"
+      ]
+    },
+    {
+      "pageId": "814",
+      "title": "Nominal Phrases III",
+      "expressions": [
+        "至極",
+        "極み",
+        "至り",
+        "万一",
+        "ゆかり"
+      ],
+      "headings": [
+        "Nominal Phrases III",
+        "至極",
+        "極み",
+        "至り",
+        "万一",
+        "ゆかり"
+      ]
+    },
+    {
+      "pageId": "816",
+      "title": "Simultaneous Action II: The Particle つつ (VS ながら)",
+      "expressions": [
+        "つつ",
+        "ながら"
+      ],
+      "headings": [
+        "Simultaneous Action II: The Particle つつ (VS ながら)",
+        "The Conjunctive Particle つつ",
+        "つつある"
+      ]
+    },
+    {
+      "pageId": "819",
+      "title": "The Verb 抜く",
+      "expressions": [
+        "抜く"
+      ],
+      "headings": [
+        "抜く: ～ぬきで（は）, ～ぬきに(は), ～ぬきで, ～ぬきにして（は), & ～ぬきの",
+        "抜く",
+        "～ぬきで（は）, ～ぬきに（は）, ～ぬきで, ～ぬきにして（は）, ～ぬきの",
+        "～を抜きにして"
+      ]
+    },
+    {
+      "pageId": "821",
+      "title": "Fault: ～せいで & ～にかこつけて",
+      "expressions": [
+        "せいで",
+        "にかこつけて"
+      ],
+      "headings": [
+        "Fault: ～せいで & ～にかこつけて",
+        "～せいで",
+        "～に託けて"
+      ]
+    },
+    {
+      "pageId": "823",
+      "title": "Defining Parameter",
+      "expressions": [
+        "を始め",
+        "を始めとして",
+        "を皮切りに",
+        "を皮切りにして",
+        "に至るまで",
+        "をもって",
+        "といったところだ"
+      ],
+      "headings": [
+        "Defining Parameter: ～を始め（として）, ～を皮切りに（して）, ～に至るまで, ～をもって, & ～といったところだ",
+        "～を始め（として）",
+        "～を皮切りに（して）",
+        "～に至るまで",
+        "～をもって",
+        "～といったところだ"
+      ]
+    },
+    {
+      "pageId": "830",
+      "title": "More Endings I",
+      "expressions": [
+        "果てる",
+        "果たす",
+        "付ける",
+        "付く",
+        "立てる",
+        "立つ",
+        "尽くす",
+        "こなす"
+      ],
+      "headings": [
+        "The Endings ～果てる・果たす, ～付ける・付く, ～立てる・立つ, ～尽くす, & ～こなす",
+        "～果てる",
+        "～果たす",
+        "～付ける",
+        "～つく",
+        "～尽くす",
+        "～立てる・つ",
+        "～こなす"
+      ]
+    },
+    {
+      "pageId": "849",
+      "title": "Miss out",
+      "expressions": [
+        "残す",
+        "漏らす",
+        "損なう",
+        "そびれる",
+        "損じる",
+        "逃す"
+      ],
+      "headings": [
+        "Miss out: ～残す, ～漏らす, ～損なう, ～そびれる, ～損じる, & ～逃す",
+        "～残す",
+        "～漏らす",
+        "～損なう・～そびれる・～損じる・～逃す"
+      ]
+    },
+    {
+      "pageId": "855",
+      "title": "Phrases Made w/ the Bases of ～べきだ",
+      "expressions": [
+        "べきだ",
+        "べくもない",
+        "べからず",
+        "べからざる",
+        "べく",
+        "べくして",
+        "べし",
+        "ざるべし"
+      ],
+      "headings": [
+        "Phrases Made w/ the Bases of ～べきだ: ～べくもない, ～べからず・ざる, ～べく, ～べくして, & ～べし",
+        "The Extant Bases of ～べし",
+        "～べからず・べからざる",
+        "～べくもない",
+        "～べく",
+        "～べくして",
+        "～べし",
+        "～ざるべし"
+      ]
+    },
+    {
+      "pageId": "862",
+      "title": "The Verbs かかる & かける",
+      "expressions": [
+        "かかる",
+        "かける"
+      ],
+      "headings": [
+        "The Verbs かかる & かける",
+        "The Independent Verbs かける・かかる",
+        "The Suffix -かかる",
+        "罹る",
+        "The 連体詞 斯かる",
+        "欠ける",
+        "翔ける",
+        "駆・駈ける",
+        "The Potential Form of Verbs"
+      ]
+    },
+    {
+      "pageId": "865",
+      "title": "Rather",
+      "expressions": [
+        "むしろ",
+        "かえって",
+        "ましだ"
+      ],
+      "headings": [
+        "Rather: むしろ, かえって, ～ましだ",
+        "～よりむしろ～・むしろ～",
+        "～というより（むしろ）～",
+        "～くらい・ぐらいなら（むしろ）～",
+        "かえって",
+        "～ましだ",
+        "In Conclusion 　　　最後に聞こう・・・"
+      ]
+    },
+    {
+      "pageId": "867",
+      "title": "Opposite: 逆に, 反対に, 反面, & 一方（で）",
+      "expressions": [
+        "逆に",
+        "反対に",
+        "反面",
+        "一方",
+        "一方で"
+      ],
+      "headings": [
+        "Opposite: 逆に, 反対に, 反面, & 一方（で）",
+        "逆に & 反対に",
+        "～反面 VS ～一方（で）"
+      ]
+    },
+    {
+      "pageId": "870",
+      "title": "Beforehand: かねて, かねがね, 前もって, 先立って, Etc.",
+      "expressions": [
+        "かねて",
+        "かねがね",
+        "前もって",
+        "先立って"
+      ],
+      "headings": [
+        "Beforehand: かねて, かねがね, 前もって, 先立って, Etc.",
+        "かねて",
+        "～を兼ねて",
+        "かねがね",
+        "前もって & 先立って",
+        "事前に",
+        "前に, 先に, & 以前に"
+      ]
+    },
+    {
+      "pageId": "872",
+      "title": "To Say Nothing Of: ましてや, いわんや, もってのほか, 尚更, 言うまでもない, 当然",
+      "expressions": [
+        "ましてや",
+        "いわんや",
+        "もってのほか",
+        "尚更",
+        "言うまでもない",
+        "当然"
+      ],
+      "headings": [
+        "To Say Nothing Of: ましてや, いわんや, もってのほか, 尚更, 言うまでもない, 当然",
+        "The Adverb ましてや",
+        "The Adverb いわんや",
+        "もってのほか",
+        "尚更",
+        "言うまでもない",
+        "当然だ・当たり前だ"
+      ]
+    },
+    {
+      "pageId": "875",
+      "title": "No Matter If: たとえ・いくら・どれだけ・どんなに",
+      "expressions": [
+        "たとえ",
+        "いくら",
+        "どれだけ",
+        "どんなに"
+      ],
+      "headings": [
+        "No Matter If: たとえ・いくら・どれだけ・どんなに",
+        "たとえ Situation A + ～ても Situation B",
+        "たとえ Situation A + ～(よ)う[と(も)・が] …",
+        "たとえ Situation A + ～たとしても Situation B",
+        "たとえ Situation A ～に［しろ/せよ］ Situation B",
+        "Related Adverbs",
+        "いくら・どんなに・どれだけ",
+        "仮に",
+        "たとい",
+        "よしんば"
+      ]
+    },
+    {
+      "pageId": "982",
+      "title": "Dare To: 強いて, 敢えて, 押して, & 達て",
+      "expressions": [
+        "強いて",
+        "敢えて",
+        "押して",
+        "達て"
+      ],
+      "headings": [
+        "Dare To: 強いて, 敢えて, 押して, & 達て",
+        "強いて",
+        "敢えて",
+        "押して",
+        "達て"
+      ]
+    },
+    {
+      "pageId": "984",
+      "title": "The Adverbial Noun 一旦",
+      "expressions": [
+        "一旦"
+      ],
+      "headings": [
+        "The Adverbial Noun 一旦",
+        "The Noun 一旦",
+        "The Adverb 一旦"
+      ]
+    },
+    {
+      "pageId": "988",
+      "title": "Tendency",
+      "expressions": [
+        "嫌いがある",
+        "が早いか",
+        "が最後",
+        "そばから"
+      ],
+      "headings": [
+        "Tendency: 嫌いがある, が早いか, が最後, & そばから",
+        "嫌いがある",
+        "が早いか",
+        "～が最後",
+        "そばから"
+      ]
+    },
+    {
+      "pageId": "990",
+      "title": "Incidental",
+      "expressions": [
+        "がてら",
+        "かたがた",
+        "かたわら",
+        "ついで"
+      ],
+      "headings": [
+        "Incidental: がてら, かたがた, かたわら, & ついで",
+        "がてら",
+        "かたがた",
+        "かたわら",
+        "ついで"
+      ]
+    },
+    {
+      "pageId": "992",
+      "title": "The Particle に III: The Conjunctive に",
+      "expressions": [
+        "に"
+      ],
+      "headings": [
+        "The Particle に III: The Conjunctive に",
+        "Basic Understanding"
+      ]
+    },
+    {
+      "pageId": "994",
+      "title": "思しい & 思わしい",
+      "expressions": [
+        "思しい",
+        "思わしい"
+      ],
+      "headings": [
+        "思しい & 思わしい",
+        "【思・覚】しい",
+        "～とおぼしき",
+        "思わしい"
+      ]
+    },
+    {
+      "pageId": "996",
+      "title": "The Particles やら, なり, & きり",
+      "expressions": [
+        "やら",
+        "なり",
+        "きり"
+      ],
+      "headings": [
+        "The Particles やら, なり, & きり",
+        "The Particle やら",
+        "The Particle なり",
+        "The Adverbial Particle きり"
+      ]
+    },
+    {
+      "pageId": "1001",
+      "title": "The Particles ども, とも, & たりとも",
+      "expressions": [
+        "ども",
+        "とも",
+        "たりとも"
+      ],
+      "headings": [
+        "The Particle ども, とも, & たりとも",
+        "The Conjunctive Particle ど（も）",
+        "～といえども",
+        "だ-Ellipsis w/ ～といえど（も）",
+        "～と雖も",
+        "Historical Segue",
+        "The Conjunctive Particle とも",
+        "V終止形（肯定）＋とも",
+        "～ずとも",
+        "Why the 連用形?",
+        "～くとも",
+        "形容詞（終止形）＋～とも",
+        "～（よ）うと（も）",
+        "～とも～とも",
+        "終助詞「とも」",
+        "The Particle たりとも"
+      ]
+    },
+    {
+      "pageId": "1003",
+      "title": "～てたまる",
+      "expressions": [
+        "てたまる"
+      ],
+      "headings": [
+        "～てたまる"
+      ]
+    },
+    {
+      "pageId": "1005",
+      "title": "Opportunity",
+      "expressions": [
+        "きっかけ",
+        "をきっかけに",
+        "をきっかけにして",
+        "をきっかけとして",
+        "契機"
+      ],
+      "headings": [
+        "Opportunity: きっかけ & 契機",
+        "きっかけ",
+        "～をきっかけ【に（して）・として】",
+        "契機"
+      ]
+    },
+    {
+      "pageId": "1012",
+      "title": "More Endings II",
+      "expressions": [
+        "返る",
+        "返す",
+        "捲る",
+        "殴る",
+        "腐る",
+        "通す"
+      ],
+      "headings": [
+        "Endings VII: ～返る・す, ～捲る, ～殴る, & ～腐る, & ～通す",
+        "～返る & ～返す",
+        "～殴る　& ～腐る",
+        "～捲（まく）る",
+        "～通す"
+      ]
+    },
+    {
+      "pageId": "1019",
+      "title": "Final Endings",
+      "expressions": [
+        "こける",
+        "さす",
+        "倦む",
+        "倦ねる",
+        "逸れる",
+        "成す",
+        "古す"
+      ],
+      "headings": [
+        "Final Endings: ～こける, ～さす, ～倦む/倦ねる, ～逸れる, ～成す, & ～古す",
+        "～こける",
+        "～さす",
+        "～倦む・倦ねる",
+        "～逸れる",
+        "～成す",
+        "～古す"
+      ]
+    },
+    {
+      "pageId": "1021",
+      "title": "Suppositional ～（よ）う w/ Adjectives & Verbs",
+      "expressions": [
+        "よう",
+        "う"
+      ],
+      "headings": [
+        "Suppositional ～（よ）う w/ Adjectives & Verbs",
+        "Adjective: ～う",
+        "～なかろう",
+        "～たろう・～ましたろう",
+        "Verbs ＋ Suppositional ～（よ）う",
+        "～ましょう"
+      ]
+    },
+    {
+      "pageId": "1025",
+      "title": "The Causative III: ～かす",
+      "expressions": [
+        "かす"
+      ],
+      "headings": [
+        "The Causative III: ～かす",
+        "～かす"
+      ]
+    },
+    {
+      "pageId": "1078",
+      "title": "The Adjectival Affix ～か",
+      "expressions": [
+        "か"
+      ],
+      "headings": [
+        "The Adjectival Affix「か」: か～・～か・～らか・～やか",
+        "The Prefix か～　　接頭辞の「か」",
+        "The Suffix ～か　　接尾辞の「か」：～ら・らか・やか",
+        "Root + /-shi/ (Adjectives) & [-ka/-raka/-yaka] (Adjectival Nouns) 語幹＋～し（形容詞）／～か・らか・やか（形容動詞）",
+        "Word Pairs　「～し」対「～か・らか・やか」単語ペア一覧",
+        "Using /-ra/ & /-ya/ Without /-ka/　独立用法の「～ら・～や」",
+        "Lone Instances of ～か・らか・やか",
+        "Verb/Onomatopoeia + ～か・らか",
+        "The ～か Ending in Kyushu Dialects　九州方言におけるカ語尾",
+        "In Conclusion…　最後に…"
+      ]
+    },
+    {
+      "pageId": "1081",
+      "title": "The Verbal Affix ～ぐ: ～らぐ・やぐ",
+      "expressions": [
+        "ぐ",
+        "らぐ",
+        "やぐ"
+      ],
+      "headings": [
+        "The Verbal Affix ～ぐ: ～らぐ・やぐ「～らぐ・やぐ」における動詞化接尾辞の「₋ぐ」",
+        "Modern Use of ～らぐ・やぐ",
+        "和らぐ",
+        "安らぐ",
+        "薄らぐ",
+        "華やぐ",
+        "平らぐ",
+        "若やぐ",
+        "Transitive Forms ～ぐ → ～げる　　他動詞形「～げる」",
+        "More Archaic Examples　古語における「～らぐ・やぐ」の使用例",
+        "In Conclusion…　最後に…"
+      ]
+    },
+    {
+      "pageId": "1089",
+      "title": "Slang る Verbs",
+      "expressions": [
+        "る"
+      ],
+      "headings": [
+        "Slang る Verbs",
+        "The Words"
+      ]
+    },
+    {
+      "pageId": "1093",
+      "title": "～ために III: ～んがために & ～がために",
+      "expressions": [
+        "んがために",
+        "がために"
+      ],
+      "headings": [
+        "～ために III: ～んがために & ～がために",
+        "Archaic Use of が: 連体修飾格",
+        "Noun + ～がために",
+        "Verb + ～んがために",
+        "Verb/Adj. + ～がために"
+      ]
+    },
+    {
+      "pageId": "1095",
+      "title": "～故, 所以, 謂れ, & 由",
+      "expressions": [
+        "故",
+        "所以",
+        "謂れ",
+        "由"
+      ],
+      "headings": [
+        "～故, 所以, 謂れ, & 由",
+        "The Noun 故",
+        "～（が）ゆえに",
+        "～ことゆえ",
+        "何故",
+        "～がために",
+        "所以",
+        "謂れ",
+        "由"
+      ]
+    },
+    {
+      "pageId": "1100",
+      "title": "The Causative IV: ～しめる",
+      "expressions": [
+        "しめる"
+      ],
+      "headings": [
+        "The Causative IV: ～しめる",
+        "The Bases of ～しめる",
+        "The Traditional 未然形 of Verbs & Adjectives",
+        "Using ～しめる",
+        "～ならしめる & ～たらしめる",
+        "Honorific Speech (尊敬語): ～しめ給う ＝ お〇〇なさる",
+        "Miscellaneous しめる"
+      ]
+    },
+    {
+      "pageId": "1131",
+      "title": "The Particle も VI",
+      "expressions": [
+        "も"
+      ],
+      "headings": [
+        "The Particle も VI",
+        "連体形 ＋ も"
+      ]
+    },
+    {
+      "pageId": "1134",
+      "title": "The Auxiliary ～たる: たるや、たるもの、たりとも",
+      "expressions": [
+        "たる",
+        "たるや",
+        "たるもの",
+        "たりとも"
+      ],
+      "headings": [
+        "The Auxiliary ～たる: たるや、たるもの、たりとも",
+        "タル形容動詞→ タルト型活用",
+        "Neologic use of Defunct Bases",
+        "The Copular Verb ～たり",
+        "～たるや",
+        "～たるもの（は）",
+        "～たりとも"
+      ]
+    },
+    {
+      "pageId": "1145",
+      "title": "The Particle とて",
+      "expressions": [
+        "とて"
+      ],
+      "headings": [
+        "The Particle とて",
+        "The Adverbial Particle とて",
+        "The Conjunctive Particle とて"
+      ]
+    },
+    {
+      "pageId": "1147",
+      "title": "The Particle して",
+      "expressions": [
+        "して"
+      ],
+      "headings": [
+        "The Particle して",
+        "The Case Particle して",
+        "The Conjunctive Particle して",
+        "にして",
+        "からして",
+        "なくして"
+      ]
+    },
+    {
+      "pageId": "1149",
+      "title": "The Case & Conjunctive Particles つ",
+      "expressions": [
+        "つ"
+      ],
+      "headings": [
+        "The Case & Conjunctive Particles つ",
+        "The Case Particle つ",
+        "Words Commonly Paired with ～つ",
+        "Morphemes pertaining to Place + ～つ",
+        "Morphemes pertaining to Time  (Or Place)",
+        "Archaisms which Fit neither Scenario",
+        "Complex Examples",
+        "Modern Usage of つ",
+        "The Suffix ～づから",
+        "The Conjunctive Particle つ",
+        "The Predecessor ～み～み"
+      ]
+    },
+    {
+      "pageId": "1151",
+      "title": "The Particle しき",
+      "expressions": [
+        "しき"
+      ],
+      "headings": [
+        "The Particle しき",
+        "The Adverbial Particle しき",
+        "The Suffix ～しき"
+      ]
+    },
+    {
+      "pageId": "1153",
+      "title": "The Particle いで",
+      "expressions": [
+        "いで"
+      ],
+      "headings": [
+        "The Particle いで",
+        "The Origin of ～で & ～いで",
+        "Use in Modern Japanese",
+        "～いでか"
+      ]
+    },
+    {
+      "pageId": "1219",
+      "title": "The Negative て形: ～なくて & ～ないで",
+      "expressions": [
+        "なくて",
+        "ないで"
+      ],
+      "headings": [
+        "The Negative て形: ～なくて & ～ないで",
+        "～なくて",
+        "～ないで",
+        "～なくてもいい VS ～ないでもいい"
+      ]
+    },
+    {
+      "pageId": "1281",
+      "title": "The Particles Ga & Wo",
+      "expressions": [
+        "が",
+        "を"
+      ],
+      "headings": [
+        "第022課: The Particles が & を",
+        "が",
+        "を"
+      ]
+    },
+    {
+      "pageId": "1313",
+      "title": "The Auxiliary Verb ～ず II",
+      "expressions": [
+        "ず"
+      ],
+      "headings": [
+        "第012課: The Auxiliary Verb ～ず II",
+        "The Auxiliary Verb -ず",
+        "The に- Bases",
+        "The ず- Bases",
+        "The ざり- Bases",
+        "Speech Modals with ～ず",
+        "Exercises"
+      ]
+    },
+    {
+      "pageId": "1316",
+      "title": "The Auxiliary Verbs ～き & ～けり",
+      "expressions": [
+        "き",
+        "けり"
+      ],
+      "headings": [
+        "第013課: The Auxiliary Verbs ～き & ～けり",
+        "The Auxiliary Verb -き",
+        "The Auxiliary Verb -けり",
+        "Exercises"
+      ]
+    },
+    {
+      "pageId": "1319",
+      "title": "「完了」を示す「ぬ」・「つ」",
+      "expressions": [
+        "ぬ",
+        "つ"
+      ],
+      "headings": [
+        "第014課: The Auxiliary Verbs ～ぬ & ～つ",
+        "The Auxiliary Verb ～ぬ",
+        "The 未然形 な-",
+        "The 連用形 に-",
+        "The 終止形 ぬ-",
+        "The 已然形 ぬれ-",
+        "〇〇～ぬ〇〇～ぬ",
+        "～ぬ’s Etymology",
+        "Point 1:  tense w/ 去ぬ Itself",
+        "Point 2: No Fossilized Retention of Original Morpheme?",
+        "Point 3: Number of /-nu/-FInal Verbs is Irrelevant",
+        "Point 4: Other Potential Origins",
+        "The Auxiliary Verb ～つ"
+      ]
+    },
+    {
+      "pageId": "1322",
+      "title": "The Auxiliary Verbs ～たり & ～り",
+      "expressions": [
+        "たり",
+        "り"
+      ],
+      "headings": [
+        "第015課: The Auxiliary Verbs ～たり & ～り",
+        "The Auxiliary Verb ～たり",
+        "The Auxiliary Verb ～り",
+        "Exercises"
+      ]
+    },
+    {
+      "pageId": "1339",
+      "title": "Ni, Nite, & E",
+      "expressions": [
+        "に",
+        "にて",
+        "へ"
+      ],
+      "headings": [
+        "第023課: The Particles に, にて, & へ",
+        "に",
+        "にて",
+        "へ"
+      ]
+    },
+    {
+      "pageId": "1341",
+      "title": "Yori & Kara",
+      "expressions": [
+        "より",
+        "から"
+      ],
+      "headings": [
+        "第024課: The Particles より & から",
+        "The Case Particle より",
+        "The Case Particle から"
+      ]
+    },
+    {
+      "pageId": "1343",
+      "title": "The Particles の & と",
+      "expressions": [
+        "の",
+        "と"
+      ],
+      "headings": [
+        "第025課: The Particles の & と",
+        "The Case Particle の",
+        "The Case Particle と"
+      ]
+    },
+    {
+      "pageId": "1345",
+      "title": "The Particles て, して, & で",
+      "expressions": [
+        "て",
+        "して",
+        "で"
+      ],
+      "headings": [
+        "第026課: The Particles て, して, & で",
+        "て, して, & で"
+      ]
+    },
+    {
+      "pageId": "1348",
+      "title": "The Particles つつ & ながら",
+      "expressions": [
+        "つつ",
+        "ながら"
+      ],
+      "headings": [
+        "第027課: The Particles つつ & ながら",
+        "The Conjunctive Particle つつ",
+        "The Conjunctive Particle ながら"
+      ]
+    },
+    {
+      "pageId": "1351",
+      "title": "The Particle ば",
+      "expressions": [
+        "ば"
+      ],
+      "headings": [
+        "第028課: The Particle ば",
+        "After the 未然形",
+        "Extant Examples",
+        "After the  已然形"
+      ]
+    },
+    {
+      "pageId": "1353",
+      "title": "The Particles と, とも, ど, & ども",
+      "expressions": [
+        "と",
+        "とも",
+        "ど",
+        "ども"
+      ],
+      "headings": [
+        "第029課: The Particles と, とも, ど, & ども",
+        "The Conjunctive と（も）",
+        "The Conjunctive ど（も）"
+      ]
+    },
+    {
+      "pageId": "1355",
+      "title": "Combination Particles with もの",
+      "expressions": [
+        "ものを",
+        "ものから",
+        "ものの",
+        "ものゆゑ",
+        "ものゆゑに"
+      ],
+      "headings": [
+        "第030課: Combination Particles with もの",
+        "ものを, ものから, ものの, ものゆゑ（に）"
+      ]
+    },
+    {
+      "pageId": "1357",
+      "title": "Bound Particles",
+      "expressions": [
+        "は",
+        "も",
+        "や",
+        "やは",
+        "か",
+        "かは",
+        "ぞ",
+        "なむ",
+        "なん",
+        "こそ"
+      ],
+      "headings": [
+        "第031課: Bound Particles",
+        "は",
+        "も",
+        "や（は）",
+        "か（は）",
+        "ぞ",
+        "なむ・なん",
+        "こそ"
+      ]
+    },
+    {
+      "pageId": "1360",
+      "title": "Adverbial Particles",
+      "expressions": [
+        "まで",
+        "など",
+        "し",
+        "しも",
+        "ばかり",
+        "のみ",
+        "だに",
+        "すら",
+        "さえ"
+      ],
+      "headings": [
+        "第032課: Adverbial Particles",
+        "The Particle まで",
+        "The Particle など",
+        "The Particle し（も）",
+        "The Particle ばかり",
+        "The Particle のみ",
+        "The Particles だに, すら, &　さえ"
+      ]
+    },
+    {
+      "pageId": "1363",
+      "title": "The Auxiliary Verb ～らし",
+      "expressions": [
+        "らし"
+      ],
+      "headings": [
+        "第033課: The Auxiliary Verb ～らし",
+        "～らし"
+      ]
+    },
+    {
+      "pageId": "1365",
+      "title": "The History of ～ます",
+      "expressions": [
+        "ます"
+      ],
+      "headings": [
+        "第034課: The History of ～ます",
+        "From 参らす To ～ます",
+        "The Independent Verb 参らす",
+        "Causation or 尊敬?",
+        "Late Middle Japanese: まらす",
+        "～まする → ～ます"
+      ]
+    },
+    {
+      "pageId": "1688",
+      "title": "Counters for Frequency: ～度・回・遍",
+      "expressions": [
+        "度",
+        "回",
+        "遍"
+      ],
+      "headings": [
+        "Counters for Frequency: ～度, ～回, & ～遍",
+        "The Counter ～度",
+        "The Adverb 一度（に）",
+        "～度: Speech Style & Set Phrases",
+        "the Counter ～回",
+        "～回: Speech Style",
+        "The Counter ～遍",
+        "The Adverb 一遍に",
+        "The Suffix ～一遍",
+        "～遍: Speech style & Dialectal Use",
+        "#, #~; #~, #~",
+        "With 数～・～数",
+        "何＋｛度・回・遍｝＋も・でも",
+        "もう一｛度・回・遍｝",
+        "一｛度・回・遍｝もない",
+        "X Time Span ＋ に ＃｛度・回・遍｝",
+        "ただ・たった＋一｛度・回・遍｝",
+        "Ordinal Number Expressions",
+        "With Quantitative Affixes",
+        "The Counter ～次",
+        "The Native Counter ～度（たび）"
+      ]
+    },
+    {
+      "pageId": "1983",
+      "title": "Used To: ～たものだ& かつて",
+      "expressions": [
+        "たものだ",
+        "かつて"
+      ],
+      "headings": [
+        "Used To: ～たものだ& かつて",
+        "Verb ＋ ～たものだ",
+        "Customary Action",
+        "かつて"
+      ]
+    },
+    {
+      "pageId": "2403",
+      "title": "The Auxiliary ～らしい",
+      "expressions": [
+        "らしい"
+      ],
+      "headings": [
+        "The Auxiliary ～らしい",
+        "The Meanings of ～らしい",
+        "Origin & CONJUGATIONS OF ～らしい",
+        "Use of the 未然形: ～らしからぬ",
+        "Use of the 連用形: らしく・らしかっ",
+        "Use of the 終止形: ～らしい",
+        "Use of the 連体形: ～らしい・らしき",
+        "Use of the 仮定形: ～らしけれ",
+        "The Non-Existence of the 命令形",
+        "～らしい in Isolation",
+        "～らしさ",
+        "～らしげ"
+      ]
+    },
+    {
+      "pageId": "2984",
+      "title": "Personal Desire: ～たい",
+      "expressions": [
+        "たい"
+      ],
+      "headings": [
+        "Personal Desire: ～たい",
+        "Conjugating w/ Auxiliary ～たい",
+        "Particle Usage",
+        "[Intransitive Verb + ～たい]",
+        "[Nominal Predicate w/ である + ～たい]",
+        "[Adjectival Predicate + ～たい]",
+        "[Transitive Verb + ～たい]",
+        "を + [transitive verb + ～たい]",
+        "Instances of No Particle (∅)",
+        "～たい W/ Second & Third Person",
+        "More Examples　用例",
+        "The Origin of ～たい （スルーOK）",
+        "Why ～たい Takes が",
+        "Ergativity",
+        "/po-/ 欲: The Original Morpheme for Desire",
+        "The Etymology of ～たい",
+        "Grammatical Parallel Examples to ～たい・欲しい"
+      ]
+    },
+    {
+      "pageId": "3033",
+      "title": "～たい w/Other Grammar",
+      "expressions": [
+        "たい"
+      ],
+      "headings": [
+        "～たい w/Other Grammar",
+        "～てもらいたい・ていただきたい",
+        "～られたい",
+        "～たいと思う",
+        "～たいものだ",
+        "～たいところだ",
+        "～たさ・たげ",
+        "～たい ＋Supposition Auxiliaries",
+        "Returning to the Basics"
+      ]
+    },
+    {
+      "pageId": "3478",
+      "title": "てよ・だわ言葉",
+      "expressions": [
+        "てよ",
+        "だわ"
+      ],
+      "headings": [
+        "てよ・だわ言葉: ～てよ・だわ・こと・かしら・の（よ）",
+        "～てよ",
+        "～だわ",
+        "The Etymology of わ",
+        "Discerning The Gender Role of わ",
+        "The Use of わ in Today’s Speech",
+        "The Pattern 〜わ〜わで",
+        "～こと（よ）",
+        "Declarative/Question Sentence Softener",
+        "Exclamation",
+        "～かしら",
+        "～の（よ）（ね）"
+      ]
+    },
+    {
+      "pageId": "3526",
+      "title": "The Result Markers に & と",
+      "expressions": [
+        "に",
+        "と"
+      ],
+      "headings": [
+        "The Result Markers に & と",
+        "End Result = End Point",
+        "Birth of a New State vs Altered State of an Unchanged circumstance",
+        "Restrictions on interchangeability",
+        "なる vs する",
+        "The Patterns ～｛に・く・と｝なる",
+        "形容動詞［±名詞性］＋～となる",
+        "The Patterns ～｛に・く・と｝する",
+        "Noun X + Noun Y ＋ にする",
+        "With Other する Verbs",
+        "With Other Forms of する",
+        "～ようにする",
+        "The Purpose Marker に",
+        "Decision Making",
+        "Noun X ＋ Noun X’ ＋とする",
+        "Noun X + Adjective （連用形・～く）＋するNoun X ＋ Adjective Noun （連用形・～に）＋する"
+      ]
+    },
+    {
+      "pageId": "3561",
+      "title": "The Purpose Marker に",
+      "expressions": [
+        "に"
+      ],
+      "headings": [
+        "The Purpose Marker に",
+        "①Goal: 連用形＋に＋Movement Verb",
+        "②Noun Y＋に + Predicate: “For”",
+        "③Noun Xは+Noun Yに+Noun Zを: “As”",
+        "④Noun XはNoun Yに + Predicate of Non-Volition"
+      ]
+    },
+    {
+      "pageId": "4399",
+      "title": "The Parallel Particle に",
+      "expressions": [
+        "に"
+      ],
+      "headings": [
+        "The Parallel Particle に",
+        "Usage ①: Inseparable Juxtapositions w/ A story",
+        "Usage ②: Nouns which Complement the other"
+      ]
+    },
+    {
+      "pageId": "4429",
+      "title": "The Intensifier Particle に",
+      "expressions": [
+        "に"
+      ],
+      "headings": [
+        "The Intensifier Particle に",
+        "V1 連用形 + に + V1",
+        "More examples",
+        "Adjective1 Stem + に + Adjective"
+      ]
+    },
+    {
+      "pageId": "5406",
+      "title": "Start to II: ～かける & ～かかる",
+      "expressions": [
+        "かける",
+        "かかる"
+      ],
+      "headings": [
+        "Start To II: ～かける & ～かかる",
+        "～かける",
+        "Meaning ①: 『指向』を表す「～かける」",
+        "Meaning ②: 『始動態』『将現態』を表す「～かける」",
+        "～かかる",
+        "Meaning ①: 『指向』を表す「～かかる」",
+        "Meaning ②: 『始動態』を表す「～かかる」"
+      ]
+    },
+    {
+      "pageId": "6329",
+      "title": "While III: ～隙に & ～間（ま）に",
+      "expressions": [
+        "隙に",
+        "間に"
+      ],
+      "headings": [
+        "While III: ～隙に & ～間（ま）に",
+        "～隙に",
+        "隙（ひま）",
+        "～間（ま）に"
+      ]
+    },
+    {
+      "pageId": "6727",
+      "title": "The Final Particles ぞ & ぜ",
+      "expressions": [
+        "ぞ",
+        "ぜ"
+      ],
+      "headings": [
+        "The Final Particles ぞ & ぜ",
+        "The Final Particle ぞ",
+        "The Final Particle ぜ",
+        "Grammatical Similarities Between ぞ ＆ ぜ",
+        "Gender Perception of ぞ & ぜ in Modern Japanese",
+        "The Use of ぞ  in 掛け声 (Shouts of Encouragement)",
+        "Vulgar Speech/Toxic Masculinity w/ ぞ",
+        "Gender Neutrality",
+        "ぞ w/ Politeness markers = Masculine Speech?",
+        "The Modern Perception of ぜ as being Masculine",
+        "Historical/Dialectal Usages",
+        "The History of ぞ",
+        "The History of ぜ",
+        "The Particle え",
+        "The Particle い",
+        "ぜ（よ）Female Speech → Male Speech"
+      ]
+    },
+    {
+      "pageId": "6763",
+      "title": "The Suffix ～っぽい",
+      "expressions": [
+        "っぽい"
+      ],
+      "headings": [
+        "The Suffix ～っぽい",
+        "Noun + ～っぽい",
+        "Adjective/Adjective Noun Stem ＋ ～っぽい",
+        "Verb 連用形 ＋～っぽい",
+        "～っぽい ‘s Expanding Usage",
+        "ADJECTIVE/Verb 終止形 ＋ ～っぽい",
+        "～っぽい in Isolation = X～っぽい"
+      ]
+    },
+    {
+      "pageId": "6906",
+      "title": "The Intensifier ～ない",
+      "expressions": [
+        "ない"
+      ],
+      "headings": [
+        "The Intensifier ～ない",
+        "Verb + –nai → Adjective",
+        "Inseparable Compounds",
+        "Separable Compounds",
+        "When Morphology becomes subjective",
+        "The Grammaticality of とんでも｛ありません・ございません｝",
+        "The Suffix –nai",
+        "One Final Oddity"
+      ]
+    },
+    {
+      "pageId": "7011",
+      "title": "The Final Particle さ",
+      "expressions": [
+        "さ"
+      ],
+      "headings": [
+        "The Final Particle さ",
+        "How to Use さ",
+        "Grammatical Features of さ",
+        "さ’s Relation w/ Modality",
+        "Sentence Types w/o さ",
+        "Copula Deletion w/ ～さ",
+        "補充疑問文＋～さ",
+        "Dialectal USE"
+      ]
+    },
+    {
+      "pageId": "7485",
+      "title": "The Scope Marker ～のだ",
+      "expressions": [
+        "のだ",
+        "んだ",
+        "のです",
+        "んです",
+        "のである",
+        "の",
+        "のじゃ"
+      ],
+      "headings": [
+        "The Scope Marker ～のだ",
+        "What is ～のだ?",
+        "Conditions for Omitting Scope ～のだ",
+        "Understanding the Scope of Other Elements",
+        "Comparing Scope ～のだ with Nominal Predicates",
+        "What can be the Focus of ～のだ"
+      ],
+      "evidence": [
+        "～んだ, ～のです, ～んです, ～のである, ～の, ～のじゃ"
+      ]
+    },
+    {
+      "pageId": "9427",
+      "title": "The Affix ～め",
+      "expressions": [
+        "め"
+      ],
+      "headings": [
+        "The Affix ～め",
+        "秤の目 → Unit of Measure → Sequence",
+        "Point of Change/Contact",
+        "“Somewhat”",
+        "Miscellaneous め"
+      ]
+    },
+    {
+      "pageId": "9543",
+      "title": "The Quotative Particle と III",
+      "expressions": [
+        "と"
+      ],
+      "headings": [
+        "The Quotative Particle と III",
+        "Type 1: Presenting the Change X → (to) Y = Result Marker と",
+        "Type 2: Gauging a measurement",
+        "Type 3: Enumerating “Things”",
+        "Type 4: Enumerating Complements of the Predicate",
+        "Type 3 = Type 4?",
+        "Disambiguating Atypical Quotative と from its Typical Counterpart",
+        "[Counter Phrase]と～ない"
+      ]
+    },
+    {
+      "pageId": "9840",
+      "title": "The Transition Marker を",
+      "expressions": [
+        "を"
+      ],
+      "headings": [
+        "The Transition Marker を",
+        "Motion Through All/Part of a Dimension",
+        "～に行く vs ～を行く",
+        "Direction of an Action",
+        "The Noun 方",
+        "Two Transition を in the Same Clause",
+        "Origin of Departure",
+        "Flux in Degree",
+        "Transition of Time"
+      ]
+    },
+    {
+      "pageId": "9904",
+      "title": "The Mood Marker ～のだ",
+      "expressions": [
+        "のだ",
+        "んだ",
+        "のです",
+        "んです"
+      ],
+      "headings": [
+        "The Mood Marker ～のだ",
+        "The Two ～のだ: “Scope” Marker VS “Mood” Marker",
+        "2 Factors, 4 Combinations",
+        "Interpersonal VS Interpropositional",
+        "Relating Q to Previous Context: P = Q or P ≠ Q?",
+        "関連付け ≠ 説明 ≈ 原因",
+        "Relating [Pv ≈ Q] to XはYだ:  [X=Pv] は[Y+～のだ=Q]",
+        "Relating [Pnv ⇒ Q] to XはYだ: ([X=Pnv]は)[Y+～のだ=Q]",
+        "A Closer Look at the Four Combinations",
+        "The Interpropositional ～のだ",
+        "The Interpropositional ～のだ wherein [Pv ≈ Q]",
+        "The Interpropositional  ～のだ wherein [Pnv ⇒ Q]",
+        "The Interpropositional  ～のだ in ～のだった",
+        "The Interpropositional  ～のだ in ～んだっけ",
+        "The Interpersonal ～のだ",
+        "The Interpersonal ～のだ wherein [Pv ≈ Q]",
+        "The Interpersonal  ～のだ wherein [Pnv ⇒ Q]",
+        "The Interpersonal  ～のだ in ～のだった"
+      ],
+      "evidence": [
+        "～のだ・んだ vs ～のです・んです"
+      ]
+    },
+    {
+      "pageId": "11821",
+      "title": "だけに・だけ（のことは）あって",
+      "expressions": [
+        "だけに",
+        "だけあって",
+        "だけのことはあって"
+      ],
+      "headings": [
+        "Given That: だけに・だけ（のことは）あって",
+        "～だけに",
+        "Non-Bare/Embedded Noun-Predicate +｛な・である・∅｝だけに",
+        "～だけあって",
+        "さすが（の）",
+        "～だけ: Corresponding/Proportional Degree/Change ⇒ Natural Casual Relationship/Course of Events",
+        "～だけのことはあって",
+        "～だけ（のことは）ある"
+      ]
+    },
+    {
+      "pageId": "11842",
+      "title": "～ようになる& ～ようにする",
+      "expressions": [
+        "ようになる",
+        "ようにする"
+      ],
+      "headings": [
+        "～ようになる& ～ようにする",
+        "The Noun 様",
+        "～ようになる",
+        "～ようにする",
+        "Usage 1: “Try to…” = Building a Habit",
+        "Usage II: Have/Make (…) So”",
+        "Negation w/ ～ように｛なる・する｝",
+        "～なくなる vs ～ないようになる",
+        "～ないようにする vs ～なくする",
+        "XはYを～(ない)ように～Z=する",
+        "Misnomers"
+      ]
+    },
+    {
+      "pageId": "11972",
+      "title": "The Final Particle こと",
+      "expressions": [
+        "こと"
+      ],
+      "headings": [
+        "The Final Particle こと",
+        "～ことだ",
+        "～こと！: Commands",
+        "～こと｛だろう・でしょう｝",
+        "～ことか",
+        "～こと in (Dated) Female Speech",
+        "（って）ことよ"
+      ]
+    },
+    {
+      "pageId": "12050",
+      "title": "Copula Ellipsis 「だ」の省略",
+      "expressions": [
+        "だ"
+      ],
+      "headings": [
+        "Copula Ellipsis 「だ」の省略",
+        "What is だ Ellipsis?",
+        "“Surface Structure” vs “Deep Structure”",
+        "The Distribution of だ",
+        "Sentence-Initial6 だ",
+        "Sentence-Medial だ",
+        "Environment 1: ～だの～だの & ～だか～だかだ Ellipsis?: NO です InterchangEability?: NO",
+        "ENVIRONMENT 2: Within Quotationsだ ELlipsis?: No/Yesです Interchangeability: DIRECT QUOTES ONLY",
+        "ENVIRONMENT 3: Followed by a Conjunctive Particleだ Ellipsis?: NOです InterchangEability?: YES",
+        "Environment 4: As An Interjectionだ EllipSIS?: NOT ELLiPSIS BUT OPTIONALです InterchangeabilitY?: YES",
+        "Environment 5: InVerted Clausesだ Ellipsis?: NOT ELLIPSIS BUT OPTIONALです Interchangeability?: YES",
+        "Sentence-Final だ",
+        "Environment 1: だ Ellipsed w/ Nothing Following",
+        "Environment 2: だ Not Ellipsed w/ Nothing Else",
+        "Applications Used by Men & Women",
+        "Largely Male Applications",
+        "Environment 3 &4: だ NOT Ellipsed W/ Final Particles",
+        "Environment 6: だ After Dummy Nouns"
+      ]
+    },
+    {
+      "pageId": "12344",
+      "title": "だか & だの",
+      "expressions": [
+        "だか",
+        "だの"
+      ],
+      "headings": [
+        "だか & だの",
+        "～だか～だか",
+        "Modality: “Uncertainty” Means?",
+        "A + ～（な）のだか",
+        "A + ～（な）のだか + B + ～（な）のだか(+ N…)",
+        "～だか（わからない・知らない）",
+        "疑問詞＋～だか",
+        "～（だ）かどうだか",
+        "Parenthetical ～だか",
+        "～だか as a Quasi-Nominal?",
+        "Dialectal Sentence-Final ～だか",
+        "～だの～だの",
+        "～だとか～だとか"
+      ]
+    },
+    {
+      "pageId": "12522",
+      "title": "Phrasal こと",
+      "expressions": [
+        "こと"
+      ],
+      "headings": [
+        "Phrasal こと: ～ことに・～ことには・～AことはA～・Aことこの上ない・～ということだ",
+        "～ことに",
+        "～ことには",
+        "～ないことには～ない",
+        "言う（こと）には・・・",
+        "AことはA…（が・けれど）",
+        "ｗ/ Nominal Predicates",
+        "Aことこの上ない",
+        "～ということだ（伝聞）"
+      ]
+    },
+    {
+      "pageId": "12635",
+      "title": "The Auxiliaries だろう・でしょう",
+      "expressions": [
+        "だろう",
+        "でしょう"
+      ],
+      "headings": [
+        "The Auxiliaries だろう・でしょう",
+        "だろう・でしょう",
+        "～だろう・でしょう ＋ ～が・けれど",
+        "～だろう・でしょう w/ Final particles",
+        "だろう・でしょう？",
+        "だろうか",
+        "でしょうか",
+        "w/ ～のだ",
+        "～ますでしょうか",
+        "だろうに・でしょうに",
+        "～だろ・でしょ",
+        "～でありましょう～でございましょう～でいらっしゃいましょう",
+        "であろう"
+      ]
+    },
+    {
+      "pageId": "12931",
+      "title": "～（よ）うにも & ～（よ）うものなら",
+      "expressions": [
+        "ようにも",
+        "ようものなら"
+      ],
+      "headings": [
+        "～（よ）うにも & ～（よ）うものなら",
+        "～（よ）うにも",
+        "～にも～ない",
+        "～（よ）うものなら",
+        "～ものなら"
+      ]
+    },
+    {
+      "pageId": "13085",
+      "title": "The Particle とか",
+      "expressions": [
+        "とか"
+      ],
+      "headings": [
+        "The Particle とか",
+        "The Parallel Particle とか基礎用法: 物事の列挙",
+        "なんとか",
+        "Quotative/Adverbial Particle とか",
+        "とか弁",
+        "ぼかしの「とか」 After Noun",
+        "ぼかしの「とか」 After Embedded Quote",
+        "ぼかしの「とか」 in ～たりとか",
+        "ぼかしの「とか」 in ～とかいう",
+        "ぼかしの「とか」After a Verb"
+      ]
+    },
+    {
+      "pageId": "13112",
+      "title": "～上がる & ～上げる",
+      "expressions": [
+        "上がる",
+        "上げる"
+      ],
+      "headings": [
+        "～上がる & ～上げる",
+        "Transitivity w/ 上がる & 上げる",
+        "上がる",
+        "上げる",
+        "Orthography",
+        "Transitivity w/ ～上がる・上げる",
+        "Upward Directionality w/ ～上がる and ～上げる",
+        "打ちあがる (△) ？",
+        "こみ上げる is Intransitive?",
+        "Completion w/ ～上がる and ～上げる",
+        "Societal Actions: Directionality w/ ～上がる and ～上げる",
+        "Being Condescending w/  ～上がる"
+      ]
+    },
+    {
+      "pageId": "16596",
+      "title": "Obligation: ～べきだ",
+      "expressions": [
+        "べきだ"
+      ],
+      "headings": [
+        "Obligation: ～べきだ",
+        "Conjugating w/ ～べきだ",
+        "W/ Negation: ～べきではない",
+        "The Grammaticality of ～ないべきだ",
+        "Regret: ～べきだった・べきではなかった",
+        "W/ Adjectives?",
+        "～べき Used Adjectivally"
+      ]
+    },
+    {
+      "pageId": "16635",
+      "title": "Planning: ～つもりだ",
+      "expressions": [
+        "つもりだ"
+      ],
+      "headings": [
+        "Planning: ～つもりだ",
+        "Verb (non-Past) + ～つもりだ",
+        "Noun ＋ のつもりだ",
+        "X ～つもりをする",
+        "X～つもりにする",
+        "X～つもりになる",
+        "X～つもりでいる",
+        "～つもりか",
+        "～つもりだった",
+        "～ないつもりだ VS ～つもり｛は・が｝ない VS ～つもりではない",
+        "Conviction: ～たつもりだ（った）",
+        "～つもりだった｛が・のに｝",
+        "～たつもりで",
+        "～つもりがある"
+      ]
+    },
+    {
+      "pageId": "17017",
+      "title": "The Interjectory/Final/Adverbial Particle や",
+      "expressions": [
+        "や"
+      ],
+      "headings": [
+        "The Interjectory/Final/Adverbial/Bound/Conjunctive Particle や",
+        "The Interjectory Particle や",
+        "The Final Particle や",
+        "The Combination やい",
+        "The Adverbial/Bound Particle や",
+        "や否や"
+      ]
+    }
+  ]
+}

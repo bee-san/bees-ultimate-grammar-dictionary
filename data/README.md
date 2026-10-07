@@ -8,6 +8,12 @@ corpus and cached English translations are committed under `website/data/`;
 `make` builds both complete editions from that snapshot. The layout below is the
 contract between the original-source pipeline stages.
 
+`website/data/imabi-lookups.json` is the reviewed IMABI lookup catalog. Extraction
+checks its titles, headings and quoted variant evidence against the locked
+pages, and carries the mappings as `provenance.lookupExpressions`. The final
+corpus projection adds those lookup rows without changing the keymap's sense
+alignment. Snapshot builds apply the same catalog to the preserved full corpus.
+
 ```
 data/
   sources/<source-name>/          raw acquired bytes  (gitignored)

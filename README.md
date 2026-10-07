@@ -70,6 +70,13 @@ It contains 494 lessons; seven site pages are excluded. The publication snapshot
 preserves the complete merged corpus from every source, including the source
 decks that are unavailable in a fresh checkout.
 
+IMABI lessons are also indexed by Japanese grammar forms, so looking up `は`,
+`に`, `を`, `けど` or `のだ` shows the relevant IMABI articles. The committed
+`website/data/imabi-lookups.json` maps **267 lessons to 501 Japanese lookup
+terms**, using their titles, headings and explicit variant descriptions.
+Multiple lessons keep their own titles and explanations. Original article
+addresses remain available; the linked website includes every matching lesson.
+
 To refresh the corpus from original inputs, acquire any missing sources and run
 `make all`. Those pipeline stages are:
 

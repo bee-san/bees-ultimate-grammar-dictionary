@@ -22,7 +22,7 @@ with zipfile.ZipFile(ZIP) as zf:
         entries.extend(json.loads(zf.read(name)))
 
 unified = [json.loads(line) for line in open("data/merge/unified.jsonl", encoding="utf-8")]
-by_head = {e[0]: e for e in entries}
+by_head = {e[0]: e for e in entries[:len(unified)]}
 
 fail = []
 

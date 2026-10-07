@@ -86,14 +86,24 @@ def grouped_entries(corpus: dict) -> dict[str, dict]:
     def resolve(expression: str, seen: frozenset[str]) -> dict:
         group = groups[expression]
         points = group["contributions"]
-        targets = list(dict.fromkeys(p.get("provenance", {}).get("aliasOf") for p in points))
-        if not targets or any(not target or target not in groups or target in seen for target in targets):
-            return group
-        resolved = [resolve(target, seen | {expression}) for target in targets]
-        return dict(group, alias=True,
-                    contributions=[p for target in resolved for p in target["contributions"]],
-                    variants=list(dict.fromkeys([*group["variants"], *targets,
-                                                 *(v for target in resolved for v in target["variants"])])))
+        expanded, variants, identities = [], list(group["variants"]), set()
+        has_alias = False
+        for point in points:
+            target = point.get("provenance", {}).get("aliasOf")
+            if target and target in groups and target not in seen | {expression}:
+                resolved = resolve(target, seen | {expression})
+                candidates = resolved["contributions"]
+                variants.extend([target, *resolved["variants"]])
+                has_alias = True
+            else:
+                candidates = [point]
+            for candidate in candidates:
+                identity = (candidate["source"], candidate.get("row_uid") or json.dumps(candidate, sort_keys=True))
+                if identity not in identities:
+                    expanded.append(candidate)
+                    identities.add(identity)
+        return dict(group, alias=has_alias and all(p.get("provenance", {}).get("aliasOf") for p in points),
+                    contributions=expanded, variants=list(dict.fromkeys(variants)))
     return {expression: resolve(expression, frozenset()) for expression in groups}
 
 
@@ -240,7 +250,12 @@ def point_page(entry: dict, labels: dict, original: dict, *, english: bool) -> s
                 explanation = '<p>This source lists the form without an explanation.</p>'
             original_point = original_points.get(point.get("row_uid") or point["source_id"], point)
             original_disclosure = f'<details class="original"><summary>Read the original source text</summary>{fields_html(original_point)}</details>' if translation else ''
-            heading = f'<h3 class="sense-heading">Usage {index}</h3>' if len(points) > 1 else ''
+            lesson_title = point.get("provenance", {}).get("lessonTitle") if source == "imabi" else None
+            heading = (f'<h3 class="sense-heading">{escape(lesson_title)}</h3>' if lesson_title else
+                       f'<h3 class="sense-heading">Usage {index}</h3>' if len(points) > 1 else '')
+            lesson_url = safe_url(point.get("provenance", {}).get("lessonUrl")) if lesson_title else ''
+            if lesson_url:
+                heading += f'<a class="upstream-link" href="{escape(lesson_url)}" rel="noreferrer">Read this IMABI lesson ↗</a>'
             senses.append(f'<div class="sense">{heading}<div class="sense-meta">{level}{translation_badge}</div>{explanation}{examples_html(point.get("examples", []))}{original_disclosure}</div>')
         provenance = points[0].get("provenance", {})
         links = [provenance.get("url"), provenance.get("lessonUrl"), provenance.get("pageUrl"), *provenance.get("producerLinks", [])]

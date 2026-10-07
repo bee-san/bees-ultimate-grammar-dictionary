@@ -11,7 +11,8 @@ import pathlib
 import re
 import zipfile
 
-from build_site import snapshot_inputs
+from build_site import read_json, snapshot_inputs
+from bugd.imabi_lookup import load_catalog
 from bugd.site_links import grammar_path, grammar_url
 from bugd.sources import source_names
 from bugd.sources.base import load_source_lock
@@ -21,6 +22,9 @@ from bugd.validate import validate_zip
 
 def verify(snapshot: pathlib.Path, output: pathlib.Path, *, write_lock: bool = False) -> dict:
     corpus, _, revision = snapshot_inputs(snapshot)
+    lookups = load_catalog(snapshot / "imabi-lookups.json")
+    lookup_terms = {form for lesson in lookups.values() for form in lesson["expressions"]}
+    old_expressions = {entry["expression"] for entry in read_json(snapshot / "corpus.json.gz")["entries"]}
     required = set(source_names())
     if set(corpus["sourceLabels"]) != required:
         raise ValueError("Release snapshot must contain every registered source")
@@ -57,6 +61,8 @@ def verify(snapshot: pathlib.Path, output: pathlib.Path, *, write_lock: bool = F
         if failures:
             raise ValueError(f"Invalid {filename}: {failures}")
         count = 0
+        expressions = set()
+        imabi_terms = set()
         with zipfile.ZipFile(path) as archive:
             index_bytes = archive.read("index.json")
             index = json.loads(index_bytes)
@@ -72,6 +78,9 @@ def verify(snapshot: pathlib.Path, output: pathlib.Path, *, write_lock: bool = F
                 if not re.fullmatch(r"term_bank_\d+\.json", name):
                     continue
                 for row in json.loads(archive.read(name)):
+                    expressions.add(row[0])
+                    if row[0] in lookup_terms and has_imabi_source(row[5]):
+                        imabi_terms.add(row[0])
                     footer = row[5][0]["content"]["content"][-1]["content"]
                     if footer.get("href") != grammar_url(row[0], english=english):
                         raise ValueError(f"Wrong article link: {filename} {row[0]}")
@@ -82,6 +91,21 @@ def verify(snapshot: pathlib.Path, output: pathlib.Path, *, write_lock: bool = F
                     count += 1
         if count != len(corpus["entries"]):
             raise ValueError(f"Entry count differs from full snapshot: {filename}")
+        if not old_expressions <= expressions:
+            raise ValueError(f"Previously published headwords were removed: {filename}")
+        if lookup_terms != imabi_terms:
+            raise ValueError(f"Missing IMABI lookups in {filename}: {sorted(lookup_terms - imabi_terms)}")
+        # The popup has a four-sense budget. Every indexed lesson must still be
+        # reachable on the article, with its own title, in both editions.
+        for form in sorted(lookup_terms):
+            article = output / grammar_path(form, english=english) / "index.html"
+            page = article.read_text()
+            section = page.split('id="source-imabi"', 1)[-1].split('</section>', 1)[0]
+            for lesson in lookups.values():
+                if form in lesson["expressions"]:
+                    heading = f'<h3 class="sense-heading">{html.escape(lesson["title"])}</h3>'
+                    if heading not in section:
+                        raise ValueError(f"Missing IMABI lesson {lesson['pageId']}: {filename} {form}")
         checked_rows[filename] = count
 
     sums = "".join(
@@ -97,14 +121,27 @@ def verify(snapshot: pathlib.Path, output: pathlib.Path, *, write_lock: bool = F
         raw = (downloads / name).read_bytes()
         assets[name] = {"sha256": hashlib.sha256(raw).hexdigest(), "byteCount": len(raw)}
     result = {"revision": revision, "sources": sorted(required), "entries": len(corpus["entries"]),
-              "imabiLessons": len(imabi_ids), "assets": assets}
+              "imabiLessons": len(imabi_ids), "imabiLookupLessons": len(lookups),
+              "imabiLookupTerms": len(lookup_terms), "assets": assets}
     lock_path = snapshot / "release.json"
     if write_lock:
         lock_path.write_text(json.dumps(result, indent=2) + "\n")
     elif json.loads(lock_path.read_text()) != result:
         raise ValueError("Release bytes differ from website/data/release.json")
     return {"revision": revision, "sources": len(required), "imabiPages": listing["count"],
-            "imabiLessons": len(imabi_ids), "verifiedArticleLinks": checked_rows, "assets": assets}
+            "imabiLessons": len(imabi_ids), "imabiLookupLessons": len(lookups),
+            "imabiLookupTerms": len(lookup_terms), "preservedHeadwords": len(old_expressions),
+            "verifiedArticleLinks": checked_rows, "assets": assets}
+
+
+def has_imabi_source(node: object) -> bool:
+    if isinstance(node, list):
+        return any(has_imabi_source(child) for child in node)
+    if isinstance(node, dict):
+        if "sourceName" in node.get("data", {}) and node.get("content") == "IMABI":
+            return True
+        return has_imabi_source(node.get("content"))
+    return False
 
 
 def main() -> int:

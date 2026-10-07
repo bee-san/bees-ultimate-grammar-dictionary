@@ -25,6 +25,7 @@ import pathlib
 import re
 
 from ..jsonio import dump_json, load_json
+from ..imabi_lookup import load_catalog
 from ..model import Example, GrammarPoint
 from .base import Extractor, ExtractResult, load_source_lock
 from .registry import register_extractor
@@ -152,6 +153,7 @@ class ImabiExtractor(Extractor):
     def extract(self) -> ExtractResult:
         lock = load_source_lock(self.input_dir)
         page_files = self._lesson_files(lock)
+        lookups = load_catalog()
 
         points: list[GrammarPoint] = []
         consumed: dict[str, str] = {}
@@ -197,7 +199,20 @@ class ImabiExtractor(Extractor):
                 "attribution": ATTRIBUTION,
                 "pageId": page["id"],
                 "slug": slug,
+                "lessonTitle": title,
             }
+            if str(page_id) in lookups:
+                lookup = lookups[str(page_id)]
+                headings = {html.unescape(_TAG.sub("", heading)).strip() for heading in
+                            re.findall(r"<h[1-6]\b[^>]*>(.*?)</h[1-6]>",
+                                       page["content"]["rendered"], re.S)}
+                if (lookup["title"] != title or not set(lookup["headings"]) <= headings
+                        or any(evidence not in body for evidence in lookup.get("evidence", []))):
+                    raise ValueError(f"IMABI lookup evidence changed for page {page_id}")
+                # Indexing a lesson under a form is not a claim of equivalence
+                # between every form it discusses. Keep this out of the keymap's
+                # variant/merge rules and expand it only in the final projection.
+                provenance["lookupExpressions"] = list(lookup["expressions"])
             link = page.get("link")
             if link:
                 provenance["lessonUrl"] = link

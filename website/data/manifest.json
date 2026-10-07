@@ -1,5 +1,5 @@
 {
-  "revision": "2026.10.06",
+  "revision": "2026.10.07",
   "model": "gpt-6-luna",
   "sources": [
     "aiueo",
@@ -16,7 +16,7 @@
     "ninjal_bunkei",
     "yokubi"
   ],
-  "entries": 6371,
+  "entries": 6511,
   "translations": 45895,
   "files": {
     "corpus.json.gz": {
@@ -26,6 +26,10 @@
     "translations.en.json.gz": {
       "sha256": "acbeeebd03bca6de00a731f2752bd8c131bad7f8769fd4456de07c6f78016148",
       "byteCount": 4248006
+    },
+    "imabi-lookups.json": {
+      "sha256": "edfc40caf9766301d7d6191d22ac9c77b9d2c86578880dff4e60160bc4fca354",
+      "byteCount": 121055
     }
   }
 }

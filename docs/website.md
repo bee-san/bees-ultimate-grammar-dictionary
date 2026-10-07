@@ -18,7 +18,8 @@ make site
 python3 -m http.server 8000 --directory build/site
 ```
 
-`website/data/manifest.json` pins the compressed corpus and translation cache by
+`website/data/manifest.json` pins the compressed corpus, translation cache and
+IMABI lookup catalog by
 SHA-256 and byte count. `scripts/build_site.py` checks those digests, refuses an
 empty corpus or incomplete translation cache, generates both sites, and builds
 and schema-validates both downloadable Yomitan ZIPs. Source content is attributed
@@ -70,13 +71,45 @@ digest lock, accounts for every lesson, checks all 13 sources, validates both
 archives against the pinned Yomitan schemas, and checks every article link and
 heading in both editions.
 
+Verification also checks all 501 catalogued Japanese lookup terms for a rendered
+IMABI disclosure in each actual ZIP, all 609 lesson-to-term links on the full
+articles, and preservation of the original snapshot's 6,288 written headwords.
+
+### IMABI lookup indexing
+
+The older corpus used English lesson titles as IMABI headwords. The committed
+`imabi-lookups.json` indexes 267 lessons under Japanese forms named in their
+titles, section headings or explicit variant descriptions. Forms in examples
+are not harvested indiscriminately. Optional forms and combined headings are
+expanded explicitly in the catalog, with evidence retained for review.
+
+`bugd.imabi_lookup.apply_lookups` adds the lesson contributions after cross-source
+alignment. A link means that the article discusses a form; it does not assert
+that all forms in the article are equivalent. It keeps each lesson's full text,
+identity and attribution, and retains every original entry and article URL.
+The same projection runs for acquired-source and snapshot builds. Applying it
+twice has no effect. The base compressed corpus and translation cache remain
+unchanged for this indexing release.
+
+Multiple IMABI articles are labelled by lesson title. The popup shows up to four
+lessons and notes when more are available; the linked article includes them all.
+Broad lessons about pronunciation, writing or vocabulary may still use their
+descriptive titles unless the catalog names an appropriate Japanese lookup.
+
+To edit the catalog, review the corresponding locked `pages/<id>.json`, keep its
+exact title and heading evidence, then update the catalog digest and effective
+entry count in `manifest.json`. Extraction fails if the evidence no longer
+matches the acquired page. Use a new revision and regenerate the release lock
+with the publication commands below.
+
 The IMABI raw pages are an independently locked acquisition. The merged
 publication snapshot also retains earlier normalization, deduplication and
 corrections across all sources; rebuilding a release uses that snapshot rather
 than rerunning acquisition against changing upstream websites.
 
 When updating the publication, choose a new revision in `manifest.json`, run
-`make site`, then `python scripts/verify_release.py --write-lock`. Review the
+`make site`, copy `build/site/downloads/index.json` to `dist/index.json`, then run
+`PYTHONPATH=src python scripts/verify_release.py --write-lock`. Review the
 output, run `make verify-release`, and commit all changed inputs with notes at
 `docs/releases/v<revision>.md`. A push of the revised snapshot to `main` triggers
 the release workflow, which builds and verifies before uploading both ZIPs,

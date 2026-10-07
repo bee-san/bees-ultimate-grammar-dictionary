@@ -1396,6 +1396,8 @@ def _sense_label(point: GrammarPoint, ordinal: int, total: int) -> str:
     unreadable, so a sense that carries its own meaning is labelled with it and
     the rest are numbered.
     """
+    if point.source == "imabi" and point.provenance.get("lessonTitle"):
+        return str(point.provenance["lessonTitle"])
     if total <= 1:
         return ""
     meaning = _readable_meaning(point.meaning)
@@ -1495,6 +1497,10 @@ def _source_blocks(entry: MergedEntry, headline: str = "") -> list[dict]:
                     }
                 )
             body.append({"tag": "div", "data": {"sense": ""}, "content": sense_body})
+
+        if source_key[label] == "imabi" and len(rendered) > len(shown):
+            body.append({"tag": "div", "lang": "en", "content":
+                         f"{len(rendered) - len(shown)} more IMABI lessons under Read all explanations below."})
 
         blocks.append(
             {

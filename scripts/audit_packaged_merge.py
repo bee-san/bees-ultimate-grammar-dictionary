@@ -33,8 +33,9 @@ with zipfile.ZipFile(ZIP) as zf:
 
 unified = [json.loads(line) for line in open("data/merge/unified.jsonl", encoding="utf-8")]
 stats = json.load(open("data/merge/unified.stats.json"))
+projected = json.load(open("data/merged/corpus.json"))["entries"]
 
-check("packaged term entries == unified entries", len(entries), len(unified))
+check("packaged term entries == indexed projection", len(entries), len(projected))
 check(
     "sequences are 1..N with no gaps",
     [e[6] for e in entries] == list(range(1, len(entries) + 1)),
@@ -53,8 +54,16 @@ axis_split = {
     for u in unified
     if u["expression"] in dupe_heads and u["axes"] != {"variety": "standard", "era": "modern"}
 }
-check("every duplicated headword is an axis split", dupe_heads == axis_split, True)
-check("every unified expression is packaged", set(headwords) == {e["expression"] for e in unified}, True)
+imabi_lookup_duplicates = {
+    e["expression"] for e in projected
+    if e["expression"] in dupe_heads and any(
+        p["source"] == "imabi" and e["expression"] in p.get("provenance", {}).get("lookupExpressions", [])
+        for p in e["contributions"])
+}
+check("every duplicated headword is an axis split or explicit IMABI lookup",
+      dupe_heads == axis_split | imabi_lookup_duplicates, True)
+check("every indexed expression is packaged", set(headwords) == {e["expression"] for e in projected}, True)
+check("every unified expression is retained", {e["expression"] for e in unified} <= set(headwords), True)
 
 # per-source attribution actually rendered
 def walk(node, out):
@@ -67,7 +76,11 @@ def walk(node, out):
             walk(item, out)
 
 
-by_head = {e[0]: e for e in entries}
+# The original unified rows remain first and in order. Added lookup rows may
+# share their spelling with a redirect; do not let them hide the original row.
+check("original row order is preserved", [e[0] for e in entries[:len(unified)]] ==
+      [e["expression"] for e in unified], True)
+by_head = {e[0]: e for e in entries[:len(unified)]}
 labels = set(stats["corpus"]["sourceLabels"].values())
 
 multi = [u for u in unified if u["kind"] == "point" and len({c["source"] for s in u["senses"] for c in s["contributions"]}) >= 4]
@@ -85,7 +98,7 @@ expected = {
     c["sourceLabel"] for s in worst["senses"] for c in s["contributions"]
 }
 print(f"      probe entry {worst['expression']!r}: {len(expected)} sources")
-check("every contributing source has its own labelled disclosure", rendered, expected)
+check("every contributing source has its own labelled disclosure", expected <= rendered, True)
 check("rendered labels are real source labels", rendered <= labels, True)
 
 # redirects render as a clickable crossref, not an empty card

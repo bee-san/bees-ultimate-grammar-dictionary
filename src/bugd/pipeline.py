@@ -19,6 +19,7 @@ import shutil
 
 from . import DICTIONARY_SLUG, DICTIONARY_INDEX_URL, DICTIONARY_DOWNLOAD_URL, YOMITAN_SCHEMA_REVISION
 from . import unify
+from .imabi_lookup import apply_lookups
 from .banks import build_banks, build_index, build_tag_bank
 from .reading_corrections import (
     DEFAULT_CORRECTIONS_PATH as DEFAULT_READING_CORRECTIONS_PATH,
@@ -268,11 +269,12 @@ def run_merge(
         "sourceLabels": labels,
         "entries": [entry_to_json(entry) for entry in entries],
     }
+    corpus = apply_lookups(corpus)
     merged_dir.mkdir(parents=True, exist_ok=True)
     (merged_dir / MERGED_CORPUS_NAME).write_text(dump_json(corpus) + "\n", encoding="utf-8")
     return {
         "points": len(rows),
-        "entries": len(entries),
+        "entries": len(corpus["entries"]),
         "pointEntries": stats["unified"]["pointEntries"],
         "redirectEntries": stats["unified"]["redirectEntries"],
         "contributions": stats["unified"]["contributions"],

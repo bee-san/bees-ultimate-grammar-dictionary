@@ -22,7 +22,9 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install pinned build dependencies
-        run: python -m pip install .
+        run: python -m pip install . pytest==9.1.1
+      - name: Check IMABI lookup and rendering regressions
+        run: python -m pytest -q tests/test_imabi_lookup.py tests/test_source_imabi.py tests/test_english_website.py tests/test_cli_pipeline.py tests/test_banks_card.py tests/test_unify.py
       - name: Build and verify both complete editions
         run: make release
       - name: Publish checked release assets

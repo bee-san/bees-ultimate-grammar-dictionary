@@ -1,5 +1,5 @@
 {
-  "revision": "2026.10.06",
+  "revision": "2026.10.07",
   "sources": [
     "aiueo",
     "bunpou",
@@ -15,27 +15,29 @@
     "ninjal_bunkei",
     "yokubi"
   ],
-  "entries": 6371,
+  "entries": 6511,
   "imabiLessons": 494,
+  "imabiLookupLessons": 267,
+  "imabiLookupTerms": 501,
   "assets": {
     "bees-ultimate-grammar-dictionary.zip": {
-      "sha256": "062c5188d20215da60f04bf46fae49896885be8d7dde175c4d126371f4ca1d4a",
-      "byteCount": 7227109
+      "sha256": "bc0779a49098710bd31bab45970a8babf1c3b31175844f570b79ff09589b4c6e",
+      "byteCount": 10310913
     },
     "bees-ultimate-grammar-dictionary-en.zip": {
-      "sha256": "e152d431c7d4c5a16f92d7343b1074d9adcc52e54bf592dab9d0b45decbeb558",
-      "byteCount": 8045650
+      "sha256": "a2f35033b4d2141b3cc2c2a6d3135f32dfe775e7edc310ea82dca24cc07f9c6b",
+      "byteCount": 11059866
     },
     "index.json": {
-      "sha256": "541ba3d2734020d5e6727f052acebc06d376a32d13f6b4a9039eb1c092256ef0",
+      "sha256": "e257e8373b91e6ad747c54a04c43cb99806756cc7600095ffac808199aa52db1",
       "byteCount": 1054
     },
     "index.en.json": {
-      "sha256": "c128c819ae7551a7fde5f4bad6f150bff1d04ce4b70fd6ff84cca9c40303e26d",
+      "sha256": "231c8211b19a93d45dfad65f62b8c576742fd77b4e6cfb0b601afc2c602d2848",
       "byteCount": 1133
     },
     "SHA256SUMS": {
-      "sha256": "885342115b91a6b83d3cddf4f66ecf39f212666d57c6bd6d8c14d2cf147cc7f3",
+      "sha256": "82439b6f686d205d06ba69935799dc824e6a62c2e34a27e91bb9aff55925a85b",
       "byteCount": 209
     }
   }

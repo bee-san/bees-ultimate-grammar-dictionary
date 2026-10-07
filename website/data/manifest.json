@@ -1,5 +1,5 @@
 {
-  "revision": "2026.10.07.2",
+  "revision": "2026.10.07.3",
   "model": "gpt-6-luna",
   "sources": [
     "aiueo",
@@ -38,6 +38,10 @@
     "published-headwords.json": {
       "sha256": "7825978e1c766d7224c24796ffa04bcaa256226af4da902186dbcfc029f5913e",
       "byteCount": 165950
+    },
+    "headword-readings.json": {
+      "sha256": "10ce46b5a9056ecd7a41294e17609c11a0dafded48e91dba166a9da25fff0bdd",
+      "byteCount": 266157
     }
   },
   "restoredImabiLessons": [

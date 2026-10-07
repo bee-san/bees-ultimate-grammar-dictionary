@@ -127,6 +127,26 @@ audit settings do not apply to the English translation build.
   `dccb9cf78b3a56d139350939cec2afe4efd866eff213f9be8cd0dd5cbdcfead6`,
   database version `2026-251`.
 
+### Headword readings — JMdict, SudachiDict, Jiten
+- `website/data/headword-readings.json` gives a kana reading to each kanji
+  headword that no source spells exactly. Popups print it as furigana and find
+  the headword by it.
+- Built by `scripts/resolve_headword_readings.py --jmdict JMdict_e.gz`, an
+  acquisition step; normal builds only read the committed catalog. Each record
+  keeps its evidence and the basis of its decision.
+- Evidence, in order of trust: a reading the source prints beside the headword;
+  JMdict's reading of the whole headword, chosen by the headword's own example
+  sentences when JMdict lists several; agreement of Sudachi, Jiten and
+  JMdict-per-token readings; then reviewed decisions in the script's `REVIEWED`.
+- JMdict: Electronic Dictionary Research and Development Group, CC BY-SA 4.0,
+  https://www.edrdg.org/jmdict/j_jmdict.html. Pinned `JMdict_e.gz` sha256
+  `a84c95984295173c4a6dff2d37c16697aa7b42b469146bb0a55578d940076c5f`, created
+  2026-10-07.
+- SudachiPy 0.6.10 with SudachiDict-full 20260116 (Apache-2.0, Works Applications).
+- Jiten (https://jiten.moe, Apache-2.0) `/api/vocabulary/parse` and word
+  furigana; the responses used are committed in `data/readings/jiten-responses.json`.
+- Every reading still passes the exact-spelling gate in `src/bugd/readings.py`.
+
 ### Reading corrections (UGD-11c-B)
 - `data/corrections/readings.json` is an evidence-backed overlay correcting nine
   upstream publisher readings that are impossible/wrong for their written form.

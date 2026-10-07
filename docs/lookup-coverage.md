@@ -1,6 +1,6 @@
 # Japanese popup lookup coverage
 
-Release `v2026.10.07.2` gives every one of the **9,152 source records** at least
+Release `v2026.10.07.3` gives every one of the **9,152 source records** at least
 one Japanese lookup form. Both editions have **7,640 term-bank rows**, including
 the original titles and notation preserved for compatibility. Source records
 are counted once by their stable identity, regardless of how many aliases they
@@ -43,6 +43,10 @@ have; term-bank rows are lookup entries, not separate lessons.
   headword. Popups print the reading as furigana and also match hovered text by
   it, so a notation, joined or truncated reading is dropped. A kana headword
   is also found by its producer's own lookup key (`たかが` for `たかがく`).
+- Kanji headwords that no source reads get a reviewed reading from JMdict,
+  Sudachi, Jiten and the sources' own text, so kana-written text finds them
+  (`そのうえ` → `その上`). Readings that would match an unrelated particle or the
+  first kana of other words are left out.
 - Negative constructions filed under synthetic affirmative lemmas (`ずにはいる`,
   `もする`, `ねばなる`) appear under their real forms. The lemma rows, typo rows
   (`と言いえ`) and corrupted rows (`と言ではない`) remain for their published
@@ -74,6 +78,7 @@ sentences; both editions should return the listed entry and source.
 | 笑わずにはいられなかった。 | ずには | ずにはいられない | どんなとき |
 | 学生とはいえ、 | とはいえ | とはいえ | どんなとき |
 | 天才と言っても過言ではない。 | と言っても | と言っても過言ではない | NINJAL |
+| 雨だ。そのうえ風も強い。 | そのうえ | その上 | DoJG |
 
 The coverage claim is **findability by Japanese form or topic**, not automatic
 recognition of every sentence construction. For discontinuous grammar, hover
@@ -97,9 +102,10 @@ source disclosure and full article record, every footer URL and heading, and
 all 6,408 previously published headwords in both language routes. It checks
 source digests, schemas and release checksums too.
 
-`verify-popup` tests 19 sentence/cursor cases per ZIP using the unmodified,
+`verify-popup` tests 21 sentence/cursor cases per ZIP using the unmodified,
 digest-pinned Yomitan Japanese transformation engine, including its POS filter.
-It also checks 4 cases where a synthetic lemma such as `ずにはいる` must not match.
+It also checks 6 cases that must not match, such as the synthetic lemma `ずにはいる`
+or a counter reading `化` for the particle か.
 The engine is committed under `tests/vendor/yomitan` with its upstream licence.
 This tests lookup mechanics against packaged data; it is not a browser UI test.
 

@@ -41,9 +41,10 @@ pinned Yomitan transformer.
 - [ ] Hover the examples in [lookup coverage](lookup-coverage.md) in the Yomitan
   and Hachidori browser extensions. The engine checks above do not exercise the
   extensions' text scanners, scan-length settings or rendering.
-- [ ] 669 kanji headwords have no source reading that spells them exactly. They
-  show no furigana, and kana-written text does not find them. Adding readings
-  needs source evidence; KANJIDIC can test a reading but cannot choose one.
+- [x] Kanji headwords without a source reading. v2026.10.07.3 gives 617 of 658
+  a reviewed reading from JMdict, Sudachi, Jiten and the sources' own text
+  (`website/data/headword-readings.json`). The rest would match unrelated
+  particles or word starts, or are compatibility rows.
 - [ ] Some example highlights use a spelling that the record's headword lacks
   (`恐れがある` for `おそれがある`, `甲斐` for `かい`). Such spellings could become
   reviewed aliases.

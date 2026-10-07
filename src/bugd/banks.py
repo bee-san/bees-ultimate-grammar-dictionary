@@ -35,6 +35,7 @@ from .jsonio import MalformedPayload
 from .merge import MergedEntry
 from .model import GrammarPoint
 from .inflection import inflection_rules
+from .readings import has_kanji as _has_kanji, is_exact_reading
 from .dialects import prose_to_html
 from .richtext import html_to_content, html_to_text
 
@@ -1419,6 +1420,24 @@ def _sense_label(point: GrammarPoint, ordinal: int, total: int) -> str:
     return f"Sense {ordinal}"
 
 
+def _distinct(rendered: list[tuple[GrammarPoint, list]]) -> list[tuple[GrammarPoint, list]]:
+    """Drop a sense whose rendered body repeats an earlier one word for word.
+
+    絵でわかる日本語 files each negative construction twice, under its real form and
+    a synthetic lemma (`ずにはいられない` / `ずにはいる`); both now share one popup
+    row, and the same article must not be shown to the reader twice.
+    """
+    seen: list[tuple] = []
+    kept = []
+    for point, body in rendered:
+        # A sense is labelled by its meaning or structure, so they distinguish it too.
+        key = (_sense_label(point, 1, 2), body)
+        if key not in seen:
+            seen.append(key)
+            kept.append((point, body))
+    return kept
+
+
 def _source_blocks(entry: MergedEntry, headline: str = "") -> list[dict]:
     """One disclosure per contributing SOURCE, senses nested inside it.
 
@@ -1466,7 +1485,7 @@ def _source_blocks(entry: MergedEntry, headline: str = "") -> list[dict]:
     ordered_labels = sorted(grouped, key=_lang_rank)
 
     rendered_by_label = {
-        label: [(point, body) for point in grouped[label] if (body := _source_block(point))]
+        label: _distinct([(point, body) for point in grouped[label] if (body := _source_block(point))])
         for label in ordered_labels
     }
     has_substance = any(rendered_by_label.values()) or any(p.jlpt for p in entry.contributions)
@@ -1743,18 +1762,22 @@ def build_term_entry(entry: MergedEntry, sequence: int) -> list:
     # already titled with its source, so the source IS the section title.
 
     reading = ""
-    for point in entry.contributions:
-        candidate = point.reading or ""
-        # Yomitan treats reading == expression as a redundant furigana pair.
-        if candidate and candidate != entry.expression:
-            reading = candidate
-            break
+    if entry.lookup and _has_kanji(entry.expression):
+        # Yomitan both prints the reading as furigana and indexes it as a second
+        # lookup key, so only a kana spelling of exactly this headword qualifies:
+        # never a pattern's reading (`と～ない`), a concatenation of alternatives
+        # (`かなかなあ`) or another construction's form (`にむけて` for `に向け`).
+        for point in entry.contributions:
+            candidate = (point.reading or "").strip("〜～~")
+            if candidate and is_exact_reading(entry.expression, candidate):
+                reading = candidate
+                break
 
     return [
         entry.expression,
         reading,
         "",
-        inflection_rules(entry.expression),
+        inflection_rules(entry.expression) if entry.lookup else "",
         0,
         [
             {

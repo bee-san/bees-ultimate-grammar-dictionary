@@ -175,16 +175,15 @@ def homepage(records: list[dict], labels: dict, example_count: int, *, english: 
     intro = ("Every source. Every explanation. Now in English, with the original Japanese close at hand."
              if english else "The Japanese grammar library you’ll keep coming back to. All your favourite explanations, together in one thoughtful place.")
     notice = '<p class="translation-note">English edition · Translated with GPT-6 Luna. Original text included.</p>' if english else ''
-    body = f'''<section class="hero wrap"><div class="hero-copy"><div class="eyebrow"><span class="small-dot"></span> A FIELD GUIDE TO JAPANESE</div>
-<h1>{title}</h1><p class="hero-description">{intro}</p>{notice}<a class="primary" href="#library">Find a grammar point <span aria-hidden="true">↗</span></a>
+    hero = f'''<section class="hero wrap"><div class="hero-copy"><div class="eyebrow"><span class="small-dot"></span> A FIELD GUIDE TO JAPANESE</div>
+<h2>{title}</h2><p class="hero-description">{intro}</p>{notice}<a class="primary" href="#library">Find a grammar point <span aria-hidden="true">↗</span></a>
 <div class="hero-stats"><div><strong>{len(records):,}</strong><span>lookup forms</span></div><div><strong>{len(labels)}</strong><span>grammar sources</span></div><div><strong>{example_count:,}</strong><span>examples to explore</span></div></div></div>
 <div class="hero-art" aria-hidden="true"><div class="art-grid"></div><span class="art-note">a little particle, a whole new meaning</span>
 <div class="paper-back"><span lang="ja">日本語の、<br>なるほど。</span></div><div class="paper-front"><div class="paper-meta"><span>GRAMMAR FIELD NOTES</span><span class="level n4">N4</span></div>
 <div class="paper-word" lang="ja">ながら<span>nagara</span></div><div class="paper-line"></div><p>while; at the same time</p>
 <div class="paper-example" lang="ja">音楽を聞き<span>ながら</span><br>日本語を勉強する。</div><p class="paper-translation">Studying Japanese while listening to music.</p>
-<div class="paper-bottom"><span>One point. Many perspectives.</span><span>↗</span></div></div><span class="art-star">✳</span></div></section>
-<div class="library-band"><span>ONE LOOKUP. ALL THE EXPLANATIONS.</span><span lang="ja">文法がわかると、日本語がもっと楽しくなる。</span><span class="band-flower">✳</span></div>
-<section class="library wrap" id="library"><div class="section-heading"><div class="eyebrow">THE GRAMMAR LIBRARY</div><h2>Find your next <em>“aha”.</em></h2><p>Look up a particle, explore a pattern, or see what clicks.</p></div>
+<div class="paper-bottom"><span>One point. Many perspectives.</span><span>↗</span></div></div><span class="art-star">✳</span></div></section>'''
+    body = f'''<section class="library wrap" id="library"><div class="section-heading"><div class="eyebrow">THE GRAMMAR LIBRARY</div><h1>Find your next <em>“aha”.</em></h1><p>Look up a particle, explore a pattern, or see what clicks.</p></div>
 <form class="search-form" role="search"><label class="sr-only" for="grammar-search">Search grammar, meaning or reading</label><span class="search-icon" aria-hidden="true">⌕</span>
 <input id="grammar-search" name="q" type="search" placeholder="Search grammar, meaning or reading…" autocomplete="off"><kbd aria-hidden="true">/</kbd></form>
 <div class="filters"><div class="level-filters" role="group" aria-label="Filter by JLPT level"><button type="button" class="active" data-level="" aria-pressed="true">All levels</button>
@@ -194,6 +193,8 @@ def homepage(records: list[dict], labels: dict, example_count: int, *, english: 
 <div class="grammar-grid" id="grammar-results">{initial}</div><div id="search-empty" class="empty-state" hidden><span>✳</span><h3>No grammar points found</h3><p>Try a shorter form, an English meaning, or a different filter.</p><button type="button" id="clear-filters">Clear search &amp; filters</button></div>
 <p id="search-error" class="search-error" role="alert" hidden>Search could not load. <button type="button" id="retry-search">Try again</button></p>
 <button class="load-more" type="button" id="load-more" hidden>Explore more grammar <span aria-hidden="true">↓</span></button><noscript><p>Enable JavaScript to search and filter the complete library.</p></noscript></section>
+<div class="library-band"><span>ONE LOOKUP. ALL THE EXPLANATIONS.</span><span lang="ja">文法がわかると、日本語がもっと楽しくなる。</span><span class="band-flower">✳</span></div>
+{hero}
 <section class="download wrap" id="download"><div><div class="eyebrow">TAKE THE LIBRARY WITH YOU</div><h2>A little grammar,<br><em>wherever you read.</em></h2><p>Import Bee’s into Yomitan for quick explanations as you read. Every entry links back here for the full picture.</p></div>
 <div class="download-options"><a class="primary" href="{root}downloads/bees-ultimate-grammar-dictionary{'-en' if english else ''}.zip">Download {'English ' if english else ''}dictionary <span aria-hidden="true">↓</span></a>
 <a class="text-link" href="{root}downloads/bees-ultimate-grammar-dictionary{'-en' if not english else ''}.zip">Or get the {'English' if not english else 'original'} edition →</a><p>Yomitan settings → Dictionaries → Import</p></div></section>'''

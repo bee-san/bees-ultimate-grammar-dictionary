@@ -131,7 +131,3 @@ translation; an incomplete English edition fails the build.
 3. Register it with `@register_extractor`
 4. Add to `SOURCE_PRECEDENCE` in `keymap.py` and `_SOURCE_EXPLANATION_LANG` in `banks.py`
 5. Run `make all`
-
-## License
-
-Dictionary content retains its original licensing from each source. The build pipeline code is MIT.

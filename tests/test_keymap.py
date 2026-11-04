@@ -670,7 +670,7 @@ def test_malformed_keymap_payloads_fail_closed(payload: object) -> None:
 CORPUS_SOURCES = (
     "aiueo", "bunpou", "bunpro", "dojg", "donna_toki", "edewakaru",
     "hjgp", "hjgp_en", "imabi", "nihongo_net", "nihongo_no_sensei",
-    "ninjal_bunkei", "yokubi",
+    "kurabete", "ninjal_bunkei", "yokubi",
 )
 
 
@@ -703,16 +703,18 @@ def corpus() -> dict[str, object]:
 @pytestmark_corpus
 def test_corpus_counts_are_pinned(corpus: dict[str, object]) -> None:
     report = corpus["report"]
-    # Full thirteen-source import. Per-source conservation is pinned again by
-    # the unified corpus tests; counts here guard the canonical grouping.
-    assert report["corpus"]["rows"] == 10828
+    # Full fourteen-source import. Per-source conservation is pinned again by
+    # the unified corpus tests; counts here guard the canonical grouping. The
+    # Tier A/B counts are the thirteen core sources' alone: `kurabete` is
+    # attach-only, so adding it moved only the row totals and the point count.
+    assert report["corpus"]["rows"] == 11191
     assert report["corpus"]["declaredAliasRows"] == 1453
     assert report["corpus"]["duplicateRowsCollapsed"] == 224
-    assert report["corpus"]["substantiveRows"] == 9151
+    assert report["corpus"]["substantiveRows"] == 9514
     assert report["tierA"]["bijectiveBuckets"] == 1314
     assert report["tierA"]["refusedCollisionBuckets"] == 221
     assert report["tierB"]["accepted"] == 39
-    assert len(corpus["points"]) == 5516
+    assert len(corpus["points"]) == 5657
 
 
 @pytestmark_corpus
@@ -930,3 +932,40 @@ def test_absorbed_tier_b_keys_leave_no_dangling_bucket(corpus: dict[str, object]
     for item in corpus["report"]["tierB"]["pointsMerged"]:
         assert item["absorbedKey"] not in live
         assert item["canonicalKey"] in live
+
+
+# --------------------------------------------------------------------------
+# Attach-only sources join finished core points and never re-cluster them.
+# --------------------------------------------------------------------------
+
+
+def test_attach_only_rows_never_change_the_core_clustering() -> None:
+    core = {
+        "dojg": [record("1", "や否や", reading="やいなや", variants=("やいなや",))],
+        "donna_toki": [record("2", "やいなや", reading="やいなや", variants=("や否や",))],
+        "hjgp": [record("3", "ないことはない", meaning="core")],
+    }
+    late = [
+        record("10", "や否や", reading="やいなや", variants=("やいなや",)),
+        record("11", "ないことはない", meaning="one"),
+        record("12", "ないことはない", meaning="two"),
+        record("13", "新しい", meaning="new"),
+    ]
+    before = build_keymap_from(**core)
+    after = build_keymap_from(**core, kurabete=late)
+
+    def core_assignments(payload):
+        return {
+            (a["source"], a["sourceId"]): a["canonicalKey"]
+            for a in payload["assignments"]
+            if a["source"] != "kurabete"
+        }
+
+    assert core_assignments(after) == core_assignments(before)
+    late_keys = {a["sourceId"]: a["canonicalKey"] for a in after["assignments"] if a["source"] == "kurabete"}
+    # One unambiguous core point: joined. Two late senses on a core key: kept apart.
+    assert late_keys["10"] == core_assignments(before)[("dojg", "1")]
+    assert late_keys["11"] != late_keys["12"]
+    assert core_assignments(before)[("hjgp", "3")] not in (late_keys["11"], late_keys["12"])
+    assert late_keys["13"] == "新しい"
+    assert after["report"]["attachOnly"]["counts"] == {"joined": 1, "new": 1, "separate": 2}

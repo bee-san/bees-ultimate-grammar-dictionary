@@ -42,7 +42,7 @@ def test_notation_becomes_real_surface_forms(title, expected):
 def test_every_source_record_has_a_japanese_lookup_and_retains_original_content(indexed):
     before, after = indexed
     plan = lookup_plan(before, load_overrides())
-    assert len(plan) == 9152
+    assert len(plan) == 9515
     grouped = grouped_entries(after)
     present = {form: {identity(p) for p in row["contributions"]}
                for form, row in grouped.items() if is_japanese_form(form)}

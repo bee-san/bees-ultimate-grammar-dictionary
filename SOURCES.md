@@ -105,6 +105,18 @@ audit settings do not apply to the English translation build.
 - Source: imabi.org lesson pages
 - Comprehensive Japanese grammar lessons (modern + classical), English
 
+### くらべてわかる日本語表現文型辞典 (Kurabete)
+- Source: local Yomitan archive `くらべてわかる日本語表現文型辞典-yomitan.zip`, revision
+  `2026.10.20.2`, locked as `data/sources/kurabete/kurabete.zip`. Book: 大阪ＹＷＣＡ専門学校／
+  岡本牧子・氏原庸子, Jリサーチ出版 2008; MDX by woodcube. The producer checked all 363 patterns
+  against page images of the book. Non-commercial learning use only.
+- 363 patterns under 1,070 lookup rows (one point per pattern; the other spellings are
+  variants). Senses (意味), examples (例文), cautions (注意) and contrasts with similar
+  patterns (対比, with ○/× sentences) are kept in full; diagram images are not packaged
+  and their paths are recorded in provenance. Japanese.
+- Attach-only in the keymap (`bugd.keymap.ATTACH_ONLY_SOURCES`): it joins a point only
+  where the existing alignment is unambiguous, and never changes existing points.
+
 ## Attribution
 - Preserve per-source label on every merged entry: a statement is never detached
   from the source that made it.

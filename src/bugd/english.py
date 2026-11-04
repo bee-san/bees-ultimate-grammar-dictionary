@@ -13,10 +13,36 @@ from collections.abc import Iterator
 
 MODEL = "gpt-6-luna"
 PROMPT_VERSION = 1
-MONOLINGUAL_SOURCES = {"bunpou", "edewakaru", "hjgp", "nihongo_net", "nihongo_no_sensei", "ninjal_bunkei"}
+MONOLINGUAL_SOURCES = {"bunpou", "edewakaru", "hjgp", "kurabete", "nihongo_net", "nihongo_no_sensei", "ninjal_bunkei"}
 FIELDS = ("meaning", "structure", "nuance", "explanation", "notes")
 _CJK = re.compile(r"[\u3040-\u30ff\u3400-\u9fff]")
 _LATIN_WORDS = re.compile(r"[A-Za-z]{3,}")
+
+
+#: Sources whose prose quotes judged Japanese sentences on lines marked ○ or ×.
+#: The judgement is about the Japanese wording, so the English edition keeps it.
+JUDGED_SENTENCE_SOURCES = {"kurabete"}
+_JUDGED = ("○", "×")
+
+
+def restore_judged_sentences(original: str, translated: str) -> str:
+    """Keep each ○/× Japanese sentence beside its English translation.
+
+    Luna translates most judged sentences into English only, which loses the
+    contrast they illustrate (`×After studying hard, …`). Lines are paired in
+    order; when the counts differ the translation is returned unchanged.
+    """
+    source = [line for line in original.split("\n") if line[:1] in _JUDGED]
+    lines = translated.split("\n")
+    targets = [index for index, line in enumerate(lines) if line[:1] in _JUDGED]
+    if not source or len(source) != len(targets):
+        return translated
+    for japanese, index in zip(source, targets):
+        english = lines[index]
+        if english[:1] != japanese[:1] or japanese[1:].strip() in english:
+            continue
+        lines[index] = f"{japanese} — {english[1:].strip()}"
+    return "\n".join(lines)
 
 
 def translation_key(text: str, kind: str = "definition") -> str:
@@ -74,6 +100,8 @@ def english_corpus(corpus: dict, cache: dict) -> dict:
                     translated_examples += 1
                 else:
                     originals[field] = text
+                    if point["source"] in JUDGED_SENTENCE_SOURCES:
+                        translated = restore_judged_sentences(text, translated)
                     point[field.removesuffix("_ja")] = translated
             # Source-authored English counterparts take precedence. The English
             # website retains the complete original as a disclosure separately.

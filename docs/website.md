@@ -131,7 +131,10 @@ than rerunning acquisition against changing upstream websites.
 
 When updating the publication, choose a new revision in `manifest.json`, run
 `make site`, copy `build/site/downloads/index.json` to `dist/index.json`, then run
-`PYTHONPATH=src python scripts/verify_release.py --write-lock`. Review the
+`PYTHONPATH=src python scripts/verify_release.py --write-lock`. Write the lock with a
+Python linked against stock zlib (the CI runner's), for example `uv venv -p 3.12`:
+zlib-ng, as on CachyOS, compresses the same content into different ZIP bytes and
+the release workflow then fails on the digest check. Review the
 output, run `make verify-release` and `make verify-popup`, and commit all changed inputs with notes at
 `docs/releases/v<revision>.md`. A push of the revised snapshot to `main` triggers
 the release workflow, which builds and verifies before uploading both ZIPs,

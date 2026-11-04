@@ -38,12 +38,12 @@
   "imabiLookupTerms": 1400,
   "assets": {
     "bees-ultimate-grammar-dictionary.zip": {
-      "sha256": "fd95875adbcf4dfe5b8294c9f10da6c7b212fa4d41e4cf4202927aad57df3927",
-      "byteCount": 17853337
+      "sha256": "264335495ad7e2301bfa9caa1f7cbd1c2438157684108798e0c91aa3e9de3b89",
+      "byteCount": 17553029
     },
     "bees-ultimate-grammar-dictionary-en.zip": {
-      "sha256": "d1020944bda877a4fedbae66e5656fc501b5ca1d7e2b1cf29603c1f177a602ee",
-      "byteCount": 18949508
+      "sha256": "1f9f69097ca4247fb7ab74723681968c3807d3c05948ef4825b0407b77798482",
+      "byteCount": 18640681
     },
     "index.json": {
       "sha256": "359c1f4b56c9dd0de62ac35016891e5dab08a207704dbd0bb61e137569081579",
@@ -54,7 +54,7 @@
       "byteCount": 1255
     },
     "SHA256SUMS": {
-      "sha256": "1d9e7a4525735d1e41fa94c791a65553240f2da9ed0b3ca6d1930e21f9faad7b",
+      "sha256": "29ec9582718eefe19587d6a8159c15277ca02cb910b1b35509614d3111f29b48",
       "byteCount": 209
     }
   }

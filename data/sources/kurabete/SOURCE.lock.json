@@ -1,0 +1,11 @@
+{
+  "source": "kurabete",
+  "acquiredAt": "2026-11-04T16:57:00Z",
+  "note": "Local Yomitan archive くらべてわかる日本語表現文型辞典-yomitan.zip, revision 2026.10.20.2: 363 grammar patterns under 1,070 lookup rows, plus one front-matter row. Book: Jリサーチ出版, 2008; MDX by woodcube; non-commercial learning use only.",
+  "files": {
+    "kurabete.zip": {
+      "sha256": "488fb893f5af85680dc1c4e5b44a72bb3efd09912e412a52afed8251cc1629ac",
+      "byteCount": 732018
+    }
+  }
+}

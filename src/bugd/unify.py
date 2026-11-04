@@ -72,7 +72,7 @@ from collections import Counter, defaultdict
 
 from .jsonio import MalformedPayload, content_hash, dump_json, load_json
 from .reading_corrections import ReadingCorrection, StaleCorrection
-from .keymap import alias_targets, is_declared_alias, substance_hash
+from .keymap import ATTACH_ONLY_SOURCES, alias_targets, is_declared_alias, substance_hash
 from .model import JLPT_LEVELS, Example, GrammarPoint, row_uid_matches
 from .normalize import PLACEHOLDER_TILDES
 
@@ -743,7 +743,11 @@ def unify(
             cursor += width
         senses = rebuilt
 
-        expressions = [c.expression for sense in senses for c in sense.contributions]
+        everything = [c for sense in senses for c in sense.contributions]
+        # Attach-only sources never rename an entry the core sources publish:
+        # its headword is the article URL installed dictionaries link to.
+        core = [c for c in everything if c.source not in ATTACH_ONLY_SOURCES]
+        expressions = [c.expression for c in (core or everything)]
         expression = choose_headword(bucket_key, expressions)
 
         lookup_forms: dict[str, None] = {expression: None}

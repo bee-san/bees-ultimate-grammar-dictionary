@@ -762,23 +762,23 @@ def corpus():
 @requires_corpus
 def test_the_real_corpus_merges_into_the_expected_shape(corpus):
     rows, entries, stats = corpus
-    # Full thirteen-source corpus, including AIUEO and both HJGP editions.
+    # Full fourteen-source corpus, including AIUEO, both HJGP editions and Kurabete.
     # Pin per-source rows as well as totals so an import cannot mask lost data.
     from collections import Counter
     assert dict(Counter(source for source, _ in rows)) == {
         "aiueo": 761, "bunpou": 534, "bunpro": 964, "dojg": 535,
         "donna_toki": 1082, "edewakaru": 1248, "hjgp": 1245,
-        "hjgp_en": 1049, "imabi": 494, "nihongo_net": 505,
+        "hjgp_en": 1049, "imabi": 494, "kurabete": 363, "nihongo_net": 505,
         "nihongo_no_sensei": 1479, "ninjal_bunkei": 800, "yokubi": 132,
     }
-    assert stats["corpus"]["sourceRows"] == 10828
-    assert stats["unified"]["pointEntries"] == 3545
-    assert stats["unified"]["redirectEntries"] == 2826
-    assert stats["unified"]["entries"] == 6371
-    assert stats["unified"]["senses"] == 5516
-    assert stats["unified"]["multiSenseEntries"] == 257
-    assert stats["unified"]["multiSourceEntries"] == 1528
-    assert len(stats["corpus"]["sources"]) == 13
+    assert stats["corpus"]["sourceRows"] == 11191
+    assert stats["unified"]["pointEntries"] == 3593
+    assert stats["unified"]["redirectEntries"] == 2827
+    assert stats["unified"]["entries"] == 6420
+    assert stats["unified"]["senses"] == 5657
+    assert stats["unified"]["multiSenseEntries"] == 259
+    assert stats["unified"]["multiSourceEntries"] == 1549
+    assert len(stats["corpus"]["sources"]) == 14
 
 
 @requires_corpus
@@ -914,7 +914,7 @@ def test_every_redirect_target_is_a_real_point_entry(corpus):
 def test_the_redirect_basis_breakdown_is_pinned(corpus):
     """Keep declared/folded/reading precedence pinned on the full corpus."""
     _, _, stats = corpus
-    assert stats["redirects"]["byBasis"] == {"declared": 856, "folded": 1963, "reading": 7}
+    assert stats["redirects"]["byBasis"] == {"declared": 855, "folded": 1965, "reading": 7}
     assert sum(stats["redirects"]["byBasis"].values()) == stats["unified"]["redirectEntries"]
     assert stats["redirects"]["unresolvedCount"] == 2
 

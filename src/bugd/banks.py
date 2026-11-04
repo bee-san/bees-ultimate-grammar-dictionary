@@ -97,6 +97,7 @@ _SOURCE_EXPLANATION_LANG: dict[str, str] = {
     "bunpou": "ja",
     "edewakaru": "ja",
     "hjgp": "ja",
+    "kurabete": "ja",
     "nihongo_net": "ja",
     "nihongo_no_sensei": "ja",
     "ninjal_bunkei": "ja",

@@ -1,6 +1,6 @@
 # Bee's Ultimate Grammar Dictionary
 
-13 Grammar Dictionaries in one
+14 Grammar Dictionaries in one
 <img width="849" height="361" alt="image" src="https://github.com/user-attachments/assets/06c86e75-4dd3-4a0d-8862-b3007b0c61ae" />
 
 
@@ -15,7 +15,7 @@ or use the [English website](https://bee-san.github.io/bees-ultimate-grammar-dic
 Every dictionary entry links to its page, with all contributing explanations and
 examples. Search by grammar, reading or meaning, and filter by JLPT level or source.
 
-Japanese popup lookup covers **all 9,152 source records** across the 13 sources.
+Japanese popup lookup covers **all 9,515 source records** across the 14 sources.
 Grammar notation such as `Nらしい` is indexed under its Japanese text (`らしい`),
 with kana aliases and conjugation support for known endings. Reference articles
 use Japanese topic names. See [lookup coverage and examples](docs/lookup-coverage.md).
@@ -46,10 +46,11 @@ Every grammar point shows a compact card with progressive disclosure — click t
 | IMABI | IMABI | EN | Comprehensive Japanese grammar lessons (modern + classical) |
 | Yokubi | Yokubi | EN | The Common Grammar Guide (yoku.bi) |
 | AIUEO | AIUEO JLPT Grammar | EN/JA | 761 grammar records with 3,805 bilingual examples from the AIUEO Anki deck |
+| くらべてわかる | くらべてわかる日本語表現文型辞典 | JA | 363 patterns compared with similar expressions, with ○/× example pairs (Jリサーチ出版, 2008) |
 
 ### What makes this different from installing them separately?
 
-- **Single lookup**: one dictionary, one card per grammar point — not 13 separate popups
+- **Single lookup**: one dictionary, one card per grammar point — not 14 separate popups
 - **Merged entries**: when multiple sources describe the same grammar point, their contributions are merged into one card with per-source attribution
 - **Deduplication**: the keymap stage aligns entries across sources so you don't see the same point repeated
 - **Progressive disclosure**: compact by default, expand any source's details on demand
@@ -63,7 +64,7 @@ pip install .
 make
 ```
 
-The default build recreates **both full 13-source editions** from the committed
+The default build recreates **both full 14-source editions** from the committed
 corpus and English translation cache, checks their pinned asset digests, and
 verifies every dictionary-to-article link. It needs no source downloads, Anki
 exports, scraper access or model credentials. The ZIPs, update indexes and

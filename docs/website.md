@@ -67,7 +67,7 @@ through each page's disclosure or switch to the original edition.
 `make` (or `make release`) builds both full editions from the committed snapshot
 and verifies the release. `website/data/release.json` pins the exact archive and
 index bytes. Verification also reads every committed IMABI file through its
-digest lock, accounts for every lesson, checks all 13 sources, validates both
+digest lock, accounts for every lesson, checks all 14 sources, validates both
 archives against the pinned Yomitan schemas, and checks every article link and
 heading in both editions.
 

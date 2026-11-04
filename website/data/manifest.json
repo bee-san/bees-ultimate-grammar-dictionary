@@ -1,5 +1,5 @@
 {
-  "revision": "2026.10.07.3",
+  "revision": "2026.11.04",
   "model": "gpt-6-luna",
   "sources": [
     "aiueo",
@@ -11,21 +11,22 @@
     "hjgp",
     "hjgp_en",
     "imabi",
+    "kurabete",
     "nihongo_net",
     "nihongo_no_sensei",
     "ninjal_bunkei",
     "yokubi"
   ],
-  "entries": 7640,
-  "translations": 45895,
+  "entries": 7680,
+  "translations": 49951,
   "files": {
     "corpus.json.gz": {
-      "sha256": "98f8ed231632e0d5e583fd4bba7a3f8fade1466c65f859464df4e0c327caa40f",
-      "byteCount": 11213864
+      "sha256": "a825a53c9d04aa36008c69cd61379a7fedc05f39aa7d3c5019ee7c9131c36aa6",
+      "byteCount": 11506833
     },
     "translations.en.json.gz": {
-      "sha256": "acbeeebd03bca6de00a731f2752bd8c131bad7f8769fd4456de07c6f78016148",
-      "byteCount": 4248006
+      "sha256": "f0f1e81243402fc20dc0d93c537932e7a98942fe0c461bdc2dfd1739817d56fa",
+      "byteCount": 4653037
     },
     "imabi-lookups.json": {
       "sha256": "160068f47ecebc3e384e5affee6cc8e97ffab300464f65a2d740e6a1c22b034a",

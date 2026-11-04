@@ -104,6 +104,16 @@ SOURCE_PRECEDENCE = (
 )
 
 
+#: Sources added after the published corpus was aligned. Their rows never take
+#: part in Tier A/B matching, which is tuned on the core sources: measured when
+#: `kurabete` was added, letting it vote moved 85 existing contributions and
+#: removed 4 published headwords (its own two `ないことはないが` patterns turned
+#: clean bijections into refused homograph fans, and its `や否や` broke the
+#: `やいなや` fold). They attach to the finished points instead; see
+#: `attach_late_rows`.
+ATTACH_ONLY_SOURCES = frozenset({"kurabete"})
+
+
 @dataclasses.dataclass(frozen=True)
 class RowId:
     """Total identity of one source row.
@@ -777,7 +787,11 @@ def build_keymap(extracted_dir: pathlib.Path) -> dict[str, object]:
     result as a fold.
     """
     sources = load_sources(extracted_dir)
-    rows, aliases, stats = partition_rows(sources)
+    all_rows, aliases, stats = partition_rows(sources)
+    late_rows = [row for row in all_rows if row.row_id.source in ATTACH_ONLY_SOURCES]
+    rows = [row for row in all_rows if row.row_id.source not in ATTACH_ONLY_SOURCES]
+    if any(alias.row_id.source in ATTACH_ONLY_SOURCES for alias in aliases):
+        raise MalformedPayload("an attach-only source may not ship declared alias rows")
     buckets = index_buckets(rows)
     folds, collision_buckets, single_buckets = classify_buckets(buckets)
     fold_set = set(folds)
@@ -847,6 +861,9 @@ def build_keymap(extracted_dir: pathlib.Path) -> dict[str, object]:
     # --- demoted alias rows become lookup forms on the point they redirect to ---
     extra_forms = resolve_aliases(aliases, assignment, rows)
 
+    # --- attach-only sources join the finished core points ----------------------
+    attached = attach_late_rows(late_rows, assignment, point_rows, buckets_of)
+
     points = _render_points(point_rows, extra_forms, buckets_of)
     report = _render_report(
         stats=stats,
@@ -861,6 +878,7 @@ def build_keymap(extracted_dir: pathlib.Path) -> dict[str, object]:
         disambiguator_basis=disambiguator_basis,
         points=points,
     )
+    report["attachOnly"] = attached
 
     return {
         "schemaVersion": 1,
@@ -870,6 +888,72 @@ def build_keymap(extracted_dir: pathlib.Path) -> dict[str, object]:
         ],
         "points": points,
         "report": report,
+    }
+
+
+def attach_late_rows(
+    late_rows: list[Row],
+    assignment: dict[RowId, str],
+    point_rows: dict[str, list[Row]],
+    buckets_of: dict[str, tuple[tuple[str, str], str]],
+) -> dict[str, object]:
+    """Attach rows of `ATTACH_ONLY_SOURCES` to the already-finished core points.
+
+    A row joins an existing point only when its partition-scoped bucket resolves
+    to exactly ONE core point and its source has no other row in that bucket.
+    Anything less certain becomes a point of its own: a new key when the bucket
+    is empty, otherwise a source-labelled sense beside the existing ones (sharing
+    their `bucketKey`, so the card still groups them). The core assignment is
+    never read back or modified, so existing points keep their contributors,
+    canonical keys and expressions byte-for-byte.
+    """
+    by_bucket: dict[tuple[tuple[str, str], str], list[Row]] = {}
+    for row in sorted(late_rows, key=lambda item: item.row_id.sort_key):
+        by_bucket.setdefault(row.bucket, []).append(row)
+
+    core_keys: dict[tuple[tuple[str, str], str], set[str]] = {}
+    for key, rows in point_rows.items():
+        for row in rows:
+            core_keys.setdefault(row.bucket, set()).add(key)
+
+    outcome: collections.Counter[str] = collections.Counter()
+    separate: list[dict[str, object]] = []
+    for bucket in sorted(by_bucket, key=lambda item: (item[0], item[1])):
+        rows = by_bucket[bucket]
+        existing = core_keys.get(bucket, set())
+        if len(existing) == 1 and len({row.row_id.source for row in rows}) == len(rows):
+            (key,) = existing
+            for row in rows:
+                assignment[row.row_id] = key
+                point_rows[key].append(row)
+            outcome["joined"] += len(rows)
+            continue
+        if not existing:
+            for row, disambiguator, _basis in disambiguate(rows):
+                key = canonical_key(bucket, disambiguator)
+                assignment[row.row_id] = key
+                point_rows.setdefault(key, []).append(row)
+                buckets_of[key] = bucket
+            outcome["new"] += len(rows)
+            continue
+        # Ambiguous against several core senses, or several late senses: keep
+        # each late row as its own sense rather than guessing a correspondence.
+        for index, row in enumerate(rows, start=1):
+            label = row.row_id.source if len(rows) == 1 else f"{row.row_id.source}{index}"
+            key = canonical_key(bucket, label)
+            if key in point_rows:
+                raise MalformedPayload(f"attach-only key collides with a core point: {key}")
+            assignment[row.row_id] = key
+            point_rows[key] = [row]
+            buckets_of[key] = bucket
+            separate.append({"canonicalKey": key, **row.row_id.as_dict()})
+        outcome["separate"] += len(rows)
+    return {
+        "sources": sorted(ATTACH_ONLY_SOURCES),
+        "rule": "attach-only rows join a core point only when their bucket holds exactly "
+        "one core point and their source one row; otherwise they stay separate senses",
+        "counts": dict(sorted(outcome.items())),
+        "separateSenses": separate,
     }
 
 

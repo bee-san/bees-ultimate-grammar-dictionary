@@ -1,5 +1,7 @@
 # Bee's Ultimate Grammar Dictionary
 
+[![Discord](https://img.shields.io/discord/754001738184392704?logo=discord&label=Discord)](https://discord.skerritt.blog)
+
 14 Grammar Dictionaries in one
 <img width="849" height="361" alt="image" src="https://github.com/user-attachments/assets/06c86e75-4dd3-4a0d-8862-b3007b0c61ae" />
 

@@ -4,7 +4,8 @@
   "purpose": "Deterministic, evidence-backed corrections to per-source contribution readings whose upstream value is not a possible reading of the written form. Applied in bugd.unify.load_extracted before merge, matched byte-exact on (source, source_id, expression, from) so a correction can never silently alter a different value. Every correction fails closed if it matches zero rows (stale) or if the on-disk 'from' has drifted.",
   "origin": "UGD-11c-B (card t_1209257e). Each item was flagged by a fresh single-card LLM review, CONFIRMED by an independent adversarial second opinion, and re-verified byte-exact against the frozen candidate data/merge/unified.jsonl (sha256 06bd856f724a90ed6dc84dcb1c0d54b3e9b104bb0d4977c0d141ea8e3737711c). Full machine-readable evidence: t_9a932ecc data/review/clusters/cluster_B.json.",
   "policy": "Correct only where independent evidence fixes the reading (KANJIDIC2/UniDic and/or a sibling contribution on the same card that already gives the right reading). Never invent a reading where evidence is absent. All corrections here are single, well-attested target readings; none is a guess.",
-  "rootCause": "Upstream publisher term-bank data, not a pipeline bug. src/bugd/sources reads the reading column verbatim, which is the correct faithful behaviour. These corrections are the documented, auditable exception to verbatim carry, scoped to nine confirmed impossible readings."
+  "rootCause": "Upstream publisher term-bank data, not a pipeline bug. src/bugd/sources reads the reading column verbatim, which is the correct faithful behaviour. These corrections are the documented, auditable exception to verbatim carry, scoped to nine confirmed impossible readings.",
+  "additions": "2026-11-08: two edewakaru v6 picture-only 自動詞・他動詞 rows ship a reading that their own illustration contradicts. The evidence is the producer's furigana in the picture itself."
  },
  "corrections": [
   {
@@ -78,6 +79,24 @@
    "to": "んなふう",
    "evidence": "In こんな風／そんな風／という風 the reading is ふう, as every one of the card's own examples writes in kana (こんなふう, というふう). かぜ is the 'wind/cold' reading, wrong for the 'manner/way' sense. KANJIDIC2 lists ふう for 風.",
    "confidence": 0.8
+  },
+  {
+   "source": "edewakaru",
+   "source_id": "倒す",
+   "expression": "倒す",
+   "from": "こかす",
+   "to": "たおす",
+   "evidence": "Both 倒す posts in the v6 illustrated edition print たお as the furigana on 倒: 木を倒す【他動詞】 (img/ccaa6df9464841d6dcddaee86325956c.jpeg, edewakaru.com/archives/25139114) and ドミノを倒した【他動詞】 (img/1a48819a30aea3d91479d330641749fe.jpeg, archives/27650912). Both pair it with 倒れる (たおれる), not 倒ける (こける). KANJIDIC2 gives たお.す for 倒.",
+   "confidence": 1.0
+  },
+  {
+   "source": "edewakaru",
+   "source_id": "回る",
+   "expression": "回る",
+   "from": "めぐる",
+   "to": "まわる",
+   "evidence": "The post's illustration (img/ae2d0540af76331af464decf1676a75a.jpeg, edewakaru.com/archives/25167498) prints 地球が回る【自動詞】 with まわ as the furigana on 回, paired with ボールを回す (まわす). KANJIDIC2 gives まわ.る for 回.",
+   "confidence": 1.0
   }
  ]
 }

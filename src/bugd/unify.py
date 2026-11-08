@@ -72,7 +72,7 @@ from collections import Counter, defaultdict
 
 from .jsonio import MalformedPayload, content_hash, dump_json, load_json
 from .reading_corrections import ReadingCorrection, StaleCorrection
-from .keymap import ATTACH_ONLY_SOURCES, alias_targets, is_declared_alias, substance_hash
+from .keymap import alias_targets, is_attach_only, is_declared_alias, substance_hash
 from .model import JLPT_LEVELS, Example, GrammarPoint, row_uid_matches
 from .normalize import PLACEHOLDER_TILDES
 
@@ -746,7 +746,7 @@ def unify(
         everything = [c for sense in senses for c in sense.contributions]
         # Attach-only sources never rename an entry the core sources publish:
         # its headword is the article URL installed dictionaries link to.
-        core = [c for c in everything if c.source not in ATTACH_ONLY_SOURCES]
+        core = [c for c in everything if not is_attach_only(c.source, c.provenance)]
         expressions = [c.expression for c in (core or everything)]
         expression = choose_headword(bucket_key, expressions)
 
@@ -841,6 +841,12 @@ def redirect_id_for(form: str) -> str:
 # --------------------------------------------------------------------------
 
 
+def _added_later(record: dict[str, object]) -> bool:
+    """True for a row its source gained in a later edition (provenance `attachOnly`)."""
+    provenance = record.get("provenance")
+    return isinstance(provenance, dict) and provenance.get("attachOnly") is True
+
+
 def build_redirects(
     rows: list[tuple[str, dict[str, object]]],
     entries: list[UnifiedEntry],
@@ -892,7 +898,11 @@ def build_redirects(
     for form in sorted(forms, key=natural_key):
         if form in by_expression:
             continue
-        members = forms[form]
+        # Rows a source gained in a later edition come last, so they can add
+        # targets to a published redirect but never change which one it shows
+        # first, nor the source it credits (edewakaru's v6 `拍子で` row would
+        # otherwise retarget and relabel the `拍子で` redirect).
+        members = sorted(forms[form], key=lambda member: _added_later(member[1]))
         declared: list[str] = []
         for source, record in members:
             for target in alias_targets(record):
@@ -941,7 +951,8 @@ def build_redirects(
                     continue
 
         basis_counts[basis] += 1
-        redirect_sources = sorted({source for source, _ in members})
+        redirect_sources = sorted({source for source, record in members if not _added_later(record)})
+        redirect_sources += sorted({source for source, _ in members} - set(redirect_sources))
         # NOT display_headword'd, deliberately. A redirect exists because `form` is
         # a DIFFERENT written form from its target; stripping the leading
         # placeholder here collapses `〜あげく` onto the point `あげく` that it

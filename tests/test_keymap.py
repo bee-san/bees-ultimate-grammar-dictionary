@@ -707,14 +707,16 @@ def test_corpus_counts_are_pinned(corpus: dict[str, object]) -> None:
     # the unified corpus tests; counts here guard the canonical grouping. The
     # Tier A/B counts are the thirteen core sources' alone: `kurabete` is
     # attach-only, so adding it moved only the row totals and the point count.
-    assert report["corpus"]["rows"] == 11191
+    # edewakaru's 153 picture-only v6 rows (2026.11.08) are attach-only too:
+    # +153 rows and substantive rows, +148 points.
+    assert report["corpus"]["rows"] == 11344
     assert report["corpus"]["declaredAliasRows"] == 1453
     assert report["corpus"]["duplicateRowsCollapsed"] == 224
-    assert report["corpus"]["substantiveRows"] == 9514
+    assert report["corpus"]["substantiveRows"] == 9667
     assert report["tierA"]["bijectiveBuckets"] == 1314
     assert report["tierA"]["refusedCollisionBuckets"] == 221
     assert report["tierB"]["accepted"] == 39
-    assert len(corpus["points"]) == 5657
+    assert len(corpus["points"]) == 5805
 
 
 @pytestmark_corpus
@@ -969,3 +971,64 @@ def test_attach_only_rows_never_change_the_core_clustering() -> None:
     assert core_assignments(before)[("hjgp", "3")] not in (late_keys["11"], late_keys["12"])
     assert late_keys["13"] == "新しい"
     assert after["report"]["attachOnly"]["counts"] == {"joined": 1, "new": 1, "separate": 2}
+
+
+# --------------------------------------------------------------------------
+# Rows a core source gained in a later edition (provenance `attachOnly`).
+# --------------------------------------------------------------------------
+
+ADDED = {"attachOnly": True}
+
+
+def picture(source_id: str, expression: str, path: str) -> dict[str, object]:
+    return record(source_id, expression, provenance={
+        **ADDED, "illustrationOnly": True, "illustration": path})
+
+
+def test_added_rows_never_change_the_core_clustering() -> None:
+    core = {
+        "dojg": [record("1", "見る", meaning="see")],
+        "edewakaru": [record("上げる", "上げる", meaning="grammar")],
+    }
+    before = build_keymap_from(**core)
+    after = build_keymap_from(dojg=core["dojg"], edewakaru=[
+        *core["edewakaru"],
+        picture("見る", "見る", "img/a.jpeg"),
+        picture("上げる", "上げる", "img/b.jpeg"),
+    ])
+    old = {(a["source"], a["sourceId"], a["substanceHash"]): a["canonicalKey"] for a in before["assignments"]}
+    new = {(a["source"], a["sourceId"], a["substanceHash"]): a["canonicalKey"] for a in after["assignments"]}
+    assert {key: new[key] for key in old} == old
+    points = {p["canonicalKey"]: p for p in after["points"]}
+    # No edewakaru row on 見る yet: the picture joins that point.
+    assert {c["source"] for c in points["見る"]["contributors"]} == {"dojg", "edewakaru"}
+    # 上げる already has an edewakaru row: the picture is its own sense under that bucket.
+    assert points["上げる#edewakaru"]["bucketKey"] == "上げる"
+    assert len(points["上げる"]["contributors"]) == 1
+    added = after["report"]["attachOnly"]["addedRows"]["counts"]
+    assert added == {"joined": 1, "separate": 1}
+
+
+def test_added_row_joins_the_point_its_spelling_redirects_to() -> None:
+    sources = {
+        "edewakaru": [
+            record("た弾みに", "た弾みに", meaning="grammar"),
+            record("拍子で", "拍子で", meaning="same post, new headword", provenance=ADDED),
+        ],
+        "nihongo_no_sensei": [record("拍子で", "拍子で", provenance={"aliasOf": "た弾みに"})],
+    }
+    keymap = build_keymap_from(**sources)
+    late = next(p for p in keymap["points"] if any(
+        c["source"] == "edewakaru" and c["sourceId"] == "拍子で" for c in p["contributors"]))
+    # Filed under the redirect's target, so `拍子で` stays a redirect, not a new entry.
+    assert late["bucketKey"] == "た弾みに"
+    assert "拍子で" not in {p["canonicalKey"] for p in keymap["points"]}
+
+
+def test_pictures_of_one_verb_stay_separate_rows() -> None:
+    rows, _, stats = rows_of(edewakaru=[
+        picture("割る", "割る", "img/general.jpeg"),
+        picture("割る", "割る", "img/accident.jpeg"),
+    ])
+    assert len(rows) == 2
+    assert stats.get("duplicateRowsCollapsed", 0) == 0

@@ -62,6 +62,16 @@ def build_zip(members: dict[str, bytes | str]) -> bytes:
     return buffer.getvalue()
 
 
+def referenced_media(node: object) -> set[str]:
+    """Archive paths of every image a structured-content tree shows."""
+    if isinstance(node, list):
+        return set().union(*(referenced_media(child) for child in node)) if node else set()
+    if isinstance(node, dict):
+        found = {node["path"]} if node.get("tag") == "img" and isinstance(node.get("path"), str) else set()
+        return found | referenced_media(node.get("content"))
+    return set()
+
+
 def package_members(
     *,
     index: dict,
@@ -71,7 +81,12 @@ def package_members(
     media: dict[str, bytes] | None = None,
     extra: dict[str, bytes | str] | None = None,
 ) -> dict[str, bytes | str]:
-    """Assemble the complete member map for the dictionary ZIP."""
+    """Assemble the complete member map for the dictionary ZIP.
+
+    Only media some card shows is packed: a picture of a sense past the popup's
+    per-source budget is reachable on the website, not in the archive. A card
+    naming media that was not supplied fails closed.
+    """
     members: dict[str, bytes | str] = {
         "index.json": dump_json(index),
         "styles.css": styles_css,
@@ -80,10 +95,16 @@ def package_members(
         members[name] = dump_json(bank)
     if tag_bank:
         members["tag_bank_1.json"] = dump_json(tag_bank)
-    for name, payload in (media or {}).items():
-        members[f"{MEDIA_DIR}/{name}"] = payload
+    # Malformed banks are the validation gate's to reject, not this scan's.
+    shown = {path for bank in banks.values() if isinstance(bank, list) for row in bank
+             if isinstance(row, list) and len(row) > 5 for path in referenced_media(row[5])}
+    supplied = {f"{MEDIA_DIR}/{name}": payload for name, payload in (media or {}).items()}
+    missing = sorted(shown - set(supplied))
+    if missing:
+        raise MalformedPayload(f"cards show media that was not packed: {missing[:3]}")
+    members.update((path, supplied[path]) for path in sorted(shown))
     members.update(extra or {})
     return members
 
 
-__all__ = ["ZIP_DATE", "MEDIA_DIR", "build_zip", "package_members"]
+__all__ = ["ZIP_DATE", "MEDIA_DIR", "build_zip", "package_members", "referenced_media"]

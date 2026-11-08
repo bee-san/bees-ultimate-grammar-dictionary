@@ -7,6 +7,8 @@ dependencies = ["jsonschema==4.26.0", "fastjsonschema==2.22.2", "zstandard==0.25
 
 [dependency-groups]
 dev = ["pytest==9.1.1"]
+# `make publish-data` encodes illustrations as AVIF; Pages builds only copy them.
+publish = ["pillow==13.0.0"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

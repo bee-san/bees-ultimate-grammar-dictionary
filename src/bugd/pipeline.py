@@ -303,8 +303,12 @@ def run_build(
     require_entries: bool = False,
     index_url: str | None = DICTIONARY_INDEX_URL,
     download_url: str | None = DICTIONARY_DOWNLOAD_URL,
+    media: dict[str, bytes] | None = None,
 ) -> dict[str, object]:
     """Emit the ONE installable dictionary ZIP from the merged corpus.
+
+    `media` maps paths below `media/` to bytes, for the pictures that
+    contributions name in `provenance["illustrationMedia"]`.
 
     The build is its own gate: the archive is assembled in `build_dir`, validated
     against the pinned official Yomitan schemas, and only then published to
@@ -337,6 +341,7 @@ def run_build(
         banks=build_banks(entries),
         tag_bank=build_tag_bank(source_labels),
         styles_css=STYLES_CSS,
+        media=media,
     )
     archive = build_zip(members)
 

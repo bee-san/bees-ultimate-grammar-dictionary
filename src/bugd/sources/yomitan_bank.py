@@ -57,6 +57,9 @@ class TermRow:
     highlights: tuple[str, ...] = ()
     #: Outbound links the producer embedded (kept as provenance, never as gloss).
     links: tuple[str, ...] = ()
+    #: Archive paths of images the producer embedded, in document order, for a
+    #: source that publishes its pictures (resolved in its locked archive).
+    images: tuple[str, ...] = ()
     #: Bank member the row came from, for per-file provenance.
     member: str = ""
 
@@ -84,6 +87,7 @@ class _Flattened:
     parts: list[str] = field(default_factory=list)
     highlights: list[str] = field(default_factory=list)
     links: list[str] = field(default_factory=list)
+    images: list[str] = field(default_factory=list)
 
 
 def read_term_bank(raw: bytes, *, member: str) -> list[TermRow]:
@@ -121,6 +125,7 @@ def read_term_bank(raw: bytes, *, member: str) -> list[TermRow]:
                 text="\n".join(part for part in flattened.parts if part),
                 highlights=_unique(flattened.highlights),
                 links=_unique(flattened.links),
+                images=_unique(flattened.images),
                 member=member,
             )
         )
@@ -168,6 +173,11 @@ def _flatten(node: object, out: _Flattened, *, bold: bool = False) -> None:
         return
     if tag == "br":
         out.parts.append("\n")
+        return
+    if tag == "img":
+        path = node.get("path")
+        if isinstance(path, str):
+            out.images.append(path)
         return
 
     style = node.get("style")

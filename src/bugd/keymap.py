@@ -114,6 +114,30 @@ SOURCE_PRECEDENCE = (
 ATTACH_ONLY_SOURCES = frozenset({"kurabete"})
 
 
+def is_attach_only(source: str, provenance: object) -> bool:
+    """True for a row that joins the finished alignment instead of shaping it.
+
+    Whole late sources are listed in `ATTACH_ONLY_SOURCES`. A source that gains
+    rows in a later edition marks just those rows `attachOnly` in provenance
+    (edewakaru's v6 additions), so its existing rows keep their alignment.
+    """
+    if source in ATTACH_ONLY_SOURCES:
+        return True
+    return isinstance(provenance, dict) and provenance.get("attachOnly") is True
+
+
+def _added_last(row: "Row") -> tuple[bool, tuple[int, str, str]]:
+    """Render order: rows a source gained in a later edition after all others.
+
+    A point's first row names it and supplies its fallback bucket. Without this,
+    edewakaru's v6 `切れる` picture would rename the published `～切れる` point.
+    Whole late sources are unaffected: their placements are already published.
+    """
+    provenance = row.record.get("provenance")
+    added = isinstance(provenance, dict) and provenance.get("attachOnly") is True
+    return added, row.row_id.sort_key
+
+
 @dataclasses.dataclass(frozen=True)
 class RowId:
     """Total identity of one source row.
@@ -161,6 +185,12 @@ def substance_hash(record: dict[str, object]) -> str:
         english = example.get("english")
         rendered.append([sentence_key(example["japanese"]), (english or "").strip()])
     body["examples"] = rendered
+    # A picture-only row (edewakaru's 自動詞・他動詞 posts) has no text, so its
+    # picture is its substance: without it, a verb's two pictures would collapse
+    # into one row. Every other row's hash is unchanged.
+    provenance = record.get("provenance")
+    if isinstance(provenance, dict) and provenance.get("illustrationOnly"):
+        body["illustration"] = provenance.get("illustration")
     return content_hash(body)
 
 
@@ -788,9 +818,13 @@ def build_keymap(extracted_dir: pathlib.Path) -> dict[str, object]:
     """
     sources = load_sources(extracted_dir)
     all_rows, aliases, stats = partition_rows(sources)
-    late_rows = [row for row in all_rows if row.row_id.source in ATTACH_ONLY_SOURCES]
-    rows = [row for row in all_rows if row.row_id.source not in ATTACH_ONLY_SOURCES]
-    if any(alias.row_id.source in ATTACH_ONLY_SOURCES for alias in aliases):
+    late = {
+        row.row_id for row in all_rows
+        if is_attach_only(row.row_id.source, row.record.get("provenance"))
+    }
+    late_rows = [row for row in all_rows if row.row_id in late]
+    rows = [row for row in all_rows if row.row_id not in late]
+    if any(is_attach_only(alias.row_id.source, alias.record.get("provenance")) for alias in aliases):
         raise MalformedPayload("an attach-only source may not ship declared alias rows")
     buckets = index_buckets(rows)
     folds, collision_buckets, single_buckets = classify_buckets(buckets)
@@ -862,7 +896,7 @@ def build_keymap(extracted_dir: pathlib.Path) -> dict[str, object]:
     extra_forms = resolve_aliases(aliases, assignment, rows)
 
     # --- attach-only sources join the finished core points ----------------------
-    attached = attach_late_rows(late_rows, assignment, point_rows, buckets_of)
+    attached = attach_late_rows(late_rows, assignment, point_rows, buckets_of, extra_forms)
 
     points = _render_points(point_rows, extra_forms, buckets_of)
     report = _render_report(
@@ -896,16 +930,38 @@ def attach_late_rows(
     assignment: dict[RowId, str],
     point_rows: dict[str, list[Row]],
     buckets_of: dict[str, tuple[tuple[str, str], str]],
+    extra_forms: dict[str, list[str]] | None = None,
 ) -> dict[str, object]:
-    """Attach rows of `ATTACH_ONLY_SOURCES` to the already-finished core points.
+    """Attach attach-only rows (see `is_attach_only`) to the finished core points.
+
+    Rows of `ATTACH_ONLY_SOURCES` attach first, by `_attach_source_rows`, exactly
+    as when those sources were added: their placements are already published.
+    Rows a core source gained in a later edition attach afterwards, by
+    `_attach_added_rows`, to the points those placements produced. Neither pass
+    reads back or modifies the core assignment, so existing points keep their
+    contributors, canonical keys and expressions byte-for-byte.
+    """
+    source_rows = [row for row in late_rows if row.row_id.source in ATTACH_ONLY_SOURCES]
+    added_rows = [row for row in late_rows if row.row_id.source not in ATTACH_ONLY_SOURCES]
+    report = _attach_source_rows(source_rows, assignment, point_rows, buckets_of)
+    report["rows"] = len(late_rows)
+    report["addedRows"] = _attach_added_rows(added_rows, assignment, point_rows, buckets_of, extra_forms or {})
+    return report
+
+
+def _attach_source_rows(
+    late_rows: list[Row],
+    assignment: dict[RowId, str],
+    point_rows: dict[str, list[Row]],
+    buckets_of: dict[str, tuple[tuple[str, str], str]],
+) -> dict[str, object]:
+    """Attach the rows of a whole late source.
 
     A row joins an existing point only when its partition-scoped bucket resolves
     to exactly ONE core point and its source has no other row in that bucket.
     Anything less certain becomes a point of its own: a new key when the bucket
     is empty, otherwise a source-labelled sense beside the existing ones (sharing
-    their `bucketKey`, so the card still groups them). The core assignment is
-    never read back or modified, so existing points keep their contributors,
-    canonical keys and expressions byte-for-byte.
+    their `bucketKey`, so the card still groups them).
     """
     by_bucket: dict[tuple[tuple[str, str], str], list[Row]] = {}
     for row in sorted(late_rows, key=lambda item: item.row_id.sort_key):
@@ -952,6 +1008,95 @@ def attach_late_rows(
         "sources": sorted(ATTACH_ONLY_SOURCES),
         "rule": "attach-only rows join a core point only when their bucket holds exactly "
         "one core point and their source one row; otherwise they stay separate senses",
+        "counts": dict(sorted(outcome.items())),
+        "separateSenses": separate,
+    }
+
+
+def _attach_added_rows(
+    late_rows: list[Row],
+    assignment: dict[RowId, str],
+    point_rows: dict[str, list[Row]],
+    buckets_of: dict[str, tuple[tuple[str, str], str]],
+    extra_forms: dict[str, list[str]],
+) -> dict[str, object]:
+    """Attach rows that a core source gained in a later edition.
+
+    Each row's published home is the point that already answers to it: the one
+    point holding its bucket, or else the one point whose rows or resolved
+    redirects already spell its headword (edewakaru's 続ける picture belongs with
+    つづける, which 続ける redirects to). The row joins that point when the point
+    has no row of its source yet; otherwise it becomes a separate sense filed
+    under that point's own bucket, so the existing entry shows it and keeps its
+    headword. Only a row nothing answers to becomes a new point. A headword that
+    two existing points answer to is not guessed at; it fails the build.
+    """
+    def bucket_of(key: str) -> tuple[tuple[str, str], str]:
+        if key in buckets_of:
+            return buckets_of[key]
+        return min(point_rows[key], key=_added_last).bucket
+
+    owners_by_bucket: dict[tuple[tuple[str, str], str], set[str]] = {}
+    owners_by_form: dict[str, set[str]] = {}
+    for key, rows in point_rows.items():
+        for row in rows:
+            owners_by_bucket.setdefault(row.bucket, set()).add(key)
+            owners_by_form.setdefault(row.expression.strip(), set()).add(key)
+    for key, forms in extra_forms.items():
+        for form in forms:
+            owners_by_form.setdefault(form, set()).add(key)
+
+    by_bucket: dict[tuple[tuple[str, str], str], list[Row]] = {}
+    for row in sorted(late_rows, key=lambda item: item.row_id.sort_key):
+        by_bucket.setdefault(row.bucket, []).append(row)
+
+    outcome: collections.Counter[str] = collections.Counter()
+    separate: list[dict[str, object]] = []
+    for bucket in sorted(by_bucket, key=lambda item: (item[0], item[1])):
+        rows = by_bucket[bucket]
+        owners = owners_by_bucket.get(bucket, set())
+        if not owners:
+            owners = {key for row in rows for key in owners_by_form.get(row.expression.strip(), ())}
+            if len(owners) > 1:
+                raise MalformedPayload(
+                    f"added rows {[row.expression for row in rows]} are spelled by several "
+                    f"existing points {sorted(owners)}; place them explicitly"
+                )
+        if not owners:
+            for row, disambiguator, _basis in disambiguate(rows):
+                key = canonical_key(bucket, disambiguator)
+                assignment[row.row_id] = key
+                point_rows.setdefault(key, []).append(row)
+                buckets_of[key] = bucket
+            outcome["new"] += len(rows)
+            continue
+        sources = {row.row_id.source for row in rows}
+        if len(owners) == 1:
+            (key,) = owners
+            if len(sources) == len(rows) and not sources & {row.row_id.source for row in point_rows[key]}:
+                for row in rows:
+                    assignment[row.row_id] = key
+                    point_rows[key].append(row)
+                outcome["joined"] += len(rows)
+                continue
+            home = bucket_of(key)
+        else:
+            # Several senses already share this bucket (a homograph fan): file the
+            # row beside them under the same bucket.
+            home = bucket
+        for row in rows:
+            ordinal = 1
+            while (key := canonical_key(home, row.row_id.source + (str(ordinal) if ordinal > 1 else ""))) in point_rows:
+                ordinal += 1
+            assignment[row.row_id] = key
+            point_rows[key] = [row]
+            buckets_of[key] = home
+            separate.append({"canonicalKey": key, **row.row_id.as_dict()})
+        outcome["separate"] += len(rows)
+    return {
+        "rule": "a row added to a core source joins the one point holding its bucket or spelling "
+        "unless that point already has a row of its source; then it is a separate sense in "
+        "that point's bucket; otherwise it is a new point",
         "counts": dict(sorted(outcome.items())),
         "separateSenses": separate,
     }
@@ -1009,7 +1154,7 @@ def _render_points(
     """
     rendered: list[dict[str, object]] = []
     for key in sorted(point_rows):
-        rows = sorted(point_rows[key], key=lambda row: row.row_id.sort_key)
+        rows = sorted(point_rows[key], key=_added_last)
         forms: list[str] = []
         for row in rows:
             form = row.expression.strip()
@@ -1181,6 +1326,7 @@ __all__ = [
     "propose_variant_links",
     "resolve_aliases",
     "substance_hash",
+    "is_attach_only",
     "variant_in_degree",
     "variant_keys",
 ]

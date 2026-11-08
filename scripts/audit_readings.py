@@ -44,8 +44,13 @@ REPORT = pathlib.Path("data/merge/reading_audit.json")
 #: potential form, with the suffixes parenthesised; the reading inverts that and
 #: parenthesises the sense tag instead. The label 可能の形 reads かのうのかたち. Scoped
 #: by measurement: exactly 1 of 1,513 kanji-bearing rows carrying a reading.
+#:
+#: `救かる` is edewakaru's own spelling of 助かる on one 自動詞・他動詞 picture (v6,
+#: archives/26320787); its illustration reads たすかる, so the reading is right and
+#: only the headword's kanji is unusual.
 DESCRIPTIVE_LABELS = {
     ("ninjal_bunkei", "可能の形 （～れる・～られる）", "～れる（かのう）"),
+    ("edewakaru", "救かる", "たすかる"),
 }
 
 

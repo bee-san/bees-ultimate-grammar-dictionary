@@ -117,8 +117,12 @@ def english_corpus(corpus: dict, cache: dict) -> dict:
     return result
 
 
-def build_english_dictionary(corpus: dict, cache: dict, output, *, revision: str) -> dict:
-    """Build and validate a separately installable English Yomitan edition."""
+def build_english_dictionary(corpus: dict, cache: dict, output, *, revision: str,
+                             media: dict[str, bytes] | None = None) -> dict:
+    """Build and validate a separately installable English Yomitan edition.
+
+    `media` holds the pictures the corpus names (see `bugd.illustrations.with_media`).
+    """
     import pathlib
     from .banks import build_banks, build_index, build_tag_bank
     from .package import build_zip, package_members
@@ -147,7 +151,7 @@ def build_english_dictionary(corpus: dict, cache: dict, output, *, revision: str
     output.mkdir(parents=True, exist_ok=True)
     path = output / filename
     members = package_members(index=index, banks=banks,
-                              tag_bank=build_tag_bank(labels), styles_css=STYLES_CSS)
+                              tag_bank=build_tag_bank(labels), styles_css=STYLES_CSS, media=media)
     path.write_bytes(build_zip(members))
     failures = validate_zip(path, require_entries=True)
     if failures:

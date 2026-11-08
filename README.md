@@ -16,6 +16,8 @@ You can also [browse the grammar library](https://bee-san.github.io/bees-ultimat
 or use the [English website](https://bee-san.github.io/bees-ultimate-grammar-dictionary/en/).
 Every dictionary entry links to its page, with all contributing explanations and
 examples. Search by grammar, reading or meaning, and filter by JLPT level or source.
+絵でわかる日本語's explanations show their original illustrations, on the website and
+in the dictionary popup.
 
 Japanese popup lookup covers **all 9,515 source records** across the 14 sources.
 Grammar notation such as `Nらしい` is indexed under its Japanese text (`らしい`),

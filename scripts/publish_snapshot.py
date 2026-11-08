@@ -5,6 +5,9 @@ The snapshot stores the merged corpus *before* the IMABI, popup and reading
 projections; `build_site.py` applies those from the committed catalogs. It is
 rebuilt from `data/merge/unified.jsonl` because `data/merged/corpus.json` is
 already projected, and projecting twice reorders IMABI contributions.
+
+Illustrations are encoded from the locked 絵でわかる日本語 archive into
+`illustrations/` and pinned by `illustrations.json` (see `bugd.illustrations`).
 """
 
 from __future__ import annotations
@@ -15,13 +18,14 @@ import hashlib
 import json
 import pathlib
 
-from bugd import unify
+from bugd import illustrations, unify
 from bugd.english import MODEL, collect_requests, english_corpus
 from bugd.headword_readings import CATALOG as READING_CATALOG, apply_catalog, load_catalog as load_reading_catalog
 from bugd.imabi_lookup import DEFAULT_CATALOG, apply_lookups, load_catalog, restore_lessons
 from bugd.pipeline import entry_to_json
 from bugd.popup_lookup import DEFAULT_OVERRIDES, apply_popup_lookups, load_overrides
 from bugd.sources import source_names
+from bugd.sources.edewakaru import ILLUSTRATED_ARCHIVE, EdewakaruExtractor
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 
@@ -72,6 +76,16 @@ def main() -> int:
         if path.parent.resolve() != args.output.resolve():
             (args.output / path.name).write_bytes(raw)
         manifest["files"][path.name] = {"sha256": hashlib.sha256(raw).hexdigest(), "byteCount": len(raw)}
+    # Every picture a contribution names, encoded from the locked archive.
+    archive = EdewakaruExtractor(ROOT / "data/sources/edewakaru").read_locked_bytes(ILLUSTRATED_ARCHIVE)
+    previous_catalog = args.output / illustrations.CATALOG_NAME
+    catalog = illustrations.build(
+        illustrations.referenced(corpus), {"edewakaru": archive}, args.output,
+        previous=json.loads(previous_catalog.read_text()) if previous_catalog.is_file() else None,
+    )
+    raw = illustrations.write_catalog(catalog, args.output)
+    manifest["files"][illustrations.CATALOG_NAME] = {"sha256": hashlib.sha256(raw).hexdigest(), "byteCount": len(raw)}
+    manifest["illustrations"] = len(catalog["images"])
     if restored:
         manifest["restoredImabiLessons"] = restored
     previous_path.write_text(json.dumps(manifest, indent=2) + "\n")

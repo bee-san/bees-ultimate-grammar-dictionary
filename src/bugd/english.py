@@ -7,7 +7,10 @@ English build, rather than silently leaving Japanese explanations in it.
 from __future__ import annotations
 
 import copy
+import gzip
 import hashlib
+import json
+import pathlib
 import re
 from collections.abc import Iterator
 
@@ -43,6 +46,28 @@ def restore_judged_sentences(original: str, translated: str) -> str:
             continue
         lines[index] = f"{japanese} — {english[1:].strip()}"
     return "\n".join(lines)
+
+
+#: The translations the committed publication snapshot ships.
+SNAPSHOT_CACHE = pathlib.Path(__file__).resolve().parents[2] / "website/data/translations.en.json.gz"
+
+
+def load_translation_cache(path: pathlib.Path, snapshot: pathlib.Path = SNAPSHOT_CACHE) -> dict:
+    """The local translation cache, on top of the translations the snapshot ships.
+
+    `data/translations/` is not committed, so a fresh clone starts from the
+    snapshot's translations and only text that changed needs a model call.
+    """
+    cache = {"model": MODEL, "promptVersion": PROMPT_VERSION, "translations": {}}
+    for layer in (snapshot, path):
+        if not layer.is_file():
+            continue
+        raw = layer.read_bytes()
+        data = json.loads(gzip.decompress(raw) if layer.suffix == ".gz" else raw)
+        if data.get("model") != MODEL or data.get("promptVersion") != PROMPT_VERSION:
+            raise ValueError(f"Translation cache {layer} has a different model or prompt version")
+        cache["translations"].update(data["translations"])
+    return cache
 
 
 def translation_key(text: str, kind: str = "definition") -> str:

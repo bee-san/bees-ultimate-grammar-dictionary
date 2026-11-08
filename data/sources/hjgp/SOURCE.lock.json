@@ -19,5 +19,8 @@
     }
   },
   "source": "hjgp",
-  "note": "日本語文型辞典 monolingual Yomitan banks from HuangAntimony/Nihongo-Bunkei-Jiten"
+  "note": "日本語文型辞典 monolingual Yomitan banks from HuangAntimony/Nihongo-Bunkei-Jiten, release v0.1.0: the four locked files are the members of its Nihongo-Bunkei-Jiten.zip asset",
+  "archive": "https://github.com/HuangAntimony/Nihongo-Bunkei-Jiten/releases/download/v0.1.0/Nihongo-Bunkei-Jiten.zip",
+  "archiveSha256": "2c0ba9ab8b69912c53d367f9dff19182f18b8a277f9bd7069feea3388415fdce",
+  "archiveByteCount": 1089024
 }

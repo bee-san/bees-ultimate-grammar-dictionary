@@ -7,5 +7,12 @@
       "sha256": "7daa567e3d9ade90569d11babce2ca7b10cbf6ac419b6ac8610512c84f84a7ae",
       "byteCount": 63638478
     }
+  },
+  "extraction": {
+    "file": "extracted.json.gz",
+    "sha256": "3dfbae034acb649dd608d6c63cb89b4465c304a58abc9d3a96024449ffa72af3",
+    "byteCount": 1630610,
+    "points": 761,
+    "note": "The locked Anki package is not publicly downloadable and is no longer available. This is the extraction every release has been built from; `make extract` uses it when the package is absent. Digest and byteCount are of the decompressed JSON."
   }
 }

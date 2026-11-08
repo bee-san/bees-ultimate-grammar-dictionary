@@ -9,7 +9,38 @@ The English edition uses **GPT-6 Luna**, as requested by the user. Historical
 Kanban audit workers used `global.anthropic.claude-opus-5` through Bedrock; those
 audit settings do not apply to the English translation build.
 
-## Local Anki decks (authoritative primary inputs — already on disk)
+## Rebuilding from this repository
+
+A fresh clone rebuilds the whole dictionary with `make acquire && make all`.
+Every input is either committed or downloaded from a live public URL pinned in
+its `SOURCE.lock.json`, and every byte is checked against the lock's SHA-256.
+`make verify-rebuild` (and the weekly *Rebuild from sources* workflow) proves the
+result matches the committed snapshot.
+
+| Source | A fresh clone gets it from |
+|---|---|
+| AIUEO, Bunpro, 文法 | Committed `extracted.json.gz`: the Anki packages were local exports and are no longer available |
+| DoJG, 毎日のんびり日本語教師 | aiko-tanaka/Grammar-Dictionaries at a pinned commit (GitHub raw) |
+| Donna Toki | A pinned public mirror on GitHub (raw) |
+| 絵でわかる日本語 | aiko-tanaka/Grammar-Dictionaries (text banks) and Salwynn's illustrated edition on Google Drive |
+| HJGP | The `Nihongo-Bunkei-Jiten.zip` asset of HuangAntimony/Nihongo-Bunkei-Jiten release v0.1.0 |
+| Yokubi | Morgawr/yokubi commit tarball, pinned commit |
+| IMABI | Committed pages (WordPress API acquisition) |
+| NINJAL | Committed (CC BY 4.0). The lock keeps NINJAL's repository URLs, which were returning 503 on 2026-11-08 |
+| HJGP EN | Committed: a PyGlossary export with no public download |
+| 日本語NET | Committed: a one-off scrape of a changing website |
+| くらべてわかる | Committed: a local archive with no public download |
+
+When a pinned download disappears, commit the locked file (it is already
+verified by digest) and drop its `url`, rather than letting the rebuild break.
+
+## Local Anki decks (no longer available; their extractions are committed)
+
+The three packages below were local exports. They are gone, so each source
+directory commits the extraction every release was built from
+(`extracted.json.gz`, pinned by the lock's `extraction` entry), and `make
+extract` uses it. To re-extract a source, put the package with the locked digest
+back in its directory.
 
 ### 1. 文法.apkg  (`/home/skerraut/documents/文法.apkg`, 7.5 MB)
 - Notetype: `文法 Cloze`

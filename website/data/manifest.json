@@ -1,5 +1,5 @@
 {
-  "revision": "2026.11.08",
+  "revision": "2026.11.08.1",
   "model": "gpt-6-luna",
   "sources": [
     "aiueo",
@@ -21,12 +21,12 @@
   "translations": 49951,
   "files": {
     "corpus.json.gz": {
-      "sha256": "11a07e2c8b7070daa3718256dce252eae05da0a14e3e8b0ff0d8c08b3f8a096c",
-      "byteCount": 11567762
+      "sha256": "d7fd445dac0cda107ecae61d881948754e10f756f55442bbc05625450dee96db",
+      "byteCount": 11633127
     },
     "translations.en.json.gz": {
-      "sha256": "f0f1e81243402fc20dc0d93c537932e7a98942fe0c461bdc2dfd1739817d56fa",
-      "byteCount": 4653037
+      "sha256": "670193a35311b5198e437a7886eaae063af80b2346e2b2c02ffbf210b11efbcd",
+      "byteCount": 4641162
     },
     "imabi-lookups.json": {
       "sha256": "160068f47ecebc3e384e5affee6cc8e97ffab300464f65a2d740e6a1c22b034a",
@@ -37,8 +37,8 @@
       "byteCount": 59728
     },
     "published-headwords.json": {
-      "sha256": "172326bc181bc6cf57aa33cc56761d305698028a59f7a4d585a751ee4602c4ce",
-      "byteCount": 187392
+      "sha256": "c6b499e21205f819e406d9c25d20163546136bfb5365260b00ec08715878c81b",
+      "byteCount": 190898
     },
     "headword-readings.json": {
       "sha256": "10ce46b5a9056ecd7a41294e17609c11a0dafded48e91dba166a9da25fff0bdd",

@@ -708,15 +708,16 @@ def test_corpus_counts_are_pinned(corpus: dict[str, object]) -> None:
     # Tier A/B counts are the thirteen core sources' alone: `kurabete` is
     # attach-only, so adding it moved only the row totals and the point count.
     # edewakaru's 153 picture-only v6 rows (2026.11.08) are attach-only too:
-    # +153 rows and substantive rows, +148 points.
-    assert report["corpus"]["rows"] == 11344
+    # +153 rows and substantive rows, +148 points. IMABI's lesson 535 ("About",
+    # 2026.11.08.1) comes from extraction now, not a publication-time restore.
+    assert report["corpus"]["rows"] == 11345
     assert report["corpus"]["declaredAliasRows"] == 1453
     assert report["corpus"]["duplicateRowsCollapsed"] == 224
-    assert report["corpus"]["substantiveRows"] == 9667
+    assert report["corpus"]["substantiveRows"] == 9668
     assert report["tierA"]["bijectiveBuckets"] == 1314
     assert report["tierA"]["refusedCollisionBuckets"] == 221
     assert report["tierB"]["accepted"] == 39
-    assert len(corpus["points"]) == 5805
+    assert len(corpus["points"]) == 5806
 
 
 @pytestmark_corpus

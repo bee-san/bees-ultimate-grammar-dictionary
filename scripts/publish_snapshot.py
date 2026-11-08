@@ -19,7 +19,7 @@ import json
 import pathlib
 
 from bugd import illustrations, unify
-from bugd.english import MODEL, collect_requests, english_corpus
+from bugd.english import MODEL, collect_requests, english_corpus, load_translation_cache
 from bugd.headword_readings import CATALOG as READING_CATALOG, apply_catalog, load_catalog as load_reading_catalog
 from bugd.imabi_lookup import DEFAULT_CATALOG, apply_lookups, load_catalog, restore_lessons
 from bugd.pipeline import entry_to_json
@@ -43,14 +43,17 @@ def main() -> int:
                         help="merged corpus, read for its source labels")
     parser.add_argument("--translations", type=pathlib.Path, default=pathlib.Path("data/translations/en.json"))
     parser.add_argument("--output", type=pathlib.Path, default=pathlib.Path("website/data"))
-    parser.add_argument("--revision", required=True)
+    parser.add_argument("--revision", help="new snapshot revision (default: keep the current one)")
     args = parser.parse_args()
     previous_path = args.output / "manifest.json"
     previous = json.loads(previous_path.read_text()) if previous_path.is_file() else {}
+    args.revision = args.revision or previous.get("revision")
+    if not args.revision:
+        parser.error("--revision is required for a new snapshot")
     restored = previous.get("restoredImabiLessons", [])
 
     corpus = base_corpus(args.unified, args.corpus)
-    cache = json.loads(args.translations.read_text())
+    cache = load_translation_cache(args.translations)
     missing = set(source_names()) - set(corpus["sourceLabels"])
     if missing:
         raise ValueError(f"Refusing to publish a partial dictionary; missing sources: {sorted(missing)}")

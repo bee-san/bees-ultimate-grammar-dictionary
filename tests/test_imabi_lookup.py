@@ -74,8 +74,8 @@ def test_every_catalog_link_is_present_once_and_no_original_entry_is_removed(pub
 
 def test_indexing_is_idempotent_and_does_not_mutate_input(publication):
     baseline, corpus = publication
-    assert not any("lookupExpressions" in p.get("provenance", {})
-                   for e in baseline["entries"] for p in e["contributions"])
+    snapshot = json.loads(gzip.decompress((ROOT / "website/data/corpus.json.gz").read_bytes()))
+    assert baseline == snapshot
     assert apply_lookups(corpus, load_catalog()) == corpus
 
 

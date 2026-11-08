@@ -1,1 +1,18 @@
-{"acquiredAt":"2026-09-12T23:02:00Z","files":{"Bunpro Grammar Reference.apkg":{"byteCount":256720435,"sha256":"803f00cceddff31c199d0dedaee4d41010fdd799dbc16da6a3f5b3a1732e52e9"}},"note":"Bunpro Grammar Reference V2. Local Anki export; bytes locked by digest.","source":"bunpro"}
+{
+  "acquiredAt": "2026-09-12T23:02:00Z",
+  "files": {
+    "Bunpro Grammar Reference.apkg": {
+      "byteCount": 256720435,
+      "sha256": "803f00cceddff31c199d0dedaee4d41010fdd799dbc16da6a3f5b3a1732e52e9"
+    }
+  },
+  "note": "Bunpro Grammar Reference V2. Local Anki export; bytes locked by digest.",
+  "source": "bunpro",
+  "extraction": {
+    "file": "extracted.json.gz",
+    "sha256": "7b10b03950f93f783dcadec0c140ad195620ce0fa733ff648342508ad39d38f6",
+    "byteCount": 12733282,
+    "points": 964,
+    "note": "The locked Anki package is not publicly downloadable and is no longer available. This is the extraction every release has been built from; `make extract` uses it when the package is absent. Digest and byteCount are of the decompressed JSON."
+  }
+}

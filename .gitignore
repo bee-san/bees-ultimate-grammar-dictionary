@@ -27,6 +27,20 @@ SHA256SUMS
 !/data/sources/imabi/index.json
 !/data/sources/imabi/PERMISSION.json
 !/data/sources/imabi/COVERAGE.md
+# Every other input with no live public download ships too, so a fresh clone
+# can rebuild the whole dictionary (`make acquire` fetches the rest; see
+# SOURCES.md): a local archive, a PyGlossary export, a one-off scrape, and
+# NINJAL's CC BY 4.0 database, whose repository is not reliably reachable.
+!/data/sources/kurabete/kurabete.zip
+!/data/sources/hjgp_en/index.json
+!/data/sources/hjgp_en/term_bank_1.json
+!/data/sources/nihongo_net/index.json
+!/data/sources/nihongo_net/term_bank_*.json
+!/data/sources/ninjal_bunkei/headwords.txt
+!/data/sources/ninjal_bunkei/nihongo_bunkei_database20260126.zip
+!/data/sources/ninjal_bunkei/readme.txt
+# The Anki packages are gone; their committed extractions ship instead.
+!/data/sources/*/extracted.json.gz
 /data/extracted/
 /data/merged/
 /data/translations/

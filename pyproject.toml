@@ -3,12 +3,12 @@ name = "bees-ultimate-grammar-dictionary"
 version = "0.0.0"
 description = "ONE unified Yomitan grammar dictionary built from multiple grammar sources"
 requires-python = ">=3.11"
-dependencies = ["jsonschema==4.26.0", "fastjsonschema==2.22.2", "zstandard==0.25.0"]
+# Pillow encodes 絵でわかる日本語's pictures for `make publish-data`; the Pages
+# build only copies the committed renditions.
+dependencies = ["jsonschema==4.26.0", "fastjsonschema==2.22.2", "zstandard==0.25.0", "pillow==13.0.0"]
 
 [dependency-groups]
 dev = ["pytest==9.1.1"]
-# `make publish-data` encodes illustrations as AVIF; Pages builds only copy them.
-publish = ["pillow==13.0.0"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

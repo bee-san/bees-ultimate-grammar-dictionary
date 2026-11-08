@@ -11,5 +11,12 @@
     "deckPath": "/home/skerraut/documents/文法.apkg",
     "notetype": "文法 Cloze"
   },
-  "source": "bunpou"
+  "source": "bunpou",
+  "extraction": {
+    "file": "extracted.json.gz",
+    "sha256": "537a072fafc7335e8e41731d19b8ea341ef5a80bbc9f13aba90eb53e7f8dfcd1",
+    "byteCount": 1435375,
+    "points": 534,
+    "note": "The locked Anki package is not publicly downloadable and is no longer available. This is the extraction every release has been built from; `make extract` uses it when the package is absent. Digest and byteCount are of the decompressed JSON."
+  }
 }

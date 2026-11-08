@@ -1,8 +1,11 @@
 # `data/` layout
 
-Acquired inputs are generally ignored except their `SOURCE.lock.json` manifests.
-The complete IMABI acquisition is committed, including `pages/*.json`,
-`index.json`, `PERMISSION.json` and `COVERAGE.md`, so it can be extracted offline.
+Acquired inputs that `make acquire` can download again are ignored except their
+`SOURCE.lock.json` manifests. Inputs with no live public download are committed:
+the complete IMABI acquisition (`pages/*.json`, `index.json`, `PERMISSION.json`,
+`COVERAGE.md`), NINJAL, くらべてわかる, HJGP EN and 日本語NET. The three Anki
+packages are gone; their sources commit `extracted.json.gz`, pinned by the lock's
+`extraction` entry, which `make extract` uses in place of the package.
 Generated per-source JSONL and merge artifacts remain ignored. The full release
 corpus and cached English translations are committed under `website/data/`;
 `make` builds both complete editions from that snapshot. The layout below is the
@@ -53,10 +56,11 @@ Rules enforced by `bugd.sources.base`:
 * locked paths must be relative, forward-slashed, and free of `.`/`..`
   components.
 
-Large binary inputs are not copied into the repository. For inputs that already
-live elsewhere on disk (e.g. the local Anki decks named in `SOURCES.md`), place a
-symlink or a small acquisition script in the source directory and lock the
-resolved bytes.
+Large binary inputs that can be downloaded again are not copied into the
+repository: the lock records their `url` (or the source's `archive`), and
+`make acquire` fetches and verifies them. An input that cannot be downloaded must
+be committed, or the source must commit its extraction (`extraction` in the lock),
+so a fresh clone can always rebuild the whole dictionary.
 
 ## `data/extracted/<source-name>.json`
 

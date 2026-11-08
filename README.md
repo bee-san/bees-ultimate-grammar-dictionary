@@ -19,7 +19,7 @@ examples. Search by grammar, reading or meaning, and filter by JLPT level or sou
 絵でわかる日本語's explanations show their original illustrations, on the website and
 in the dictionary popup.
 
-Japanese popup lookup covers **all 9,515 source records** across the 14 sources.
+Japanese popup lookup covers **all 9,668 source records** across the 14 sources.
 Grammar notation such as `Nらしい` is indexed under its Japanese text (`らしい`),
 with kana aliases and conjugation support for known endings. Reference articles
 use Japanese topic names. See [lookup coverage and examples](docs/lookup-coverage.md).
@@ -77,8 +77,7 @@ exports, scraper access or model credentials. The ZIPs, update indexes and
 The raw 501-page IMABI acquisition is also committed under
 `data/sources/imabi/`, together with its digest lock, index and coverage report.
 It contains 495 lessons; six site pages are excluded. The publication snapshot
-preserves the complete merged corpus from every source, including the source
-decks that are unavailable in a fresh checkout.
+is exactly the merged corpus the source pipeline produces (see below).
 
 IMABI lessons are also indexed by Japanese grammar forms, so looking up `は`,
 `に`, `を`, `けど` or `のだ` shows the relevant IMABI articles. The committed
@@ -89,8 +88,31 @@ addresses remain available; the linked website includes every matching lesson.
 This includes the restored “About” lesson under `について`, `に関して` and
 `をめぐって`, plus compound constructions such as `ことにする` and `ことがある`.
 
-To refresh the corpus from original inputs, acquire any missing sources and run
-`make all`. Those pipeline stages are:
+### Rebuilding from the original sources
+
+The whole dictionary can also be rebuilt from its sources with nothing but this
+repository and the sources' own public downloads:
+
+```sh
+make acquire   # download the locked sources that are not committed, and verify them
+make all       # extract, align, merge, build and validate
+```
+
+`make acquire` fetches DoJG, Donna Toki, 毎日のんびり日本語教師 and 絵でわかる日本語
+from their pinned upstream files, HJGP from its GitHub release, Yokubi from its
+pinned commit, and 絵でわかる日本語's illustrated edition from Google Drive. Every
+other input is committed: IMABI's pages, NINJAL's CC BY 4.0 database,
+くらべてわかる's archive, HJGP EN, the scraped 日本語NET banks, and the extracted
+records of the three Anki decks (AIUEO, Bunpro, 文法), whose packages are no
+longer available. See [SOURCES.md](SOURCES.md#rebuilding-from-this-repository).
+
+`make verify-rebuild` does all of this in a temporary export of the committed
+tree and checks that it reproduces the committed snapshot and, with a stock-zlib
+Python, the release archives byte for byte. The
+[Rebuild from sources](.github/workflows/rebuild.yml) workflow runs it on GitHub
+for every change to the data or code, and weekly.
+
+The pipeline stages are:
 
 1. **extract** — read each source's locked data into normalized `GrammarPoint` records
 2. **keymap** — align entries across sources (which rows are the same grammar point?)
@@ -112,22 +134,24 @@ Open `http://localhost:8000/` or `http://localhost:8000/en/`.
 GitHub Actions builds this snapshot and deploys it to GitHub Pages on `main`.
 See [the publishing workflow](docs/website.md) for updating the corpus and translations.
 
-After acquiring all locked sources and running `make all`, update the publication:
+After `make acquire` and `make all`, update the publication:
 
 ```sh
-make translate-english  # authenticated Codex CLI; explicitly uses gpt-6-luna
-make publish-data      # refuses missing sources or translations
+make translate-english                     # only text the committed snapshot has not translated; uses gpt-6-luna
+make publish-data REVISION=YYYY.MM.DD[.N]  # refuses missing sources or translations
 make site
 ```
 
-After refreshing the snapshot, bump its revision, run `make site`, regenerate
-the release asset lock with `python scripts/verify_release.py --write-lock`,
-and run `make verify-release`. Commit the snapshot, lock and release notes.
-The release workflow builds and checks those exact inputs before publishing.
+Then regenerate the release asset lock with
+`python scripts/verify_release.py --write-lock` and run `make verify-release`.
+Commit the snapshot, lock and release notes. The release workflow builds and
+checks those exact inputs before publishing.
 
-Translation results are cached by source-text hash under `data/translations/`.
-The original corpus stays unchanged. A changed source text requires a fresh
-translation; an incomplete English edition fails the build.
+Translation results are cached by source-text hash under `data/translations/`,
+on top of the translations the committed snapshot already ships, so a fresh
+clone needs no model call unless source text changed. The original corpus stays
+unchanged. A changed source text requires a fresh translation; an incomplete
+English edition fails the build.
 
 ## Adding a new source
 

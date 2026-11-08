@@ -112,21 +112,31 @@ def test_the_source_lock_digest_manifests_are_tracked(tracked_files: set[str]) -
     assert not untracked, f"untracked SOURCE.lock.json manifests: {untracked}"
 
 
-def test_no_acquired_source_payload_is_tracked(tracked_files: set[str]) -> None:
-    """Only the manifests ship -- never the acquired bytes.
+def test_every_tracked_source_payload_is_pinned_by_its_lock(tracked_files: set[str]) -> None:
+    """Committed source bytes are only ever locked inputs, never stray files.
 
-    The counterpart to the test above: relaxing .gitignore to admit the locks must
-    not admit term banks, decks or archives. The acquired bytes are large and
-    regenerable; the manifests that pin them are neither.
+    Inputs with no live public download are committed so a fresh clone can
+    rebuild everything (`tests/test_rebuild.py` checks that every input is
+    committed or downloadable). Relaxing .gitignore for them must not admit
+    anything a lock does not pin: generated JSONL, unlocked extras, a re-downloaded
+    file under a new name. Allowed: the lock, its locked files, its committed
+    `extraction`, and a source's generated COVERAGE.md report.
     """
-    leaked = sorted(
-        f
-        for f in tracked_files
-        if f.startswith("data/sources/")
-        and not f.endswith("SOURCE.lock.json")
-        and not f.endswith(".gitkeep")
-    )
-    assert not leaked, f"acquired source payload is tracked: {leaked}"
+    pinned: dict[str, set[str]] = {}
+    for lock in (REPO / "data" / "sources").glob("*/SOURCE.lock.json"):
+        payload = json.loads(lock.read_text(encoding="utf-8"))
+        names = set(payload["files"]) | {"SOURCE.lock.json", "COVERAGE.md"}
+        if payload.get("extraction"):
+            names.add(payload["extraction"]["file"])
+        pinned[lock.parent.name] = names
+    leaked = []
+    for name in sorted(f for f in tracked_files if f.startswith("data/sources/")):
+        parts = name.split("/", 3)
+        if name == "data/sources/.gitkeep":
+            continue
+        if len(parts) < 4 or parts[3] not in pinned.get(parts[2], set()):
+            leaked.append(name)
+    assert not leaked, f"tracked source files that no lock pins: {leaked}"
 
 
 def test_every_tracked_lock_pins_every_file_by_digest() -> None:
@@ -183,7 +193,12 @@ def test_every_third_party_import_in_src_is_a_declared_dependency(
         for module in imported
         if module not in sys.stdlib_module_names and module != "bugd"
     }
-    undeclared = sorted(m for m in third_party if m.lower().replace("-", "_") not in declared)
+    # Import names that differ from their distribution's name.
+    distributions = {"PIL": "pillow"}
+    undeclared = sorted(
+        m for m in third_party
+        if distributions.get(m, m).lower().replace("-", "_") not in declared
+    )
     assert not undeclared, (
         f"src/ imports undeclared dependencies: {undeclared}. "
         f"A fresh `pip install -e .` will not install them, so the build is not "

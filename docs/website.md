@@ -31,16 +31,21 @@ model in CI. Enable GitHub Pages with **GitHub Actions** as its source. Pushes t
 
 ## Refresh content
 
-1. Acquire the exact source bytes pinned by `data/sources/*/SOURCE.lock.json`.
-   Local Anki packages may be symlinked into their source directories. For AIUEO,
-   use `data/sources/aiueo/AIUEO JLPT Grammar.apkg`.
+1. Run `make acquire`. It downloads every source input pinned by
+   `data/sources/*/SOURCE.lock.json` that is not committed, from the URL its lock
+   records, and verifies its digest (see `SOURCES.md`, "Rebuilding from this
+   repository"). The three Anki packages are no longer available, so extraction
+   copies their committed `extracted.json.gz`. To re-extract one, put the
+   package with the locked digest in its source directory.
 2. Run `make all` to extract, align, merge and validate the complete corpus.
 3. Run `make translate-english`. This calls the authenticated `codex exec` CLI
    with `--model gpt-6-luna`. No API key is stored in the repository. Jobs receive
    only translation input, use a JSON output schema, and validate every returned
-   record id before caching the result. Re-running resumes by content hash.
-4. Run `make publish-data` to update the compressed publication snapshot. It
-   requires every registered source and every requested English translation.
+   record id before caching the result. Re-running resumes by content hash, and
+   text the committed snapshot already translates is never sent again.
+4. Run `make publish-data REVISION=YYYY.MM.DD[.N]` to update the compressed
+   publication snapshot. It requires every registered source and every requested
+   English translation.
 5. Run `make site`, inspect both editions in a browser, then commit the changed
    snapshot, manifests and code. The next Pages deployment rebuilds them.
 
@@ -144,12 +149,16 @@ entry count in `manifest.json`. Extraction fails if the evidence no longer
 matches the acquired page. Use a new revision and regenerate the release lock
 with the publication commands below.
 
-The IMABI raw pages are an independently locked acquisition. The merged
-publication snapshot also retains earlier normalization, deduplication and
-corrections across all sources; rebuilding a release uses that snapshot rather
-than rerunning acquisition against changing upstream websites.
+The IMABI raw pages are an independently locked acquisition. The publication
+snapshot is exactly what the source pipeline produces from the locked inputs:
+`make verify-rebuild` exports the committed tree, acquires and rebuilds
+everything, and compares the result with the committed snapshot (gzip files by
+content) and, under stock zlib, with the release lock. The *Rebuild from
+sources* workflow runs it for every change to data or code, and weekly to catch
+an upstream download that disappears. Releases still build from the snapshot,
+so they never depend on an upstream website being up.
 
-When updating the publication, choose a new revision in `manifest.json`, run
+When updating the publication, publish the snapshot under a new revision, run
 `make site`, copy `build/site/downloads/index.json` to `dist/index.json`, then run
 `PYTHONPATH=src python scripts/verify_release.py --write-lock`. Write the lock with a
 Python linked against stock zlib (the CI runner's), for example `uv venv -p 3.12`:

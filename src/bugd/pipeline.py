@@ -135,6 +135,7 @@ def run_extract(
     from .content_corrections import apply_corrections as apply_content_corrections
     from .content_corrections import load_corrections as load_content_corrections
     from .sources import all_extractors, get_extractor
+    from .sources.base import read_committed_extraction
 
 
     extracted_dir.mkdir(parents=True, exist_ok=True)
@@ -150,6 +151,7 @@ def run_extract(
     corrected_total = 0
     corrections_report: dict[str, object] = {}
     skipped: dict[str, str] = {}
+    from_committed: list[str] = []
     for cls in classes:
         source_dir = sources_dir / cls.name
         if not only:
@@ -169,7 +171,16 @@ def run_extract(
                 # presenting as a quietly smaller dictionary. An explicit
                 # `--source` request still runs and still fails loudly, so a typo
                 # or a genuinely broken acquisition surfaces.
-                skipped[cls.name] = unacquired
+                committed = read_committed_extraction(source_dir)
+                if committed is None:
+                    skipped[cls.name] = unacquired
+                    continue
+                # The raw input is gone for good, so the source ships the
+                # extraction every release was built from. It already carries
+                # its corrections; copy it byte for byte.
+                (extracted_dir / f"{cls.name}.json").write_bytes(committed)
+                written[cls.name] = len(load_json(committed.decode("utf-8"))["points"])
+                from_committed.append(cls.name)
                 continue
         result = cls(source_dir).extract()
         points, applied = corrections_module.apply_corrections(
@@ -206,6 +217,8 @@ def run_extract(
     if skipped:
         # Reported, with the reason, so an unacquired source is never invisible.
         out["skippedSources"] = skipped
+    if from_committed:
+        out["committedExtractions"] = from_committed
     if corrections_report:
         out["contentCorrections"] = corrections_report
     return out

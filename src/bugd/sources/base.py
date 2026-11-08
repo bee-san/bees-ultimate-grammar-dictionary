@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import dataclasses
+import gzip
 import hashlib
 import pathlib
 from dataclasses import dataclass, field
@@ -216,6 +217,33 @@ def load_source_lock(input_dir: pathlib.Path) -> dict[str, dict]:
     return files
 
 
+def read_committed_extraction(input_dir: pathlib.Path) -> bytes | None:
+    """The committed extraction a source's lock pins, or None if it pins none.
+
+    A source whose raw input cannot be downloaded and is no longer available
+    (the three Anki packages) ships its extraction instead: a gzip file named by
+    the lock's `extraction` entry, whose `sha256` and `byteCount` are those of
+    the decompressed JSON, i.e. of `data/extracted/<source>.json`. Fails closed
+    when the file is missing or its content does not match.
+    """
+    lock_path = pathlib.Path(input_dir) / SOURCE_LOCK_NAME
+    if not lock_path.is_file():
+        return None
+    entry = load_json(lock_path.read_text(encoding="utf-8")).get("extraction")
+    if entry is None:
+        return None
+    name = entry.get("file") if isinstance(entry, dict) else None
+    if not isinstance(name, str) or "/" in name or "\\" in name or name in ("", ".", ".."):
+        raise SourceLockError(f"malformed extraction entry in {lock_path}")
+    path = pathlib.Path(input_dir) / name
+    if not path.is_file():
+        raise SourceLockError(f"committed extraction is missing: {path}")
+    raw = gzip.decompress(path.read_bytes())
+    if hashlib.sha256(raw).hexdigest() != entry.get("sha256") or len(raw) != entry.get("byteCount"):
+        raise SourceLockError(f"committed extraction does not match its lock: {path}")
+    return raw
+
+
 __all__ = [
     "DuplicateRowIdentity",
     "Extractor",
@@ -225,5 +253,6 @@ __all__ = [
     "JSONL_NAME",
     "assign_row_uids",
     "load_source_lock",
+    "read_committed_extraction",
     "write_points_jsonl",
 ]

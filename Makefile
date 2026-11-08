@@ -35,11 +35,20 @@ ZIP := build/bees-ultimate-grammar-dictionary.zip
 # `all` remains the original-source extraction and merge pipeline.
 .DEFAULT_GOAL := release
 
-.PHONY: all personal release verify-release verify-popup extract keymap merge build site translate-english publish-data validate validate-node audit-packaged \
+# Each stage reads the previous stage's files, so `make -j` must not run them
+# side by side: `make -j acquire all` would merge a half-written extraction.
+.NOTPARALLEL:
+
+.PHONY: all personal release verify-release verify-rebuild verify-popup acquire extract keymap merge build site translate-english publish-data validate validate-node audit-packaged \
         audit-attribution test scan-polarity clean help
 
 help:
-	@printf 'targets: release (default, offline snapshot) verify-release extract keymap merge build validate validate-node audit-packaged test scan-polarity all clean\n'
+	@printf 'targets: release (default, offline snapshot) verify-release verify-rebuild acquire extract keymap merge build validate validate-node audit-packaged test scan-polarity all clean\n'
+
+# Download every locked source input this checkout lacks, from its pinned URL,
+# and verify it. Inputs with no live download are committed (see SOURCES.md).
+acquire:
+	$(PY) scripts/acquire_sources.py
 
 extract:
 	$(PY) -m bugd.cli extract
@@ -67,8 +76,10 @@ build:
 translate-english:
 	$(PY) scripts/translate_english.py --corpus data/merged/corpus.json
 
+# `make publish-data REVISION=YYYY.MM.DD[.N]` starts a new revision; without
+# REVISION the snapshot keeps its current one.
 publish-data:
-	$(PY) scripts/publish_snapshot.py
+	$(PY) scripts/publish_snapshot.py $(if $(REVISION),--revision $(REVISION))
 
 site:
 	$(PY) scripts/build_site.py --snapshot website/data
@@ -80,6 +91,12 @@ release: site
 
 verify-release:
 	$(PY) scripts/verify_release.py
+
+# Rebuild the dictionary from nothing but the committed tree and live source
+# downloads, in a temporary export, and check it reproduces the committed
+# snapshot and release lock.
+verify-rebuild:
+	$(PY) scripts/verify_rebuild.py
 
 # Uses the committed upstream Yomitan engine, with no npm or network access.
 verify-popup:

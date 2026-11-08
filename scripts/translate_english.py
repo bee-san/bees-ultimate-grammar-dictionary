@@ -16,7 +16,7 @@ import subprocess
 import tempfile
 import time
 
-from bugd.english import MODEL, PROMPT_VERSION, collect_requests
+from bugd.english import MODEL, collect_requests, load_translation_cache
 
 PROMPT = """You are a careful Japanese-to-English grammar translator. Translate
 EVERY supplied record faithfully and completely, without summarizing, omitting
@@ -89,9 +89,7 @@ def main() -> int:
     else:
         points = [p for f in sorted(args.extracted_dir.glob("*.json")) for p in json.loads(f.read_text())["points"]]
     requests = collect_requests(points)
-    cache = json.loads(args.cache.read_text()) if args.cache.exists() else {"model": MODEL, "promptVersion": PROMPT_VERSION, "translations": {}}
-    if cache.get("model") != MODEL or cache.get("promptVersion") != PROMPT_VERSION:
-        raise ValueError("Translation cache has a different model or prompt version")
+    cache = load_translation_cache(args.cache)
     pending = [r for key, r in requests.items() if key not in cache["translations"]]
     batches = []
     batch, size = [], 0

@@ -6,6 +6,11 @@
       "sha256": "a42b1b3ef48d74e2c42223740a759ac6e3af6bd3db32e8a2131cd0a3b177c80c",
       "url": "https://raw.githubusercontent.com/aiko-tanaka/Grammar-Dictionaries/4314e00f59140364ac75be264a6beb910af824d8/edewakaru/changelog.txt"
     },
+    "edewakaru_v6.zip": {
+      "byteCount": 94544768,
+      "sha256": "07d922078b66fc537563c99df8e7ef5834bad8ce4045c9c64a2bc68950b2730b",
+      "url": "https://drive.google.com/file/d/1rtfXyyN8AQ4EfxT-ojVDqCBYhFLXIX5x/view"
+    },
     "index.json": {
       "byteCount": 494,
       "sha256": "63620ab07b0f54b95773a4cd9569e2f993e2ebf5aad64e5dc20fab5b61512de1",
@@ -35,7 +40,15 @@
   "provenance": {
     "producer": "https://www.edewakaru.com/archives/cat_179055.html",
     "upstreamCommit": "4314e00f59140364ac75be264a6beb910af824d8",
-    "upstreamRepository": "https://github.com/aiko-tanaka/Grammar-Dictionaries"
+    "upstreamRepository": "https://github.com/aiko-tanaka/Grammar-Dictionaries",
+    "illustratedArchive": {
+      "acquiredAt": "2026-11-08T06:52:00Z",
+      "revision": "edewakaru_v6 2024-11-30",
+      "title": "[画像付き] 絵でわかる日本語",
+      "producer": "Salwynn, from the text banks above plus the illustrations on www.edewakaru.com",
+      "listedBy": "https://github.com/MarvNC/yomitan-dictionaries (Salwynn's dictionaries)",
+      "collection": "https://drive.google.com/drive/folders/1CPPAgKzz_PDEb7JUPHGioONTEQg0aCHW"
+    }
   },
   "source": "edewakaru"
 }

@@ -1357,6 +1357,36 @@ def _source_level_block(levels: list[str]) -> dict | None:
     }
 
 
+def _illustration_block(point: GrammarPoint) -> dict | None:
+    """The record's picture, when the build packed it under `media/`.
+
+    Only `bugd.illustrations.with_media` sets `illustrationMedia`, so a corpus
+    built without pictures renders none.
+
+    The picture is declared at its native pixel size. Yomitan caps an image at
+    the popup's width and keeps its aspect ratio, so it is shown as large as the
+    popup allows, which keeps the furigana inside the picture legible.
+    """
+    media = point.provenance.get("illustrationMedia") if isinstance(point.provenance, dict) else None
+    if not isinstance(media, dict):
+        return None
+    return {
+        "tag": "div",
+        "data": {"illustration": ""},
+        "content": {
+            "tag": "img",
+            "path": media["path"],
+            "width": media["width"],
+            "height": media["height"],
+            "sizeUnits": "px",
+            "collapsible": True,
+            "collapsed": False,
+            "background": False,
+            "alt": f"Illustration from {_source_label(point)}",
+        },
+    }
+
+
 def _source_block(point: GrammarPoint) -> list[object]:
     """One contributing source's substance, as renderable nodes.
 
@@ -1365,6 +1395,9 @@ def _source_block(point: GrammarPoint) -> list[object]:
     empty list when this record has nothing to show.
     """
     body: list[object] = []
+    illustration = _illustration_block(point)
+    if illustration is not None:
+        body.append(illustration)
     # HJGP stores many complete articles in `meaning`. A compact headline from
     # another source must not make those articles disappear from this disclosure.
     fields = ("explanation", "nuance", "notes")
@@ -1409,6 +1442,9 @@ def _sense_label(point: GrammarPoint, ordinal: int, total: int) -> str:
         return str(point.provenance["lessonTitle"])
     if total <= 1:
         return ""
+    if point.provenance.get("illustrationLabel"):
+        # A picture-only post's own caption, e.g. （不注意・失敗）.
+        return str(point.provenance["illustrationLabel"])
     meaning = _readable_meaning(point.meaning)
     if meaning:
         return _headline(meaning)

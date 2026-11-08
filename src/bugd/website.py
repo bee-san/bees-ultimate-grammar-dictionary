@@ -16,6 +16,7 @@ import shutil
 from urllib.parse import urlsplit
 
 from .english import english_corpus
+from .illustrations import DIRECTORY as ILLUSTRATIONS_DIR, illustration_key, is_illustration_only
 from .richtext import html_to_content
 from .site_links import SITE_URL, grammar_path, grammar_slug
 
@@ -114,6 +115,8 @@ def source_label(point: dict, labels: dict) -> str:
 def summary(entry: dict) -> str:
     meanings = [p.get("meaning") or p.get("explanation") for p in entry["contributions"]]
     candidates = [text for text in meanings if text]
+    if not candidates and any(is_illustration_only(p) for p in entry["contributions"]):
+        return "Explained in pictures by 絵でわかる日本語."
     text = next((t for t in candidates if len(re.findall(r"[A-Za-z]{3,}", t)) >= 3), candidates[0] if candidates else "")
     text = re.sub(r"<[^>]+>", "", text)
     text = " ".join(html.unescape(text).split())
@@ -227,7 +230,20 @@ def examples_html(examples: list[dict]) -> str:
     return '<div class="examples"><h4>In context <span>' + str(len(items)) + ' examples</span></h4><ol>' + "".join(items) + '</ol></div>'
 
 
-def point_page(entry: dict, labels: dict, original: dict, *, english: bool) -> str:
+def figure_html(point: dict, figures: dict, root: str, labels: dict) -> str:
+    """The source's illustration for this record, lazily loaded at its true size."""
+    item = figures.get(illustration_key(point) or "")
+    if not item:
+        return ""
+    label = point.get("provenance", {}).get("illustrationLabel")
+    caption = f'<figcaption lang="ja">{escape(label)}</figcaption>' if label else ""
+    alt = f"Illustration from {source_label(point, labels)}"
+    return (f'<figure class="illustration"><img src="{root}{ILLUSTRATIONS_DIR}/{escape(item["website"]["file"])}" '
+            f'width="{item["width"]}" height="{item["height"]}" loading="lazy" decoding="async" '
+            f'alt="{escape(alt)}">{caption}</figure>')
+
+
+def point_page(entry: dict, labels: dict, original: dict, *, english: bool, figures: dict | None = None) -> str:
     root = "../../../" if english else "../../"
     home = root + ("en/" if english else "")
     points_by_source = defaultdict(list)
@@ -244,10 +260,11 @@ def point_page(entry: dict, labels: dict, original: dict, *, english: bool) -> s
             translation_badge = '<span class="translation-badge">Luna English translation</span>' if translation else ''
             level = f'<span class="level {point["jlpt"].lower()}">{point["jlpt"]}</span>' if point.get("jlpt") else ''
             explanation = fields_html(point)
+            figure = figure_html(point, figures or {}, root, labels)
             alias = point.get("provenance", {}).get("aliasOf")
             if not explanation and alias:
                 explanation = f'<p>See <a href="{root}{grammar_path(str(alias), english=english)}" lang="ja">{escape(alias)}</a> for this form’s explanations.</p>'
-            if not explanation and not point.get("examples"):
+            if not explanation and not point.get("examples") and not figure:
                 explanation = '<p>This source lists the form without an explanation.</p>'
             original_point = original_points.get(point.get("row_uid") or point["source_id"], point)
             original_disclosure = f'<details class="original"><summary>Read the original source text</summary>{fields_html(original_point)}</details>' if translation else ''
@@ -263,7 +280,7 @@ def point_page(entry: dict, labels: dict, original: dict, *, english: bool) -> s
                 if page_url:
                     heading += f'<a class="upstream-link" href="{escape(page_url)}" rel="noreferrer">Read this source entry ↗</a>'
             row_id = escape(point.get("row_uid") or point["source_id"])
-            senses.append(f'<div class="sense" data-source-row="{row_id}">{heading}<div class="sense-meta">{level}{translation_badge}</div>{explanation}{examples_html(point.get("examples", []))}{original_disclosure}</div>')
+            senses.append(f'<div class="sense" data-source-row="{row_id}">{heading}<div class="sense-meta">{level}{translation_badge}</div>{figure}{explanation}{examples_html(point.get("examples", []))}{original_disclosure}</div>')
         provenance = points[0].get("provenance", {})
         links = [provenance.get("url"), provenance.get("lessonUrl"), provenance.get("pageUrl"), *provenance.get("producerLinks", [])]
         upstream = next((safe_url(link) for link in links if safe_url(link)), '')
@@ -282,11 +299,19 @@ def point_page(entry: dict, labels: dict, original: dict, *, english: bool) -> s
                  english=english, alternate=root + grammar_path(entry['expression'], english=not english), description=record['summary'])
 
 
-def build_site(corpus: dict, output: pathlib.Path, *, translations: dict | None = None) -> dict:
+def build_site(corpus: dict, output: pathlib.Path, *, translations: dict | None = None,
+               illustrations: dict | None = None, illustrations_dir: pathlib.Path | None = None) -> dict:
+    """Write both editions. `illustrations` is a verified catalog whose files are in `illustrations_dir`;
+    articles show each picture's `website` rendition."""
     if not corpus.get("entries"):
         raise ValueError("Refusing to publish an empty grammar library")
     output.mkdir(parents=True, exist_ok=True)
     shutil.copytree(ASSETS_DIR, output / "assets", dirs_exist_ok=True)
+    figures = (illustrations or {}).get("images", {})
+    for item in figures.values():
+        target = output / ILLUSTRATIONS_DIR / item["website"]["file"]
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(illustrations_dir / item["website"]["file"], target)
     labels = corpus.get("sourceLabels", {})
     original = grouped_entries(corpus)
     editions = [(False, corpus)]
@@ -308,7 +333,8 @@ def build_site(corpus: dict, output: pathlib.Path, *, translations: dict | None 
             path = grammar_path(expression, english=english)
             directory = output / path
             directory.mkdir(parents=True, exist_ok=True)
-            (directory / "index.html").write_text(point_page(entry, labels, original[expression], english=english))
+            (directory / "index.html").write_text(point_page(entry, labels, original[expression], english=english,
+                                                             figures=figures))
             pages.append(path)
     sources = ''.join(f'<li><h2>{escape(label)}</h2><p>{sum(p["source"] == source for entry in corpus["entries"] for p in entry["contributions"]):,} attributed contributions</p></li>' for source, label in sorted(labels.items()))
     (output / "sources").mkdir(exist_ok=True)
@@ -318,4 +344,5 @@ def build_site(corpus: dict, output: pathlib.Path, *, translations: dict | None 
     (output / 'sitemap.xml').write_text(sitemap)
     (output / 'robots.txt').write_text(f'User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n')
     (output / '.nojekyll').touch()
-    return {'grammarForms': len(original), 'editions': len(editions), 'pages': len(pages), 'sources': len(labels)}
+    return {'grammarForms': len(original), 'editions': len(editions), 'pages': len(pages), 'sources': len(labels),
+            'illustrations': len(figures)}

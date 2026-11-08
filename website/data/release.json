@@ -1,5 +1,5 @@
 {
-  "revision": "2026.11.04",
+  "revision": "2026.11.08",
   "sources": [
     "aiueo",
     "bunpou",
@@ -16,14 +16,14 @@
     "ninjal_bunkei",
     "yokubi"
   ],
-  "entries": 7680,
+  "entries": 7882,
   "japaneseLookupRecords": {
     "aiueo": 761,
     "bunpou": 534,
     "bunpro": 964,
     "dojg": 534,
     "donna_toki": 660,
-    "edewakaru": 1178,
+    "edewakaru": 1331,
     "hjgp": 924,
     "hjgp_en": 932,
     "imabi": 495,
@@ -36,25 +36,38 @@
   "imabiLessons": 495,
   "imabiLookupLessons": 495,
   "imabiLookupTerms": 1400,
+  "illustrations": {
+    "pictures": 955,
+    "byteCount": {
+      "dictionary": 14161973,
+      "website": 99017842
+    },
+    "illustratedRecords": 1740,
+    "pictureOnlyRecords": 300,
+    "packedInArchives": {
+      "bees-ultimate-grammar-dictionary.zip": 947,
+      "bees-ultimate-grammar-dictionary-en.zip": 947
+    }
+  },
   "assets": {
     "bees-ultimate-grammar-dictionary.zip": {
-      "sha256": "264335495ad7e2301bfa9caa1f7cbd1c2438157684108798e0c91aa3e9de3b89",
-      "byteCount": 17553029
+      "sha256": "61dfb674b9d0b8e45c5b4acfc4515fc0ccde42762b4e75f25fc9366986142b85",
+      "byteCount": 31955600
     },
     "bees-ultimate-grammar-dictionary-en.zip": {
-      "sha256": "1f9f69097ca4247fb7ab74723681968c3807d3c05948ef4825b0407b77798482",
-      "byteCount": 18640681
+      "sha256": "a17493a90c3d552e51d56eda1e27c0e92e90d28885e301814e1049379ab69a1d",
+      "byteCount": 33053016
     },
     "index.json": {
-      "sha256": "359c1f4b56c9dd0de62ac35016891e5dab08a207704dbd0bb61e137569081579",
+      "sha256": "3c558ae0a7a2709800b72672da1213f2e39d9bca190a8509a57473556465fc2c",
       "byteCount": 1176
     },
     "index.en.json": {
-      "sha256": "3d198c4ff0d7ec2af5c14d2e68b14bd2a6a0ed6f9bf431e5adcaa133d5b70dbe",
+      "sha256": "3aa555610751ca38871bf3ccba5cf7425f806268128262a2efcb9ada06fbda02",
       "byteCount": 1255
     },
     "SHA256SUMS": {
-      "sha256": "29ec9582718eefe19587d6a8159c15277ca02cb910b1b35509614d3111f29b48",
+      "sha256": "5ad40cc6af05f715121b5157c7d968f5b1e68f34eb1c5e2e63701db6b96f0671",
       "byteCount": 209
     }
   }

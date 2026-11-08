@@ -3,6 +3,9 @@
 
 The snapshot lets GitHub Pages deploy without access to private local Anki
 exports or model credentials. All snapshot members are digest checked first.
+
+Illustrations are verified against their catalog, shown on the websites and
+packed into both dictionaries (`bugd.illustrations`).
 """
 
 from __future__ import annotations
@@ -14,6 +17,7 @@ import json
 import pathlib
 import shutil
 
+from bugd import illustrations
 from bugd.english import build_english_dictionary
 from bugd.headword_readings import apply_catalog, load_catalog as load_reading_catalog
 from bugd.imabi_lookup import apply_lookups, load_catalog, restore_lessons
@@ -28,15 +32,8 @@ def read_json(path: pathlib.Path) -> dict:
     return json.loads(gzip.decompress(raw) if path.suffix == ".gz" else raw)
 
 
-def snapshot_inputs(directory: pathlib.Path) -> tuple[dict, dict, str]:
-    manifest = read_json(directory / "manifest.json")
-    for name, metadata in manifest["files"].items():
-        if pathlib.PurePosixPath(name).name != name:
-            raise ValueError("Unsafe publication snapshot member")
-        raw = (directory / name).read_bytes()
-        if hashlib.sha256(raw).hexdigest() != metadata["sha256"] or len(raw) != metadata["byteCount"]:
-            raise ValueError(f"Publication snapshot digest mismatch: {name}")
-    corpus = read_json(directory / "corpus.json.gz")
+def project(corpus: dict, directory: pathlib.Path, manifest: dict) -> dict:
+    """Apply the committed IMABI, popup and reading catalogs, in publication order."""
     corpus = restore_lessons(corpus, directory.parents[1] / "data/sources/imabi",
                              manifest.get("restoredImabiLessons", []))
     if "imabi-lookups.json" in manifest["files"]:
@@ -45,11 +42,36 @@ def snapshot_inputs(directory: pathlib.Path) -> tuple[dict, dict, str]:
         corpus = apply_popup_lookups(corpus, load_overrides(directory / "popup-overrides.json"))
     if "headword-readings.json" in manifest["files"]:
         corpus = apply_catalog(corpus, load_reading_catalog(directory / "headword-readings.json"))
+    return corpus
+
+
+def snapshot_editions(directory: pathlib.Path) -> dict:
+    """Every verified snapshot input: the full and text corpora, translations, pictures."""
+    manifest = read_json(directory / "manifest.json")
+    for name, metadata in manifest["files"].items():
+        if pathlib.PurePosixPath(name).name != name:
+            raise ValueError("Unsafe publication snapshot member")
+        raw = (directory / name).read_bytes()
+        if hashlib.sha256(raw).hexdigest() != metadata["sha256"] or len(raw) != metadata["byteCount"]:
+            raise ValueError(f"Publication snapshot digest mismatch: {name}")
+    base = read_json(directory / "corpus.json.gz")
+    corpus = project(base, directory, manifest)
     if set(corpus["sourceLabels"]) != set(manifest["sources"]):
         raise ValueError("Publication snapshot is missing a source")
     if len(corpus["entries"]) != manifest["entries"]:
         raise ValueError("Publication snapshot entry count mismatch")
-    return corpus, read_json(directory / "translations.en.json.gz"), manifest["revision"]
+    catalog = None
+    if illustrations.CATALOG_NAME in manifest["files"]:
+        catalog = illustrations.load_catalog(directory)
+        illustrations.require_complete(corpus, catalog)
+    return {"corpus": corpus, "translations": read_json(directory / "translations.en.json.gz"),
+            "revision": manifest["revision"], "illustrations": catalog,
+            "illustrationsDir": directory / illustrations.DIRECTORY}
+
+
+def snapshot_inputs(directory: pathlib.Path) -> tuple[dict, dict, str]:
+    editions = snapshot_editions(directory)
+    return editions["corpus"], editions["translations"], editions["revision"]
 
 
 def main() -> int:
@@ -61,25 +83,37 @@ def main() -> int:
     parser.add_argument("--revision", default="2026.10.03")
     parser.add_argument("--original-only", action="store_true", help="build a local original-language preview")
     args = parser.parse_args()
+    catalog = pictures = None
     if args.snapshot:
-        corpus, translations, revision = snapshot_inputs(args.snapshot)
+        editions = snapshot_editions(args.snapshot)
+        corpus, translations, revision = editions["corpus"], editions["translations"], editions["revision"]
+        catalog, pictures = editions["illustrations"], editions["illustrationsDir"]
     else:
         corpus, revision = read_json(args.corpus), args.revision
         translations = None if args.original_only else read_json(args.translations)
-    result = build_site(corpus, args.output, translations=translations)
+    result = build_site(corpus, args.output, translations=translations,
+                        illustrations=catalog, illustrations_dir=pictures)
+    # Both dictionaries carry the same pictures the websites show.
+    media = {}
+    if catalog is not None:
+        corpus = illustrations.with_media(corpus, catalog["images"])
+        media = {item["dictionary"]["file"]: (pictures / item["dictionary"]["file"]).read_bytes()
+                 for item in catalog["images"].values()}
     merged_dir = args.output.parent / "site-corpus"
     merged_dir.mkdir(parents=True, exist_ok=True)
     (merged_dir / "corpus.json").write_text(json.dumps(corpus, ensure_ascii=False))
     dictionary_dir = args.output.parent / "site-dictionaries"
     result["originalDictionary"] = run_build(merged_dir=merged_dir, build_dir=dictionary_dir,
                                             revision=revision, require_entries=True,
-                                            download_url=f"{SITE_URL}/downloads/bees-ultimate-grammar-dictionary.zip")
+                                            download_url=f"{SITE_URL}/downloads/bees-ultimate-grammar-dictionary.zip",
+                                            media=media)
     downloads = args.output / "downloads"
     downloads.mkdir(exist_ok=True)
     shutil.copy2(result["originalDictionary"]["zipPath"], downloads)
     shutil.copy2(dictionary_dir / "banks" / "index.json", downloads / "index.json")
     if translations is not None:
-        result["englishDictionary"] = build_english_dictionary(corpus, translations, dictionary_dir, revision=revision)
+        result["englishDictionary"] = build_english_dictionary(corpus, translations, dictionary_dir,
+                                                               revision=revision, media=media)
         shutil.copy2(result["englishDictionary"]["zipPath"], downloads)
         shutil.copy2(dictionary_dir / "index.en.json", downloads)
     sums = ''.join(f'{hashlib.sha256(path.read_bytes()).hexdigest()}  {path.name}\n' for path in sorted(downloads.glob('*.zip')))

@@ -155,7 +155,12 @@ class CommunityBankExtractor(Extractor):
         """
         return points
 
-    def extract(self) -> ExtractResult:
+    def read_rows(self) -> tuple[list[TermRow], dict[str, str]]:
+        """Read every locked bank member, in declared order.
+
+        Returns the rows and the digest of each locked file consumed. A source
+        whose rows span more than its plain members overrides this.
+        """
         lock = load_source_lock(self.input_dir)
         missing = [name for name in self.members if name not in lock]
         if missing:
@@ -169,6 +174,10 @@ class CommunityBankExtractor(Extractor):
             raw = self.read_locked_bytes(member)
             consumed[member] = lock[member]["sha256"]
             rows.extend(read_term_bank(raw, member=member))
+        return rows, consumed
+
+    def extract(self) -> ExtractResult:
+        rows, consumed = self.read_rows()
 
         points: list[GrammarPoint] = []
         skipped = 0

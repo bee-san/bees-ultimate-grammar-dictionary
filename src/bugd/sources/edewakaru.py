@@ -15,17 +15,36 @@ The producer's distinctive feature is that example sentences are followed by a
 of this source, so they are kept with their sentence rather than discarded or
 mistaken for separate examples.
 
-The upstream text-only variant is used deliberately. A separate community build
-adds images scraped from the producer's site; those bytes would grow the package
-for every entry and carry a weaker provenance claim, so this card takes the
-text banks only (see the media-cost policy in the dictionary skill).
+Two locked editions are read:
+
+* the text-only v1.03 banks, which built every published release so far, and
+* Salwynn's illustrated build (`edewakaru_v6.zip`, revision
+  `edewakaru_v6 2024-11-30`), listed in MarvNC's yomitan-dictionaries
+  collection. It repeats the v1.03 text verbatim, adds the post's illustration
+  to every row, and adds the producer's 自動詞・他動詞 series, whose posts are
+  pictures with no text at all.
+
+The v1.03 rows are emitted first, unchanged and in their original order, so
+each keeps its `row_uid`, headword and article. Each gains the illustration of
+the v6 row with the same text. v6 rows whose text v1.03 already has are not
+emitted again: measured, all four such rows (`大抵`, `拍子に`, `拍子で`, `弾みで`)
+re-file an existing post under another headword, and would show it twice. The
+remaining v6 rows are appended, marked `attachOnly` so they join the finished
+alignment without moving any existing contribution (see
+`bugd.keymap.attach_late_rows`). A row with an illustration and no text is
+marked `illustrationOnly`: it has nothing to show in a text dictionary.
 """
 
 from __future__ import annotations
 
+import dataclasses
+import io
 import re
+import zipfile
 
+from ..jsonio import MalformedPayload, load_json
 from ..model import Example, GrammarPoint
+from .base import load_source_lock
 from .community import (
     CommunityBankExtractor,
     clean,
@@ -33,6 +52,15 @@ from .community import (
     split_sections,
 )
 from .registry import register_extractor
+from .yomitan_bank import TermRow, read_term_bank
+
+#: Salwynn's illustrated edition, locked beside the v1.03 banks.
+ILLUSTRATED_ARCHIVE = "edewakaru_v6.zip"
+#: Producer revision the union below was measured against. A different archive
+#: must be reviewed (and this pin moved) before it can be extracted.
+ILLUSTRATED_REVISION = "edewakaru_v6 2024-11-30"
+ILLUSTRATED_MEMBERS = ("term_bank_1.json", "term_bank_2.json")
+_WHITESPACE = re.compile(r"\s+")
 from .yomitan_bank import TermRow
 
 _HEADINGS = {
@@ -111,7 +139,16 @@ class EdewakaruExtractor(CommunityBankExtractor):
     label = "絵でわかる日本語"
     members = tuple(f"term_bank_{index}.json" for index in range(1, 5))
 
+    def read_rows(self) -> tuple[list[TermRow], dict[str, str]]:
+        legacy, consumed = super().read_rows()
+        raw = self.read_locked_bytes(ILLUSTRATED_ARCHIVE)
+        consumed[ILLUSTRATED_ARCHIVE] = load_source_lock(self.input_dir)[ILLUSTRATED_ARCHIVE]["sha256"]
+        return union_rows(legacy, read_illustrated(raw)), consumed
+
     def parse(self, row: TermRow) -> GrammarPoint | None:
+        illustrated = row.member.startswith(f"{ILLUSTRATED_ARCHIVE}:")
+        if illustrated and not body_key(row):
+            return self._illustration_only(row)
         sections = split_sections(row.text, _HEADINGS)
 
         # The level appears in the entry's own title line (`…｜JLPT　N１文法`);
@@ -126,6 +163,10 @@ class EdewakaruExtractor(CommunityBankExtractor):
         for optional in ("usage", "notes", "colloquial"):
             if optional in sections:
                 provenance[optional] = clean(_strip_post_chrome(sections[optional]))
+        if row.images:
+            provenance["illustration"] = row.images[0]
+        if illustrated:
+            provenance["attachOnly"] = True
 
         return GrammarPoint(
             source=self.name,
@@ -143,6 +184,106 @@ class EdewakaruExtractor(CommunityBankExtractor):
             tags=(row.term_tags,) if row.term_tags else (),
             provenance=provenance,
         )
+
+    def _illustration_only(self, row: TermRow) -> GrammarPoint:
+        """A post that is only a picture: the 自動詞・他動詞 series.
+
+        Its `definitionTags` hold a sense label for the picture (`（不注意・失敗）`,
+        `倒れる・倒す①`), not alternative spellings, so they are kept as the
+        caption and never become lookup forms.
+        """
+        provenance = self.base_provenance(row)
+        provenance["producerBand"] = row.term_tags
+        provenance["illustration"] = row.images[0]
+        provenance["attachOnly"] = True
+        provenance["illustrationOnly"] = True
+        if row.definition_tags.strip():
+            provenance["illustrationLabel"] = row.definition_tags.strip()
+        return GrammarPoint(
+            source=self.name,
+            source_id=str(row.sequence) if row.sequence else row.expression,
+            expression=row.expression,
+            reading=clean(row.reading),
+            tags=(row.term_tags,) if row.term_tags else (),
+            provenance=provenance,
+        )
+
+
+def body_key(row: TermRow) -> str:
+    """A row's text with all whitespace removed: both editions' identity for it."""
+    return _WHITESPACE.sub("", row.text)
+
+
+def read_illustrated(raw: bytes) -> list[TermRow]:
+    """Read the illustrated edition's banks, failing closed on drift.
+
+    Every row must carry exactly one illustration and every illustration must be
+    a member of the archive, so a later build can always resolve it.
+    """
+    with zipfile.ZipFile(io.BytesIO(raw)) as archive:
+        index = load_json(archive.read("index.json").decode("utf-8"))
+        if index.get("revision") != ILLUSTRATED_REVISION:
+            raise MalformedPayload(
+                f"{ILLUSTRATED_ARCHIVE}: expected revision {ILLUSTRATED_REVISION!r}, "
+                f"found {index.get('revision')!r}"
+            )
+        names = set(archive.namelist())
+        rows: list[TermRow] = []
+        for member in ILLUSTRATED_MEMBERS:
+            rows.extend(read_term_bank(archive.read(member), member=f"{ILLUSTRATED_ARCHIVE}:{member}"))
+    for row in rows:
+        if len(row.images) != 1:
+            raise MalformedPayload(
+                f"{row.member}: {row.expression!r} has {len(row.images)} illustrations, expected 1"
+            )
+        if row.images[0] not in names:
+            raise MalformedPayload(f"{row.member}: missing illustration {row.images[0]!r}")
+    return rows
+
+
+def union_rows(legacy: list[TermRow], illustrated: list[TermRow]) -> list[TermRow]:
+    """v1.03 rows with their illustrations, then the rows only v6 has.
+
+    A v1.03 row takes the illustration of the v6 row with the same text, keyed
+    first by headword and text, then by text alone; one text never carries two
+    different pictures in v6. A v6 row is appended only when v1.03 has no row
+    with its text. A picture-only row is identified by its headword and picture,
+    because several verbs have more than one (割る: a general and an accidental
+    sense).
+    """
+    by_pair: dict[tuple[str, str], tuple[str, ...]] = {}
+    by_body: dict[str, set[tuple[str, ...]]] = {}
+    for row in illustrated:
+        key = body_key(row)
+        if key:
+            by_pair.setdefault((row.expression, key), row.images)
+            by_body.setdefault(key, set()).add(row.images)
+    conflicting = [key for key, pictures in by_body.items() if len(pictures) > 1]
+    if conflicting:
+        raise MalformedPayload(
+            f"{ILLUSTRATED_ARCHIVE}: {len(conflicting)} texts carry different illustrations"
+        )
+
+    rows: list[TermRow] = []
+    legacy_texts: set[str] = set()
+    for row in legacy:
+        key = body_key(row)
+        if not key:
+            raise MalformedPayload(f"{row.member}: {row.expression!r} has no text")
+        pictures = by_pair.get((row.expression, key)) or next(iter(by_body.get(key, ())), ())
+        rows.append(dataclasses.replace(row, images=pictures))
+        legacy_texts.add(key)
+    seen: set[tuple[str, str, tuple[str, ...]]] = set()
+    for row in illustrated:
+        key = body_key(row)
+        if key in legacy_texts:
+            continue
+        identity = (row.expression, key, () if key else row.images)
+        if identity in seen:
+            continue
+        seen.add(identity)
+        rows.append(row)
+    return rows
 
 
 def _numbered_examples(

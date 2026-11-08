@@ -11,9 +11,11 @@ import pathlib
 import re
 import zipfile
 
-from build_site import read_json, snapshot_inputs
+from build_site import read_json, snapshot_editions
 from verify_popup import source_names as rendered_sources
+from bugd.illustrations import DIRECTORY as ILLUSTRATIONS_DIR, illustration_key
 from bugd.imabi_lookup import load_catalog
+from bugd.package import referenced_media
 from bugd.popup_lookup import load_overrides, lookup_plan
 from bugd.site_links import grammar_path, grammar_url
 from bugd.sources import source_names
@@ -24,12 +26,15 @@ from bugd.website import source_label
 
 
 def verify(snapshot: pathlib.Path, output: pathlib.Path, *, write_lock: bool = False) -> dict:
-    corpus, _, revision = snapshot_inputs(snapshot)
+    editions = snapshot_editions(snapshot)
+    corpus, revision = editions["corpus"], editions["revision"]
     lookups = load_catalog(snapshot / "imabi-lookups.json")
     lookup_terms = {form for lesson in lookups.values() for form in lesson["expressions"]}
     old_expressions = {entry["expression"] for entry in read_json(snapshot / "corpus.json.gz")["entries"]}
     old_expressions.update(json.loads((snapshot / "published-headwords.json").read_text())["expressions"])
     plan = lookup_plan(corpus, load_overrides(snapshot / "popup-overrides.json"))
+    if any(not item["forms"] for item in plan.values()):
+        raise ValueError("Every published source record needs a Japanese lookup")
     if any(not item["forms"] for item in plan.values()):
         raise ValueError("Every published source record needs a Japanese lookup")
     source_coverage = {source: sum(key[0] == source for key in plan) for source in corpus["sourceLabels"]}
@@ -60,6 +65,7 @@ def verify(snapshot: pathlib.Path, output: pathlib.Path, *, write_lock: bool = F
     downloads = output / "downloads"
     assets = {}
     checked_rows = {}
+    packed_pictures = {}
     for english, filename, index_name in (
         (False, "bees-ultimate-grammar-dictionary.zip", "index.json"),
         (True, "bees-ultimate-grammar-dictionary-en.zip", "index.en.json"),
@@ -73,6 +79,7 @@ def verify(snapshot: pathlib.Path, output: pathlib.Path, *, write_lock: bool = F
         imabi_terms = set()
         popup_sources = {}
         article_rows = {}
+        image_paths = set()
         with zipfile.ZipFile(path) as archive:
             index_bytes = archive.read("index.json")
             index = json.loads(index_bytes)
@@ -88,6 +95,7 @@ def verify(snapshot: pathlib.Path, output: pathlib.Path, *, write_lock: bool = F
                 if not re.fullmatch(r"term_bank_\d+\.json", name):
                     continue
                 for row in json.loads(archive.read(name)):
+                    image_paths.update(referenced_media(row[5]))
                     expressions.add(row[0])
                     popup_sources.setdefault(row[0], set()).update(rendered_sources(row[5]))
                     if row[0] in lookup_terms and has_imabi_source(row[5]):
@@ -102,6 +110,7 @@ def verify(snapshot: pathlib.Path, output: pathlib.Path, *, write_lock: bool = F
                         raise ValueError(f"Missing article or wrong heading: {filename} {row[0]}")
                     article_rows[row[0]] = {html.unescape(uid) for uid in re.findall(r'data-source-row="([^"]+)"', page)}
                     count += 1
+            packed_pictures[filename] = verify_packed_illustrations(archive, image_paths, editions["illustrations"], filename)
         if count != len(corpus["entries"]):
             raise ValueError(f"Entry count differs from full snapshot: {filename}")
         if not old_expressions <= expressions:
@@ -128,6 +137,9 @@ def verify(snapshot: pathlib.Path, output: pathlib.Path, *, write_lock: bool = F
                         raise ValueError(f"Missing IMABI lesson {lesson['pageId']}: {filename} {form}")
         checked_rows[filename] = count
 
+    figures = verify_illustrations(corpus, editions["illustrations"], output)
+    figures["packedInArchives"] = packed_pictures
+
     sums = "".join(
         f"{hashlib.sha256(path.read_bytes()).hexdigest()}  {path.name}\n"
         for path in sorted(downloads.glob("*.zip"))
@@ -143,7 +155,7 @@ def verify(snapshot: pathlib.Path, output: pathlib.Path, *, write_lock: bool = F
     result = {"revision": revision, "sources": sorted(required), "entries": len(corpus["entries"]),
               "japaneseLookupRecords": source_coverage,
               "imabiLessons": len(imabi_ids), "imabiLookupLessons": len(lookups),
-              "imabiLookupTerms": len(lookup_terms), "assets": assets}
+              "imabiLookupTerms": len(lookup_terms), "illustrations": figures, "assets": assets}
     lock_path = snapshot / "release.json"
     if write_lock:
         lock_path.write_text(json.dumps(result, indent=2) + "\n")
@@ -152,8 +164,52 @@ def verify(snapshot: pathlib.Path, output: pathlib.Path, *, write_lock: bool = F
     return {"revision": revision, "sources": len(required), "imabiPages": listing["count"],
             "imabiLessons": len(imabi_ids), "imabiLookupLessons": len(lookups),
             "imabiLookupTerms": len(lookup_terms), "preservedHeadwords": len(old_expressions),
-            "japaneseLookupRecords": source_coverage,
+            "japaneseLookupRecords": source_coverage, "illustrations": figures,
             "verifiedArticleLinks": checked_rows, "assets": assets}
+
+
+def verify_illustrations(corpus: dict, catalog: dict | None, output: pathlib.Path) -> dict:
+    """Every illustrated record shows its picture on its article in both editions."""
+    if catalog is None:
+        raise ValueError("Release snapshot has no illustration catalog")
+    images = catalog["images"]
+    for item in images.values():
+        published = output / ILLUSTRATIONS_DIR / item["website"]["file"]
+        raw = published.read_bytes() if published.is_file() else b""
+        if hashlib.sha256(raw).hexdigest() != item["website"]["sha256"]:
+            raise ValueError(f"Published illustration differs from its catalog: {item['website']['file']}")
+    records = pictured = 0
+    for entry in corpus["entries"]:
+        for point in entry["contributions"]:
+            key = illustration_key(point)
+            if not key:
+                continue
+            records += 1
+            if key not in images:
+                raise ValueError(f"Illustration missing from the catalog: {key}")
+            for english in (False, True):
+                page = (output / grammar_path(entry["expression"], english=english) / "index.html").read_text()
+                if f'{ILLUSTRATIONS_DIR}/{html.escape(images[key]["website"]["file"])}"' not in page:
+                    raise ValueError(f"Article does not show its illustration: {entry['expression']} {key}")
+            pictured += bool(point.get("provenance", {}).get("illustrationOnly"))
+    return {"pictures": len(images),
+            "byteCount": {name: sum(item[name]["byteCount"] for item in images.values()) for name in catalog["renditions"]},
+            "illustratedRecords": records, "pictureOnlyRecords": pictured}
+
+
+def verify_packed_illustrations(archive: zipfile.ZipFile, image_paths: set[str], catalog: dict | None,
+                                filename: str) -> int:
+    """The ZIP packs exactly the pictures its cards show, each byte-for-byte from the catalog."""
+    if catalog is None:
+        raise ValueError("Release snapshot has no illustration catalog")
+    expected = {f"media/{item['dictionary']['file']}": item["dictionary"]["sha256"] for item in catalog["images"].values()}
+    packed = {name for name in archive.namelist() if name.startswith("media/")}
+    if image_paths != packed:
+        raise ValueError(f"Packed media differs from the card pictures in {filename}: {sorted(image_paths ^ packed)[:5]}")
+    for member in packed:
+        if member not in expected or hashlib.sha256(archive.read(member)).hexdigest() != expected[member]:
+            raise ValueError(f"Packed illustration differs from its catalog: {filename} {member}")
+    return len(packed)
 
 
 def has_imabi_source(node: object) -> bool:

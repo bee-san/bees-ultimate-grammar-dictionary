@@ -86,8 +86,13 @@ audit settings do not apply to the English translation build.
 - Split one bank per JLPT level (N1–N5)
 
 ### 絵でわかる日本語
-- Source: aiko-tanaka/Grammar-Dictionaries, `edewakaru/`
+- Source: aiko-tanaka/Grammar-Dictionaries, `edewakaru/` (text banks v1.03), plus
+  Salwynn's illustrated edition `edewakaru_v6 2024-11-30` (listed in
+  MarvNC/yomitan-dictionaries), which adds each post's illustration
 - Grammar explained through illustrations, Japanese
+- Each post's illustration is shown on its website article (the original JPEG)
+  and in its popup section (AVIF, quality 40). v6 repeats the v1.03 text; its
+  自動詞・他動詞 posts are pictures without text and appear as picture-only entries
 
 ### Donna Toki — どんなときどう使う 日本語表現文型辞典
 - Source: donna_v1.04 Yomitan banks

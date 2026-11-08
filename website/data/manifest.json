@@ -1,5 +1,5 @@
 {
-  "revision": "2026.11.04",
+  "revision": "2026.11.08",
   "model": "gpt-6-luna",
   "sources": [
     "aiueo",
@@ -17,12 +17,12 @@
     "ninjal_bunkei",
     "yokubi"
   ],
-  "entries": 7680,
+  "entries": 7882,
   "translations": 49951,
   "files": {
     "corpus.json.gz": {
-      "sha256": "a825a53c9d04aa36008c69cd61379a7fedc05f39aa7d3c5019ee7c9131c36aa6",
-      "byteCount": 11506833
+      "sha256": "11a07e2c8b7070daa3718256dce252eae05da0a14e3e8b0ff0d8c08b3f8a096c",
+      "byteCount": 11567762
     },
     "translations.en.json.gz": {
       "sha256": "f0f1e81243402fc20dc0d93c537932e7a98942fe0c461bdc2dfd1739817d56fa",
@@ -37,14 +37,19 @@
       "byteCount": 59728
     },
     "published-headwords.json": {
-      "sha256": "7825978e1c766d7224c24796ffa04bcaa256226af4da902186dbcfc029f5913e",
-      "byteCount": 165950
+      "sha256": "172326bc181bc6cf57aa33cc56761d305698028a59f7a4d585a751ee4602c4ce",
+      "byteCount": 187392
     },
     "headword-readings.json": {
       "sha256": "10ce46b5a9056ecd7a41294e17609c11a0dafded48e91dba166a9da25fff0bdd",
       "byteCount": 266157
+    },
+    "illustrations.json": {
+      "sha256": "3bafe9b95f8dab27ddab8bf07e6742b4b73179f9995a281c24961e35c58a87a2",
+      "byteCount": 572228
     }
   },
+  "illustrations": 955,
   "restoredImabiLessons": [
     "535"
   ]

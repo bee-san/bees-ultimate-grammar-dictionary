@@ -48,6 +48,26 @@ The generated output lives under `build/site/`. Dictionary downloads and their
 SHA-256 checksums are in `build/site/downloads/`. The English archive has its own
 dictionary title and update index, so the two editions can be installed together.
 
+## Illustrations
+
+絵でわかる日本語's illustrations come from Salwynn's illustrated edition
+(`data/sources/edewakaru/edewakaru_v6.zip`, locked by digest). Its text repeats
+the v1.03 banks, so the v1.03 rows keep their identities and gain the picture of
+the post with the same text. v6 rows that re-file a v1.03 post under another
+headword are skipped. The rest, the 自動詞・他動詞 posts that are pictures without
+text, are attach-only: they join the finished alignment and never move an
+existing contribution, headword or redirect.
+
+`make publish-data` writes two renditions of every referenced picture into
+`website/data/illustrations/`: the producer's JPEG, unchanged, for the website,
+and AVIF at quality 40 for the dictionaries (`bugd.illustrations.RENDITIONS`).
+`illustrations.json` pins each file and the manifest pins the catalog. Unchanged
+pictures are not re-encoded. The Pages build verifies those bytes, shows the
+JPEG on each article page and packs the AVIF into both dictionaries under
+`media/`. A card declares each picture at its native size; Yomitan scales it
+down to the popup's width. Release verification checks every published and
+packed picture against the catalog and every card's picture path.
+
 ## Translation policy
 
 Source-authored English is used whenever supplied. Mono Japanese/Chinese prose
